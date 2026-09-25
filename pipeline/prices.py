@@ -87,13 +87,14 @@ def update(sym: str, finnhub=None) -> dict:
     old = read_json(path, {}) or {}
     hist = {d: c for d, c in old.get("kapanislar", [])}
     src = None
-    fresh = _yahoo(sym)
+    # Nasdaq birincil (GitHub runner'larından Yahoo sık sık 429 veriyor), Yahoo yedek
+    fresh = _nasdaq(sym)
     if fresh:
-        src = "Yahoo Finance (chart API)"
+        src = "Nasdaq.com (historical API)"
     else:
-        fresh = _nasdaq(sym)
+        fresh = _yahoo(sym)
         if fresh:
-            src = "Nasdaq.com (historical API)"
+            src = "Yahoo Finance (chart API)"
         else:
             fresh = _stooq(sym)
             if fresh:
