@@ -1,0 +1,281 @@
+{
+ "guncelleme": "2026-09-25T23:55:22+00:00",
+ "ufuklar": [
+  30,
+  90,
+  180
+ ],
+ "ozet": [
+  {
+   "tur": "tez_bozulma",
+   "ad": "Tez genel durumu KIRMIZI'ya döndü",
+   "beklenen_yon": "olumsuz",
+   "adet": 0,
+   "ufuklar": {
+    "30": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    },
+    "90": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    },
+    "180": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    }
+   }
+  },
+  {
+   "tur": "tez_iyilesme",
+   "ad": "Tez genel durumu kırmızıdan çıktı",
+   "beklenen_yon": "olumlu",
+   "adet": 0,
+   "ufuklar": {
+    "30": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    },
+    "90": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    },
+    "180": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    }
+   }
+  },
+  {
+   "tur": "sutun_kirmizi",
+   "ad": "Bir tez sütunu KIRMIZI'ya döndü",
+   "beklenen_yon": "olumsuz",
+   "adet": 0,
+   "ufuklar": {
+    "30": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    },
+    "90": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    },
+    "180": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    }
+   }
+  },
+  {
+   "tur": "cikis_kriteri",
+   "ad": "Önceden yazılmış çıkış kriteri tetiklendi",
+   "beklenen_yon": "olumsuz",
+   "adet": 0,
+   "ufuklar": {
+    "30": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    },
+    "90": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    },
+    "180": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    }
+   }
+  },
+  {
+   "tur": "kural_kademe_tez_saglam",
+   "ad": "Düşüş kademesi tetiklendi, tez sağlam",
+   "beklenen_yon": "olumlu",
+   "adet": 0,
+   "ufuklar": {
+    "30": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    },
+    "90": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    },
+    "180": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    }
+   }
+  },
+  {
+   "tur": "kural_kademe_tez_bozuk",
+   "ad": "Düşüş kademesi tetiklendi, tez kırmızı",
+   "beklenen_yon": "olumsuz",
+   "adet": 0,
+   "ufuklar": {
+    "30": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    },
+    "90": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    },
+    "180": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    }
+   }
+  },
+  {
+   "tur": "kural_kademe_tez_bilinmiyor",
+   "ad": "Düşüş kademesi tetiklendi, tez verisi yok",
+   "beklenen_yon": "notr",
+   "adet": 2,
+   "ufuklar": {
+    "30": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    },
+    "90": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    },
+    "180": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    }
+   }
+  },
+  {
+   "tur": "insider_alim",
+   "ad": "Yönetimden açık piyasa alımı (P)",
+   "beklenen_yon": "olumlu",
+   "adet": 0,
+   "ufuklar": {
+    "30": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    },
+    "90": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    },
+    "180": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    }
+   }
+  },
+  {
+   "tur": "insider_kume_satis",
+   "ad": "Kümelenmiş yönetici satışı",
+   "beklenen_yon": "olumsuz",
+   "adet": 0,
+   "ufuklar": {
+    "30": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    },
+    "90": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    },
+    "180": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    }
+   }
+  },
+  {
+   "tur": "bilanco_kirmizi_bayrak",
+   "ad": "Yeni bilançoda kırmızı bayrak",
+   "beklenen_yon": "olumsuz",
+   "adet": 0,
+   "ufuklar": {
+    "30": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    },
+    "90": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    },
+    "180": {
+     "n": 0,
+     "isabet_orani": null,
+     "ort_goreli": null
+    }
+   }
+  }
+ ],
+ "sinyaller": [
+  {
+   "id": "828921cfd4ab",
+   "tarih": "2026-09-25",
+   "ticker": "AAOI",
+   "tur": "kural_kademe_tez_bilinmiyor",
+   "tur_adi": "Düşüş kademesi tetiklendi, tez verisi yok",
+   "yon": "notr",
+   "aciklama": "Zirveden %-54.72 — kademe -%40; Hisse, tüm benchmark'lardan en az 15 puan daha fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+   "fiyat": 101.03,
+   "fiyat_tarihi": "2026-09-24",
+   "qqq": 741.1,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-25T23:55:22+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
+  {
+   "id": "2c3ab94e6812",
+   "tarih": "2026-09-25",
+   "ticker": "NOW",
+   "tur": "kural_kademe_tez_bilinmiyor",
+   "tur_adi": "Düşüş kademesi tetiklendi, tez verisi yok",
+   "yon": "notr",
+   "aciklama": "Zirveden %-27.2 — kademe -%25; Hisse, tüm benchmark'lardan en az 10 puan daha fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+   "fiyat": 137.78,
+   "fiyat_tarihi": "2026-09-24",
+   "qqq": 741.1,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-25T23:55:21+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  }
+ ],
+ "not": "İsabet: sinyal sonrası hissenin QQQ'ya göre göreli getirisinin beklenen yönde olması. Az sayıda sinyalle istatistik anlamsızdır."
+}

@@ -1,0 +1,139 @@
+{
+ "ticker": "NOW",
+ "tez_var": true,
+ "onay": "taslak",
+ "ozet": "Kurumsal iş akışı platformu yüksek yenileme oranı ve genişleyen ürün (AI/Now Assist) satışıyla %20 civarı büyümeyi sürdürüyor; sözleşmeli gelir birikimi (RPO) görünürlük sağlıyor ve güçlü FCF marjı SBC maliyetine rağmen gerçek değer yaratıyor.\n",
+ "genel": "veri_yok",
+ "sutunlar": [
+  {
+   "id": "buyume",
+   "ad": "Gelir büyümesi",
+   "tip": "metrik",
+   "aciklama": "Çeyreklik gelir büyümesi > %18.",
+   "metrik": "revenue_yoy",
+   "metrik_adi": "Gelir büyümesi (yıllık)",
+   "birim": "%",
+   "deger": null,
+   "donem": null,
+   "eski_donem": false,
+   "operator": ">",
+   "esik": 18,
+   "uyari": 12,
+   "durum": "veri_yok",
+   "gecmis": [],
+   "kaynak": {
+    "tip": "SEC XBRL companyfacts",
+    "donem": null
+   },
+   "olgu_mu": true,
+   "haberler": [],
+   "radar": []
+  },
+  {
+   "id": "gorunurluk",
+   "ad": "Sözleşmeli gelir birikimi (RPO)",
+   "tip": "metrik",
+   "aciklama": "RPO yıllık büyümesi gelir büyümesine yakın veya üzerinde olmalı.",
+   "metrik": "rpo_yoy",
+   "metrik_adi": "RPO (yıllık)",
+   "birim": "%",
+   "deger": null,
+   "donem": null,
+   "eski_donem": false,
+   "operator": ">",
+   "esik": 18,
+   "uyari": 12,
+   "durum": "veri_yok",
+   "gecmis": [],
+   "kaynak": {
+    "tip": "SEC XBRL companyfacts",
+    "donem": null
+   },
+   "olgu_mu": true,
+   "haberler": [],
+   "radar": []
+  },
+  {
+   "id": "nakit",
+   "ad": "Serbest nakit akışı marjı",
+   "tip": "metrik",
+   "aciklama": "TTM FCF marjı > %25.",
+   "metrik": "fcf_margin_ttm",
+   "metrik_adi": "TTM FCF marjı",
+   "birim": "%",
+   "deger": null,
+   "donem": null,
+   "eski_donem": false,
+   "operator": ">",
+   "esik": 25,
+   "uyari": 18,
+   "durum": "veri_yok",
+   "gecmis": [],
+   "kaynak": {
+    "tip": "SEC XBRL companyfacts",
+    "donem": null
+   },
+   "olgu_mu": true,
+   "haberler": [],
+   "radar": []
+  },
+  {
+   "id": "sbc",
+   "ad": "SBC maliyeti",
+   "tip": "metrik",
+   "aciklama": "SBC/gelir < %15; SBC hariç FCF'nin şişirilmiş görünmemesi için.",
+   "metrik": "sbc_to_revenue_ttm",
+   "metrik_adi": "TTM SBC / gelir",
+   "birim": "%",
+   "deger": null,
+   "donem": null,
+   "eski_donem": false,
+   "operator": "<",
+   "esik": 15,
+   "uyari": 20,
+   "durum": "veri_yok",
+   "gecmis": [],
+   "kaynak": {
+    "tip": "SEC XBRL companyfacts",
+    "donem": null
+   },
+   "olgu_mu": true,
+   "haberler": [],
+   "radar": []
+  },
+  {
+   "id": "ai_ve_yenileme",
+   "ad": "AI monetizasyonu ve müşteri tutma",
+   "tip": "yorum",
+   "aciklama": "",
+   "durum": "veri_yok",
+   "soru": "10-Q/10-K ve basın bülteninde yenileme oranı, büyük müşteri (yıllık 5M$+ ACV) sayısı, Now Assist/AI ürünlerinin katkısı ve satın almaların büyümeye etkisi hakkında açıklamalar tezi destekliyor mu?",
+   "gerekce": "Henüz değerlendirilmedi (Claude bilanço analizi / Salı raporu çalışmadı).",
+   "kanit_alinti": null,
+   "kanit_dogrulandi": null,
+   "kaynak": null,
+   "olgu_mu": false,
+   "haberler": [],
+   "radar": []
+  }
+ ],
+ "cikis": [
+  {
+   "id": "rpo_yavas",
+   "ad": "RPO büyümesi 2 çeyrek üst üste %12'nin altına inerse",
+   "metrik": "rpo_yoy",
+   "durum": "veri_yok",
+   "son_degerler": []
+  },
+  {
+   "id": "gelir_yavas",
+   "ad": "Gelir büyümesi 2 çeyrek üst üste %12'nin altına inerse",
+   "metrik": "revenue_yoy",
+   "durum": "veri_yok",
+   "son_degerler": []
+  }
+ ],
+ "son_ceyrek": null,
+ "guncelleme": "2026-09-25T23:55:21+00:00",
+ "not": "Tez durumu fiyattan bağımsızdır. Fiyat düşüşü tek başına tezin bozulduğu anlamına gelmez."
+}

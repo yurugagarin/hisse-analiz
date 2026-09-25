@@ -1,0 +1,1166 @@
+{
+ "tur": "son7gun",
+ "baslangic": "2026-09-19",
+ "bitis": "2026-09-25",
+ "guncelleme": "2026-09-25T23:55:22+00:00",
+ "hisseler": [
+  {
+   "ticker": "NVDA",
+   "ad": "Nvidia",
+   "donem": [
+    "2026-09-19",
+    "2026-09-25"
+   ],
+   "fiyat": {
+    "son": 224.58,
+    "tarih": "2026-09-24",
+    "haftalik": 2.39,
+    "aylik": 5.41,
+    "zirveden": -4.73,
+    "zirve_52h": 235.74,
+    "zirve_tarih": "2026-05-14",
+    "kaynak": "Nasdaq.com (historical API)"
+   },
+   "benchmark_haftalik": {
+    "QQQ": 3.37,
+    "SMH": 7.12
+   },
+   "tez": {
+    "genel": "veri_yok",
+    "onay": "taslak",
+    "sutunlar": [
+     {
+      "id": "buyume",
+      "ad": "Talep ve büyüme",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": "%",
+      "tip": "metrik"
+     },
+     {
+      "id": "fiyatlama_gucu",
+      "ad": "Fiyatlama gücü (brüt marj)",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": "%",
+      "tip": "metrik"
+     },
+     {
+      "id": "kazanc_kalitesi",
+      "ad": "Kâr nakde dönüşüyor mu",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": "x",
+      "tip": "metrik"
+     },
+     {
+      "id": "stok_disiplini",
+      "ad": "Stok ve kanal disiplini",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": "puan",
+      "tip": "metrik"
+     },
+     {
+      "id": "rekabet_musteri",
+      "ad": "Rekabet ve müşteri yoğunlaşması",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": null,
+      "tip": "yorum"
+     }
+    ],
+    "cikis_tetiklenen": []
+   },
+   "kural": {
+    "durum": "tetiklenmedi",
+    "mesaj": "Zirveden %-4.73. Sonraki kademe: -%15.",
+    "tetiklenen": null,
+    "zirveden_uzaklik": -4.73,
+    "dusus_kaynagi": "piyasa_sektor",
+    "dusus_kaynagi_aciklama": "Hissenin düşüşü benchmark'larla benzer: ağırlıkla piyasa/sektör kaynaklı.",
+    "kosul_saglaniyor": null
+   },
+   "insider": {
+    "hafta_islemleri": [],
+    "hafta_kodlari": {},
+    "uyarilar": [],
+    "kumelenmis_satislar": [],
+    "ozet_90g": null
+   },
+   "buyuk_hareketler": [],
+   "sec_bildirimleri": [],
+   "basliklar": [
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo Finance",
+     "baslik": "Nvidia Would Have to Add Almost a Whole Broadcom to Reach $7 Trillion",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPamkxWDdoY1FhWlFnSU5RWjBOMjJPdjJMbzN3M1lrdDlsN0EyOGFPNEtJcUNZeU02RHphbl9KdEgzeUliZWVrXzlJMGRuOVRJT2pEaWlIMGdLbk8xSWtJZGZoUk9DamdsWkl5UHNpWlJJbFFDTGtQeDBqemJWYkd1VWUzdHRZSW1PbGRDZE9vU2tUWlE0U0k5RVN0MWN5dw?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo Finance",
+     "baslik": "Meet the Magnificent Semiconductor Stock Crushing Nvidia in 2026",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMWhjckVwUWVQeTcwN0pBNnZHdkJwSjRvNG9qYWpQOFcyM3pQVlZoMndfLVBjOFRUN1FsdlFpaVV4Y1FTTHh0VkhOajh2X1pzb3F6Sl9OM3VMRDZQTE5pNUxuUTlZTUdYZDlPTVFyMWJRTWhyMGhwRUphanJYQ1RGUTVCWHQxTnZzaDBhWlNkeGN1M3FUQWhGcnpKeUFzdGZwc0llVDFHa0FtOFh1OThv?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "The Motley Fool",
+     "baslik": "Credo vs. Nvidia: Which AI Chip Stock Is a Better Buy in 2026?",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPY1dqTjdmMjJjS2NYT2RVX1EtaEdBSzZKZTgwdXBLRnRuR3dEbmVBRkxpTjd4Nkk0QTh1Nlp4Q3BmTFVNTDJVd1c3ZVhyaTR4bVZHcmxrcEU0S2ZJeDIxR0MtZkZJYWhaMUprNHRlSlJ1cXlUeWdrd090VHRqcC1LbURhSzVFY3Ntbjh6amtxTFBGakFTSGR5dk5qSlNrajA?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Seeking Alpha",
+     "baslik": "SCHMID surges after Nvidia, AMD, Intel consider using glass substrates in chips",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdXhLZHd2a0czR1RUQ19QaWlSenZxSmNoRVJSMWo2VnJjV0d1UGhSeVdHdjdxeUNuOVlzQmRHTUZVZkZXRmx5c1RSYUg4cVpGcFYzUk1LZDlrMjNQTGlBY1FNVUlUODhTNHBFb3kxQl9yNFRILXctd0c1Sy1PeHhxWURXRWxFbE9ibjdTWWV3VFJvRU53NHZaVGd6ckJHa2FVYVpRcmhNZFh1QVV1dmZWbThjOUNNUQ?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Barron's",
+     "baslik": "Nvidia Stock: Here’s How Many AI Chips SpaceX Is Buying.",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZEoxQzk3Mno1cFg0Mm1RbEJ6RklMRUJrSWdQeHo3aE52czJ6VDJuNzZSaWpudmIwdURaVmxCSXk2MkZDalM2MXRIVU40ck5ZeFJFak05OUk4MzJuM3FoU1JJYTVDN3JBcHJKT1htT0pjaFBFY2liRVFJM2xlUlZaZXduOVM?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo Finance",
+     "baslik": "Where Will Nvidia Be in 5 Years?",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNMXZCczJ2TmcxTmZrN1FSMERjTkVzYURkekNQek1kMTNlRUxGT3FVSzROTUkySjliU2tKQTBrSmdnOG51dWE1OVRKUmh3Q2VDQU9KT2lVWU9pdGEydk9rQ0JpbkJFWmxYZElrcXR6a1M0VlZoZTdSZEpzc2toVHVGWnUxeTk4Rm1OeWJsdQ?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo Finance",
+     "baslik": "Nvidia Stock Moves Lower as Einride Scales Physical AI",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQbjlMOUlfVHRZQVZJVnRydktYOGpwc3pRQ0RRd0hkcVlLTWNjS2ZNY0dBOVJrVFdRLUYwZjdMTUZleHV2RnNLQ1ZHUVN1TWNEMmk5RE5ibnBsbTN4Q001ZVJPSzI0Zm5qZENHT215WWNZOWRNUElycFhuNVR3NlNXNjZaejdiZFBXcURtS2tuYjNsZ25iYndWeVVXd1E?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Investor's Business Daily",
+     "baslik": "Nvidia Tests Key Level Amid Trump-Xi Talks, China Challenge",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNekRWNTUxQnMzZXJGTFFKVzJIUEZFX05MYkJwbmFsVWdjT2dQNEFaRWdRZWs4ZHVGTDdkaUkzbzdOcEdBNHZjQ3g4cmZ5YmNyeTBjWnZLWUpaS3ZDWDFoYVFMVXJWZWFiRTdNSFl5YlF4ZkFwZnZ3QldoN1QyajJFanRiLVJJNktscHRVSzVJUXc?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "24/7 Wall St.",
+     "baslik": "If You Invest $500 a Month in Nvidia Starting Now, This is What You’d Have in 2030",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOU3pIMkZqd3hLZzJDeFFTcXJzV2x5ZUNHd0NydVA0bTZmcHVQNm1WZ2xVamY0eWNvNDU5VmNUN1BYU1RZd2pEYU8ySExWOXZ3dlRoYk1CRmpFUkR6UVg3OTVvOXZIaS1sRzRrcDFqaFdPLUFyMTV6Y1NLSThoUFd6M21RR3RqR0NxMFNrNExlSFVybm1pdFFNbEJRN3hpemJsMTlTdTNqdU9UV3ZfZHNYd0ZxZkpsX2xhdHJPT3NweS0?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "MarketBeat",
+     "baslik": "NVIDIA’s Next AI Chip Ramp Could Open the Door to Another Major Stock Move",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNN05saHhCSEIwb0FDYzRtY3JJcFNNX2dzdm9tMno5M2hJTHBfSlRWYlRRanJ2LWtVc0hsbUtKSE11RnVaVHo0VVkxOTVkUEJQQTRIaENCLVRnQ2xjQ25hOXM5cXBjZzNQa0FhYnFaaW1yWDh6eTNrLXp2VmYxWnFQREFBMnlGeTNqSDIzZ1l6X0E1X0VGZ2FveWZNRFVtUUVZcGk1UFlqdW5DN3VlNW9z?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo Finance",
+     "baslik": "Tesla vs. Nvidia: Which Physical AI Stock Has the Bigger Robotics Payoff by 2030?",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNaEQ1RFV6c2NLeXMzR2llZnVtenBNQlpTc0tMTHBpOGJ0Q21JYmFKUl8yTEo5ZDNqZTNnZ2VEUlZJcDFtd0dYQWRjbENzaUZ1dTJTWnZ4TFZhUVlXTFB1ZjNXbTZhOUtmczJTVnFORnVTSnZMS1E3Y1V1b09EX2p5X1UzdWg3cVhmNDhJSU5mQnRpaFU3aWc?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "The Motley Fool",
+     "baslik": "Better Quantum Computing Stock: Nvidia vs. IonQ",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcmFWV1daa3FjNFhibElmVUlEQ0lCdUhDVTIzeVNtS29tN3ZoTUN4enFuZ2JYSkVUcVlrdWJIeVdDcEhrcVBab0VPM0NyOEFpM05NNHFfSktMUHYwb2NSZXdXMEZoWFNTRXdOb0NrbGdsbDNiUVN2ckVqeldOQlRQQlhuM21JeTlMM1V1ODhzbUtSdw?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo Finance Australia",
+     "baslik": "Nvidia Stock Rises as Elon Musk Reveals Huge New AI Chip Plans",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNV3dvMmNnWlVQUFh5N2RrMkdaSFhScU1oZV8zSDR3T1JfNnotcXR1aDFMNUJWRk1HUjEteC01dGh6SFIyWjlPZGs1SUY1N0tYZGhJdTV0N3gwZmFPT3h3VzBxYUJUaUNtaEpxcXJrZHZRTWNkZXg5SzAzdzNhcjAwcmxrNA?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo Finance",
+     "baslik": "Elon Musk Makes Massive Nvidia Move at SpaceX",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbTBvRTQxdFdpaHJYNUVFWmV0RjJWUEJ4a2JDRmJXenpoZ19QUDdFcUFVMDNhN3J6c3RJX194ZlVfOHZfaWhORHE4ZE5rTXhuOFBqYmt3ZU5fUFFBQ0cxeUg0emZobktNUmp6UmRwdGpBTG9VLWhUQTRnN1BxSnlsa2xCSVh0QjlnbzgtbnFoa0o3VTFCdU5IME9B?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo Finance",
+     "baslik": "AMD Just Joined Nvidia in the $1 Trillion Club. At $614, Wall Street Is Paying Too Much for a Distant No. 2.",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQejU2NDR5U0o0RkxUWjQzRnhNTHJEbGtBbW5KTFotTUk2RmtMQlpSNVhQekF1NmduUm5jMmhncGhib3pzOHlrVkEwUVdCNko4cWlZRnMwbEE5VXpUS1JwSHdlTGJacWV4VkpCb1loMUx6cUhDdVNTRkR1dDl5ZE9LNnJ6Zm9FdGk2N1oteGM1YUdiOGc?oc=5"
+    }
+   ],
+   "bilanco": {
+    "son_ceyrek": null,
+    "kirmizi": 0,
+    "dikkat": 0,
+    "olumlu": 0,
+    "son_dosya": null,
+    "xbrl_beklemede": null
+   },
+   "sinyaller": []
+  },
+  {
+   "ticker": "META",
+   "ad": "Meta Platforms",
+   "donem": [
+    "2026-09-19",
+    "2026-09-25"
+   ],
+   "fiyat": {
+    "son": 777.59,
+    "tarih": "2026-09-24",
+    "haftalik": 13.96,
+    "aylik": 36.41,
+    "zirveden": 0.0,
+    "zirve_52h": 777.59,
+    "zirve_tarih": "2026-09-24",
+    "kaynak": "Nasdaq.com (historical API)"
+   },
+   "benchmark_haftalik": {
+    "QQQ": 3.37,
+    "XLC": 1.46
+   },
+   "tez": {
+    "genel": "veri_yok",
+    "onay": "taslak",
+    "sutunlar": [
+     {
+      "id": "reklam_buyumesi",
+      "ad": "Reklam motoru büyümesi",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": "%",
+      "tip": "metrik"
+     },
+     {
+      "id": "marj",
+      "ad": "Faaliyet marjı",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": "%",
+      "tip": "metrik"
+     },
+     {
+      "id": "capex_nakit",
+      "ad": "AI yatırımına rağmen nakit üretimi",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": "%",
+      "tip": "metrik"
+     },
+     {
+      "id": "sulandirma",
+      "ad": "Hisse sayısı (geri alım vs SBC)",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": "%",
+      "tip": "metrik"
+     },
+     {
+      "id": "ai_getirisi",
+      "ad": "AI yatırımının getirisi ve regülasyon",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": null,
+      "tip": "yorum"
+     }
+    ],
+    "cikis_tetiklenen": []
+   },
+   "kural": {
+    "durum": "tetiklenmedi",
+    "mesaj": "Zirveden %0.0. Sonraki kademe: -%15.",
+    "tetiklenen": null,
+    "zirveden_uzaklik": 0.0,
+    "dusus_kaynagi": "piyasa_sektor",
+    "dusus_kaynagi_aciklama": "Hissenin düşüşü benchmark'larla benzer: ağırlıkla piyasa/sektör kaynaklı.",
+    "kosul_saglaniyor": null
+   },
+   "insider": {
+    "hafta_islemleri": [],
+    "hafta_kodlari": {},
+    "uyarilar": [],
+    "kumelenmis_satislar": [],
+    "ozet_90g": null
+   },
+   "buyuk_hareketler": [
+    {
+     "tarih": "2026-09-21",
+     "claude": null,
+     "onceki_gun": "2026-09-18",
+     "hareket": 11.34,
+     "yon": "yukari",
+     "benchmark": {
+      "QQQ": 2.77,
+      "XLC": 3.56
+     },
+     "on_siniflama": "sirkete_ozel",
+     "on_siniflama_aciklama": "Hisse +11.3%, sektör/piyasa +3.6%: hareketin çoğu şirkete özel görünüyor.",
+     "basliklar": [
+      {
+       "zaman": "2026-09-21T23:50:25+00:00",
+       "tarih": "2026-09-21",
+       "baslik": "Meta (META) Stock Trades Up, Here Is Why",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOWUFYa0JKa0VRd25SY21oTll0Mi1WcFpEOXhhVERJb0g3Z2U5a3dyY3NlMVVtRFZDRzcySWFwbU9SbG02amw0NXFQQlYtRzZOTkNzNlNJR0dXQURzVzdGUEVFS0VsRVBEdWRJd29UbTMyN093MERUUmVrbmVOc1oySkZLVFpNdmRfT00xbHVCcVpRRjl2b3c?oc=5",
+       "kaynak": "Yahoo Finance",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-21T20:50:56+00:00",
+       "tarih": "2026-09-21",
+       "baslik": "Here’s How Much Traders See Meta Stock Moving After Connect Event This Week",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSS1nYWJMMFVGUGFfdzY2UlRKdHZOLXFOVDVVN193eExJeG9yM0UwcC1fVWx1MnZ4ZkpRZHJLNmxiSDhQRmRmdVNEMWlZXzBlenhrd0pXWXhlVVZITTBJUEtzTFRheU9jZEprYnFHZV9hOE40LWxKdmdpMklVcndSRXVXSXpDNDlldlpzSl9paG9vMjRoX1ExSWZJdjlFZEd3eHhxUEVDQUtaQ3dQakJIS0w5V0Y?oc=5",
+       "kaynak": "Investopedia",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-21T20:40:00+00:00",
+       "tarih": "2026-09-21",
+       "baslik": "AMD, Intel, Meta, Warner Bros., Moderna, Grail, Strategy, and More Stocks That Explain Today’s Market",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9zM3hEVDdnSUhOblJuYUI5TlJkc1Z0TloyNjRpdThyY093TVRIV01RR2VpWllPM3BBWWNQX0g4TzhaUEx4UFBSY19JNjdpSnVLLUNwcENkUGxiV2FpTjU0R1lxU0M?oc=5",
+       "kaynak": "Barron's",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-21T20:39:00+00:00",
+       "tarih": "2026-09-21",
+       "baslik": "Meta’s Muse AI Agent Triggers Intel, Chip Stock Rally. AMD Hits $1T Market Cap.",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5SSTIydHlWS0FFdS1GRHczbHByd0d5aXU0OEF5X1lkTUdVTjlldTlVdEYwZHNxR0Z3M0RvWnU2TXBKV2R3NDViTFoxZDlVV3RfQ0NaZVQ4VXhFdmdpVXh6eER2YjlhOTRrRVktQ3h5Ykd2THBmcmZiTVI0YTNWdw?oc=5",
+       "kaynak": "Barron's",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-21T20:35:45+00:00",
+       "tarih": "2026-09-21",
+       "baslik": "AMD Set to Top $1 Trillion in Market Value as Chip Stocks Soar",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQblZZejdQaDFtRVUyc1A0d3RwdzVDQVlfSml6WTNHU3NhZ2FYbHhDdHl1elNiekhoTjFZakFoenZMZmpSTGljXzd0Y25zZV9qaE5rM3JTUFEtYXQ5UkZ1MXpFVWc3RGRoU1NFU092Z1c1dHBpdlJzSnJ2dkE4aVpKN1h3RDR1M0Z1SDM4clJGVVZtWnBuQ2lraTBEcEk5dFVFTUs2U3VXYnhpeVlIaE1qUHBn?oc=5",
+       "kaynak": "Bloomberg.com",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-21T20:11:02+00:00",
+       "tarih": "2026-09-21",
+       "baslik": "Meta stock soars 11% on price target increase, Muse AI downloads",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPU3JRd2ozbzl0VjdQODBPQlY0T3NVZWR1ZHdOc3NPaU4ybERnX2czVmwzc1dRQnYyUFR1b2NSN0M5Z1ZOdlRUWjYzNzhXUmFkemFqV1RlTkptSnNVX2JiNlZMOG5CY0paUnhrZkpldWZhcWphSHJZcmJaUTFJWFE1LUFoYlJXTmkteVpEMjY2VmxlanVyN2ZpQTVFVlBpSUdRTmxIVEd2MWd6ajl0V1B2VERDMzBjSklMcTBfZFFDaw?oc=5",
+       "kaynak": "Yahoo Finance",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-21T19:52:00+00:00",
+       "tarih": "2026-09-21",
+       "baslik": "Meta stock jumps as Wells Fargo raises price target",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQLWtPX3IxYlpidnpXUjBacnpza2YwMXhGTzRDNHJlSHdWcVU1Qy1haTRERjIyUk9Kb015b3ZaQUNvb2liSGkxUjdpR1NwamRJTlZ5NGg4b2hwbEhzMWVQTkRlOWNhbmF6THZOWnpudEVZa1IyMmZmY0NCUE0zcFJHNA?oc=5",
+       "kaynak": "Yahoo Finance",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-21T18:28:51+00:00",
+       "tarih": "2026-09-21",
+       "baslik": "Meta's Muse AI agent downloads are surging. Here's how it compares to ChatGPT, Grok and Claude",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB2MWNvQml5ZUQzbFhpU1lMenVhSHNTN2pPWDd3cHhSdTZ0enFlaXdEWThSODNpX0RlUno4TFJXSXlYVmwyX3J5bFNVdXZ4b3dFMHloR3AzeDZaMmxDQjd5SXhNQUZNM2xoak9NSWlEUG0yZU4xLW9TcVZqSC1KVzTSAYQBQVVfeXFMUDhTVzJFMThuYm0tUlNDTGFzeTdiTkJ0MWtjbkpLVVpuM3UtUVl0RDlmQmh5R08wZ3B0R0tGTjNuYmpPUlZuTWJuNUF4Z0F3NU0tbVN2X1k3bVh0aklkSkJVX08yaGt1NC0wSnpRd0hsMEwtQm5nRlYxMEU0eWlFenRfVVpI?oc=5",
+       "kaynak": "CNBC",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-21T18:26:13+00:00",
+       "tarih": "2026-09-21",
+       "baslik": "Meta Stock Jumps as Wells Fargo Underwrites the AI Story",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOR25yWUJKX0VOYmJYTDlGQ1cwMXVoY0pfTVdNZEthY3hISGlmSHJLUTZEYVVMdEJUSHJEMXUyUWh6Y2ZzbzE2ZFhEak9CT1JaeXBqTXFpbDhYRzhidGh6OFYxcHNscVFjQmJFQm9udWhuUWtRRFc3bnhaWTg1bUEyRGNDMjZvQ1QzeGJrMGszbmlRdHNFM2lV?oc=5",
+       "kaynak": "Yahoo Finance",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-21T16:45:35+00:00",
+       "tarih": "2026-09-21",
+       "baslik": "We Think Meta Could Keep Soaring Higher and Wells Fargo Agrees",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdVVqMlowd0NaNVpxZHBBNld0Nkh4Mm1yZldJcERVMVlpXzlpb0piWlkzRHdoMUU4dGlQZ3E3MEg3S3dNYnFudUJETGJQYkx3UHBaOXI0aWtOb1FZZ1dTSzlxOFZxdTN1TjdvNnB1YV9CeEhNdnFYV3VuUmtEVEctZE1nUGw1RFl2Q2xoQzZsRm1EeFhjdkMzZTdB?oc=5",
+       "kaynak": "Yahoo Finance",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-21T15:50:26+00:00",
+       "tarih": "2026-09-21",
+       "baslik": "Why Meta Platforms Stock Skyrocketed Today",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZVZFZURBMUF1MDRySGpfMUFaM0I4Ynk5T3JKOG1FdTdxSHI5dUU5YURzUG9RekEtUWdkQS00dEl3bkZUMWZodWhQd1liREtNcE1xQWRpcFpVcWwtMUVWQWVRT3JiemxyUjJ3SUdDS2FoQUNlRkx5MmFYeGtGdmdIRmNxZXRjZlA0RDh4cEtVVXMxZVU0b25NdXY0Sll0REtZcm1n?oc=5",
+       "kaynak": "Yahoo Finance",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-21T14:58:06+00:00",
+       "tarih": "2026-09-21",
+       "baslik": "Meta Stock Is Surging: What's Happening Today? - Meta Platforms (NASDAQ:META)",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNa2wtRW5PV3dNTnM5YzhpemwySWwzekVXVGYyb1hhRHozWXd4aHFwU0tLcUF1ZVFkR1c2YnhiUVpIT2oxcExTekM0UzFkRzM1TUxHUDF5S3NrRFppTW1iNHRvSjhGcHBoUHFmRFlzNm5HNndMN0k1cTl3YTBRUE01dkdXdlBCQmhUZmtVb0xOZjZKNGx4S1J4UVhfeTdUdjJCNHZSbGJSNA?oc=5",
+       "kaynak": "Benzinga",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-21T13:49:40+00:00",
+       "tarih": "2026-09-21",
+       "baslik": "Why is Meta Platforms stock surging today?",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxON3YwdEZaVmRpM3U5cGlQNnYwSkU3R0VKS3NDbkV3aXZoTGRrdEwtaUpIZFZFQV9jeElzUUdNOEl6akVkUl9SbkVvYXRSSVdMbDk4aEdHX1ZJNHBCNDRZaUJHb3F6N2JqcGVxUXdGdGotS1FGMnphdXNBQ3RtdjRRTXRyQnhOYlllWGExNlBUN1I3NTRmalA1bWg3THFnNGFwdHZkUnFR?oc=5",
+       "kaynak": "Investing.com",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-21T11:16:50+00:00",
+       "tarih": "2026-09-21",
+       "baslik": "Wells Fargo raises Meta stock price target to $796 on AI progress",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMURpaHZWcHI3YVpiUTNhc3M0RVg3bU1QUFlVUFp2enQ4RUhVVVNMOEhaZWNNQVNWdzRxaDI4eVZqZVRyNGhOaDJYSG43OHdKNHh5NWtGbGE3b3p1b0N0a0tXaFF2Uklvc3ZyU3VZR3FnSnlEVk82cjVmWGtpX0xhRUZ1SEJKbGNoREVfQ0xDRVBScjlIRTlTVDJjbldSQzJlZGIxQXpsb3psRlRMWThFNHNCVFhkWXFzdDVuYXZmbklKUQ?oc=5",
+       "kaynak": "Investing.com",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-20T13:00:02+00:00",
+       "tarih": "2026-09-20",
+       "baslik": "Meta’s New AI Agent Could Be the Missing Piece for META Stock",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOamlsdVRyMnFnak1iWjZhZnA2X0p4M0NnUmdPaXNWQ0duS1ljOU5VbVNnSmVacll3NVdMX2lwYVhvYWNBY3Fxb2FhM1lHemVMR1RVcXV6V184MjFPY0lxSVhTMENCYkV6blNoR1hqeUx6VUNpOGEyTHFRakNJWURGMUhSUGJUejJ5YXVRVENiTXJ6V3pES3c?oc=5",
+       "kaynak": "Yahoo Finance",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-20T11:15:02+00:00",
+       "tarih": "2026-09-20",
+       "baslik": "Dear Meta Platforms Stock Fans, Mark Your Calendars for Sept. 23",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNS3haZXFqdkhza2tOT3M1azc5bkFqQTdyTDlCMzVHOEdKQ0N5c3NkV0sydzRMcGJkQnhBSXpPTWdSSzZYTF9nVTJDcFYyZXN3T0lxT1dQbUdZYXBjdnVxaXllT0pDTmZTY25BaEdQSHVUZmJnTXFZa1c4emlkV3hQMVZldlg0QUJwRG5BdjExSnRpQjNUQ2prYVZ3?oc=5",
+       "kaynak": "Yahoo Finance",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-19T13:17:00+00:00",
+       "tarih": "2026-09-19",
+       "baslik": "Meta stock delivers a bold case for a $900 target",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSGg0Zy1hY2lRT2cwZUVPOWFLVDJja0N0SXZJNkY5a2Z2UmR1V1hoNmd3ZEVyTjdxNW5pdmtPSmhWUnd1UVJsWTVNWFM5NVViOGl1LTJnZXhFQTFHQ2FEejJsNTZyNlYtNGU2dDhfNlNPTDlJS1F6RkxRUmdQbElRVUJR?oc=5",
+       "kaynak": "thestreet.com",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-19T12:21:39+00:00",
+       "tarih": "2026-09-19",
+       "baslik": "Meta Stock Could Hit $800 This Year -- And It All Begins on Sept. 23",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNF9rcEZ2cHhjUXA4cVBXWGN4akN1eWNSNFM2UDBDOUd3NmhlcmVZbXJvWW16TjVmS2p5eW5wMXFmWmVIdDlSNmFlazR2ZUxtSWtMX3poLWRlaUs5TzNVQkZEVE5MRFNDOVljVmxrdkw0S2lpdG1UcWMxMzV6N2ZlSFBLdTlTWlI3dnJ6OHRsSlBCV3N3QjBSSDN5UFdOWGR2cmVKMHdKWFRTRUU?oc=5",
+       "kaynak": "barchart.com",
+       "saglayici": "Google News RSS"
+      }
+     ],
+     "sec_bildirimleri": []
+    }
+   ],
+   "sec_bildirimleri": [],
+   "basliklar": [
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "shattered.io",
+     "baslik": "Meta Stock Hits $779.82 High as Muse AI Ships",
+     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB3YXRaWVlfbGh6QUp5bU5DX3JDR2xpeGt4Y2FZc0JLWjVmak1WQVBfQWh0eXZ0dXVycl84LTFfdEpyZ2lucjJnQ0daMmQwR3phVFlta0IxNEI4VDNlNExWWF9EQ3RTOWw3?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo Finance",
+     "baslik": "Meta’s Loudest AI Bull Just Cut His Own Stock Exposure and It Is Not Because of AI",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTVpLeEtPYlU5c2k1VGEzenhFdVdVeEdyWHdELUE2Q0hzS1hseVNDT2YxSjNRWGNzWS1vQUhSSFhxclVGT1pJN1cxckZhOC1KaEVKZW05eWVONGJpRTVrZXdXaXNTY0hKRHJZRHp6eEdPWmdJenJRMkRnUWxfcUZtZm9pdXRhUjQ3THdjeFN3VHRHaU5P?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Forbes",
+     "baslik": "Mark Zuckerberg Loses $9 Billion In A Day As Goldman Sachs Pours Cold Water On Meta Stock Rally",
+     "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQenBiZUZDOHNVeDFmLTZQd2lUVEh2S25qWnkwY3BlTzdFYUNUT0c0N21tZUFwTUZvVU5fcGFvcGM1OEZxNUtnM3dFUWtrRDdPbUZRRXUwVXFoYnBIZUdaU3A3bVM0U0dGeWM2ZjJEOUctaHhjbnFtVmJ1cmhJYm1NY0thdl9xR1l4QTlmVUNMdG5lMHo2NkRsVEpESFdBaDJ2Yk1MeTVDbFJ2UFpmREhjTWhpV1RQejI0UERpS2FxUlBzcTl6aWFsOERYeEpzeWNZRXIwSkxTbjhKblZKQ05HMzJR?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "The Motley Fool",
+     "baslik": "Is Meta the Best Magnificent Seven Stock to Buy After Its AI Agent Topped the App Store?",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxObVQ5ellVQlMtbWtjN1I5UE9UMThjYVY2U1JyczRQN3JBb3R6MmRsdWRmMEVjX19IOVhmbEQwaFlIUzI5cUtqUFJVUW44ZkZwUGlMRWRzQnY4UGc0eVhEZC1lY29wNk0teTI5b01DSEtvblhoZV8zYnFkVFdHSFN2YU1JYlFoTFFpbHEwTG9GWlNkVHM2c1Jsb0gwSjEybElLNnU5QUJUdjZ0cXpaenpxdGRubk0tVldvcTI0TXRYUC11TVg5al9vY0F3?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "CNBC",
+     "baslik": "Meta's 'powerful breakout' sets up a unique trading strategy, says Mike Khouw",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZlNDbm54a1ZDTTRLWWczUzhZRjdMdDRMV1YwWXNleU5KSF9pbGhKTDJmTFRsVzNEZlNIXzdrWkFneUpUNHJVVWI3QVZtU3ZMcFU5d3hXZDJFOHYwaFlvNEJoYXFzS2JFSGZfNHVjRXZOMmVSNUJYYV91X1hWcWNRY01SZktIRlZsMmgzSHJtdU9VNnoyR2FfWXctYk9UYUc0LWo5YjBka25qRHY2MjFLStIBtgFBVV95cUxPUTJIVGo1cnM0UmdWbEd4RF9CV0NyekFtUmgxYTZUSjA0TmlySnFJTW41MnRodjF0VU1zQlo1Zk8yWnpwS3g4b0haUlptTHlBcHBzdU5JcXZ2aWk2bWN2bVIyMXNoMUpTUUdJQXpjTWUtbzh4emxxOUVsMlU0TElSQWpHTG1qUFlDNFZUNk55VGJJdVdqaDVVcUltN2R2OVhnYjQ3dHFFNmxWUkF4RzdGUEVEUGlndw?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo Finance",
+     "baslik": "As Meta Platforms Launches New VR Glasses, This Is How You Should Play META Stock",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbkotbWdaV2I0YnFUaFFJcy1NbWFOc0d2amFDejVpMF9RanN3Rk1YNG1PZjUtbEhHbENhV0JJbmlHaG1FR0JBSnBCdG9YY2lKWjh3SjNIZ0RNcnhDd2pSeVZXbmx3dGdwZC1ZTVhDaDJwcl9RLUNFUi14bHJCR2RrSk9DVTUzLXNwdURXc1RUNHlkankwNFFGcWdiTVF0S2FB?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Barron's",
+     "baslik": "Meta Stock Rally: Buy, Sell, or Hold? What to Do With Shares Now.",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOSUtNSk9lS0w0Z3BuYVRlOE5iSUVaZmVydE1mY3Y1MnhJVkdyLUtJNTRiM0xpaTZ0N1pPSUhVdWtLS2JxdnV6UzhzR0R4QVVWSHF4bDl1cF9hakFsOFhBLTd3Sm5DQlJzdFNYUi1FS0Ywck5QWXp5LURaNEQ0dU5LYQ?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Barron's",
+     "baslik": "Why Meta Stock Could Spike if It Crosses This Price Target",
+     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE54VlAwN3FqWkVGbXROblBWNmticzEyU2FxdW9JTGRZY1VwU093aHpNMFVWczhRMG9UQkVocU9lNzE3NHZCWnQ5NmRYZm9yQ2hPeG9DWEVsclkyMXN1YjlsTDFTMENCMm5Jd3pEQW03SEM?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "The Motley Fool",
+     "baslik": "Why Meta Platforms Stock Reversed Today",
+     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPTVdpVXdMbXBGYjdpRndOUXdfNUtXa0t2UHQ3QmtfVU9YaWtRMmlUNGlWLUFMbjJnc1YwS3N1OHFGaFJPaEJCekJuMllXZ3FrWGt3SnFCbDRWLUdGbkRILXVrTW5iQkl1ekxic25fblp3MUVWN0lrWkd5bExaXzVEaHpwS1VMNV9lRUE?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo Finance",
+     "baslik": "This Meta stock stat doesn't make sense after the Muse mic drop",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSFdHdTRUcEY3Q1I2enE0TWo2dG1OM1prV3RkVTcxSVVZMFpxVUtieEFZMjg4UkhKazdhYmRRVDdtUy1wUDE1eVhrZ216cDJHS0R0eWVXWE9fQW9GSExPaXFHRTVYdkZ6dHJlSWpZUUNqUWZHM0NZd2NVMWVMUktxdE02T0dDMElPOGMzWWxNY3pyZEV2RnpzOUlkS0lJRTluTGVsM0FnT1Vfdlg1RW9yNkhVMWFvQXpqbVZ1VDVBaw?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Investing.com",
+     "baslik": "Why is Meta Platforms stock sliding today?",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUXpGMW15Y09qWWhhdWJ2Slc2VTFjbW9IZVBBNlJGYlhEZ0NvX1g3bEhUY0NIT0FjMUswTkJXdUd3NGZIOHJ1eWkwaUFoN1VtSVdfcGpRQlE3OTMwSl8yemVBN19fSHZSVDRmaHNsdDB2Q1V0MG9FN3BuQms4RjFFMHZpY3lOamk5blVxRUZBQjNTT1BCTWhJU1c5MS1CdHc3NlQxWjV3?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo Finance",
+     "baslik": "'Meta is having its moment' as stock's monster rally vindicates the bulls: Chart of the Day",
+     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxORlI5ZGR4VXY2UU41TmtZeVh1dHJlTzZTWU5yRmRIc3RJUUl6WjFHT05qWDA4UVlyRlZvcDhsc2RZa0RxaWtyZXZCcUsxZVZxblZsbDRHZThxVGstS0hES1U3LWNxOWNYUTNXa0syQ21heXNNQjh3aGo2MU56V016Nmh4M3plTTNPVldoQXRIOGtIRHRnc0NmUzFOSnR5UDljVmpFWUNTZXlfR1FvYWwtOUx6ZGhMMU9IemxjekdhN0tlYkJENXk4djRQb1IyNUNyNDdxVjBkdy0wY3pr?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo Finance",
+     "baslik": "What Meta's Muse event reveals about Mark Zuckerberg's mindset right now",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOekQ3MkhZalFTTmI0eGRUSzkycllVc0w5d0hYSWNIdk5sMG40ZklaLVFBNDhGbFdJaHhMRmhudG1tU3E0b1pQNnN2S3RkdXdjaFdKSmdiLTFXN0pGaFlsbmI4MjVoSHBHZG5CcU5pLUk2dmxkM3VvU3lSZXVNc1Z6NjdiS0FucDVVdkwyam1SN1RBZXJqSF9WTlBtOEU4WWVjTWlvNF9UcHZTWnI0WFJIRWhsbjZGVE1kd21ucldYcWNvM3lQMGJHZ2pn?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "TradingKey",
+     "baslik": "Meta Platforms Inc Stock (META) Moved Down by 3.14% on Sep 25: Facts Behind the Movement",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNeDBhbzZRbU9SbkdaRjA1NVNyY0M0NTFuMHY4YzhySl9BbkVEejNYQmZUckZfYVZwY1VnejVnM2U2SWdKVWFfcnRtcGFlLTdVQmZuSVNESWRXdzVpY0lISmE0eHZWNGZDUmJkMzRCZllOZzJoT1JhT1B3a1M2WGFoTExnbmNkbWlQQkFj?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Investor's Business Daily",
+     "baslik": "Meta's Muse Shakes Up The AI Battle. Here's What Investors Should Know.",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOdGhSYW9nSjJicHpKWk44bjlkYVZ6bl9lNkVlYTk3NmhCSGQ4SXJSTEUtNlcyQmpSelpzQUpubmVpRW1rSFRaS3NuSnZrYkxVa0dmQ08zUmxKRlZUcVYwLWoxUDk1VTJwVTRLQThzZVVhckpvQzRvTzRseWlTRW5TTlNLUQ?oc=5"
+    }
+   ],
+   "bilanco": {
+    "son_ceyrek": null,
+    "kirmizi": 0,
+    "dikkat": 0,
+    "olumlu": 0,
+    "son_dosya": null,
+    "xbrl_beklemede": null
+   },
+   "sinyaller": []
+  },
+  {
+   "ticker": "NOW",
+   "ad": "ServiceNow",
+   "donem": [
+    "2026-09-19",
+    "2026-09-25"
+   ],
+   "fiyat": {
+    "son": 137.78,
+    "tarih": "2026-09-24",
+    "haftalik": -0.5,
+    "aylik": 8.49,
+    "zirveden": -27.2,
+    "zirve_52h": 189.258,
+    "zirve_tarih": "2025-10-27",
+    "kaynak": "Nasdaq.com (historical API)"
+   },
+   "benchmark_haftalik": {
+    "QQQ": 3.37,
+    "IGV": 1.3
+   },
+   "tez": {
+    "genel": "veri_yok",
+    "onay": "taslak",
+    "sutunlar": [
+     {
+      "id": "buyume",
+      "ad": "Gelir büyümesi",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": "%",
+      "tip": "metrik"
+     },
+     {
+      "id": "gorunurluk",
+      "ad": "Sözleşmeli gelir birikimi (RPO)",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": "%",
+      "tip": "metrik"
+     },
+     {
+      "id": "nakit",
+      "ad": "Serbest nakit akışı marjı",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": "%",
+      "tip": "metrik"
+     },
+     {
+      "id": "sbc",
+      "ad": "SBC maliyeti",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": "%",
+      "tip": "metrik"
+     },
+     {
+      "id": "ai_ve_yenileme",
+      "ad": "AI monetizasyonu ve müşteri tutma",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": null,
+      "tip": "yorum"
+     }
+    ],
+    "cikis_tetiklenen": []
+   },
+   "kural": {
+    "durum": "tetiklendi_kosul_bilinmiyor",
+    "mesaj": "Zirveden %-27.2 düşüş: -%25 kademesi tetiklendi. Tez verisi yok — 'tez sağlam' koşulu doğrulanamıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et.",
+    "tetiklenen": {
+     "dusus": 25,
+     "not": "DCA 2x; RPO ve SBC sütunlarını kontrol et."
+    },
+    "zirveden_uzaklik": -27.2,
+    "dusus_kaynagi": "sirkete_ozel",
+    "dusus_kaynagi_aciklama": "Hisse, tüm benchmark'lardan en az 10 puan daha fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+    "kosul_saglaniyor": null
+   },
+   "insider": {
+    "hafta_islemleri": [],
+    "hafta_kodlari": {},
+    "uyarilar": [],
+    "kumelenmis_satislar": [],
+    "ozet_90g": null
+   },
+   "buyuk_hareketler": [],
+   "sec_bildirimleri": [],
+   "basliklar": [
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo Finance",
+     "baslik": "What Needs To Be True To Buy Twist Bioscience Stock Now?",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNcjYtUWZQVUx3cnJPNlAxNVVFSkpBdlhhOGFrR3lSWHdZQVFLX0x6TmpmVHpIUTVDUXExQ2lSWDZnY0NfRENRelEzWGlPTlB2MkhkNTVoOUZQQXNWOVo2blo1OVVOWlJpanlxVXFwQUlES0R5MkQ3RVUtX25vLVZ6QkI0TEZlVW5mTXY0U2pjYzl5TWhFTnJheVh0Y3E?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "MarketWatch",
+     "baslik": "Microsoft’s stock has roared back to life, closing at its highest level of the year",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOeno5SkZJZ0c4YjA0cmY0S1NUY253azVmWldZSmlpUjVkcUhsZWFZNXVqU0JuRE1OcW1XekFKaDF5RDNBTDZJa0R2cm1KSFNQM25QajQyUHdON3R0ZWtsOXo4SEFuTG9XU3FUWkNvYjhlb21CakVlSE1VZXZnNkJQVVhBRnNxV0luNDBnUjRiQ0JLRUFEX1lGeU1vZ3dWajg1bHdrMmluM25ESEZ5QVp0X0U2WXlMUWU1Y2NWbFQ0aWZzR3RVTnBWLXR4M2pjc0FU?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo Finance",
+     "baslik": "Micron vs. NVIDIA: 1 AI Stock to Buy Now and 1 to Watch",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNHZMLXJwT2RDUkh5bnZPNnpsUG41Qmp0X3dONHF1a1dRMW9vdFNKX3VkaEgwVHZqank5bmRfODlSSFpLbkZDemo3M2pQSzBNVy02dUVNdzF5WVVtWno3RXM4N0R3bXlPVjlUeE9NZzdtUkVLNDFsTVVnTm5pZW5wb0p0VUhXbk5Da2g2b1FNcw?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo Finance",
+     "baslik": "ROCK or AGX: Which Is the Better Value Stock Right Now?",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVXNiWXdaMHRmdThSdE9JRTNFbVBMZjdOX0dNdmIxdzVrY3JCWUx1di1xZGgzZGEtSEpGV2hDRmpYR2lTcnBhcFpxMmdGa3BtYkl4OHJNR1kzemNrQlhycC1fV1ZIVVlxLXhXNkZmTkswMjRBQnJIRGNzdFZNWUpSaktMcTdkMGN1WDN0cUZtUFFYQktIdUE0?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo Finance",
+     "baslik": "AVNT or AIQUY: Which Is the Better Value Stock Right Now?",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNY2ZXMmd1UzBqc2piUFAwbnFaS2FzWFBxcjdudDdiUFdjdkUtNERKbVF4c2JKeGlJc1ZMVUV0ZXRkb0lEOVZUUWdtNHQ2VGkzOGVoZGZNdzQ4T3ZRNGRTczBoNTB0N3BLSGtHTnBVbkVRM29CcEpZQkd3b1lOT25INzdleV8yUG5ZdmliSGQ5OEhYdDRXdTE0ekV3?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo! Finance Canada",
+     "baslik": "Coursera vs. Chegg: Which EdTech Stock is the Better Buy Now?",
+     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZVdiVkJ5TmQydzVjUkNRZXdMeUpvOTNKRmtjMGxnczkwUDRpVmw0V0RmMzZhQkN2aGY0MEVRNVlKWDZCQk44RUVsTGRuemRlcFZhUkVBVXQ1b21sU2wxQVAtTFZNcURuZ3ZDREVYN3pnNHVPQlpOMm02ekZpRFhNeFpzWnZOZw?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo Finance",
+     "baslik": "Is Trending Stock Uber Technologies, Inc. (UBER) a Buy Now?",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPNDZaemtPVEQ4aFlPR1YwWk5xYWZ2d1M5alNHbGxCRmg5LVBsODViLXZOVmtBZGZxb2F0Y2xkR3dOeW1zZkNicWxpTHN3MnNwbzRyUkJvcS0wUmZscDBiSjIyYVlCQjhBTkxLS1lyMl9iYV9YMUNrUTVlVmxlVnI2cDZ6QUJLUFpjUXFWc3M5bF9pSDlVV2hYVHN3YVpqdXp1WkRR?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo Finance",
+     "baslik": "Is Trending Stock SoundHound AI, Inc. (SOUN) a Buy Now?",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNbWtVc25TNk5oYV9zOEhYdjlYOW5DTG1tVnI5VExSdFNEZW40MF9KWkpRdDhSb2VvNlNBc3dKY0g4M2xaLXFMWjEyMDRqSHJnb2pJVkdVMnB3VW5yUDJnLUdBck5VdGhiQndsN0tYVDZiYTNfTzVNM3AzajBZNzVpYTVLWWlsc0dkVVE5SGI0cmRkUW53dmpvSHZvNHpwZw?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo Finance UK",
+     "baslik": "Is Trending Stock Tesla, Inc. (TSLA) a Buy Now?",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbDRLY2lZQ1pLbDluZWtwbTNsWVNYVUlNdjdYYzZWeHRabVE5QU5CbzVqR0NsZ3Ricm1LWXYwTUxhcldPMmhvSTdBdUc0S0k4LW9qeGdKR29LSEpZSXZOQlRKU0NOblNCQkhDWEctemxxRDQwb1R4aWp0WnhVdjUyaGRTYzE?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "The Motley Fool",
+     "baslik": "Is SpaceX Stock a Buy, Sell, or Hold Right Now? Here's What I'm Doing.",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQeWE0WmNNYUM5NHpOSlZLaDREZ2lqLXB2XzhkUW0tSEplY1pUNWdMamhlRmlGOGpEWW1pb2ZUdVlmU2dZSjVBaHB0WHJzSlV0LUo1Y3oxSTQzY09tYTY1Zm9CbVJoMXBKckNrU1hNRUpqX1BRa1NKWnVYT2o2MllJaFlFY1JnaU9CT0RneVpuSWhHZ3RIc3pZQw?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "The Motley Fool",
+     "baslik": "Is TJX Stock an Undervalued Stock to Buy Right Now?",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdTRDZEN1eUtiRWVGSVZGNTN4c05SUkxOSkhCRnN0VzJEV2xKTkJaZDdGTjJiZDdBUGtYX1dlWldZYjlQZTZQb05lRHd6Vll0T1FpbGlnaVBPRWhIUXdFMkNvTGlIamQ2QnBXOThhbzh0TlN0b2FZX1BDeF9FV2ZBei1DelU3MVZQMlBkNXRJc0xHeWpXMW9mNA?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Trefis",
+     "baslik": "Should You Sell Your Coeur Mining Stock Now?",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNnoxc3hGLWswdl8wSWowLVM1aHFkaG9TdDZmcWJ3cFl4Wm9zQU9DcENKcnNEX3ljUFdoWXFCd29rZlZMWGEzV2M3amJEVmJ3V0txMjV5blBKaTE2UzVpc0xaZjY3ME9xdkRtMV9zYkZ0N1hGOFdSU0dWOGdYbkJDQjRDenQxcUxCVU5ydXdZSHEzbFRJUm51Sw?oc=5"
+    },
+    {
+     "tarih": "2026-09-24",
+     "kaynak": "MarketWatch",
+     "baslik": "The S&P 500’s newest tech stock is now its best performer",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPNHo2UktGV3kyRUxLeXFYVEVvREJESTJlQlpicU9nT3BVajg1WGFaMjNxOEJyM2gtYzhnNmNOT1FlZkdlUG03VGhiSVcwcXI4c1hOWnBUS3haYmhzQXVLOF9WeXprSzJQWi1OLThuUF96OEhHeEVrYlJnbUFFb2w2QTJOUkNxNGpxRkhDTm0tVkRQVm04V2pVMlU1OHlIaExT?oc=5"
+    },
+    {
+     "tarih": "2026-09-24",
+     "kaynak": "Yahoo Finance",
+     "baslik": "Broadcom's Latest Prediction Makes the Stock a No-Brainer Buy Right Now",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUkE1WUY5VjFNQWhJS0QxRnFUSEs2a2p1TkV6NFVJODVWVXJKOWlfWmdFQnJQVnNoUlJJY1FLVUI4bmtNang4cE1UcjNSNlhxSEdpbjVDSVQ0aEg1OGxrYjVkdEZKVUhpbXpyRGZuSURSYkpBMW9ELUo0cW1fcGE0UlJfbmdtYW9HSGRXTTM5OHQ1RjlVYWJmRlZtY0l6TjRNV0xqMmU4cw?oc=5"
+    },
+    {
+     "tarih": "2026-09-24",
+     "kaynak": "The Motley Fool",
+     "baslik": "Here's My Top Reason to Buy Amazon Stock Right Now",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNTTVGUFVjTEN3R2I0ODVXRmJMelljUGJKaE1mS3ozUEVITUJaWnJreHBWRkl2U0dZYmpFQl9LcEllMWtrbjc4bG5IbGllRkluU2cxaGJpc2UtUk44VXBGaUFUWW5QdFUxaG1qTnBhUThabTg5blNPWmpsbG5WTlZ6RVdkU0dNWFl1M1FqY1VISXZjdDg2VlhJ?oc=5"
+    }
+   ],
+   "bilanco": {
+    "son_ceyrek": null,
+    "kirmizi": 0,
+    "dikkat": 0,
+    "olumlu": 0,
+    "son_dosya": null,
+    "xbrl_beklemede": null
+   },
+   "sinyaller": [
+    {
+     "id": "2c3ab94e6812",
+     "tarih": "2026-09-25",
+     "ticker": "NOW",
+     "tur": "kural_kademe_tez_bilinmiyor",
+     "tur_adi": "Düşüş kademesi tetiklendi, tez verisi yok",
+     "yon": "notr",
+     "aciklama": "Zirveden %-27.2 — kademe -%25; Hisse, tüm benchmark'lardan en az 10 puan daha fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+     "fiyat": 137.78,
+     "fiyat_tarihi": "2026-09-24",
+     "qqq": 741.1,
+     "baslangic_kaydi": true,
+     "kayit_zamani": "2026-09-25T23:55:21+00:00"
+    }
+   ]
+  },
+  {
+   "ticker": "AAOI",
+   "ad": "Applied Optoelectronics",
+   "donem": [
+    "2026-09-19",
+    "2026-09-25"
+   ],
+   "fiyat": {
+    "son": 101.03,
+    "tarih": "2026-09-24",
+    "haftalik": 3.03,
+    "aylik": -10.71,
+    "zirveden": -54.72,
+    "zirve_52h": 223.1,
+    "zirve_tarih": "2026-05-13",
+    "kaynak": "Nasdaq.com (historical API)"
+   },
+   "benchmark_haftalik": {
+    "QQQ": 3.37,
+    "SMH": 7.12
+   },
+   "tez": {
+    "genel": "veri_yok",
+    "onay": "taslak",
+    "sutunlar": [
+     {
+      "id": "buyume",
+      "ad": "Gelir büyümesi",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": "%",
+      "tip": "metrik"
+     },
+     {
+      "id": "brut_marj",
+      "ad": "Brüt marj",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": "%",
+      "tip": "metrik"
+     },
+     {
+      "id": "faaliyet_kari",
+      "ad": "Faaliyetten kârlılığa geçiş",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": "%",
+      "tip": "metrik"
+     },
+     {
+      "id": "sulandirma",
+      "ad": "Sulandırma",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": "%",
+      "tip": "metrik"
+     },
+     {
+      "id": "stok",
+      "ad": "Stok ve talep uyumu",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": "puan",
+      "tip": "metrik"
+     },
+     {
+      "id": "musteri_kapasite",
+      "ad": "Müşteri yoğunlaşması ve kapasite",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": null,
+      "tip": "yorum"
+     }
+    ],
+    "cikis_tetiklenen": []
+   },
+   "kural": {
+    "durum": "tetiklendi_kosul_bilinmiyor",
+    "mesaj": "Zirveden %-54.72 düşüş: -%40 kademesi tetiklendi. Tez verisi yok — 'tez sağlam' koşulu doğrulanamıyor. Önceden yazdığın not: DCA 2x; nakit pisti ve sulandırmayı kontrol et.",
+    "tetiklenen": {
+     "dusus": 40,
+     "not": "DCA 2x; nakit pisti ve sulandırmayı kontrol et."
+    },
+    "zirveden_uzaklik": -54.72,
+    "dusus_kaynagi": "sirkete_ozel",
+    "dusus_kaynagi_aciklama": "Hisse, tüm benchmark'lardan en az 15 puan daha fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+    "kosul_saglaniyor": null
+   },
+   "insider": {
+    "hafta_islemleri": [],
+    "hafta_kodlari": {},
+    "uyarilar": [],
+    "kumelenmis_satislar": [],
+    "ozet_90g": null
+   },
+   "buyuk_hareketler": [
+    {
+     "tarih": "2026-09-23",
+     "claude": null,
+     "onceki_gun": "2026-09-22",
+     "hareket": -5.55,
+     "yon": "asagi",
+     "benchmark": {
+      "QQQ": -0.84,
+      "SMH": -1.0
+     },
+     "on_siniflama": "sirkete_ozel",
+     "on_siniflama_aciklama": "Hisse -5.6%, sektör/piyasa -1.0%: hareketin çoğu şirkete özel görünüyor.",
+     "basliklar": [
+      {
+       "zaman": "2026-09-23T18:58:24+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "How AAOG Works: The Mechanics of the Leverage Shares 2X Long AAOI Daily ETF",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxONVNlUjNnc3V3SlptUUpIWFA4MUlWeGoxTXdtVHhfdWVoMXJpM1lfVkg4X0hnYkdjNzNLUnpGcVdXOWpwQkNBUHFQallVNmNXWjh5V1lxYXBrd193eUhUM2ZmQnhFd3lvTlpCbWlBM2RjZVZCQ181N09pUHFmek82Zm9GZFI0SXAxbGxidml3c0hOZmw5bVh5blVBWUsxVG5DZU9uUWl0MWZzZDREM1E?oc=5",
+       "kaynak": "kalkine.ca",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-23T17:13:00+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "AAOI vs. Fabrinet: Which AI Data Center Stock Is the Better Buy?",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUW53WGw1R3hmSUxrQVRCempnd2NDejhtbEVjYkd2aGJvN2FQVTVPVlhoVTlpMlZ3amlxVi1GbXVqLXFQMU9PWF9Ba2ZkaDV5ZUwzVmtFVF9Da3FXYnhrRjVhbHk5Tkt0cExRcHJWN1RUSTNacUZtVUpvQW1OMkxUT3J0RzhncXJtQWh2djIwaXBhOFVNNWxKcWpkSGVWWFZ0LXpDbXhUWlpRY1MyU3U2d0ZTLWp0TDA?oc=5",
+       "kaynak": "TradingView",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-23T16:55:43+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "COHR, AAOI, LITE, POET: Photonic Stocks Join Google Capex-Fueled AI Rally",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQMUhQLWFKVW5SMWFBSUlxcXAtMDhWa0Rqb0J5Slh6aFM3aUhCOXFLSEJzUmZMaXhJYVQtWUtyOXg1ek9URm83Snl1SUd6aXptaUVtNDA2SGpMQWx1UUlFbWtWRmpQSWxPbzVLdzNQQnExc1pZUHltYXJNUllnRXZwSUZYRTdTUFFCZXVqTHh5UDhaYWl2WXIxUVJqVFJtYUJ6YWNSV0lLVnNOcTNIRVkzc1Q5QjBrVG80ZDlUUUlUMTBITzhZaHVWQ3JkTFpOZw?oc=5",
+       "kaynak": "Stocktwits",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-23T14:54:00+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "FN Rides on Surging Data Center Demand: Can It Outpace AAOI & LITE?",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdEVhRUNrRHFvYWlmT0N2blJhUzFpUksxT19jVWN6T2llNVNodmp0WXNoMzB0REgzQnc2UGczZ2tiRzZTcnJUaC13dFF0UGRNRTdSZjM1Y1plako5SFFzTTVJLWNTUGhNQ0hpSWJydzN2YzNZaGRBenRPT3VZcU9CMTJIOC1laHBab3lqcjRSR2FHamhGMTlr?oc=5",
+       "kaynak": "Yahoo Finance",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-23T10:03:57+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "AAOI Oct 2026 110.000 call (AAOI261030C00110000) Interactive Stock Chart - Yahoo Finance",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1oQkI4Mzc1RUJsSzgwMTNiVi1wbW5hTXB0TVg3X3duTDU3OE02Vm5ab2k2RXg0T1ZzTXpId2tkY3BfbE96dGM5N1ctM3VHUmxwSUxLdWJIejN4Q3k2WndYT0t3TXB4c1o5QldrTktB?oc=5",
+       "kaynak": "Yahoo! Finance Canada",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-23T09:48:32+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "Applied Optoelectronics Tanks as Insider Sales Rattle Investors",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZERtRUhSUFVSa2lDbnZ2d2o1aW1VNGNENS1CbU8xMllmVlY5cXNDUTN5TFl5X3VNeWtGRDRHRmNuOU1DbUtqVDl1NC1DMXE1dkNINlNubWxVM2k1RmhMbFd1SEtvMmJUMEwxQ2dJVG8tdUxIMWF1LWZYeGgtdFR2WTM2Vl9VVXR6UU9jaTVvWFItQ1ZITHpYN2I1S0t0VXd1Nk1Ucg?oc=5",
+       "kaynak": "TipRanks",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-23T09:36:05+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "How Investors May Respond To Applied Optoelectronics Stock Early Product Orders",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPUldvNHNPcUhzQ0N4ZTFnd0ZIOFNwUnc5THNuRGREaXd5alFBTUtYTkJRYklJc3dCblZmQk1QZ2Z5YmZkbUhYa1YxSDk1b2swdEdlOTlrUkR0WGtPOUhMWENYRElaRXVZMFdIS3p1Vk43b0xHR1BjdWlCR2lCQktDblBzVF9fMmpySWVaY3RpR1ZBSTc3Z0FKdm5SN0h5QnpESFVyVExPVFlxUHI3cjdFbVRRTkRNV1pXRkJkYjI0T3gxZ3lXcXROaGJEbXdMbDJXNkhMbtIB2gFBVV95cUxOQ0tYLUNNY2Q1cVRkX1lCNEtaRjVRYWxhNk5mYmlLMW5LcE1uWFJBbm5fbXJWVkFVTUpocDk5bG8zZjN3QWc1clJwenYwRDd3cXNycm9zLTJaZ19hT1lmMTI1akNZSGJaeXhaTnlZVm44cC0zX0NTZGJfU3VnV0JrbndpQmt6YU9KM3ZnMVZKa1M4R3VvWjJnS3ppWlc2bTN2dVp6VkxWZ01DT2JSbGYtYW5kSFhkYXVIX0hKQWg2djBMa2dJdXFZUmdhSEhGVlQ4LXZxVU9VNlQ4UQ?oc=5",
+       "kaynak": "simplywall.st",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-23T07:07:32+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "Bank of America Corp DE Makes New Investment in Applied Optoelectronics, Inc. $AAOI",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQRjBTYm1OaWlMREtTRzV5dTZTaWNPaHh4am9DOHhMVGZtaG5Mdjk4RXRpM08tTTVRc1pmTGpLYmQ5XzRjbkhTS0RYOFh0ZHRXYm9DNTFXQm1XTU9zdzFfZjhlUDQyWWlQQkNid2lOZXhnUzFDT3I4U1Y2bUxRX3VFNTRsYlRmQ3Q1Q3B2MjBvdy13R0FhY2ZTbUYxdkNJOW5ieTB0VkNyVEMwaWJvbzBkWXRHajF4dUFtRGJmVmZfZjRfLXRLVFdxWDBkVFVoM0s5djZGeUhQWW4?oc=5",
+       "kaynak": "MarketBeat",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-23T03:55:32+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "AAOI Nov 2026 70.000 call (AAOI261120C00070000) Stock Price, News, Quote & History",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE14ei1oN2pDdjlhQVVxbXUwLUktQjFNT2dhbFpUSHR3clhOdl90eEMxODR6OWIyQmhxR1R3NFF3VzlacGlDd09fM3oxOXF5WjE5eTV3RjE5bmpDTWtEcDVtQWtZektVdw?oc=5",
+       "kaynak": "Yahoo! Finance Canada",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-22T21:21:16+00:00",
+       "tarih": "2026-09-22",
+       "baslik": "Applied Optoelectronics, Inc. (AAOI) Stock Price, News, Quote & History",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB3VDZRSXJtMU1ncjRFazh3dDU3bkpjdHdHRTI4MmRqUkpmREdCQWpOcmNOOWk0WUdfWjhMcDFybnR2THFGc1J0aW13VDFYY050a0E?oc=5",
+       "kaynak": "Yahoo! Finance Canada",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-22T03:39:21+00:00",
+       "tarih": "2026-09-22",
+       "baslik": "AAOI Oct 2026 102.000 call (AAOI261030C00102000) Stock Historical Prices & Data - Yahoo Finance",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBySWRrWEE3X244YXY1c1hTelVQbHdjSUUyZC1YdGdUWk5NS3dLcGRoZWJIb05IN0k0ZFlwTk1fN0NNSWQ5T2xDT2I1ZzlBRVJhLTZsaFpyMF83T0ttWXNSeHBsU3VlYjlyVGhBU1V5LUE?oc=5",
+       "kaynak": "Yahoo! Finance Canada",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-22T03:30:46+00:00",
+       "tarih": "2026-09-22",
+       "baslik": "AAOI Oct 2026 101.000 call (AAOI261009C00101000) Interactive Stock Chart",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9KMWxoU2J0RmhscWYycjJCSzZfdVBMdUhabTYxWG9oLVMzODM3cW1ZMXk1Uno5UmJoUkdjMWwyNzRLUjVkWVVJQ3RxajQ4WklNNWdrTjlJRjFrdUViWmc1cThSVWRmLU9kUm1pSmp3?oc=5",
+       "kaynak": "Yahoo! Finance Canada",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-22T02:51:33+00:00",
+       "tarih": "2026-09-22",
+       "baslik": "AAOI Oct 2026 165.000 call (AAOI261009C00165000) Interactive Stock Chart",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE80S3l3WmVidWdJWWdkTVBDX2hUNjhnNWl4aU9rRkN0dHpqc0NOQ0dtMktwQ2FFaEh1eWhZdUJiRkpKdXk0QTJXYjBFTGRVOXU1Zk0yc1ZPSUc1MHhDd21jcktHVGhDc3IzN0lnSHVB?oc=5",
+       "kaynak": "Yahoo! Finance Canada",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-22T01:50:34+00:00",
+       "tarih": "2026-09-22",
+       "baslik": "AAOI Nov 2026 135.000 call (AAOI261120C00135000) Interactive Stock Chart - Yahoo Finance",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5BWFNFSXoxVFBlNEdyb0dNMVRxNC1OZHkxQThIRmJCNzRFWVZHUG5hN2Ntd00tRHdhYUhWSzduSmFiT2VwTnpkenRmN3E0LVlSSzVIRWVLNmpETi1GSzRTTXJvZEVRTF9iUE5zVVhB?oc=5",
+       "kaynak": "Yahoo! Finance Canada",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-22T00:22:16+00:00",
+       "tarih": "2026-09-22",
+       "baslik": "Applied Optoelectronics Tokenized bStocks USD (AAOIB-USD) latest stock news and headlines – Yahoo Finance",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Ga0VYZWV2Rmt5TTV5UDM5M0lUM1ZGaU5vU0NEZ2gxSXE5QlVxMmdUMTM2RGFvLTYwZm5TblY0eU1ZNkllWHAxMzJ6ZlZ3Wlk2VVQ1TWhON01PMHJQQ3Mw?oc=5",
+       "kaynak": "Yahoo Finance Singapore",
+       "saglayici": "Google News RSS"
+      }
+     ],
+     "sec_bildirimleri": []
+    }
+   ],
+   "sec_bildirimleri": [],
+   "basliklar": [
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Stocktwits",
+     "baslik": "AAOI To Boost Optical Transceivers Production For Data Centers – Retail Sees Firm Deeply Positioning Itself In AI Infrastructure Supply Chain",
+     "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxPYXZjX0NTVnVhZTlGMWlJTlpkaFVmaWV5UlYyX1djNEhucXBkZWpvMC1yM25VbXRwa1ItNDE2bUxRRk1mQlQ0WXhUSDdqS2RiSG50clNBc2I0VTBxSlNWYWpaRUtLNHNNRnh6TWM1d0dsb3o4cXlVcHQ1YVNuTWpzbmkzMTJZSmVXUVhFbGh4ZXM0N1IzQkZ2SGEwNE9ucjNFa1E0QzNTMTEzdmlHT0Q0RS1xckVRZGpPV3JOdTdDcllTV2tBNHFOWVFIeUF6MFNmWE01bkxBYV9iUzY0WmZOU1BncXc1VHh4VDdVNm1STm9NS0k0WUhYY196ZXZXZG5tUUJMUGVFMFlENFFjdlp1UEFSTjYtQmFRa1I1MVhlblRCODdWaVFvWmlfYw?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Stocktwits",
+     "baslik": "AAOI Stock Eyes Ninth Straight Gain Amid Data Center Boom, Retail Frenzy Builds",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPNDdTTk1lazh0b0kxZk12OW5NdWZReHpfSUIwTUFKS2tJQWdjRFhGblo5b2xUV1hNMzNqSlNWSExDUkFDNVh0TVJpeWVwOWl4SUEwMlkyMlRONUVqeVoycG0wbG9ZTmFYOFVlRWdmUGxnOGpVazl2dWhhclRhZWxoS2VpekVTVXZNWDNWWmJoaXhlRHNfYXFGYWRubUNFRmkzNWN5LWV3SXBLRHluM3AxNk9CdGJTWjc2a2c?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Stocktwits",
+     "baslik": "Why Did AAOI Stock Jump After-Hours Today?",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNXzI2WTZ3WXBhNkdsYmVBTTg0bGNleHdYbUQ5RmU3c240bHMzVHpuYlRrRnh3dnNaWGFZYlVtSjJlSHRaeUsyMlB5SkwteXBKOE1rZV9sUVlHb2thZ1l0TTFqLTRSRjM1bXBJdTVsYzZfclZlTklDek50OUlQUmxaejNCTTZGcmRJMFRvLVJrTWZHOV9pUmFhdUg5Q0NXQjdVZl9BeWxGd1A?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "simplywall.st",
+     "baslik": "Applied Optoelectronics (AAOI) Stock Could Be Below Fair Value Today",
+     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNeTNKQllVb19lNG5yU1d4TlprcnpORmR4aXZ1SzMySlROemIydHNBOTYzX2hOaGo3T0IyeThsTkVkOUNRbnk4YVVjeEk4UWJuNy11OWlFbENFNjk1Sm1BMTFiOWVzSHNudk5KSVBqaGsxQ2xLWnlNSTEzYWFDdG9DbXVJUlU2M1FiNFhHRHJuN2J6T3RpYy1EZWIzQm8xWnpqMFo3R2dYUTFSRktKTmJQQUdaeEhSanlIOEZEbHBKSEZHNmg0akI2ZU9qdlNUcndFV1VjVdIB2gFBVV95cUxNelFrc3dxQThyT0tpUm9wWVpPNEVOR0YxSTZaOFdLLVJLTTFXWHBib0M2TGxnWWpYRTNSMV9CUndsckdGTGFCZjBPZXVDcGRWVE1QN0NYX2dvVmxWYmRnQ1BpbTQwUkk3a0Jtb3lMN0NPOU5tLVVZRW5BaXNPNmgtVW4yTFhhd3Y1V2FDWkNieVViRnFlejhSYkQyZ2Z4TDlZMWt5TWJ4MG90REZoV25hX3pDWTQ2WXd5ajJVSmpNN3FKYkI1ZzZVangzdm5nOHRJT3BEYTJrTURLQQ?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Stocktwits",
+     "baslik": "AAOI, LITE, COHR, MRVL Stocks Bounce Back Overnight: Why AI Photonics Stocks Drew Attention Today",
+     "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOZzZ2Z2FySWF5NUZqUUVZM3JMT0lqbi11d3c5RkxkYUJMdWJFZDFvSFJKUXhJRU5HZThSMWVFSjJGZkZob2pXMENpVHVxN3QtczNHNW0wbk5RcFhOMkpRbXRZTHlfSFdfM0hiVWZ6bUxQSXdtNTZoaGo0bU8zMTd5UmpSZ2ZISVd4Y1F2UlZuTXZlWDM2S0ltZlZzZFEzOFBOSHNjYTJINnhucWlGSGM5T3pEM0JfamVGLTAwaVNqa3RGYzV3QTJQdXBDZFFfN1p4Z2pMNVoxdGlsMFM3YWw1MHdBa3p3V3ZUcWNwUzVn?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "TipRanks",
+     "baslik": "Applied Optoelectronics Expands China Manufacturing with Long-Term Lease",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOd001bmRJNXEzd0hfdTM5VVRZd1RpdWQwdTU3YURSdTBMVzVydzZ0TkRsR0oxMDFyWmpnTDk2Zmpnc09TcFp2MVNGQnM0QVA2QjdrOUVlSVd6eU1ZWlVZdWxHLV9uME9uY2t5OWlqckU4TGloblEyRGlBdHpoWGtzT1RUQmw3RkpIblNjVU1USkNjX2JCVFFjd0FjVlVMa2lnQVpaWDEtbWx6SDFHQ3FkeHBreFJiSE1xMkNOQjNua3RyQQ?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo Finance",
+     "baslik": "Applied Optoelectronics (AAOI) Stock Looks Stretched As Its 13x Five Year Run Continues",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWlFuLWJ1YUJOeTNrbTZ4NW1qcWxGX1pUNFpzUHBPRWZTT1hQdVoyTzFYNV9GaFdyeGVaRHFhMHlwSG42UXdSNFFBWnlsNGNsV1ppUUdmV0V5T3NsQjZjWXRTdVhIMzFVME9LN0pWbDQwMHlQaS1tcW1SV2FUTDdvV0lGWG8wVGxnSWVlRDZqZXYyUE5HSW8xYUdlXzZRT0FVc3hnZlpjdWw?oc=5"
+    },
+    {
+     "tarih": "2026-09-24",
+     "kaynak": "Yahoo! Finance Canada",
+     "baslik": "AAOI Oct 2026 107.000 call (AAOI261009C00107000) Interactive Stock Chart - Yahoo Finance",
+     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1SeTI5Qk5UWUZIang1Z3ZkSUstaUszRUR0ckJuRHBJaUR3US1sUmd4SVJsWjBsUFNjTWVKQ0RPamRRUmVMMW01QVhCbDgxTDJLTU1BMzBiRnp3N2xPVm1fMHlMeGdNdUdsQXZtTXR3?oc=5"
+    },
+    {
+     "tarih": "2026-09-24",
+     "kaynak": "24/7 Wall St.",
+     "baslik": "Coherent Has Ripped 59% in 2026: Is It Too Late to Buy COHR Stock Now?",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcWhWYXZDSzRsWTZjTEhaaEI5NVVxa3didHNZTXhXTUxVbmkxMmpCeE9VdjRpbERLa2VJOUduemRZaWpHQXpDUDFkTi1rQ2tURzNlVmtsREh4Qzhsb0sxOXpNbzF4bUtnNDFPV3JBakRpcFZEbGlNUF9pZ2FyUjlRczZ5Vm5aTWlUSXluNkUyUlNUZFJVNVhYWURxM0xxVFRFaXREY0hKX2QtdndYZHBteQ?oc=5"
+    },
+    {
+     "tarih": "2026-09-24",
+     "kaynak": "Yahoo! Finance Canada",
+     "baslik": "AAOI Oct 2026 107.000 put (AAOI261009P00107000) Stock Price, News, Quote & History",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE8xVUdYcGJWTGpSdGQyWXFsWDVlOTBVYjVndjMzUGdqZldjbGdmdVpzWFBpSXhTNm5SS3lsTWNwRURVVTFKcHBUUDVFMXNGbm9jMkM2V0FrWEt2RDBZdHZKQ21ieUUyUQ?oc=5"
+    },
+    {
+     "tarih": "2026-09-24",
+     "kaynak": "TradingView",
+     "baslik": "Applied Optoelectronics Rides on AI Boom: Can It Beat LITE and FN?",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPa09GaHE4VzVjWEpvRFlpZjUxWXdudUEyeXF3OUJYMVJfc2dQdmdXNXpydHNoX2NycmdLbWJuZUU1SXVTLXRKSHZSQ3l0U1dCN3lENFhkOEc4RVNhQ2dWLUJ6M05BNnd4dzVxUHgyUzBaYWFRMU55RDlVYzJHMUc2OUJEWU05VVBlSXRDdU00eWRQQzhVSzlnbmRSYzQ4RGEyb1Qwd1JZZ1duaTlRUVFiNFlEeUxabjM2V1c0?oc=5"
+    },
+    {
+     "tarih": "2026-09-24",
+     "kaynak": "Stock Titan",
+     "baslik": "At higher frequencies, cable networks face added power and heat demands. AOI plans a live demo.",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQjh4WU5YQ09oQXJ4TWxXQUJ6SzY0MjNDUmlUQTh5QzZhRnR1bU5LUDNGTjdESHItRnZ3NnhEWTNuU2tkVjh4Y3pRdmxJcnVkenZ2QnpUU3dpME9oM2RQTGlmZmd6QVhZS2g2amw5eGtycnE3WkNlSFdMSklHNjhzZlNBMko4aS1KNDJNUmJYUTl6YTM2TnRueXd3VWxtTU4zTjk5R1JCTDBQOXZpeDYwTWZLbXpvNmtnZ3FGSA?oc=5"
+    },
+    {
+     "tarih": "2026-09-24",
+     "kaynak": "Yahoo! Finance Canada",
+     "baslik": "AAOI Nov 2026 130.000 put (AAOI261120P00130000) Interactive Stock Chart",
+     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9pZnFGSWhwZllEbVZoeFdOZDhUeUhmWFQ3Xzh5OGdRT3kzY3Q4RWMwQ0daZnI0MUdZVXE2cVR1cTlENXFuUHNhRWxpS0Vzdmo1eUptalAxZGM2ZjZubnRMVTZGaHNsaFRKVDIySE5n?oc=5"
+    },
+    {
+     "tarih": "2026-09-24",
+     "kaynak": "Yahoo! Finance Canada",
+     "baslik": "AAOI Nov 2026 85.000 call (AAOI261120C00085000) Stock Price, News, Quote & History",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5ZdHNKUm0zVS16YjB2SEpjaVJXVFdTWFZJNlpNRlZYQ0VQZFRVVWlKakU2NnpKcUtkTUFaV3RBMWF5T0JtU2wwMzVTUk1QVUF0TkNOQ0JvSjdWQjJjZXhqcXY4V25BUQ?oc=5"
+    },
+    {
+     "tarih": "2026-09-24",
+     "kaynak": "Moomoo",
+     "baslik": "Applied Optoelectronics (AAOI) Stock Forum and Discussion",
+     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5PUFg4akl4Z1JoNzZOZlo4SmFuQk5Fb0dfc1ZmWFFPNmxIbDFwOFZLbzh2c241TktQbnBKbFNTVk1KblluRUswdlBnNnNtcVB3dGFTWlRuclpaZw?oc=5"
+    }
+   ],
+   "bilanco": {
+    "son_ceyrek": null,
+    "kirmizi": 0,
+    "dikkat": 0,
+    "olumlu": 0,
+    "son_dosya": null,
+    "xbrl_beklemede": null
+   },
+   "sinyaller": [
+    {
+     "id": "828921cfd4ab",
+     "tarih": "2026-09-25",
+     "ticker": "AAOI",
+     "tur": "kural_kademe_tez_bilinmiyor",
+     "tur_adi": "Düşüş kademesi tetiklendi, tez verisi yok",
+     "yon": "notr",
+     "aciklama": "Zirveden %-54.72 — kademe -%40; Hisse, tüm benchmark'lardan en az 15 puan daha fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+     "fiyat": 101.03,
+     "fiyat_tarihi": "2026-09-24",
+     "qqq": 741.1,
+     "baslangic_kaydi": true,
+     "kayit_zamani": "2026-09-25T23:55:22+00:00"
+    }
+   ]
+  }
+ ],
+ "sinyaller": [
+  {
+   "id": "2c3ab94e6812",
+   "tarih": "2026-09-25",
+   "ticker": "NOW",
+   "tur": "kural_kademe_tez_bilinmiyor",
+   "tur_adi": "Düşüş kademesi tetiklendi, tez verisi yok",
+   "yon": "notr",
+   "aciklama": "Zirveden %-27.2 — kademe -%25; Hisse, tüm benchmark'lardan en az 10 puan daha fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+   "fiyat": 137.78,
+   "fiyat_tarihi": "2026-09-24",
+   "qqq": 741.1,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-25T23:55:21+00:00"
+  },
+  {
+   "id": "828921cfd4ab",
+   "tarih": "2026-09-25",
+   "ticker": "AAOI",
+   "tur": "kural_kademe_tez_bilinmiyor",
+   "tur_adi": "Düşüş kademesi tetiklendi, tez verisi yok",
+   "yon": "notr",
+   "aciklama": "Zirveden %-54.72 — kademe -%40; Hisse, tüm benchmark'lardan en az 15 puan daha fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+   "fiyat": 101.03,
+   "fiyat_tarihi": "2026-09-24",
+   "qqq": 741.1,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-25T23:55:22+00:00"
+  }
+ ],
+ "not": "Günlük Python derlemesi (Claude yok). Derin analiz Salı raporundadır."
+}

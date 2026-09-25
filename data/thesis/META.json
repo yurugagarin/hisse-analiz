@@ -1,0 +1,139 @@
+{
+ "ticker": "META",
+ "tez_var": true,
+ "onay": "taslak",
+ "ozet": "Reklam motoru (Family of Apps) AI destekli hedefleme ile çift haneli büyümeyi ve yüksek faaliyet marjını koruyor; ağır AI yatırımına rağmen serbest nakit akışı pozitif kalıyor ve hisse geri alımı sulandırmayı telafi ediyor.\n",
+ "genel": "veri_yok",
+ "sutunlar": [
+  {
+   "id": "reklam_buyumesi",
+   "ad": "Reklam motoru büyümesi",
+   "tip": "metrik",
+   "aciklama": "Gelir büyümesi > %12.",
+   "metrik": "revenue_yoy",
+   "metrik_adi": "Gelir büyümesi (yıllık)",
+   "birim": "%",
+   "deger": null,
+   "donem": null,
+   "eski_donem": false,
+   "operator": ">",
+   "esik": 12,
+   "uyari": 5,
+   "durum": "veri_yok",
+   "gecmis": [],
+   "kaynak": {
+    "tip": "SEC XBRL companyfacts",
+    "donem": null
+   },
+   "olgu_mu": true,
+   "haberler": [],
+   "radar": []
+  },
+  {
+   "id": "marj",
+   "ad": "Faaliyet marjı",
+   "tip": "metrik",
+   "aciklama": "TTM faaliyet marjı > %35 (Reality Labs zararları dahil, konsolide).",
+   "metrik": "operating_margin_ttm",
+   "metrik_adi": "TTM faaliyet marjı",
+   "birim": "%",
+   "deger": null,
+   "donem": null,
+   "eski_donem": false,
+   "operator": ">",
+   "esik": 35,
+   "uyari": 28,
+   "durum": "veri_yok",
+   "gecmis": [],
+   "kaynak": {
+    "tip": "SEC XBRL companyfacts",
+    "donem": null
+   },
+   "olgu_mu": true,
+   "haberler": [],
+   "radar": []
+  },
+  {
+   "id": "capex_nakit",
+   "ad": "AI yatırımına rağmen nakit üretimi",
+   "tip": "metrik",
+   "aciklama": "TTM serbest nakit akışı marjı > %10; negatife dönerse capex kârı yiyor demektir.",
+   "metrik": "fcf_margin_ttm",
+   "metrik_adi": "TTM FCF marjı",
+   "birim": "%",
+   "deger": null,
+   "donem": null,
+   "eski_donem": false,
+   "operator": ">",
+   "esik": 10,
+   "uyari": 0,
+   "durum": "veri_yok",
+   "gecmis": [],
+   "kaynak": {
+    "tip": "SEC XBRL companyfacts",
+    "donem": null
+   },
+   "olgu_mu": true,
+   "haberler": [],
+   "radar": []
+  },
+  {
+   "id": "sulandirma",
+   "ad": "Hisse sayısı (geri alım vs SBC)",
+   "tip": "metrik",
+   "aciklama": "Seyreltilmiş hisse sayısı yıllık bazda azalıyor olmalı.",
+   "metrik": "diluted_shares_yoy",
+   "metrik_adi": "Seyreltilmiş hisse sayısı (yıllık)",
+   "birim": "%",
+   "deger": null,
+   "donem": null,
+   "eski_donem": false,
+   "operator": "<",
+   "esik": 0,
+   "uyari": 2,
+   "durum": "veri_yok",
+   "gecmis": [],
+   "kaynak": {
+    "tip": "SEC XBRL companyfacts",
+    "donem": null
+   },
+   "olgu_mu": true,
+   "haberler": [],
+   "radar": []
+  },
+  {
+   "id": "ai_getirisi",
+   "ad": "AI yatırımının getirisi ve regülasyon",
+   "tip": "yorum",
+   "aciklama": "",
+   "durum": "veri_yok",
+   "soru": "10-Q/10-K ve basın bülteninde reklam gösterimi ve reklam başına ortalama fiyat eğilimleri, capex guidance'ı ve AB/ABD regülasyon riskleri hakkında yönetimin açıklamaları tezi destekliyor mu, zayıflatıyor mu?",
+   "gerekce": "Henüz değerlendirilmedi (Claude bilanço analizi / Salı raporu çalışmadı).",
+   "kanit_alinti": null,
+   "kanit_dogrulandi": null,
+   "kaynak": null,
+   "olgu_mu": false,
+   "haberler": [],
+   "radar": []
+  }
+ ],
+ "cikis": [
+  {
+   "id": "buyume_coker",
+   "ad": "Gelir büyümesi 2 çeyrek üst üste %5'in altına inerse",
+   "metrik": "revenue_yoy",
+   "durum": "veri_yok",
+   "son_degerler": []
+  },
+  {
+   "id": "fcf_negatif",
+   "ad": "TTM serbest nakit akışı 2 çeyrek üst üste negatif olursa",
+   "metrik": "fcf_margin_ttm",
+   "durum": "veri_yok",
+   "son_degerler": []
+  }
+ ],
+ "son_ceyrek": null,
+ "guncelleme": "2026-09-25T23:55:20+00:00",
+ "not": "Tez durumu fiyattan bağımsızdır. Fiyat düşüşü tek başına tezin bozulduğu anlamına gelmez."
+}

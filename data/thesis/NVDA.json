@@ -1,0 +1,146 @@
+{
+ "ticker": "NVDA",
+ "tez_var": true,
+ "onay": "taslak",
+ "ozet": "Hızlandırılmış hesaplama (GPU + ağ + yazılım yığını) için talep, hyperscaler ve kurumsal AI yatırımlarıyla yüksek büyümeyi sürdürüyor; yazılım/ekosistem kilidi sayesinde yüksek brüt marj korunuyor ve kâr nakde dönüşüyor.\n",
+ "genel": "veri_yok",
+ "sutunlar": [
+  {
+   "id": "buyume",
+   "ad": "Talep ve büyüme",
+   "tip": "metrik",
+   "aciklama": "Çeyreklik gelirin yıllık büyümesi > %25 ise tez sağlam; %10'un altı talep yavaşlaması sinyali.",
+   "metrik": "revenue_yoy",
+   "metrik_adi": "Gelir büyümesi (yıllık)",
+   "birim": "%",
+   "deger": null,
+   "donem": null,
+   "eski_donem": false,
+   "operator": ">",
+   "esik": 25,
+   "uyari": 10,
+   "durum": "veri_yok",
+   "gecmis": [],
+   "kaynak": {
+    "tip": "SEC XBRL companyfacts",
+    "donem": null
+   },
+   "olgu_mu": true,
+   "haberler": [],
+   "radar": []
+  },
+  {
+   "id": "fiyatlama_gucu",
+   "ad": "Fiyatlama gücü (brüt marj)",
+   "tip": "metrik",
+   "aciklama": "Brüt marj > %70 rekabetin fiyatı henüz aşındırmadığını gösterir.",
+   "metrik": "gross_margin",
+   "metrik_adi": "Brüt marj",
+   "birim": "%",
+   "deger": null,
+   "donem": null,
+   "eski_donem": false,
+   "operator": ">",
+   "esik": 70,
+   "uyari": 65,
+   "durum": "veri_yok",
+   "gecmis": [],
+   "kaynak": {
+    "tip": "SEC XBRL companyfacts",
+    "donem": null
+   },
+   "olgu_mu": true,
+   "haberler": [],
+   "radar": []
+  },
+  {
+   "id": "kazanc_kalitesi",
+   "ad": "Kâr nakde dönüşüyor mu",
+   "tip": "metrik",
+   "aciklama": "TTM işletme nakit akışı / net kâr > 0,9.",
+   "metrik": "ocf_to_ni_ttm",
+   "metrik_adi": "İşletme nakit akışı / net kâr (TTM)",
+   "birim": "x",
+   "deger": null,
+   "donem": null,
+   "eski_donem": false,
+   "operator": ">",
+   "esik": 0.9,
+   "uyari": 0.7,
+   "durum": "veri_yok",
+   "gecmis": [],
+   "kaynak": {
+    "tip": "SEC XBRL companyfacts",
+    "donem": null
+   },
+   "olgu_mu": true,
+   "haberler": [],
+   "radar": []
+  },
+  {
+   "id": "stok_disiplini",
+   "ad": "Stok ve kanal disiplini",
+   "tip": "metrik",
+   "aciklama": "Stok büyümesi gelir büyümesini 20 puandan fazla aşmamalı; aşarsa talep/ürün geçişi riski.",
+   "metrik": "inventory_vs_revenue_gap",
+   "metrik_adi": "Stok − gelir büyümesi",
+   "birim": "puan",
+   "deger": null,
+   "donem": null,
+   "eski_donem": false,
+   "operator": "<",
+   "esik": 20,
+   "uyari": 45,
+   "durum": "veri_yok",
+   "gecmis": [],
+   "kaynak": {
+    "tip": "SEC XBRL companyfacts",
+    "donem": null
+   },
+   "olgu_mu": true,
+   "haberler": [],
+   "radar": []
+  },
+  {
+   "id": "rekabet_musteri",
+   "ad": "Rekabet ve müşteri yoğunlaşması",
+   "tip": "yorum",
+   "aciklama": "",
+   "durum": "veri_yok",
+   "soru": "10-Q/10-K ve basın bülteninde; doğrudan müşteri yoğunlaşması (en büyük müşterilerin gelir payı), özel çip (TPU/ASIC) ve rakip hızlandırıcılar, ihracat kısıtları hakkında yönetimin söyledikleri tezi zayıflatıyor mu?",
+   "gerekce": "Henüz değerlendirilmedi (Claude bilanço analizi / Salı raporu çalışmadı).",
+   "kanit_alinti": null,
+   "kanit_dogrulandi": null,
+   "kaynak": null,
+   "olgu_mu": false,
+   "haberler": [],
+   "radar": []
+  }
+ ],
+ "cikis": [
+  {
+   "id": "gelir_daralmasi",
+   "ad": "Gelir 2 çeyrek üst üste yıllık bazda daralırsa",
+   "metrik": "revenue_yoy",
+   "durum": "veri_yok",
+   "son_degerler": []
+  },
+  {
+   "id": "marj_kirilmasi",
+   "ad": "Brüt marj 2 çeyrek üst üste %60'ın altına inerse",
+   "metrik": "gross_margin",
+   "durum": "veri_yok",
+   "son_degerler": []
+  },
+  {
+   "id": "stok_sisme",
+   "ad": "Stok büyümesi gelir büyümesini 2 çeyrek üst üste 60 puandan fazla aşarsa",
+   "metrik": "inventory_vs_revenue_gap",
+   "durum": "veri_yok",
+   "son_degerler": []
+  }
+ ],
+ "son_ceyrek": null,
+ "guncelleme": "2026-09-25T23:55:19+00:00",
+ "not": "Tez durumu fiyattan bağımsızdır. Fiyat düşüşü tek başına tezin bozulduğu anlamına gelmez."
+}

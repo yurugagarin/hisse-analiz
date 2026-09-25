@@ -1,0 +1,170 @@
+{
+ "ticker": "AAOI",
+ "tez_var": true,
+ "onay": "taslak",
+ "ozet": "Veri merkezi optik alıcı-vericilerde (400G/800G ve sonrası) hyperscaler talebiyle hızlı büyüme; ABD içi üretim kapasitesi avantaj sağlıyor. Şirket kârlılığa geçiş aşamasında, bu yüzden kazanç kalitesi, nakit pisti ve sulandırma kritik.\n",
+ "genel": "veri_yok",
+ "sutunlar": [
+  {
+   "id": "buyume",
+   "ad": "Gelir büyümesi",
+   "tip": "metrik",
+   "aciklama": "Çeyreklik gelir büyümesi > %30.",
+   "metrik": "revenue_yoy",
+   "metrik_adi": "Gelir büyümesi (yıllık)",
+   "birim": "%",
+   "deger": null,
+   "donem": null,
+   "eski_donem": false,
+   "operator": ">",
+   "esik": 30,
+   "uyari": 10,
+   "durum": "veri_yok",
+   "gecmis": [],
+   "kaynak": {
+    "tip": "SEC XBRL companyfacts",
+    "donem": null
+   },
+   "olgu_mu": true,
+   "haberler": [],
+   "radar": []
+  },
+  {
+   "id": "brut_marj",
+   "ad": "Brüt marj",
+   "tip": "metrik",
+   "aciklama": "GAAP brüt marj > %30; ürün karması ve ölçek etkisini gösterir.",
+   "metrik": "gross_margin",
+   "metrik_adi": "Brüt marj",
+   "birim": "%",
+   "deger": null,
+   "donem": null,
+   "eski_donem": false,
+   "operator": ">",
+   "esik": 30,
+   "uyari": 25,
+   "durum": "veri_yok",
+   "gecmis": [],
+   "kaynak": {
+    "tip": "SEC XBRL companyfacts",
+    "donem": null
+   },
+   "olgu_mu": true,
+   "haberler": [],
+   "radar": []
+  },
+  {
+   "id": "faaliyet_kari",
+   "ad": "Faaliyetten kârlılığa geçiş",
+   "tip": "metrik",
+   "aciklama": "TTM faaliyet marjı pozitif olmalı; warrant/türev kazançları bu metriği etkilemez.",
+   "metrik": "operating_margin_ttm",
+   "metrik_adi": "TTM faaliyet marjı",
+   "birim": "%",
+   "deger": null,
+   "donem": null,
+   "eski_donem": false,
+   "operator": ">",
+   "esik": 0,
+   "uyari": -10,
+   "durum": "veri_yok",
+   "gecmis": [],
+   "kaynak": {
+    "tip": "SEC XBRL companyfacts",
+    "donem": null
+   },
+   "olgu_mu": true,
+   "haberler": [],
+   "radar": []
+  },
+  {
+   "id": "sulandirma",
+   "ad": "Sulandırma",
+   "tip": "metrik",
+   "aciklama": "Seyreltilmiş hisse sayısı yıllık artışı < %10 (ATM/convertible ihraçları).",
+   "metrik": "diluted_shares_yoy",
+   "metrik_adi": "Seyreltilmiş hisse sayısı (yıllık)",
+   "birim": "%",
+   "deger": null,
+   "donem": null,
+   "eski_donem": false,
+   "operator": "<",
+   "esik": 10,
+   "uyari": 25,
+   "durum": "veri_yok",
+   "gecmis": [],
+   "kaynak": {
+    "tip": "SEC XBRL companyfacts",
+    "donem": null
+   },
+   "olgu_mu": true,
+   "haberler": [],
+   "radar": []
+  },
+  {
+   "id": "stok",
+   "ad": "Stok ve talep uyumu",
+   "tip": "metrik",
+   "aciklama": "Stok büyümesi gelir büyümesini 25 puandan fazla aşmamalı.",
+   "metrik": "inventory_vs_revenue_gap",
+   "metrik_adi": "Stok − gelir büyümesi",
+   "birim": "puan",
+   "deger": null,
+   "donem": null,
+   "eski_donem": false,
+   "operator": "<",
+   "esik": 25,
+   "uyari": 60,
+   "durum": "veri_yok",
+   "gecmis": [],
+   "kaynak": {
+    "tip": "SEC XBRL companyfacts",
+    "donem": null
+   },
+   "olgu_mu": true,
+   "haberler": [],
+   "radar": []
+  },
+  {
+   "id": "musteri_kapasite",
+   "ad": "Müşteri yoğunlaşması ve kapasite",
+   "tip": "yorum",
+   "aciklama": "",
+   "durum": "veri_yok",
+   "soru": "10-Q/10-K dipnotlarında en büyük müşterilerin gelir payı, 800G/1.6T ürün geçişi, ABD (Texas) üretim kapasitesi ve finansman (ATM, convertible) hakkında açıklamalar tezi destekliyor mu?",
+   "gerekce": "Henüz değerlendirilmedi (Claude bilanço analizi / Salı raporu çalışmadı).",
+   "kanit_alinti": null,
+   "kanit_dogrulandi": null,
+   "kaynak": null,
+   "olgu_mu": false,
+   "haberler": [],
+   "radar": []
+  }
+ ],
+ "cikis": [
+  {
+   "id": "pist",
+   "ad": "Nakit pisti 12 ayın altına inerse",
+   "metrik": "cash_runway_months",
+   "durum": "veri_yok",
+   "son_degerler": []
+  },
+  {
+   "id": "marj_coker",
+   "ad": "Brüt marj 2 çeyrek üst üste %20'nin altına inerse",
+   "metrik": "gross_margin",
+   "durum": "veri_yok",
+   "son_degerler": []
+  },
+  {
+   "id": "asiri_sulandirma",
+   "ad": "Seyreltilmiş hisse sayısı yıllık %40'tan fazla artarsa",
+   "metrik": "diluted_shares_yoy",
+   "durum": "veri_yok",
+   "son_degerler": []
+  }
+ ],
+ "son_ceyrek": null,
+ "guncelleme": "2026-09-25T23:55:22+00:00",
+ "not": "Tez durumu fiyattan bağımsızdır. Fiyat düşüşü tek başına tezin bozulduğu anlamına gelmez."
+}

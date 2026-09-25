@@ -1,0 +1,480 @@
+{
+ "stocks": [
+  {
+   "ticker": "NVDA",
+   "name": "Nvidia",
+   "benchmarks": [
+    "QQQ",
+    "SMH"
+   ]
+  },
+  {
+   "ticker": "META",
+   "name": "Meta Platforms",
+   "benchmarks": [
+    "QQQ",
+    "XLC"
+   ]
+  },
+  {
+   "ticker": "NOW",
+   "name": "ServiceNow",
+   "benchmarks": [
+    "QQQ",
+    "IGV"
+   ]
+  },
+  {
+   "ticker": "AAOI",
+   "name": "Applied Optoelectronics",
+   "benchmarks": [
+    "QQQ",
+    "SMH"
+   ]
+  }
+ ],
+ "theses": {
+  "NVDA": {
+   "onay": "taslak",
+   "ozet": "Hızlandırılmış hesaplama (GPU + ağ + yazılım yığını) için talep, hyperscaler ve kurumsal AI yatırımlarıyla yüksek büyümeyi sürdürüyor; yazılım/ekosistem kilidi sayesinde yüksek brüt marj korunuyor ve kâr nakde dönüşüyor.\n",
+   "sutunlar": [
+    {
+     "id": "buyume",
+     "ad": "Talep ve büyüme",
+     "tip": "metrik",
+     "metrik": "revenue_yoy",
+     "operator": ">",
+     "esik": 25,
+     "uyari": 10,
+     "aciklama": "Çeyreklik gelirin yıllık büyümesi > %25 ise tez sağlam; %10'un altı talep yavaşlaması sinyali."
+    },
+    {
+     "id": "fiyatlama_gucu",
+     "ad": "Fiyatlama gücü (brüt marj)",
+     "tip": "metrik",
+     "metrik": "gross_margin",
+     "operator": ">",
+     "esik": 70,
+     "uyari": 65,
+     "aciklama": "Brüt marj > %70 rekabetin fiyatı henüz aşındırmadığını gösterir."
+    },
+    {
+     "id": "kazanc_kalitesi",
+     "ad": "Kâr nakde dönüşüyor mu",
+     "tip": "metrik",
+     "metrik": "ocf_to_ni_ttm",
+     "operator": ">",
+     "esik": 0.9,
+     "uyari": 0.7,
+     "aciklama": "TTM işletme nakit akışı / net kâr > 0,9."
+    },
+    {
+     "id": "stok_disiplini",
+     "ad": "Stok ve kanal disiplini",
+     "tip": "metrik",
+     "metrik": "inventory_vs_revenue_gap",
+     "operator": "<",
+     "esik": 20,
+     "uyari": 45,
+     "aciklama": "Stok büyümesi gelir büyümesini 20 puandan fazla aşmamalı; aşarsa talep/ürün geçişi riski."
+    },
+    {
+     "id": "rekabet_musteri",
+     "ad": "Rekabet ve müşteri yoğunlaşması",
+     "tip": "yorum",
+     "soru": "10-Q/10-K ve basın bülteninde; doğrudan müşteri yoğunlaşması (en büyük müşterilerin gelir payı), özel çip (TPU/ASIC) ve rakip hızlandırıcılar, ihracat kısıtları hakkında yönetimin söyledikleri tezi zayıflatıyor mu?\n"
+    }
+   ],
+   "cikis_kriterleri": [
+    {
+     "id": "gelir_daralmasi",
+     "ad": "Gelir 2 çeyrek üst üste yıllık bazda daralırsa",
+     "metrik": "revenue_yoy",
+     "operator": "<",
+     "esik": 0,
+     "ardisik_ceyrek": 2
+    },
+    {
+     "id": "marj_kirilmasi",
+     "ad": "Brüt marj 2 çeyrek üst üste %60'ın altına inerse",
+     "metrik": "gross_margin",
+     "operator": "<",
+     "esik": 60,
+     "ardisik_ceyrek": 2
+    },
+    {
+     "id": "stok_sisme",
+     "ad": "Stok büyümesi gelir büyümesini 2 çeyrek üst üste 60 puandan fazla aşarsa",
+     "metrik": "inventory_vs_revenue_gap",
+     "operator": ">",
+     "esik": 60,
+     "ardisik_ceyrek": 2
+    }
+   ]
+  },
+  "META": {
+   "onay": "taslak",
+   "ozet": "Reklam motoru (Family of Apps) AI destekli hedefleme ile çift haneli büyümeyi ve yüksek faaliyet marjını koruyor; ağır AI yatırımına rağmen serbest nakit akışı pozitif kalıyor ve hisse geri alımı sulandırmayı telafi ediyor.\n",
+   "sutunlar": [
+    {
+     "id": "reklam_buyumesi",
+     "ad": "Reklam motoru büyümesi",
+     "tip": "metrik",
+     "metrik": "revenue_yoy",
+     "operator": ">",
+     "esik": 12,
+     "uyari": 5,
+     "aciklama": "Gelir büyümesi > %12."
+    },
+    {
+     "id": "marj",
+     "ad": "Faaliyet marjı",
+     "tip": "metrik",
+     "metrik": "operating_margin_ttm",
+     "operator": ">",
+     "esik": 35,
+     "uyari": 28,
+     "aciklama": "TTM faaliyet marjı > %35 (Reality Labs zararları dahil, konsolide)."
+    },
+    {
+     "id": "capex_nakit",
+     "ad": "AI yatırımına rağmen nakit üretimi",
+     "tip": "metrik",
+     "metrik": "fcf_margin_ttm",
+     "operator": ">",
+     "esik": 10,
+     "uyari": 0,
+     "aciklama": "TTM serbest nakit akışı marjı > %10; negatife dönerse capex kârı yiyor demektir."
+    },
+    {
+     "id": "sulandirma",
+     "ad": "Hisse sayısı (geri alım vs SBC)",
+     "tip": "metrik",
+     "metrik": "diluted_shares_yoy",
+     "operator": "<",
+     "esik": 0,
+     "uyari": 2,
+     "aciklama": "Seyreltilmiş hisse sayısı yıllık bazda azalıyor olmalı."
+    },
+    {
+     "id": "ai_getirisi",
+     "ad": "AI yatırımının getirisi ve regülasyon",
+     "tip": "yorum",
+     "soru": "10-Q/10-K ve basın bülteninde reklam gösterimi ve reklam başına ortalama fiyat eğilimleri, capex guidance'ı ve AB/ABD regülasyon riskleri hakkında yönetimin açıklamaları tezi destekliyor mu, zayıflatıyor mu?\n"
+    }
+   ],
+   "cikis_kriterleri": [
+    {
+     "id": "buyume_coker",
+     "ad": "Gelir büyümesi 2 çeyrek üst üste %5'in altına inerse",
+     "metrik": "revenue_yoy",
+     "operator": "<",
+     "esik": 5,
+     "ardisik_ceyrek": 2
+    },
+    {
+     "id": "fcf_negatif",
+     "ad": "TTM serbest nakit akışı 2 çeyrek üst üste negatif olursa",
+     "metrik": "fcf_margin_ttm",
+     "operator": "<",
+     "esik": 0,
+     "ardisik_ceyrek": 2
+    }
+   ]
+  },
+  "NOW": {
+   "onay": "taslak",
+   "ozet": "Kurumsal iş akışı platformu yüksek yenileme oranı ve genişleyen ürün (AI/Now Assist) satışıyla %20 civarı büyümeyi sürdürüyor; sözleşmeli gelir birikimi (RPO) görünürlük sağlıyor ve güçlü FCF marjı SBC maliyetine rağmen gerçek değer yaratıyor.\n",
+   "sutunlar": [
+    {
+     "id": "buyume",
+     "ad": "Gelir büyümesi",
+     "tip": "metrik",
+     "metrik": "revenue_yoy",
+     "operator": ">",
+     "esik": 18,
+     "uyari": 12,
+     "aciklama": "Çeyreklik gelir büyümesi > %18."
+    },
+    {
+     "id": "gorunurluk",
+     "ad": "Sözleşmeli gelir birikimi (RPO)",
+     "tip": "metrik",
+     "metrik": "rpo_yoy",
+     "operator": ">",
+     "esik": 18,
+     "uyari": 12,
+     "aciklama": "RPO yıllık büyümesi gelir büyümesine yakın veya üzerinde olmalı."
+    },
+    {
+     "id": "nakit",
+     "ad": "Serbest nakit akışı marjı",
+     "tip": "metrik",
+     "metrik": "fcf_margin_ttm",
+     "operator": ">",
+     "esik": 25,
+     "uyari": 18,
+     "aciklama": "TTM FCF marjı > %25."
+    },
+    {
+     "id": "sbc",
+     "ad": "SBC maliyeti",
+     "tip": "metrik",
+     "metrik": "sbc_to_revenue_ttm",
+     "operator": "<",
+     "esik": 15,
+     "uyari": 20,
+     "aciklama": "SBC/gelir < %15; SBC hariç FCF'nin şişirilmiş görünmemesi için."
+    },
+    {
+     "id": "ai_ve_yenileme",
+     "ad": "AI monetizasyonu ve müşteri tutma",
+     "tip": "yorum",
+     "soru": "10-Q/10-K ve basın bülteninde yenileme oranı, büyük müşteri (yıllık 5M$+ ACV) sayısı, Now Assist/AI ürünlerinin katkısı ve satın almaların büyümeye etkisi hakkında açıklamalar tezi destekliyor mu?\n"
+    }
+   ],
+   "cikis_kriterleri": [
+    {
+     "id": "rpo_yavas",
+     "ad": "RPO büyümesi 2 çeyrek üst üste %12'nin altına inerse",
+     "metrik": "rpo_yoy",
+     "operator": "<",
+     "esik": 12,
+     "ardisik_ceyrek": 2
+    },
+    {
+     "id": "gelir_yavas",
+     "ad": "Gelir büyümesi 2 çeyrek üst üste %12'nin altına inerse",
+     "metrik": "revenue_yoy",
+     "operator": "<",
+     "esik": 12,
+     "ardisik_ceyrek": 2
+    }
+   ]
+  },
+  "AAOI": {
+   "onay": "taslak",
+   "ozet": "Veri merkezi optik alıcı-vericilerde (400G/800G ve sonrası) hyperscaler talebiyle hızlı büyüme; ABD içi üretim kapasitesi avantaj sağlıyor. Şirket kârlılığa geçiş aşamasında, bu yüzden kazanç kalitesi, nakit pisti ve sulandırma kritik.\n",
+   "sutunlar": [
+    {
+     "id": "buyume",
+     "ad": "Gelir büyümesi",
+     "tip": "metrik",
+     "metrik": "revenue_yoy",
+     "operator": ">",
+     "esik": 30,
+     "uyari": 10,
+     "aciklama": "Çeyreklik gelir büyümesi > %30."
+    },
+    {
+     "id": "brut_marj",
+     "ad": "Brüt marj",
+     "tip": "metrik",
+     "metrik": "gross_margin",
+     "operator": ">",
+     "esik": 30,
+     "uyari": 25,
+     "aciklama": "GAAP brüt marj > %30; ürün karması ve ölçek etkisini gösterir."
+    },
+    {
+     "id": "faaliyet_kari",
+     "ad": "Faaliyetten kârlılığa geçiş",
+     "tip": "metrik",
+     "metrik": "operating_margin_ttm",
+     "operator": ">",
+     "esik": 0,
+     "uyari": -10,
+     "aciklama": "TTM faaliyet marjı pozitif olmalı; warrant/türev kazançları bu metriği etkilemez."
+    },
+    {
+     "id": "sulandirma",
+     "ad": "Sulandırma",
+     "tip": "metrik",
+     "metrik": "diluted_shares_yoy",
+     "operator": "<",
+     "esik": 10,
+     "uyari": 25,
+     "aciklama": "Seyreltilmiş hisse sayısı yıllık artışı < %10 (ATM/convertible ihraçları)."
+    },
+    {
+     "id": "stok",
+     "ad": "Stok ve talep uyumu",
+     "tip": "metrik",
+     "metrik": "inventory_vs_revenue_gap",
+     "operator": "<",
+     "esik": 25,
+     "uyari": 60,
+     "aciklama": "Stok büyümesi gelir büyümesini 25 puandan fazla aşmamalı."
+    },
+    {
+     "id": "musteri_kapasite",
+     "ad": "Müşteri yoğunlaşması ve kapasite",
+     "tip": "yorum",
+     "soru": "10-Q/10-K dipnotlarında en büyük müşterilerin gelir payı, 800G/1.6T ürün geçişi, ABD (Texas) üretim kapasitesi ve finansman (ATM, convertible) hakkında açıklamalar tezi destekliyor mu?\n"
+    }
+   ],
+   "cikis_kriterleri": [
+    {
+     "id": "pist",
+     "ad": "Nakit pisti 12 ayın altına inerse",
+     "metrik": "cash_runway_months",
+     "operator": "<",
+     "esik": 12,
+     "ardisik_ceyrek": 1
+    },
+    {
+     "id": "marj_coker",
+     "ad": "Brüt marj 2 çeyrek üst üste %20'nin altına inerse",
+     "metrik": "gross_margin",
+     "operator": "<",
+     "esik": 20,
+     "ardisik_ceyrek": 2
+    },
+    {
+     "id": "asiri_sulandirma",
+     "ad": "Seyreltilmiş hisse sayısı yıllık %40'tan fazla artarsa",
+     "metrik": "diluted_shares_yoy",
+     "operator": ">",
+     "esik": 40,
+     "ardisik_ceyrek": 1
+    }
+   ]
+  }
+ },
+ "rules": {
+  "varsayilan": {
+   "onay": "taslak",
+   "kosul": "tez_saglam",
+   "sirkete_ozel_esik": 10,
+   "kademeler": [
+    {
+     "dusus": 15,
+     "not": "Haftalık DCA tutarını 1,5x yap (tez sağlamsa)."
+    },
+    {
+     "dusus": 25,
+     "not": "Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku."
+    },
+    {
+     "dusus": 35,
+     "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
+    }
+   ]
+  },
+  "NVDA": {
+   "onay": "taslak",
+   "kosul": "tez_saglam",
+   "sirkete_ozel_esik": 10,
+   "kademeler": [
+    {
+     "dusus": 15,
+     "not": "DCA 1,5x (tez sağlamsa)."
+    },
+    {
+     "dusus": 25,
+     "not": "DCA 2x; stok ve brüt marj sütunlarını kontrol et."
+    },
+    {
+     "dusus": 35,
+     "not": "Ek alım düşün; önce şeytanın avukatını oku."
+    }
+   ]
+  },
+  "META": {
+   "onay": "taslak",
+   "kosul": "tez_saglam",
+   "sirkete_ozel_esik": 10,
+   "kademeler": [
+    {
+     "dusus": 15,
+     "not": "DCA 1,5x (tez sağlamsa)."
+    },
+    {
+     "dusus": 25,
+     "not": "DCA 2x; capex ve FCF sütununu kontrol et."
+    },
+    {
+     "dusus": 35,
+     "not": "Ek alım düşün; regülasyon haberlerini oku."
+    }
+   ]
+  },
+  "NOW": {
+   "onay": "taslak",
+   "kosul": "tez_saglam",
+   "sirkete_ozel_esik": 10,
+   "kademeler": [
+    {
+     "dusus": 15,
+     "not": "DCA 1,5x (tez sağlamsa)."
+    },
+    {
+     "dusus": 25,
+     "not": "DCA 2x; RPO ve SBC sütunlarını kontrol et."
+    },
+    {
+     "dusus": 35,
+     "not": "Ek alım düşün; önce şeytanın avukatını oku."
+    }
+   ]
+  },
+  "AAOI": {
+   "onay": "taslak",
+   "kosul": "tez_saglam",
+   "sirkete_ozel_esik": 15,
+   "kademeler": [
+    {
+     "dusus": 25,
+     "not": "DCA 1,5x (tez sağlamsa)."
+    },
+    {
+     "dusus": 40,
+     "not": "DCA 2x; nakit pisti ve sulandırmayı kontrol et."
+    },
+    {
+     "dusus": 55,
+     "not": "Pozisyon büyüklüğünü sınırla; tez gerçekten sağlam mı yeniden yaz."
+    }
+   ]
+  }
+ },
+ "settings": {
+  "default_benchmarks": [
+   "QQQ",
+   "SMH"
+  ],
+  "claude": {
+   "model": "claude-opus-5-5",
+   "max_turns": {
+    "bilanco": 20,
+    "sali_raporu": 60
+   }
+  },
+  "news": {
+   "lookback_days": 7,
+   "top_n": 3,
+   "archive_days": 45
+  },
+  "moves": {
+   "threshold_pct": 5,
+   "lookback_days": 30
+  },
+  "insider": {
+   "windows": [
+    90,
+    180
+   ],
+   "cluster_window_days": 14,
+   "cluster_min_insiders": 3,
+   "rally_without_buys_pct": 30
+  },
+  "signals": {
+   "horizons_days": [
+    30,
+    90,
+    180
+   ]
+  }
+ },
+ "guncelleme": "2026-09-25T23:53:48+00:00"
+}
