@@ -1,0 +1,411 @@
+"""SEC companyfacts (XBRL) -> çeyreklik seri ve metrikler.
+
+Kural: burada üretilen HER sayı SEC'in companyfacts API'sinden gelir. Türetilen
+değerler (ör. Q4 = yıllık − 9 aylık, nakit akışı çeyreği = YTD farkı) açıkça
+"türetilmiş" diye işaretlenir. Hiçbir değer tahmin edilmez; bulunamazsa None.
+"""
+from __future__ import annotations
+
+import datetime as dt
+from dataclasses import dataclass, field
+
+from common import pct, rnd, safe_div
+
+D = dt.date.fromisoformat
+
+# ---------------------------------------------------------------------------
+# Kavram (concept) haritası: öncelik sırasıyla. (taksonomi, concept)
+# 'tablo' alanı sitedeki "ilgili tablo satırı" referansı içindir.
+# ---------------------------------------------------------------------------
+CONCEPTS: dict[str, dict] = {
+    "revenue": {"tablo": "Gelir tablosu", "c": [
+        "Revenues", "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "RevenueFromContractWithCustomerIncludingAssessedTax", "SalesRevenueNet"]},
+    "cogs": {"tablo": "Gelir tablosu", "c": [
+        "CostOfRevenue", "CostOfGoodsAndServicesSold", "CostOfGoodsSold", "CostOfServices"]},
+    "gross_profit": {"tablo": "Gelir tablosu", "c": ["GrossProfit"]},
+    "rd": {"tablo": "Gelir tablosu", "c": ["ResearchAndDevelopmentExpense",
+                                           "ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost"]},
+    "operating_income": {"tablo": "Gelir tablosu", "c": ["OperatingIncomeLoss"]},
+    "restructuring": {"tablo": "Gelir tablosu / dipnot", "c": [
+        "RestructuringCharges", "RestructuringSettlementAndImpairmentProvisions"]},
+    "impairment": {"tablo": "Gelir tablosu / nakit akış", "c": [
+        "AssetImpairmentCharges", "GoodwillImpairmentLoss", "ImpairmentOfLongLivedAssetsHeldForUse",
+        "ImpairmentOfIntangibleAssetsExcludingGoodwill"]},
+    "interest_income": {"tablo": "Gelir tablosu (faaliyet dışı)", "c": [
+        "InvestmentIncomeInterest", "InvestmentIncomeInterestAndDividend", "InterestIncomeOther",
+        "InterestAndOtherIncome", "InterestIncomeOperating"]},
+    "interest_expense": {"tablo": "Gelir tablosu (faaliyet dışı)", "c": [
+        "InterestExpense", "InterestExpenseNonoperating", "InterestExpenseDebt"]},
+    "warrant_fv": {"tablo": "Gelir tablosu (faaliyet dışı)", "sign": -1, "c": [
+        "FairValueAdjustmentOfWarrants"]},  # pozitif = gider -> köprüde eksi
+    "derivative_gl": {"tablo": "Gelir tablosu (faaliyet dışı)", "c": [
+        "DerivativeGainLossOnDerivativeNet", "DerivativeInstrumentsNotDesignatedAsHedgingInstrumentsGainLossNet",
+        "GainLossOnDerivativeInstrumentsNetPretax"]},
+    "investment_gl": {"tablo": "Gelir tablosu (faaliyet dışı)", "c": [
+        "GainLossOnInvestments", "EquitySecuritiesFvNiGainLoss", "GainLossOnSaleOfInvestments",
+        "MarketableSecuritiesRealizedGainLossExcludingOtherThanTemporaryImpairments"]},
+    "debt_extinguishment": {"tablo": "Gelir tablosu (faaliyet dışı)", "c": [
+        "GainsLossesOnExtinguishmentOfDebt"]},
+    "nonoperating_total": {"tablo": "Gelir tablosu (faaliyet dışı)", "c": ["NonoperatingIncomeExpense"]},
+    "other_nonoperating": {"tablo": "Gelir tablosu (faaliyet dışı)", "c": ["OtherNonoperatingIncomeExpense"]},
+    "pretax": {"tablo": "Gelir tablosu", "c": [
+        "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+        "IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments",
+        "IncomeLossFromContinuingOperationsBeforeIncomeTaxesDomestic"]},
+    "tax": {"tablo": "Gelir tablosu", "c": ["IncomeTaxExpenseBenefit"]},
+    "net_income": {"tablo": "Gelir tablosu", "c": ["NetIncomeLoss", "ProfitLoss",
+                                                   "NetIncomeLossAvailableToCommonStockholdersBasic"]},
+    "ocf": {"tablo": "Nakit akış tablosu", "c": [
+        "NetCashProvidedByUsedInOperatingActivities",
+        "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations"]},
+    "capex": {"tablo": "Nakit akış tablosu", "c": [
+        "PaymentsToAcquirePropertyPlantAndEquipment", "PaymentsToAcquireProductiveAssets",
+        "PaymentsForCapitalImprovements"]},
+    "sbc": {"tablo": "Nakit akış tablosu", "c": ["ShareBasedCompensation",
+                                                  "AllocatedShareBasedCompensationExpense"]},
+    "acquisitions": {"tablo": "Nakit akış tablosu", "c": [
+        "PaymentsToAcquireBusinessesNetOfCashAcquired", "PaymentsToAcquireBusinessesGross"]},
+    "buybacks": {"tablo": "Nakit akış tablosu", "c": ["PaymentsForRepurchaseOfCommonStock"]},
+    "equity_issued": {"tablo": "Nakit akış tablosu", "c": [
+        "ProceedsFromIssuanceOfCommonStock", "ProceedsFromIssuanceOrSaleOfEquity",
+        "ProceedsFromStockOptionsExercised"]},
+    "diluted_shares": {"tablo": "Gelir tablosu (hisse başına kâr)", "unit": "shares", "c": [
+        "WeightedAverageNumberOfDilutedSharesOutstanding"]},
+    "acquiree_revenue": {"tablo": "Dipnot: işletme birleşmeleri", "c": [
+        "BusinessCombinationProFormaInformationRevenueOfAcquireeSinceAcquisitionDateActual"]},
+    # --- Bilanço (anlık) ---
+    "ar": {"tablo": "Bilanço", "instant": True, "c": [
+        "AccountsReceivableNetCurrent", "ReceivablesNetCurrent", "AccountsReceivableNet"]},
+    "inventory": {"tablo": "Bilanço", "instant": True, "c": ["InventoryNet", "InventoryGross"]},
+    "deferred_rev_current": {"tablo": "Bilanço", "instant": True, "c": [
+        "ContractWithCustomerLiabilityCurrent", "DeferredRevenueCurrent"]},
+    "deferred_rev_noncurrent": {"tablo": "Bilanço", "instant": True, "c": [
+        "ContractWithCustomerLiabilityNoncurrent", "DeferredRevenueNoncurrent"]},
+    "rpo": {"tablo": "Dipnot: gelir / kalan edim yükümlülükleri", "instant": True, "c": [
+        "RevenueRemainingPerformanceObligation"]},
+    "cash": {"tablo": "Bilanço", "instant": True, "c": [
+        "CashAndCashEquivalentsAtCarryingValue",
+        "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents"]},
+    "st_investments": {"tablo": "Bilanço", "instant": True, "c": [
+        "MarketableSecuritiesCurrent", "ShortTermInvestments", "AvailableForSaleSecuritiesDebtSecuritiesCurrent"]},
+    "total_debt": {"tablo": "Bilanço", "instant": True, "c": [
+        "LongTermDebt", "LongTermDebtNoncurrent", "ConvertibleNotesPayable", "LongTermDebtAndCapitalLeaseObligations"]},
+    "goodwill": {"tablo": "Bilanço", "instant": True, "c": ["Goodwill"]},
+    "warrant_liability": {"tablo": "Bilanço", "instant": True, "c": [
+        "DerivativeLiabilitiesNoncurrent", "DerivativeLiabilities", "WarrantLiabilities"]},
+}
+
+
+@dataclass
+class Point:
+    start: str | None
+    end: str
+    val: float
+    accn: str
+    form: str
+    filed: str
+    fy: int | None
+    fp: str | None
+    concept: str
+    derived: bool = False
+    note: str = ""
+
+
+@dataclass
+class Series:
+    key: str
+    points: dict[str, Point] = field(default_factory=dict)  # end -> Point (çeyreklik veya anlık)
+    annual: dict[str, Point] = field(default_factory=dict)  # end -> yıllık Point
+    concepts_used: list[str] = field(default_factory=list)
+    label: dict[str, str] = field(default_factory=dict)
+
+
+def _days(a: str, b: str) -> int:
+    return (D(b) - D(a)).days
+
+
+def _facts_for(cf: dict, concept: str, unit: str) -> tuple[list[dict], str]:
+    for tax in ("us-gaap", "ifrs-full", "dei"):
+        node = cf.get("facts", {}).get(tax, {}).get(concept)
+        if node and unit in node.get("units", {}):
+            return node["units"][unit], node.get("label", concept)
+    return [], concept
+
+
+def _dedup(entries: list[dict], instant: bool) -> dict[tuple, dict]:
+    """Aynı dönem için en son dosyalanan değeri (yeniden düzenlenmiş) tut."""
+    out: dict[tuple, dict] = {}
+    for e in entries:
+        if e.get("form") not in ("10-Q", "10-K", "10-Q/A", "10-K/A", "10-KT", "20-F", "40-F"):
+            continue
+        k = (e["end"],) if instant else (e.get("start"), e["end"])
+        if instant and e.get("start"):
+            continue
+        if not instant and not e.get("start"):
+            continue
+        prev = out.get(k)
+        if prev is None or e.get("filed", "") > prev.get("filed", ""):
+            out[k] = e
+    return out
+
+
+def _mk(e: dict, concept: str, derived=False, start=None, val=None, note="") -> Point:
+    return Point(start=start if start is not None else e.get("start"), end=e["end"],
+                 val=float(val if val is not None else e["val"]), accn=e.get("accn", ""),
+                 form=e.get("form", ""), filed=e.get("filed", ""), fy=e.get("fy"), fp=e.get("fp"),
+                 concept=concept, derived=derived, note=note)
+
+
+def _quarterize(dd: dict[tuple, dict], concept: str) -> tuple[dict[str, Point], dict[str, Point]]:
+    q: dict[str, Point] = {}
+    annual: dict[str, Point] = {}
+    for (s, e), ent in dd.items():
+        d = _days(s, e)
+        if 75 <= d <= 105:
+            q[e] = _mk(ent, concept)
+        elif 350 <= d <= 380:
+            annual[e] = _mk(ent, concept)
+    # YTD farkından çeyrek türet (nakit akışı 6/9/12 aylık; Q4 = yıl − 9 ay)
+    by_start: dict[str, list[tuple[str, dict]]] = {}
+    for (s, e), ent in dd.items():
+        by_start.setdefault(s, []).append((e, ent))
+    for s, items in by_start.items():
+        items.sort()
+        for i in range(len(items)):
+            e_long, ent_long = items[i]
+            if e_long in q:
+                continue
+            for j in range(i):
+                e_short, ent_short = items[j]
+                gap = _days(e_short, e_long)
+                if 75 <= gap <= 105 and _days(s, e_short) >= 75:
+                    qs = (D(e_short) + dt.timedelta(days=1)).isoformat()
+                    q[e_long] = _mk(ent_long, concept, derived=True, start=qs,
+                                    val=float(ent_long["val"]) - float(ent_short["val"]),
+                                    note=f"türetilmiş: {s}→{e_long} ({ent_long['form']}) − {s}→{e_short}")
+                    break
+    # Q4 = yıllık − (Q1+Q2+Q3) (9 aylık YTD raporlanmamışsa)
+    for e, pa in annual.items():
+        if e in q:
+            continue
+        inside = sorted((qe, qp) for qe, qp in q.items()
+                        if qp.start and qp.start >= pa.start and qe < e and not qp.derived)
+        if len(inside) == 3 and 75 <= _days(inside[-1][0], e) <= 105:
+            qs = (D(inside[-1][0]) + dt.timedelta(days=1)).isoformat()
+            q[e] = Point(start=qs, end=e, val=pa.val - sum(p.val for _, p in inside), accn=pa.accn,
+                         form=pa.form, filed=pa.filed, fy=pa.fy, fp=pa.fp, concept=concept, derived=True,
+                         note=f"türetilmiş: yıllık ({pa.form}) − 3 çeyrek toplamı")
+    return q, annual
+
+
+def build_series(cf: dict, key: str) -> Series:
+    spec = CONCEPTS[key]
+    unit = spec.get("unit", "USD")
+    instant = spec.get("instant", False)
+    per_concept = []
+    for c in spec["c"]:
+        entries, label = _facts_for(cf, c, unit)
+        if not entries:
+            continue
+        dd = _dedup(entries, instant)
+        if not dd:
+            continue
+        if instant:
+            pts = {k[0]: _mk(v, c) for k, v in dd.items()}
+            ann: dict[str, Point] = {}
+        else:
+            pts, ann = _quarterize(dd, c)
+        if not pts and not ann:
+            continue
+        latest = max(list(pts.keys()) + list(ann.keys()))
+        per_concept.append((latest, -spec["c"].index(c), c, label, pts, ann))
+    # en güncel veriyi taşıyan kavram önce; boşlukları diğerleriyle doldur
+    per_concept.sort(reverse=True)
+    s = Series(key=key)
+    for _, _, c, label, pts, ann in per_concept:
+        used = False
+        for e, p in pts.items():
+            if e not in s.points:
+                s.points[e] = p
+                used = True
+        for e, p in ann.items():
+            if e not in s.annual:
+                s.annual[e] = p
+                used = True
+        if used:
+            s.concepts_used.append(c)
+            s.label[c] = label
+    return s
+
+
+# ---------------------------------------------------------------------------
+# Çeyrek tablosu ve metrikler
+# ---------------------------------------------------------------------------
+
+def _near(points: dict[str, Point], end: str, tol: int = 5) -> Point | None:
+    if end in points:
+        return points[end]
+    best = None
+    for e, p in points.items():
+        d = abs(_days(e, end))
+        if d <= tol and (best is None or d < abs(_days(best.end, end))):
+            best = p
+    return best
+
+
+def _prev_year(ends: list[str], end: str) -> str | None:
+    for e in ends:
+        if 355 <= _days(e, end) <= 375:
+            return e
+    return None
+
+
+def _ttm(series: Series, end: str, ends: list[str]) -> float | None:
+    """Son 4 çeyreğin toplamı (ardışık çeyrekler)."""
+    chain = [end]
+    cur = end
+    for _ in range(3):
+        prev = [e for e in ends if 75 <= _days(e, cur) <= 105]
+        if not prev:
+            return None
+        cur = max(prev)
+        chain.append(cur)
+    vals = []
+    for e in chain:
+        p = _near(series.points, e)
+        if p is None:
+            # yıllık dönem sonu ise doğrudan yıllık değeri kullan
+            return None
+        vals.append(p.val)
+    return sum(vals)
+
+
+def build_table(cf: dict, max_quarters: int = 12) -> dict:
+    S = {k: build_series(cf, k) for k in CONCEPTS}
+    rev = S["revenue"]
+    ends = sorted(rev.points.keys())
+    if not ends:
+        return {"ceyrekler": [], "kavramlar": {}, "hata": "Gelir serisi bulunamadı (XBRL)"}
+
+    def v(key, end, tol=5):
+        p = _near(S[key].points, end, tol)
+        return p.val if p else None
+
+    rows = []
+    for end in ends:
+        r: dict = {"donem_sonu": end}
+        p_rev = rev.points[end]
+        # Mali dönem etiketi: bu dönemi İLK raporlayan dosyadan
+        r["donem_basi"] = p_rev.start
+        for key in CONCEPTS:
+            r[key] = v(key, end)
+        if r["gross_profit"] is None and r["revenue"] is not None and r["cogs"] is not None:
+            r["gross_profit"] = r["revenue"] - r["cogs"]
+        src = {}
+        for k in CONCEPTS:
+            p = _near(S[k].points, end)
+            if p is not None:
+                src[k] = {"concept": p.concept, "accn": p.accn, "turetilmis": p.derived, "not": p.note}
+        r["_kaynak"] = src
+        rows.append(r)
+
+    # Etiketler: dönemi ilk raporlayan dosyanın fy/fp bilgisi
+    first_filed: dict[str, dict] = {}
+    for c in rev.concepts_used:
+        entries, _ = _facts_for(cf, c, "USD")
+        for e in entries:
+            if e.get("form") not in ("10-Q", "10-K", "10-Q/A", "10-K/A"):
+                continue
+            for end in ends:
+                if abs(_days(e["end"], end)) <= 3:
+                    cur = first_filed.get(end)
+                    if cur is None or e.get("filed", "") < cur.get("filed", ""):
+                        first_filed[end] = e
+    for r in rows:
+        e = first_filed.get(r["donem_sonu"])
+        if e:
+            fp = e.get("fp") or ""
+            fy = e.get("fy")
+            r["etiket"] = f"FY{fy} {'Q4' if fp == 'FY' else fp}"
+            r["ilk_rapor_accn"] = e.get("accn")
+            r["ilk_rapor_form"] = e.get("form")
+            r["ilk_rapor_tarih"] = e.get("filed")
+        else:
+            r["etiket"] = r["donem_sonu"]
+
+    idx = {r["donem_sonu"]: r for r in rows}
+    for r in rows:
+        end = r["donem_sonu"]
+        py = _prev_year(ends, end)
+        pr = idx.get(py) if py else None
+        rv = r["revenue"]
+        r["gross_margin"] = rnd(safe_div(r["gross_profit"], rv) * 100 if safe_div(r["gross_profit"], rv) is not None else None)
+        r["operating_margin"] = rnd(safe_div(r["operating_income"], rv) * 100 if safe_div(r["operating_income"], rv) is not None else None)
+        r["net_margin"] = rnd(safe_div(r["net_income"], rv) * 100 if safe_div(r["net_income"], rv) is not None else None)
+        r["fcf"] = (r["ocf"] - r["capex"]) if (r["ocf"] is not None and r["capex"] is not None) else None
+        # TTM
+        for k in ("revenue", "gross_profit", "operating_income", "net_income", "ocf", "capex", "sbc",
+                  "cogs", "acquisitions", "interest_income", "tax", "pretax"):
+            if k == "gross_profit" and not S["gross_profit"].points:
+                # brüt kâr kavramı yoksa gelir − SMM'den TTM
+                a, b = _ttm(S["revenue"], end, ends), _ttm(S["cogs"], end, ends)
+                r["gross_profit_ttm"] = (a - b) if a is not None and b is not None else None
+                continue
+            r[f"{k}_ttm"] = _ttm(S[k], end, ends)
+        r["fcf_ttm"] = (r["ocf_ttm"] - r["capex_ttm"]) if (r["ocf_ttm"] is not None and r["capex_ttm"] is not None) else None
+        rt = r["revenue_ttm"]
+        r["gross_margin_ttm"] = rnd(_p(r["gross_profit_ttm"], rt))
+        r["operating_margin_ttm"] = rnd(_p(r["operating_income_ttm"], rt))
+        r["fcf_margin_ttm"] = rnd(_p(r["fcf_ttm"], rt))
+        r["sbc_to_revenue_ttm"] = rnd(_p(r["sbc_ttm"], rt))
+        r["capex_to_revenue_ttm"] = rnd(_p(r["capex_ttm"], rt))
+        r["ocf_to_ni_ttm"] = rnd(safe_div(r["ocf_ttm"], r["net_income_ttm"]) if (r["net_income_ttm"] or 0) > 0 else None)
+        qdays = _days(r["donem_basi"], end) + 1 if r.get("donem_basi") else 91
+        r["dso"] = rnd(safe_div(r["ar"], rv) * qdays if safe_div(r["ar"], rv) is not None else None, 1)
+        r["dio"] = rnd(safe_div(r["inventory"], r["cogs"]) * qdays if safe_div(r["inventory"], r["cogs"]) is not None else None, 1)
+        dr = None
+        if r["deferred_rev_current"] is not None or r["deferred_rev_noncurrent"] is not None:
+            dr = (r["deferred_rev_current"] or 0) + (r["deferred_rev_noncurrent"] or 0)
+        r["deferred_revenue"] = dr
+        r["liquidity"] = None if r["cash"] is None else r["cash"] + (r["st_investments"] or 0)
+        # YoY
+        if pr:
+            r["onceki_yil_donem"] = pr["donem_sonu"]
+            r["revenue_yoy"] = rnd(pct(rv, pr["revenue"]))
+            r["revenue_ttm_yoy"] = rnd(pct(rt, pr.get("revenue_ttm")))
+            r["diluted_shares_yoy"] = rnd(pct(r["diluted_shares"], pr["diluted_shares"]))
+            r["ar_yoy"] = rnd(pct(r["ar"], pr["ar"]))
+            r["inventory_yoy"] = rnd(pct(r["inventory"], pr["inventory"]))
+            r["deferred_revenue_yoy"] = rnd(pct(dr, pr.get("deferred_revenue")))
+            r["rpo_yoy"] = rnd(pct(r["rpo"], pr["rpo"]))
+            r["gross_margin_yoy_pp"] = _diff(r["gross_margin"], pr.get("gross_margin"))
+            r["dso_yoy_change"] = _diff(r["dso"], pr.get("dso"))
+            r["capex_to_revenue_ttm_yoy_pp"] = _diff(r["capex_to_revenue_ttm"], pr.get("capex_to_revenue_ttm"))
+            r["receivables_vs_revenue_gap"] = _diff(r["ar_yoy"], r["revenue_yoy"])
+            r["inventory_vs_revenue_gap"] = _diff(r["inventory_yoy"], r["revenue_yoy"])
+        else:
+            for k in ("revenue_yoy", "revenue_ttm_yoy", "diluted_shares_yoy", "ar_yoy", "inventory_yoy",
+                      "deferred_revenue_yoy", "rpo_yoy", "gross_margin_yoy_pp", "dso_yoy_change",
+                      "capex_to_revenue_ttm_yoy_pp", "receivables_vs_revenue_gap", "inventory_vs_revenue_gap"):
+                r[k] = None
+        # Nakit pisti: sadece TTM FCF negatifse
+        if r["fcf_ttm"] is not None and r["fcf_ttm"] < 0 and r["liquidity"] is not None:
+            r["cash_runway_months"] = rnd(r["liquidity"] / (-r["fcf_ttm"] / 12), 1)
+        else:
+            r["cash_runway_months"] = None
+        r["nakit_uretiyor"] = (r["fcf_ttm"] is not None and r["fcf_ttm"] >= 0)
+
+    rows = rows[-max_quarters:]
+    kavramlar = {k: {"tablo": CONCEPTS[k]["tablo"], "kullanilan": S[k].concepts_used,
+                     "etiketler": S[k].label} for k in CONCEPTS}
+    return {"ceyrekler": rows, "kavramlar": kavramlar}
+
+
+def _p(a, b):
+    x = safe_div(a, b)
+    return None if x is None else x * 100
+
+
+def _diff(a, b):
+    return None if a is None or b is None else round(a - b, 2)

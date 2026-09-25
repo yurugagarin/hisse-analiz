@@ -1,0 +1,57 @@
+# =====================================================================
+# KURAL BAZLI ALIM TAKİBİ — TASLAK. Emre onaylayacak.
+# Otomatik işlem YOK. Site sadece bilgilendirir.
+#
+# kademeler: 52 haftalık zirveden düşüş eşikleri (%) ve o eşikte ne yapacağını
+#            önceden yazdığın not.
+# kosul: tez_saglam -> kademe tetiklense bile tez durumu KIRMIZI ise site
+#        "koşul sağlanmıyor" der.
+# sirkete_ozel_esik: hissenin zirveden düşüşü, benchmark'ların düşüşünden bu
+#        kadar puan fazlaysa düşüş "şirkete özel" sayılır; aksi halde
+#        "sektör/piyasa kaynaklı".
+# =====================================================================
+varsayilan:
+  onay: taslak
+  kosul: tez_saglam
+  sirkete_ozel_esik: 10
+  kademeler:
+    - {dusus: 15, not: "Haftalık DCA tutarını 1,5x yap (tez sağlamsa)."}
+    - {dusus: 25, not: "Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku."}
+    - {dusus: 35, not: "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."}
+
+NVDA:
+  onay: taslak
+  kosul: tez_saglam
+  sirkete_ozel_esik: 10
+  kademeler:
+    - {dusus: 15, not: "DCA 1,5x (tez sağlamsa)."}
+    - {dusus: 25, not: "DCA 2x; stok ve brüt marj sütunlarını kontrol et."}
+    - {dusus: 35, not: "Ek alım düşün; önce şeytanın avukatını oku."}
+
+META:
+  onay: taslak
+  kosul: tez_saglam
+  sirkete_ozel_esik: 10
+  kademeler:
+    - {dusus: 15, not: "DCA 1,5x (tez sağlamsa)."}
+    - {dusus: 25, not: "DCA 2x; capex ve FCF sütununu kontrol et."}
+    - {dusus: 35, not: "Ek alım düşün; regülasyon haberlerini oku."}
+
+NOW:
+  onay: taslak
+  kosul: tez_saglam
+  sirkete_ozel_esik: 10
+  kademeler:
+    - {dusus: 15, not: "DCA 1,5x (tez sağlamsa)."}
+    - {dusus: 25, not: "DCA 2x; RPO ve SBC sütunlarını kontrol et."}
+    - {dusus: 35, not: "Ek alım düşün; önce şeytanın avukatını oku."}
+
+AAOI:
+  onay: taslak
+  kosul: tez_saglam
+  # Küçük ve oynak hisse: kademeler daha geniş
+  sirkete_ozel_esik: 15
+  kademeler:
+    - {dusus: 25, not: "DCA 1,5x (tez sağlamsa)."}
+    - {dusus: 40, not: "DCA 2x; nakit pisti ve sulandırmayı kontrol et."}
+    - {dusus: 55, not: "Pozisyon büyüklüğünü sınırla; tez gerçekten sağlam mı yeniden yaz."}

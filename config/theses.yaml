@@ -1,0 +1,303 @@
+# =====================================================================
+# YATIRIM TEZLERİ — TASLAK. Emre onaylayacak.
+# ---------------------------------------------------------------------
+# Bu dosyadaki eşikler bir görüştür, olgu değildir. Claude tarafından
+# başlangıç taslağı olarak yazıldı; onaylayana kadar sitede
+# "TASLAK — Emre onaylayacak" etiketiyle görünür.
+# Onayladığında ilgili hissede `onay: taslak` -> `onay: onaylandi` yap.
+#
+# SÜTUN (pillar) TİPLERİ
+#   tip: metrik  -> SEC XBRL verisinden otomatik hesaplanır (deterministik)
+#   tip: yorum   -> Claude, 10-Q/10-K metni + basın bülteninden değerlendirir.
+#                   Sitede "YORUM" olarak ayrı gösterilir; kanıt alıntısı zorunlu.
+#
+# METRİK KATALOĞU (tip: metrik için `metrik:` alanı)
+#   revenue_yoy            Çeyreklik gelir, yıllık büyüme (%)
+#   revenue_ttm_yoy        Son 4 çeyrek (TTM) gelir büyümesi (%)
+#   gross_margin           Çeyreklik brüt marj (%)
+#   gross_margin_ttm       TTM brüt marj (%)
+#   operating_margin       Çeyreklik faaliyet marjı (%)
+#   operating_margin_ttm   TTM faaliyet marjı (%)
+#   ocf_to_ni_ttm          TTM işletme nakit akışı / net kâr (x)
+#   fcf_margin_ttm         TTM serbest nakit akışı / gelir (%)
+#   sbc_to_revenue_ttm     TTM hisse bazlı ödeme / gelir (%)
+#   diluted_shares_yoy     Seyreltilmiş ağırlıklı hisse sayısı yıllık değişim (%)
+#   dso                    Alacak tahsil süresi (gün)
+#   receivables_vs_revenue_gap  Alacak büyümesi − gelir büyümesi (puan)
+#   inventory_yoy          Stok yıllık değişim (%)
+#   inventory_vs_revenue_gap    Stok büyümesi − gelir büyümesi (puan)
+#   dio                    Stok devir süresi (gün)
+#   deferred_revenue_yoy   Ertelenmiş gelir (sözleşme yükümlülüğü) yıllık değişim (%)
+#   rpo_yoy                Kalan edim yükümlülüğü (RPO) yıllık değişim (%)
+#   capex_to_revenue_ttm   TTM yatırım harcaması / gelir (%)
+#   cash_runway_months     Nakit pisti (ay) — sadece nakit yakan şirkette anlamlı
+#
+# DEĞERLENDİRME
+#   operator ">" : değer >= esik -> YEŞİL; >= uyari -> SARI; aksi KIRMIZI
+#   operator "<" : değer <= esik -> YEŞİL; <= uyari -> SARI; aksi KIRMIZI
+#   Veri yoksa: GRİ "veri yok".
+#
+# ÇIKIŞ KRİTERLERİ: `ardisik_ceyrek: N` -> koşul son N çeyrek üst üste
+# sağlanırsa tetiklenir. Tetiklenmesi "sat" demek DEĞİLDİR; önceden yazdığın
+# kuralı hatırlatır.
+# =====================================================================
+
+NVDA:
+  onay: taslak
+  ozet: >
+    Hızlandırılmış hesaplama (GPU + ağ + yazılım yığını) için talep, hyperscaler ve
+    kurumsal AI yatırımlarıyla yüksek büyümeyi sürdürüyor; yazılım/ekosistem kilidi
+    sayesinde yüksek brüt marj korunuyor ve kâr nakde dönüşüyor.
+  sutunlar:
+    - id: buyume
+      ad: Talep ve büyüme
+      tip: metrik
+      metrik: revenue_yoy
+      operator: ">"
+      esik: 25
+      uyari: 10
+      aciklama: "Çeyreklik gelirin yıllık büyümesi > %25 ise tez sağlam; %10'un altı talep yavaşlaması sinyali."
+    - id: fiyatlama_gucu
+      ad: Fiyatlama gücü (brüt marj)
+      tip: metrik
+      metrik: gross_margin
+      operator: ">"
+      esik: 70
+      uyari: 65
+      aciklama: "Brüt marj > %70 rekabetin fiyatı henüz aşındırmadığını gösterir."
+    - id: kazanc_kalitesi
+      ad: Kâr nakde dönüşüyor mu
+      tip: metrik
+      metrik: ocf_to_ni_ttm
+      operator: ">"
+      esik: 0.9
+      uyari: 0.7
+      aciklama: "TTM işletme nakit akışı / net kâr > 0,9."
+    - id: stok_disiplini
+      ad: Stok ve kanal disiplini
+      tip: metrik
+      metrik: inventory_vs_revenue_gap
+      operator: "<"
+      esik: 20
+      uyari: 45
+      aciklama: "Stok büyümesi gelir büyümesini 20 puandan fazla aşmamalı; aşarsa talep/ürün geçişi riski."
+    - id: rekabet_musteri
+      ad: Rekabet ve müşteri yoğunlaşması
+      tip: yorum
+      soru: >
+        10-Q/10-K ve basın bülteninde; doğrudan müşteri yoğunlaşması (en büyük
+        müşterilerin gelir payı), özel çip (TPU/ASIC) ve rakip hızlandırıcılar,
+        ihracat kısıtları hakkında yönetimin söyledikleri tezi zayıflatıyor mu?
+  cikis_kriterleri:
+    - id: gelir_daralmasi
+      ad: "Gelir 2 çeyrek üst üste yıllık bazda daralırsa"
+      metrik: revenue_yoy
+      operator: "<"
+      esik: 0
+      ardisik_ceyrek: 2
+    - id: marj_kirilmasi
+      ad: "Brüt marj 2 çeyrek üst üste %60'ın altına inerse"
+      metrik: gross_margin
+      operator: "<"
+      esik: 60
+      ardisik_ceyrek: 2
+    - id: stok_sisme
+      ad: "Stok büyümesi gelir büyümesini 2 çeyrek üst üste 60 puandan fazla aşarsa"
+      metrik: inventory_vs_revenue_gap
+      operator: ">"
+      esik: 60
+      ardisik_ceyrek: 2
+
+META:
+  onay: taslak
+  ozet: >
+    Reklam motoru (Family of Apps) AI destekli hedefleme ile çift haneli büyümeyi ve
+    yüksek faaliyet marjını koruyor; ağır AI yatırımına rağmen serbest nakit akışı
+    pozitif kalıyor ve hisse geri alımı sulandırmayı telafi ediyor.
+  sutunlar:
+    - id: reklam_buyumesi
+      ad: Reklam motoru büyümesi
+      tip: metrik
+      metrik: revenue_yoy
+      operator: ">"
+      esik: 12
+      uyari: 5
+      aciklama: "Gelir büyümesi > %12."
+    - id: marj
+      ad: Faaliyet marjı
+      tip: metrik
+      metrik: operating_margin_ttm
+      operator: ">"
+      esik: 35
+      uyari: 28
+      aciklama: "TTM faaliyet marjı > %35 (Reality Labs zararları dahil, konsolide)."
+    - id: capex_nakit
+      ad: AI yatırımına rağmen nakit üretimi
+      tip: metrik
+      metrik: fcf_margin_ttm
+      operator: ">"
+      esik: 10
+      uyari: 0
+      aciklama: "TTM serbest nakit akışı marjı > %10; negatife dönerse capex kârı yiyor demektir."
+    - id: sulandirma
+      ad: Hisse sayısı (geri alım vs SBC)
+      tip: metrik
+      metrik: diluted_shares_yoy
+      operator: "<"
+      esik: 0
+      uyari: 2
+      aciklama: "Seyreltilmiş hisse sayısı yıllık bazda azalıyor olmalı."
+    - id: ai_getirisi
+      ad: AI yatırımının getirisi ve regülasyon
+      tip: yorum
+      soru: >
+        10-Q/10-K ve basın bülteninde reklam gösterimi ve reklam başına ortalama fiyat
+        eğilimleri, capex guidance'ı ve AB/ABD regülasyon riskleri hakkında yönetimin
+        açıklamaları tezi destekliyor mu, zayıflatıyor mu?
+  cikis_kriterleri:
+    - id: buyume_coker
+      ad: "Gelir büyümesi 2 çeyrek üst üste %5'in altına inerse"
+      metrik: revenue_yoy
+      operator: "<"
+      esik: 5
+      ardisik_ceyrek: 2
+    - id: fcf_negatif
+      ad: "TTM serbest nakit akışı 2 çeyrek üst üste negatif olursa"
+      metrik: fcf_margin_ttm
+      operator: "<"
+      esik: 0
+      ardisik_ceyrek: 2
+
+NOW:
+  onay: taslak
+  ozet: >
+    Kurumsal iş akışı platformu yüksek yenileme oranı ve genişleyen ürün (AI/Now Assist)
+    satışıyla %20 civarı büyümeyi sürdürüyor; sözleşmeli gelir birikimi (RPO) görünürlük
+    sağlıyor ve güçlü FCF marjı SBC maliyetine rağmen gerçek değer yaratıyor.
+  sutunlar:
+    - id: buyume
+      ad: Gelir büyümesi
+      tip: metrik
+      metrik: revenue_yoy
+      operator: ">"
+      esik: 18
+      uyari: 12
+      aciklama: "Çeyreklik gelir büyümesi > %18."
+    - id: gorunurluk
+      ad: Sözleşmeli gelir birikimi (RPO)
+      tip: metrik
+      metrik: rpo_yoy
+      operator: ">"
+      esik: 18
+      uyari: 12
+      aciklama: "RPO yıllık büyümesi gelir büyümesine yakın veya üzerinde olmalı."
+    - id: nakit
+      ad: Serbest nakit akışı marjı
+      tip: metrik
+      metrik: fcf_margin_ttm
+      operator: ">"
+      esik: 25
+      uyari: 18
+      aciklama: "TTM FCF marjı > %25."
+    - id: sbc
+      ad: SBC maliyeti
+      tip: metrik
+      metrik: sbc_to_revenue_ttm
+      operator: "<"
+      esik: 15
+      uyari: 20
+      aciklama: "SBC/gelir < %15; SBC hariç FCF'nin şişirilmiş görünmemesi için."
+    - id: ai_ve_yenileme
+      ad: AI monetizasyonu ve müşteri tutma
+      tip: yorum
+      soru: >
+        10-Q/10-K ve basın bülteninde yenileme oranı, büyük müşteri (yıllık 5M$+ ACV) sayısı,
+        Now Assist/AI ürünlerinin katkısı ve satın almaların büyümeye etkisi hakkında
+        açıklamalar tezi destekliyor mu?
+  cikis_kriterleri:
+    - id: rpo_yavas
+      ad: "RPO büyümesi 2 çeyrek üst üste %12'nin altına inerse"
+      metrik: rpo_yoy
+      operator: "<"
+      esik: 12
+      ardisik_ceyrek: 2
+    - id: gelir_yavas
+      ad: "Gelir büyümesi 2 çeyrek üst üste %12'nin altına inerse"
+      metrik: revenue_yoy
+      operator: "<"
+      esik: 12
+      ardisik_ceyrek: 2
+
+AAOI:
+  onay: taslak
+  ozet: >
+    Veri merkezi optik alıcı-vericilerde (400G/800G ve sonrası) hyperscaler talebiyle hızlı
+    büyüme; ABD içi üretim kapasitesi avantaj sağlıyor. Şirket kârlılığa geçiş aşamasında,
+    bu yüzden kazanç kalitesi, nakit pisti ve sulandırma kritik.
+  sutunlar:
+    - id: buyume
+      ad: Gelir büyümesi
+      tip: metrik
+      metrik: revenue_yoy
+      operator: ">"
+      esik: 30
+      uyari: 10
+      aciklama: "Çeyreklik gelir büyümesi > %30."
+    - id: brut_marj
+      ad: Brüt marj
+      tip: metrik
+      metrik: gross_margin
+      operator: ">"
+      esik: 30
+      uyari: 25
+      aciklama: "GAAP brüt marj > %30; ürün karması ve ölçek etkisini gösterir."
+    - id: faaliyet_kari
+      ad: Faaliyetten kârlılığa geçiş
+      tip: metrik
+      metrik: operating_margin_ttm
+      operator: ">"
+      esik: 0
+      uyari: -10
+      aciklama: "TTM faaliyet marjı pozitif olmalı; warrant/türev kazançları bu metriği etkilemez."
+    - id: sulandirma
+      ad: Sulandırma
+      tip: metrik
+      metrik: diluted_shares_yoy
+      operator: "<"
+      esik: 10
+      uyari: 25
+      aciklama: "Seyreltilmiş hisse sayısı yıllık artışı < %10 (ATM/convertible ihraçları)."
+    - id: stok
+      ad: Stok ve talep uyumu
+      tip: metrik
+      metrik: inventory_vs_revenue_gap
+      operator: "<"
+      esik: 25
+      uyari: 60
+      aciklama: "Stok büyümesi gelir büyümesini 25 puandan fazla aşmamalı."
+    - id: musteri_kapasite
+      ad: Müşteri yoğunlaşması ve kapasite
+      tip: yorum
+      soru: >
+        10-Q/10-K dipnotlarında en büyük müşterilerin gelir payı, 800G/1.6T ürün geçişi,
+        ABD (Texas) üretim kapasitesi ve finansman (ATM, convertible) hakkında açıklamalar
+        tezi destekliyor mu?
+  cikis_kriterleri:
+    - id: pist
+      ad: "Nakit pisti 12 ayın altına inerse"
+      metrik: cash_runway_months
+      operator: "<"
+      esik: 12
+      ardisik_ceyrek: 1
+    - id: marj_coker
+      ad: "Brüt marj 2 çeyrek üst üste %20'nin altına inerse"
+      metrik: gross_margin
+      operator: "<"
+      esik: 20
+      ardisik_ceyrek: 2
+    - id: asiri_sulandirma
+      ad: "Seyreltilmiş hisse sayısı yıllık %40'tan fazla artarsa"
+      metrik: diluted_shares_yoy
+      operator: ">"
+      esik: 40
+      ardisik_ceyrek: 1
