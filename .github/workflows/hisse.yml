@@ -109,7 +109,10 @@ jobs:
           FIL="${{ steps.daily.outputs.claude_filings }}"
           [ -n "${{ inputs.bilanco_claude }}" ] && FIL="${{ inputs.bilanco_claude }}"
           NEED=false
-          if [ "${{ inputs.skip_claude }}" != "true" ] && [ "${{ github.event_name }}" != "push" ]; then
+          AKTIF=$(python -c "import yaml;print(str((yaml.safe_load(open('config/settings.yaml')) or {}).get('claude',{}).get('aktif', False)).lower())")
+          if [ "$AKTIF" != "true" ]; then
+            echo "Claude KAPALI (config/settings.yaml → claude.aktif: false). Pro planından hiçbir şey harcanmıyor."
+          elif [ "${{ inputs.skip_claude }}" != "true" ] && [ "${{ github.event_name }}" != "push" ]; then
             if [ -n "$FIL" ] || [ "${{ steps.mod.outputs.weekly }}" = "true" ]; then NEED=true; fi
           fi
           echo "Bilanço: '$FIL' · Salı: ${{ steps.mod.outputs.weekly }} · Claude: $NEED"

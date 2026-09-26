@@ -222,6 +222,10 @@ def main():
     ap.add_argument("--weekly", action="store_true")
     args = ap.parse_args()
     settings, stocks, theses = load_cfg()
+    if not settings.get("claude", {}).get("aktif", False):
+        # Ana şalter kapalı: hiçbir Claude çağrısı yapma (Pro planından harcama yok)
+        print("Claude kapalı (config/settings.yaml → claude.aktif: false); hiçbir görev çalıştırılmadı.")
+        return
     rid = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     cl = Claude(rid)
     mt = settings.get("claude", {}).get("max_turns", {})
