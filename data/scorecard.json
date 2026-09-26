@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-09-26T11:33:01+00:00",
+ "guncelleme": "2026-09-26T11:45:57+00:00",
  "ufuklar": [
   30,
   90,
@@ -10,7 +10,7 @@
    "tur": "tez_bozulma",
    "ad": "Tez genel durumu KIRMIZI'ya döndü",
    "beklenen_yon": "olumsuz",
-   "adet": 3,
+   "adet": 4,
    "ufuklar": {
     "30": {
      "n": 0,
@@ -56,7 +56,7 @@
    "tur": "sutun_kirmizi",
    "ad": "Bir tez sütunu KIRMIZI'ya döndü",
    "beklenen_yon": "olumsuz",
-   "adet": 4,
+   "adet": 6,
    "ufuklar": {
     "30": {
      "n": 0,
@@ -79,7 +79,7 @@
    "tur": "cikis_kriteri",
    "ad": "Önceden yazılmış çıkış kriteri tetiklendi",
    "beklenen_yon": "olumsuz",
-   "adet": 4,
+   "adet": 5,
    "ufuklar": {
     "30": {
      "n": 0,
@@ -125,7 +125,7 @@
    "tur": "kural_kademe_tez_bozuk",
    "ad": "Düşüş kademesi tetiklendi, tez kırmızı",
    "beklenen_yon": "olumsuz",
-   "adet": 3,
+   "adet": 4,
    "ufuklar": {
     "30": {
      "n": 0,
@@ -194,7 +194,7 @@
    "tur": "insider_kume_satis",
    "ad": "Kümelenmiş yönetici satışı",
    "beklenen_yon": "olumsuz",
-   "adet": 3,
+   "adet": 4,
    "ufuklar": {
     "30": {
      "n": 0,
@@ -217,7 +217,7 @@
    "tur": "bilanco_kirmizi_bayrak",
    "ad": "Yeni bilançoda kırmızı bayrak",
    "beklenen_yon": "olumsuz",
-   "adet": 4,
+   "adet": 5,
    "ufuklar": {
     "30": {
      "n": 0,
@@ -238,6 +238,139 @@
   }
  ],
  "sinyaller": [
+  {
+   "id": "826bb629aba7",
+   "tarih": "2026-09-26",
+   "ticker": "RGTI",
+   "tur": "bilanco_kirmizi_bayrak",
+   "tur_adi": "Yeni bilançoda kırmızı bayrak",
+   "yon": "olumsuz",
+   "aciklama": "TTM net zarar; Şirket nakit yakıyor; SBC gelire oranla çok yüksek; Ciddi sulandırma",
+   "fiyat": 16.66,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-26T11:45:53+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
+  {
+   "id": "ae8929e650a4",
+   "tarih": "2026-09-26",
+   "ticker": "RGTI",
+   "tur": "insider_kume_satis",
+   "tur_adi": "Kümelenmiş yönetici satışı",
+   "yon": "olumsuz",
+   "aciklama": "2026-08-20–2026-09-03: Bertelsen Jeffrey A., Bestwick Andrew Joseph, Rivas David",
+   "fiyat": 16.66,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-26T11:45:53+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
+  {
+   "id": "807a6c754b44",
+   "tarih": "2026-09-26",
+   "ticker": "RGTI",
+   "tur": "kural_kademe_tez_bozuk",
+   "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
+   "yon": "olumsuz",
+   "aciklama": "Zirveden −%70,4, −%35 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+   "fiyat": 16.66,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-26T11:45:53+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
+  {
+   "id": "96791d2e6715",
+   "tarih": "2026-09-26",
+   "ticker": "RGTI",
+   "tur": "cikis_kriteri",
+   "tur_adi": "Önceden yazılmış çıkış kriteri tetiklendi",
+   "yon": "olumsuz",
+   "aciklama": "Hisse sayısı yıllık %10'dan fazla artarsa",
+   "fiyat": 16.66,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-26T11:45:53+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
+  {
+   "id": "7e5b4c31d853",
+   "tarih": "2026-09-26",
+   "ticker": "RGTI",
+   "tur": "sutun_kirmizi",
+   "tur_adi": "Bir tez sütunu KIRMIZI'ya döndü",
+   "yon": "olumsuz",
+   "aciklama": "Hisse sayısı: %11,7",
+   "fiyat": 16.66,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-26T11:45:53+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
+  {
+   "id": "588eaac15931",
+   "tarih": "2026-09-26",
+   "ticker": "RGTI",
+   "tur": "sutun_kirmizi",
+   "tur_adi": "Bir tez sütunu KIRMIZI'ya döndü",
+   "yon": "olumsuz",
+   "aciklama": "Nakit pisti: 3,80 ay",
+   "fiyat": 16.66,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-26T11:45:53+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
+  {
+   "id": "d853112b07b8",
+   "tarih": "2026-09-26",
+   "ticker": "RGTI",
+   "tur": "tez_bozulma",
+   "tur_adi": "Tez genel durumu KIRMIZI'ya döndü",
+   "yon": "olumsuz",
+   "aciklama": "Kırmızı sütunlar: Nakit pisti, Hisse sayısı",
+   "fiyat": 16.66,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-26T11:45:53+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
   {
    "id": "89dfeefddb74",
    "tarih": "2026-09-26",
