@@ -94,12 +94,17 @@ def thesis_block(T: str, name: str, m: dict) -> str:
         note.append(f"son yıllık büyüme %{ry:.0f}")
     else:
         g_e, g_u = 10, 3
-    # Brüt marj: mevcut seviyeden 3 puan düşüşe kadar yeşil, 8 puana kadar sarı
+    # Marj: brüt marj varsa o; yoksa (ör. elektrik şirketleri, bankalar brüt kâr raporlamaz) faaliyet marjı.
+    # Mevcut seviyeden 3 puan düşüşe kadar yeşil, 8 puana kadar sarı.
     if gm is not None:
-        m_e, m_u = r0(gm - 3), r0(gm - 8)
+        m_key, m_ad, m_e, m_u = "gross_margin", "Brüt marj", r0(gm - 3), r0(gm - 8)
         note.append(f"brüt marj %{gm:.0f}")
+    elif om is not None and om > 0:  # zarardaysa aşağıdaki "Kârlılığa gidiş" sütunu zaten faaliyet marjını izler
+        m_key, m_ad, m_e, m_u = "operating_margin_ttm", "Faaliyet marjı (TTM)", r0(om - 3), r0(om - 8)
+        note.append(f"faaliyet marjı %{om:.0f} (şirket brüt kâr raporlamıyor)")
     else:
-        m_e, m_u = 40, 30
+        m_key = None
+        m_e = m_u = 0
     # Nakit: FCF pozitifse korunması; negatifse faaliyet marjının iyileşmesi
     if fm is not None and fm > 0:
         cash = (f"    - {{id: nakit, ad: \"Serbest nakit akışı\", tip: metrik, metrik: fcf_margin_ttm, operator: \">\", "
@@ -118,8 +123,8 @@ def thesis_block(T: str, name: str, m: dict) -> str:
             f"    ve hisse sayısının bugünkü seviyesini koruyup korumadığını izler.\n"
             f"  sutunlar:\n"
             f"    - {{id: buyume, ad: \"Gelir büyümesi\", tip: metrik, metrik: revenue_yoy, operator: \">\", esik: {g_e}, uyari: {g_u}}}\n"
-            f"    - {{id: brut_marj, ad: \"Brüt marj\", tip: metrik, metrik: gross_margin, operator: \">\", esik: {m_e}, uyari: {m_u}}}\n"
-            f"{cash}"
+            + (f"    - {{id: marj, ad: \"{m_ad}\", tip: metrik, metrik: {m_key}, operator: \">\", esik: {m_e}, uyari: {m_u}}}\n" if m_key else "")
+            + f"{cash}"
             f"    - {{id: sulandirma, ad: \"Hisse sayısı\", tip: metrik, metrik: diluted_shares_yoy, operator: \"<\", esik: 2, uyari: 5}}\n"
             f"    - id: rekabet\n"
             f"      ad: \"Rekabet ve yönetim\"\n"
@@ -129,8 +134,8 @@ def thesis_block(T: str, name: str, m: dict) -> str:
             f"        hakkındaki açıklamalar tezi destekliyor mu?\n"
             f"  cikis_kriterleri:\n"
             f"    - {{id: daralma, ad: \"Gelir 2 çeyrek üst üste yıllık bazda daralırsa\", metrik: revenue_yoy, operator: \"<\", esik: 0, ardisik_ceyrek: 2}}\n"
-            f"    - {{id: marj_kirilmasi, ad: \"Brüt marj 2 çeyrek üst üste eşiğin (%{m_u - 4}) altına inerse\", metrik: gross_margin, operator: \"<\", esik: {m_u - 4}, ardisik_ceyrek: 2}}\n"
-            f"    - {{id: asiri_sulandirma, ad: \"Hisse sayısı yıllık %10'dan fazla artarsa\", metrik: diluted_shares_yoy, operator: \">\", esik: 10, ardisik_ceyrek: 1}}\n")
+            + (f"    - {{id: marj_kirilmasi, ad: \"{m_ad} 2 çeyrek üst üste %{m_u - 4} altına inerse\", metrik: {m_key}, operator: \"<\", esik: {m_u - 4}, ardisik_ceyrek: 2}}\n" if m_key else "")
+            + f"    - {{id: asiri_sulandirma, ad: \"Hisse sayısı yıllık %10'dan fazla artarsa\", metrik: diluted_shares_yoy, operator: \">\", esik: 10, ardisik_ceyrek: 1}}\n")
 
 
 def add(T: str, name: str | None, benchmarks: list[str]) -> str:
