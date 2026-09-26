@@ -117,6 +117,10 @@
     order.forEach(t => { html += cardHtml(sum.hisseler[t]); });
     html += '</div>';
     $app.innerHTML = html;
+    $app.querySelectorAll('[data-go]').forEach(c => c.addEventListener('click', e => {
+      if (e.target.closest('a')) return;  // kart içindeki haber linkleri kendi işini yapsın
+      location.hash = c.dataset.go;
+    }));
     order.forEach(t => {
       const h = sum.hisseler[t], el = document.getElementById('spark-' + t);
       if (el && h.grafik && h.grafik.length) Charts.line(el, { spark: true, height: 54, series: [{ name: t, color: 'var(--s1)', points: h.grafik }], xFmt: date, yFmt: px, label: t + ' son 1 yıl fiyat' });
@@ -132,8 +136,8 @@
     (h.buyuk_hareketler || []).forEach(m => alerts.push(`<div class="alert sari">⚡ Büyük hareket ${date(m.tarih)}: ${pct(m.hareket, 2, true)} (${esc(({ sirkete_ozel: 'şirkete özel', sektor: 'sektör', piyasa: 'piyasa', karma: 'karma' })[m.on_siniflama] || m.on_siniflama)})</div>`));
     if (h.bilanco && h.bilanco.kirmizi) alerts.push(`<div class="alert kirmizi">⚑ Son bilançoda ${h.bilanco.kirmizi} kırmızı bayrak</div>`);
     const gel = (h.gelismeler || []).slice(0, 3).map(g => `<li>${g.tarih ? `<span class="muted small">${date(g.tarih)}</span> ` : ''}${link(g.kaynak_url, g.baslik)}${g.etki ? ` <span class="muted small">(${esc({ destekler: 'teze destek', zayiflatir: 'tezi zayıflatır', notr: 'nötr' }[g.etki] || g.etki)})</span>` : ''}</li>`).join('');
-    return `<a class="card-link" href="#/h/${esc(h.ticker)}"><div class="card tcard">
-      <div class="row between"><div><h2>${esc(h.ticker)}</h2><div class="name">${esc(h.ad)}</div></div>
+    return `<div class="card tcard clickable" data-go="#/h/${esc(h.ticker)}">
+      <div class="row between"><div><h2><a href="#/h/${esc(h.ticker)}">${esc(h.ticker)} →</a></h2><div class="name">${esc(h.ad)}</div></div>
         <div style="text-align:right"><div class="price">${px(f.fiyat)}</div><div class="small">${chg(f.degisim_1g)} <span class="muted">${f.tarih ? date(f.tarih) : ''}</span></div></div></div>
       <div id="spark-${esc(h.ticker)}" style="margin:6px 0 2px"></div>
       <div class="split">
@@ -152,7 +156,7 @@
       ${gel ? `<ol class="news small">${gel}</ol>` : '<p class="empty small">veri yok</p>'}
       ${h.haber_yontem ? `<p class="muted small" style="margin:0">${esc(h.haber_yontem)}</p>` : ''}
       ${h.sali_raporu && h.sali_raporu.dca_notu && h.sali_raporu.dca_notu.not ? `<div class="sub-label">Salı raporu · DCA notu</div>${yorum(esc(h.sali_raporu.dca_notu.not))}` : ''}
-    </div></a>`;
+    </div>`;
   }
 
   /* ================= HİSSE DETAY ================= */

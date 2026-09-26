@@ -209,8 +209,9 @@ def main():
             items = []
             if fh.available:
                 items += news.finnhub_items(run.step("finnhub_haber", T, fh.news, T, 10) or [])
-            items += run.step("google_news", T, news.google_news, T, s["name"], 7) or []
-            heads = run.step("baslik_arsivi", T, news.update_archive, T, items, ncfg.get("archive_days", 45)) or heads
+            kws = news.keywords(T, s["name"], s.get("haber_anahtar"))
+            items += run.step("google_news", T, news.google_news, T, s["name"], 7, kws) or []
+            heads = run.step("baslik_arsivi", T, news.update_archive, T, items, ncfg.get("archive_days", 45), kws) or heads
         top = news.top_developments(T, s["name"], heads, ncfg.get("top_n", 3), ncfg.get("lookback_days", 7))
         write_json(DATA / "news" / f"{T}.json", top)
         # --- Büyük hareketler ---

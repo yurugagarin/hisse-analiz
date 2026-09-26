@@ -25,8 +25,24 @@ def _norm(t: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", (t or "").lower()).strip()
 
 
-def google_news(ticker: str, name: str, days: int = 7) -> list[dict]:
-    q = f'"{name}" OR {ticker} stock when:{days}d'
+def keywords(ticker: str, name: str, extra: list | None = None) -> list[str]:
+    """Haber alaka anahtarları: config'deki haber_anahtar listesi, yoksa şirketin tam adı."""
+    return list(extra) if extra else [name or ticker]
+
+
+def relevant(title: str, ticker: str, kws: list[str]) -> bool:
+    """Başlıkta anahtar kelimelerden biri (büyük/küçük harf duyarsız) ya da BÜYÜK harfle ticker geçmeli.
+    ('NOW' gibi İngilizce kelime olan ticker'lar yüzünden ticker büyük/küçük harf duyarlı aranır.)"""
+    t = title or ""
+    if re.search(rf"\b{re.escape(ticker.upper())}\b", t):
+        return True
+    tl = t.lower()
+    return any(k.lower() in tl for k in kws)
+
+
+def google_news(ticker: str, name: str, days: int = 7, kws: list | None = None) -> list[dict]:
+    kws = kws or keywords(ticker, name)
+    q = " OR ".join(f'"{k}"' for k in kws) + f' OR "NASDAQ:{ticker}" OR "NYSE:{ticker}" when:{days}d'
     r = gnews.get("https://news.google.com/rss/search", params={"q": q, "hl": "en-US", "gl": "US", "ceid": "US:en"},
                   retries=2, timeout=30)
     if r is None:
@@ -45,6 +61,8 @@ def google_news(ticker: str, name: str, days: int = 7) -> list[dict]:
         try:
             d = email.utils.parsedate_to_datetime(it.findtext("pubDate") or "").astimezone(dt.timezone.utc)
         except (TypeError, ValueError):
+            continue
+        if not relevant(title, ticker, kws):
             continue
         out.append({"zaman": d.replace(microsecond=0).isoformat(), "tarih": d.date().isoformat(), "baslik": title,
                     "ozet": "", "url": (it.findtext("link") or "").strip(), "kaynak": src_name,
@@ -65,9 +83,11 @@ def finnhub_items(rows: list) -> list[dict]:
     return out
 
 
-def update_archive(ticker: str, items: list[dict], keep_days: int = 45) -> list[dict]:
+def update_archive(ticker: str, items: list[dict], keep_days: int = 45, kws: list | None = None) -> list[dict]:
     path = DATA / "headlines" / f"{ticker}.json"
     old = (read_json(path, {}) or {}).get("basliklar", [])
+    if kws:  # eski arşivdeki alakasız Google başlıklarını da temizle (Finnhub zaten hisseye özel)
+        old = [x for x in old if x.get("saglayici") == "Finnhub" or relevant(x["baslik"], ticker, kws)]
     seen = {}
     for x in old + items:
         k = _norm(x["baslik"])[:120]

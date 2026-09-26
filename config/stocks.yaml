@@ -1,11 +1,13 @@
 # Takip edilen hisseler. Yeni hisse eklemek = listeye TEK SATIR eklemek.
 #   ticker: borsa kodu (zorunlu)
 #   benchmarks: (opsiyonel) karşılaştırma ETF'leri; yoksa settings.yaml'daki varsayılan kullanılır.
+#   haber_anahtar: (opsiyonel) Google News araması ve başlık alaka filtresi için kelimeler.
+#                  Yoksa şirketin tam adı kullanılır.
 # CIK numarası SEC'in ticker listesinden otomatik bulunur.
 # Yeni hisse için config/theses.yaml ve config/rules.yaml'a da bölüm eklemen önerilir;
 # eklemezsen site "tez yazılmamış" / varsayılan kural gösterir.
 stocks:
-  - {ticker: NVDA, name: "Nvidia", benchmarks: [QQQ, SMH]}
-  - {ticker: META, name: "Meta Platforms", benchmarks: [QQQ, XLC]}
-  - {ticker: NOW,  name: "ServiceNow", benchmarks: [QQQ, IGV]}
-  - {ticker: AAOI, name: "Applied Optoelectronics", benchmarks: [QQQ, SMH]}
+  - {ticker: NVDA, name: "Nvidia", benchmarks: [QQQ, SMH], haber_anahtar: [Nvidia, Jensen Huang]}
+  - {ticker: META, name: "Meta Platforms", benchmarks: [QQQ, XLC], haber_anahtar: [Meta Platforms, Meta AI, Zuckerberg, Instagram, WhatsApp]}
+  - {ticker: NOW,  name: "ServiceNow", benchmarks: [QQQ, IGV], haber_anahtar: [ServiceNow, Bill McDermott]}
+  - {ticker: AAOI, name: "Applied Optoelectronics", benchmarks: [QQQ, SMH], haber_anahtar: [Applied Optoelectronics]}
