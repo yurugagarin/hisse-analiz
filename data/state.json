@@ -1,63 +1,81 @@
 {
  "NVDA": {
-  "genel": "veri_yok",
+  "genel": "sari",
   "sutun": {
-   "buyume": "veri_yok",
-   "fiyatlama_gucu": "veri_yok",
-   "kazanc_kalitesi": "veri_yok",
-   "stok_disiplini": "veri_yok",
+   "buyume": "yesil",
+   "fiyatlama_gucu": "yesil",
+   "kazanc_kalitesi": "sari",
+   "stok_disiplini": "yesil",
    "rekabet_musteri": "veri_yok"
   },
   "cikis": [],
   "kademe": 0,
   "insider_p": [],
-  "kume": [],
-  "bayrak_accn": null
+  "kume": [
+   "2026-05-27",
+   "2026-09-17"
+  ],
+  "bayrak_accn": "0001045810-26-000075"
  },
  "META": {
-  "genel": "veri_yok",
+  "genel": "yesil",
   "sutun": {
-   "reklam_buyumesi": "veri_yok",
-   "marj": "veri_yok",
-   "capex_nakit": "veri_yok",
-   "sulandirma": "veri_yok",
+   "reklam_buyumesi": "yesil",
+   "marj": "yesil",
+   "capex_nakit": "yesil",
+   "sulandirma": "yesil",
    "ai_getirisi": "veri_yok"
   },
   "cikis": [],
   "kademe": 0,
   "insider_p": [],
-  "kume": [],
-  "bayrak_accn": null
+  "kume": [
+   "2026-05-01",
+   "2026-05-18",
+   "2026-07-20",
+   "2026-08-04",
+   "2026-09-03"
+  ],
+  "bayrak_accn": "0001628280-26-050705"
  },
  "NOW": {
-  "genel": "veri_yok",
+  "genel": "yesil",
   "sutun": {
-   "buyume": "veri_yok",
-   "gorunurluk": "veri_yok",
-   "nakit": "veri_yok",
-   "sbc": "veri_yok",
+   "buyume": "yesil",
+   "gorunurluk": "yesil",
+   "nakit": "yesil",
+   "sbc": "yesil",
    "ai_ve_yenileme": "veri_yok"
   },
   "cikis": [],
   "kademe": 25,
   "insider_p": [],
-  "kume": [],
-  "bayrak_accn": null
+  "kume": [
+   "2026-05-08",
+   "2026-08-27"
+  ],
+  "bayrak_accn": "0001373715-26-000076"
  },
  "AAOI": {
-  "genel": "veri_yok",
+  "genel": "kirmizi",
   "sutun": {
-   "buyume": "veri_yok",
-   "brut_marj": "veri_yok",
-   "faaliyet_kari": "veri_yok",
-   "sulandirma": "veri_yok",
-   "stok": "veri_yok",
+   "buyume": "yesil",
+   "brut_marj": "sari",
+   "faaliyet_kari": "kirmizi",
+   "sulandirma": "kirmizi",
+   "stok": "yesil",
    "musteri_kapasite": "veri_yok"
   },
-  "cikis": [],
+  "cikis": [
+   "asiri_sulandirma"
+  ],
   "kademe": 40,
   "insider_p": [],
-  "kume": [],
-  "bayrak_accn": null
+  "kume": [
+   "2026-05-11",
+   "2026-05-26",
+   "2026-06-10"
+  ],
+  "bayrak_accn": "0001437749-26-026278"
  }
 }

@@ -2,7 +2,7 @@
  "ticker": "META",
  "onay": "taslak",
  "kosul": "tez_saglam",
- "zirveden_uzaklik": 0.0,
+ "zirveden_uzaklik": -3.33,
  "kademeler": [
   {
    "dusus": 15,
@@ -23,27 +23,27 @@
  "benchmark": [
   {
    "sembol": "QQQ",
-   "zirveden_uzaklik": -0.85,
-   "degisim_1a": 4.27,
-   "degisim_3a": 3.45,
-   "fark_puan": 0.85
+   "zirveden_uzaklik": -0.4,
+   "degisim_1a": 4.66,
+   "degisim_3a": 5.38,
+   "fark_puan": -2.93
   },
   {
    "sembol": "XLC",
-   "zirveden_uzaklik": -5.07,
-   "degisim_1a": 0.72,
-   "degisim_3a": 7.97,
-   "fark_puan": 5.07
+   "zirveden_uzaklik": -5.93,
+   "degisim_1a": 0.31,
+   "degisim_3a": 6.39,
+   "fark_puan": 2.6
   }
  ],
- "guncelleme": "2026-09-25T23:56:42+00:00",
+ "guncelleme": "2026-09-26T00:05:37+00:00",
  "not": "Otomatik işlem yok. Bu bölüm önceden yazdığın kuralları hatırlatır.",
  "dusus_kaynagi": "piyasa_sektor",
  "dusus_kaynagi_aciklama": "Hissenin düşüşü benchmark'larla benzer: ağırlıkla piyasa/sektör kaynaklı.",
- "en_iyi_fark": 5.07,
+ "en_iyi_fark": 2.6,
  "tetiklenen": null,
- "tez_durumu": "veri_yok",
- "kosul_saglaniyor": null,
+ "tez_durumu": "yesil",
+ "kosul_saglaniyor": true,
  "durum": "tetiklenmedi",
- "mesaj": "Zirveden %0.0. Sonraki kademe: -%15."
+ "mesaj": "Zirveden %-3.33. Sonraki kademe: -%15."
 }

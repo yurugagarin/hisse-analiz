@@ -1,63 +1,63 @@
 {
  "tur": "son7gun",
- "baslangic": "2026-09-19",
- "bitis": "2026-09-25",
- "guncelleme": "2026-09-25T23:56:44+00:00",
+ "baslangic": "2026-09-20",
+ "bitis": "2026-09-26",
+ "guncelleme": "2026-09-26T00:06:08+00:00",
  "hisseler": [
   {
    "ticker": "NVDA",
    "ad": "Nvidia",
    "donem": [
-    "2026-09-19",
-    "2026-09-25"
+    "2026-09-20",
+    "2026-09-26"
    ],
    "fiyat": {
-    "son": 224.58,
-    "tarih": "2026-09-24",
-    "haftalik": 2.39,
-    "aylik": 5.41,
-    "zirveden": -4.73,
+    "son": 225.07,
+    "tarih": "2026-09-25",
+    "haftalik": 1.26,
+    "aylik": 7.35,
+    "zirveden": -4.53,
     "zirve_52h": 235.74,
     "zirve_tarih": "2026-05-14",
-    "kaynak": "Nasdaq.com (historical API)"
+    "kaynak": "Nasdaq.com (historical API) + Finnhub quote"
    },
    "benchmark_haftalik": {
-    "QQQ": 3.37,
-    "SMH": 7.12
+    "QQQ": 3.19,
+    "SMH": 5.86
    },
    "tez": {
-    "genel": "veri_yok",
+    "genel": "sari",
     "onay": "taslak",
     "sutunlar": [
      {
       "id": "buyume",
       "ad": "Talep ve büyüme",
-      "durum": "veri_yok",
-      "deger": null,
+      "durum": "yesil",
+      "deger": 105.85,
       "birim": "%",
       "tip": "metrik"
      },
      {
       "id": "fiyatlama_gucu",
       "ad": "Fiyatlama gücü (brüt marj)",
-      "durum": "veri_yok",
-      "deger": null,
+      "durum": "yesil",
+      "deger": 74.98,
       "birim": "%",
       "tip": "metrik"
      },
      {
       "id": "kazanc_kalitesi",
       "ad": "Kâr nakde dönüşüyor mu",
-      "durum": "veri_yok",
-      "deger": null,
+      "durum": "sari",
+      "deger": 0.7,
       "birim": "x",
       "tip": "metrik"
      },
      {
       "id": "stok_disiplini",
       "ad": "Stok ve kanal disiplini",
-      "durum": "veri_yok",
-      "deger": null,
+      "durum": "yesil",
+      "deger": 5.18,
       "birim": "puan",
       "tip": "metrik"
      },
@@ -74,22 +74,133 @@
    },
    "kural": {
     "durum": "tetiklenmedi",
-    "mesaj": "Zirveden %-4.73. Sonraki kademe: -%15.",
+    "mesaj": "Zirveden %-4.53. Sonraki kademe: -%15.",
     "tetiklenen": null,
-    "zirveden_uzaklik": -4.73,
+    "zirveden_uzaklik": -4.53,
     "dusus_kaynagi": "piyasa_sektor",
     "dusus_kaynagi_aciklama": "Hissenin düşüşü benchmark'larla benzer: ağırlıkla piyasa/sektör kaynaklı.",
-    "kosul_saglaniyor": null
+    "kosul_saglaniyor": true
    },
    "insider": {
-    "hafta_islemleri": [],
-    "hafta_kodlari": {},
-    "uyarilar": [],
-    "kumelenmis_satislar": [],
-    "ozet_90g": null
+    "hafta_islemleri": [
+     {
+      "tarih": "2026-09-21",
+      "kisi": "Teter Timothy S.",
+      "unvan": "EVP, General Counsel and Sec",
+      "kod": "S",
+      "adet": 12483.0,
+      "fiyat": 222.1932,
+      "tutar": 2773637.7155999998,
+      "plan_10b5_1": true,
+      "sonrasi": 2705637.0,
+      "sahiplik": "I",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000169684126000014/xslF345X06/wk-form4_1790196985.xml"
+     },
+     {
+      "tarih": "2026-09-21",
+      "kisi": "Teter Timothy S.",
+      "unvan": "EVP, General Counsel and Sec",
+      "kod": "S",
+      "adet": 13478.0,
+      "fiyat": 223.0489,
+      "tutar": 3006253.0742,
+      "plan_10b5_1": true,
+      "sonrasi": 2692159.0,
+      "sahiplik": "I",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000169684126000014/xslF345X06/wk-form4_1790196985.xml"
+     },
+     {
+      "tarih": "2026-09-21",
+      "kisi": "Teter Timothy S.",
+      "unvan": "EVP, General Counsel and Sec",
+      "kod": "S",
+      "adet": 4499.0,
+      "fiyat": 223.7479,
+      "tutar": 1006641.8021,
+      "plan_10b5_1": true,
+      "sonrasi": 2687660.0,
+      "sahiplik": "I",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000169684126000014/xslF345X06/wk-form4_1790196985.xml"
+     }
+    ],
+    "hafta_kodlari": {
+     "S": 3
+    },
+    "uyarilar": [
+     {
+      "etiket": "dikkat",
+      "metin": "Kümelenmiş satış: 2026-09-17–2026-09-21 arasında 3 yönetici satış yaptı (işlemlerin %75'i 10b5-1 planlı)."
+     },
+     {
+      "etiket": "dikkat",
+      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %34.35 yükseldi."
+     }
+    ],
+    "kumelenmis_satislar": [
+     {
+      "baslangic": "2026-05-27",
+      "bitis": "2026-06-04",
+      "kisiler": [
+       "Dabiri John",
+       "Neal Stephen C",
+       "STEVENS MARK A"
+      ],
+      "islem": 5,
+      "tutar": 224580213.05,
+      "planli_islem_orani": 20.0
+     },
+     {
+      "baslangic": "2026-09-17",
+      "bitis": "2026-09-21",
+      "kisiler": [
+       "Kress Colette",
+       "STEVENS MARK A",
+       "Teter Timothy S."
+      ],
+      "islem": 8,
+      "tutar": 314582260.4427,
+      "planli_islem_orani": 75.0
+     }
+    ],
+    "ozet_90g": {
+     "S": {
+      "islem": 25,
+      "adet": 4332118.0,
+      "tutar": 967599313.4595,
+      "plan_10b5_1_adet": 95378.0
+     },
+     "diger": {
+      "islem": 4,
+      "adet": 1938000.0,
+      "tutar": 0.0,
+      "plan_10b5_1_adet": 1500000.0
+     },
+     "F": {
+      "islem": 5,
+      "adet": 160153.0,
+      "tutar": 33979662.01,
+      "plan_10b5_1_adet": 40747.0
+     },
+     "A": {
+      "islem": 3,
+      "adet": 174917.0,
+      "tutar": 0.0,
+      "plan_10b5_1_adet": 0.0
+     }
+    }
    },
    "buyuk_hareketler": [],
-   "sec_bildirimleri": [],
+   "sec_bildirimleri": [
+    {
+     "form": "144",
+     "tarih": "2026-09-21",
+     "donem": "",
+     "items": "",
+     "aciklama": "",
+     "accn": "0001921094-26-001040",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000192109426001040/xsl144X01/primary_doc.xml"
+    }
+   ],
    "basliklar": [
     {
      "tarih": "2026-09-25",
@@ -99,15 +210,69 @@
     },
     {
      "tarih": "2026-09-25",
-     "kaynak": "Yahoo Finance",
-     "baslik": "Meet the Magnificent Semiconductor Stock Crushing Nvidia in 2026",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMWhjckVwUWVQeTcwN0pBNnZHdkJwSjRvNG9qYWpQOFcyM3pQVlZoMndfLVBjOFRUN1FsdlFpaVV4Y1FTTHh0VkhOajh2X1pzb3F6Sl9OM3VMRDZQTE5pNUxuUTlZTUdYZDlPTVFyMWJRTWhyMGhwRUphanJYQ1RGUTVCWHQxTnZzaDBhWlNkeGN1M3FUQWhGcnpKeUFzdGZwc0llVDFHa0FtOFh1OThv?oc=5"
+     "kaynak": "Yahoo",
+     "baslik": "Bank of America Says Stocks Are Overdue for a Pullback. These 2 Financial Stocks Are Built for One.",
+     "url": "https://finnhub.io/api/news?id=61195b15eeb646a443621e34160ade8dbd66f9f8fde49b33e84a759aa1aa8153"
     },
     {
      "tarih": "2026-09-25",
-     "kaynak": "The Motley Fool",
-     "baslik": "Credo vs. Nvidia: Which AI Chip Stock Is a Better Buy in 2026?",
-     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPY1dqTjdmMjJjS2NYT2RVX1EtaEdBSzZKZTgwdXBLRnRuR3dEbmVBRkxpTjd4Nkk0QTh1Nlp4Q3BmTFVNTDJVd1c3ZVhyaTR4bVZHcmxrcEU0S2ZJeDIxR0MtZkZJYWhaMUprNHRlSlJ1cXlUeWdrd090VHRqcC1LbURhSzVFY3Ntbjh6amtxTFBGakFTSGR5dk5qSlNrajA?oc=5"
+     "kaynak": "Yahoo",
+     "baslik": "Could This Be Novo Nordisk’s Next Billion-Dollar Weight-Loss Product?",
+     "url": "https://finnhub.io/api/news?id=fa90c7c2117f8ce6479d83449e809a2ec2bdbebe867919fda0b78ebc212c3e5a"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo",
+     "baslik": "Does IonQ's NVIDIA Quantum Tie-Up Reframe the Long-Term Hardware Opportunity for Rigetti Computing (RGTI)?",
+     "url": "https://finnhub.io/api/news?id=2ba248df89a1705af5bd3220dd3941537d3b3000b40d5f7373c087f7f9f02079"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo",
+     "baslik": "Is Dogecoin the Best Crypto You Can Buy Right Now?",
+     "url": "https://finnhub.io/api/news?id=ed265b3ae0c60afcd286f242d1a76eeb1ce268cdd0ada14f581506ba35125b2e"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo",
+     "baslik": "Microsoft, Meta, Akamai, Zscaler, Comcast, and More Stocks That Explain Today’s Market",
+     "url": "https://finnhub.io/api/news?id=e27f51c7589d9c6b0deffe1dd1ae3cd95d50bd610d1b27a22e0d6cfaa28c45da"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo",
+     "baslik": "SK Hynix’s Solidigm Weighs IPO That Could Raise $15 Billion, Report Says",
+     "url": "https://finnhub.io/api/news?id=d8cb1298b85c560b30449aaf18b1faf4945c72a9a862315e3a8be9c5a6f6198c"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo",
+     "baslik": "1 Wall Street Analyst Just Called Netflix a Sell. Is It Time To Dump the Streaming Stock?",
+     "url": "https://finnhub.io/api/news?id=4f0e65730dd0ce29167bb01dd778e6e87becb90be30b7c17e27df4d47944da8d"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo",
+     "baslik": "How Much Track Is Left For MRVL Stock?",
+     "url": "https://finnhub.io/api/news?id=f54b4a0d405d614c703cfc759f3ab919e5e5058abeb7e0aa836e2e5ddbb1eca9"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo",
+     "baslik": "Chip Stocks Rise After Two-Day Skid. Tower Semiconductor Among Leaders.",
+     "url": "https://finnhub.io/api/news?id=17a7bad0387fc40bd226c09f198ed7b9fe26cce11c3c51383ee41db70336d314"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo",
+     "baslik": "Meet the Magnificent Semiconductor Stock Crushing Nvidia in 2026",
+     "url": "https://finnhub.io/api/news?id=b28eba917a011f40661e75dc1bc15a471ccb5135d9911c90c4c4ed4c357afa90"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo",
+     "baslik": "Wall Street Loves This EV Stock. Here's Why I'm Not Buying",
+     "url": "https://finnhub.io/api/news?id=fcc00f3a773fb5cfce116552edfa64f778e1c1889069d2b9ba776fae434e1ecb"
     },
     {
      "tarih": "2026-09-25",
@@ -117,135 +282,102 @@
     },
     {
      "tarih": "2026-09-25",
-     "kaynak": "Barron's",
-     "baslik": "Nvidia Stock: Here’s How Many AI Chips SpaceX Is Buying.",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZEoxQzk3Mno1cFg0Mm1RbEJ6RklMRUJrSWdQeHo3aE52czJ6VDJuNzZSaWpudmIwdURaVmxCSXk2MkZDalM2MXRIVU40ck5ZeFJFak05OUk4MzJuM3FoU1JJYTVDN3JBcHJKT1htT0pjaFBFY2liRVFJM2xlUlZaZXduOVM?oc=5"
+     "kaynak": "Yahoo",
+     "baslik": "Microsoft Just Raised Its Dividend by 8%: Is It the Best Magnificent Seven Dividend to Own?",
+     "url": "https://finnhub.io/api/news?id=fc8a7fe2181e5a5962472dbbaf82e3452808c7ac88cec1fa8a817e447eb5b4c0"
     },
     {
      "tarih": "2026-09-25",
-     "kaynak": "Yahoo Finance",
-     "baslik": "Where Will Nvidia Be in 5 Years?",
-     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNMXZCczJ2TmcxTmZrN1FSMERjTkVzYURkekNQek1kMTNlRUxGT3FVSzROTUkySjliU2tKQTBrSmdnOG51dWE1OVRKUmh3Q2VDQU9KT2lVWU9pdGEydk9rQ0JpbkJFWmxYZElrcXR6a1M0VlZoZTdSZEpzc2toVHVGWnUxeTk4Rm1OeWJsdQ?oc=5"
-    },
-    {
-     "tarih": "2026-09-25",
-     "kaynak": "Yahoo Finance",
-     "baslik": "Nvidia Stock Moves Lower as Einride Scales Physical AI",
-     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQbjlMOUlfVHRZQVZJVnRydktYOGpwc3pRQ0RRd0hkcVlLTWNjS2ZNY0dBOVJrVFdRLUYwZjdMTUZleHV2RnNLQ1ZHUVN1TWNEMmk5RE5ibnBsbTN4Q001ZVJPSzI0Zm5qZENHT215WWNZOWRNUElycFhuNVR3NlNXNjZaejdiZFBXcURtS2tuYjNsZ25iYndWeVVXd1E?oc=5"
-    },
-    {
-     "tarih": "2026-09-25",
-     "kaynak": "Investor's Business Daily",
-     "baslik": "Nvidia Tests Key Level Amid Trump-Xi Talks, China Challenge",
-     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNekRWNTUxQnMzZXJGTFFKVzJIUEZFX05MYkJwbmFsVWdjT2dQNEFaRWdRZWs4ZHVGTDdkaUkzbzdOcEdBNHZjQ3g4cmZ5YmNyeTBjWnZLWUpaS3ZDWDFoYVFMVXJWZWFiRTdNSFl5YlF4ZkFwZnZ3QldoN1QyajJFanRiLVJJNktscHRVSzVJUXc?oc=5"
-    },
-    {
-     "tarih": "2026-09-25",
-     "kaynak": "24/7 Wall St.",
-     "baslik": "If You Invest $500 a Month in Nvidia Starting Now, This is What You’d Have in 2030",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOU3pIMkZqd3hLZzJDeFFTcXJzV2x5ZUNHd0NydVA0bTZmcHVQNm1WZ2xVamY0eWNvNDU5VmNUN1BYU1RZd2pEYU8ySExWOXZ3dlRoYk1CRmpFUkR6UVg3OTVvOXZIaS1sRzRrcDFqaFdPLUFyMTV6Y1NLSThoUFd6M21RR3RqR0NxMFNrNExlSFVybm1pdFFNbEJRN3hpemJsMTlTdTNqdU9UV3ZfZHNYd0ZxZkpsX2xhdHJPT3NweS0?oc=5"
-    },
-    {
-     "tarih": "2026-09-25",
-     "kaynak": "MarketBeat",
-     "baslik": "NVIDIA’s Next AI Chip Ramp Could Open the Door to Another Major Stock Move",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNN05saHhCSEIwb0FDYzRtY3JJcFNNX2dzdm9tMno5M2hJTHBfSlRWYlRRanJ2LWtVc0hsbUtKSE11RnVaVHo0VVkxOTVkUEJQQTRIaENCLVRnQ2xjQ25hOXM5cXBjZzNQa0FhYnFaaW1yWDh6eTNrLXp2VmYxWnFQREFBMnlGeTNqSDIzZ1l6X0E1X0VGZ2FveWZNRFVtUUVZcGk1UFlqdW5DN3VlNW9z?oc=5"
-    },
-    {
-     "tarih": "2026-09-25",
-     "kaynak": "Yahoo Finance",
-     "baslik": "Tesla vs. Nvidia: Which Physical AI Stock Has the Bigger Robotics Payoff by 2030?",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNaEQ1RFV6c2NLeXMzR2llZnVtenBNQlpTc0tMTHBpOGJ0Q21JYmFKUl8yTEo5ZDNqZTNnZ2VEUlZJcDFtd0dYQWRjbENzaUZ1dTJTWnZ4TFZhUVlXTFB1ZjNXbTZhOUtmczJTVnFORnVTSnZMS1E3Y1V1b09EX2p5X1UzdWg3cVhmNDhJSU5mQnRpaFU3aWc?oc=5"
-    },
-    {
-     "tarih": "2026-09-25",
-     "kaynak": "The Motley Fool",
-     "baslik": "Better Quantum Computing Stock: Nvidia vs. IonQ",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcmFWV1daa3FjNFhibElmVUlEQ0lCdUhDVTIzeVNtS29tN3ZoTUN4enFuZ2JYSkVUcVlrdWJIeVdDcEhrcVBab0VPM0NyOEFpM05NNHFfSktMUHYwb2NSZXdXMEZoWFNTRXdOb0NrbGdsbDNiUVN2ckVqeldOQlRQQlhuM21JeTlMM1V1ODhzbUtSdw?oc=5"
-    },
-    {
-     "tarih": "2026-09-25",
-     "kaynak": "Yahoo Finance Australia",
-     "baslik": "Nvidia Stock Rises as Elon Musk Reveals Huge New AI Chip Plans",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNV3dvMmNnWlVQUFh5N2RrMkdaSFhScU1oZV8zSDR3T1JfNnotcXR1aDFMNUJWRk1HUjEteC01dGh6SFIyWjlPZGs1SUY1N0tYZGhJdTV0N3gwZmFPT3h3VzBxYUJUaUNtaEpxcXJrZHZRTWNkZXg5SzAzdzNhcjAwcmxrNA?oc=5"
-    },
-    {
-     "tarih": "2026-09-25",
-     "kaynak": "Yahoo Finance",
-     "baslik": "Elon Musk Makes Massive Nvidia Move at SpaceX",
-     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbTBvRTQxdFdpaHJYNUVFWmV0RjJWUEJ4a2JDRmJXenpoZ19QUDdFcUFVMDNhN3J6c3RJX194ZlVfOHZfaWhORHE4ZE5rTXhuOFBqYmt3ZU5fUFFBQ0cxeUg0emZobktNUmp6UmRwdGpBTG9VLWhUQTRnN1BxSnlsa2xCSVh0QjlnbzgtbnFoa0o3VTFCdU5IME9B?oc=5"
-    },
-    {
-     "tarih": "2026-09-25",
-     "kaynak": "Yahoo Finance",
-     "baslik": "AMD Just Joined Nvidia in the $1 Trillion Club. At $614, Wall Street Is Paying Too Much for a Distant No. 2.",
-     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQejU2NDR5U0o0RkxUWjQzRnhNTHJEbGtBbW5KTFotTUk2RmtMQlpSNVhQekF1NmduUm5jMmhncGhib3pzOHlrVkEwUVdCNko4cWlZRnMwbEE5VXpUS1JwSHdlTGJacWV4VkpCb1loMUx6cUhDdVNTRkR1dDl5ZE9LNnJ6Zm9FdGk2N1oteGM1YUdiOGc?oc=5"
+     "kaynak": "Yahoo",
+     "baslik": "3 Nuclear Stocks Powering the Grid Long Before AI Made Them Trendy",
+     "url": "https://finnhub.io/api/news?id=e4d6513cae675b4e855c140c620f48d7ef5c5d9790f29b431a4dc715ca3c5b37"
     }
    ],
    "bilanco": {
-    "son_ceyrek": null,
+    "son_ceyrek": "FY2027 Q2",
     "kirmizi": 0,
-    "dikkat": 0,
-    "olumlu": 0,
-    "son_dosya": null,
-    "xbrl_beklemede": null
+    "dikkat": 3,
+    "olumlu": 3,
+    "son_dosya": {
+     "accn": "0001045810-26-000075",
+     "form": "10-Q",
+     "tarih": "2026-08-26",
+     "donem_sonu": "2026-07-26",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    "xbrl_beklemede": false
    },
-   "sinyaller": []
+   "sinyaller": [
+    {
+     "id": "cae48efa7f54",
+     "tarih": "2026-09-26",
+     "ticker": "NVDA",
+     "tur": "insider_kume_satis",
+     "tur_adi": "Kümelenmiş yönetici satışı",
+     "yon": "olumsuz",
+     "aciklama": "2026-09-17–2026-09-21: Kress Colette, STEVENS MARK A, Teter Timothy S.",
+     "fiyat": 225.07,
+     "fiyat_tarihi": "2026-09-25",
+     "qqq": 744.5,
+     "baslangic_kaydi": false,
+     "kayit_zamani": "2026-09-26T00:05:17+00:00"
+    }
+   ]
   },
   {
    "ticker": "META",
    "ad": "Meta Platforms",
    "donem": [
-    "2026-09-19",
-    "2026-09-25"
+    "2026-09-20",
+    "2026-09-26"
    ],
    "fiyat": {
-    "son": 777.59,
-    "tarih": "2026-09-24",
-    "haftalik": 13.96,
-    "aylik": 36.41,
-    "zirveden": 0.0,
+    "son": 751.66,
+    "tarih": "2026-09-25",
+    "haftalik": 12.9,
+    "aylik": 30.46,
+    "zirveden": -3.33,
     "zirve_52h": 777.59,
     "zirve_tarih": "2026-09-24",
-    "kaynak": "Nasdaq.com (historical API)"
+    "kaynak": "Nasdaq.com (historical API) + Finnhub quote"
    },
    "benchmark_haftalik": {
-    "QQQ": 3.37,
-    "XLC": 1.46
+    "QQQ": 3.19,
+    "XLC": 1.94
    },
    "tez": {
-    "genel": "veri_yok",
+    "genel": "yesil",
     "onay": "taslak",
     "sutunlar": [
      {
       "id": "reklam_buyumesi",
       "ad": "Reklam motoru büyümesi",
-      "durum": "veri_yok",
-      "deger": null,
+      "durum": "yesil",
+      "deger": 27.96,
       "birim": "%",
       "tip": "metrik"
      },
      {
       "id": "marj",
       "ad": "Faaliyet marjı",
-      "durum": "veri_yok",
-      "deger": null,
+      "durum": "yesil",
+      "deger": 38.08,
       "birim": "%",
       "tip": "metrik"
      },
      {
       "id": "capex_nakit",
       "ad": "AI yatırımına rağmen nakit üretimi",
-      "durum": "veri_yok",
-      "deger": null,
+      "durum": "yesil",
+      "deger": 17.95,
       "birim": "%",
       "tip": "metrik"
      },
      {
       "id": "sulandirma",
       "ad": "Hisse sayısı (geri alım vs SBC)",
-      "durum": "veri_yok",
-      "deger": null,
+      "durum": "yesil",
+      "deger": -0.16,
       "birim": "%",
       "tip": "metrik"
      },
@@ -262,19 +394,212 @@
    },
    "kural": {
     "durum": "tetiklenmedi",
-    "mesaj": "Zirveden %0.0. Sonraki kademe: -%15.",
+    "mesaj": "Zirveden %-3.33. Sonraki kademe: -%15.",
     "tetiklenen": null,
-    "zirveden_uzaklik": 0.0,
+    "zirveden_uzaklik": -3.33,
     "dusus_kaynagi": "piyasa_sektor",
     "dusus_kaynagi_aciklama": "Hissenin düşüşü benchmark'larla benzer: ağırlıkla piyasa/sektör kaynaklı.",
-    "kosul_saglaniyor": null
+    "kosul_saglaniyor": true
    },
    "insider": {
-    "hafta_islemleri": [],
-    "hafta_kodlari": {},
-    "uyarilar": [],
-    "kumelenmis_satislar": [],
-    "ozet_90g": null
+    "hafta_islemleri": [
+     {
+      "tarih": "2026-09-21",
+      "kisi": "Cox Christopher K",
+      "unvan": "Chief Product Officer",
+      "kod": "S",
+      "adet": 20000.0,
+      "fiyat": 700.4966,
+      "tutar": 14009931.999999998,
+      "plan_10b5_1": true,
+      "sonrasi": 204516.0,
+      "sahiplik": "I",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014403/xslF345X06/ownership.xml"
+     },
+     {
+      "tarih": "2026-09-21",
+      "kisi": "Cox Christopher K",
+      "unvan": "Chief Product Officer",
+      "kod": "S",
+      "adet": 20000.0,
+      "fiyat": 725.0164,
+      "tutar": 14500328.0,
+      "plan_10b5_1": true,
+      "sonrasi": 184516.0,
+      "sahiplik": "I",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014403/xslF345X06/ownership.xml"
+     },
+     {
+      "tarih": "2026-09-21",
+      "kisi": "Olivan Javier",
+      "unvan": "Chief Operating Officer",
+      "kod": "S",
+      "adet": 946.0,
+      "fiyat": 680.27,
+      "tutar": 643535.4199999999,
+      "plan_10b5_1": true,
+      "sonrasi": 9770.0,
+      "sahiplik": "D",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014402/xslF345X06/ownership.xml"
+     },
+     {
+      "tarih": "2026-09-21",
+      "kisi": "Olivan Javier",
+      "unvan": "Chief Operating Officer",
+      "kod": "S",
+      "adet": 82.0,
+      "fiyat": 680.27,
+      "tutar": 55782.14,
+      "plan_10b5_1": true,
+      "sonrasi": 5998.0,
+      "sahiplik": "I",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014402/xslF345X06/ownership.xml"
+     },
+     {
+      "tarih": "2026-09-21",
+      "kisi": "Olivan Javier",
+      "unvan": "Chief Operating Officer",
+      "kod": "S",
+      "adet": 57.0,
+      "fiyat": 680.27,
+      "tutar": 38775.39,
+      "plan_10b5_1": true,
+      "sonrasi": 1175.0,
+      "sahiplik": "I",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014402/xslF345X06/ownership.xml"
+     },
+     {
+      "tarih": "2026-09-21",
+      "kisi": "Olivan Javier",
+      "unvan": "Chief Operating Officer",
+      "kod": "S",
+      "adet": 82.0,
+      "fiyat": 680.27,
+      "tutar": 55782.14,
+      "plan_10b5_1": true,
+      "sonrasi": 5998.0,
+      "sahiplik": "I",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014402/xslF345X06/ownership.xml"
+     },
+     {
+      "tarih": "2026-09-21",
+      "kisi": "Olivan Javier",
+      "unvan": "Chief Operating Officer",
+      "kod": "S",
+      "adet": 408.0,
+      "fiyat": 680.27,
+      "tutar": 277550.16,
+      "plan_10b5_1": true,
+      "sonrasi": 77437.0,
+      "sahiplik": "I",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014402/xslF345X06/ownership.xml"
+     }
+    ],
+    "hafta_kodlari": {
+     "S": 7
+    },
+    "uyarilar": [
+     {
+      "etiket": "dikkat",
+      "metin": "Kümelenmiş satış: 2026-09-03–2026-09-15 arasında 3 yönetici satış yaptı (işlemlerin %100'i 10b5-1 planlı)."
+     },
+     {
+      "etiket": "dikkat",
+      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %42.98 yükseldi."
+     }
+    ],
+    "kumelenmis_satislar": [
+     {
+      "baslangic": "2026-05-01",
+      "bitis": "2026-05-15",
+      "kisiler": [
+       "Alford Peggy",
+       "LI SUSAN J",
+       "Olivan Javier"
+      ],
+      "islem": 12,
+      "tutar": 3451885.43,
+      "planli_islem_orani": 100.0
+     },
+     {
+      "baslangic": "2026-05-18",
+      "bitis": "2026-06-01",
+      "kisiler": [
+       "Bosworth Andrew",
+       "KIMMITT ROBERT M",
+       "LI SUSAN J",
+       "Mahoney Curtis J.",
+       "Olivan Javier"
+      ],
+      "islem": 32,
+      "tutar": 14652571.5735,
+      "planli_islem_orani": 100.0
+     },
+     {
+      "baslangic": "2026-07-20",
+      "bitis": "2026-08-03",
+      "kisiler": [
+       "Alford Peggy",
+       "KIMMITT ROBERT M",
+       "Olivan Javier"
+      ],
+      "islem": 12,
+      "tutar": 2370916.04,
+      "planli_islem_orani": 100.0
+     },
+     {
+      "baslangic": "2026-08-04",
+      "bitis": "2026-08-18",
+      "kisiler": [
+       "Andreessen Marc L",
+       "Bosworth Andrew",
+       "LI SUSAN J",
+       "Mahoney Curtis J.",
+       "Olivan Javier"
+      ],
+      "islem": 29,
+      "tutar": 13047086.3209,
+      "planli_islem_orani": 83.0
+     },
+     {
+      "baslangic": "2026-09-03",
+      "bitis": "2026-09-15",
+      "kisiler": [
+       "Anderson Aaron",
+       "Cox Christopher K",
+       "Olivan Javier"
+      ],
+      "islem": 30,
+      "tutar": 32849738.308199998,
+      "planli_islem_orani": 100.0
+     }
+    ],
+    "ozet_90g": {
+     "S": {
+      "islem": 94,
+      "adet": 126386.0,
+      "tutar": 82728509.9397,
+      "plan_10b5_1_adet": 123833.0
+     },
+     "M": {
+      "islem": 28,
+      "adet": 78659.0,
+      "tutar": 0.0,
+      "plan_10b5_1_adet": 0.0
+     },
+     "F": {
+      "islem": 9,
+      "adet": 38035.0,
+      "tutar": 22434944.75,
+      "plan_10b5_1_adet": 0.0
+     },
+     "diger": {
+      "islem": 5,
+      "adet": 1779358.0,
+      "tutar": 0.0,
+      "plan_10b5_1_adet": 0.0
+     }
+    }
    },
    "buyuk_hareketler": [
     {
@@ -453,10 +778,53 @@
        "saglayici": "Google News RSS"
       }
      ],
-     "sec_bildirimleri": []
+     "sec_bildirimleri": [
+      {
+       "form": "144",
+       "tarih": "2026-09-21",
+       "items": "",
+       "url": "https://www.sec.gov/Archives/edgar/data/1326801/000192109426001042/xsl144X01/primary_doc.xml",
+       "aciklama": ""
+      },
+      {
+       "form": "144",
+       "tarih": "2026-09-21",
+       "items": "",
+       "url": "https://www.sec.gov/Archives/edgar/data/1326801/000192109426001039/xsl144X01/primary_doc.xml",
+       "aciklama": ""
+      }
+     ]
     }
    ],
-   "sec_bildirimleri": [],
+   "sec_bildirimleri": [
+    {
+     "form": "144",
+     "tarih": "2026-09-24",
+     "donem": "",
+     "items": "",
+     "aciklama": "",
+     "accn": "0001921094-26-001050",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000192109426001050/xsl144X01/primary_doc.xml"
+    },
+    {
+     "form": "144",
+     "tarih": "2026-09-21",
+     "donem": "",
+     "items": "",
+     "aciklama": "",
+     "accn": "0001921094-26-001042",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000192109426001042/xsl144X01/primary_doc.xml"
+    },
+    {
+     "form": "144",
+     "tarih": "2026-09-21",
+     "donem": "",
+     "items": "",
+     "aciklama": "",
+     "accn": "0001921094-26-001039",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000192109426001039/xsl144X01/primary_doc.xml"
+    }
+   ],
    "basliklar": [
     {
      "tarih": "2026-09-25",
@@ -466,9 +834,39 @@
     },
     {
      "tarih": "2026-09-25",
-     "kaynak": "Yahoo Finance",
+     "kaynak": "Yahoo",
+     "baslik": "US Equity Indexes Rose This Week as Mega-Cap Tech Jumps While Iran Proposes Conditional Reopening of Hormuz Chokepoint",
+     "url": "https://finnhub.io/api/news?id=b9468d0448763f16f361b42e5f249217cd03d2cdf12346ce7def062c6e65964d"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo",
+     "baslik": "Stock Market Today: Dow Surges 450 Points On U.S.-Iran Peace Hopes; Micron Rises",
+     "url": "https://finnhub.io/api/news?id=8360c53a0b1333b2ec1383c3d42516f5888002109264bca49ba094aee5187d1a"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo",
+     "baslik": "Market Chatter: Meta Platforms Loses New Mexico Jury Trial Over Cambridge Analytica Data Scandal",
+     "url": "https://finnhub.io/api/news?id=aeb634c925e94464218157ac32fd6bd2f536ef5ec85426ac5f343971ef3ebdf1"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo",
+     "baslik": "Stock Market Today: Dow Gains 400 Points On U.S-Iran Peace Hopes; Micron Rises (Live Coverage)",
+     "url": "https://finnhub.io/api/news?id=f4934b618c4d908090a0bfd9b3644b723c77728515e040b832f539434de369f8"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo",
+     "baslik": "Week’s Best: Top Dividend Stocks for a Rocky Market",
+     "url": "https://finnhub.io/api/news?id=f77e18c2c87359dd1852511fcceb5c2ce404b63ec47e8b2d0cf3f637d2c90ad6"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo",
      "baslik": "Meta’s Loudest AI Bull Just Cut His Own Stock Exposure and It Is Not Because of AI",
-     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTVpLeEtPYlU5c2k1VGEzenhFdVdVeEdyWHdELUE2Q0hzS1hseVNDT2YxSjNRWGNzWS1vQUhSSFhxclVGT1pJN1cxckZhOC1KaEVKZW05eWVONGJpRTVrZXdXaXNTY0hKRHJZRHp6eEdPWmdJenJRMkRnUWxfcUZtZm9pdXRhUjQ3THdjeFN3VHRHaU5P?oc=5"
+     "url": "https://finnhub.io/api/news?id=42f7ca7df6257d3a2acd27baf85f4e18e5c2975878fe532ee05ce3955a1bb8df"
     },
     {
      "tarih": "2026-09-25",
@@ -478,9 +876,27 @@
     },
     {
      "tarih": "2026-09-25",
-     "kaynak": "The Motley Fool",
-     "baslik": "Is Meta the Best Magnificent Seven Stock to Buy After Its AI Agent Topped the App Store?",
-     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxObVQ5ellVQlMtbWtjN1I5UE9UMThjYVY2U1JyczRQN3JBb3R6MmRsdWRmMEVjX19IOVhmbEQwaFlIUzI5cUtqUFJVUW44ZkZwUGlMRWRzQnY4UGc0eVhEZC1lY29wNk0teTI5b01DSEtvblhoZV8zYnFkVFdHSFN2YU1JYlFoTFFpbHEwTG9GWlNkVHM2c1Jsb0gwSjEybElLNnU5QUJUdjZ0cXpaenpxdGRubk0tVldvcTI0TXRYUC11TVg5al9vY0F3?oc=5"
+     "kaynak": "ChartMill",
+     "baslik": "Top S&P500 movers in Friday's session",
+     "url": "https://finnhub.io/api/news?id=b26709e0a9895e9dabe9e7d0cd4238a29c761ebd827ec7d7cdc10dcfa2dff969"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo",
+     "baslik": "Investing.com’s stocks of the week",
+     "url": "https://finnhub.io/api/news?id=2cf72ad568d2061b992ec14192daea44687ceed9fe731ce75a9d682ca759e004"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo",
+     "baslik": "Why Intel Stock Jumped This Week",
+     "url": "https://finnhub.io/api/news?id=d48f242763ee6ecba7a3bea1805b6ba6527d151bebf20eaa47f16ad723f8a8ce"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo",
+     "baslik": "The Dow Leads Market Indexes Higher as Microsoft Adds 120 Points",
+     "url": "https://finnhub.io/api/news?id=847e883a62a998fdaf7803df77f52c1a7a268f6376a3e52a672192f52f58685c"
     },
     {
      "tarih": "2026-09-25",
@@ -490,129 +906,102 @@
     },
     {
      "tarih": "2026-09-25",
-     "kaynak": "Yahoo Finance",
-     "baslik": "As Meta Platforms Launches New VR Glasses, This Is How You Should Play META Stock",
-     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbkotbWdaV2I0YnFUaFFJcy1NbWFOc0d2amFDejVpMF9RanN3Rk1YNG1PZjUtbEhHbENhV0JJbmlHaG1FR0JBSnBCdG9YY2lKWjh3SjNIZ0RNcnhDd2pSeVZXbmx3dGdwZC1ZTVhDaDJwcl9RLUNFUi14bHJCR2RrSk9DVTUzLXNwdURXc1RUNHlkankwNFFGcWdiTVF0S2FB?oc=5"
+     "kaynak": "Yahoo",
+     "baslik": "Is Meta the Best Magnificent Seven Stock to Buy After Its AI Agent Topped the App Store?",
+     "url": "https://finnhub.io/api/news?id=45a7f36c7153031c7265ad8365d216e1f96175416d545b4bf0304def95b54c95"
     },
     {
      "tarih": "2026-09-25",
-     "kaynak": "Barron's",
-     "baslik": "Meta Stock Rally: Buy, Sell, or Hold? What to Do With Shares Now.",
-     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOSUtNSk9lS0w0Z3BuYVRlOE5iSUVaZmVydE1mY3Y1MnhJVkdyLUtJNTRiM0xpaTZ0N1pPSUhVdWtLS2JxdnV6UzhzR0R4QVVWSHF4bDl1cF9hakFsOFhBLTd3Sm5DQlJzdFNYUi1FS0Ywck5QWXp5LURaNEQ0dU5LYQ?oc=5"
-    },
-    {
-     "tarih": "2026-09-25",
-     "kaynak": "Barron's",
-     "baslik": "Why Meta Stock Could Spike if It Crosses This Price Target",
-     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE54VlAwN3FqWkVGbXROblBWNmticzEyU2FxdW9JTGRZY1VwU093aHpNMFVWczhRMG9UQkVocU9lNzE3NHZCWnQ5NmRYZm9yQ2hPeG9DWEVsclkyMXN1YjlsTDFTMENCMm5Jd3pEQW03SEM?oc=5"
-    },
-    {
-     "tarih": "2026-09-25",
-     "kaynak": "The Motley Fool",
-     "baslik": "Why Meta Platforms Stock Reversed Today",
-     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPTVdpVXdMbXBGYjdpRndOUXdfNUtXa0t2UHQ3QmtfVU9YaWtRMmlUNGlWLUFMbjJnc1YwS3N1OHFGaFJPaEJCekJuMllXZ3FrWGt3SnFCbDRWLUdGbkRILXVrTW5iQkl1ekxic25fblp3MUVWN0lrWkd5bExaXzVEaHpwS1VMNV9lRUE?oc=5"
-    },
-    {
-     "tarih": "2026-09-25",
-     "kaynak": "Yahoo Finance",
-     "baslik": "This Meta stock stat doesn't make sense after the Muse mic drop",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSFdHdTRUcEY3Q1I2enE0TWo2dG1OM1prV3RkVTcxSVVZMFpxVUtieEFZMjg4UkhKazdhYmRRVDdtUy1wUDE1eVhrZ216cDJHS0R0eWVXWE9fQW9GSExPaXFHRTVYdkZ6dHJlSWpZUUNqUWZHM0NZd2NVMWVMUktxdE02T0dDMElPOGMzWWxNY3pyZEV2RnpzOUlkS0lJRTluTGVsM0FnT1Vfdlg1RW9yNkhVMWFvQXpqbVZ1VDVBaw?oc=5"
-    },
-    {
-     "tarih": "2026-09-25",
-     "kaynak": "Investing.com",
-     "baslik": "Why is Meta Platforms stock sliding today?",
-     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUXpGMW15Y09qWWhhdWJ2Slc2VTFjbW9IZVBBNlJGYlhEZ0NvX1g3bEhUY0NIT0FjMUswTkJXdUd3NGZIOHJ1eWkwaUFoN1VtSVdfcGpRQlE3OTMwSl8yemVBN19fSHZSVDRmaHNsdDB2Q1V0MG9FN3BuQms4RjFFMHZpY3lOamk5blVxRUZBQjNTT1BCTWhJU1c5MS1CdHc3NlQxWjV3?oc=5"
-    },
-    {
-     "tarih": "2026-09-25",
-     "kaynak": "Yahoo Finance",
-     "baslik": "'Meta is having its moment' as stock's monster rally vindicates the bulls: Chart of the Day",
-     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxORlI5ZGR4VXY2UU41TmtZeVh1dHJlTzZTWU5yRmRIc3RJUUl6WjFHT05qWDA4UVlyRlZvcDhsc2RZa0RxaWtyZXZCcUsxZVZxblZsbDRHZThxVGstS0hES1U3LWNxOWNYUTNXa0syQ21heXNNQjh3aGo2MU56V016Nmh4M3plTTNPVldoQXRIOGtIRHRnc0NmUzFOSnR5UDljVmpFWUNTZXlfR1FvYWwtOUx6ZGhMMU9IemxjekdhN0tlYkJENXk4djRQb1IyNUNyNDdxVjBkdy0wY3pr?oc=5"
-    },
-    {
-     "tarih": "2026-09-25",
-     "kaynak": "Yahoo Finance",
-     "baslik": "What Meta's Muse event reveals about Mark Zuckerberg's mindset right now",
-     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOekQ3MkhZalFTTmI0eGRUSzkycllVc0w5d0hYSWNIdk5sMG40ZklaLVFBNDhGbFdJaHhMRmhudG1tU3E0b1pQNnN2S3RkdXdjaFdKSmdiLTFXN0pGaFlsbmI4MjVoSHBHZG5CcU5pLUk2dmxkM3VvU3lSZXVNc1Z6NjdiS0FucDVVdkwyam1SN1RBZXJqSF9WTlBtOEU4WWVjTWlvNF9UcHZTWnI0WFJIRWhsbjZGVE1kd21ucldYcWNvM3lQMGJHZ2pn?oc=5"
-    },
-    {
-     "tarih": "2026-09-25",
-     "kaynak": "TradingKey",
-     "baslik": "Meta Platforms Inc Stock (META) Moved Down by 3.14% on Sep 25: Facts Behind the Movement",
-     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNeDBhbzZRbU9SbkdaRjA1NVNyY0M0NTFuMHY4YzhySl9BbkVEejNYQmZUckZfYVZwY1VnejVnM2U2SWdKVWFfcnRtcGFlLTdVQmZuSVNESWRXdzVpY0lISmE0eHZWNGZDUmJkMzRCZllOZzJoT1JhT1B3a1M2WGFoTExnbmNkbWlQQkFj?oc=5"
-    },
-    {
-     "tarih": "2026-09-25",
-     "kaynak": "Investor's Business Daily",
-     "baslik": "Meta's Muse Shakes Up The AI Battle. Here's What Investors Should Know.",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOdGhSYW9nSjJicHpKWk44bjlkYVZ6bl9lNkVlYTk3NmhCSGQ4SXJSTEUtNlcyQmpSelpzQUpubmVpRW1rSFRaS3NuSnZrYkxVa0dmQ08zUmxKRlZUcVYwLWoxUDk1VTJwVTRLQThzZVVhckpvQzRvTzRseWlTRW5TTlNLUQ?oc=5"
+     "kaynak": "Yahoo",
+     "baslik": "Arm Stocks Surge as Muse Makes CPUs Matter Again",
+     "url": "https://finnhub.io/api/news?id=52720b2e7d4237aed73a0c541f0d4a872389ad7f91798fe8b8159e72b84fe38d"
     }
    ],
    "bilanco": {
-    "son_ceyrek": null,
+    "son_ceyrek": "FY2026 Q2",
     "kirmizi": 0,
-    "dikkat": 0,
-    "olumlu": 0,
-    "son_dosya": null,
-    "xbrl_beklemede": null
+    "dikkat": 1,
+    "olumlu": 1,
+    "son_dosya": {
+     "accn": "0001628280-26-050705",
+     "form": "10-Q",
+     "tarih": "2026-07-30",
+     "donem_sonu": "2026-06-30",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+    },
+    "xbrl_beklemede": false
    },
-   "sinyaller": []
+   "sinyaller": [
+    {
+     "id": "933ab100f456",
+     "tarih": "2026-09-26",
+     "ticker": "META",
+     "tur": "insider_kume_satis",
+     "tur_adi": "Kümelenmiş yönetici satışı",
+     "yon": "olumsuz",
+     "aciklama": "2026-09-03–2026-09-15: Anderson Aaron, Cox Christopher K, Olivan Javier",
+     "fiyat": 751.66,
+     "fiyat_tarihi": "2026-09-25",
+     "qqq": 744.5,
+     "baslangic_kaydi": false,
+     "kayit_zamani": "2026-09-26T00:05:37+00:00"
+    }
+   ]
   },
   {
    "ticker": "NOW",
    "ad": "ServiceNow",
    "donem": [
-    "2026-09-19",
-    "2026-09-25"
+    "2026-09-20",
+    "2026-09-26"
    ],
    "fiyat": {
-    "son": 137.78,
-    "tarih": "2026-09-24",
-    "haftalik": -0.5,
-    "aylik": 8.49,
-    "zirveden": -27.2,
+    "son": 135.62,
+    "tarih": "2026-09-25",
+    "haftalik": 0.11,
+    "aylik": 7.81,
+    "zirveden": -28.34,
     "zirve_52h": 189.258,
     "zirve_tarih": "2025-10-27",
-    "kaynak": "Nasdaq.com (historical API)"
+    "kaynak": "Nasdaq.com (historical API) + Finnhub quote"
    },
    "benchmark_haftalik": {
-    "QQQ": 3.37,
-    "IGV": 1.3
+    "QQQ": 3.19,
+    "IGV": 1.59
    },
    "tez": {
-    "genel": "veri_yok",
+    "genel": "yesil",
     "onay": "taslak",
     "sutunlar": [
      {
       "id": "buyume",
       "ad": "Gelir büyümesi",
-      "durum": "veri_yok",
-      "deger": null,
+      "durum": "yesil",
+      "deger": 24.01,
       "birim": "%",
       "tip": "metrik"
      },
      {
       "id": "gorunurluk",
       "ad": "Sözleşmeli gelir birikimi (RPO)",
-      "durum": "veri_yok",
-      "deger": null,
+      "durum": "yesil",
+      "deger": 21.34,
       "birim": "%",
       "tip": "metrik"
      },
      {
       "id": "nakit",
       "ad": "Serbest nakit akışı marjı",
-      "durum": "veri_yok",
-      "deger": null,
+      "durum": "yesil",
+      "deger": 31.09,
       "birim": "%",
       "tip": "metrik"
      },
      {
       "id": "sbc",
       "ad": "SBC maliyeti",
-      "durum": "veri_yok",
-      "deger": null,
+      "durum": "yesil",
+      "deger": 14.83,
       "birim": "%",
       "tip": "metrik"
      },
@@ -628,23 +1017,76 @@
     "cikis_tetiklenen": []
    },
    "kural": {
-    "durum": "tetiklendi_kosul_bilinmiyor",
-    "mesaj": "Zirveden %-27.2 düşüş: -%25 kademesi tetiklendi. Tez verisi yok — 'tez sağlam' koşulu doğrulanamıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et.",
+    "durum": "tetiklendi_kosul_ok",
+    "mesaj": "Zirveden %-28.34 düşüş: -%25 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et.",
     "tetiklenen": {
      "dusus": 25,
      "not": "DCA 2x; RPO ve SBC sütunlarını kontrol et."
     },
-    "zirveden_uzaklik": -27.2,
+    "zirveden_uzaklik": -28.34,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, tüm benchmark'lardan en az 10 puan daha fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
-    "kosul_saglaniyor": null
+    "kosul_saglaniyor": true
    },
    "insider": {
     "hafta_islemleri": [],
     "hafta_kodlari": {},
-    "uyarilar": [],
-    "kumelenmis_satislar": [],
-    "ozet_90g": null
+    "uyarilar": [
+     {
+      "etiket": "dikkat",
+      "metin": "Kümelenmiş satış: 2026-08-27–2026-08-31 arasında 3 yönetici satış yaptı (işlemlerin %33'i 10b5-1 planlı)."
+     },
+     {
+      "etiket": "dikkat",
+      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %36.42 yükseldi."
+     }
+    ],
+    "kumelenmis_satislar": [
+     {
+      "baslangic": "2026-05-08",
+      "bitis": "2026-05-18",
+      "kisiler": [
+       "Chamberlain Paul Edward",
+       "Fipps Paul",
+       "Sands Anita M"
+      ],
+      "islem": 4,
+      "tutar": 1730146.085,
+      "planli_islem_orani": 75.0
+     },
+     {
+      "baslangic": "2026-08-27",
+      "bitis": "2026-08-31",
+      "kisiler": [
+       "Canney Jacqueline P",
+       "Chamberlain Paul Edward",
+       "Fipps Paul"
+      ],
+      "islem": 3,
+      "tutar": 1749514.2198,
+      "planli_islem_orani": 33.0
+     }
+    ],
+    "ozet_90g": {
+     "S": {
+      "islem": 4,
+      "adet": 14081.0,
+      "tutar": 1937914.2198,
+      "plan_10b5_1_adet": 9347.0
+     },
+     "M": {
+      "islem": 30,
+      "adet": 91093.0,
+      "tutar": 0.0,
+      "plan_10b5_1_adet": 0.0
+     },
+     "F": {
+      "islem": 30,
+      "adet": 45779.0,
+      "tutar": 5665232.920000001,
+      "plan_10b5_1_adet": 0.0
+     }
+    }
    },
    "buyuk_hareketler": [],
    "sec_bildirimleri": [],
@@ -669,6 +1111,12 @@
     },
     {
      "tarih": "2026-09-25",
+     "kaynak": "Yahoo",
+     "baslik": "Here’s The Actual Reason I Keep Buying Salesforce On Repeat",
+     "url": "https://finnhub.io/api/news?id=e9f2e6dafe668710b357d5f6c5af66d9c4579d6dc0eb31eb4332b195029b724c"
+    },
+    {
+     "tarih": "2026-09-25",
      "kaynak": "Yahoo Finance",
      "baslik": "ROCK or AGX: Which Is the Better Value Stock Right Now?",
      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVXNiWXdaMHRmdThSdE9JRTNFbVBMZjdOX0dNdmIxdzVrY3JCWUx1di1xZGgzZGEtSEpGV2hDRmpYR2lTcnBhcFpxMmdGa3BtYkl4OHJNR1kzemNrQlhycC1fV1ZIVVlxLXhXNkZmTkswMjRBQnJIRGNzdFZNWUpSaktMcTdkMGN1WDN0cUZtUFFYQktIdUE0?oc=5"
@@ -684,6 +1132,18 @@
      "kaynak": "Yahoo! Finance Canada",
      "baslik": "Coursera vs. Chegg: Which EdTech Stock is the Better Buy Now?",
      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZVdiVkJ5TmQydzVjUkNRZXdMeUpvOTNKRmtjMGxnczkwUDRpVmw0V0RmMzZhQkN2aGY0MEVRNVlKWDZCQk44RUVsTGRuemRlcFZhUkVBVXQ1b21sU2wxQVAtTFZNcURuZ3ZDREVYN3pnNHVPQlpOMm02ekZpRFhNeFpzWnZOZw?oc=5"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo",
+     "baslik": "3 Software ETFs to Buy as the SaaSpocalypse Bottoms Out",
+     "url": "https://finnhub.io/api/news?id=52fc03d5c6200b8c196db3b025cce1a117eb00da57ab6c6db125355ea9de346f"
+    },
+    {
+     "tarih": "2026-09-25",
+     "kaynak": "Yahoo",
+     "baslik": "Palantir’s Valuation Is Huge. So Is the Opportunity",
+     "url": "https://finnhub.io/api/news?id=619730ca011f820a1a6e4bd3aa02f61c6e2c855eca30b149ce8c69213c4e8656"
     },
     {
      "tarih": "2026-09-25",
@@ -711,42 +1171,30 @@
     },
     {
      "tarih": "2026-09-25",
-     "kaynak": "The Motley Fool",
-     "baslik": "Is TJX Stock an Undervalued Stock to Buy Right Now?",
-     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdTRDZEN1eUtiRWVGSVZGNTN4c05SUkxOSkhCRnN0VzJEV2xKTkJaZDdGTjJiZDdBUGtYX1dlWldZYjlQZTZQb05lRHd6Vll0T1FpbGlnaVBPRWhIUXdFMkNvTGlIamQ2QnBXOThhbzh0TlN0b2FZX1BDeF9FV2ZBei1DelU3MVZQMlBkNXRJc0xHeWpXMW9mNA?oc=5"
+     "kaynak": "Benzinga",
+     "baslik": "ServiceNow, Quanta Services And More On CNBC’s ‘Final Trades’",
+     "url": "https://finnhub.io/api/news?id=c2a6618d8c53a2dd91d0f9bf112bfe6e14bd55350ef11f89567d99ead322c86f"
     },
     {
      "tarih": "2026-09-25",
-     "kaynak": "Trefis",
-     "baslik": "Should You Sell Your Coeur Mining Stock Now?",
-     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNnoxc3hGLWswdl8wSWowLVM1aHFkaG9TdDZmcWJ3cFl4Wm9zQU9DcENKcnNEX3ljUFdoWXFCd29rZlZMWGEzV2M3amJEVmJ3V0txMjV5blBKaTE2UzVpc0xaZjY3ME9xdkRtMV9zYkZ0N1hGOFdSU0dWOGdYbkJDQjRDenQxcUxCVU5ydXdZSHEzbFRJUm51Sw?oc=5"
-    },
-    {
-     "tarih": "2026-09-24",
-     "kaynak": "MarketWatch",
-     "baslik": "The S&P 500’s newest tech stock is now its best performer",
-     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPNHo2UktGV3kyRUxLeXFYVEVvREJESTJlQlpicU9nT3BVajg1WGFaMjNxOEJyM2gtYzhnNmNOT1FlZkdlUG03VGhiSVcwcXI4c1hOWnBUS3haYmhzQXVLOF9WeXprSzJQWi1OLThuUF96OEhHeEVrYlJnbUFFb2w2QTJOUkNxNGpxRkhDTm0tVkRQVm04V2pVMlU1OHlIaExT?oc=5"
-    },
-    {
-     "tarih": "2026-09-24",
-     "kaynak": "Yahoo Finance",
-     "baslik": "Broadcom's Latest Prediction Makes the Stock a No-Brainer Buy Right Now",
-     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUkE1WUY5VjFNQWhJS0QxRnFUSEs2a2p1TkV6NFVJODVWVXJKOWlfWmdFQnJQVnNoUlJJY1FLVUI4bmtNang4cE1UcjNSNlhxSEdpbjVDSVQ0aEg1OGxrYjVkdEZKVUhpbXpyRGZuSURSYkpBMW9ELUo0cW1fcGE0UlJfbmdtYW9HSGRXTTM5OHQ1RjlVYWJmRlZtY0l6TjRNV0xqMmU4cw?oc=5"
-    },
-    {
-     "tarih": "2026-09-24",
-     "kaynak": "The Motley Fool",
-     "baslik": "Here's My Top Reason to Buy Amazon Stock Right Now",
-     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNTTVGUFVjTEN3R2I0ODVXRmJMelljUGJKaE1mS3ozUEVITUJaWnJreHBWRkl2U0dZYmpFQl9LcEllMWtrbjc4bG5IbGllRkluU2cxaGJpc2UtUk44VXBGaUFUWW5QdFUxaG1qTnBhUThabTg5blNPWmpsbG5WTlZ6RVdkU0dNWFl1M1FqY1VISXZjdDg2VlhJ?oc=5"
+     "kaynak": "Yahoo",
+     "baslik": "CrowdStrike (CRWD) Joined A Founding Alliance To Secure AI Agents",
+     "url": "https://finnhub.io/api/news?id=0b9999458a907e89be2013b5926ae6fe49542e3969b3eb8d674cb691800d5e89"
     }
    ],
    "bilanco": {
-    "son_ceyrek": null,
-    "kirmizi": 0,
-    "dikkat": 0,
-    "olumlu": 0,
-    "son_dosya": null,
-    "xbrl_beklemede": null
+    "son_ceyrek": "FY2026 Q2",
+    "kirmizi": 1,
+    "dikkat": 3,
+    "olumlu": 3,
+    "son_dosya": {
+     "accn": "0001373715-26-000076",
+     "form": "10-Q",
+     "tarih": "2026-07-23",
+     "donem_sonu": "2026-06-30",
+     "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm"
+    },
+    "xbrl_beklemede": false
    },
    "sinyaller": [
     {
@@ -762,6 +1210,34 @@
      "qqq": 741.1,
      "baslangic_kaydi": true,
      "kayit_zamani": "2026-09-25T23:55:21+00:00"
+    },
+    {
+     "id": "4544f93328e1",
+     "tarih": "2026-09-26",
+     "ticker": "NOW",
+     "tur": "insider_kume_satis",
+     "tur_adi": "Kümelenmiş yönetici satışı",
+     "yon": "olumsuz",
+     "aciklama": "2026-08-27–2026-08-31: Canney Jacqueline P, Chamberlain Paul Edward, Fipps Paul",
+     "fiyat": 135.62,
+     "fiyat_tarihi": "2026-09-25",
+     "qqq": 744.5,
+     "baslangic_kaydi": false,
+     "kayit_zamani": "2026-09-26T00:05:52+00:00"
+    },
+    {
+     "id": "d488f117952f",
+     "tarih": "2026-09-26",
+     "ticker": "NOW",
+     "tur": "bilanco_kirmizi_bayrak",
+     "tur_adi": "Yeni bilançoda kırmızı bayrak",
+     "yon": "olumsuz",
+     "aciklama": "Vergi öncesi kârın yarıdan fazlası faaliyet dışı",
+     "fiyat": 135.62,
+     "fiyat_tarihi": "2026-09-25",
+     "qqq": 744.5,
+     "baslangic_kaydi": false,
+     "kayit_zamani": "2026-09-26T00:05:52+00:00"
     }
    ]
   },
@@ -769,64 +1245,64 @@
    "ticker": "AAOI",
    "ad": "Applied Optoelectronics",
    "donem": [
-    "2026-09-19",
-    "2026-09-25"
+    "2026-09-20",
+    "2026-09-26"
    ],
    "fiyat": {
-    "son": 101.03,
-    "tarih": "2026-09-24",
-    "haftalik": 3.03,
-    "aylik": -10.71,
-    "zirveden": -54.72,
+    "son": 101.4,
+    "tarih": "2026-09-25",
+    "haftalik": -3.58,
+    "aylik": -10.86,
+    "zirveden": -54.55,
     "zirve_52h": 223.1,
     "zirve_tarih": "2026-05-13",
-    "kaynak": "Nasdaq.com (historical API)"
+    "kaynak": "Nasdaq.com (historical API) + Finnhub quote"
    },
    "benchmark_haftalik": {
-    "QQQ": 3.37,
-    "SMH": 7.12
+    "QQQ": 3.19,
+    "SMH": 5.86
    },
    "tez": {
-    "genel": "veri_yok",
+    "genel": "kirmizi",
     "onay": "taslak",
     "sutunlar": [
      {
       "id": "buyume",
       "ad": "Gelir büyümesi",
-      "durum": "veri_yok",
-      "deger": null,
+      "durum": "yesil",
+      "deger": 86.42,
       "birim": "%",
       "tip": "metrik"
      },
      {
       "id": "brut_marj",
       "ad": "Brüt marj",
-      "durum": "veri_yok",
-      "deger": null,
+      "durum": "sari",
+      "deger": 27.72,
       "birim": "%",
       "tip": "metrik"
      },
      {
       "id": "faaliyet_kari",
       "ad": "Faaliyetten kârlılığa geçiş",
-      "durum": "veri_yok",
-      "deger": null,
+      "durum": "kirmizi",
+      "deger": -11.31,
       "birim": "%",
       "tip": "metrik"
      },
      {
       "id": "sulandirma",
       "ad": "Sulandırma",
-      "durum": "veri_yok",
-      "deger": null,
+      "durum": "kirmizi",
+      "deger": 43.68,
       "birim": "%",
       "tip": "metrik"
      },
      {
       "id": "stok",
       "ad": "Stok ve talep uyumu",
-      "durum": "veri_yok",
-      "deger": null,
+      "durum": "yesil",
+      "deger": 14.34,
       "birim": "puan",
       "tip": "metrik"
      },
@@ -839,26 +1315,104 @@
       "tip": "yorum"
      }
     ],
-    "cikis_tetiklenen": []
+    "cikis_tetiklenen": [
+     "Seyreltilmiş hisse sayısı yıllık %40'tan fazla artarsa"
+    ]
    },
    "kural": {
-    "durum": "tetiklendi_kosul_bilinmiyor",
-    "mesaj": "Zirveden %-54.72 düşüş: -%40 kademesi tetiklendi. Tez verisi yok — 'tez sağlam' koşulu doğrulanamıyor. Önceden yazdığın not: DCA 2x; nakit pisti ve sulandırmayı kontrol et.",
+    "durum": "tetiklendi_kosul_yok",
+    "mesaj": "Zirveden %-54.55 düşüş: -%40 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: DCA 2x; nakit pisti ve sulandırmayı kontrol et.",
     "tetiklenen": {
      "dusus": 40,
      "not": "DCA 2x; nakit pisti ve sulandırmayı kontrol et."
     },
-    "zirveden_uzaklik": -54.72,
+    "zirveden_uzaklik": -54.55,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, tüm benchmark'lardan en az 15 puan daha fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
-    "kosul_saglaniyor": null
+    "kosul_saglaniyor": false
    },
    "insider": {
     "hafta_islemleri": [],
     "hafta_kodlari": {},
-    "uyarilar": [],
-    "kumelenmis_satislar": [],
-    "ozet_90g": null
+    "uyarilar": [
+     {
+      "etiket": "dikkat",
+      "metin": "Kümelenmiş satış: 2026-06-10–2026-06-18 arasında 5 yönetici satış yaptı (işlemlerin %38'i 10b5-1 planlı)."
+     },
+     {
+      "etiket": "bilgi",
+      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok."
+     }
+    ],
+    "kumelenmis_satislar": [
+     {
+      "baslangic": "2026-05-11",
+      "bitis": "2026-05-19",
+      "kisiler": [
+       "Chang Hung-Lun (Fred)",
+       "Kuo David C",
+       "Lin Chih-Hsiang (Thompson)",
+       "Murry Stefan J.",
+       "Yeh Shu-Hua (Joshua)"
+      ],
+      "islem": 6,
+      "tutar": 32346587.46,
+      "planli_islem_orani": 17.0
+     },
+     {
+      "baslangic": "2026-05-26",
+      "bitis": "2026-06-05",
+      "kisiler": [
+       "Chang Hung-Lun (Fred)",
+       "Chen Min-Chu (Mike)",
+       "DeLaney Cynthia",
+       "Yeh Shu-Hua (Joshua)"
+      ],
+      "islem": 5,
+      "tutar": 15214229.3875,
+      "planli_islem_orani": 0.0
+     },
+     {
+      "baslangic": "2026-06-10",
+      "bitis": "2026-06-18",
+      "kisiler": [
+       "Chang Hung-Lun (Fred)",
+       "Kuo David C",
+       "Lin Chih-Hsiang (Thompson)",
+       "Murry Stefan J.",
+       "Yeh Shu-Hua (Joshua)"
+      ],
+      "islem": 8,
+      "tutar": 39247613.49,
+      "planli_islem_orani": 38.0
+     }
+    ],
+    "ozet_90g": {
+     "diger": {
+      "islem": 1,
+      "adet": 2200.0,
+      "tutar": 0.0,
+      "plan_10b5_1_adet": 0.0
+     },
+     "S": {
+      "islem": 7,
+      "adet": 56172.0,
+      "tutar": 6671569.319999999,
+      "plan_10b5_1_adet": 24000.0
+     },
+     "A": {
+      "islem": 1,
+      "adet": 9251.0,
+      "tutar": 0.0,
+      "plan_10b5_1_adet": 0.0
+     },
+     "F": {
+      "islem": 20,
+      "adet": 33697.0,
+      "tutar": 4018704.219999999,
+      "plan_10b5_1_adet": 4709.0
+     }
+    }
    },
    "buyuk_hareketler": [
     {
@@ -887,10 +1441,10 @@
        "zaman": "2026-09-23T17:13:00+00:00",
        "tarih": "2026-09-23",
        "baslik": "AAOI vs. Fabrinet: Which AI Data Center Stock Is the Better Buy?",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUW53WGw1R3hmSUxrQVRCempnd2NDejhtbEVjYkd2aGJvN2FQVTVPVlhoVTlpMlZ3amlxVi1GbXVqLXFQMU9PWF9Ba2ZkaDV5ZUwzVmtFVF9Da3FXYnhrRjVhbHk5Tkt0cExRcHJWN1RUSTNacUZtVUpvQW1OMkxUT3J0RzhncXJtQWh2djIwaXBhOFVNNWxKcWpkSGVWWFZ0LXpDbXhUWlpRY1MyU3U2d0ZTLWp0TDA?oc=5",
-       "kaynak": "TradingView",
-       "saglayici": "Google News RSS"
+       "ozet": "Applied Optoelectronics faces supply constraints despite surging 800G demand, while FN's broad AI data-center growth and capacity expansion strengthen its position.",
+       "url": "https://finnhub.io/api/news?id=2d2f19e29724b2e0f3300e06ea2459c468f522264850f58fb46618f21b99770b",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
       },
       {
        "zaman": "2026-09-23T16:55:43+00:00",
@@ -905,10 +1459,10 @@
        "zaman": "2026-09-23T14:54:00+00:00",
        "tarih": "2026-09-23",
        "baslik": "FN Rides on Surging Data Center Demand: Can It Outpace AAOI & LITE?",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdEVhRUNrRHFvYWlmT0N2blJhUzFpUksxT19jVWN6T2llNVNodmp0WXNoMzB0REgzQnc2UGczZ2tiRzZTcnJUaC13dFF0UGRNRTdSZjM1Y1plako5SFFzTTVJLWNTUGhNQ0hpSWJydzN2YzNZaGRBenRPT3VZcU9CMTJIOC1laHBab3lqcjRSR2FHamhGMTlr?oc=5",
-       "kaynak": "Yahoo Finance",
-       "saglayici": "Google News RSS"
+       "ozet": "Fabrinet's surging data-center revenues, DCI growth and capacity expansion strengthen its position against optical rivals AAOI and LITE.",
+       "url": "https://finnhub.io/api/news?id=7d18048adfa7ddb1f453e46f8acd62b17a73c99a3724f37bbf777f839a19a856",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
       },
       {
        "zaman": "2026-09-23T10:03:57+00:00",
@@ -963,6 +1517,24 @@
        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB3VDZRSXJtMU1ncjRFazh3dDU3bkpjdHdHRTI4MmRqUkpmREdCQWpOcmNOOWk0WUdfWjhMcDFybnR2THFGc1J0aW13VDFYY050a0E?oc=5",
        "kaynak": "Yahoo! Finance Canada",
        "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-22T15:37:00+00:00",
+       "tarih": "2026-09-22",
+       "baslik": "Lumentum to Demonstrate DWDM ELSFP at ECOC 2026: What's Ahead?",
+       "ozet": "LITE's eight-wavelength DWDM ELSFP push targets CPO and NPO architectures as AI optical demand rises and rivals expand aggressively.",
+       "url": "https://finnhub.io/api/news?id=56436fcdde43af40c0b9238f3b6530e370b5d5713815328ba9be7bc8a161d6c2",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-22T13:57:39+00:00",
+       "tarih": "2026-09-22",
+       "baslik": "AI Pick-And-Shovel Stocks To Watch As Xi And Trump Meet",
+       "ozet": "Data center stocks that play behind-the-scenes roles in the AI boom hang in the balance as Trump and Xi meet in Washington, D.C.",
+       "url": "https://finnhub.io/api/news?id=d8c5dcb116d83c9b1044b01dbd37d0874ecf7a928c673609b8d4d161db5a70e9",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
       },
       {
        "zaman": "2026-09-22T03:39:21+00:00",
@@ -1047,15 +1619,21 @@
     },
     {
      "tarih": "2026-09-25",
+     "kaynak": "SeekingAlpha",
+     "baslik": "LAZR: The Right Supply Chain, The Wrong Top Two",
+     "url": "https://finnhub.io/api/news?id=ca848c434bb050c42b9d919334815f3d04995bb138741a1fbfa6131870d03476"
+    },
+    {
+     "tarih": "2026-09-25",
      "kaynak": "TipRanks",
      "baslik": "Applied Optoelectronics Expands China Manufacturing with Long-Term Lease",
      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOd001bmRJNXEzd0hfdTM5VVRZd1RpdWQwdTU3YURSdTBMVzVydzZ0TkRsR0oxMDFyWmpnTDk2Zmpnc09TcFp2MVNGQnM0QVA2QjdrOUVlSVd6eU1ZWlVZdWxHLV9uME9uY2t5OWlqckU4TGloblEyRGlBdHpoWGtzT1RUQmw3RkpIblNjVU1USkNjX2JCVFFjd0FjVlVMa2lnQVpaWDEtbWx6SDFHQ3FkeHBreFJiSE1xMkNOQjNua3RyQQ?oc=5"
     },
     {
      "tarih": "2026-09-25",
-     "kaynak": "Yahoo Finance",
+     "kaynak": "Yahoo",
      "baslik": "Applied Optoelectronics (AAOI) Stock Looks Stretched As Its 13x Five Year Run Continues",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWlFuLWJ1YUJOeTNrbTZ4NW1qcWxGX1pUNFpzUHBPRWZTT1hQdVoyTzFYNV9GaFdyeGVaRHFhMHlwSG42UXdSNFFBWnlsNGNsV1ppUUdmV0V5T3NsQjZjWXRTdVhIMzFVME9LN0pWbDQwMHlQaS1tcW1SV2FUTDdvV0lGWG8wVGxnSWVlRDZqZXYyUE5HSW8xYUdlXzZRT0FVc3hnZlpjdWw?oc=5"
+     "url": "https://finnhub.io/api/news?id=a8a6ee5c7c0a72243438fc13f6f9b2b7e75de88782ddd44b52037be16f4fa471"
     },
     {
      "tarih": "2026-09-24",
@@ -1065,9 +1643,9 @@
     },
     {
      "tarih": "2026-09-24",
-     "kaynak": "24/7 Wall St.",
+     "kaynak": "Yahoo",
      "baslik": "Coherent Has Ripped 59% in 2026: Is It Too Late to Buy COHR Stock Now?",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcWhWYXZDSzRsWTZjTEhaaEI5NVVxa3didHNZTXhXTUxVbmkxMmpCeE9VdjRpbERLa2VJOUduemRZaWpHQXpDUDFkTi1rQ2tURzNlVmtsREh4Qzhsb0sxOXpNbzF4bUtnNDFPV3JBakRpcFZEbGlNUF9pZ2FyUjlRczZ5Vm5aTWlUSXluNkUyUlNUZFJVNVhYWURxM0xxVFRFaXREY0hKX2QtdndYZHBteQ?oc=5"
+     "url": "https://finnhub.io/api/news?id=230163026193ee9df0b1f8d01a12c1d5e01b201359285bfb89f0a1d362f09bbf"
     },
     {
      "tarih": "2026-09-24",
@@ -1077,9 +1655,15 @@
     },
     {
      "tarih": "2026-09-24",
-     "kaynak": "TradingView",
+     "kaynak": "Yahoo",
      "baslik": "Applied Optoelectronics Rides on AI Boom: Can It Beat LITE and FN?",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPa09GaHE4VzVjWEpvRFlpZjUxWXdudUEyeXF3OUJYMVJfc2dQdmdXNXpydHNoX2NycmdLbWJuZUU1SXVTLXRKSHZSQ3l0U1dCN3lENFhkOEc4RVNhQ2dWLUJ6M05BNnd4dzVxUHgyUzBaYWFRMU55RDlVYzJHMUc2OUJEWU05VVBlSXRDdU00eWRQQzhVSzlnbmRSYzQ4RGEyb1Qwd1JZZ1duaTlRUVFiNFlEeUxabjM2V1c0?oc=5"
+     "url": "https://finnhub.io/api/news?id=8cdd24ff681e1d50c5ff3aaeb6afd224fbc6eef0956be647efeb973d178c1da0"
+    },
+    {
+     "tarih": "2026-09-24",
+     "kaynak": "Yahoo",
+     "baslik": "AI Data Center Boom Faces This 'Fundamental Trade-off' With China",
+     "url": "https://finnhub.io/api/news?id=95f4780d101ea9ce33147a22bc5c76029f282ddba41a87ae266460541905db37"
     },
     {
      "tarih": "2026-09-24",
@@ -1089,30 +1673,24 @@
     },
     {
      "tarih": "2026-09-24",
-     "kaynak": "Yahoo! Finance Canada",
-     "baslik": "AAOI Nov 2026 130.000 put (AAOI261120P00130000) Interactive Stock Chart",
-     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9pZnFGSWhwZllEbVZoeFdOZDhUeUhmWFQ3Xzh5OGdRT3kzY3Q4RWMwQ0daZnI0MUdZVXE2cVR1cTlENXFuUHNhRWxpS0Vzdmo1eUptalAxZGM2ZjZubnRMVTZGaHNsaFRKVDIySE5n?oc=5"
-    },
-    {
-     "tarih": "2026-09-24",
-     "kaynak": "Yahoo! Finance Canada",
-     "baslik": "AAOI Nov 2026 85.000 call (AAOI261120C00085000) Stock Price, News, Quote & History",
-     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5ZdHNKUm0zVS16YjB2SEpjaVJXVFdTWFZJNlpNRlZYQ0VQZFRVVWlKakU2NnpKcUtkTUFaV3RBMWF5T0JtU2wwMzVTUk1QVUF0TkNOQ0JvSjdWQjJjZXhqcXY4V25BUQ?oc=5"
-    },
-    {
-     "tarih": "2026-09-24",
-     "kaynak": "Moomoo",
-     "baslik": "Applied Optoelectronics (AAOI) Stock Forum and Discussion",
-     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5PUFg4akl4Z1JoNzZOZlo4SmFuQk5Fb0dfc1ZmWFFPNmxIbDFwOFZLbzh2c241TktQbnBKbFNTVk1KblluRUswdlBnNnNtcVB3dGFTWlRuclpaZw?oc=5"
+     "kaynak": "Yahoo",
+     "baslik": "AOI Brings First Live Quantum30 3.0GHz Concept Demo to SCTE TechExpo in Atlanta",
+     "url": "https://finnhub.io/api/news?id=ab5b9a75a5eae5fca953a035685424ebf920390357c2831a1e5e67f41403a908"
     }
    ],
    "bilanco": {
-    "son_ceyrek": null,
-    "kirmizi": 0,
+    "son_ceyrek": "FY2026 Q2",
+    "kirmizi": 2,
     "dikkat": 0,
-    "olumlu": 0,
-    "son_dosya": null,
-    "xbrl_beklemede": null
+    "olumlu": 2,
+    "son_dosya": {
+     "accn": "0001437749-26-026278",
+     "form": "10-Q",
+     "tarih": "2026-08-06",
+     "donem_sonu": "2026-06-30",
+     "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/aaoi20260630_10q.htm"
+    },
+    "xbrl_beklemede": false
    },
    "sinyaller": [
     {
@@ -1128,6 +1706,76 @@
      "qqq": 741.1,
      "baslangic_kaydi": true,
      "kayit_zamani": "2026-09-25T23:55:22+00:00"
+    },
+    {
+     "id": "17cb40b0cbc6",
+     "tarih": "2026-09-26",
+     "ticker": "AAOI",
+     "tur": "tez_bozulma",
+     "tur_adi": "Tez genel durumu KIRMIZI'ya döndü",
+     "yon": "olumsuz",
+     "aciklama": "Kırmızı sütunlar: Faaliyetten kârlılığa geçiş, Sulandırma",
+     "fiyat": 101.4,
+     "fiyat_tarihi": "2026-09-25",
+     "qqq": 744.5,
+     "baslangic_kaydi": false,
+     "kayit_zamani": "2026-09-26T00:06:08+00:00"
+    },
+    {
+     "id": "72eb495e9a5a",
+     "tarih": "2026-09-26",
+     "ticker": "AAOI",
+     "tur": "sutun_kirmizi",
+     "tur_adi": "Bir tez sütunu KIRMIZI'ya döndü",
+     "yon": "olumsuz",
+     "aciklama": "Faaliyetten kârlılığa geçiş: -11.31 %",
+     "fiyat": 101.4,
+     "fiyat_tarihi": "2026-09-25",
+     "qqq": 744.5,
+     "baslangic_kaydi": false,
+     "kayit_zamani": "2026-09-26T00:06:08+00:00"
+    },
+    {
+     "id": "ea7a4cbe67e4",
+     "tarih": "2026-09-26",
+     "ticker": "AAOI",
+     "tur": "sutun_kirmizi",
+     "tur_adi": "Bir tez sütunu KIRMIZI'ya döndü",
+     "yon": "olumsuz",
+     "aciklama": "Sulandırma: 43.68 %",
+     "fiyat": 101.4,
+     "fiyat_tarihi": "2026-09-25",
+     "qqq": 744.5,
+     "baslangic_kaydi": false,
+     "kayit_zamani": "2026-09-26T00:06:08+00:00"
+    },
+    {
+     "id": "170cbd312dff",
+     "tarih": "2026-09-26",
+     "ticker": "AAOI",
+     "tur": "cikis_kriteri",
+     "tur_adi": "Önceden yazılmış çıkış kriteri tetiklendi",
+     "yon": "olumsuz",
+     "aciklama": "Seyreltilmiş hisse sayısı yıllık %40'tan fazla artarsa",
+     "fiyat": 101.4,
+     "fiyat_tarihi": "2026-09-25",
+     "qqq": 744.5,
+     "baslangic_kaydi": false,
+     "kayit_zamani": "2026-09-26T00:06:08+00:00"
+    },
+    {
+     "id": "4d67a747468f",
+     "tarih": "2026-09-26",
+     "ticker": "AAOI",
+     "tur": "bilanco_kirmizi_bayrak",
+     "tur_adi": "Yeni bilançoda kırmızı bayrak",
+     "yon": "olumsuz",
+     "aciklama": "TTM net zarar; Ciddi sulandırma",
+     "fiyat": 101.4,
+     "fiyat_tarihi": "2026-09-25",
+     "qqq": 744.5,
+     "baslangic_kaydi": false,
+     "kayit_zamani": "2026-09-26T00:06:08+00:00"
     }
    ]
   }
@@ -1160,6 +1808,132 @@
    "qqq": 741.1,
    "baslangic_kaydi": true,
    "kayit_zamani": "2026-09-25T23:55:22+00:00"
+  },
+  {
+   "id": "cae48efa7f54",
+   "tarih": "2026-09-26",
+   "ticker": "NVDA",
+   "tur": "insider_kume_satis",
+   "tur_adi": "Kümelenmiş yönetici satışı",
+   "yon": "olumsuz",
+   "aciklama": "2026-09-17–2026-09-21: Kress Colette, STEVENS MARK A, Teter Timothy S.",
+   "fiyat": 225.07,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-09-26T00:05:17+00:00"
+  },
+  {
+   "id": "933ab100f456",
+   "tarih": "2026-09-26",
+   "ticker": "META",
+   "tur": "insider_kume_satis",
+   "tur_adi": "Kümelenmiş yönetici satışı",
+   "yon": "olumsuz",
+   "aciklama": "2026-09-03–2026-09-15: Anderson Aaron, Cox Christopher K, Olivan Javier",
+   "fiyat": 751.66,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-09-26T00:05:37+00:00"
+  },
+  {
+   "id": "4544f93328e1",
+   "tarih": "2026-09-26",
+   "ticker": "NOW",
+   "tur": "insider_kume_satis",
+   "tur_adi": "Kümelenmiş yönetici satışı",
+   "yon": "olumsuz",
+   "aciklama": "2026-08-27–2026-08-31: Canney Jacqueline P, Chamberlain Paul Edward, Fipps Paul",
+   "fiyat": 135.62,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-09-26T00:05:52+00:00"
+  },
+  {
+   "id": "d488f117952f",
+   "tarih": "2026-09-26",
+   "ticker": "NOW",
+   "tur": "bilanco_kirmizi_bayrak",
+   "tur_adi": "Yeni bilançoda kırmızı bayrak",
+   "yon": "olumsuz",
+   "aciklama": "Vergi öncesi kârın yarıdan fazlası faaliyet dışı",
+   "fiyat": 135.62,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-09-26T00:05:52+00:00"
+  },
+  {
+   "id": "17cb40b0cbc6",
+   "tarih": "2026-09-26",
+   "ticker": "AAOI",
+   "tur": "tez_bozulma",
+   "tur_adi": "Tez genel durumu KIRMIZI'ya döndü",
+   "yon": "olumsuz",
+   "aciklama": "Kırmızı sütunlar: Faaliyetten kârlılığa geçiş, Sulandırma",
+   "fiyat": 101.4,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-09-26T00:06:08+00:00"
+  },
+  {
+   "id": "72eb495e9a5a",
+   "tarih": "2026-09-26",
+   "ticker": "AAOI",
+   "tur": "sutun_kirmizi",
+   "tur_adi": "Bir tez sütunu KIRMIZI'ya döndü",
+   "yon": "olumsuz",
+   "aciklama": "Faaliyetten kârlılığa geçiş: -11.31 %",
+   "fiyat": 101.4,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-09-26T00:06:08+00:00"
+  },
+  {
+   "id": "ea7a4cbe67e4",
+   "tarih": "2026-09-26",
+   "ticker": "AAOI",
+   "tur": "sutun_kirmizi",
+   "tur_adi": "Bir tez sütunu KIRMIZI'ya döndü",
+   "yon": "olumsuz",
+   "aciklama": "Sulandırma: 43.68 %",
+   "fiyat": 101.4,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-09-26T00:06:08+00:00"
+  },
+  {
+   "id": "170cbd312dff",
+   "tarih": "2026-09-26",
+   "ticker": "AAOI",
+   "tur": "cikis_kriteri",
+   "tur_adi": "Önceden yazılmış çıkış kriteri tetiklendi",
+   "yon": "olumsuz",
+   "aciklama": "Seyreltilmiş hisse sayısı yıllık %40'tan fazla artarsa",
+   "fiyat": 101.4,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-09-26T00:06:08+00:00"
+  },
+  {
+   "id": "4d67a747468f",
+   "tarih": "2026-09-26",
+   "ticker": "AAOI",
+   "tur": "bilanco_kirmizi_bayrak",
+   "tur_adi": "Yeni bilançoda kırmızı bayrak",
+   "yon": "olumsuz",
+   "aciklama": "TTM net zarar; Ciddi sulandırma",
+   "fiyat": 101.4,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-09-26T00:06:08+00:00"
   }
  ],
  "not": "Günlük Python derlemesi (Claude yok). Derin analiz Salı raporundadır."

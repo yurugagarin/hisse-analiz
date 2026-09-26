@@ -2,7 +2,7 @@
  "ticker": "NOW",
  "onay": "taslak",
  "kosul": "tez_saglam",
- "zirveden_uzaklik": -27.2,
+ "zirveden_uzaklik": -28.34,
  "kademeler": [
   {
    "dusus": 15,
@@ -23,30 +23,30 @@
  "benchmark": [
   {
    "sembol": "QQQ",
-   "zirveden_uzaklik": -0.85,
-   "degisim_1a": 4.27,
-   "degisim_3a": 3.45,
-   "fark_puan": -26.35
+   "zirveden_uzaklik": -0.4,
+   "degisim_1a": 4.66,
+   "degisim_3a": 5.38,
+   "fark_puan": -27.94
   },
   {
    "sembol": "IGV",
-   "zirveden_uzaklik": -8.48,
-   "degisim_1a": 5.2,
-   "degisim_3a": 26.42,
-   "fark_puan": -18.72
+   "zirveden_uzaklik": -9.46,
+   "degisim_1a": 3.54,
+   "degisim_3a": 20.19,
+   "fark_puan": -18.88
   }
  ],
- "guncelleme": "2026-09-25T23:56:43+00:00",
+ "guncelleme": "2026-09-26T00:05:52+00:00",
  "not": "Otomatik işlem yok. Bu bölüm önceden yazdığın kuralları hatırlatır.",
  "dusus_kaynagi": "sirkete_ozel",
  "dusus_kaynagi_aciklama": "Hisse, tüm benchmark'lardan en az 10 puan daha fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
- "en_iyi_fark": -18.72,
+ "en_iyi_fark": -18.88,
  "tetiklenen": {
   "dusus": 25,
   "not": "DCA 2x; RPO ve SBC sütunlarını kontrol et."
  },
- "tez_durumu": "veri_yok",
- "kosul_saglaniyor": null,
- "durum": "tetiklendi_kosul_bilinmiyor",
- "mesaj": "Zirveden %-27.2 düşüş: -%25 kademesi tetiklendi. Tez verisi yok — 'tez sağlam' koşulu doğrulanamıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et."
+ "tez_durumu": "yesil",
+ "kosul_saglaniyor": true,
+ "durum": "tetiklendi_kosul_ok",
+ "mesaj": "Zirveden %-28.34 düşüş: -%25 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et."
 }

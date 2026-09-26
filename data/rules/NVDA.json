@@ -2,7 +2,7 @@
  "ticker": "NVDA",
  "onay": "taslak",
  "kosul": "tez_saglam",
- "zirveden_uzaklik": -4.73,
+ "zirveden_uzaklik": -4.53,
  "kademeler": [
   {
    "dusus": 15,
@@ -23,27 +23,27 @@
  "benchmark": [
   {
    "sembol": "QQQ",
-   "zirveden_uzaklik": -0.85,
-   "degisim_1a": 4.27,
-   "degisim_3a": 3.45,
-   "fark_puan": -3.88
+   "zirveden_uzaklik": -0.4,
+   "degisim_1a": 4.66,
+   "degisim_3a": 5.38,
+   "fark_puan": -4.13
   },
   {
    "sembol": "SMH",
-   "zirveden_uzaklik": -10.22,
-   "degisim_1a": 8.04,
-   "degisim_3a": -5.71,
-   "fark_puan": 5.49
+   "zirveden_uzaklik": -9.32,
+   "degisim_1a": 9.14,
+   "degisim_3a": -0.83,
+   "fark_puan": 4.79
   }
  ],
- "guncelleme": "2026-09-25T23:56:41+00:00",
+ "guncelleme": "2026-09-26T00:05:17+00:00",
  "not": "Otomatik işlem yok. Bu bölüm önceden yazdığın kuralları hatırlatır.",
  "dusus_kaynagi": "piyasa_sektor",
  "dusus_kaynagi_aciklama": "Hissenin düşüşü benchmark'larla benzer: ağırlıkla piyasa/sektör kaynaklı.",
- "en_iyi_fark": 5.49,
+ "en_iyi_fark": 4.79,
  "tetiklenen": null,
- "tez_durumu": "veri_yok",
- "kosul_saglaniyor": null,
+ "tez_durumu": "sari",
+ "kosul_saglaniyor": true,
  "durum": "tetiklenmedi",
- "mesaj": "Zirveden %-4.73. Sonraki kademe: -%15."
+ "mesaj": "Zirveden %-4.53. Sonraki kademe: -%15."
 }

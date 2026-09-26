@@ -3,7 +3,7 @@
  "tez_var": true,
  "onay": "taslak",
  "ozet": "Kurumsal iş akışı platformu yüksek yenileme oranı ve genişleyen ürün (AI/Now Assist) satışıyla %20 civarı büyümeyi sürdürüyor; sözleşmeli gelir birikimi (RPO) görünürlük sağlıyor ve güçlü FCF marjı SBC maliyetine rağmen gerçek değer yaratıyor.\n",
- "genel": "veri_yok",
+ "genel": "yesil",
  "sutunlar": [
   {
    "id": "buyume",
@@ -13,17 +13,58 @@
    "metrik": "revenue_yoy",
    "metrik_adi": "Gelir büyümesi (yıllık)",
    "birim": "%",
-   "deger": null,
-   "donem": null,
+   "deger": 24.01,
+   "donem": "FY2026 Q2",
    "eski_donem": false,
    "operator": ">",
    "esik": 18,
    "uyari": 12,
-   "durum": "veri_yok",
-   "gecmis": [],
+   "durum": "yesil",
+   "gecmis": [
+    {
+     "etiket": "FY2024 Q3",
+     "deger": 22.25,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2024 Q4",
+     "deger": 21.34,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q1",
+     "deger": 18.63,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q2",
+     "deger": 22.38,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q3",
+     "deger": 21.81,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q4",
+     "deger": 20.66,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q1",
+     "deger": 22.09,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q2",
+     "deger": 24.01,
+     "durum": "yesil"
+    }
+   ],
    "kaynak": {
     "tip": "SEC XBRL companyfacts",
-    "donem": null
+    "donem": "FY2026 Q2"
    },
    "olgu_mu": true,
    "haberler": [],
@@ -37,17 +78,58 @@
    "metrik": "rpo_yoy",
    "metrik_adi": "RPO (yıllık)",
    "birim": "%",
-   "deger": null,
-   "donem": null,
+   "deger": 21.34,
+   "donem": "FY2026 Q2",
    "eski_donem": false,
    "operator": ">",
    "esik": 18,
    "uyari": 12,
-   "durum": "veri_yok",
-   "gecmis": [],
+   "durum": "yesil",
+   "gecmis": [
+    {
+     "etiket": "FY2024 Q3",
+     "deger": 35.42,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2024 Q4",
+     "deger": 23.89,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q1",
+     "deger": 24.86,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q2",
+     "deger": 28.49,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q3",
+     "deger": 24.62,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q4",
+     "deger": 26.46,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q1",
+     "deger": 25.34,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q2",
+     "deger": 21.34,
+     "durum": "yesil"
+    }
+   ],
    "kaynak": {
     "tip": "SEC XBRL companyfacts",
-    "donem": null
+    "donem": "FY2026 Q2"
    },
    "olgu_mu": true,
    "haberler": [],
@@ -61,17 +143,58 @@
    "metrik": "fcf_margin_ttm",
    "metrik_adi": "TTM FCF marjı",
    "birim": "%",
-   "deger": null,
-   "donem": null,
+   "deger": 31.09,
+   "donem": "FY2026 Q2",
    "eski_donem": false,
    "operator": ">",
    "esik": 25,
    "uyari": 18,
-   "durum": "veri_yok",
-   "gecmis": [],
+   "durum": "yesil",
+   "gecmis": [
+    {
+     "etiket": "FY2024 Q3",
+     "deger": 32.27,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2024 Q4",
+     "deger": 31.09,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q1",
+     "deger": 32.1,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q2",
+     "deger": 31.92,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q3",
+     "deger": 31.25,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q4",
+     "deger": 34.46,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q1",
+     "deger": 33.19,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q2",
+     "deger": 31.09,
+     "durum": "yesil"
+    }
+   ],
    "kaynak": {
     "tip": "SEC XBRL companyfacts",
-    "donem": null
+    "donem": "FY2026 Q2"
    },
    "olgu_mu": true,
    "haberler": [],
@@ -85,17 +208,58 @@
    "metrik": "sbc_to_revenue_ttm",
    "metrik_adi": "TTM SBC / gelir",
    "birim": "%",
-   "deger": null,
-   "donem": null,
+   "deger": 14.83,
+   "donem": "FY2026 Q2",
    "eski_donem": false,
    "operator": "<",
    "esik": 15,
    "uyari": 20,
-   "durum": "veri_yok",
-   "gecmis": [],
+   "durum": "yesil",
+   "gecmis": [
+    {
+     "etiket": "FY2024 Q3",
+     "deger": 16.29,
+     "durum": "sari"
+    },
+    {
+     "etiket": "FY2024 Q4",
+     "deger": 15.9,
+     "durum": "sari"
+    },
+    {
+     "etiket": "FY2025 Q1",
+     "deger": 15.64,
+     "durum": "sari"
+    },
+    {
+     "etiket": "FY2025 Q2",
+     "deger": 15.34,
+     "durum": "sari"
+    },
+    {
+     "etiket": "FY2025 Q3",
+     "deger": 15.12,
+     "durum": "sari"
+    },
+    {
+     "etiket": "FY2025 Q4",
+     "deger": 14.72,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q1",
+     "deger": 14.56,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q2",
+     "deger": 14.83,
+     "durum": "yesil"
+    }
+   ],
    "kaynak": {
     "tip": "SEC XBRL companyfacts",
-    "donem": null
+    "donem": "FY2026 Q2"
    },
    "olgu_mu": true,
    "haberler": [],
@@ -122,18 +286,36 @@
    "id": "rpo_yavas",
    "ad": "RPO büyümesi 2 çeyrek üst üste %12'nin altına inerse",
    "metrik": "rpo_yoy",
-   "durum": "veri_yok",
-   "son_degerler": []
+   "durum": "tetiklenmedi",
+   "son_degerler": [
+    {
+     "etiket": "FY2026 Q1",
+     "deger": 25.34
+    },
+    {
+     "etiket": "FY2026 Q2",
+     "deger": 21.34
+    }
+   ]
   },
   {
    "id": "gelir_yavas",
    "ad": "Gelir büyümesi 2 çeyrek üst üste %12'nin altına inerse",
    "metrik": "revenue_yoy",
-   "durum": "veri_yok",
-   "son_degerler": []
+   "durum": "tetiklenmedi",
+   "son_degerler": [
+    {
+     "etiket": "FY2026 Q1",
+     "deger": 22.09
+    },
+    {
+     "etiket": "FY2026 Q2",
+     "deger": 24.01
+    }
+   ]
   }
  ],
- "son_ceyrek": null,
- "guncelleme": "2026-09-25T23:56:43+00:00",
+ "son_ceyrek": "FY2026 Q2",
+ "guncelleme": "2026-09-26T00:05:52+00:00",
  "not": "Tez durumu fiyattan bağımsızdır. Fiyat düşüşü tek başına tezin bozulduğu anlamına gelmez."
 }

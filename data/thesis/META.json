@@ -3,7 +3,7 @@
  "tez_var": true,
  "onay": "taslak",
  "ozet": "Reklam motoru (Family of Apps) AI destekli hedefleme ile çift haneli büyümeyi ve yüksek faaliyet marjını koruyor; ağır AI yatırımına rağmen serbest nakit akışı pozitif kalıyor ve hisse geri alımı sulandırmayı telafi ediyor.\n",
- "genel": "veri_yok",
+ "genel": "yesil",
  "sutunlar": [
   {
    "id": "reklam_buyumesi",
@@ -13,17 +13,58 @@
    "metrik": "revenue_yoy",
    "metrik_adi": "Gelir büyümesi (yıllık)",
    "birim": "%",
-   "deger": null,
-   "donem": null,
+   "deger": 27.96,
+   "donem": "FY2026 Q2",
    "eski_donem": false,
    "operator": ">",
    "esik": 12,
    "uyari": 5,
-   "durum": "veri_yok",
-   "gecmis": [],
+   "durum": "yesil",
+   "gecmis": [
+    {
+     "etiket": "FY2024 Q3",
+     "deger": 18.87,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2024 Q4",
+     "deger": 20.63,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q1",
+     "deger": 16.07,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q2",
+     "deger": 21.61,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q3",
+     "deger": 26.25,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q4",
+     "deger": 23.78,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q1",
+     "deger": 33.08,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q2",
+     "deger": 27.96,
+     "durum": "yesil"
+    }
+   ],
    "kaynak": {
     "tip": "SEC XBRL companyfacts",
-    "donem": null
+    "donem": "FY2026 Q2"
    },
    "olgu_mu": true,
    "haberler": [],
@@ -37,17 +78,58 @@
    "metrik": "operating_margin_ttm",
    "metrik_adi": "TTM faaliyet marjı",
    "birim": "%",
-   "deger": null,
-   "donem": null,
+   "deger": 38.08,
+   "donem": "FY2026 Q2",
    "eski_donem": false,
    "operator": ">",
    "esik": 35,
    "uyari": 28,
-   "durum": "veri_yok",
-   "gecmis": [],
+   "durum": "yesil",
+   "gecmis": [
+    {
+     "etiket": "FY2024 Q3",
+     "deger": 39.94,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2024 Q4",
+     "deger": 42.18,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q1",
+     "deger": 42.92,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q2",
+     "deger": 44.02,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q3",
+     "deger": 43.23,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q4",
+     "deger": 41.44,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q1",
+     "deger": 41.21,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q2",
+     "deger": 38.08,
+     "durum": "yesil"
+    }
+   ],
    "kaynak": {
     "tip": "SEC XBRL companyfacts",
-    "donem": null
+    "donem": "FY2026 Q2"
    },
    "olgu_mu": true,
    "haberler": [],
@@ -61,17 +143,58 @@
    "metrik": "fcf_margin_ttm",
    "metrik_adi": "TTM FCF marjı",
    "birim": "%",
-   "deger": null,
-   "donem": null,
+   "deger": 17.95,
+   "donem": "FY2026 Q2",
    "eski_donem": false,
    "operator": ">",
    "esik": 10,
    "uyari": 0,
-   "durum": "veri_yok",
-   "gecmis": [],
+   "durum": "yesil",
+   "gecmis": [
+    {
+     "etiket": "FY2024 Q3",
+     "deger": 33.49,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2024 Q4",
+     "deger": 32.87,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q1",
+     "deger": 30.71,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q2",
+     "deger": 28.04,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q3",
+     "deger": 23.67,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q4",
+     "deger": 22.94,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q1",
+     "deger": 22.45,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q2",
+     "deger": 17.95,
+     "durum": "yesil"
+    }
+   ],
    "kaynak": {
     "tip": "SEC XBRL companyfacts",
-    "donem": null
+    "donem": "FY2026 Q2"
    },
    "olgu_mu": true,
    "haberler": [],
@@ -85,17 +208,58 @@
    "metrik": "diluted_shares_yoy",
    "metrik_adi": "Seyreltilmiş hisse sayısı (yıllık)",
    "birim": "%",
-   "deger": null,
-   "donem": null,
+   "deger": -0.16,
+   "donem": "FY2026 Q2",
    "eski_donem": false,
    "operator": "<",
    "esik": 0,
    "uyari": 2,
-   "durum": "veri_yok",
-   "gecmis": [],
+   "durum": "yesil",
+   "gecmis": [
+    {
+     "etiket": "FY2024 Q3",
+     "deger": -1.55,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2024 Q4",
+     "deger": -116.67,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q1",
+     "deger": -1.33,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q2",
+     "deger": -1.53,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q3",
+     "deger": -1.08,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q4",
+     "deger": -300.0,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q1",
+     "deger": -1.0,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q2",
+     "deger": -0.16,
+     "durum": "yesil"
+    }
+   ],
    "kaynak": {
     "tip": "SEC XBRL companyfacts",
-    "donem": null
+    "donem": "FY2026 Q2"
    },
    "olgu_mu": true,
    "haberler": [],
@@ -122,18 +286,36 @@
    "id": "buyume_coker",
    "ad": "Gelir büyümesi 2 çeyrek üst üste %5'in altına inerse",
    "metrik": "revenue_yoy",
-   "durum": "veri_yok",
-   "son_degerler": []
+   "durum": "tetiklenmedi",
+   "son_degerler": [
+    {
+     "etiket": "FY2026 Q1",
+     "deger": 33.08
+    },
+    {
+     "etiket": "FY2026 Q2",
+     "deger": 27.96
+    }
+   ]
   },
   {
    "id": "fcf_negatif",
    "ad": "TTM serbest nakit akışı 2 çeyrek üst üste negatif olursa",
    "metrik": "fcf_margin_ttm",
-   "durum": "veri_yok",
-   "son_degerler": []
+   "durum": "tetiklenmedi",
+   "son_degerler": [
+    {
+     "etiket": "FY2026 Q1",
+     "deger": 22.45
+    },
+    {
+     "etiket": "FY2026 Q2",
+     "deger": 17.95
+    }
+   ]
   }
  ],
- "son_ceyrek": null,
- "guncelleme": "2026-09-25T23:56:42+00:00",
+ "son_ceyrek": "FY2026 Q2",
+ "guncelleme": "2026-09-26T00:05:37+00:00",
  "not": "Tez durumu fiyattan bağımsızdır. Fiyat düşüşü tek başına tezin bozulduğu anlamına gelmez."
 }

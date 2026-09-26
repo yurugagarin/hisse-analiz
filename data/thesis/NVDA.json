@@ -3,7 +3,7 @@
  "tez_var": true,
  "onay": "taslak",
  "ozet": "Hızlandırılmış hesaplama (GPU + ağ + yazılım yığını) için talep, hyperscaler ve kurumsal AI yatırımlarıyla yüksek büyümeyi sürdürüyor; yazılım/ekosistem kilidi sayesinde yüksek brüt marj korunuyor ve kâr nakde dönüşüyor.\n",
- "genel": "veri_yok",
+ "genel": "sari",
  "sutunlar": [
   {
    "id": "buyume",
@@ -13,17 +13,58 @@
    "metrik": "revenue_yoy",
    "metrik_adi": "Gelir büyümesi (yıllık)",
    "birim": "%",
-   "deger": null,
-   "donem": null,
+   "deger": 105.85,
+   "donem": "FY2027 Q2",
    "eski_donem": false,
    "operator": ">",
    "esik": 25,
    "uyari": 10,
-   "durum": "veri_yok",
-   "gecmis": [],
+   "durum": "yesil",
+   "gecmis": [
+    {
+     "etiket": "FY2025 Q3",
+     "deger": 93.61,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q4",
+     "deger": 77.94,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q1",
+     "deger": 69.18,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q2",
+     "deger": 55.6,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q3",
+     "deger": 62.49,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q4",
+     "deger": 73.21,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2027 Q1",
+     "deger": 85.23,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2027 Q2",
+     "deger": 105.85,
+     "durum": "yesil"
+    }
+   ],
    "kaynak": {
     "tip": "SEC XBRL companyfacts",
-    "donem": null
+    "donem": "FY2027 Q2"
    },
    "olgu_mu": true,
    "haberler": [],
@@ -37,17 +78,58 @@
    "metrik": "gross_margin",
    "metrik_adi": "Brüt marj",
    "birim": "%",
-   "deger": null,
-   "donem": null,
+   "deger": 74.98,
+   "donem": "FY2027 Q2",
    "eski_donem": false,
    "operator": ">",
    "esik": 70,
    "uyari": 65,
-   "durum": "veri_yok",
-   "gecmis": [],
+   "durum": "yesil",
+   "gecmis": [
+    {
+     "etiket": "FY2025 Q3",
+     "deger": 74.56,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q4",
+     "deger": 73.03,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q1",
+     "deger": 60.52,
+     "durum": "kirmizi"
+    },
+    {
+     "etiket": "FY2026 Q2",
+     "deger": 72.42,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q3",
+     "deger": 73.41,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q4",
+     "deger": 75.0,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2027 Q1",
+     "deger": 74.93,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2027 Q2",
+     "deger": 74.98,
+     "durum": "yesil"
+    }
+   ],
    "kaynak": {
     "tip": "SEC XBRL companyfacts",
-    "donem": null
+    "donem": "FY2027 Q2"
    },
    "olgu_mu": true,
    "haberler": [],
@@ -61,17 +143,58 @@
    "metrik": "ocf_to_ni_ttm",
    "metrik_adi": "İşletme nakit akışı / net kâr (TTM)",
    "birim": "x",
-   "deger": null,
-   "donem": null,
+   "deger": 0.7,
+   "donem": "FY2027 Q2",
    "eski_donem": false,
    "operator": ">",
    "esik": 0.9,
    "uyari": 0.7,
-   "durum": "veri_yok",
-   "gecmis": [],
+   "durum": "sari",
+   "gecmis": [
+    {
+     "etiket": "FY2025 Q3",
+     "deger": 0.93,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q4",
+     "deger": 0.88,
+     "durum": "sari"
+    },
+    {
+     "etiket": "FY2026 Q1",
+     "deger": 0.99,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q2",
+     "deger": 0.89,
+     "durum": "sari"
+    },
+    {
+     "etiket": "FY2026 Q3",
+     "deger": 0.84,
+     "durum": "sari"
+    },
+    {
+     "etiket": "FY2026 Q4",
+     "deger": 0.86,
+     "durum": "sari"
+    },
+    {
+     "etiket": "FY2027 Q1",
+     "deger": 0.79,
+     "durum": "sari"
+    },
+    {
+     "etiket": "FY2027 Q2",
+     "deger": 0.7,
+     "durum": "sari"
+    }
+   ],
    "kaynak": {
     "tip": "SEC XBRL companyfacts",
-    "donem": null
+    "donem": "FY2027 Q2"
    },
    "olgu_mu": true,
    "haberler": [],
@@ -85,17 +208,58 @@
    "metrik": "inventory_vs_revenue_gap",
    "metrik_adi": "Stok − gelir büyümesi",
    "birim": "puan",
-   "deger": null,
-   "donem": null,
+   "deger": 5.18,
+   "donem": "FY2027 Q2",
    "eski_donem": false,
    "operator": "<",
    "esik": 20,
    "uyari": 45,
-   "durum": "veri_yok",
-   "gecmis": [],
+   "durum": "yesil",
+   "gecmis": [
+    {
+     "etiket": "FY2025 Q3",
+     "deger": -33.45,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2025 Q4",
+     "deger": 12.9,
+     "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q1",
+     "deger": 24.08,
+     "durum": "sari"
+    },
+    {
+     "etiket": "FY2026 Q2",
+     "deger": 68.55,
+     "durum": "kirmizi"
+    },
+    {
+     "etiket": "FY2026 Q3",
+     "deger": 95.99,
+     "durum": "kirmizi"
+    },
+    {
+     "etiket": "FY2026 Q4",
+     "deger": 39.12,
+     "durum": "sari"
+    },
+    {
+     "etiket": "FY2027 Q1",
+     "deger": 42.4,
+     "durum": "sari"
+    },
+    {
+     "etiket": "FY2027 Q2",
+     "deger": 5.18,
+     "durum": "yesil"
+    }
+   ],
    "kaynak": {
     "tip": "SEC XBRL companyfacts",
-    "donem": null
+    "donem": "FY2027 Q2"
    },
    "olgu_mu": true,
    "haberler": [],
@@ -122,25 +286,52 @@
    "id": "gelir_daralmasi",
    "ad": "Gelir 2 çeyrek üst üste yıllık bazda daralırsa",
    "metrik": "revenue_yoy",
-   "durum": "veri_yok",
-   "son_degerler": []
+   "durum": "tetiklenmedi",
+   "son_degerler": [
+    {
+     "etiket": "FY2027 Q1",
+     "deger": 85.23
+    },
+    {
+     "etiket": "FY2027 Q2",
+     "deger": 105.85
+    }
+   ]
   },
   {
    "id": "marj_kirilmasi",
    "ad": "Brüt marj 2 çeyrek üst üste %60'ın altına inerse",
    "metrik": "gross_margin",
-   "durum": "veri_yok",
-   "son_degerler": []
+   "durum": "tetiklenmedi",
+   "son_degerler": [
+    {
+     "etiket": "FY2027 Q1",
+     "deger": 74.93
+    },
+    {
+     "etiket": "FY2027 Q2",
+     "deger": 74.98
+    }
+   ]
   },
   {
    "id": "stok_sisme",
    "ad": "Stok büyümesi gelir büyümesini 2 çeyrek üst üste 60 puandan fazla aşarsa",
    "metrik": "inventory_vs_revenue_gap",
-   "durum": "veri_yok",
-   "son_degerler": []
+   "durum": "tetiklenmedi",
+   "son_degerler": [
+    {
+     "etiket": "FY2027 Q1",
+     "deger": 42.4
+    },
+    {
+     "etiket": "FY2027 Q2",
+     "deger": 5.18
+    }
+   ]
   }
  ],
- "son_ceyrek": null,
- "guncelleme": "2026-09-25T23:56:41+00:00",
+ "son_ceyrek": "FY2027 Q2",
+ "guncelleme": "2026-09-26T00:05:17+00:00",
  "not": "Tez durumu fiyattan bağımsızdır. Fiyat düşüşü tek başına tezin bozulduğu anlamına gelmez."
 }
