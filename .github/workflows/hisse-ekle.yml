@@ -33,8 +33,10 @@ permissions:
   actions: write
   issues: write
 
+# Kendi kuyruğu: veri pipeline'ının kuyruğundaki bekleyen işleri iptal ettirmesin.
+# (Site aynı anda tek işlem gönderir; config commit'i rebase ile tekrar denenir.)
 concurrency:
-  group: hisse-pipeline-refs/heads/main
+  group: hisse-ekle
   cancel-in-progress: false
 
 jobs:

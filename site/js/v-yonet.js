@@ -219,7 +219,10 @@
             o.run = run.html_url; o.runAt = run.created_at; o.faz = 'liste'; o.not = '';
             if (run.status === 'completed') {
               const msg = await runMessage(run);
-              if (run.conclusion !== 'success' || (msg && msg.hata)) { o.faz = 'hata'; o.mesaj = (msg && msg.text) || 'İş akışı başarısız oldu; ayrıntı GitHub kaydında.'; }
+              if (run.conclusion !== 'success' || (msg && msg.hata)) {
+                o.faz = 'hata';
+                o.mesaj = (msg && msg.text) || (run.conclusion === 'cancelled' ? 'İş GitHub tarafından iptal edildi (büyük olasılıkla aynı anda başka bir istek geldi). Yeniden dene.' : 'İş akışı başarısız oldu; ayrıntı GitHub kaydında.');
+              }
               else {
                 o.mesaj = (msg && msg.text) || '';
                 o.faz = /zaten listede|listede yok/.test(o.mesaj) ? 'tamam' : 'veri';

@@ -61,7 +61,7 @@ def sec_profile(cik: int) -> dict:
     out = {"sic": None, "sektor": None, "us_gaap": None, "formlar": []}
     sub = sec.submissions(cik) or {}
     out["sic"], out["sektor"] = sub.get("sic"), sub.get("sicDescription")
-    out["formlar"] = sorted(set((sub.get("filings", {}).get("recent", {}) or {}).get("form", [])[:200]))
+    out["formlar"] = sorted(set((sub.get("filings", {}).get("recent", {}) or {}).get("form", [])))
     cf = sec.companyfacts(cik)
     if cf is not None:
         out["us_gaap"] = bool((cf.get("facts") or {}).get("us-gaap"))
@@ -154,7 +154,7 @@ def add(T: str, name: str | None, benchmarks: list[str]) -> str:
     else:
         prof = sec_profile(cik)
         if prof.get("us_gaap") is False:
-            forms = [f for f in prof.get("formlar", []) if f in ("20-F", "40-F", "6-K")]
+            forms = [f for f in ("20-F", "40-F", "6-K") if f in prof.get("formlar", [])][:2]
             raise Hata(f"{T} ({nice_name(sec_title)}) SEC'e ABD GAAP bilançosu vermiyor"
                        + (f" (yabancı şirket, {'/'.join(forms)} ile raporluyor)" if forms else "")
                        + ". Bu sitenin bilanço, tez ve insider analizleri SEC'in 10-Q/10-K ve Form 4 verisine dayandığı için eklenmedi.")
