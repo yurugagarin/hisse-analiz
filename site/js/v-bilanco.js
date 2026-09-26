@@ -10,15 +10,19 @@
     if (!items.length) return '';
     return `<details class="learn"><summary>${H.esc(title || 'Bu bölümü nasıl okumalı?')}</summary><div class="items">${items.map(([k, r]) => `<div class="gl-item"><h4>${H.esc(r.ad)}</h4>${r.formul ? `<span class="f">${H.esc(r.formul)}</span>` : ''}<p>${H.esc(r.tanim || r.kisa)}</p>${r.nasil ? `<p style="margin-top:6px"><b>Nasıl okunur:</b> ${H.esc(r.nasil)}</p>` : ''}${r.tuzak ? `<p style="margin-top:6px"><b>Tuzak:</b> ${H.esc(r.tuzak)}</p>` : ''}<p style="margin-top:6px"><a href="#/rehber/${k}">Rehberde aç →</a></p></div>`).join('')}</div></details>`;
   }
-  function tiles(list) {
-    return `<div class="kpis">${(list || []).map(t => `<div class="kpi ${H.esc(t.ton || '')}"><span class="k">${H.esc(t.etiket)} ${H.qm(t.rehber)}</span><span class="v">${H.esc(t.deger)}</span>${t.alt ? `<span class="s">${H.esc(t.alt)}</span>` : ''}</div>`).join('')}</div>`;
+  function tiles(list, reg, sec) {
+    return `<div class="kpis">${(list || []).map((t, i) => {
+      const src = H.srcAttr(reg, `${sec.id}-k${i}`, `${t.etiket}: ${t.deger}${t.alt ? ' (' + t.alt + ')' : ''}`, t.kaynak, sec.baslik);
+      return `<div class="kpi ${H.esc(t.ton || '')}${src ? ' src' : ''}"${src}><span class="k">${H.esc(t.etiket)} ${H.qm(t.rehber)}</span><span class="v">${H.esc(t.deger)}</span>${t.alt ? `<span class="s">${H.esc(t.alt)}</span>` : ''}</div>`;
+    }).join('')}</div>`;
   }
-  function sectionHtml(s) {
+  function sectionHtml(s, reg) {
+    const pk = s.paragraf_kaynak || [];
     return `<section class="rsec" id="sec-${s.id}">
       <div class="sec-head"><div class="row"><span class="eyebrow">${H.esc(s.baslik)}</span>${H.durumChip(s.durum)}</div><p class="manset">${H.esc(s.manset)}</p></div>
-      ${tiles(s.rakamlar)}
+      ${tiles(s.rakamlar, reg, s)}
       <div class="grid2" id="fig-${s.id}"></div>
-      <div class="prose">${s.paragraflar.map(p => `<p>${H.esc(p)}</p>`).join('')}</div>
+      <div class="prose">${s.paragraflar.map((p, i) => H.srcP(reg, `${s.id}-p${i}`, p, pk[i], s.baslik)).join('')}</div>
       ${learn(s.rehber)}
     </section>`;
   }
@@ -88,23 +92,95 @@
   /* ---- tam tablolar ---- */
   const STATEMENTS = [
     ['Gelir tablosu', [['revenue', 'Gelir'], ['cogs', 'Satışların maliyeti', 1], ['gross_profit', 'Brüt kâr'], ['rd', 'Ar-Ge gideri', 1], ['sga', 'Satış, genel ve yönetim giderleri', 1], ['operating_income', 'Faaliyet kârı'],
-      ['interest_income', 'Faiz geliri', 1], ['interest_expense', 'Faiz gideri', 1], ['investment_gl', 'Yatırım kazanç/zararı', 1], ['pretax', 'Vergi öncesi kâr'], ['tax', 'Vergi gideri', 1], ['net_income', 'Net kâr'], ['eps_diluted', 'Seyreltilmiş EPS ($)', 0, 'eps'], ['diluted_shares', 'Seyreltilmiş hisse (milyon)', 0, 'sh']]],
-    ['Bilanço', [['cash', 'Nakit ve benzerleri'], ['st_investments', 'Kısa vadeli yatırımlar', 1], ['ar', 'Ticari alacaklar'], ['inventory', 'Stoklar'], ['current_assets', 'Dönen varlıklar'], ['ppe', 'Maddi duran varlıklar'], ['goodwill', 'Şerefiye'], ['intangibles', 'Maddi olmayan varlıklar', 1], ['total_assets', 'Toplam varlıklar'],
+      ['interest_income', 'Faiz geliri', 1], ['interest_expense', 'Faiz gideri', 1], ['investment_gl', 'Yatırım kazanç/zararı', 1], ['warrant_fv', 'Warrant değer değişimi', 1], ['derivative_gl', 'Türev araç kazanç/zararı', 1], ['debt_extinguishment', 'Borç kapama kazanç/zararı', 1], ['pretax', 'Vergi öncesi kâr'], ['tax', 'Vergi gideri', 1], ['net_income', 'Net kâr'], ['eps_diluted', 'Seyreltilmiş EPS ($)', 0, 'eps'], ['diluted_shares', 'Seyreltilmiş hisse (milyon)', 0, 'sh']]],
+    ['Bilanço', [['cash', 'Nakit ve benzerleri'], ['st_investments', 'Kısa vadeli yatırımlar', 1], ['ar', 'Ticari alacaklar'], ['inventory', 'Stoklar'], ['current_assets', 'Dönen varlıklar'], ['ppe', 'Maddi duran varlıklar'], ['goodwill', 'Şerefiye'], ['intangibles', 'Maddi olmayan varlıklar', 1], ['equity_investments', 'Hisse yatırımları', 1], ['lt_investments', 'Uzun vadeli yatırımlar', 1], ['total_assets', 'Toplam varlıklar'],
       ['ap', 'Ticari borçlar', 1], ['deferred_revenue', 'Ertelenmiş gelir', 1], ['current_liabilities', 'Kısa vadeli yükümlülükler'], ['total_debt', 'Finansal borç'], ['lease_liab', 'Kira yükümlülüğü', 1], ['total_liabilities', 'Toplam yükümlülükler'], ['equity', 'Özkaynak'], ['rpo', 'RPO (dipnot)', 1]]],
-    ['Nakit akışı', [['ocf', 'İşletme faaliyetlerinden nakit'], ['da', 'Amortisman', 1], ['sbc', 'Hisse bazlı ödeme', 1], ['capex', 'Yatırım harcaması (capex)', 1], ['fcf', 'Serbest nakit akışı'], ['acquisitions', 'Satın almalar', 1], ['buybacks', 'Hisse geri alımı', 1], ['dividends', 'Temettü', 1], ['debt_issued', 'Borçlanma', 1], ['debt_repaid', 'Borç geri ödemesi', 1]]]
+    ['Nakit akışı', [['ocf', 'İşletme faaliyetlerinden nakit'], ['da', 'Amortisman', 1], ['sbc', 'Hisse bazlı ödeme', 1], ['capex', 'Yatırım harcaması (capex)', 1], ['fcf', 'Serbest nakit akışı'], ['acquisitions', 'Satın almalar', 1], ['buybacks', 'Hisse geri alımı', 1], ['dividends', 'Temettü', 1], ['equity_issued', 'Hisse ihracı / opsiyon', 1], ['debt_issued', 'Borçlanma', 1], ['debt_repaid', 'Borç geri ödemesi', 1]]]
   ];
-  function statementsHtml(rows, kav) {
-    return STATEMENTS.map(([title, lines]) => {
-      const body = lines.filter(([k]) => rows.some(r => r[k] != null)).map(([k, n, sub, fmt]) => {
-        const tags = ((kav || {})[k] || {}).kullanilan || [];
-        const cells = rows.map(r => { const v = r[k]; const src = (r._kaynak || {})[k]; const der = src && src.turetilmis;
-          const txt = v == null ? '—' : fmt === 'eps' ? H.num(v, 2) : fmt === 'sh' ? H.num(v / 1e6, 0) : usdS(v);
-          return `<td class="n" title="${H.esc(src ? 'us-gaap:' + src.concept + (src.not ? ' · ' + src.not : '') : '')}">${txt}${der ? '<sup style="color:var(--muted)">*</sup>' : ''}</td>`; }).join('');
-        return `<tr class="${sub ? 'sub' : 'tot'}"><td title="${H.esc(tags.map(t => 'us-gaap:' + t).join(', '))}">${H.esc(n)}</td>${cells}</tr>`;
-      }).join('');
-      return `<details class="more"><summary>${H.esc(title)}</summary><div class="tbl" style="margin-top:8px"><table><thead><tr><th>USD</th>${rows.map(r => `<th class="n">${H.esc(lab(r))}</th>`).join('')}</tr></thead><tbody>${body}</tbody></table></div></details>`;
-    }).join('') + '<p class="tiny muted">* Türetilmiş değer (Q4 = yıllık − 9 ay, nakit akışı çeyreği = YTD farkı). Hücrenin üzerine gelince XBRL etiketi görünür.</p>';
+  /* hl: Map(satır anahtarı → Set(dönem sonu)); verilirse kullanılan satırlar ve çeyrekler vurgulanır */
+  function stmtTable(lines, rows, kav, hl) {
+    const used = new Set(); if (hl) hl.forEach(d => d.forEach(x => used.add(x)));
+    const body = lines.filter(([k]) => rows.some(r => r[k] != null)).map(([k, n, sub, fmt]) => {
+      const tags = ((kav || {})[k] || {}).kullanilan || [], on = hl && hl.get(k);
+      const cells = rows.map(r => { const v = r[k]; const src = (r._kaynak || {})[k]; const der = src && src.turetilmis;
+        const txt = v == null ? '—' : fmt === 'eps' ? H.num(v, 2) : fmt === 'sh' ? H.num(v / 1e6, 0) : usdS(v);
+        return `<td class="n${on && on.has(r.donem_sonu) ? ' use' : ''}" title="${H.esc(src ? 'us-gaap:' + src.concept + (src.not ? ' · ' + src.not : '') : '')}">${txt}${der ? '<sup style="color:var(--muted)">*</sup>' : ''}</td>`; }).join('');
+      return `<tr class="${sub ? 'sub' : 'tot'}${on ? ' hl' : hl ? ' dim' : ''}"${on ? ` data-row="${k}"` : ''}><td title="${H.esc(tags.map(t => 'us-gaap:' + t).join(', '))}">${H.esc(n)}</td>${cells}</tr>`;
+    }).join('');
+    return `<div class="tbl"><table><thead><tr><th>USD</th>${rows.map(r => `<th class="n${used.has(r.donem_sonu) ? ' use' : ''}">${H.esc(lab(r))}</th>`).join('')}</tr></thead><tbody>${body}</tbody></table></div>`;
   }
+  const NOTE_DER = '* Türetilmiş değer (Q4 = yıllık − 9 ay, nakit akışı çeyreği = YTD farkı). Hücrenin üzerine gelince XBRL etiketi görünür.';
+  function statementsHtml(rows, kav) {
+    return STATEMENTS.map(([title, lines]) => `<details class="more"><summary>${H.esc(title)}</summary><div style="margin-top:8px">${stmtTable(lines, rows, kav)}</div></details>`).join('')
+      + `<p class="tiny muted">${NOTE_DER}</p>`;
+  }
+
+  /* ---- yorum → kaynak satırlar: tıklanınca tam tablolar vurgulu açılır ---- */
+  H.srcAttr = (reg, id, metin, kaynak, baslik) => {
+    if (!kaynak || !(kaynak.satirlar || []).length) return '';
+    reg[id] = { metin, kaynak, baslik };
+    return ` data-src="${H.esc(id)}" tabindex="0" role="button" aria-haspopup="dialog" title="Bu rakamın geldiği tablo satırlarını gör"`;
+  };
+  H.srcP = (reg, id, metin, kaynak, baslik) => {
+    const a = H.srcAttr(reg, id, metin, kaynak, baslik);
+    return a ? `<p class="src"${a}>${H.esc(metin)} <span class="src-ic" aria-hidden="true">satırlar</span></p>` : `<p>${H.esc(metin)}</p>`;
+  };
+  H.srcBind = function (root, T, reg) {
+    const open = el => { const it = reg[el.dataset.src]; if (it) H.kaynakAc(T, it.metin, it.kaynak, it.baslik); };
+    root.onclick = e => {
+      const el = e.target.closest('[data-src]'); if (!el || !root.contains(el) || e.target.closest('a, button, summary')) return;
+      const sel = window.getSelection && String(window.getSelection()); if (sel && sel.trim()) return;
+      open(el);
+    };
+    root.onkeydown = e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.matches && e.target.matches('[data-src]')) { e.preventDefault(); open(e.target); } };
+  };
+  let dlg;
+  H.kaynakAc = async function (T, metin, src, baslik) {
+    const fu = await H.J(`fundamentals/${T}.json`);
+    const all = (((fu || {}).tablo || {}).ceyrekler) || [];
+    if (!all.length) return;
+    const hl = new Map(); (src.satirlar || []).forEach(x => hl.set(x.k, new Set(x.d)));
+    const used = new Set([].concat(...(src.satirlar || []).map(x => x.d)));
+    const firstUsed = all.findIndex(r => used.has(r.donem_sonu));
+    const rows = all.slice(Math.max(0, Math.min(all.length - 8, firstUsed < 0 ? all.length : firstUsed)));
+    const kav = fu.tablo.kavramlar;
+    const parts = STATEMENTS.map(([title, lines]) => {
+      const n = lines.filter(([k]) => hl.has(k) && rows.some(r => r[k] != null)).length;
+      return n ? `<section class="stack-s"><h4 class="src-t">${H.esc(title)} <span class="cnt">${n} satır vurgulu</span></h4>${stmtTable(lines, rows, kav, hl)}</section>`
+        : `<details class="more"><summary>${H.esc(title)} <span class="muted" style="font-weight:400">· bu yorumda kullanılmadı</span></summary><div style="margin-top:8px">${stmtTable(lines, rows, kav, hl)}</div></details>`;
+    }).join('');
+    if (!dlg) {
+      dlg = document.createElement('dialog'); dlg.className = 'src-dlg'; dlg.setAttribute('aria-labelledby', 'src-dlg-t');
+      document.body.appendChild(dlg);
+      dlg.addEventListener('click', e => {
+        if (e.target === dlg || e.target.closest('[data-close]')) { dlg.close(); return; }
+        const j = e.target.closest('[data-jump]'); if (!j) return;
+        const tr = dlg.querySelector(`tr[data-row="${j.dataset.jump}"]`); if (!tr) return;
+        const d = tr.closest('details'); if (d) d.open = true;
+        tr.scrollIntoView({ block: 'center', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+        tr.classList.remove('flash'); void tr.offsetWidth; tr.classList.add('flash');
+      });
+      dlg.addEventListener('close', () => { document.documentElement.classList.remove('dlg-open'); if (dlg._ret && dlg._ret.focus) dlg._ret.focus(); });
+    }
+    const sd = fu.son_dosya || {}, rehber = baslik === 'Bilanço rehberi';
+    const chips = [].concat(...STATEMENTS.map(([, lines]) => lines.filter(([k]) => hl.has(k) && rows.some(r => r[k] != null))))
+      .map(([k, n]) => `<button type="button" class="src-chip" data-jump="${H.esc(k)}">${H.esc(n)}</button>`).join('');
+    dlg.innerHTML = `<div class="src-in">
+      <header class="src-h"><div class="stack-s" style="gap:2px"><span class="eyebrow">${H.esc(T)}${baslik ? ' · ' + H.esc(baslik) : ''}</span><h3 id="src-dlg-t" class="h-card">${rehber ? 'Bu kavram tablolarda nereden hesaplanıyor?' : 'Bu yorum hangi satırlardan geliyor?'}</h3></div><button class="x" type="button" data-close aria-label="Kapat">×</button></header>
+      <blockquote class="src-q">${H.esc(metin)}</blockquote>
+      ${(src.formuller || []).length ? `<div class="src-f"><span class="eyebrow">Nasıl hesaplandı</span>${src.formuller.map(f => `<code>${H.esc(f)}</code>`).join('')}</div>` : ''}
+      ${chips ? `<div class="src-chips"><span class="eyebrow">Kullanılan satırlar</span><div class="row" style="gap:6px">${chips}</div></div>` : ''}
+      <div class="src-legend"><span><i class="sw r"></i>yorumda kullanılan satır</span><span><i class="sw c"></i>hesaba giren çeyrek</span><span><i class="sw d"></i>kullanılmayan satır</span></div>
+      ${parts}
+      <p class="tiny muted">${NOTE_DER} Kaynak: ${H.link(fu.kaynak, 'SEC XBRL companyfacts')}${sd.url ? ' · son dosya ' + H.link(sd.url, (sd.form || '') + ' ' + (sd.tarih || '')) : ''}.</p>
+    </div>`;
+    dlg._ret = document.activeElement;
+    document.documentElement.classList.add('dlg-open');
+    if (!dlg.open) dlg.showModal();
+    dlg.scrollTop = 0;
+    dlg.querySelectorAll('.tbl').forEach(t => { t.scrollLeft = t.scrollWidth; });
+    dlg.querySelector('[data-close]').focus({ preventScroll: true });
+  };
 
   function findingsHtml(q) {
     const b = (q || {}).bulgular || [];
@@ -155,7 +231,7 @@
     const [fu, an, ant] = await Promise.all([H.J(`fundamentals/${T}.json`), H.J(`analysis/${T}.json`), H.J(`anlati/${T}.json`)]);
     if (!fu || !fu.tablo || !(fu.tablo.ceyrekler || []).length) { $t.innerHTML = `<div class="placeholder"><h3>Bilanço verisi yok</h3><p>SEC verisi henüz çekilmedi (SEC_USER_AGENT gerekli).</p></div>`; return; }
     const rows = fu.tablo.ceyrekler.slice(-8), q = fu.kalite || {}, sd = fu.son_dosya || {};
-    const secs = (ant && ant.bolumler) || [];
+    const secs = (ant && ant.bolumler) || [], reg = {}, hk = (ant || {}).hikaye_kaynak || [];
     $t.innerHTML = `<div class="report">
       <header class="stack">
         <div class="stack-s"><span class="eyebrow">${H.esc(sd.form || '')} · dönem sonu ${H.date(sd.donem_sonu)} · dosyalama ${H.date(sd.tarih)} · ${H.link(sd.url, 'SEC belgesi')}</span>
@@ -164,15 +240,17 @@
         ${fu.xbrl_beklemede ? '<div class="alert dikkat"><span class="ic">!</span><div>Son dosyanın XBRL verisi henüz SEC API\'sine yansımadı; yarın tekrar denenecek.</div></div>' : ''}
       </header>
       <section class="rsec" id="sec-hikaye"><div class="sec-head"><span class="eyebrow">Çeyreğin hikâyesi</span></div>
-        <div class="prose">${((ant || {}).hikaye || []).map(p => `<p>${H.esc(p)}</p>`).join('')}</div>
+        ${hk.length ? '<p class="src-hint"><span class="src-ic">satırlar</span> Bir yoruma ya da rakam kutusuna dokun: hangi tablo satırlarından ve hangi çeyreklerden hesaplandığı, tam tablo üzerinde vurgulanır.</p>' : ''}
+        <div class="prose">${((ant || {}).hikaye || []).map((p, i) => H.srcP(reg, 'h' + i, p, hk[i], 'Çeyreğin hikâyesi')).join('')}</div>
         <p class="tiny muted">${H.esc((ant || {}).not || '')}</p></section>
-      ${secs.map(sectionHtml).join('')}
+      ${secs.map(s => sectionHtml(s, reg)).join('')}
       <section class="rsec" id="sec-bulgular"><div class="sec-head"><span class="eyebrow">Kazanç kalitesi kontrol listesi</span><p class="manset">Otomatik kontrollerin yakaladıkları</p></div>
         ${findingsHtml(q)}${adjustedHtml(q)}${learn(['kopru', 'faaliyet_disi', 'non_gaap'], 'Köprü ve düzeltilmiş kâr nasıl okunur?')}</section>
       <section class="rsec" id="sec-tablolar"><div class="sec-head"><span class="eyebrow">Tam tablolar</span><p class="manset">Son 8 çeyrek, kalem kalem</p></div>${statementsHtml(rows, fu.tablo.kavramlar)}</section>
       <section class="rsec" id="sec-claude"><div class="sec-head"><span class="eyebrow">Dipnot ve basın bülteni analizi · Claude</span><p class="manset">Rakamların arkasındaki hikâye</p></div>${claudeHtml(an)}</section>
       <section class="rsec"><div class="sec-head"><span class="eyebrow">SEC dosyaları</span></div><div class="tbl"><table><thead><tr><th>Form</th><th>Dönem</th><th>Dosyalama</th></tr></thead><tbody>${(fu.dosyalar || []).map(d => `<tr><td>${H.link(d.url, d.form)}</td><td>${H.date(d.donem_sonu)}</td><td>${H.date(d.tarih)}</td></tr>`).join('')}</tbody></table></div><p class="tiny muted">${H.link(fu.kaynak, 'XBRL companyfacts ham verisi')}</p></section>
     </div>`;
+    H.srcBind($t, T, reg);
     secs.forEach(s => drawSectionCharts(s.id, rows, q));
     if (anchor) { const el = document.getElementById('sec-' + anchor); if (el) setTimeout(() => el.scrollIntoView({ block: 'start' }), 30); }
   };

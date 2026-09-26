@@ -8,6 +8,196 @@
   "Çeyrekte işletme faaliyetlerinden 11,6 milyon $ nakit elde edildi. İşletme sermayesinde: alacaklar 15,0 milyon $ arttı ve nakit bağladı; stoklar 72,5 milyon $ arttı ve nakit bağladı; ticari borçlar 137,9 milyon $ arttı ve nakit serbest bıraktı. Son 12 ayda serbest nakit akışı −592,2 milyon $ (gelirin −%99,4).",
   "Çeyrek sonunda nakit ve kısa vadeli yatırımlar 499,7 milyon $, finansal borç 188,1 milyon $, net nakit 311,7 milyon $. Seyreltilmiş hisse sayısı yıllık +%43,7 değişti, hisse bazlı ödeme (SBC) 15,2 milyon $."
  ],
+ "hikaye_kaynak": [
+  {
+   "satirlar": [
+    {
+     "k": "revenue",
+     "d": [
+      "2025-03-31",
+      "2025-06-30",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Yıllık büyüme = bu çeyrek gelir ÷ geçen yılın aynı çeyreği gelir − 1",
+    "Çeyrekten çeyreğe = bu çeyrek gelir ÷ önceki çeyrek gelir − 1"
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "k": "gross_profit",
+     "d": [
+      "2025-06-30",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "revenue",
+     "d": [
+      "2025-06-30",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "operating_income",
+     "d": [
+      "2025-06-30",
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Brüt marj değişimi = bu çeyrek brüt marj − geçen yılın aynı çeyreği brüt marj",
+    "Yıllık büyüme = bu çeyrek gelir ÷ geçen yılın aynı çeyreği gelir − 1"
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "k": "net_income",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "operating_income",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "pretax",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "interest_income",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "interest_expense",
+     "d": [
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Köprü: faaliyet kârı + faaliyet dışı kalemler = vergi öncesi kâr"
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "k": "ocf",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "net_income",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "ar",
+     "d": [
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "inventory",
+     "d": [
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "ap",
+     "d": [
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "capex",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "fcf",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "revenue",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "FCF marjı = TTM serbest nakit akışı ÷ TTM gelir"
+   ]
+  },
+  {
+   "satirlar": [
+    {
+     "k": "cash",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "total_debt",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "diluted_shares",
+     "d": [
+      "2025-06-30",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "sbc",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Net nakit = nakit + kısa vadeli yatırımlar − finansal borç"
+   ]
+  }
+ ],
  "bolumler": [
   {
    "id": "buyume",
@@ -24,28 +214,89 @@
      "deger": "191,9 milyon $",
      "alt": "MY 2026 Q2",
      "rehber": "gelir",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "revenue",
+        "d": [
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": []
+     }
     },
     {
      "etiket": "Yıllık büyüme",
      "deger": "+%86,4",
      "alt": "önceki çeyrek %51,4",
      "rehber": "yoy",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "revenue",
+        "d": [
+         "2025-03-31",
+         "2025-06-30",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": [
+       "Yıllık büyüme = bu çeyrek gelir ÷ geçen yılın aynı çeyreği gelir − 1"
+      ]
+     }
     },
     {
      "etiket": "Çeyrekten çeyreğe",
      "deger": "+%27,0",
      "alt": null,
      "rehber": "qoq",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "revenue",
+        "d": [
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": [
+       "Çeyrekten çeyreğe = bu çeyrek gelir ÷ önceki çeyrek gelir − 1"
+      ]
+     }
     },
     {
      "etiket": "TTM gelir",
      "deger": "596,0 milyon $",
      "alt": "+%61,9",
      "rehber": "ttm",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "revenue",
+        "d": [
+         "2024-09-30",
+         "2024-12-31",
+         "2025-03-31",
+         "2025-06-30",
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": [
+       "TTM büyüme = son 4 çeyrek gelir ÷ ondan önceki 4 çeyrek gelir − 1"
+      ]
+     }
     }
    ],
    "rehber": [
@@ -59,6 +310,50 @@
    "grafik": [
     "revenue",
     "revenue_yoy"
+   ],
+   "paragraf_kaynak": [
+    {
+     "satirlar": [
+      {
+       "k": "revenue",
+       "d": [
+        "2024-06-30",
+        "2024-09-30",
+        "2024-12-31",
+        "2025-03-31",
+        "2025-06-30",
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "Yıllık büyüme = bu çeyrek gelir ÷ geçen yılın aynı çeyreği gelir − 1"
+     ]
+    },
+    {
+     "satirlar": [
+      {
+       "k": "revenue",
+       "d": [
+        "2024-09-30",
+        "2024-12-31",
+        "2025-03-31",
+        "2025-06-30",
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "TTM gelir = son 4 çeyreğin gelir toplamı",
+      "TTM büyüme = son 4 çeyrek gelir ÷ ondan önceki 4 çeyrek gelir − 1"
+     ]
+    }
    ]
   },
   {
@@ -79,28 +374,108 @@
      "deger": "%27,7",
      "alt": "−2,5 puan yıllık",
      "rehber": "brut_marj",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "gross_profit",
+        "d": [
+         "2025-06-30",
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "revenue",
+        "d": [
+         "2025-06-30",
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "cogs",
+        "d": [
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": [
+       "Brüt marj = brüt kâr ÷ gelir",
+       "Brüt marj değişimi = bu çeyrek brüt marj − geçen yılın aynı çeyreği brüt marj"
+      ]
+     }
     },
     {
      "etiket": "Faaliyet marjı",
      "deger": "−%12,9",
      "alt": "+2,6 puan yıllık",
      "rehber": "faaliyet_marji",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "operating_income",
+        "d": [
+         "2025-06-30",
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "revenue",
+        "d": [
+         "2025-06-30",
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": [
+       "Faaliyet marjı = faaliyet kârı ÷ gelir"
+      ]
+     }
     },
     {
      "etiket": "Net marj",
      "deger": "−%11,9",
      "alt": null,
      "rehber": "net_marj",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "net_income",
+        "d": [
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "revenue",
+        "d": [
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": [
+       "Net marj = net kâr ÷ gelir"
+      ]
+     }
     },
     {
      "etiket": "EPS (seyreltilmiş)",
      "deger": "0,28 $",
      "alt": "−%75,0 yıllık",
      "rehber": "eps",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "eps_diluted",
+        "d": [
+         "2025-06-30",
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": []
+     }
     }
    ],
    "rehber": [
@@ -114,6 +489,169 @@
     "gross_margin",
     "operating_margin",
     "net_margin"
+   ],
+   "paragraf_kaynak": [
+    {
+     "satirlar": [
+      {
+       "k": "gross_profit",
+       "d": [
+        "2025-06-30",
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "revenue",
+       "d": [
+        "2025-06-30",
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "cogs",
+       "d": [
+        "2025-06-30",
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "Brüt marj = brüt kâr ÷ gelir"
+     ]
+    },
+    {
+     "satirlar": [
+      {
+       "k": "operating_income",
+       "d": [
+        "2025-06-30",
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "revenue",
+       "d": [
+        "2025-06-30",
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "rd",
+       "d": [
+        "2025-06-30",
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "sga",
+       "d": [
+        "2025-06-30",
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "Faaliyet marjı = faaliyet kârı ÷ gelir"
+     ]
+    },
+    {
+     "satirlar": [
+      {
+       "k": "rd",
+       "d": [
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "revenue",
+       "d": [
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "sga",
+       "d": [
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "Ar-Ge / gelir = Ar-Ge gideri ÷ gelir",
+      "SG&A / gelir = satış, genel ve yönetim giderleri ÷ gelir"
+     ]
+    },
+    {
+     "satirlar": [
+      {
+       "k": "operating_income",
+       "d": [
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "revenue",
+       "d": [
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "TTM faaliyet marjı = son 4 çeyrek faaliyet kârı ÷ son 4 çeyrek gelir"
+     ]
+    },
+    {
+     "satirlar": [
+      {
+       "k": "eps_diluted",
+       "d": [
+        "2025-06-30",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "net_income",
+       "d": [
+        "2025-06-30",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "diluted_shares",
+       "d": [
+        "2025-06-30",
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": []
+    }
    ]
   },
   {
@@ -133,28 +671,153 @@
      "deger": "veri yok",
      "alt": "TTM",
      "rehber": "ocf_ni",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "ocf",
+        "d": [
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "net_income",
+        "d": [
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": [
+       "Nakit / kâr = son 4 çeyrek işletme nakit akışı ÷ son 4 çeyrek net kâr"
+      ]
+     }
     },
     {
      "etiket": "Tahakkuk oranı",
      "deger": "%4,8",
      "alt": "düşük iyi",
      "rehber": "accruals",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "net_income",
+        "d": [
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "ocf",
+        "d": [
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "total_assets",
+        "d": [
+         "2025-06-30",
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": [
+       "Tahakkuk oranı = (TTM net kâr − TTM işletme nakdi) ÷ ortalama toplam varlık (bu çeyrek ve bir yıl önce)"
+      ]
+     }
     },
     {
      "etiket": "SBC / gelir",
      "deger": "%2,6",
      "alt": "TTM",
      "rehber": "sbc",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "sbc",
+        "d": [
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "revenue",
+        "d": [
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": [
+       "SBC / gelir = son 4 çeyrek hisse bazlı ödeme ÷ son 4 çeyrek gelir"
+      ]
+     }
     },
     {
      "etiket": "SBC sonrası FCF",
      "deger": "−607,5 milyon $",
      "alt": "TTM",
      "rehber": "sbc_fcf",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "ocf",
+        "d": [
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "capex",
+        "d": [
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "fcf",
+        "d": [
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "sbc",
+        "d": [
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": [
+       "SBC sonrası FCF = TTM serbest nakit akışı − TTM hisse bazlı ödeme"
+      ]
+     }
     }
    ],
    "rehber": [
@@ -168,6 +831,147 @@
    "grafik": [
     "ocf",
     "net_income"
+   ],
+   "paragraf_kaynak": [
+    {
+     "satirlar": [
+      {
+       "k": "net_income",
+       "d": [
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "ocf",
+       "d": [
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": []
+    },
+    {
+     "satirlar": [
+      {
+       "k": "net_income",
+       "d": [
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "ocf",
+       "d": [
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "total_assets",
+       "d": [
+        "2025-06-30",
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "Tahakkuk oranı = (TTM net kâr − TTM işletme nakdi) ÷ ortalama toplam varlık (bu çeyrek ve bir yıl önce)"
+     ]
+    },
+    {
+     "satirlar": [
+      {
+       "k": "operating_income",
+       "d": [
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "pretax",
+       "d": [
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "interest_income",
+       "d": [
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "interest_expense",
+       "d": [
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "Köprü: faaliyet kârı + faaliyet dışı kalemler = vergi öncesi kâr"
+     ]
+    },
+    {
+     "satirlar": [
+      {
+       "k": "sbc",
+       "d": [
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "revenue",
+       "d": [
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "ocf",
+       "d": [
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "capex",
+       "d": [
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "fcf",
+       "d": [
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "SBC / gelir = son 4 çeyrek hisse bazlı ödeme ÷ son 4 çeyrek gelir",
+      "SBC sonrası FCF = TTM serbest nakit akışı − TTM hisse bazlı ödeme"
+     ]
+    }
    ]
   },
   {
@@ -187,35 +991,163 @@
      "deger": "−131,8 milyon $",
      "alt": "TTM",
      "rehber": "ocf",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "ocf",
+        "d": [
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": []
+     }
     },
     {
      "etiket": "Capex",
      "deger": "460,4 milyon $",
      "alt": "%77,2 gelir",
      "rehber": "capex",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "capex",
+        "d": [
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "revenue",
+        "d": [
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": [
+       "Capex / gelir = TTM capex ÷ TTM gelir"
+      ]
+     }
     },
     {
      "etiket": "Serbest nakit akışı",
      "deger": "−592,2 milyon $",
      "alt": "−%99,4 marj",
      "rehber": "fcf",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "ocf",
+        "d": [
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "capex",
+        "d": [
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "fcf",
+        "d": [
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "revenue",
+        "d": [
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": [
+       "FCF marjı = TTM serbest nakit akışı ÷ TTM gelir"
+      ]
+     }
     },
     {
      "etiket": "Geri alım + temettü",
      "deger": "veri yok",
      "alt": "TTM",
      "rehber": "geri_alim",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [],
+      "formuller": [
+       "Hissedara dönen = TTM geri alım + TTM temettü"
+      ]
+     }
     },
     {
      "etiket": "Nakit pisti",
      "deger": "10,1 ay",
      "alt": null,
      "rehber": "nakit_pisti",
-     "ton": "kirmizi"
+     "ton": "kirmizi",
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "cash",
+        "d": [
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "ocf",
+        "d": [
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "capex",
+        "d": [
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "fcf",
+        "d": [
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": [
+       "Nakit pisti = likidite ÷ (TTM nakit yakma ÷ 12)"
+      ]
+     }
     }
    ],
    "rehber": [
@@ -230,6 +1162,158 @@
     "ocf",
     "capex",
     "fcf"
+   ],
+   "paragraf_kaynak": [
+    {
+     "satirlar": [
+      {
+       "k": "ocf",
+       "d": [
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "capex",
+       "d": [
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "fcf",
+       "d": [
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "revenue",
+       "d": [
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "Serbest nakit akışı = işletme nakit akışı − capex (son 4 çeyrek)",
+      "FCF marjı = TTM serbest nakit akışı ÷ TTM gelir"
+     ]
+    },
+    {
+     "satirlar": [
+      {
+       "k": "capex",
+       "d": [
+        "2024-09-30",
+        "2024-12-31",
+        "2025-03-31",
+        "2025-06-30",
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "revenue",
+       "d": [
+        "2024-09-30",
+        "2024-12-31",
+        "2025-03-31",
+        "2025-06-30",
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "da",
+       "d": [
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "Capex / gelir = TTM capex ÷ TTM gelir",
+      "Capex / amortisman = TTM capex ÷ TTM amortisman"
+     ]
+    },
+    {
+     "satirlar": [
+      {
+       "k": "debt_repaid",
+       "d": [
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "equity_issued",
+       "d": [
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": []
+    },
+    {
+     "satirlar": [
+      {
+       "k": "cash",
+       "d": [
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "ocf",
+       "d": [
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "capex",
+       "d": [
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "fcf",
+       "d": [
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "Nakit pisti = likidite ÷ (TTM nakit yakma ÷ 12)"
+     ]
+    }
    ]
   },
   {
@@ -251,28 +1335,90 @@
      "deger": "499,7 milyon $",
      "alt": null,
      "rehber": "net_nakit",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "cash",
+        "d": [
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": [
+       "Likidite = nakit ve benzerleri + kısa vadeli yatırımlar"
+      ]
+     }
     },
     {
      "etiket": "Finansal borç",
      "deger": "188,1 milyon $",
      "alt": null,
      "rehber": "net_nakit",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "total_debt",
+        "d": [
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": []
+     }
     },
     {
      "etiket": "Cari oran",
      "deger": "2,78",
      "alt": null,
      "rehber": "cari_oran",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "current_assets",
+        "d": [
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "current_liabilities",
+        "d": [
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": [
+       "Cari oran = dönen varlıklar ÷ kısa vadeli yükümlülükler"
+      ]
+     }
     },
     {
      "etiket": "Özkaynak oranı",
      "deger": "%72",
      "alt": null,
      "rehber": "ozkaynak_orani",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "equity",
+        "d": [
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "total_assets",
+        "d": [
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": [
+       "Özkaynak oranı = özkaynak ÷ toplam varlıklar"
+      ]
+     }
     }
    ],
    "rehber": [
@@ -285,6 +1431,150 @@
    "grafik": [
     "liquidity",
     "total_debt"
+   ],
+   "paragraf_kaynak": [
+    {
+     "satirlar": [
+      {
+       "k": "total_assets",
+       "d": [
+        "2025-06-30",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "total_liabilities",
+       "d": [
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "equity",
+       "d": [
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": []
+    },
+    {
+     "satirlar": [
+      {
+       "k": "total_assets",
+       "d": [
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "ppe",
+       "d": [
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "cash",
+       "d": [
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "ar",
+       "d": [
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "inventory",
+       "d": [
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "intangibles",
+       "d": [
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "Likidite = nakit ve benzerleri + kısa vadeli yatırımlar"
+     ]
+    },
+    {
+     "satirlar": [
+      {
+       "k": "cash",
+       "d": [
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "total_debt",
+       "d": [
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "Net nakit = nakit + kısa vadeli yatırımlar − finansal borç"
+     ]
+    },
+    {
+     "satirlar": [
+      {
+       "k": "current_assets",
+       "d": [
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "current_liabilities",
+       "d": [
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "Cari oran = dönen varlıklar ÷ kısa vadeli yükümlülükler"
+     ]
+    },
+    {
+     "satirlar": [
+      {
+       "k": "equity",
+       "d": [
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "total_assets",
+       "d": [
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "total_debt",
+       "d": [
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "Özkaynak oranı = özkaynak ÷ toplam varlıklar",
+      "Borç / özkaynak = finansal borç ÷ özkaynak"
+     ]
+    },
+    {
+     "satirlar": [
+      {
+       "k": "lease_liab",
+       "d": [
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": []
+    }
    ]
   },
   {
@@ -306,28 +1596,124 @@
      "deger": "149 gün",
      "alt": "38 gün yıllık",
      "rehber": "dso",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "ar",
+        "d": [
+         "2025-06-30",
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "revenue",
+        "d": [
+         "2025-06-30",
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": [
+       "DSO = ticari alacaklar ÷ çeyrek geliri × çeyrekteki gün sayısı"
+      ]
+     }
     },
     {
      "etiket": "DIO",
      "deger": "183 gün",
      "alt": null,
      "rehber": "dio",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "inventory",
+        "d": [
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "cogs",
+        "d": [
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": [
+       "DIO = stoklar ÷ satışların maliyeti × çeyrekteki gün sayısı"
+      ]
+     }
     },
     {
      "etiket": "DPO",
      "deger": "188 gün",
      "alt": null,
      "rehber": "dpo",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "ap",
+        "d": [
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "cogs",
+        "d": [
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": [
+       "DPO = ticari borçlar ÷ satışların maliyeti × çeyrekteki gün sayısı"
+      ]
+     }
     },
     {
      "etiket": "Nakit dönüşüm döngüsü",
      "deger": "144 gün",
      "alt": null,
      "rehber": "ccc",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "ar",
+        "d": [
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "revenue",
+        "d": [
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "inventory",
+        "d": [
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "cogs",
+        "d": [
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "ap",
+        "d": [
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": [
+       "Nakit dönüşüm döngüsü = DSO + DIO − DPO"
+      ]
+     }
     }
    ],
    "rehber": [
@@ -339,6 +1725,153 @@
    "grafik": [
     "dso",
     "dio"
+   ],
+   "paragraf_kaynak": [
+    {
+     "satirlar": [
+      {
+       "k": "ar",
+       "d": [
+        "2025-06-30",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "revenue",
+       "d": [
+        "2025-06-30",
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "DSO = ticari alacaklar ÷ çeyrek geliri × çeyrekteki gün sayısı"
+     ]
+    },
+    {
+     "satirlar": [
+      {
+       "k": "inventory",
+       "d": [
+        "2025-06-30",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "cogs",
+       "d": [
+        "2025-06-30",
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "DIO = stoklar ÷ satışların maliyeti × çeyrekteki gün sayısı"
+     ]
+    },
+    {
+     "satirlar": [
+      {
+       "k": "ap",
+       "d": [
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "cogs",
+       "d": [
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "DPO = ticari borçlar ÷ satışların maliyeti × çeyrekteki gün sayısı"
+     ]
+    },
+    {
+     "satirlar": [
+      {
+       "k": "ar",
+       "d": [
+        "2025-06-30",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "revenue",
+       "d": [
+        "2025-06-30",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "inventory",
+       "d": [
+        "2025-06-30",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "cogs",
+       "d": [
+        "2025-06-30",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "ap",
+       "d": [
+        "2025-06-30",
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "Nakit dönüşüm döngüsü = DSO + DIO − DPO"
+     ]
+    },
+    {
+     "satirlar": [
+      {
+       "k": "ar",
+       "d": [
+        "2025-06-30",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "revenue",
+       "d": [
+        "2025-06-30",
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "Fark = alacakların yıllık büyümesi − gelirin yıllık büyümesi"
+     ]
+    },
+    {
+     "satirlar": [
+      {
+       "k": "inventory",
+       "d": [
+        "2025-06-30",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "revenue",
+       "d": [
+        "2025-06-30",
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "Fark = stokların yıllık büyümesi − gelirin yıllık büyümesi"
+     ]
+    }
    ]
   },
   {
@@ -357,28 +1890,111 @@
      "deger": "+%43,7",
      "alt": null,
      "rehber": "sulandirma",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "diluted_shares",
+        "d": [
+         "2025-06-30",
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": []
+     }
     },
     {
      "etiket": "ROE (TTM)",
      "deger": "−%5,5",
      "alt": null,
      "rehber": "roe",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "net_income",
+        "d": [
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "equity",
+        "d": [
+         "2025-06-30",
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": [
+       "ROE = TTM net kâr ÷ ortalama özkaynak (bu çeyrek ve bir yıl önce)"
+      ]
+     }
     },
     {
      "etiket": "ROIC (yaklaşık)",
      "deger": "−%3,9",
      "alt": null,
      "rehber": "roic",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "operating_income",
+        "d": [
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "equity",
+        "d": [
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "total_debt",
+        "d": [
+         "2026-06-30"
+        ]
+       },
+       {
+        "k": "cash",
+        "d": [
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": [
+       "ROIC ≈ TTM faaliyet kârı × 0,79 ÷ (özkaynak + finansal borç − nakit ve kısa vadeli yatırımlar)"
+      ]
+     }
     },
     {
      "etiket": "SBC (TTM)",
      "deger": "15,2 milyon $",
      "alt": null,
      "rehber": "sbc",
-     "ton": null
+     "ton": null,
+     "kaynak": {
+      "satirlar": [
+       {
+        "k": "sbc",
+        "d": [
+         "2025-09-30",
+         "2025-12-31",
+         "2026-03-31",
+         "2026-06-30"
+        ]
+       }
+      ],
+      "formuller": []
+     }
     }
    ],
    "rehber": [
@@ -390,8 +2006,870 @@
    ],
    "grafik": [
     "diluted_shares"
+   ],
+   "paragraf_kaynak": [
+    {
+     "satirlar": [
+      {
+       "k": "diluted_shares",
+       "d": [
+        "2025-06-30",
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": []
+    },
+    {
+     "satirlar": [
+      {
+       "k": "net_income",
+       "d": [
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "equity",
+       "d": [
+        "2025-06-30",
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "ROE = TTM net kâr ÷ ortalama özkaynak (bu çeyrek ve bir yıl önce)"
+     ]
+    },
+    {
+     "satirlar": [
+      {
+       "k": "operating_income",
+       "d": [
+        "2025-09-30",
+        "2025-12-31",
+        "2026-03-31",
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "equity",
+       "d": [
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "total_debt",
+       "d": [
+        "2026-06-30"
+       ]
+      },
+      {
+       "k": "cash",
+       "d": [
+        "2026-06-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "ROIC ≈ TTM faaliyet kârı × 0,79 ÷ (özkaynak + finansal borç − nakit ve kısa vadeli yatırımlar)"
+     ]
+    }
    ]
   }
  ],
+ "rehber_kaynak": {
+  "ttm": {
+   "satirlar": [
+    {
+     "k": "revenue",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "TTM gelir = son 4 çeyreğin gelir toplamı"
+   ]
+  },
+  "yoy": {
+   "satirlar": [
+    {
+     "k": "revenue",
+     "d": [
+      "2025-06-30",
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Yıllık büyüme = bu çeyrek gelir ÷ geçen yılın aynı çeyreği gelir − 1"
+   ]
+  },
+  "qoq": {
+   "satirlar": [
+    {
+     "k": "revenue",
+     "d": [
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Çeyrekten çeyreğe = bu çeyrek gelir ÷ önceki çeyrek gelir − 1"
+   ]
+  },
+  "kopru": {
+   "satirlar": [
+    {
+     "k": "operating_income",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "pretax",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "interest_income",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "interest_expense",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "tax",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "net_income",
+     "d": [
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Köprü: faaliyet kârı + faaliyet dışı kalemler = vergi öncesi kâr"
+   ]
+  },
+  "gelir": {
+   "satirlar": [
+    {
+     "k": "revenue",
+     "d": [
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": []
+  },
+  "brut_marj": {
+   "satirlar": [
+    {
+     "k": "gross_profit",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "revenue",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "cogs",
+     "d": [
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Brüt marj = brüt kâr ÷ gelir"
+   ]
+  },
+  "faaliyet_marji": {
+   "satirlar": [
+    {
+     "k": "operating_income",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "revenue",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "rd",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "sga",
+     "d": [
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Faaliyet marjı = faaliyet kârı ÷ gelir"
+   ]
+  },
+  "net_marj": {
+   "satirlar": [
+    {
+     "k": "net_income",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "revenue",
+     "d": [
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Net marj = net kâr ÷ gelir"
+   ]
+  },
+  "operasyonel_kaldirac": {
+   "satirlar": [
+    {
+     "k": "operating_income",
+     "d": [
+      "2025-06-30",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "revenue",
+     "d": [
+      "2025-06-30",
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Yıllık büyüme = bu çeyrek gelir ÷ geçen yılın aynı çeyreği gelir − 1"
+   ]
+  },
+  "eps": {
+   "satirlar": [
+    {
+     "k": "eps_diluted",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "net_income",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "diluted_shares",
+     "d": [
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": []
+  },
+  "ocf_ni": {
+   "satirlar": [
+    {
+     "k": "ocf",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "net_income",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Nakit / kâr = son 4 çeyrek işletme nakit akışı ÷ son 4 çeyrek net kâr"
+   ]
+  },
+  "accruals": {
+   "satirlar": [
+    {
+     "k": "net_income",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "ocf",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "total_assets",
+     "d": [
+      "2025-06-30",
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Tahakkuk oranı = (TTM net kâr − TTM işletme nakdi) ÷ ortalama toplam varlık (bu çeyrek ve bir yıl önce)"
+   ]
+  },
+  "faaliyet_disi": {
+   "satirlar": [
+    {
+     "k": "operating_income",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "pretax",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "interest_income",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "interest_expense",
+     "d": [
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Köprü: faaliyet kârı + faaliyet dışı kalemler = vergi öncesi kâr"
+   ]
+  },
+  "sbc": {
+   "satirlar": [
+    {
+     "k": "sbc",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "revenue",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "SBC / gelir = son 4 çeyrek hisse bazlı ödeme ÷ son 4 çeyrek gelir"
+   ]
+  },
+  "sbc_fcf": {
+   "satirlar": [
+    {
+     "k": "ocf",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "capex",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "fcf",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "sbc",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "SBC sonrası FCF = TTM serbest nakit akışı − TTM hisse bazlı ödeme"
+   ]
+  },
+  "efektif_vergi": {
+   "satirlar": [
+    {
+     "k": "tax",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "pretax",
+     "d": [
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Efektif vergi oranı = vergi gideri ÷ vergi öncesi kâr"
+   ]
+  },
+  "ocf": {
+   "satirlar": [
+    {
+     "k": "ocf",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "net_income",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "da",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "sbc",
+     "d": [
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": []
+  },
+  "capex": {
+   "satirlar": [
+    {
+     "k": "capex",
+     "d": [
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": []
+  },
+  "fcf": {
+   "satirlar": [
+    {
+     "k": "ocf",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "capex",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "fcf",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Serbest nakit akışı = işletme nakit akışı − capex (son 4 çeyrek)"
+   ]
+  },
+  "capex_da": {
+   "satirlar": [
+    {
+     "k": "capex",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "da",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Capex / amortisman = TTM capex ÷ TTM amortisman"
+   ]
+  },
+  "nakit_pisti": {
+   "satirlar": [
+    {
+     "k": "cash",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "ocf",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "capex",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "fcf",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Nakit pisti = likidite ÷ (TTM nakit yakma ÷ 12)"
+   ]
+  },
+  "net_nakit": {
+   "satirlar": [
+    {
+     "k": "cash",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "total_debt",
+     "d": [
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Net nakit = nakit + kısa vadeli yatırımlar − finansal borç"
+   ]
+  },
+  "cari_oran": {
+   "satirlar": [
+    {
+     "k": "current_assets",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "current_liabilities",
+     "d": [
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Cari oran = dönen varlıklar ÷ kısa vadeli yükümlülükler"
+   ]
+  },
+  "ozkaynak_orani": {
+   "satirlar": [
+    {
+     "k": "equity",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "total_assets",
+     "d": [
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Özkaynak oranı = özkaynak ÷ toplam varlıklar"
+   ]
+  },
+  "serefiye": {
+   "satirlar": [
+    {
+     "k": "total_assets",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "intangibles",
+     "d": [
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Şerefiye / varlık = şerefiye ÷ toplam varlıklar"
+   ]
+  },
+  "borc_ozkaynak": {
+   "satirlar": [
+    {
+     "k": "total_debt",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "equity",
+     "d": [
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Borç / özkaynak = finansal borç ÷ özkaynak"
+   ]
+  },
+  "dso": {
+   "satirlar": [
+    {
+     "k": "ar",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "revenue",
+     "d": [
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "DSO = ticari alacaklar ÷ çeyrek geliri × çeyrekteki gün sayısı"
+   ]
+  },
+  "dio": {
+   "satirlar": [
+    {
+     "k": "inventory",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "cogs",
+     "d": [
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "DIO = stoklar ÷ satışların maliyeti × çeyrekteki gün sayısı"
+   ]
+  },
+  "dpo": {
+   "satirlar": [
+    {
+     "k": "ap",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "cogs",
+     "d": [
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "DPO = ticari borçlar ÷ satışların maliyeti × çeyrekteki gün sayısı"
+   ]
+  },
+  "ccc": {
+   "satirlar": [
+    {
+     "k": "ar",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "revenue",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "inventory",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "cogs",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "ap",
+     "d": [
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "Nakit dönüşüm döngüsü = DSO + DIO − DPO"
+   ]
+  },
+  "sulandirma": {
+   "satirlar": [
+    {
+     "k": "diluted_shares",
+     "d": [
+      "2025-06-30",
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": []
+  },
+  "roe": {
+   "satirlar": [
+    {
+     "k": "net_income",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "equity",
+     "d": [
+      "2025-06-30",
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "ROE = TTM net kâr ÷ ortalama özkaynak (bu çeyrek ve bir yıl önce)"
+   ]
+  },
+  "roic": {
+   "satirlar": [
+    {
+     "k": "operating_income",
+     "d": [
+      "2025-09-30",
+      "2025-12-31",
+      "2026-03-31",
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "equity",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "total_debt",
+     "d": [
+      "2026-06-30"
+     ]
+    },
+    {
+     "k": "cash",
+     "d": [
+      "2026-06-30"
+     ]
+    }
+   ],
+   "formuller": [
+    "ROIC ≈ TTM faaliyet kârı × 0,79 ÷ (özkaynak + finansal borç − nakit ve kısa vadeli yatırımlar)"
+   ]
+  }
+ },
  "not": "Bu yorumlar SEC XBRL verisinden kural tabanlı olarak üretilir (Claude değil). Rakamlar tablodan gelir; yorum cümleleri genel finansal analiz ilkelerini uygular. Şirkete özel bağlam için Claude dipnot analizine bak."
 }

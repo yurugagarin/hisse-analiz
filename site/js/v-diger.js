@@ -60,24 +60,45 @@
   H.views.guide = async function (parts) {
     const $ = H.$(), focus = parts[0];
     const q = H.LS.get('hisse_rehber_ara', '');
+    const cfg = await H.J('config.json');
+    const tickers = ((cfg || {}).stocks || []).map(s => s.ticker);
+    let sel = H.LS.get('hisse_rehber_ornek', tickers[0]); if (!tickers.includes(sel)) sel = tickers[0];
     $.innerHTML = `<div class="wrap">
       <header class="stack-s"><h1 class="h-page">Bilanço rehberi</h1><p class="lede">Sitedeki her metriğin ne olduğu, nasıl hesaplandığı, nasıl okunduğu ve nerede yanıltabileceği. Rakamların yanındaki <span class="qm" style="vertical-align:2px">?</span> işaretleri buraya getirir.</p>
+        ${tickers.length ? `<div class="row" style="margin-top:6px"><span class="eyebrow">Örnek tablo</span><div class="seg" id="rs" role="group" aria-label="Örnek hisse">${tickers.map(t => `<button type="button" data-t="${H.esc(t)}" class="${t === sel ? 'on' : ''}">${H.esc(t)}</button>`).join('')}</div></div>
+        <p class="src-hint"><span class="src-ic">satırlar</span> Bir maddeye dokun: o kavramın seçili hissenin gerçek tablolarında hangi satırlardan ve hangi çeyreklerden hesaplandığı vurgulanır.</p>` : ''}
         <label for="rq" class="eyebrow" style="margin-top:10px">Ara</label><input type="search" id="rq" placeholder="ör. serbest nakit, DSO, 10b5-1" value="${H.esc(q)}"></header>
       <div id="gl" class="stack" style="gap:30px"></div></div>`;
+    const gl = document.getElementById('gl');
+    let rk = {};
     const render = term => {
-      const t = (term || '').toLocaleLowerCase('tr');
-      document.getElementById('gl').innerHTML = H.REHBER_GRUPLAR.map(g => {
+      const t = (term || '').toLocaleLowerCase('tr'), reg = {};
+      gl.innerHTML = H.REHBER_GRUPLAR.map(g => {
         const items = Object.entries(H.REHBER).filter(([k, r]) => r.grup === g && (!t || (r.ad + ' ' + r.kisa + ' ' + r.tanim).toLocaleLowerCase('tr').includes(t)));
         if (!items.length) return '';
-        return `<section class="stack"><h2 class="h-sec">${H.esc(g)}</h2><div class="grid2">${items.map(([k, r]) => `<article class="card stack-s" id="gl-${k}" ${k === focus ? 'style="border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-tint)"' : ''}>
+        return `<section class="stack"><h2 class="h-sec">${H.esc(g)}</h2><div class="grid2">${items.map(([k, r]) => {
+          const src = H.srcAttr ? H.srcAttr(reg, k, `${r.ad}: ${r.kisa}${r.formul ? ' Formül: ' + r.formul : ''}`, rk[k], 'Bilanço rehberi') : '';
+          return `<article class="card stack-s${src ? ' src' : ''}" id="gl-${k}"${src} ${k === focus ? 'style="border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-tint)"' : ''}>
           <h3 style="font-family:var(--serif);font-size:20px;font-weight:500">${H.esc(r.ad)}</h3><p class="small" style="color:var(--ink-2)"><b>${H.esc(r.kisa)}</b></p>
           ${r.formul ? `<span class="code">${H.esc(r.formul)}</span>` : ''}${r.tanim ? `<p class="small">${H.esc(r.tanim)}</p>` : ''}
-          ${r.nasil ? `<div class="panel small"><b>Nasıl okunur:</b> ${H.esc(r.nasil)}</div>` : ''}${r.tuzak ? `<div class="panel small" style="background:var(--warn-bg)"><b>Tuzak:</b> ${H.esc(r.tuzak)}</div>` : ''}</article>`).join('')}</div></section>`;
+          ${r.nasil ? `<div class="panel small"><b>Nasıl okunur:</b> ${H.esc(r.nasil)}</div>` : ''}${r.tuzak ? `<div class="panel small" style="background:var(--warn-bg)"><b>Tuzak:</b> ${H.esc(r.tuzak)}</div>` : ''}
+          ${src ? `<span class="src-go"><span class="src-ic">satırlar</span> ${H.esc(sel)} tablolarında gör</span>` : ''}</article>`;
+        }).join('')}</div></section>`;
       }).join('') || '<p class="empty">Sonuç yok.</p>';
+      if (H.srcBind && sel) H.srcBind(gl, sel, reg);
     };
+    const load = async () => { rk = sel ? (((await H.J(`anlati/${sel}.json`)) || {}).rehber_kaynak || {}) : {}; };
+    await load();
     render(q);
     const inp = document.getElementById('rq');
     inp.addEventListener('input', () => { H.LS.set('hisse_rehber_ara', inp.value); render(inp.value); });
+    const rs = document.getElementById('rs');
+    if (rs) rs.onclick = async e => {
+      const b = e.target.closest('button[data-t]'); if (!b || b.dataset.t === sel) return;
+      sel = b.dataset.t; H.LS.set('hisse_rehber_ornek', sel);
+      rs.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b));
+      await load(); render(inp.value);
+    };
     if (focus) { if (q) { inp.value = ''; render(''); } const el = document.getElementById('gl-' + focus); if (el) setTimeout(() => el.scrollIntoView({ block: 'center' }), 30); }
   };
 

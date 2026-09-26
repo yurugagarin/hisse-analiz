@@ -39,7 +39,7 @@
   async function tabOzet(T, $t, h) {
     const [ant, pr, ins] = await Promise.all([H.J(`anlati/${T}.json`), H.J(`prices/${T}.json`), H.J(`insider/${T}.json`)]);
     const m = h.metrikler || {}, tz = h.tez || {}, f = h.fiyat || {};
-    const alerts = [];
+    const alerts = [], reg = {};
     (tz.cikis_tetiklenen || []).forEach(c => alerts.push(['kirmizi', '!', 'Çıkış kriteri tetiklendi: ' + c]));
     const k = h.kural || {};
     if ((k.durum || '').startsWith('tetiklendi')) alerts.push([k.kosul_saglaniyor === false ? 'kirmizi' : 'dikkat', '↓', k.mesaj]);
@@ -49,7 +49,7 @@
       <div class="grid-ozet">
         <section class="stack">
           <div class="sec-head"><span class="eyebrow">Çeyreğin hikâyesi · ${H.esc(H.q(m.etiket || ''))}</span></div>
-          <div class="prose">${((ant || {}).hikaye || ['Bilanço verisi yok.']).map(p => `<p>${H.esc(p)}</p>`).join('')}</div>
+          <div class="prose">${((ant || {}).hikaye || ['Bilanço verisi yok.']).map((p, i) => H.srcP(reg, 'h' + i, p, ((ant || {}).hikaye_kaynak || [])[i], 'Çeyreğin hikâyesi')).join('')}</div>
           <a href="#/h/${T}/bilanco">Bilanço analizinin tamamı →</a>
         </section>
         <aside class="stack">
@@ -74,6 +74,7 @@
         <div class="card flat" style="padding:6px 18px">${(h.bilanco_bolumleri || []).map((b, i) => `<a class="bs-row" href="#/h/${T}/bilanco/${b.id}"><span>${H.durumChip(b.durum)}</span><span><b>${H.esc(b.baslik)}</b><br><span class="small muted">${H.esc(b.manset)}</span></span><span class="muted">→</span></a>`).join('') || '<p class="empty">veri yok</p>'}</div></section>
       <section class="stack"><div class="sec-head"><span class="eyebrow">Fiyat · son 1 yıl</span></div><div class="card flat"><div id="ozetPrice"></div></div></section>
     </div>`;
+    H.srcBind($t, T, reg);
     const kap = ((pr || {}).kapanislar || []).slice(-252);
     if (kap.length) H.Charts.line(document.getElementById('ozetPrice'), { x: kap.map(p => p[0]), series: [{ name: T, color: 'var(--accent)', values: kap.map(p => p[1]), area: true }], refs: [{ y: f.zirve_52h, label: '52h zirve ' + H.px(f.zirve_52h) }], yFmt: v => '$' + H.num(v, 0), tipFmt: H.px, xFmt: H.date, height: 260 });
   }

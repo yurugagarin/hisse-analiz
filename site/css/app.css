@@ -315,3 +315,60 @@ textarea { min-height: 130px; font-family: var(--serif); font-size: 16px; line-h
 .addstock:hover { background: var(--accent-tint); text-decoration: none; }
 .steps { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 10px; font-size: 15px; }
 .steps li::marker { color: var(--accent); font-weight: 700; }
+
+/* ---------- Yorum → kaynak satırlar ---------- */
+.src-ic { display: inline-block; font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--accent-ink); background: var(--accent-tint); border-radius: 5px; padding: 1px 6px 1px 18px; vertical-align: 2px; position: relative; white-space: nowrap; }
+.src-ic::before { content: ""; position: absolute; left: 6px; top: 50%; width: 8px; height: 8px; margin-top: -4px; background:
+  linear-gradient(currentColor, currentColor) 0 0 / 100% 2px no-repeat, linear-gradient(currentColor, currentColor) 0 3px / 100% 2px no-repeat, linear-gradient(currentColor, currentColor) 0 6px / 60% 2px no-repeat; opacity: .8; }
+.prose p.src { cursor: pointer; border-radius: 8px; margin: -4px -10px; padding: 4px 10px; transition: background .15s; }
+.prose p.src:hover { background: color-mix(in srgb, var(--accent-tint) 55%, transparent); }
+.prose p.src:hover .src-ic { background: var(--accent); color: var(--surface); }
+.kpi.src { cursor: pointer; transition: background .15s; }
+.kpi.src:hover { background: color-mix(in srgb, var(--accent-tint) 50%, var(--surface)); }
+[data-src]:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.src-hint { font-size: 13px; color: var(--muted); display: flex; gap: 8px; align-items: baseline; max-width: 70ch; }
+.src-hint .src-ic { flex: none; }
+html.dlg-open { overflow: hidden; }
+.src-dlg { width: min(1120px, calc(100vw - 32px)); max-width: none; max-height: calc(100dvh - 48px); padding: 0; border: 1px solid var(--line); border-radius: var(--r); background: var(--paper); color: var(--ink); box-shadow: 0 24px 70px rgba(10, 16, 14, .28); overflow: auto; overscroll-behavior: contain; }
+.src-dlg::backdrop { background: rgba(10, 16, 14, .5); }
+.src-in { padding: 0 22px 22px; display: flex; flex-direction: column; gap: 16px; }
+.src-h { position: sticky; top: 0; z-index: 3; display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 16px 0 12px; background: var(--paper); border-bottom: 1px solid var(--line); }
+.src-h .x { flex: none; width: 36px; height: 36px; border-radius: 9px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-size: 22px; line-height: 1; cursor: pointer; }
+.src-h .x:hover { background: var(--surface-2); }
+.src-q { margin: 0; font-family: var(--serif); font-size: 17px; line-height: 1.55; padding: 10px 16px; border-left: 3px solid var(--accent); background: var(--surface); border-radius: 0 var(--r-sm) var(--r-sm) 0; max-width: 80ch; }
+.src-f { display: flex; flex-direction: column; gap: 6px; }
+.src-f code { font-family: var(--mono); font-size: 12.5px; color: var(--ink-2); background: var(--surface); border: 1px solid var(--line-2); border-radius: 7px; padding: 6px 10px; align-self: flex-start; max-width: 100%; }
+.src-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 12.5px; color: var(--muted); }
+.src-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.src-legend .sw { width: 22px; height: 12px; border-radius: 3px; display: inline-block; border: 1px solid var(--line); }
+.src-legend .sw.r { background: var(--accent-tint); box-shadow: inset 3px 0 0 var(--accent); border-color: transparent; }
+.src-legend .sw.c { background: color-mix(in srgb, var(--accent) 26%, var(--surface)); box-shadow: inset 0 -2px 0 var(--accent); border-color: transparent; }
+.src-legend .sw.d { background: var(--surface); }
+.src-t { font-size: 14px; font-weight: 600; display: flex; gap: 10px; align-items: baseline; }
+.src-t .cnt { font-size: 12px; font-weight: 500; color: var(--accent-ink); }
+.src-dlg .tbl { background: var(--surface); }
+.src-dlg td:first-child, .src-dlg th:first-child { position: sticky; left: 0; z-index: 1; background: var(--surface); min-width: 150px; }
+.src-dlg th:first-child { background: var(--surface-2); }
+.src-dlg tr.tot td:first-child { background: var(--surface-2); }
+.src-dlg tr.dim td { color: var(--faint); }
+.src-dlg tr.dim.tot td { font-weight: 500; }
+.src-dlg tr.hl td, .src-dlg tr.hl td:first-child { background: var(--accent-tint); color: var(--ink); }
+.src-dlg tr.hl td:first-child { box-shadow: inset 3px 0 0 var(--accent); font-weight: 600; }
+.src-dlg td.use { background: color-mix(in srgb, var(--accent) 26%, var(--surface)) !important; color: var(--accent-ink); font-weight: 700; box-shadow: inset 0 -2px 0 var(--accent); }
+.src-dlg th.use { color: var(--accent-ink); }
+@media (max-width: 640px) {
+  .src-dlg { width: 100vw; height: 100dvh; max-height: 100dvh; margin: 0; border-radius: 0; border: 0; }
+  .src-in { padding: 0 16px calc(20px + env(safe-area-inset-bottom, 0px)); }
+  .src-h { padding-top: calc(12px + env(safe-area-inset-top, 0px)); }
+  .src-dlg td:first-child, .src-dlg th:first-child { min-width: 118px; max-width: 150px; white-space: normal; }
+  .prose p.src { margin: -4px -6px; padding: 4px 6px; }
+}
+.card.src { cursor: pointer; transition: border-color .15s, box-shadow .15s; }
+.card.src:hover { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-tint); }
+.src-go { font-size: 12.5px; color: var(--accent-ink); font-weight: 500; display: inline-flex; gap: 8px; align-items: center; margin-top: 2px; }
+.card.src:hover .src-ic { background: var(--accent); color: var(--surface); }
+.src-chips { display: flex; flex-direction: column; gap: 6px; }
+.src-chip { font: inherit; font-size: 13px; font-weight: 500; color: var(--accent-ink); background: var(--accent-tint); border: 1px solid transparent; border-radius: 999px; padding: 4px 12px; cursor: pointer; }
+.src-chip:hover { border-color: var(--accent); }
+@keyframes srcflash { 0%, 40% { outline-color: var(--accent); } 100% { outline-color: transparent; } }
+.src-dlg tr.flash { outline: 2px solid transparent; outline-offset: -2px; animation: srcflash 1.6s ease-out; }
