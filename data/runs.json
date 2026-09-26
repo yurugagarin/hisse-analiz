@@ -1,5 +1,126 @@
 [
  {
+  "id": "20260926T005931Z",
+  "tur": "gunluk_python",
+  "baslangic": "2026-09-26T00:59:31+00:00",
+  "bitis": "2026-09-26T01:00:13+00:00",
+  "hisseler": [
+   "AAOI",
+   "META",
+   "NOW",
+   "NVDA"
+  ],
+  "finnhub_aktif": true,
+  "sec_aktif": true,
+  "sec_user_agent_tanimli": true,
+  "sec_istek": 4,
+  "claude": null,
+  "bekleyen_bilanco": [
+   "NVDA",
+   "META",
+   "NOW",
+   "AAOI"
+  ],
+  "adimlar": {
+   "fiyat": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 28.0
+   },
+   "cik": {
+    "ok": 4,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "sec_submissions": {
+    "ok": 4,
+    "hata": 0,
+    "sure_sn": 0.1
+   },
+   "bilanco_xbrl": {
+    "ok": 4,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "bilanco_yorum": {
+    "ok": 4,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "bilanco_takvimi": {
+    "ok": 4,
+    "hata": 0,
+    "sure_sn": 3.6
+   },
+   "insider_form4": {
+    "ok": 4,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "finnhub_insider": {
+    "ok": 4,
+    "hata": 0,
+    "sure_sn": 4.6
+   },
+   "insider_analiz": {
+    "ok": 4,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "finnhub_haber": {
+    "ok": 4,
+    "hata": 0,
+    "sure_sn": 3.7
+   },
+   "google_news": {
+    "ok": 4,
+    "hata": 0,
+    "sure_sn": 1.6
+   },
+   "baslik_arsivi": {
+    "ok": 4,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "hareketler": {
+    "ok": 4,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "tez": {
+    "ok": 4,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "kural": {
+    "ok": 4,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "sinyal": {
+    "ok": 4,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "karne": {
+    "ok": 1,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "haftalik_derleme": {
+    "ok": 1,
+    "hata": 0,
+    "sure_sn": 0.0
+   }
+  },
+  "hatalar": [],
+  "argumanlar": {
+   "offline": false,
+   "force_filings": false,
+   "tickers": ""
+  }
+ },
+ {
   "id": "20260926T004906Z",
   "tur": "gunluk_python",
   "baslangic": "2026-09-26T00:49:06+00:00",
