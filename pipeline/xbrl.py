@@ -61,7 +61,8 @@ CONCEPTS: dict[str, dict] = {
         "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations"]},
     "capex": {"tablo": "Nakit akış tablosu", "c": [
         "PaymentsToAcquirePropertyPlantAndEquipment", "PaymentsToAcquireProductiveAssets",
-        "PaymentsForCapitalImprovements"]},
+        "PaymentsForCapitalImprovements", "PaymentsToAcquireMachineryAndEquipment",
+        "PaymentsToAcquireOtherPropertyPlantAndEquipment"]},
     "sbc": {"tablo": "Nakit akış tablosu", "c": ["ShareBasedCompensation",
                                                   "AllocatedShareBasedCompensationExpense"]},
     "acquisitions": {"tablo": "Nakit akış tablosu", "c": [
@@ -70,7 +71,7 @@ CONCEPTS: dict[str, dict] = {
     "equity_issued": {"tablo": "Nakit akış tablosu", "c": [
         "ProceedsFromIssuanceOfCommonStock", "ProceedsFromIssuanceOrSaleOfEquity",
         "ProceedsFromStockOptionsExercised"]},
-    "diluted_shares": {"tablo": "Gelir tablosu (hisse başına kâr)", "unit": "shares", "c": [
+    "diluted_shares": {"tablo": "Gelir tablosu (hisse başına kâr)", "unit": "shares", "additive": False, "c": [
         "WeightedAverageNumberOfDilutedSharesOutstanding"]},
     "acquiree_revenue": {"tablo": "Dipnot: işletme birleşmeleri", "c": [
         "BusinessCombinationProFormaInformationRevenueOfAcquireeSinceAcquisitionDateActual"]},
@@ -157,15 +158,20 @@ def _mk(e: dict, concept: str, derived=False, start=None, val=None, note="") -> 
                  concept=concept, derived=derived, note=note)
 
 
-def _quarterize(dd: dict[tuple, dict], concept: str) -> tuple[dict[str, Point], dict[str, Point]]:
+def _quarterize(dd: dict[tuple, dict], concept: str | None = None, additive: bool = True
+                ) -> tuple[dict[str, Point], dict[str, Point]]:
+    """dd değerleri '_concept' anahtarı taşıyabilir (kavramlar arası birleştirilmiş seri)."""
     q: dict[str, Point] = {}
     annual: dict[str, Point] = {}
     for (s, e), ent in dd.items():
         d = _days(s, e)
         if 75 <= d <= 105:
-            q[e] = _mk(ent, concept)
+            q[e] = _mk(ent, ent.get("_concept", concept))
         elif 350 <= d <= 380:
-            annual[e] = _mk(ent, concept)
+            annual[e] = _mk(ent, ent.get("_concept", concept))
+    if not additive:
+        # Ağırlıklı ortalama hisse sayısı gibi değerler toplanamaz: YTD farkından türetilmez
+        return q, annual
     # YTD farkından çeyrek türet (nakit akışı 6/9/12 aylık; Q4 = yıl − 9 ay)
     by_start: dict[str, list[tuple[str, dict]]] = {}
     for (s, e), ent in dd.items():
@@ -181,7 +187,7 @@ def _quarterize(dd: dict[tuple, dict], concept: str) -> tuple[dict[str, Point], 
                 gap = _days(e_short, e_long)
                 if 75 <= gap <= 105 and _days(s, e_short) >= 75:
                     qs = (D(e_short) + dt.timedelta(days=1)).isoformat()
-                    q[e_long] = _mk(ent_long, concept, derived=True, start=qs,
+                    q[e_long] = _mk(ent_long, ent_long.get("_concept", concept), derived=True, start=qs,
                                     val=float(ent_long["val"]) - float(ent_short["val"]),
                                     note=f"türetilmiş: {s}→{e_long} ({ent_long['form']}) − {s}→{e_short}")
                     break
@@ -194,12 +200,14 @@ def _quarterize(dd: dict[tuple, dict], concept: str) -> tuple[dict[str, Point], 
         if len(inside) == 3 and 75 <= _days(inside[-1][0], e) <= 105:
             qs = (D(inside[-1][0]) + dt.timedelta(days=1)).isoformat()
             q[e] = Point(start=qs, end=e, val=pa.val - sum(p.val for _, p in inside), accn=pa.accn,
-                         form=pa.form, filed=pa.filed, fy=pa.fy, fp=pa.fp, concept=concept, derived=True,
+                         form=pa.form, filed=pa.filed, fy=pa.fy, fp=pa.fp, concept=pa.concept, derived=True,
                          note=f"türetilmiş: yıllık ({pa.form}) − 3 çeyrek toplamı")
     return q, annual
 
 
 def build_series(cf: dict, key: str) -> Series:
+    """Kavramları (en güncel veriyi taşıyan önce) dönem bazında birleştirir, SONRA çeyrekler.
+    Böylece şirket bir kavramdan diğerine geçtiğinde de YTD farkı hesaplanabilir."""
     spec = CONCEPTS[key]
     unit = spec.get("unit", "USD")
     instant = spec.get("instant", False)
@@ -209,34 +217,50 @@ def build_series(cf: dict, key: str) -> Series:
         if not entries:
             continue
         dd = _dedup(entries, instant)
-        if not dd:
-            continue
-        if instant:
-            pts = {k[0]: _mk(v, c) for k, v in dd.items()}
-            ann: dict[str, Point] = {}
-        else:
-            pts, ann = _quarterize(dd, c)
-        if not pts and not ann:
-            continue
-        latest = max(list(pts.keys()) + list(ann.keys()))
-        per_concept.append((latest, -spec["c"].index(c), c, label, pts, ann))
-    # en güncel veriyi taşıyan kavram önce; boşlukları diğerleriyle doldur
+        if dd:
+            latest = max(k[-1] for k in dd)
+            per_concept.append((latest, -spec["c"].index(c), c, label, dd))
     per_concept.sort(reverse=True)
     s = Series(key=key)
-    for _, _, c, label, pts, ann in per_concept:
+    merged: dict[tuple, dict] = {}
+    for _, _, c, label, dd in per_concept:
         used = False
-        for e, p in pts.items():
-            if e not in s.points:
-                s.points[e] = p
-                used = True
-        for e, p in ann.items():
-            if e not in s.annual:
-                s.annual[e] = p
+        for k, ent in dd.items():
+            if k not in merged:
+                merged[k] = {**ent, "_concept": c}
                 used = True
         if used:
             s.concepts_used.append(c)
             s.label[c] = label
+    if instant:
+        s.points = {k[0]: _mk(v, v["_concept"]) for k, v in merged.items()}
+    else:
+        s.points, s.annual = _quarterize(merged, None, spec.get("additive", True))
+    if key == "diluted_shares":
+        _normalize_splits(s)
     return s
+
+
+def _normalize_splits(s: Series) -> None:
+    """Hisse bölünmesi: ardışık çeyrekler arasında ~tam sayı katı sıçrama varsa eski değerleri ölçekle."""
+    ends = sorted(s.points)
+    factor = 1.0
+    for i in range(len(ends) - 1, 0, -1):
+        cur, prev = s.points[ends[i]], s.points[ends[i - 1]]
+        if prev.val and cur.val:
+            r = (cur.val / factor) / prev.val if factor else 0
+            for k in (2, 3, 4, 5, 8, 10, 15, 20, 25, 40, 50):
+                for ratio, mult in ((k, k), (1 / k, 1 / k)):
+                    if abs(r / ratio - 1) < 0.06:
+                        factor *= mult
+                        break
+                else:
+                    continue
+                break
+        if factor != 1.0:
+            p = s.points[ends[i - 1]]
+            s.points[ends[i - 1]] = Point(p.start, p.end, p.val * factor, p.accn, p.form, p.filed, p.fy, p.fp,
+                                          p.concept, p.derived, (p.note + " " if p.note else "") + f"bölünme düzeltmesi ×{factor:g}")
 
 
 # ---------------------------------------------------------------------------
