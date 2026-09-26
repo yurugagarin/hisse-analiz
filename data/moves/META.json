@@ -1,11 +1,23 @@
 {
  "ticker": "META",
  "esik_yuzde": 5,
- "guncelleme": "2026-09-26T12:15:01+00:00",
+ "guncelleme": "2026-09-26T12:40:35+00:00",
  "hareketler": [
   {
    "tarih": "2026-09-21",
-   "claude": null,
+   "claude": {
+    "tarih": "2026-09-21",
+    "neden": "Muse'un Apple ABD App Store'da birinci sıraya çıkması ve Wells Fargo'nun hedef fiyatı 640 $'dan 796 $'a yükseltmesi. Aynı gün Nasdaq %2 yükselerek rekor kırdı ve çip hisseleri ralli yaptı. Connect (23 Eylül) öncesi beklenti de fiyata eklendi. Hisse %11,34 yükseldi; aynı gün QQQ %2,77, XLC %3,56 arttı.",
+    "siniflama": "karma",
+    "teze_etki": "Hareketin yaklaşık 8 puanı şirkete özel, geri kalanı piyasa ve sektör rüzgârı. Tez sütunlarını sayısal olarak değiştirmiyor, çünkü yeni finansal veri yok. ai_getirisi sütununda yalnızca kullanıcı ilgisini gösteriyor, gelir kanıtı değil.",
+    "kalicilik": "belirsiz",
+    "kaynak_urls": [
+     "https://www.tipranks.com/news/why-meta-stock-jumped-over-11-today-september-21-2026",
+     "https://finance.yahoo.com/markets/live/stock-market-today-monday-september-21-dow-sp-500-nasdaq-080214605.html"
+    ],
+    "rapor": "2026-W39",
+    "model": "claude-opus-5-5"
+   },
    "onceki_gun": "2026-09-18",
    "hareket": 11.34,
    "yon": "yukari",

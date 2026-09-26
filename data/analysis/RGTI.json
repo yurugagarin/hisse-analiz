@@ -1,0 +1,236 @@
+{
+ "son": {
+  "dosya": {
+   "accn": "0001104659-26-091993",
+   "form": "10-Q",
+   "donem_sonu": "2026-06-30",
+   "tarih": "2026-08-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/1838359/000110465926091993/rgti-20260630x10q.htm",
+   "index_url": "https://www.sec.gov/Archives/edgar/data/1838359/000110465926091993/0001104659-26-091993-index.htm",
+   "kesildi": false,
+   "karakter": 192894
+  },
+  "basin_bulteni": [
+   {
+    "ad": "rgti-20260806xex99d1.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1838359/000110465926091979/rgti-20260806xex99d1.htm",
+    "tarih": "2026-08-06"
+   }
+  ],
+  "onceki_basin_bulteni": [
+   {
+    "ad": "rgti-20260511xex99d1.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1838359/000110465926058635/rgti-20260511xex99d1.htm",
+    "tarih": "2026-05-11"
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "guncelleme": "2026-09-26T12:19:28+00:00",
+  "analiz": {
+   "ozet": "RGTI 2026 Q2: Gelir yıllık %185 artışla 5,138 bin $'a çıktı (Q1: 4,400 bin $). Brüt marj %42,6 (Q1 %31,3). Ancak tutarlar çok küçük ve büyüme dar bir tabana dayanıyor: gelirin 4,098 bin $'ı belirli bir anda tanınan donanım (Novera) satışı ve tek bir müşteri (Customer A) çeyrek gelirinin %64'ünü oluşturuyor. Faaliyet zararı 19,9 milyon $'dan 28,1 milyon $'a genişledi (+%41). Opex +%48 arttı. Hisse bazlı ödeme (SBC) 3,554 bin $'dan 7,020 bin $'a çıkarak neredeyse ikiye katlandı ve çeyrek gelirinin %137'sine ulaştı. GAAP net zarar 52,6 milyon $. Bunun 29,6 milyon $'ı nakit dışı warrant gerçeğe uygun değer zararı. Non-GAAP net zarar 16,0 milyon $, ama SBC'yi dışlayıp faiz gelirini (5,1 milyon $) içerdiği için operasyonel yanma hızını olduğundan hafif gösteriyor. Serbest nakit akışı (FCF) Q2'de -27,8 milyon $ ile son 8 çeyreğin en kötüsü. Ayrıca 10,1 milyon $ capex henüz ödenmemiş, ticari borçlarda duruyor (6 aylık, nakit dışı). Bilanço güçlü: nakit ve satılmaya hazır yatırımlar 541,3 milyon $, finansal borç yok. Dikkat: metrik tablosundaki 'liquidity/cash_runway 3,8 ay' satırı yalnızca nakdi (27,8 milyon $) sayıyor, 513,5 milyon $'lık hazine bonolarını dışlıyor. Bu yüzden yanıltıcı. Başlıca yapısal riskler: (i) Commerce Bakanlığı LOI'si. Hisseler üç tarihten en düşük kapanışın %15 iskontosuyla ihraç edilecek ve fon gelmese de devlette kalacak. (ii) Mart 2027'de vadesi dolan 78,4 milyon $'lık warrant yükümlülüğü. (iii) CEO/CFO/yönetim kurulu için Haziran 2026'da kurulan toplam yaklaşık 1,88 milyon hisselik 10b5-1 satış planları. (iv) 2026 içinde yeniden revize edilecek teknoloji yol haritası. Tez sütunu (rekabet/yönetim) sarı: farklılaşma iddiaları var, ama müşteri yoğunlaşması ve yol haritası revizyonu tezi zayıflatıyor.",
+   "non_gaap": {
+    "aciklama_var": true,
+    "duzeltmeler": [
+     {
+      "kalem": "Hisse bazlı ödeme (SBC) dışlaması",
+      "tutar_metni": "Q2 2026: +7,020 bin $ (Q2 2025: 3,554 bin $); 6 ay: 12,910 bin $",
+      "degerlendirme": "kari_iyi_gosteriyor",
+      "gerekce": "SBC tekrarlayan, gerçek bir personel maliyeti. Yıllık %98 artarak çeyrek gelirinin yaklaşık %137'sine ulaştı (TTM SBC/gelir %170,65). 10-Q'ya göre artışın nedeni yeni işe alımlar ve mevcut çalışanlara yeni ödüller, yani yapısal. Dışlanması operasyonel zararı sistematik olarak küçültüyor. Ayrıca hissedar sulandırmasının ekonomik maliyetini gizliyor. Dikkat: 6 ayda 1,966 bin RSU hisse ihraç edildi.",
+      "kanit_alinti": "The increase in salaries and employee related costs and stock-based compensation was due to additional hires, annual salary increases and stock-based compensation awards for existing employees.",
+      "kaynak_belge": "10-Q/10-K",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Türev warrant yükümlülüklerinin gerçeğe uygun değer değişimi",
+      "tutar_metni": "Q2 2026: +29,602 bin $ zarar geri eklendi; 6 ay: -24,095 bin $ kazanç çıkarıldı; Q1 2026: -53,697 bin $ kazanç çıkarıldı",
+      "degerlendirme": "makul",
+      "gerekce": "Nakit dışı ve hisse fiyatına bağlı bir yeniden ölçüm, operasyonla ilgisi yok. Düzeltme simetrik uygulanmış: Q1'deki 53,7 milyon $ kazanç da çıkarılmış, bu da non-GAAP'ı kötüleştirmiş. Bu yüzden kalem kârı iyi göstermek için seçici kullanılmıyor. Yine de warrant'lar ekonomik olarak gerçek bir sulandırma kaynağı: 8,7 milyon kamu/özel warrant, 11,50 $ kullanım fiyatı, vade 2 Mart 2027.",
+      "kanit_alinti": "The change in fair value of our warrant liabilities for the three and six months ended June 30, 2026 was a loss of $29.6 million and a gain of $24.1 million, respectively.",
+      "kaynak_belge": "10-Q/10-K",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Earn-out yükümlülüklerinin gerçeğe uygun değer değişimi",
+      "tutar_metni": "Q2 2026: 0; Q2 2025: +2,257 bin $; 6A 2025: -6,580 bin $",
+      "degerlendirme": "makul",
+      "gerekce": "SPAC kaynaklı, sona ermiş (tüm hisseler vested) nakit dışı bir kalem. 2026'da etkisi sıfır. Yalnızca geçmiş dönemle karşılaştırmada rol oynuyor.",
+      "kanit_alinti": "The earn-out liabilities had no impact on our condensed consolidated financial statements for the three and six months ended June 30, 2026",
+      "kaynak_belge": "10-Q/10-K",
+      "kanit_alinti_dogrulandi": true
+     }
+    ],
+    "genel_yorum": "Mutabakat basit ve şeffaf (3 kalem), warrant/earn-out düzeltmeleri simetrik. Asıl sorun SBC'nin 'nakit dışı' gerekçesiyle dışlanması: SBC tekrarlayan bir maliyet ve hızla büyüyor. Q2 non-GAAP net zarar 15,984 bin $ olarak raporlandı. Oysa GAAP faaliyet zararı 28,062 bin $ ve bu rakamdan SBC (7,020) çıkarılsa bile düzeltilmiş faaliyet zararı ~21,0 milyon $ kalıyor. Non-GAAP rakamı ayrıca 5,058 bin $ faiz gelirini içeriyor. Faiz geliri, 2025 hisse ihraçlarıyla toplanan nakdin getirisi ve nakit eridikçe/faizler düştükçe azalacak. Dolayısıyla 'non-GAAP zarar yıllık yalnızca +%20 arttı' (13,3 milyon $ → 16,0 milyon $) anlatısı, faaliyet zararındaki %41'lik genişlemeyi maskeliyor. Nakit gerçeği: 6 aylık faaliyet nakit akışı (OCF) -32,0 milyon $, capex -16,4 milyon $ ve ayrıca 10,1 milyon $ capex ticari borçlarda bekliyor."
+   },
+   "musteri_yogunlasmasi": {
+    "aciklama_var": true,
+    "detay": "Note 11'e göre Q2 2026'da Customer A gelirin %64'ünü, Customer C %16'sını oluşturdu. 6 aylık bazda A %34, B %25. Yani iki müşteri 6 aylık gelirin %59'u. Müşteri seti yıldan yıla tamamen değişiyor: 2025 Q2'nin büyük müşterileri D (%20), E (%27) ve F (%39) bu çeyrekte %10'un altında. Bu, gelirin tekrarlayan olmadığını ve proje/sistem teslimatına bağlı olduğunu gösteriyor. Alacaklarda C %43, B %21, D %21. Kamu payı %91,7'den %18,0'a düştü: müşteri tabanı ticari/akademik tarafa kaydı, ama tek bir alıcıya bağımlılık arttı. Coğrafi olarak ABD geliri 967 bin $'dan 4,133 bin $'a çıktı ve muhtemelen Customer A'yla örtüşüyor. Bu, yoruma dayalı bir çıkarım.",
+    "bolum": "Note 11 - Segments, Geographical Information, Concentrations and Significant Customers",
+    "kanit_alinti": "During the three and six months ended June 30, 2026, sales to government entities comprised 18.0% and 22.2% of the Company’s total revenue, respectively.",
+    "etiket": "kirmizi_bayrak",
+    "kanit_alinti_dogrulandi": true
+   },
+   "organik_buyume": {
+    "satin_alma_var": false,
+    "detay": "Dönemde satın alma açıklanmadı. Büyüme tamamen organik ve neredeyse tümüyle belirli bir anda tanınan donanım satışlarından geliyor: 'Sales of quantum computers and quantum components' Q2'de 4,098 bin $ (Q2 2025: 0). Buna karşılık işbirliği araştırması/profesyonel hizmetler 1,711 bin $'dan 952 bin $'a (-%44), bulut erişimi 90 bin $'dan 88 bin $'a geriledi. Yani 'tekrarlayan' nitelikteki hizmet/QCaaS gelirleri küçülüyor. Büyüme, düzensiz ve tek seferlik Novera sistem teslimatlarına dayanıyor. Baz dönem de zayıftı: 2025 gelirleri yıllık %18–%52 daralmıştı. Bu yüzden %185'lik artış kısmen düşük bazdan kaynaklanıyor.",
+    "bolum": "Item 2 - MD&A, Revenue; Note 10 - Revenue Recognition",
+    "kanit_alinti": "The increases were mainly due to higher sales of 9-qubit Novera™ quantum computing systems and related products.",
+    "kanit_alinti_dogrulandi": true
+   },
+   "guidance": {
+    "onceki_guidance": "Şirket finansal (gelir/marj/zarar) guidance vermiyor. Önceki bültendeki tek ileriye dönük hedef operasyoneldi: İngiltere'ye 100 milyon $'a kadar yatırım ve 3–4 yıl içinde 1.000+ kübitlik bir sistem kurulması.",
+    "onceki_alinti": "The planned investment will go toward deploying a UK-based quantum computing system with over 1,000 qubits in the next three to four years",
+    "gerceklesen": "Karşılaştırılabilir finansal hedef olmadığı için sapma ölçülemez. Q2 geliri 5,1 milyon $. 108 kübitlik sistem %99,1 medyan iki-kübit doğrulukta çalışıyor, bu da 99,9 hedefinin altında. Yol haritasının 2026 içinde revize edileceği 10-Q'da açıklandı.",
+    "gerceklesen_alinti": "Total revenues for the three months ended June 30, 2026 were $5.1 million",
+    "sonuc": "karsilastirilamaz",
+    "yeni_guidance": "Yine finansal guidance yok. Teknik hedef: yaklaşık 3 yıl içinde ~1.000 kübit, %99,9 iki-kübit doğruluk, <50 ns kapı hızı. Önceki '3–4 yıl' ifadesi 'yaklaşık 3 yıl'a daraltılmış, ama 10-Q aynı anda yol haritasının 2026'nın ilerleyen döneminde (kilometre taşları ve zamanlamalar dahil) güncelleneceğini söylüyor. Commerce Bakanlığı fonu bültende 'üç yıl', 10-Q'da ise 'beş yıllık Period of Performance' olarak geçiyor: iki belge arasında tutarsızlık var.",
+    "yeni_alinti": "Rigetti continues to target a path toward systems with approximately 1,000 qubits, approximately 99.9% two-qubit gate fidelity, and gate speeds below 50 nanoseconds over roughly a three-year time horizon.",
+    "onceki_alinti_dogrulandi": true,
+    "gerceklesen_alinti_dogrulandi": true,
+    "yeni_alinti_dogrulandi": true
+   },
+   "dipnot_bulgulari": [
+    {
+     "etiket": "kirmizi_bayrak",
+     "baslik": "Commerce Bakanlığı LOI: indirimli ve geri alınamaz hisse ihracı",
+     "aciklama": "Anlaşma 100 milyon $'a kadar fon öngörüyor. Buna karşılık ödülün tamamı tutarında hisse, Award Date'te ihraç edilecek. Fiyat, üç tarihteki (5 Mayıs, 20 Mayıs, Award Date) en düşük kapanıştan %15 iskontolu hesaplanacak. Garanti edilen yalnızca 19,9 milyon $. Kalan 80,1 milyon $ kilometre taşına ve onaya bağlı, ayrıca geri alma (clawback) hükmü var. Hisseler ise her durumda devlette kalıyor. 30 Haziran'daki 19,32 $ hisse fiyatıyla (Note 6 Black-Scholes girdisi) kaba bir hesap: 100 milyon $ / (19,32 × 0,85) ≈ 6,1 milyon hisse, mevcut hisselerin ~%1,8'i. Fiyat düşerse bu sayı artar. Muhasebe ve vergi etkisi henüz değerlendirilmemiş.",
+     "bolum": "Item 1A - Risk Factors (Risks Related to the Department of Commerce Transaction)",
+     "kanit_alinti": "The Department will retain 100% of such shares whether or not the Award is funded in full or if the funding is received but subsequently clawed back.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "78,4 milyon $'lık warrant yükümlülüğü kısa vadeye geçti, kâr/zarar oynaklığının ana kaynağı",
+     "aciklama": "Warrant yükümlülüğü Q1'de 48,9 milyon $'dı, Q2'de 78,4 milyon $'a çıktı ve tamamı cari yükümlülük. Warrant'ların vadesi 2 Mart 2027. Net kârdaki salınımın tamamı bu kalemden geliyor: Q1'de +53,7 milyon $ kazanç, Q2'de -29,6 milyon $ zarar. GAAP net sonuç operasyonel gidişat hakkında bilgi vermiyor. Özel warrant'ların Black-Scholes volatilite girdisi %170'ten %106'ya indirildi. Seviye 3'ten Seviye 1'e transfer Q2'de net zarara 1,1 milyon $ olumlu etki yaptı. Warrant'lar kullanılırsa ~8,7 milyon yeni hisse ve ~100 milyon $ nakit gelir. Kullanılmazsa yükümlülük sıfıra iner ve bu da büyük bir nakit dışı kazanç yaratır. Her iki senaryo da 2026 Q3–2027 Q1 GAAP sonuçlarını bozacak.",
+     "bolum": "Note 6 - Warrants; Note 5 - Fair Value Measurements",
+     "kanit_alinti": "The warrants will expire on March 2, 2027 at 5:00 p.m., New York City time, or earlier upon redemption or liquidation.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Capex hızlanıyor: 10,1 milyon $ ödenmemiş, 35 milyon $ açık sipariş",
+     "aciklama": "Q2 capex 12,0 milyon $ (metrik tablosu), 6 aylık nakit capex 16,4 milyon $. Ayrıca ticari borçlarda 10,118 bin $ tutarında ödenmemiş PP&E alımı var (geçen yıl 417 bin $). Ticari borçlar 3,5 milyon $'dan 14,0 milyon $'a çıktı. Bu tutar nakit FCF'ye henüz yansımadı ve Q3'te çıkacak. Açık satın alma taahhütleri 35,0 milyon $, bunun ~21,0 milyon $'ı PP&E. Yönetim yeni bir fabrikaya yatırım olasılığından da söz ediyor. Quanta anlaşmasıyla 5 yılda en az 250 milyon $ harcama taahhüdü de var. Nakit yakımı yapısal olarak artıyor.",
+     "bolum": "Item 2 - MD&A, Contractual Obligations and Contingencies",
+     "kanit_alinti": "We have purchase commitments in the form of open purchase orders, primarily for property and equipment. As of June 30, 2026, the total of these purchase commitments was $35.0 million, of which approximately $21.0 million is related to property and equipment.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "RPO yalnızca 2,7 milyon $: gelir görünürlüğü çok düşük",
+     "aciklama": "Kalan performans yükümlülükleri (RPO) 2,7 milyon $ ve yıllık -%52,6. Bu, tek bir çeyreğin gelirinden bile düşük. Ertelenmiş gelir 1,545 bin $'dan 4,014 bin $'a çıktı (peşin tahsilat, olumlu). Ancak Ocak 2026'da açıklanan 8,4 milyon $'lık C-DAC 108 kübit siparişinin RPO'da nasıl yer aldığı açık değil. RPO rakamı, bu siparişin henüz tam bağlayıcı olmadığını ya da kısmen tanındığını düşündürüyor (yorum). Gelirin %80'i belirli bir anda tanınan donanım satışı, bu yüzden çeyreklik dalgalanma yüksek olacak.",
+     "bolum": "Note 10 - Revenue Recognition",
+     "kanit_alinti": "As of June 30, 2026, the aggregate amount of the transaction price allocated to remaining performance obligations was approximately $2.7 million.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Yol haritası yine revize edilecek, geçmişte kilometre taşları kaçırıldı",
+     "aciklama": "Şirket, teknoloji yol haritasını 2018, 2022, 2023 ve 2025'te değiştirdiğini ve 2026'da yeniden güncelleyeceğini açıkça kabul ediyor. 108 kübitlik sistemin %99,1'lik iki-kübit doğruluğu, 9 kübitte ulaşılan %99,8'in belirgin altında. Ölçek büyüdükçe doğruluk düşüyor. Bu, değerlemenin dayandığı teknik ilerleme anlatısını doğrudan zayıflatıyor.",
+     "bolum": "Item 1A - Risk Factors",
+     "kanit_alinti": "In April 2026, we announced that we intend to update our roadmap later in 2026, including updates to anticipated milestones and the anticipated timeline for milestones.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "kirmizi_bayrak",
+     "baslik": "CEO, CFO ve iki yönetim kurulu üyesi Haziran 2026'da 10b5-1 satış planı kurdu",
+     "aciklama": "Haziran 2026'da dört içeriden kişi satış planı kurdu. CEO Kulkarni 1.120.000, CFO Bertelsen 450.000, Clifton 300.000, Fitzgerald 14.869 hisseye kadar satış planladı. Toplam ~1,88 milyon hisse. Planların hepsi LOI duyurusundan (21 Mayıs) kısa süre sonra, 3–15 Haziran arasında kuruldu. Opsiyon kullanımına dayalı satışlar olağan bir likidite ihtiyacı olabilir, ama zamanlama ve eşzamanlılık üst yönetimin hisse fiyatına ilişkin sinyali açısından dikkat çekici.",
+     "bolum": "Item 5 - Other Information (Rule 10b5-1 Trading Arrangements)",
+     "kanit_alinti": "The plan provides for the potential sale of up to 1,120,000 shares of our Common Stock obtained from the potential exercise of vested stock options, depending on the market prices of the securities.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "olumlu",
+     "baslik": "Donanım satışları brüt marjı yükseltiyor",
+     "aciklama": "Brüt marj Q1'de %31,3'tü, Q2'de %42,6'ya çıktı. Gerekçe: Novera sistem satışlarının marjı hizmet gelirlerinden yüksek. Ancak marj ürün karışımına bağlı ve tek bir müşteri siparişine duyarlı. Mutlak brüt kâr (2,2 milyon $), 30,3 milyon $ opex'in yanında önemsiz kalıyor.",
+     "bolum": "Item 2 - MD&A, Cost of Revenue",
+     "kanit_alinti": "These sales tend to have a higher gross margin profile than sales of collaborative research and professional services.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Metrik tablosundaki 'cash_runway 3,8 ay' satırı yanıltıcı",
+     "aciklama": "Tablodaki 'liquidity' satırı 2025 Q4'ten itibaren yalnızca nakit ve nakit benzerlerini (27,763 bin $) alıyor, 513,5 milyon $'lık satılmaya hazır ABD hazine bonolarını dışlıyor. Gerçek likidite 541,3 milyon $. Q2 FCF'si (-27,8 milyon $) yıllıklandırılırsa pist ~4,9 yıl. Taahhütlü capex ve artan opex dikkate alındığında bu süre daha kısa olabilir, ama 12 aydan kısa olduğunu gösteren bir veri yok. Yönetim de fonların en az 12 ay yeteceğini söylüyor.",
+     "bolum": "Metrik tablosu - liquidity / cash_runway_months",
+     "kanit_alinti": "| cash_runway_months | 16.9 | 37.3 | 42.3 | 77.9 | 79.4 | 7.0 | 7.1 | 3.8 |",
+     "kaynak_belge": "metrik_tablosu",
+     "kanit_alinti_dogrulandi": true
+    }
+   ],
+   "yorum_sutunlari": [
+    {
+     "id": "rekabet",
+     "durum": "sari",
+     "gerekce": "Destekleyen yönler: yönetim modüler/chiplet mimarisini farklılaştırıcı olarak sunuyor. HPE/PSC işbirliği ve C-DAC siparişi var. 108 kübitlik sistem AWS, Azure ve qBraid üzerinden erişilebilir. Kamu dışı müşteri çeşitlenmesi başladı (kamu payı %18). Zayıflatan yönler: (1) Q2 gelirinin %64'ü tek müşteriden geliyor ve müşteri seti her yıl değişiyor. (2) Hizmet ve bulut gelirleri küçülüyor. (3) Rakiplere karşı hız iddiası çeyrekten çeyreğe değişti: Q1 bülteninde trapped-ion ve neutral-atom sistemlere göre 'about 1,000 times faster', Q2'de trapped-ion'a göre '10,000 times', neutral-atom'a göre '100x'. Bu tutarsızlık pazarlama iddialarının güvenilirliğini azaltıyor. (4) Yol haritası yeniden revize edilecek ve ölçekte doğruluk düşüyor (%99,1). (5) Yönetim finansal guidance vermiyor. (6) Üst yönetim satış planları kurdu. Sonuç: yönetimin rekabet anlatısı var ama finansal kanıtı henüz yok.",
+     "kanit_alinti": "we believe our open modular approach, superconducting gate-based architecture, and chiplet-based scaling strategy continue to differentiate Rigetti in the market.",
+     "kaynak_belge": "basin_bulteni",
+     "kanit_alinti_dogrulandi": true
+    }
+   ],
+   "seytanin_avukati": {
+    "en_guclu_arguman": "Rigetti hâlâ fiilen bir Ar-Ge projesi. Yıllık gelir oranı ~20 milyon $'ın altında, faaliyet zararı ise çeyreklik 28 milyon $ ve hızlanıyor. Q2 'büyüme'si tek bir müşteriye (%64) yapılan, belirli bir anda tanınan donanım satışından geliyor. Bu gelir tekrarlamıyor: RPO yalnızca 2,7 milyon $ ve hizmet/bulut gelirleri küçülüyor. Maliyet tarafı yapısal olarak artıyor: SBC iki katına çıktı, opex +%48, capex hızlanıyor, 35 milyon $ açık sipariş ve Quanta ile 250 milyon $ harcama taahhüdü var. Önümüzdeki 12 ayda üç ayrı sulandırma kaynağı var: Commerce Bakanlığı'na en düşük fiyatın %15 altında ve geri alınamaz hisse ihracı, Mart 2027'de vadesi dolan ~8,7 milyon warrant, ve yılda %5 otomatik genişleyen hisse ödül havuzu. Aynı dönemde CEO, CFO ve yönetim kurulu üyeleri satış planı kurdu ve şirket teknoloji yol haritasını beşinci kez revize edeceğini açıkladı. Değerleme teknik kilometre taşlarına dayanıyor. Kilometre taşları kayıyor, içeridekiler satıyor. Mevcut hissedar büyümenin ve dilüsyonun maliyetini taşıyor.",
+    "destekleyen_olgular": [
+     {
+      "olgu": "Faaliyet zararı yıllık %41 genişleyerek -28,062 bin $'a çıktı. Opex 20,448 bin $'dan 30,250 bin $'a yükseldi.",
+      "kaynak": "SEC XBRL: operating_income",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "TTM SBC/gelir oranı %170,65. Q2 SBC 7,020 bin $ ve geçen yılın (3,554 bin $) iki katı.",
+      "kaynak": "SEC XBRL: sbc_to_revenue_ttm",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Q2 FCF -27,770 bin $ ile son 8 çeyreğin en kötüsü. Buna ek olarak 10,118 bin $ capex ticari borçlarda ödenmeyi bekliyor.",
+      "kaynak": "SEC XBRL: fcf",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "RPO 2,7 milyon $ ve yıllık -%52,63. Gelir görünürlüğü bir çeyrekten az.",
+      "kaynak": "SEC XBRL: rpo",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Customer A Q2 gelirinin %64'ünü oluşturdu. 2025'in büyük müşterileri (D, E, F) bu çeyrekte %10'un altına düştü.",
+      "kaynak": "10-Q: Note 11 - Segments, Geographical Information, Concentrations and Significant Customers",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Commerce Bakanlığı hisseleri %15 iskontoyla alacak ve fon verilmese ya da geri alınsa bile hisseleri elinde tutacak.",
+      "kaynak": "10-Q: Item 1A - Risk Factors",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "CEO 1,12 milyon, CFO 450 bin, yönetim kurulu üyeleri 314.869 hisseye kadar satış için Haziran 2026'da 10b5-1 planı kurdu.",
+      "kaynak": "10-Q: Item 5 - Other Information",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Seyreltilmiş hisse sayısı yıllık %11,72 arttı (333.215 bin).",
+      "kaynak": "SEC XBRL: diluted_shares_yoy",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Yol haritası 2018, 2022, 2023 ve 2025'te değiştirildi, 2026'da yeniden güncellenecek.",
+      "kaynak": "10-Q: Item 1A - Risk Factors",
+      "kaynak_dogrulandi": true
+     }
+    ],
+    "tezin_zayif_halkasi": "Ayı tezinin en zayıf noktası likidite. Borçsuz bilançoda 541,3 milyon $ nakit ve hazine bonosu var. Mevcut yakım hızıyla bu birkaç yıllık pist demek. Yakın vadede zorunlu, indirimli bir sermaye artırımı gerekmiyor. Ayrıca warrant'ların kullanılması sulandırsa da ~100 milyon $ nakit getirir. Commerce Bakanlığı fonu da ihraç edilen hisse değeri kadar sermaye sağlar. Sulandırmanın önemli kısmı nakit karşılığı. Brüt marjın %42,6'ya yükselmesi ve donanım talebinin çeşitlenmesi (HPE/PSC, C-DAC, üniversiteler) erken ticarileşmeye işaret edebilir.",
+    "argumani_curutecek_gostergeler": [
+     "RPO'nun anlamlı ölçüde (örn. 10 milyon $ üzeri) artması ve C-DAC gibi büyük siparişlerin bağlayıcı olarak RPO'ya yansıması",
+     "En büyük müşterinin payının %30'un altına inmesi ve donanım dışı tekrarlayan gelirin (QCaaS/hizmet) büyümeye dönmesi",
+     "Revize yol haritasında 108 kübit ve üzeri sistemlerde %99,5+ iki-kübit doğruluğun bağımsız olarak doğrulanması",
+     "Commerce Bakanlığı nihai belgelerinde ihraç fiyatının piyasa fiyatına yakın belirlenmesi ve ilk 19,9 milyon $'ın tahsil edilmesi",
+     "10b5-1 planları altında fiilen satış yapılmaması ya da içeriden alımlar",
+     "Faaliyet zararı büyümesinin gelir büyümesinin altına inmesi (işletme kaldıracı)"
+    ]
+   }
+  }
+ }
+}

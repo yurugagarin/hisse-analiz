@@ -67,8 +67,56 @@
     "donem": "FY2026 Q2"
    },
    "olgu_mu": true,
-   "haberler": [],
-   "radar": []
+   "haberler": [
+    {
+     "kategori": "urun_sozlesme",
+     "tarih": "2026-09-21",
+     "baslik": "SDT (Güney Kore) ile Superion 256 ve SiV kuantum bellek ortaklığı",
+     "olgu": "IonQ, çok yıllı iş birliği kapsamında SDT'ye bir Superion 256 ve SiV kuantum bellek modülü tedarik edecek. Sistem, SDT'nin Güney Kore'deki bir müşterisine kurulacak. SDT, Gumi'de kuantum üretim ve sistem entegrasyon tesisi kurmayı planlıyor. İş birliği, bulut yazılım entegrasyonundan donanım üretimi, montaj ve bölgesel yeniden satışa genişliyor.",
+     "yorum": "Asya-Pasifik'te dağıtım kanalı oluşuyor. Ancak son müşteri belirsiz, çünkü 'SDT'nin bir müşterisi' deniyor, ve tutar açıklanmadı. 10-Q'da aracı ya da ilişkili taraf üzerinden gelen gelir konusunda dikkat notu vardı. Bu tür yeniden satış yapıları gelir kalitesi açısından izlenmeli.",
+     "etki": "destekler",
+     "sutun_id": "buyume",
+     "onem": 3,
+     "kaynak_url": "https://ionq.com/news/ionq-and-sdt-announce-the-first-strategic-partnership-to-bring-both-advanced-quantum-computing-and-quantum-networking-to-the-asia-pacific-region",
+     "kaynak_adi": "IonQ"
+    },
+    {
+     "kategori": "musteri",
+     "tarih": "2026-09-24",
+     "baslik": "Florida International University Superion 256 aldı; kurulum 2027 sonunda",
+     "olgu": "IonQ, FIU'ya Superion 256 teslim edecek. Kurulumun FIU'nun kampüs veri merkezi tamamlandıktan sonra, 2027 sonunda yapılması bekleniyor. Fiyat açıklanmadı. FinanceFeeds, Superion'un 8 Eylül 2026'da tanıtıldığını ve henüz hiçbir yerde kurulup kabul edilmiş sistem olmadığını yazıyor. Haberde X'te dolaşan 25 milyon $ rakamının doğrulanmadığı belirtiliyor.",
+     "yorum": "Donanım satışında gelir, kurulum ve kabule bağlı olabilir. Bu da sözleşme ile gelir arasında uzun bir boşluk demek. Teslim tarihi IonQ'nun değil müşterinin inşaatına bağlı. Bu yıl ve 2027'nin ilk yarısı gelirine katkısı düşük görünüyor. RPO'yu şişirebilir, ama nakde dönüşümü gecikmeli olur.",
+     "etki": "notr",
+     "sutun_id": "buyume",
+     "onem": 3,
+     "kaynak_url": "https://financefeeds.com/ionq-superion-256-fiu-sale-revenue-late-2027/",
+     "kaynak_adi": "FinanceFeeds"
+    },
+    {
+     "kategori": "sirket",
+     "tarih": "2026-09-22",
+     "baslik": "Wedbush Outperform ve 75 $ hedefini korudu; 2026 guidance'ının yaklaşık 170 milyon $'ı SkyWater'dan",
+     "olgu": "Wedbush, 22 Eylül'de Outperform tavsiyesini ve 75 $ hedef fiyatını yineledi. Wedbush'a göre IonQ'nun 2026 guidance'ının yaklaşık 170 milyon $'ı, genelde daha düşük gelir çarpanını hak eden SkyWater dökümhane işinden geliyor.",
+     "yorum": "Controller için kritik nokta şu: 10-Q'daki 280–290 milyon $'lık FY guidance SkyWater hariçti. 8 Eylül 8-K'sı SkyWater sonrası yeni guidance'a atıf yapıyor; birleşik rakam veri paketinde yok. Konsolide gelir, SkyWater nedeniyle mekanik olarak sıçrayacak. Bu yüzden 'gelir büyümesi' sütunu önümüzdeki çeyreklerde organik kuantum ivmesini değil satın almayı ölçebilir. Ayrıca marj profili (dökümhane) karışımı değiştirecek.",
+     "etki": "notr",
+     "sutun_id": "buyume",
+     "onem": 3,
+     "kaynak_url": "https://www.tipranks.com/news/top-analyst-backs-ionq-with-75-target-on-skywater-integration",
+     "kaynak_adi": "TipRanks / MarketBeat"
+    }
+   ],
+   "radar": [
+    {
+     "kategori": "sektor_tedarik",
+     "sinyal": "SDT, Güney Kore'nin Gumi kentinde kuantum üretim ve sistem entegrasyon tesisi kurmayı planlıyor.",
+     "yorum": "Bölgesel montaj kapasitesi, Superion'un Asya'da yeniden satış kanalına işaret ediyor. Tesisin kurulup kurulmadığı ve sipariş hacmi henüz belirsiz.",
+     "yon": "olumlu",
+     "guven": "dusuk",
+     "sutun_id": "buyume",
+     "tarih": "2026-09-21",
+     "kaynak_url": "https://thequantuminsider.com/2026/09/22/ionq-sdt-quantum-computing-networking-south-korea/"
+    }
+   ]
   },
   {
    "id": "brut_marj",
@@ -133,7 +181,18 @@
    },
    "olgu_mu": true,
    "haberler": [],
-   "radar": []
+   "radar": [
+    {
+     "kategori": "sektor_tedarik",
+     "sinyal": "SkyWater, IonQ'nun satın almasından sonra kuantum dökümhanesi rolünü yineledi.",
+     "yorum": "Dikey entegrasyon, tedarik kontrolü açısından olumlu. Ancak dökümhanenin üçüncü taraf kuantum rakiplerine de hizmet vermeye devam etmesi, gelir karışımı ve potansiyel çıkar çatışması açısından izlenmeli.",
+     "yon": "belirsiz",
+     "guven": "dusuk",
+     "sutun_id": "brut_marj",
+     "tarih": "2026-09-24",
+     "kaynak_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWTZaVjl3bFdZT0RlOVlYc0cxRUlVd2wtUy1VVmNLcjRBenBnWEJ6Z3ZUeG1GMHpoWHhyeFVGb29MSDh6djJ1SHZfRmhwQWpwbkNPVGFIX2VaQ0lMRGFDb0VkNjVrMFU1VXN5N0hmQTVWNmlVUUpYcE1BVnlkSTg0OUVwY3NsUUhGeGJVa2hibw?oc=5"
+    }
+   ]
   },
   {
    "id": "karlilik",
@@ -327,7 +386,20 @@
     "donem": "FY2026 Q2"
    },
    "olgu_mu": true,
-   "haberler": [],
+   "haberler": [
+    {
+     "kategori": "sirket",
+     "tarih": "2026-09-23",
+     "baslik": "Halka açık warrant'lar 30 Eylül'de sona eriyor",
+     "olgu": "IONQ WS halka açık warrant'ları 30 Eylül 2026'da sona eriyor, işlem fiyatı hisse başına 11,50 $. 31 Mart 2026 itibarıyla 1.135.129 halka açık warrant vardı. 2026'nın ilk yarısında 261.313 warrant kullanıldı ve 3,005 milyon $ gelir sağlandı. NYSE işlemleri 29 Eylül açılıştan önce duruyor.",
+     "yorum": "Halka açık warrant sayısı küçük, bu yüzden kendi başına sulandırma etkisi sınırlı. Asıl risk, 10-Q'daki 79 milyon adetlik özel warrant ve 3,05 milyar $'lık Level 3 yükümlülük. Bunlar bu vadeyle karıştırılmamalı; özel warrant'ların şartları bu haftaki kaynaklarda yok.",
+     "etki": "notr",
+     "sutun_id": "sulandirma",
+     "onem": 2,
+     "kaynak_url": "https://thecryptobasic.com/2026/09/23/ionq-warrants-near-sept-30-expiry-as-shares-hold-above-45-overnight/",
+     "kaynak_adi": "The Crypto Basic / 10-Q"
+    }
+   ],
    "radar": []
   },
   {
@@ -337,23 +409,109 @@
    "aciklama": "",
    "durum": "sari",
    "soru": "10-Q/10-K ve basın bülteninde rekabet, müşteri yoğunlaşması ve yönetimin beklentileri hakkındaki açıklamalar tezi destekliyor mu?",
-   "gerekce": "Olumlu yönler: müşteri yoğunlaşması belirgin azaldı (iki müşterinin payı %65'ten %33'e indi), RPO 485 milyon $ ve yıllık %297 büyüdü, gelir guidance'ı iki kez yükseltildi. Olumsuz yönler: 10-Q'daki yeni risk faktörleri rekabeti yalnızca SkyWater'ın yarı iletken dökümhane pazarı için anlatıyor; TSMC, GlobalFoundries gibi daha büyük kaynaklı rakipler sayılıyor ve CHIPS teşvikleri rakipleri güçlendiriyor. Kuantum rekabetine dair niceliksel bir bilgi yok. Yönetim Adjusted EBITDA guidance'ını sessizce bıraktı ve organik gelir tanımını değiştirdi. Bazı gelirler hisse ya da yatırım ilişkisi olan karşı taraflardan geliyor. Yönetim beklentileri iyimser ama şeffaflık azalıyor; tezin 'bugünkü seviyeyi koruma' kriteri büyüme için geçiyor, marj ve sulanma için geçmiyor.",
-   "kanit_alinti": "Integration may be particularly challenging as we are entering into a line of business with which we have no prior experience.",
-   "kanit_dogrulandi": true,
+   "gerekce": "Teknoloji tarafında, iddialar şirket kaynaklı olsa da, bu hafta ciddi ilerleme var. Kod çözücü ölçeklenme darboğazını hedefliyor. NVIDIA'nın merkezine ilk kurulacak QPU olmak, hibrit ekosistemde referans konumu sağlıyor. Ancak yeşile çıkmak için üç eksik var. (1) Ticari teyit yok: NVIDIA ve FIU tutarları açıklanmadı, kurulumlar 2027'de, Superion 256'nın kurulu ve kabul edilmiş örneği yok. (2) 10-Q'daki şeffaflık sorunları sürüyor: EBITDA guidance'ı bırakıldı, organik tanımı değişti, gelirin bir kısmı ilişkili ya da yatırım yapılan karşı taraflardan geliyor. SDT gibi yeniden satıcı modelleri bu konuda ek dikkat gerektiriyor. (3) Rakiplere devlet sermayesi akıyor (Rigetti'ye 100 milyon $ CHIPS). Net sonuç: sarı durum korunuyor, teknoloji tarafı güçleniyor, yönetim şeffaflığı tarafı zayıf.",
+   "kanit_alinti": null,
+   "kanit_dogrulandi": null,
    "kaynak": {
-    "tip": "bilanco",
-    "tarih": "2026-08-10",
-    "accn": "0001193125-26-341001",
-    "form": "10-Q",
-    "donem_sonu": "2026-06-30",
-    "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526341001/ionq-20260630.htm",
-    "index_url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526341001/0001193125-26-341001-index.htm",
-    "kesildi": false,
-    "karakter": 206527
+    "tip": "sali_raporu",
+    "tarih": "2026-09-26",
+    "url": "https://www.ionq.com/news/ionq-to-advance-quantum-supercomputing-by-bringing-first-qpu-to-nvidia-accelerated-quantum-research-center"
    },
    "olgu_mu": false,
-   "haberler": [],
-   "radar": []
+   "haberler": [
+    {
+     "kategori": "urun_sozlesme",
+     "tarih": "2026-09-22",
+     "baslik": "Tek bir hazır CPU üzerinde uçtan uca gerçek zamanlı kuantum hata kod çözücü",
+     "olgu": "IonQ, sektörün ilk uçtan uca gerçek zamanlı kuantum hata düzeltme kod çözücüsünü gösterdiğini açıkladı. Kod çözücü tek bir standart CPU'da çalışıyor. Şirkete göre bu, Walking Cat mimarisinin temel bir ayağını doğruluyor ve mantıksal kübit sayısı arttıkça klasik donanım yükünün üstel büyümesi gerekmediğini gösteriyor.",
+     "yorum": "Hata toleranslı yol haritasındaki önemli bir mühendislik darboğazını (kod çözme gecikmesi ve klasik donanım maliyeti) azaltıyor, bu yüzden rekabet sütunu için anlamlı. Ancak sonuç şirketin kendi açıklaması; hakemli ve bağımsız bir tekrar henüz yok. Gelire etkisi yok, zamanlamaya etkisi de dolaylı.",
+     "etki": "destekler",
+     "sutun_id": "rekabet",
+     "onem": 4,
+     "kaynak_url": "https://www.ionq.com/news/ionq-demonstrates-industrys-first-end-to-end-real-time-quantum-error-decoder",
+     "kaynak_adi": "IonQ"
+    },
+    {
+     "kategori": "musteri",
+     "tarih": "2026-09-23",
+     "baslik": "Superion 256, NVIDIA Accelerated Quantum Research Center'daki ilk yerinde QPU olacak",
+     "olgu": "Superion 256, NVIDIA'nın kuantum araştırma merkezine kurulacak ilk sistem olacak ve NVQLink ile NVIDIA'nın GPU altyapısına bağlanacak. Kurulum 2027'de planlanıyor. Motley Fool'un haberinde finansal ya da ücretli ticari şart açıklanmadığı belirtiliyor.",
+     "yorum": "Bu bir itibar ve ekosistem kazanımı. Hibrit kuantum-GPU standardında IonQ'nun 'varsayılan donanım' olma iddiasını güçlendiriyor. Buna karşın sözleşme büyüklüğü bilinmiyor ve anlamlı bir gelir kalemi olacağına dair veri yok. NVIDIA birden fazla modaliteyle çalışabilir; münhasırlık bilgisi de yok.",
+     "etki": "destekler",
+     "sutun_id": "rekabet",
+     "onem": 4,
+     "kaynak_url": "https://www.ionq.com/news/ionq-to-advance-quantum-supercomputing-by-bringing-first-qpu-to-nvidia-accelerated-quantum-research-center",
+     "kaynak_adi": "IonQ"
+    },
+    {
+     "kategori": "rakip",
+     "tarih": "2026-09-08",
+     "baslik": "Rigetti, ABD Ticaret Bakanlığı ile 100 milyon $'lık CHIPS Ar-Ge anlaşması imzaladı",
+     "olgu": "Rigetti'nin iştiraki, CHIPS Ar-Ge kapsamında ABD Ticaret Bakanlığı ile 100 milyon $'lık bir fon anlaşması imzaladı. Karşılığında Bakanlık Rigetti'de azınlık ve kontrol vermeyen bir hisse alacak.",
+     "yorum": "Dönem dışında gerçekleşti, ama bu hafta sektör haberlerinde yeniden gündemdeydi. Devletin süperiletken rakiplere doğrudan sermaye koyması rekabet ortamını değiştiriyor. 10-Q'da CHIPS teşviklerinin rakipleri güçlendirdiği risk faktörü zaten vardı.",
+     "etki": "zayiflatir",
+     "sutun_id": "rekabet",
+     "onem": 2,
+     "kaynak_url": "https://investors.rigetti.com/news-releases/news-release-details/rigetti-signs-definitive-agreement-100m-us-government-accelerate",
+     "kaynak_adi": "Rigetti"
+    },
+    {
+     "kategori": "sektor",
+     "tarih": "2026-09-22",
+     "baslik": "Kuantum şirketlerinde içeriden satış teması (895 milyon $ uyarısı)",
+     "olgu": "Motley Fool, IonQ, Rigetti, D-Wave ve QUBT'de içeriden satışların yatırımcılar için kırmızı bayrak olduğunu yazdı. Habere göre IonQ'da son iki yılda kümülatif içeriden alım yaklaşık 2,25 milyon $.",
+     "yorum": "Makalenin başlık rakamı dört şirketin toplamı ve IonQ'ya özel değil. Veri paketindeki IonQ Form 4 verisiyle tutarlı olan kısım şu: son 180 günde açık piyasa alımı (P) yok.",
+     "etki": "zayiflatir",
+     "sutun_id": "rekabet",
+     "onem": 2,
+     "kaynak_url": "https://www.fool.com/investing/2026/09/22/ionq-rigetti-dwave-quantum-computing-send-shockwaves-through-wall-street-with-895-million-warning/",
+     "kaynak_adi": "The Motley Fool"
+    },
+    {
+     "kategori": "urun_sozlesme",
+     "tarih": "2026-09-24",
+     "baslik": "Uygulama gösterimleri: radar değişim tespiti ve doğalgaz şebekesi optimizasyonu",
+     "olgu": "IonQ, yüksek çözünürlüklü uydu radarında değişim tespiti için kuantum üretken modelleme gösterdi. Classiq ve Israel Natural Gas Lines ile de doğalgaz iletim şebekelerinde kuantum optimizasyonu çalışması duyuruldu.",
+     "yorum": "Bunlar ticari sözleşme değil, kullanım alanı gösterimleri. Savunma ve enerji dikeylerinde pazar geliştirme sinyali taşıyor; gelir etkisi yok.",
+     "etki": "notr",
+     "sutun_id": "rekabet",
+     "onem": 1,
+     "kaynak_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMWtLWHJpN3ZCZmpRalduLUVFTFYwTVFrOFh6QzdURGUxWlE0a0c0anA4SlFuenVRQ3o4LUphMExhbXZnUVVhNUxETjRrOHRVYkI3N0NtbVUzai1iem5oYlc1OXBEaWItblcxQS1MdUFpQllkXzQ0MzJQeWJLZWNYUnhBem43dDZQREJPVHFoYUFMYjI2N1FUcDJWd2ZUQXRhY0w1bG5MN2ZnRld5VU9PaVpsM08?oc=5",
+     "kaynak_adi": "IonQ"
+    }
+   ],
+   "radar": [
+    {
+     "kategori": "konferans",
+     "sinyal": "Quantum World Congress haftası: sektör hisseleri konferans öncesinde yükseldi. IonQ duyurularını (NVIDIA, FIU) bu takvimle eşzamanladı.",
+     "yorum": "Konferans kaynaklı haber kümelenmesi genelde kısa ömürlü fiyat etkisi yaratır. Ticari teyit, sonraki çeyrek RPO ve gelir rakamlarında aranmalı.",
+     "yon": "belirsiz",
+     "guven": "orta",
+     "sutun_id": "rekabet",
+     "tarih": "2026-09-23",
+     "kaynak_url": "https://finnhub.io/api/news?id=ec2ce66fbf348355273ffea4a4efc94c5fdd6847835b78ccb938b111a22e1c77"
+    },
+    {
+     "kategori": "ise_alim",
+     "sinyal": "Eski IBM kamu sektörü kuantum lideri Charles Robinson, IonQ'nun ilk kamu sektörü kuantum güvenliği yöneticisi olarak atandı (başlık düzeyinde bilgi).",
+     "yorum": "Kamu ve savunma satışlarına yönelik bir yoğunlaşma sinyali. İş ilanı yoğunluğu verisi yok; tek bir üst düzey işe alım.",
+     "yon": "olumlu",
+     "guven": "dusuk",
+     "sutun_id": "rekabet",
+     "tarih": "2026-09-21",
+     "kaynak_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNXVFY05JRThGWUFsNmNiVjBWVlZnRlJYY19ZV3VZdXVoZHVPOHIwNHFuRHJ1QzFhRkRHMlpMdnRBMUpqWkFrNlJfbVlIclNJVTJiQ1ZjYWlzWWMxcTFTV2xyT0ZJZmpQMm5vOGpZaGduc2VRc3FhaWk0QWdaVERrV0ZWemtwTHZqZDRJZkJjODdWelVRSXBPYnlXY3UtbVAwSjN2Wi1nMA?oc=5"
+    },
+    {
+     "kategori": "sektor_tedarik",
+     "sinyal": "ABD hükümeti, CHIPS Ar-Ge kapsamında Rigetti'ye hisse karşılığı 100 milyon $ fon verdi.",
+     "yorum": "Devletin süperiletken modaliteye doğrudan sermaye koyması, IonQ'nun kamu fonlarındaki payı için rekabet baskısı sinyali. IonQ'ya benzer bir anlaşma haberi bulunamadı.",
+     "yon": "olumsuz",
+     "guven": "orta",
+     "sutun_id": "rekabet",
+     "tarih": "2026-09-08",
+     "kaynak_url": "https://investors.rigetti.com/news-releases/news-release-details/rigetti-signs-definitive-agreement-100m-us-government-accelerate"
+    }
+   ]
   }
  ],
  "cikis": [
@@ -403,6 +561,6 @@
   }
  ],
  "son_ceyrek": "FY2026 Q2",
- "guncelleme": "2026-09-26T12:15:01+00:00",
+ "guncelleme": "2026-09-26T12:40:35+00:00",
  "not": "Tez durumu fiyattan bağımsızdır. Fiyat düşüşü tek başına tezin bozulduğu anlamına gelmez."
 }

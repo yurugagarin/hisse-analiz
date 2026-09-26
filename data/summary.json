@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-09-26T12:15:01+00:00",
+ "guncelleme": "2026-09-26T12:40:35+00:00",
  "hisseler": {
   "NVDA": {
    "ticker": "NVDA",
@@ -25,7 +25,7 @@
     "zirveden_uzaklik": -4.53,
     "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
     "kaynak": "Nasdaq.com (historical API)",
-    "guncelleme": "2026-09-26T11:58:18+00:00",
+    "guncelleme": "2026-09-26T12:16:02+00:00",
     "taze": true,
     "finnhub_52h_zirve_gun_ici": 236.54
    },
@@ -141,7 +141,7 @@
     "ceyrek": 3,
     "yil": 2027,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-26T11:58:58+00:00"
+    "guncelleme": "2026-09-26T12:16:44+00:00"
    },
    "grafik": [
     [
@@ -1202,37 +1202,43 @@
    },
    "gelismeler": [
     {
+     "kategori": "musteri",
      "tarih": "2026-09-25",
-     "baslik": "SCHMID surges after Nvidia, AMD, Intel consider using glass substrates in chips",
-     "olgu": null,
-     "yorum": null,
-     "sutun_id": null,
-     "etki": null,
-     "kaynak_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdXhLZHd2a0czR1RUQ19QaWlSenZxSmNoRVJSMWo2VnJjV0d1UGhSeVdHdjdxeUNuOVlzQmRHTUZVZkZXRmx5c1RSYUg4cVpGcFYzUk1LZDlrMjNQTGlBY1FNVUlUODhTNHBFb3kxQl9yNFRILXctd0c1Sy1PeHhxWURXRWxFbE9ibjdTWWV3VFJvRU53NHZaVGd6ckJHa2FVYVpRcmhNZFh1QVV1dmZWbThjOUNNUQ?oc=5",
-     "kaynak_adi": "Seeking Alpha"
+     "baslik": "Musk: Colossus 2 yıl sonuna kadar 1,2 milyonun üzerinde Nvidia GPU'su çalıştırabilir",
+     "olgu": "Musk'a göre Colossus 2'de şu an 110.000 GB200 ve 440.000 GB300 çalışıyor. Ek 220.000 GB300 bir sonraki hafta, 220.000 Kasım'da, şanslı olunursa 220.000 daha Aralık sonunda devreye girecek. Toplam 1,21 milyon işlemciye ulaşılması hedefleniyor.",
+     "yorum": "Hyperscaler dışı dev bir müşterinin Blackwell talebinin sürdüğünü gösteriyor ve 'buyume' sütununu destekliyor. Öte yandan xAI/SpaceX de yoğunlaşmış müşteri tabanının parçası. Rakamlar Musk'ın 'şanslıysak' koşulunu taşıyor; sipariş değil, kurulum planı.",
+     "etki": "destekler",
+     "sutun_id": "buyume",
+     "onem": 4,
+     "kaynak_url": "https://www.benzinga.com/markets/tech/26/09/61991512/elon-musk-says-spacexais-colossus-2-could-run-more-than-1-2-million-nvidia-gb200-and-gb300-chips-by-year-end-if-we-get-lucky",
+     "kaynak_adi": "Benzinga"
     },
     {
-     "tarih": "2026-09-25",
-     "baslik": "Nvidia Stock: Here’s How Many AI Chips SpaceX Is Buying.",
-     "olgu": null,
-     "yorum": null,
-     "sutun_id": null,
-     "etki": null,
-     "kaynak_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZEoxQzk3Mno1cFg0Mm1RbEJ6RklMRUJrSWdQeHo3aE52czJ6VDJuNzZSaWpudmIwdURaVmxCSXk2MkZDalM2MXRIVU40ck5ZeFJFak05OUk4MzJuM3FoU1JJYTVDN3JBcHJKT1htT0pjaFBFY2liRVFJM2xlUlZaZXduOVM?oc=5",
-     "kaynak_adi": "Barron's"
+     "kategori": "duzenleme",
+     "tarih": "2026-09-24",
+     "baslik": "Trump–Xi zirvesi: H200 onayı var, Çin tarafı alımı engelliyor",
+     "olgu": "Washington H200 satışlarını onayladı, ancak Pekin kendi şirketlerinin alımını engelledi. Lutnick'e göre Çinli firmalar yatırımı Huawei dahil yerli tedarikçilere yöneltiyor. Çin Devlet Konseyi ABD yarı iletkenlerine bağımlılığı azaltmayı hedefleyen bir tedarik zinciri güvenlik incelemesi başlattı.",
+     "yorum": "NVDA'nın rehberliği zaten Çin veri merkezi satışı varsaymıyordu. Bu yüzden kısa vadeli rakamlara etkisi sınırlı. Ancak 10-Q'da kabul edilen 'Çin'den fiilen dışlanma ve rakip ekosistemin güçlenmesi' riski kalıcılaşıyor. Opsiyon değeri olarak görülen Çin yukarı yönlü senaryosu zayıfladı.",
+     "etki": "zayiflatir",
+     "sutun_id": "rekabet_musteri",
+     "onem": 4,
+     "kaynak_url": "https://www.artificialintelligence-news.com/news/nvidia-h200-china-deal-stalled-trump-xi-summit-2026/",
+     "kaynak_adi": "AI News"
     },
     {
-     "tarih": "2026-09-25",
-     "baslik": "Micron vs. NVIDIA: 1 AI Stock to Buy Now and 1 to Watch",
-     "olgu": null,
-     "yorum": null,
-     "sutun_id": null,
-     "etki": null,
-     "kaynak_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNHZMLXJwT2RDUkh5bnZPNnpsUG41Qmp0X3dONHF1a1dRMW9vdFNKX3VkaEgwVHZqank5bmRfODlSSFpLbkZDemo3M2pQSzBNVy02dUVNdzF5WVVtWno3RXM4N0R3bXlPVjlUeE9NZzdtUkVLNDFsTVVnTm5pZW5wb0p0VUhXbk5Da2g2b1FNcw?oc=5",
-     "kaynak_adi": "Yahoo Finance"
+     "kategori": "rakip",
+     "tarih": "2026-09-23",
+     "baslik": "Google TPU ekosistemi finansman buluyor; NVDA'da 'TPU ikilemi'",
+     "olgu": "Barron's'a göre Anthropic, büyük kısmı TPU ile çalışan 1 GW'a kadar kapasite kiralamak için Stream Data Centers ile görüşüyor. 10 bankalık bir sendika, Blackstone ve Alphabet destekli Crux AI'a TPU alımı için 22 milyar $ kredi sağlamayı kabul etti. PHLX Yarı İletken Endeksi son üç ayda %5,9 düştü.",
+     "yorum": "TPU'nun artık yalnızca Google içi değil, üçüncü taraf finansmanla ölçeklenen bir alternatif olması önemli. Bankaların ASIC altyapısını kredilendirmesi, NVDA'nın 'tek standart' primini aşındırıyor. Bu, çarpan sıkışmasının ana açıklamalarından biri.",
+     "etki": "zayiflatir",
+     "sutun_id": "rekabet_musteri",
+     "onem": 4,
+     "kaynak_url": "https://www.moomoo.com/news/post/1000103358/nvidia-stock-falls-it-has-a-google-ai-chip-conundrum",
+     "kaynak_adi": "Barron's (Moomoo)"
     }
    ],
-   "haber_yontem": "Otomatik seçim (Claude yok): son 7 gün, şirket adı geçen + güvenilir kaynak öncelikli. Salı raporunda Claude seçimi gösterilir.",
+   "haber_yontem": "Salı raporu (2026-09-26) — Claude seçimi",
    "buyuk_hareketler": [],
    "kural": {
     "durum": "tetiklenmedi",
@@ -1268,9 +1274,21 @@
     "xbrl_beklemede": false
    },
    "sali_raporu": {
-    "hafta": null,
-    "tarih": null,
-    "dca_notu": null
+    "hafta": "2026-W39",
+    "tarih": "2026-09-26",
+    "dca_notu": {
+     "kural_durumu": "Tetiklenmedi. Hisse zirveden (235,74 $, 14.05.2026) −%4,53 uzakta. İlk kademe −%15'te (DCA 1,5x, tez sağlamsa), ikincisi −%25'te (2x; stok ve brüt marj sütunlarını kontrol et), üçüncüsü −%35'te. Kural koşulu 'tez_saglam' ve sistem bunu sağlanıyor gösteriyor; ancak genel tez sarı. Düşüş kaynağı piyasa/sektör olarak sınıflandı (SMH zirveden −%9,32, QQQ −%0,4). Bu hafta için standart DCA dışında kural bazlı ek bir sinyal yok.",
+     "riskler": [
+      "Kazanç kalitesi sütunu kırmızı eşiğinde (0,70x). Kasım sonundaki Q3 10-Q'sında eşiğin altına inerse, kural motorunun 'tez_saglam' koşulu sorgulanır ve −%15 kademesi tetiklense bile 1,5x koşulu tartışmalı hale gelir.",
+      "30 Eylül'deki Micron bilançosu: HBM/DRAM fiyatlaması, NVDA brüt marjı için öncü gösterge. Konsensüs zaten %72'nin altını bekliyor.",
+      "Döngüsel finansman ve kredi riski: SB Energy halka arzının fiyatlaması, Nscale halka arzı ve CDS spread'leri. Bu halka arzlardaki zayıflık 'Other income' kalemini ve garanti risk algısını doğrudan etkiler.",
+      "Rekabet ve rotasyon: TPU ve AMD'ye kayan sermaye akışı, temel veriler güçlü olsa bile NVDA'nın göreli performansını haftalarca baskılayabilir. Hisse bu hafta SMH'nin yaklaşık 4,6 puan gerisinde kaldı.",
+      "Makro: 10 yıllık faizin %5'e ulaşması ve piyasada konuşulan faiz artırımı senaryosu büyüme çarpanlarını daha da sıkıştırabilir.",
+      "İçeriden satış arzı: yönetim kurulu düzeyinde plan dışı yoğun satış sürerse fiyat üzerinde teknik baskı ve algı riski yaratır.",
+      "Düzenleme: DOJ'un Groq incelemesi, Hugging Face satın alma onayı ve Huang'ın AI politikasındaki yüksek profili."
+     ],
+     "not": "Bilgi amaçlıdır, talimat değildir. Fiyat hareketi (haftalık +%1,26, endeksin gerisinde) ile tez durumu (sarı, değişmedi) birbirinden ayrı tutulmalı. Bu hafta tezde yeni bir kırılma yok, ancak zayıf halka netleşti. Çarşamba kararına bir yatırımcının bakacağı iki soru şunlar olabilir: (1) Pozisyon büyüklüğü, 'finanse edilen talep' senaryosunun gerçekleşmesi durumunda taşınabilir mi? (2) −%15 kademesi tetiklendiğinde, o anki kazanç kalitesi verisi 1,5x koşulunu hâlâ karşılayacak mı?"
+    }
    }
   },
   "META": {
@@ -1297,7 +1315,7 @@
     "zirveden_uzaklik": -3.33,
     "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
     "kaynak": "Nasdaq.com (historical API)",
-    "guncelleme": "2026-09-26T11:58:20+00:00",
+    "guncelleme": "2026-09-26T12:16:06+00:00",
     "taze": true,
     "finnhub_52h_zirve_gun_ici": 779.8192
    },
@@ -1413,7 +1431,7 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-26T11:59:02+00:00"
+    "guncelleme": "2026-09-26T12:16:47+00:00"
    },
    "grafik": [
     [
@@ -2474,37 +2492,43 @@
    },
    "gelismeler": [
     {
-     "tarih": "2026-09-25",
-     "baslik": "Meta bets on the 'Muse AI' revenue roadmap",
-     "olgu": "Meta shares have risen more than 25% since announcing its new Muse AI agent, in a move set to shake up the consumer AI space. CNBC's Karen Tso looks at the biggest announcements from the week and why Wall Street is buying into its revenue roadmap.",
-     "yorum": null,
-     "sutun_id": null,
-     "etki": null,
-     "kaynak_url": "https://finnhub.io/api/news?id=af6e07bf39d5ab244035d354f0883c8f2ffd1148866efeafdb464f6783abb4e4",
-     "kaynak_adi": "CNBC"
+     "kategori": "sirket",
+     "tarih": "2026-09-21",
+     "baslik": "Muse App Store'da 1 numara, Wells Fargo hedefi 796 $'a çıkardı, hisse %11 yükseldi",
+     "olgu": "Meta hissesi 21 Eylül'de %11 yükselerek 741 $'dan kapandı. Wells Fargo analisti Ken Gawrelski, Muse'un erken ivmesini gerekçe göstererek hedef fiyatı 640 $'dan 796 $'a yükseltti ve Al tavsiyesini korudu. Muse, Apple ABD App Store'da birinci sıraya çıkmıştı.",
+     "yorum": "Hareket, ürün tarafındaki ilk kullanıcı verisiyle tetiklendi. Ancak ortada henüz gelir verisi yok; indirme sayısı kalıcı kullanım ve para kazanma anlamına gelmez. AI yatırımının getirisine dair duyguyu iyileştiriyor ama sütunu sayısal olarak henüz desteklemiyor.",
+     "etki": "destekler",
+     "sutun_id": "ai_getirisi",
+     "onem": 4,
+     "kaynak_url": "https://www.tipranks.com/news/why-meta-stock-jumped-over-11-today-september-21-2026",
+     "kaynak_adi": "TipRanks"
     },
     {
-     "tarih": "2026-09-24",
-     "baslik": "Can Meta keep riding the Muse momentum?",
-     "olgu": "The 'Fast Money' traders discuss Meta's strong September performance and whether the gains will last.",
-     "yorum": null,
-     "sutun_id": null,
-     "etki": null,
-     "kaynak_url": "https://finnhub.io/api/news?id=b78d815349c87ebe1b12a94f211ed146d2d92a91d4f79c8899878ae014065c48",
-     "kaynak_adi": "CNBC"
+     "kategori": "urun_sozlesme",
+     "tarih": "2026-09-23",
+     "baslik": "Connect 2026: 1.299 $'lık VR Glasses, Muse Charm, yeni gözlük serisi",
+     "olgu": "Meta, 1.299,99 $ fiyatlı Meta VR Glasses'ı tanıttı; ürün 2027 baharında satışa çıkacak. Anahtarlık boyutundaki Muse Charm cihazının Aralık'ta tatil sezonuna yetiştirilmesi planlanıyor; fiyat açıklanmadı.",
+     "yorum": "Donanım tarafı, Reality Labs zararını kısa vadede azaltmaktan çok artırma eğiliminde. 10-Q rehberine göre 2026 RL zararı 2025'e benzer olacak. VR Glasses'ın 2027 baharına kalması bu yılın rakamlarına katkı olmayacağı anlamına geliyor.",
+     "etki": "notr",
+     "sutun_id": "marj",
+     "onem": 3,
+     "kaynak_url": "https://qz.com/meta-vr-glasses-muse-charm-connect-2026-092426",
+     "kaynak_adi": "Quartz"
     },
     {
-     "tarih": "2026-09-24",
-     "baslik": "Meta gets to consumer AI device market before OpenAI, but Zuckerberg's strategy remains unproven",
-     "olgu": "Meta CEO Mark Zuckerberg's new Muse Charm device is intended to put his company ahead of rivals like OpenAI and Google in AI agents and consumer hardware.",
-     "yorum": null,
-     "sutun_id": null,
-     "etki": null,
-     "kaynak_url": "https://finnhub.io/api/news?id=22b84f61a5910e290b8129a1052032001736ad4040d091d51555fe24fa8b6a9d",
-     "kaynak_adi": "CNBC"
+     "kategori": "urun_sozlesme",
+     "tarih": "2026-09-23",
+     "baslik": "Zuckerberg: Muse işlemlerden küçük bir komisyon alacak",
+     "olgu": "Zuckerberg, Muse'un kullanıcı adına tamamladığı işlemlerden Meta'nın küçük bir pay alacağını söyledi. Ücret kullanıcıdan değil tüccardan alınacak.",
+     "yorum": "Reklam dışındaki ilk ölçeklenebilir gelir modeli sinyali bu. Ancak komisyon oranı ve takvim açıklanmadı; gelir etkisi modellenemez.",
+     "etki": "destekler",
+     "sutun_id": "ai_getirisi",
+     "onem": 4,
+     "kaynak_url": "https://finance.yahoo.com/technology/article/metas-zuckerberg-says-muse-ai-agent-will-take-a-small-fee-from-transactions-234639802.html",
+     "kaynak_adi": "Yahoo Finance"
     }
    ],
-   "haber_yontem": "Otomatik seçim (Claude yok): son 7 gün, şirket adı geçen + güvenilir kaynak öncelikli. Salı raporunda Claude seçimi gösterilir.",
+   "haber_yontem": "Salı raporu (2026-09-26) — Claude seçimi",
    "buyuk_hareketler": [
     {
      "tarih": "2026-09-21",
@@ -2546,9 +2570,20 @@
     "xbrl_beklemede": false
    },
    "sali_raporu": {
-    "hafta": null,
-    "tarih": null,
-    "dca_notu": null
+    "hafta": "2026-W39",
+    "tarih": "2026-09-26",
+    "dca_notu": {
+     "kural_durumu": "Tetiklenmedi. Hisse 52 haftalık zirvenin (777,59 $, 24 Eylül) %3,33 altında. İlk kademe -%15'te (1,5x DCA, tez sağlamsa); bu, zirveye göre yaklaşık 661 $ seviyesine denk geliyor. Sonraki kademeler -%25 (2x; capex/FCF sütununu kontrol et) ve -%35. Kuralın 'tez sağlam' koşulu sistemde sağlanıyor görünüyor, ancak genel tez durumu SARI. Düşüş kaynağı sınıflaması 'piyasa/sektör'.",
+     "riskler": [
+      "Momentum riski: Hisse bir ayda %30,46, bir haftada %12,9 yükseldi; 25 Eylül'deki geri çekilme ralli sonrası kırılganlığı gösterdi. Normal haftalık DCA tutarı zirveye yakın bir seviyeden giriyor.",
+      "Q3 bilançosu (tarih veri paketinde yok): FCF'nin negatife dönmesi, geri alımın sıfır kalması veya capex rehberinin yükseltilmesi 'capex_nakit' ve 'sulandirma' sütunlarını sarıya çevirebilir. Bu durumda kuralın 'tez sağlam' koşulu sorgulanır hâle gelir.",
+      "Muse maliyeti: Kullanıcı başı işlem maliyeti ve ücretsiz katman, faaliyet marjını (%38,08; eşik %35) eşiğin altına itebilir.",
+      "Dava/regülasyon: New Mexico'daki iki karar, AB WhatsApp ara tedbiri ve DMA/DSA süreçleri. Dava karşılıkları Q3 kârını etkileyebilir.",
+      "Kredi piyasası: Hyperscaler borç arzına karşı artan temkin, finansman maliyetini yükseltebilir.",
+      "Insider: 24 Eylül'de yeni Form 144 bildirimi var; önümüzdeki haftalarda planlı satışların sürmesi bekleniyor. Bilgi değeri düşük ama duygu üzerinde etkili olabilir."
+     ],
+     "not": "Bu bir talimat değil, bilgi notudur. Kural sistemi bu hafta ek alım kademesi önermiyor; haftalık rutin DCA kendi planına tabi. Fiyat ile tez ayrı değerlendirilmeli. Fiyat bu hafta Muse beklentisiyle yükseldi, tez sütunları ise sayısal olarak değişmedi ve nakit tarafında aşağı eğilimli. İlk kademeye (~%15 düşüş) gelinirse, kuralın '1,5x' notunu uygulamadan önce Q3 FCF ve geri alım verisinin tezi hâlâ 'sağlam' kılıp kılmadığı kontrol edilmeli."
+    }
    }
   },
   "NOW": {
@@ -2575,7 +2610,7 @@
     "zirveden_uzaklik": -28.34,
     "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
     "kaynak": "Nasdaq.com (historical API)",
-    "guncelleme": "2026-09-26T11:58:22+00:00",
+    "guncelleme": "2026-09-26T12:16:09+00:00",
     "taze": true,
     "finnhub_52h_zirve_gun_ici": 194.73
    },
@@ -2691,7 +2726,7 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-26T11:59:05+00:00"
+    "guncelleme": "2026-09-26T12:16:50+00:00"
    },
    "grafik": [
     [
@@ -3752,37 +3787,43 @@
    },
    "gelismeler": [
     {
-     "tarih": "2026-09-25",
-     "baslik": "ServiceNow Inc. stock outperforms competitors despite losses on the day",
-     "olgu": null,
-     "yorum": null,
-     "sutun_id": null,
-     "etki": null,
-     "kaynak_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNUllySFFRUnRKcjlJQkVNOEJqemQ5bEF2YlZpRDFiOV9xS2ctU1V0bnpBbHVyMGhVSzc4a3d6eVRkV3NIdmFfNGMzNENBMXdZZmNpeTlVeVVwUU1nSGp2aEdBalpvUlNhLUZuOHFGSDY1U2pFandZZnUwQml1MGg3X1JGeVowemx1OGJPU2JXN1N3Zmp4d1JJMXo2LTNLQ3d3SmdYMjZfcUpfMnlaOGwzNk0xUDhQeWtaWWdzVGhtb3dWRHB2dkVqUU9xQVhJb1lyb0hKZWhsT1ZGdzMyaV9xOWl3?oc=5",
-     "kaynak_adi": "marketwatch.com"
+     "kategori": "sirket",
+     "tarih": "2026-09-21",
+     "baslik": "Cantor Fitzgerald hedef fiyatı 141 $'dan 174 $'a yükseltti, 'overweight' notunu korudu",
+     "olgu": "Cantor, yatırımcı görüşmelerinde NOW'a ilişkin algının güvenlik odaklı ajan platformları sayesinde olumluya döndüğünü söylüyor. Kanal kontrolleri, müşterilerin genişletilmiş Now Assist paketlerine erişmek için üst katmanlara geçtiğini gösteriyor. Aracı kurum bunu şirketin 2026 AI ACV hedefini desteklediği şeklinde yorumluyor.",
+     "yorum": "Hedef fiyat artışının kendisi az bilgi taşıyor. Değerli kısım kanal kontrolü: 'tier upgrade' hareketi, AI'ın ayrı bir SKU'dan çok Pro Plus/Enterprise Plus fiyat katmanı üzerinden paraya çevrildiğini gösteriyor. Bu, ai_ve_yenileme sütunu için nitel destek. Ancak AI gelirinin brüt marjı ve organik katkısı hâlâ açıklanmıyor.",
+     "etki": "destekler",
+     "sutun_id": "ai_ve_yenileme",
+     "onem": 3,
+     "kaynak_url": "https://www.investing.com/news/analyst-ratings/cantor-fitzgerald-raises-servicenow-stock-price-target-on-ai-demand-93CH-4909057",
+     "kaynak_adi": "Investing.com"
     },
     {
-     "tarih": "2026-09-24",
-     "baslik": "ServiceNow Inc. stock underperforms Thursday when compared to competitors",
-     "olgu": null,
-     "yorum": null,
+     "kategori": "sirket",
+     "tarih": "2026-09-21",
+     "baslik": "Deutsche Bank hedef fiyatı 135 $'dan 155 $'a yükseltti, 'buy' notunu korudu",
+     "olgu": "MarketBeat'e göre Deutsche Bank hedef fiyatı 135 $'dan 155 $'a çıkardı ve 'buy' notunu korudu. Needham da 11 Eylül'de hedefini 115 $'dan 155 $'a yükseltmişti.",
+     "yorum": "Revizyonların ortak noktası, hedeflerin daha önce 115-141 $ bandına kadar indirilmiş olması. Yani analistler geç kalmış bir toparlanmayı takip ediyor. Fiyat hareketiyle ilgili bir bilgi, tez metrikleriyle ilgili değil.",
+     "etki": "notr",
      "sutun_id": null,
-     "etki": null,
-     "kaynak_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOQlVQQnFLTUZrM1Juckhua1V3QlRxQnBiUXlUVUdxZzRPMlhvVTh2R08yQ1Myci1ZQ0wwWndSQlpJLXZQRHd1ZWlQMXlJcHJRclpQbU1GLU9kbmI2U0VtQjFWdEdpNlpxa19ibnNJLS1VUXg3NnVSZzF5SUJTNTNYYVZDU3BhUF9vU0t2c0xBRGZ0UnVtM3g1SlJERzJvZVlacS05dFdXOFRHc21UTnVYamFaUnFhU0xaXzNTSVFEOUVhc3ZXZENtazEwVHNSVENEeXd4dVNwdy1vWDRRc0ZWb24xeGc?oc=5",
-     "kaynak_adi": "marketwatch.com"
+     "onem": 2,
+     "kaynak_url": "https://www.marketbeat.com/instant-alerts/analyst-servicenow-nyse-now-given-new-15500-price-target-at-deutsche-bank-aktiengesellschaft-2026-09-24/",
+     "kaynak_adi": "MarketBeat"
     },
     {
+     "kategori": "urun_sozlesme",
      "tarih": "2026-09-24",
-     "baslik": "Final Trades: F/m US Treasury 2 Year Note ETF, iShares US Basic Materials ETF, ServiceNow and Quanta Services",
-     "olgu": null,
-     "yorum": null,
-     "sutun_id": null,
-     "etki": null,
-     "kaynak_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQOGUya3lZVVp1UmZ3b2JJNEN1akM2MEdSOHBobFdHWndLMURDSTFLYXRxbDN6R3RDNGJFZnVjNGxYRW1OSDdYdXgwQlFNSXlNdTc3UUhlMzU1UFVXUG8xcjVNZmVOZWtTbTVoNE1NTHY4WGJ2YkFGQnF1anJtcExYc3hIRHBiSk01b3hjckh6bmJEMU5paDZzSmh3OHphdFNyZWdaT2w0MTNoLUZzOW11UEtkNmdyS3RtZFJVWS1wbktkR2FHdFQ0ZF9odWdOY3o5SVZzLUhMLVQ?oc=5",
-     "kaynak_adi": "CNBC"
+     "baslik": "ServiceNow AI Platform için beş CVE: kimlik doğrulaması gerektirmeyen kritik SQL enjeksiyonu",
+     "olgu": "KB3159623 numaralı güvenlik bülteni beş CVE içeriyor. CVE-2026-13016 kritik bir SQL enjeksiyonu: belirli koşullarda kimliği doğrulanmamış bir saldırganın veritabanında keyfi SQL çalıştırmasına izin veriyor. CVE-2026-86860 da kritik; eksik yetkilendirme yüzünden veri sızdırılabiliyor. Şirket, açıkların sahada kötüye kullanıldığına dair kanıt bulmadığını ve kendi sunucusunda barındıran (self-hosted) müşterilerin yama yapması gerektiğini açıkladı.",
+     "yorum": "Finansal etkisi kısa vadede sınırlı. Stratejik açıdan ise hassas: NOW kendini 'AI Control Tower' ve yönetişim katmanı olarak satıyor. Platformun kendisinde kimlik doğrulamasız kritik açık çıkması bu anlatıyı zayıflatır. Açıklardan biri sahada kullanılırsa ve bir müşteri ihlali duyurulursa, yenileme görüşmelerinde pazarlık gücü rakiplere kayabilir. Şu an için izlenecek bir risk.",
+     "etki": "zayiflatir",
+     "sutun_id": "ai_ve_yenileme",
+     "onem": 3,
+     "kaynak_url": "https://www.bleepingcomputer.com/news/security/servicenow-warns-of-three-max-severity-security-vulnerabilities/",
+     "kaynak_adi": "BleepingComputer"
     }
    ],
-   "haber_yontem": "Otomatik seçim (Claude yok): son 7 gün, şirket adı geçen + güvenilir kaynak öncelikli. Salı raporunda Claude seçimi gösterilir.",
+   "haber_yontem": "Salı raporu (2026-09-26) — Claude seçimi",
    "buyuk_hareketler": [],
    "kural": {
     "durum": "tetiklendi_kosul_ok",
@@ -3821,9 +3862,21 @@
     "xbrl_beklemede": false
    },
    "sali_raporu": {
-    "hafta": null,
-    "tarih": null,
-    "dca_notu": null
+    "hafta": "2026-W39",
+    "tarih": "2026-09-26",
+    "dca_notu": {
+     "kural_durumu": "Tetiklendi, koşul sağlanıyor. Hisse zirveden −%28,3 aşağıda; −%15 ve −%25 kademeleri tetiklendi, −%35 kademesi tetiklenmedi. Senin önceden yazdığın not: 'DCA 2x; RPO ve SBC sütunlarını kontrol et.' Kontrol sonucu: RPO %21,34 (yeşil, eşik %18, ama düşüş eğiliminde; Q3 cRPO beklentisi %19,5). SBC %14,83 (yeşil, ama %15 eşiğine 0,17 puan kaldı). İki sütun da teknik olarak yeşil, dolayısıyla kuralın koşulu karşılanıyor. Tez genel durumu sarı ve onay durumu 'taslak'.",
+     "riskler": [
+      "28 Ekim Q3 bilançosu: cRPO büyümesi beklentinin (%19,5) altında gelirse gorunurluk sütunu eşiğe çok yaklaşır. SBC %15'i aşarsa sbc sütunu sarıya döner ve kuralın 'tez sağlam' koşulu tartışmalı hale gelir.",
+      "Düşüş 'şirkete özel' sınıflanıyor: NOW, IGV'nin 18,9 puan, QQQ'nun 27,9 puan gerisinde. Bu, sektör dibinden alım değil, hisseye özgü şüpheye karşı alım anlamına geliyor.",
+      "Kazanç kalitesi: GAAP faaliyet marjı %4, kârın büyük kısmı nakit dışı yeniden değerlemeden geliyor. Değerleme oranları non-GAAP'a göre hesaplanıyorsa gerçek çarpan daha yüksek.",
+      "Bilanço kaldıraçlandı (~7,5 milyar $ borç, 2,1 milyar $ kısa vadeli ticari senet). Faiz ortamı değişirse refinansman takvimi izlenmeli.",
+      "Kuyruk riskleri: açık DOJ soruşturması ile tek federal kanal ortağına %13 gelir yoğunlaşması; AI Platform'daki kritik CVE'lerin sahada istismar edilmesi.",
+      "Anlatı riski: AI ajanlarının koltuk bazlı modeli aşındırdığı hikâyesi (Muse) alt segmenti baskılamaya devam edebilir; fiyat −%35 kademesine uzanabilir.",
+      "Yöneticilerin 180 gündür açık piyasa alımı yok; Ağustos'taki kümelenmiş satışların çoğu plansızdı."
+     ],
+     "not": "Bu bilgi amaçlıdır, talimat değildir. Kural motoru ve tez metrikleri, önceden belirlediğin 2x DCA koşullarının teknik olarak sağlandığını gösteriyor. Ancak kontrol etmeni istediğin iki sütun (RPO ve SBC) eşiklere en yakın ve yönleri olumsuz. 28 Ekim'deki Q3 bilançosu bu iki sütunu doğrudan test edecek. Q3 sonuçlarından önce ve sonra alım yapmak arasında bir bilgi asimetrisi olduğunu bilmekte fayda var. Ayrıca tezin onay durumu hâlâ 'taslak'; kural koşullarının onaylanmamış bir teze dayandığını not et."
+    }
    }
   },
   "AAOI": {
@@ -3850,7 +3903,7 @@
     "zirveden_uzaklik": -54.55,
     "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
     "kaynak": "Nasdaq.com (historical API)",
-    "guncelleme": "2026-09-26T11:58:25+00:00",
+    "guncelleme": "2026-09-26T12:16:12+00:00",
     "taze": true,
     "finnhub_52h_zirve_gun_ici": 233.67
    },
@@ -3966,7 +4019,7 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-26T11:59:08+00:00"
+    "guncelleme": "2026-09-26T12:16:54+00:00"
    },
    "grafik": [
     [
@@ -5038,37 +5091,43 @@
    },
    "gelismeler": [
     {
+     "kategori": "urun_sozlesme",
      "tarih": "2026-09-24",
-     "baslik": "Applied Optoelectronics Inc (Derivatives) USD (AAOI-USD) Cryptocurrency Profile & Facts",
-     "olgu": null,
-     "yorum": null,
-     "sutun_id": null,
-     "etki": null,
-     "kaynak_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA0NVFJZFU3bUxLSDlaQ0JTeUo3dkYyYkZPWVRzVGdOT3ZCXzlIbDh0MGRwWEZrWlc1Q0Z0NkxZVFdWZmVxUjdIbGtnU3JieWpiMmg0LWFrTGVXMHc1S1E?oc=5",
-     "kaynak_adi": "Yahoo Finance"
+     "baslik": "AOI, SCTE TechExpo'da ilk canlı Quantum30 3,0 GHz konsept demosunu yapacak",
+     "olgu": "AOI, 29 Eylül–2 Ekim'de Atlanta'daki SCTE TechExpo'da koaksiyel kablo üzerinden 3,0 GHz downstream sinyal gösteren çalışan donanımla bir konsept demosu yapacağını duyurdu. Şirket bunun bir konsept kanıtı olduğunu, sektörün henüz 3,0 GHz standardı belirlemediğini belirtti. 'Beyond 1.8 GHz' başlıklı bir teknik makale de yayımlandı.",
+     "yorum": "CATV segmenti gelir tarafında önemli; en büyük müşteri CATV distribütörü Digicomm. Ancak bu duyuru standart bile olmayan bir teknoloji için yapılmış bir demo; kısa vadeli gelir etkisi yok. Hyperscaler/800G tezine katkısı sınırlı. Asıl mesaj, şirketin CATV'de ürün yol haritasını canlı tuttuğu.",
+     "etki": "notr",
+     "sutun_id": "musteri_kapasite",
+     "onem": 2,
+     "kaynak_url": "https://www.prnewswire.com/news-releases/aoi-brings-first-live-quantum30-3-0ghz-concept-demo-to-scte-techexpo-in-atlanta-302888539.html",
+     "kaynak_adi": "PR Newswire (şirket bülteni)"
     },
     {
-     "tarih": "2026-09-22",
-     "baslik": "Applied Optoelectronics Tokenized bStocks USD (AAOIB-USD) latest stock news and headlines – Yahoo Finance",
-     "olgu": null,
-     "yorum": null,
-     "sutun_id": null,
-     "etki": null,
-     "kaynak_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Ga0VYZWV2Rmt5TTV5UDM5M0lUM1ZGaU5vU0NEZ2gxSXE5QlVxMmdUMTM2RGFvLTYwZm5TblY0eU1ZNkllWHAxMzJ6ZlZ3Wlk2VVQ1TWhON01PMHJQQ3Mw?oc=5",
-     "kaynak_adi": "Yahoo Finance Singapore"
+     "kategori": "sirket",
+     "tarih": "2026-09-10",
+     "baslik": "Çin'de (Ningbo) 10 yıllık fabrika kira sözleşmesi (8-K)",
+     "olgu": "AAOI'nin tamamına sahip olduğu yan kuruluşu Global Technology, Ningbo'da 38.311,8 m²'lik bir fabrika binası için 16.09.2026–15.09.2036 dönemini kapsayan 10 yıllık kira sözleşmesi imzaladı. Yıllık kira 6.896.124 RMB; üçüncü yıldan itibaren her üç yılda bir %3 artış var. Sözleşmede 3 ay kirasız tadilat süresi ve satın almada ön alım hakkı bulunuyor.",
+     "yorum": "Dönem öncesine ait ama piyasada bu hafta konuşuldu (TipRanks haberi başlık listesinde). Kira tutarı küçük; asıl önemli olan stratejik sinyal. Kapasite artışının önemli kısmı Çin'e de yayılıyor. Bu, 'ABD içi üretim avantajı' tezini zayıflatıyor ve olası ABD'nin Çin üretimi alıcı-vericilere kısıtlaması/gümrük vergisi riskine maruziyeti artırıyor. Öte yandan kapasite darboğazını hızlı çözmenin en ucuz yolu olabilir.",
+     "etki": "zayiflatir",
+     "sutun_id": "musteri_kapasite",
+     "onem": 3,
+     "kaynak_url": "https://www.tipranks.com/news/company-announcements/applied-optoelectronics-expands-china-manufacturing-with-long-term-lease",
+     "kaynak_adi": "TipRanks / SEC 8-K"
     },
     {
-     "tarih": "2026-09-25",
-     "baslik": "Applied Optoelectronics (AAOI) Stock Looks Stretched As Its 13x Five Year Run Continues",
-     "olgu": "Applied Optoelectronics has delivered a very long run in its share price, and that kind of move naturally raises the question of whether the current valuation is supported by its sales base. With the stock now trading around US$101, the key issue for you is how much revenue the business is generating to back up that market value. Over the past 5 years the share price has risen by about 13x, which puts the spotlight firmly on how much sales power is now implied in the valuation. The company’s...",
-     "yorum": null,
-     "sutun_id": null,
-     "etki": null,
-     "kaynak_url": "https://finnhub.io/api/news?id=a8a6ee5c7c0a72243438fc13f6f9b2b7e75de88782ddd44b52037be16f4fa471",
-     "kaynak_adi": "Yahoo"
+     "kategori": "rakip",
+     "tarih": "2026-09-23",
+     "baslik": "Zacks: AAOI tedarik kısıtları altında, Fabrinet tercih ediliyor",
+     "olgu": "Makaleye göre AAOI, üretim kapasitesi ve kritik bileşen tedarik kısıtları nedeniyle artan müşteri talebini karşılamakta zorlanıyor. 800G geliri 12,8 milyon $ ile veri merkezi gelirinin %11,9'u oldu. İleriye dönük F/S oranı AAOI'de 4,56x, FN'de 2,22x. Zacks Rank: FN #2 (Al), AAOI #3 (Tut).",
+     "yorum": "Talep sorunu değil, arz sorunu. Bu, Ç3'teki iddialı yönlendirmenin (255–290 milyon $) kapasite ve bileşen teslimatına bağlı olduğunu vurguluyor. Fabrinet gibi ölçekli bir sözleşmeli üreticinin kapasite yarışında AAOI'den önde olması rekabet riskidir.",
+     "etki": "zayiflatir",
+     "sutun_id": "musteri_kapasite",
+     "onem": 3,
+     "kaynak_url": "https://finance.yahoo.com/technology/ai/articles/aaoi-vs-fabrinet-ai-data-171300228.html",
+     "kaynak_adi": "Zacks via Yahoo Finance"
     }
    ],
-   "haber_yontem": "Otomatik seçim (Claude yok): son 7 gün, şirket adı geçen + güvenilir kaynak öncelikli. Salı raporunda Claude seçimi gösterilir.",
+   "haber_yontem": "Salı raporu (2026-09-26) — Claude seçimi",
    "buyuk_hareketler": [
     {
      "tarih": "2026-09-23",
@@ -5113,9 +5172,21 @@
     "xbrl_beklemede": false
    },
    "sali_raporu": {
-    "hafta": null,
-    "tarih": null,
-    "dca_notu": null
+    "hafta": "2026-W39",
+    "tarih": "2026-09-26",
+    "dca_notu": {
+     "kural_durumu": "tetiklendi_kosul_yok: Zirveden −%54,55 düşüşle −%25 ve −%40 kademeleri tetiklendi. Ancak kuralın koşulu 'tez sağlam', tez durumu ise KIRMIZI; bu yüzden koşul sağlanmıyor. Önceden yazılmış not: 'DCA 2x; nakit pisti ve sulandırmayı kontrol et.' Kontrolün sonucu: iki kalem de çıkış kriterini tetiklemiş durumda (pist 10,1 ay, sulandırma %43,68). Kural düşüşün şirkete özel olduğunu belirtiyor: hisse QQQ'nun 54 puan, SMH'nin 45 puan gerisinde. Ayrıca −%55 kademesine ('pozisyon büyüklüğünü sınırla; tezi yeniden yaz') çok az kaldı; paketteki zirveye göre eşik yaklaşık 100,4 $, son fiyat 101,40 $. Kural bu kademenin önümüzdeki günlerde tetiklenebileceğini gösteriyor.",
+     "riskler": [
+      "Nakit pisti 10,1 ay: aktif ATM satışları sürecek; hisse fiyatı düştükçe sulandırma hızlanır.",
+      "Ç3 yönlendirmesi (255–290 milyon $) kapasite ve bileşen teslimatına bağlı; Zacks tedarik kısıtlarını vurguluyor.",
+      "Müşteri yoğunlaşması: ilk üç müşteri gelirin %92'si; Digicomm alacakların %67,2'si.",
+      "Parası içindeki convertible tahviller ve Amazon warrant'ının hak edilmemiş 6,6 milyon hissesi ek sulandırma kaynağı.",
+      "Çin üretim ayağı (Ningbo kiralaması): ABD–Çin ticaret ve gümrük vergisi politikası riski.",
+      "Brüt marj üç çeyrektir düşüyor; %25'in altına inerse sütun kırmızıya geçer.",
+      "Hisse yüksek betalı ve kaldıraçlı ETF'lere (AAOG) konu; günlük ±%5'in üzerindeki oynaklık sık görülüyor."
+     ],
+     "not": "Bu bilgi amaçlıdır, talimat değildir. Kuralın kendi mantığına göre 2x kademe tetiklendi ama koşul (sağlam tez) sağlanmadığı için kural bu hafta aktif değil. Ayrıca −%55 kademesi, kademeli artış yerine pozisyonu sınırlamayı ve tezi yeniden yazmayı öngörüyor. Tezin sarıya dönmesi için izlenebilecek somut işaretler: Ç3'te işletme nakit akışının ticari borç şişirmesi olmadan pozitife dönmesi, ATM kullanımının yavaşlaması ve ABD üretimli gelir payının artması. Fiyat düşüşü tek başına bu işaretlerin yerine geçmez."
+    }
    }
   },
   "IONQ": {
@@ -5142,7 +5213,7 @@
     "zirveden_uzaklik": -44.6,
     "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
     "kaynak": "Nasdaq.com (historical API)",
-    "guncelleme": "2026-09-26T11:58:29+00:00",
+    "guncelleme": "2026-09-26T12:16:15+00:00",
     "taze": true,
     "finnhub_52h_zirve_gun_ici": 84.64
    },
@@ -5258,7 +5329,7 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-26T11:59:12+00:00"
+    "guncelleme": "2026-09-26T12:16:57+00:00"
    },
    "grafik": [
     [
@@ -6329,37 +6400,43 @@
    },
    "gelismeler": [
     {
-     "tarih": "2026-09-25",
-     "baslik": "IonQ: Nvidia QPU Catalyst Isn’t Enough (NYSE:IONQ)",
-     "olgu": null,
-     "yorum": null,
-     "sutun_id": null,
-     "etki": null,
-     "kaynak_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVFl3R2JzRGlhbkE3X3F4b082OTUzNGp1dWNnUUtFbW5rS0tlUThYVmR4OVR5Qk90Wnd6dzdlSG1hVllPTVhvNG04cEF3UHM0bGJwTFVxSERFWlF0T3dxRFlFdk9sWGo2SWNtNnl5WGRtNkdaODFPOElVNFF5dWdZVlNrNA?oc=5",
-     "kaynak_adi": "Seeking Alpha"
+     "kategori": "urun_sozlesme",
+     "tarih": "2026-09-22",
+     "baslik": "Tek bir hazır CPU üzerinde uçtan uca gerçek zamanlı kuantum hata kod çözücü",
+     "olgu": "IonQ, sektörün ilk uçtan uca gerçek zamanlı kuantum hata düzeltme kod çözücüsünü gösterdiğini açıkladı. Kod çözücü tek bir standart CPU'da çalışıyor. Şirkete göre bu, Walking Cat mimarisinin temel bir ayağını doğruluyor ve mantıksal kübit sayısı arttıkça klasik donanım yükünün üstel büyümesi gerekmediğini gösteriyor.",
+     "yorum": "Hata toleranslı yol haritasındaki önemli bir mühendislik darboğazını (kod çözme gecikmesi ve klasik donanım maliyeti) azaltıyor, bu yüzden rekabet sütunu için anlamlı. Ancak sonuç şirketin kendi açıklaması; hakemli ve bağımsız bir tekrar henüz yok. Gelire etkisi yok, zamanlamaya etkisi de dolaylı.",
+     "etki": "destekler",
+     "sutun_id": "rekabet",
+     "onem": 4,
+     "kaynak_url": "https://www.ionq.com/news/ionq-demonstrates-industrys-first-end-to-end-real-time-quantum-error-decoder",
+     "kaynak_adi": "IonQ"
     },
     {
-     "tarih": "2026-09-24",
-     "baslik": "Update: IonQ Shares Rise After Signing Quantum Computer Contract With Florida International University",
-     "olgu": null,
-     "yorum": null,
-     "sutun_id": null,
-     "etki": null,
-     "kaynak_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbVlHc0NBbU9ob0cxUkJCdXYzOGpKR1lacWFZSGJlXzJfV29EdTc0ZF9SVzQ2cUd2djJ3VmtNWnhwenVlbkZIVTFoWGh6b2lDZDUxMnJpN0NRNkxQV1JickNnc2syT0ZWdUNJVk5PYkNSUjNfTHJyVDExMXNJXzFUNlUySXpEUjUwOVpGeElyZkt6eGJpQU1vejdhS2Mydw?oc=5",
-     "kaynak_adi": "Yahoo Finance"
+     "kategori": "musteri",
+     "tarih": "2026-09-23",
+     "baslik": "Superion 256, NVIDIA Accelerated Quantum Research Center'daki ilk yerinde QPU olacak",
+     "olgu": "Superion 256, NVIDIA'nın kuantum araştırma merkezine kurulacak ilk sistem olacak ve NVQLink ile NVIDIA'nın GPU altyapısına bağlanacak. Kurulum 2027'de planlanıyor. Motley Fool'un haberinde finansal ya da ücretli ticari şart açıklanmadığı belirtiliyor.",
+     "yorum": "Bu bir itibar ve ekosistem kazanımı. Hibrit kuantum-GPU standardında IonQ'nun 'varsayılan donanım' olma iddiasını güçlendiriyor. Buna karşın sözleşme büyüklüğü bilinmiyor ve anlamlı bir gelir kalemi olacağına dair veri yok. NVIDIA birden fazla modaliteyle çalışabilir; münhasırlık bilgisi de yok.",
+     "etki": "destekler",
+     "sutun_id": "rekabet",
+     "onem": 4,
+     "kaynak_url": "https://www.ionq.com/news/ionq-to-advance-quantum-supercomputing-by-bringing-first-qpu-to-nvidia-accelerated-quantum-research-center",
+     "kaynak_adi": "IonQ"
     },
     {
-     "tarih": "2026-09-24",
-     "baslik": "IonQ Signs Contract to Provide Quantum Computer to Florida International University",
-     "olgu": null,
-     "yorum": null,
-     "sutun_id": null,
-     "etki": null,
-     "kaynak_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRmRGZUlYeWVPSjBMMzZBa2NJb2xkcmNRaXMwd3JScnhhcEVvc0RQd29vTVFpQzNfNDk5ejBWTlBObVF0RzZUNS1rRkxPTF9iZzdKWVVEdlNZY0cyVHNDdE91UWlrYklTcnhiTTY2N2xDVUZWNGY4a1ZKRDNrcGNrSDZwWDlUVDZKU2txbWdCVEV1YVJ2YzZ2VEZRSFZqMkxrRHc?oc=5",
-     "kaynak_adi": "Yahoo Finance"
+     "kategori": "urun_sozlesme",
+     "tarih": "2026-09-21",
+     "baslik": "SDT (Güney Kore) ile Superion 256 ve SiV kuantum bellek ortaklığı",
+     "olgu": "IonQ, çok yıllı iş birliği kapsamında SDT'ye bir Superion 256 ve SiV kuantum bellek modülü tedarik edecek. Sistem, SDT'nin Güney Kore'deki bir müşterisine kurulacak. SDT, Gumi'de kuantum üretim ve sistem entegrasyon tesisi kurmayı planlıyor. İş birliği, bulut yazılım entegrasyonundan donanım üretimi, montaj ve bölgesel yeniden satışa genişliyor.",
+     "yorum": "Asya-Pasifik'te dağıtım kanalı oluşuyor. Ancak son müşteri belirsiz, çünkü 'SDT'nin bir müşterisi' deniyor, ve tutar açıklanmadı. 10-Q'da aracı ya da ilişkili taraf üzerinden gelen gelir konusunda dikkat notu vardı. Bu tür yeniden satış yapıları gelir kalitesi açısından izlenmeli.",
+     "etki": "destekler",
+     "sutun_id": "buyume",
+     "onem": 3,
+     "kaynak_url": "https://ionq.com/news/ionq-and-sdt-announce-the-first-strategic-partnership-to-bring-both-advanced-quantum-computing-and-quantum-networking-to-the-asia-pacific-region",
+     "kaynak_adi": "IonQ"
     }
    ],
-   "haber_yontem": "Otomatik seçim (Claude yok): son 7 gün, şirket adı geçen + güvenilir kaynak öncelikli. Salı raporunda Claude seçimi gösterilir.",
+   "haber_yontem": "Salı raporu (2026-09-26) — Claude seçimi",
    "buyuk_hareketler": [
     {
      "tarih": "2026-09-24",
@@ -6404,9 +6481,21 @@
     "xbrl_beklemede": false
    },
    "sali_raporu": {
-    "hafta": null,
-    "tarih": null,
-    "dca_notu": null
+    "hafta": "2026-W39",
+    "tarih": "2026-09-26",
+    "dca_notu": {
+     "kural_durumu": "Kural durumu: tetiklendi_kosul_yok. Hisse zirvenin %44,6 altında; −%15, −%25 ve −%35 kademelerinin üçü de tetiklendi. En üst tetiklenen kademenin önceden yazılmış notu: 'Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.' Ancak kuralın koşulu 'tez sağlam' ve tez durumu KIRMIZI olduğu için koşul sağlanmıyor. Düşüş kaynağı şirkete özel: IonQ, SMH'ye göre 35,3, QQQ'ya göre 44,2 puan geride. Tez hâlâ 'taslak' onay durumunda.",
+     "riskler": [
+      "Sulandırma çıkış kriteri (+%46,5) tetiklenmiş durumda. Kural sistemi bu yüzden ek alım koşulunu sağlamıyor.",
+      "Warrant yükümlülüğü (3,05 milyar $, 79 milyon özel warrant): hisse yükseldikçe GAAP zararı ve potansiyel sulandırma artar.",
+      "Q3 raporunda SkyWater konsolidasyonu gelirde mekanik bir sıçrama yaratacak. Organik ve pro forma ayrımı ile yeni Adjusted EBITDA açıklamaları izlenmeli. Q3 bilanço tarihi veri paketinde yok.",
+      "H2 için ima edilen gelir, Q2'nin altında. Q3 'beat' beklentisi fiyata girmişse hayal kırıklığı riski var.",
+      "Kazanç kalitesi: DSO 120 gün, faturalanmamış alacaklar ikiye katlandı, ilişkili taraf ya da yatırım yapılan müşterilerden gelen gelir var.",
+      "Makro: 10 yıllık faiz %5'in üzerinde. Bu hisse grubu faize ve risk iştahına yüksek beta taşıyor. 25 Eylül'deki sektör geri çekilmesi, haber kaynaklı ralli sonrası geri vermenin tipik bir örneği.",
+      "Haftalık +%16'lık hareket, fiyatın tezden bağımsız oynadığını gösteriyor. Tez durumu fiyattan ayrı değerlendirilmeli."
+     ],
+     "not": "Bilgi amaçlı: Kurallarına göre bu hafta −%35 kademesinin ek alım notu, tez koşulu sağlanmadığı için devreye girmiyor. Haftanın haberleri rekabet sütununu güçlendiriyor, ancak kırmızıyı üreten sulandırma metriğine dokunmuyor. Tezi 'taslak'tan onaylı hale getirmek ve özellikle sulandırma eşiğinin bu tip bir erken aşama şirket için gerçekçi olup olmadığını yeniden değerlendirmek, kuralın ileride doğru çalışması için belirleyici olabilir. Olağan haftalık DCA ile ek kademe alımı arasındaki ayrım senin kurallarında tanımlı; bu rapor talimat değil."
+    }
    }
   },
   "ORCL": {
@@ -6433,7 +6522,7 @@
     "zirveden_uzaklik": -56.2,
     "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
     "kaynak": "Nasdaq.com (historical API)",
-    "guncelleme": "2026-09-26T11:58:33+00:00",
+    "guncelleme": "2026-09-26T12:16:18+00:00",
     "taze": true,
     "finnhub_52h_zirve_gun_ici": 322.54
    },
@@ -6549,7 +6638,7 @@
     "ceyrek": 2,
     "yil": 2027,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-26T11:59:15+00:00"
+    "guncelleme": "2026-09-26T12:17:00+00:00"
    },
    "grafik": [
     [
@@ -7712,7 +7801,7 @@
     "zirveden_uzaklik": -34.83,
     "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
     "kaynak": "Nasdaq.com (historical API)",
-    "guncelleme": "2026-09-26T11:58:37+00:00",
+    "guncelleme": "2026-09-26T12:16:22+00:00",
     "taze": true,
     "finnhub_52h_zirve_gun_ici": 412.7
    },
@@ -7828,7 +7917,7 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-26T11:59:18+00:00"
+    "guncelleme": "2026-09-26T12:17:03+00:00"
    },
    "grafik": [
     [
@@ -8985,7 +9074,7 @@
     "zirveden_uzaklik": -70.43,
     "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
     "kaynak": "Nasdaq.com (historical API)",
-    "guncelleme": "2026-09-26T11:58:40+00:00",
+    "guncelleme": "2026-09-26T12:16:26+00:00",
     "taze": true,
     "finnhub_52h_zirve_gun_ici": 58.15
    },
@@ -9101,7 +9190,7 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-26T11:59:21+00:00"
+    "guncelleme": "2026-09-26T12:17:07+00:00"
    },
    "grafik": [
     [
@@ -10160,7 +10249,7 @@
      {
       "id": "rekabet",
       "ad": "Rekabet ve yönetim",
-      "durum": "veri_yok",
+      "durum": "sari",
       "deger": null,
       "birim": null,
       "tip": "yorum"
@@ -10265,7 +10354,7 @@
    "zirveden_uzaklik": -9.46,
    "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
    "kaynak": "Nasdaq.com (historical API)",
-   "guncelleme": "2026-09-26T11:58:43+00:00",
+   "guncelleme": "2026-09-26T12:16:29+00:00",
    "taze": true,
    "finnhub_52h_zirve_gun_ici": 117.76
   },
@@ -10286,7 +10375,7 @@
    "zirveden_uzaklik": -0.4,
    "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
    "kaynak": "Nasdaq.com (historical API)",
-   "guncelleme": "2026-09-26T11:58:46+00:00",
+   "guncelleme": "2026-09-26T12:16:31+00:00",
    "taze": true,
    "finnhub_52h_zirve_gun_ici": 748.65
   },
@@ -10307,7 +10396,7 @@
    "zirveden_uzaklik": -9.32,
    "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
    "kaynak": "Nasdaq.com (historical API)",
-   "guncelleme": "2026-09-26T11:58:49+00:00",
+   "guncelleme": "2026-09-26T12:16:35+00:00",
    "taze": true,
    "finnhub_52h_zirve_gun_ici": 671.83
   },
@@ -10328,7 +10417,7 @@
    "zirveden_uzaklik": -0.84,
    "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
    "kaynak": "Nasdaq.com (historical API)",
-   "guncelleme": "2026-09-26T11:58:52+00:00",
+   "guncelleme": "2026-09-26T12:16:37+00:00",
    "taze": true,
    "finnhub_52h_zirve_gun_ici": 779.37
   },
@@ -10349,7 +10438,7 @@
    "zirveden_uzaklik": -5.93,
    "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
    "kaynak": "Nasdaq.com (historical API)",
-   "guncelleme": "2026-09-26T11:58:54+00:00",
+   "guncelleme": "2026-09-26T12:16:39+00:00",
    "taze": true,
    "finnhub_52h_zirve_gun_ici": 120.405
   },
@@ -10370,7 +10459,7 @@
    "zirveden_uzaklik": -17.22,
    "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
    "kaynak": "Nasdaq.com (historical API)",
-   "guncelleme": "2026-09-26T11:58:56+00:00",
+   "guncelleme": "2026-09-26T12:16:41+00:00",
    "taze": true,
    "finnhub_52h_zirve_gun_ici": 47.8
   }

@@ -67,8 +67,44 @@
     "donem": "FY2027 Q2"
    },
    "olgu_mu": true,
-   "haberler": [],
-   "radar": []
+   "haberler": [
+    {
+     "kategori": "musteri",
+     "tarih": "2026-09-25",
+     "baslik": "Musk: Colossus 2 yıl sonuna kadar 1,2 milyonun üzerinde Nvidia GPU'su çalıştırabilir",
+     "olgu": "Musk'a göre Colossus 2'de şu an 110.000 GB200 ve 440.000 GB300 çalışıyor. Ek 220.000 GB300 bir sonraki hafta, 220.000 Kasım'da, şanslı olunursa 220.000 daha Aralık sonunda devreye girecek. Toplam 1,21 milyon işlemciye ulaşılması hedefleniyor.",
+     "yorum": "Hyperscaler dışı dev bir müşterinin Blackwell talebinin sürdüğünü gösteriyor ve 'buyume' sütununu destekliyor. Öte yandan xAI/SpaceX de yoğunlaşmış müşteri tabanının parçası. Rakamlar Musk'ın 'şanslıysak' koşulunu taşıyor; sipariş değil, kurulum planı.",
+     "etki": "destekler",
+     "sutun_id": "buyume",
+     "onem": 4,
+     "kaynak_url": "https://www.benzinga.com/markets/tech/26/09/61991512/elon-musk-says-spacexais-colossus-2-could-run-more-than-1-2-million-nvidia-gb200-and-gb300-chips-by-year-end-if-we-get-lucky",
+     "kaynak_adi": "Benzinga"
+    },
+    {
+     "kategori": "tedarikci",
+     "tarih": "2026-09-23",
+     "baslik": "Supermicro Vera Rubin NVL72 raflarını sevk etmeye başladı",
+     "olgu": "Supermicro, NVIDIA Vera Rubin NVL72 raflarının sevkiyatına başladığını duyurdu.",
+     "yorum": "10-Q'daki 'Vera Rubin üretim sevkiyatları 3. çeyrekte başladı' ifadesini sahadan teyit ediyor. Ürün geçişinin takvimde ilerlediğini gösteriyor; geçiş dönemlerindeki stok ve marj riskini azaltan bir sinyal.",
+     "etki": "destekler",
+     "sutun_id": "buyume",
+     "onem": 3,
+     "kaynak_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPR0NmRmZRcFBMZnZ5Q0NXbGh1eEJJX0kyekpWdzhwcjFZYTR3R3JxVzhaQjJveTlnSWh1cURKT1RDZEk2SE9tMFdBS1llRW1zOXh4T1VTbDlwWVhRLUx3SGZGOENNMHFwMVk1MHlLNV95cjJhZEV2SGZJVkxzMF9vekNFTWFDSnlkM2RGQ1hXYi1VZnVfWXZ1Y0Z4OEFXaGlrcU10ZmppeWh4RTd1ZTVsQmNfUzk5Zw?oc=5",
+     "kaynak_adi": "Supermicro"
+    }
+   ],
+   "radar": [
+    {
+     "kategori": "sektor_tedarik",
+     "sinyal": "Supermicro Vera Rubin NVL72 raf sevkiyatına başladı.",
+     "yorum": "Nesil geçişinin takvimde ilerlediğine dair doğrudan saha teyidi.",
+     "yon": "olumlu",
+     "guven": "yuksek",
+     "sutun_id": "buyume",
+     "tarih": "2026-09-23",
+     "kaynak_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPR0NmRmZRcFBMZnZ5Q0NXbGh1eEJJX0kyekpWdzhwcjFZYTR3R3JxVzhaQjJveTlnSWh1cURKT1RDZEk2SE9tMFdBS1llRW1zOXh4T1VTbDlwWVhRLUx3SGZGOENNMHFwMVk1MHlLNV95cjJhZEV2SGZJVkxzMF9vekNFTWFDSnlkM2RGQ1hXYi1VZnVfWXZ1Y0Z4OEFXaGlrcU10ZmppeWh4RTd1ZTVsQmNfUzk5Zw?oc=5"
+    }
+   ]
   },
   {
    "id": "fiyatlama_gucu",
@@ -132,8 +168,32 @@
     "donem": "FY2027 Q2"
    },
    "olgu_mu": true,
-   "haberler": [],
-   "radar": []
+   "haberler": [
+    {
+     "kategori": "sirket",
+     "tarih": "2026-09-22",
+     "baslik": "Değerleme on yılın en düşüğüne yakın; analistler brüt marjın %72'nin altına ineceğini öngörüyor",
+     "olgu": "Bloomberg verilerine göre NVDA önümüzdeki 12 ayın beklenen kârının 17 katından daha azına işlem görüyor; Mayıs'ta bu çarpan 25'in üzerindeydi. Geçen çeyrek %75 olan brüt marjın, Bloomberg analist tahminlerine göre 4. çeyrekte %72'nin altına inmesi bekleniyor. Bunun başlıca nedeni bellek çiplerinin artan maliyeti. Meta ve Alphabet dahili çip tasarlıyor.",
+     "yorum": "Fiyat ile tezi ayırmak gerekiyor. Çarpan sıkışması, piyasanın zirve marjı ve zirve büyümeyi iskonto ettiğini gösteriyor. 'fiyatlama_gucu' sütununun eşiği %70; konsensüs bile bu eşiğe yaklaşan bir gidişat öngörüyor. Bellek maliyeti (HBM/DRAM) marj riskinin ana kanalı.",
+     "etki": "notr",
+     "sutun_id": "fiyatlama_gucu",
+     "onem": 4,
+     "kaynak_url": "https://qz.com/nvidia-stock-valuation-decade-low-earnings-092226",
+     "kaynak_adi": "Quartz / Bloomberg verisi"
+    }
+   ],
+   "radar": [
+    {
+     "kategori": "sektor_tedarik",
+     "sinyal": "Micron 30 Eylül'de bilanço açıklayacak; analistlere göre Nvidia Rubin etkisi gelecek yıla kadar görülmeyebilir. HBM4 16 katmanlı üründe SK Hynix sevkiyatta, Micron ve Samsung ise değerlendirme aşamasında.",
+     "yorum": "Bellek maliyeti NVDA brüt marjının ana riski. Micron'un HBM fiyat ve arz yorumları, NVDA'nın 4. çeyrek marj tahminlerine öncü sinyal verecek.",
+     "yon": "belirsiz",
+     "guven": "orta",
+     "sutun_id": "fiyatlama_gucu",
+     "tarih": "2026-09-30",
+     "kaynak_url": "https://www.investing.com/news/stock-market-news/micron-earnings-outlook-what-to-watch-ahead-of-the-september-30-report-93CH-4911385"
+    }
+   ]
   },
   {
    "id": "kazanc_kalitesi",
@@ -197,7 +257,44 @@
     "donem": "FY2027 Q2"
    },
    "olgu_mu": true,
-   "haberler": [],
+   "haberler": [
+    {
+     "kategori": "sirket",
+     "tarih": "2026-09-23",
+     "baslik": "NVDA CDS'leri ABD'nin en çok işlem gören kredi swapları arasında",
+     "olgu": "Bloomberg'e göre Haziran'daki 25 milyar $'lık tahvil ihracının ardından NVDA borcuna karşı son altı ayda 6,9 milyar $ nominal koruma işlem gördü. Önceki altı ayda bu rakam 640 milyon $'dı. Endişenin merkezinde OpenAI ve CoreWeave gibi müşterilere verilen hisse/garanti desteği ('döngüsel finansman') var.",
+     "yorum": "Bir controller için kritik sinyal: kredi piyasası, bilanço dışı taahhütleri (10-Q: 279 milyar $ tedarik taahhüdü, 105 milyar $ garanti, 36 milyar $ geri alım taahhüdü) hisse piyasasından daha ciddiye alıyor. Temerrüt riski değil, müşteri finansmanının geri dönme riski fiyatlanıyor.",
+     "etki": "zayiflatir",
+     "sutun_id": "kazanc_kalitesi",
+     "onem": 4,
+     "kaynak_url": "https://www.bloomberg.com/news/articles/2026-09-23/nvidia-among-top-traded-us-credit-swaps-as-hedging-demand-soars",
+     "kaynak_adi": "Bloomberg"
+    },
+    {
+     "kategori": "sirket",
+     "tarih": "2026-09-21",
+     "baslik": "SB Energy'ye ek 1,5 milyar $; toplam hisse taahhüdü 3 milyar $",
+     "olgu": "Nvidia, SB Energy'de ek 1,5 milyar $'lık hisse alarak toplam hisse taahhüdünü 3 milyar $'a çıkarıyor. Ohio kampüsü yalnızca Nvidia altyapısına ev sahipliği yapacak. Nvidia ayrıca OpenAI'ın kiralarına bağlı 105 milyar $'a kadar garanti vermiş durumda.",
+     "yorum": "Döngüsel yapı derinleşiyor: NVDA, müşterisinin ev sahibine sermaye koyuyor, kira yükümlülüğünü garanti ediyor ve karşılığında münhasır GPU talebi alıyor. Gelir tanıma açısından sorun yok, ancak talebin 'organik' kısmını ayırt etmek zorlaşıyor. Hisse değeri halka arz fiyatlamasına bağlı; bu da 'Other income' oynaklığını artırır.",
+     "etki": "zayiflatir",
+     "sutun_id": "kazanc_kalitesi",
+     "onem": 3,
+     "kaynak_url": "https://en.cryptonomist.ch/2026/09/21/nvidia-sb-energy-investment/",
+     "kaynak_adi": "Cryptonomist"
+    },
+    {
+     "kategori": "musteri",
+     "tarih": "2026-09-21",
+     "baslik": "Nscale halka arzı: Nvidia'dan 3,1 milyar $ konvertibl not, 'going concern' geçmişi, ByteDance bağımlılığı",
+     "olgu": "Fortune'a göre Nscale, 2026 ilk yarısında 140,6 milyon $ gelire karşı 1 milyar $ net zarar etti. 15 Eylül'de Nvidia'dan teminatsız konvertibl notlar karşılığında 3,1 milyar $ aldı. İzahnamede yönetimin bir dönem 'going concern' konusunda ciddi şüphe taşıdığı belirtiliyor. ByteDance 2025 gelirinin %73'ünü oluşturuyordu; bu yıl pay %20'nin altına indi.",
+     "yorum": "Zarar eden bir neocloud'un hayatta kalması doğrudan NVDA finansmanına bağlı; bu klasik bir vendor-financing örneği. Ayrıca ByteDance'in Norveç üzerinden Nvidia çiplerine erişimi yasal olsa da ihracat politikası açısından itibar ve düzenleme riski taşıyor.",
+     "etki": "zayiflatir",
+     "sutun_id": "kazanc_kalitesi",
+     "onem": 3,
+     "kaynak_url": "https://fortune.com/2026/09/21/nscale-35-billion-ipo-nvidia-going-concern/",
+     "kaynak_adi": "Fortune"
+    }
+   ],
    "radar": []
   },
   {
@@ -272,23 +369,109 @@
    "aciklama": "",
    "durum": "sari",
    "soru": "10-Q/10-K ve basın bülteninde; doğrudan müşteri yoğunlaşması (en büyük müşterilerin gelir payı), özel çip (TPU/ASIC) ve rakip hızlandırıcılar, ihracat kısıtları hakkında yönetimin söyledikleri tezi zayıflatıyor mu?",
-   "gerekce": "Manşet büyüme (%106) rekabetin henüz talebi aşındırmadığını gösteriyor, bu yüzden 'kırmızı' değil. Ancak yönetimin kendi açıklamaları tezi birkaç yönden zayıflatıyor. (1) Şirket Çin veri merkezi pazarından 'fiilen dışlandığını' ve bunun rakiplerin küresel ekosistem kurmasına yardım ettiğini kabul ediyor. H200 satışları Veri Merkezi gelirinin %1'inin altında ve %25 tarifeyi müşteriye yansıtamıyor. (2) Risk faktörleri müşterilerin 'kendi dahili çözümlerini geliştirmesini' ve ihracat kontrolleri nedeniyle ABD çiplerinin 'design-out' edilmesini açıkça sayıyor. 10-Q TPU/ASIC'i isim vermeden bu riski kabul ediyor. (3) Müşteri yoğunlaşması yüksek: ilk yarıda üç doğrudan müşteri toplam %44, beş müşteri alacakların %70'i. Tek bir AI şirketi (OpenAI) dolaylı yoldan 'anlamlı' gelir sağlıyor. (4) En önemlisi, talebin bir kısmı NVIDIA'nın kendi bilançosuyla destekleniyor: 99 milyar $ ekosistem yatırımı, 105 milyar $ OpenAI garantisi, 36 milyar $ AI cloud geri alım taahhüdü ve 1 yıla kadar vade. Bu, 'yazılım kilidiyle doğal talep' tezini değil, 'finansmanla desteklenen talep' senaryosunu da destekliyor.",
-   "kanit_alinti": "we were effectively foreclosed from competing in China’s data center computing/compute market, and our effective foreclosure from the China market helped our competitors build larger developer and customer ecosystems to challenge us worldwide.",
-   "kanit_dogrulandi": true,
+   "gerekce": "Kırmızı değil, çünkü (a) manşet büyüme %106 ve Colossus 2 gibi dev kurulumlar rekabetin henüz talebi aşındırmadığını gösteriyor; (b) Huawei'nin performans ve HBM açığı büyük; (c) DSX/Malone ve Hugging Face gibi hamleler sistem ve ekosistem kilidini güçlendiriyor. Ancak bu hafta dört yönden olumsuz kanıt eklendi: (1) Google TPU artık üçüncü taraf finansmanla ölçekleniyor (Crux AI'a 22 milyar $ banka kredisi, Anthropic'in TPU ağırlıklı 1 GW görüşmesi). (2) Ajan tabanlı yapay zeka anlatısı değeri CPU'ya kaydırıyor; AMD 1 trilyon $'ı aştı ve NVDA ile arasındaki YTD fark 160 puanı geçti. (3) Pekin, ABD onayına rağmen H200 alımını engelliyor ve bir tedarik zinciri güvenlik incelemesi başlattı; Çin opsiyonu fiilen sıfıra yakın. (4) Müşteri yoğunlaşması ve NVDA'nın müşterisini finanse etmesi derinleşiyor (SB Energy toplam 3 milyar $, Nscale 3,1 milyar $, 105 milyar $ OpenAI garantisi); kredi piyasası bu riski CDS'lerle fiyatlıyor. İzlenecek kırmızı tetikleyici: bir hyperscaler'ın NVDA siparişini açıkça azaltması veya 10-Q'da müşteri payında belirgin bir kayma.",
+   "kanit_alinti": null,
+   "kanit_dogrulandi": null,
    "kaynak": {
-    "tip": "bilanco",
-    "tarih": "2026-08-26",
-    "accn": "0001045810-26-000075",
-    "form": "10-Q",
-    "donem_sonu": "2026-07-26",
-    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
-    "index_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/0001045810-26-000075-index.htm",
-    "kesildi": false,
-    "karakter": 152831
+    "tip": "sali_raporu",
+    "tarih": "2026-09-26",
+    "url": "https://www.moomoo.com/news/post/1000103358/nvidia-stock-falls-it-has-a-google-ai-chip-conundrum"
    },
    "olgu_mu": false,
-   "haberler": [],
-   "radar": []
+   "haberler": [
+    {
+     "kategori": "duzenleme",
+     "tarih": "2026-09-24",
+     "baslik": "Trump–Xi zirvesi: H200 onayı var, Çin tarafı alımı engelliyor",
+     "olgu": "Washington H200 satışlarını onayladı, ancak Pekin kendi şirketlerinin alımını engelledi. Lutnick'e göre Çinli firmalar yatırımı Huawei dahil yerli tedarikçilere yöneltiyor. Çin Devlet Konseyi ABD yarı iletkenlerine bağımlılığı azaltmayı hedefleyen bir tedarik zinciri güvenlik incelemesi başlattı.",
+     "yorum": "NVDA'nın rehberliği zaten Çin veri merkezi satışı varsaymıyordu. Bu yüzden kısa vadeli rakamlara etkisi sınırlı. Ancak 10-Q'da kabul edilen 'Çin'den fiilen dışlanma ve rakip ekosistemin güçlenmesi' riski kalıcılaşıyor. Opsiyon değeri olarak görülen Çin yukarı yönlü senaryosu zayıfladı.",
+     "etki": "zayiflatir",
+     "sutun_id": "rekabet_musteri",
+     "onem": 4,
+     "kaynak_url": "https://www.artificialintelligence-news.com/news/nvidia-h200-china-deal-stalled-trump-xi-summit-2026/",
+     "kaynak_adi": "AI News"
+    },
+    {
+     "kategori": "rakip",
+     "tarih": "2026-09-23",
+     "baslik": "Google TPU ekosistemi finansman buluyor; NVDA'da 'TPU ikilemi'",
+     "olgu": "Barron's'a göre Anthropic, büyük kısmı TPU ile çalışan 1 GW'a kadar kapasite kiralamak için Stream Data Centers ile görüşüyor. 10 bankalık bir sendika, Blackstone ve Alphabet destekli Crux AI'a TPU alımı için 22 milyar $ kredi sağlamayı kabul etti. PHLX Yarı İletken Endeksi son üç ayda %5,9 düştü.",
+     "yorum": "TPU'nun artık yalnızca Google içi değil, üçüncü taraf finansmanla ölçeklenen bir alternatif olması önemli. Bankaların ASIC altyapısını kredilendirmesi, NVDA'nın 'tek standart' primini aşındırıyor. Bu, çarpan sıkışmasının ana açıklamalarından biri.",
+     "etki": "zayiflatir",
+     "sutun_id": "rekabet_musteri",
+     "onem": 4,
+     "kaynak_url": "https://www.moomoo.com/news/post/1000103358/nvidia-stock-falls-it-has-a-google-ai-chip-conundrum",
+     "kaynak_adi": "Barron's (Moomoo)"
+    },
+    {
+     "kategori": "rakip",
+     "tarih": "2026-09-21",
+     "baslik": "Meta Muse rallisi AMD'yi 1 trilyon $'a taşıdı, NVDA dışarıda kaldı",
+     "olgu": "AMD pazartesi günü %10'a kadar yükselerek ilk kez 1 trilyon $ piyasa değerini aştı. Yatırımcılar ajan tabanlı yapay zekanın genel amaçlı işlemci (CPU) talebini artıracağına bahse girdi. AMD ile Nvidia arasındaki yılbaşından beri performans farkı 160 puanı aştı.",
+     "yorum": "Piyasa, çıkarım/ajan ekonomisinde değerin bir kısmının GPU dışına (CPU, özel çip) kayacağını fiyatlıyor. Bu, NVDA'nın haftalık SMH'ye göre zayıf kalmasının doğrudan nedeni. NVDA'nın Grace CPU ve ağ işi bu anlatıda yeterince fiyatlanmıyor olabilir. Yine de bu bir tez kırılması değil, göreli değer rotasyonu.",
+     "etki": "zayiflatir",
+     "sutun_id": "rekabet_musteri",
+     "onem": 3,
+     "kaynak_url": "https://www.moomoo.com/news/post/1000043363/why-nvidia-stock-missed-the-meta-muse-ai-rally-barronscom",
+     "kaynak_adi": "Barron's (Moomoo)"
+    },
+    {
+     "kategori": "rakip",
+     "tarih": "2026-09-16",
+     "baslik": "Huawei Ascend yol haritasını öne çekti",
+     "olgu": "Huawei, Ascend 960DT'yi 2027'nin ilk çeyreğine (planlanandan üç çeyrek önce), 960PR'ı 3. çeyreğe çekti ve her yıl yeni nesil çıkaracağını açıkladı. Yerli HBM kısıtı üretimi yılda 300.000 birimin altında tutuyor.",
+     "yorum": "Kısa vadede performans ve HBM açığı nedeniyle NVDA'nın küresel payına tehdit sınırlı. Ancak Pekin'in H200 alımını engellemesiyle birlikte Çin pazarının yapısal olarak kapanmakta olduğunu teyit ediyor.",
+     "etki": "zayiflatir",
+     "sutun_id": "rekabet_musteri",
+     "onem": 2,
+     "kaynak_url": "https://www.usnews.com/news/top-news/articles/2026-09-16/chinas-huawei-sets-2027-launch-for-new-ai-chips-as-it-targets-nvidia",
+     "kaynak_adi": "US News / Reuters"
+    },
+    {
+     "kategori": "sirket",
+     "tarih": "2026-09-24",
+     "baslik": "OpenAI'ın eski veri merkezi başkanı Chris Malone, Nvidia DSX Platform Başkan Yardımcısı oldu",
+     "olgu": "Malone, Nvidia'nın müşterilerin AI veri merkezlerini Nvidia spesifikasyonlarına göre tasarlamasına yardım eden DSX biriminde VP olarak çalışmaya başladı. Daha önce OpenAI, Meta ve Google'da çalıştı.",
+     "yorum": "NVDA'nın çip satıcısından 'AI fabrikası' tam yığın tasarımcısına dönüşme stratejisini güçlendiriyor. Bu, rakip ASIC'lere karşı sistem düzeyinde kilitleme sağlar.",
+     "etki": "destekler",
+     "sutun_id": "rekabet_musteri",
+     "onem": 2,
+     "kaynak_url": "https://www.investing.com/news/stock-market-news/openais-former-head-of-data-centers-joins-nvidia-4915998",
+     "kaynak_adi": "Investing.com"
+    }
+   ],
+   "radar": [
+    {
+     "kategori": "sektor_tedarik",
+     "sinyal": "Crux AI (Blackstone ve Alphabet destekli) TPU alımı için 10 bankadan 22 milyar $ kredi aldı.",
+     "yorum": "Banka sermayesinin ASIC altyapısına akması, TPU'nun ticari ölçekte NVDA'ya alternatif olmaya başladığını gösteriyor. Tek bir işlem olduğu için orta güven.",
+     "yon": "olumsuz",
+     "guven": "orta",
+     "sutun_id": "rekabet_musteri",
+     "tarih": "2026-09-23",
+     "kaynak_url": "https://www.moomoo.com/news/post/1000103358/nvidia-stock-falls-it-has-a-google-ai-chip-conundrum"
+    },
+    {
+     "kategori": "ise_alim",
+     "sinyal": "OpenAI'ın eski veri merkezi başkanı Chris Malone, Nvidia DSX Platform'a VP olarak katıldı.",
+     "yorum": "Tam yığın 'AI fabrikası' tasarım kabiliyetine yatırımın sürdüğünü gösteriyor. Tek bir işe alım olduğu için kanıt değeri sınırlı.",
+     "yon": "olumlu",
+     "guven": "dusuk",
+     "sutun_id": "rekabet_musteri",
+     "tarih": "2026-09-24",
+     "kaynak_url": "https://www.investing.com/news/stock-market-news/openais-former-head-of-data-centers-joins-nvidia-4915998"
+    },
+    {
+     "kategori": "sektor_tedarik",
+     "sinyal": "Huawei, Ascend 960DT'yi 2027 ilk çeyreğine çekti; kendi ifadesine göre Çin'deki talebi karşılayacak kapasitesi yok.",
+     "yorum": "Çin pazarının yerli tedarikçilere kaydığını teyit ediyor. Ancak Huawei'nin kapasite kısıtı ve uluslararası genişleme planı olmaması, NVDA'nın Çin dışı işi için tehdidi sınırlı tutuyor.",
+     "yon": "olumsuz",
+     "guven": "orta",
+     "sutun_id": "rekabet_musteri",
+     "tarih": "2026-09-16",
+     "kaynak_url": "https://www.usnews.com/news/top-news/articles/2026-09-16/chinas-huawei-sets-2027-launch-for-new-ai-chips-as-it-targets-nvidia"
+    }
+   ]
   }
  ],
  "cikis": [
@@ -342,6 +525,6 @@
   }
  ],
  "son_ceyrek": "FY2027 Q2",
- "guncelleme": "2026-09-26T12:15:01+00:00",
+ "guncelleme": "2026-09-26T12:40:35+00:00",
  "not": "Tez durumu fiyattan bağımsızdır. Fiyat düşüşü tek başına tezin bozulduğu anlamına gelmez."
 }

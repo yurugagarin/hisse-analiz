@@ -132,8 +132,32 @@
     "donem": "FY2026 Q2"
    },
    "olgu_mu": true,
-   "haberler": [],
-   "radar": []
+   "haberler": [
+    {
+     "kategori": "sirket",
+     "tarih": "2026-09-28",
+     "baslik": "Q3 2026 bilançosu 28 Ekim'de bekleniyor; şirketin kendi beklentisi yavaşlama gösteriyor",
+     "olgu": "MarketBeat'e göre bilanço 28 Ekim 2026'da piyasa kapanışından sonra açıklanacak. Q2 basın bültenindeki Q3 beklentisi: abonelik geliri 3.975-3.980 milyon $ (+%20,5), cRPO büyümesi %19,5, non-GAAP faaliyet marjı %31.",
+     "yorum": "Q2'deki %24,5'lik abonelik büyümesinden %20,5'e geçiş, satın almalar dahil olmasına rağmen belirgin bir yavaşlama demek. cRPO beklentisi (%19,5) tezdeki %18 eşiğine yaklaşıyor. Bilançonun asıl odağı bu olacak.",
+     "etki": "zayiflatir",
+     "sutun_id": "gorunurluk",
+     "onem": 4,
+     "kaynak_url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx",
+     "kaynak_adi": "ServiceNow Newsroom (Q2 2026 basın bülteni)"
+    }
+   ],
+   "radar": [
+    {
+     "kategori": "earnings_call_dili",
+     "sinyal": "Şirketin Q3 beklentisi yavaşlamayı işaret ediyor: abonelik +%20,5, cRPO +%19,5 (Q2'de abonelik +%24,5)",
+     "yorum": "Yönetimin kendi rakamı; satın almalar dahil olmasına rağmen ivme kaybı var. NOW genelde beklentisini aşar, ama aşma payı daralırsa RPO sütunu baskı altına girer.",
+     "yon": "olumsuz",
+     "guven": "yuksek",
+     "sutun_id": "gorunurluk",
+     "tarih": "2026-07-23",
+     "kaynak_url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx"
+    }
+   ]
   },
   {
    "id": "nakit",
@@ -272,23 +296,153 @@
    "aciklama": "",
    "durum": "sari",
    "soru": "10-Q/10-K ve basın bülteninde yenileme oranı, büyük müşteri (yıllık 5M$+ ACV) sayısı, Now Assist/AI ürünlerinin katkısı ve satın almaların büyümeye etkisi hakkında açıklamalar tezi destekliyor mu?",
-   "gerekce": "Müşteri tutma tarafı tezi destekliyor: yenileme oranı %98, 5 milyon $+ ACV'li müşteri sayısı 658 (+%23) ve abonelik geliri +%25. Ancak AI monetizasyonu tarafı belgelerle kanıtlanamıyor. 10-Q'da Now Assist ya da AI ürünlerinin gelir katkısına dair hiçbir sayısal açıklama yok ve basın bültenleri eksik. Alınan şirketlerin katkısı pro forma verilmediği için %24'lük büyümenin ne kadarının organik olduğu belirsiz. RPO büyümesi %21'e yavaşladı. Abonelik brüt marjı %73'e düştü ve üçüncü taraf bulut maliyeti arttı. Bu tablo, AI satışlarının kârlılığı düşük bir maliyet yapısıyla geldiğine işaret ediyor olabilir.",
-   "kanit_alinti": "Our renewal rate was 98% for each of the three and six months ended June 30, 2026 and 2025.",
-   "kanit_dogrulandi": true,
+   "gerekce": "Müşteri tutma tarafı güçlü: yenileme oranı %98, 5 milyon $ üzeri ACV'li müşteri sayısı 658 (+%23), 1 milyon $ üzeri net yeni ACV'li işlem sayısı 123 (~+%40). AI monetizasyonu için artık bir sayı var: Q2 basın bültenine göre ServiceNow AI ACV'si 1 milyar $'ı aştı. Cantor da Now Assist paketleri için üst katmana geçişleri raporluyor. Bu, sütunu yeşile yaklaştıran bir gelişme. Yeşile çekmememin üç nedeni var. (1) AI ACV'sine Moveworks gibi satın alınan ürünler de dahil olabilir ve organik ayrım verilmiyor. (2) GAAP abonelik brüt marjı %80'den %73'e düştü ve şirket 2026'da daha da düşmesini bekliyor; yani AI büyümesi üçüncü taraf bulut maliyetiyle, daha düşük marjla geliyor. (3) Bu hafta AI Platform'da kimlik doğrulamasız kritik açıklar çıktı ve Salesforce benzer büyüklükte (1,5 milyar $) ajan ARR'ı açıkladı; farklılaşma kanıtlanmış değil. Q3'te AI ACV'si ve abonelik brüt marjının yönü, rengi belirleyecek.",
+   "kanit_alinti": null,
+   "kanit_dogrulandi": null,
    "kaynak": {
-    "tip": "bilanco",
-    "tarih": "2026-07-23",
-    "accn": "0001373715-26-000076",
-    "form": "10-Q",
-    "donem_sonu": "2026-06-30",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
-    "index_url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/0001373715-26-000076-index.htm",
-    "kesildi": false,
-    "karakter": 146196
+    "tip": "sali_raporu",
+    "tarih": "2026-09-26",
+    "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx"
    },
    "olgu_mu": false,
-   "haberler": [],
-   "radar": []
+   "haberler": [
+    {
+     "kategori": "sirket",
+     "tarih": "2026-09-21",
+     "baslik": "Cantor Fitzgerald hedef fiyatı 141 $'dan 174 $'a yükseltti, 'overweight' notunu korudu",
+     "olgu": "Cantor, yatırımcı görüşmelerinde NOW'a ilişkin algının güvenlik odaklı ajan platformları sayesinde olumluya döndüğünü söylüyor. Kanal kontrolleri, müşterilerin genişletilmiş Now Assist paketlerine erişmek için üst katmanlara geçtiğini gösteriyor. Aracı kurum bunu şirketin 2026 AI ACV hedefini desteklediği şeklinde yorumluyor.",
+     "yorum": "Hedef fiyat artışının kendisi az bilgi taşıyor. Değerli kısım kanal kontrolü: 'tier upgrade' hareketi, AI'ın ayrı bir SKU'dan çok Pro Plus/Enterprise Plus fiyat katmanı üzerinden paraya çevrildiğini gösteriyor. Bu, ai_ve_yenileme sütunu için nitel destek. Ancak AI gelirinin brüt marjı ve organik katkısı hâlâ açıklanmıyor.",
+     "etki": "destekler",
+     "sutun_id": "ai_ve_yenileme",
+     "onem": 3,
+     "kaynak_url": "https://www.investing.com/news/analyst-ratings/cantor-fitzgerald-raises-servicenow-stock-price-target-on-ai-demand-93CH-4909057",
+     "kaynak_adi": "Investing.com"
+    },
+    {
+     "kategori": "urun_sozlesme",
+     "tarih": "2026-09-24",
+     "baslik": "ServiceNow AI Platform için beş CVE: kimlik doğrulaması gerektirmeyen kritik SQL enjeksiyonu",
+     "olgu": "KB3159623 numaralı güvenlik bülteni beş CVE içeriyor. CVE-2026-13016 kritik bir SQL enjeksiyonu: belirli koşullarda kimliği doğrulanmamış bir saldırganın veritabanında keyfi SQL çalıştırmasına izin veriyor. CVE-2026-86860 da kritik; eksik yetkilendirme yüzünden veri sızdırılabiliyor. Şirket, açıkların sahada kötüye kullanıldığına dair kanıt bulmadığını ve kendi sunucusunda barındıran (self-hosted) müşterilerin yama yapması gerektiğini açıkladı.",
+     "yorum": "Finansal etkisi kısa vadede sınırlı. Stratejik açıdan ise hassas: NOW kendini 'AI Control Tower' ve yönetişim katmanı olarak satıyor. Platformun kendisinde kimlik doğrulamasız kritik açık çıkması bu anlatıyı zayıflatır. Açıklardan biri sahada kullanılırsa ve bir müşteri ihlali duyurulursa, yenileme görüşmelerinde pazarlık gücü rakiplere kayabilir. Şu an için izlenecek bir risk.",
+     "etki": "zayiflatir",
+     "sutun_id": "ai_ve_yenileme",
+     "onem": 3,
+     "kaynak_url": "https://www.bleepingcomputer.com/news/security/servicenow-warns-of-three-max-severity-security-vulnerabilities/",
+     "kaynak_adi": "BleepingComputer"
+    },
+    {
+     "kategori": "sektor",
+     "tarih": "2026-09-22",
+     "baslik": "Blueprint Alliance: Okta, AWS, Google Cloud, Salesforce, ServiceNow ve diğerleri AI ajan güvenliği için birleşti",
+     "olgu": "Okta; AWS, CrowdStrike, Databricks, Docker, Google Cloud, Lovable, Proofpoint, Salesforce, ServiceNow, Wiz ve Zscaler ile birlikte, kurumsal AI ajanlarını yönetmek için açık ve çok satıcılı bir mimari hedefleyen Blueprint Alliance'ı kurdu. İlkeler şöyle: her ajan bir kimlik olarak ele alınacak, erişim göreve göre sınırlanacak ve ajan davranışı sürekli izlenecek.",
+     "yorum": "NOW'un 'ajanları yöneten katman' konumlandırması için olumlu. Ancak açık ve çok satıcılı standart iki yönlü işler: standartlaşma, NOW'un yönetişim katmanındaki kilitlenme (lock-in) avantajını da aşındırabilir. Kısa vadede gelir etkisi yok.",
+     "etki": "notr",
+     "sutun_id": "ai_ve_yenileme",
+     "onem": 2,
+     "kaynak_url": "https://www.okta.com/newsroom/press-releases/industry-leaders-form-the-blueprint-alliance/",
+     "kaynak_adi": "Okta Newsroom"
+    },
+    {
+     "kategori": "musteri",
+     "tarih": "2026-09-23",
+     "baslik": "IDC: ServiceNow ortakları NOW'un sattığı her 1 $ için 6,02 $ kazanıyor",
+     "olgu": "IDC'nin ortak firmalarla yaptığı ankete göre ekosistemdeki hizmet sağlayıcılar NOW'un kaydettiği her 1 $ için 6,02 $ gelir elde ediyor. Ortakların işlerinin yaklaşık %34'ü platform üzerinden geliyor ve bu payın 2028'de %40'a çıkması bekleniyor.",
+     "yorum": "Güçlü bir ekosistem geçiş maliyetini artırır ve yenileme oranını (%98) destekler. Öte yandan bu çalışma NOW'un sponsor olduğu türden bir çalışma; tarafsız bir kanıt gibi okunmamalı.",
+     "etki": "destekler",
+     "sutun_id": "ai_ve_yenileme",
+     "onem": 2,
+     "kaynak_url": "https://www.aktiencheck.de/news/Artikel-ServiceNow_s_Partner_Network_Turns_Every_Software_Dollar_Into_6_02_and_Analysts_Are_Taking_Notice-20118383",
+     "kaynak_adi": "aktiencheck.de"
+    },
+    {
+     "kategori": "urun_sozlesme",
+     "tarih": "2026-09-23",
+     "baslik": "Yeni müşteri ve ortak duyuruları: INRY EmployeeWorks'ü 6 haftada kurdu; Hitachi, Xapien, TCS ve Capgemini/Iberdrola iş birlikleri",
+     "olgu": "INRY, eski çalışan portalını ServiceNow EmployeeWorks ile altı haftada değiştirdi. Hitachi Digital Services altyapı izleme için bir AI çözümünde ortaklık duyurdu. Xapien, AI tabanlı durum tespitini (due diligence) iş akışlarına taşımak için ortaklık kurdu. Capgemini, Iberdrola'nın proje portföy yönetimi (PPM) dönüşümünü ServiceNow ile yürüttü.",
+     "yorum": "Bunlar olağan ekosistem akışı; tek tek bakıldığında tutarları önemsiz. Kısa kurulum süreleri (6 hafta) Moveworks tabanlı EmployeeWorks'ün satılabilir olduğunu gösteriyor, yani satın almanın entegrasyonuna dair küçük bir olumlu işaret.",
+     "etki": "destekler",
+     "sutun_id": "ai_ve_yenileme",
+     "onem": 1,
+     "kaynak_url": "https://finnhub.io/api/news?id=bea3d1e36178ea06973efa47d5c450680754df24b423dd6c02ab019e0a53ea06",
+     "kaynak_adi": "Yahoo (veri paketi)"
+    },
+    {
+     "kategori": "rakip",
+     "tarih": "2026-09-23",
+     "baslik": "Meta'nın Muse ajanı Nasdaq'ı rekora taşıdı; 'AI ajanları kimi yiyecek' tartışması yeniden alevlendi",
+     "olgu": "Muse, ABD ve Kanada'da App Store ve Google Play'de ChatGPT'yi geçerek en çok indirilen ücretsiz uygulama oldu ve iki haftada 2,8 milyon indirmeye ulaştı. Nasdaq 100 rekor kırdı. Yatırımcılar ise ajanların bankacılık, seyahat ve e-ticaret işlerini ele geçirebileceğinden endişelendi.",
+     "yorum": "NOW doğrudan hedefte değil, çünkü Muse bir tüketici ajanı. Ancak 'ajanlar koltuk (seat) bazlı SaaS'ı aşındırır' anlatısını canlı tutuyor ve NOW'un bu hafta QQQ'nun 3 puan gerisinde kalmasının bağlamını oluşturuyor. Kurumsal tarafta koltuk sayısı yerine tüketim bazlı fiyatlamaya geçiş zorunluluğu tezin kalıcı bir sorusu.",
+     "etki": "zayiflatir",
+     "sutun_id": "ai_ve_yenileme",
+     "onem": 3,
+     "kaynak_url": "https://www.chartmill.com/news/MS/Chartmill-55194-One-AI-Agent-Two-Verdicts-Muse-Lifts-the-Nasdaq-to-a-Record-and-Knocks-the-Banks",
+     "kaynak_adi": "ChartMill"
+    },
+    {
+     "kategori": "rakip",
+     "tarih": "2026-09-23",
+     "baslik": "Salesforce Agentforce ARR'ı 1,5 milyar $; Halo, MSP'lere ServiceNow alternatifi ITSM sunuyor",
+     "olgu": "Başlıklara göre Wells Fargo, 1,5 milyar $'lık Agentforce ARR'ı üzerinden Salesforce hedefini yükseltti. CRN'e göre Halo, ITSM platformunu yönetilen hizmet sağlayıcılar (MSP) için bir ServiceNow alternatifi olarak konumlandırıyor.",
+     "yorum": "Salesforce'un açıkladığı ajan ARR'ı (1,5 milyar $), NOW'un Q2'de açıkladığı AI ACV'si (>1 milyar $) ile kıyaslanabilir büyüklükte. İki şirketin metrik tanımları farklı olsa da AI tarafında NOW'un açık bir liderlik farkı olmadığını hatırlatıyor. Halo'nun etkisi ise MSP ve orta segmentle sınırlı.",
+     "etki": "zayiflatir",
+     "sutun_id": "ai_ve_yenileme",
+     "onem": 2,
+     "kaynak_url": "https://finnhub.io/api/news?id=1f69fa7f2fd34f334dc684be3ea8c70eae8cbd9f9004af4c37ada0558f54b767",
+     "kaynak_adi": "Yahoo (veri paketi)"
+    }
+   ],
+   "radar": [
+    {
+     "kategori": "sektor_tedarik",
+     "sinyal": "Cantor kanal kontrolleri: müşteriler genişletilmiş Now Assist paketlerine erişmek için üst lisans katmanlarına geçiyor",
+     "yorum": "AI'ın mevcut müşteri tabanında fiyat artışına (upsell) dönüştüğüne dair öncü bir işaret. Q3'te AI ACV'si ve 'Pro Plus' karışımında görülebilir. Tek bir aracı kurumun kontrolü olduğu için güven orta.",
+     "yon": "olumlu",
+     "guven": "orta",
+     "sutun_id": "ai_ve_yenileme",
+     "tarih": "2026-09-21",
+     "kaynak_url": "https://www.investing.com/news/analyst-ratings/cantor-fitzgerald-raises-servicenow-stock-price-target-on-ai-demand-93CH-4909057"
+    },
+    {
+     "kategori": "sektor_tedarik",
+     "sinyal": "IDC: ortaklar NOW'un sattığı her 1 $ için 6,02 $ kazanıyor; ortakların iş payındaki platform oranının %34'ten 2028'de %40'a çıkması bekleniyor",
+     "yorum": "Ortakların NOW'a daha fazla kaynak ayırması, gelecekteki satış kapasitesinin öncü göstergesi. Aynı hafta Danimarkalı ServiceNow danışmanlık firması Adeno'nun satın alınması da ekosistemin çekiciliğini teyit ediyor. Çalışma satıcı destekli olduğu için güven orta.",
+     "yon": "olumlu",
+     "guven": "orta",
+     "sutun_id": "ai_ve_yenileme",
+     "tarih": "2026-09-23",
+     "kaynak_url": "https://www.aktiencheck.de/news/Artikel-ServiceNow_s_Partner_Network_Turns_Every_Software_Dollar_Into_6_02_and_Analysts_Are_Taking_Notice-20118383"
+    },
+    {
+     "kategori": "sektor_tedarik",
+     "sinyal": "Halo, ITSM platformunu MSP'lere ServiceNow alternatifi olarak konumlandırıyor",
+     "yorum": "ITSM, NOW'un çekirdek ürünü. Orta ölçekli/MSP segmentinde fiyat baskısı sinyali olabilir, ancak NOW'un büyük kurumsal müşteri tabanını etkilemesi beklenmez.",
+     "yon": "olumsuz",
+     "guven": "dusuk",
+     "sutun_id": "ai_ve_yenileme",
+     "tarih": "2026-09-24",
+     "kaynak_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQWVF5MzI3aDEwQ2d0Wm9qdXNCSl9VMTBGbEx2eVpWTXFiSGw3RXYxUTNhMk1CRUxZT1hTdWJkeGwycGhPQmRWNUJjcWxPVHp4ZThZdFVWdHhzU1hFVHZHZ0ZYUEhNQWRsRGgyeDJLRHJVRS1idlM1RHBZbWEzWTRCdFo0OEY5Vlh5THpnTWN0Njk4dzdHWTRTbWlhR19CMThncUplRWpudFY4VGNFZ21z?oc=5"
+    },
+    {
+     "kategori": "sektor_tedarik",
+     "sinyal": "AI Platform'da 5 CVE (ikisi kritik, kimlik doğrulaması gerektirmiyor); şirket saha istismarı tespit etmedi",
+     "yorum": "Bir müşteri ihlali açıklanırsa bu sinyal ciddi bir riske dönüşür; şu an yalnızca izleme listesinde. Güvenlik bültenleri SaaS sektöründe olağan, ama 'yönetişim katmanı' konumlandırmasıyla çelişiyor.",
+     "yon": "olumsuz",
+     "guven": "dusuk",
+     "sutun_id": "ai_ve_yenileme",
+     "tarih": "2026-09-24",
+     "kaynak_url": "https://cyberpress.org/servicenow-fixes-five-ai-platform-flaws/"
+    },
+    {
+     "kategori": "konferans",
+     "sinyal": "Blueprint Alliance: NOW, AI ajan güvenliği standardında Okta, AWS, Google Cloud, Salesforce ile kurucu üye",
+     "yorum": "Ajan yönetişimi standardında masada olmak olumlu. Ancak açık standartlar farklılaşmayı sınırlayabilir. Gelir etkisi belirsiz.",
+     "yon": "belirsiz",
+     "guven": "dusuk",
+     "sutun_id": "ai_ve_yenileme",
+     "tarih": "2026-09-22",
+     "kaynak_url": "https://www.okta.com/newsroom/press-releases/industry-leaders-form-the-blueprint-alliance/"
+    }
+   ]
   }
  ],
  "cikis": [
@@ -326,6 +480,6 @@
   }
  ],
  "son_ceyrek": "FY2026 Q2",
- "guncelleme": "2026-09-26T12:15:01+00:00",
+ "guncelleme": "2026-09-26T12:40:35+00:00",
  "not": "Tez durumu fiyattan bağımsızdır. Fiyat düşüşü tek başına tezin bozulduğu anlamına gelmez."
 }

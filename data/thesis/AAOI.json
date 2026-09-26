@@ -67,8 +67,32 @@
     "donem": "FY2026 Q2"
    },
    "olgu_mu": true,
-   "haberler": [],
-   "radar": []
+   "haberler": [
+    {
+     "kategori": "musteri",
+     "tarih": "2026-09-23",
+     "baslik": "Alphabet'in capex artışı fotonik hisseleri yukarı taşıdı",
+     "olgu": "Alphabet'in son çeyrekte capex'ini yıllık %100 artırması ve 2026 capex tahminini 15 milyar $ yükseltmesi sonrasında COHR, POET, LITE ve AAOI gece seansında %1–1,7 yükseldi.",
+     "yorum": "Hyperscaler talebinin sürdüğünü teyit eden sektörel olumlu bir sinyal. Ancak AAOI aynı gün (23 Eylül) %5,55 düştü. Sektör rüzgârı hisseye yansımadı; bu, piyasanın AAOI'ye özgü riskleri (sulandırma, arz, yoğunlaşma) fiyatladığını düşündürüyor.",
+     "etki": "destekler",
+     "sutun_id": "buyume",
+     "onem": 3,
+     "kaynak_url": "https://finance.yahoo.com/technology/ai/articles/cohr-aaoi-lite-poet-photonic-040805917.html",
+     "kaynak_adi": "Stocktwits via Yahoo Finance"
+    }
+   ],
+   "radar": [
+    {
+     "kategori": "sektor_tedarik",
+     "sinyal": "Alphabet capex'i yıllık %100 arttı; 2026 capex tahmini 15 milyar $ yükseltildi.",
+     "yorum": "Optik alıcı-verici talebi için olumlu bir öncü gösterge. Ancak AAOI'nin bundan pay alması arz kısıtına bağlı.",
+     "yon": "olumlu",
+     "guven": "orta",
+     "sutun_id": "buyume",
+     "tarih": "2026-09-23",
+     "kaynak_url": "https://finance.yahoo.com/technology/ai/articles/cohr-aaoi-lite-poet-photonic-040805917.html"
+    }
+   ]
   },
   {
    "id": "brut_marj",
@@ -262,8 +286,32 @@
     "donem": "FY2026 Q2"
    },
    "olgu_mu": true,
-   "haberler": [],
-   "radar": []
+   "haberler": [
+    {
+     "kategori": "sirket",
+     "tarih": "2026-08-24",
+     "baslik": "(Bağlam) 600 milyon $'lık yeni ATM programı hâlâ fiyatın üzerinde baskı",
+     "olgu": "AAOI, bir Cuma kapanışından sonra Raymond James ve Needham aracılığıyla 600 milyon $'lık ATM hisse satış programı açıkladı. Kullanım amacı borç ödemesi, işletme sermayesi ve yatırım harcamaları. Hisse ertesi Pazartesi erken işlemlerde %12 düşüşle 109,94 $'a geriledi.",
+     "yorum": "Bu hafta yeni değil. Ancak zirveden %54,55'lik düşüşü ve sektöre göre zayıf kalışı açıklayan en önemli etken bu. Program tamamen kullanılırsa mevcut 10,1 aylık nakit pisti uzar, ama bunun bedeli yeni sulandırmadır. Tetiklenen iki çıkış kriteri bu nedenle birbirine bağlı.",
+     "etki": "zayiflatir",
+     "sutun_id": "sulandirma",
+     "onem": 4,
+     "kaynak_url": "https://finance.yahoo.com/markets/stocks/articles/applied-optoelectronics-sinks-12-600m-132235988.html",
+     "kaynak_adi": "Yahoo Finance"
+    }
+   ],
+   "radar": [
+    {
+     "kategori": "earnings_call_dili",
+     "sinyal": "Ç2 yönlendirmesinde hisse sayısı varsayımı yaklaşık 92,8 milyona yükseldi (Ç2 seyreltilmiş: 88,2 milyon); yönetim talebin 2027 ortasına kadar kapasiteyi aşacağını söylüyor.",
+     "yorum": "Yönetimin dili 'talep' yerine 'kapasite' merkezli; sulandırmanın süreceği yönlendirmeye zaten dahil edilmiş.",
+     "yon": "olumsuz",
+     "guven": "orta",
+     "sutun_id": "sulandirma",
+     "tarih": "2026-08-06",
+     "kaynak_url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/aaoi20260630_10q.htm"
+    }
+   ]
   },
   {
    "id": "stok",
@@ -337,23 +385,107 @@
    "aciklama": "",
    "durum": "sari",
    "soru": "10-Q/10-K dipnotlarında en büyük müşterilerin gelir payı, 800G/1.6T ürün geçişi, ABD (Texas) üretim kapasitesi ve finansman (ATM, convertible) hakkında açıklamalar tezi destekliyor mu?",
-   "gerekce": "Tezi destekleyen olgular:\n- Veri merkezi geliri yıllık %140 artışla 107,7 milyon $ oldu ve gelirin %56'sına ulaştı.\n- 800G hacmi çeyreklik bazda iki katını aştı.\n- Kapasite ayda yaklaşık 200.000 adet; yıl sonu hedefi ayda 650.000 adet 800G/1.6T.\n- ABD'de 6 ayda 169,0 milyon $ yatırım harcaması yapıldı; ABD'deki uzun vadeli varlıklar 123,7 milyon $'dan 313,0 milyon $'a çıktı. Sugar Land ve Houston'da genişleme sürüyor ve CHIPS Act vergi kredisi potansiyeli var.\n\nTezi zayıflatan olgular:\n- Üretim yerine göre ABD geliri Ç2'de yalnızca 1,3 milyon $ (%0,7). Gelirin 108,4 milyon $'ı Tayvan, 82,2 milyon $'ı Çin üretimi. 'ABD içi üretim avantajı' henüz gelire yansımıyor, şimdilik bir vaat.\n- İlk üç müşteri gelirin %92'si; en büyük müşteri hyperscaler değil, CATV distribütörü Digicomm.\n- Finansman büyük ölçüde hisse ihracına dayanıyor: 1,03 milyar $ ATM, seyreltilmiş hisselerde yıllık +%43,7. Parası içindeki convertible ve Amazon warrant'ı ek sulandırma yaratıyor.\n- Müşterilerle 1 yıldan uzun alım taahhüdü yok.\n\nKapasite hikâyesi güçlü, ancak yoğunlaşma, sermaye yoğunluğu ve sulandırma nedeniyle durum sarı.",
-   "kanit_alinti": "The Company expects to expand manufacturing operations in the U.S. and Taiwan during 2026 and 2027 primarily to support laser diode production and production of 800G and 1.6T transceivers.",
-   "kanit_dogrulandi": true,
+   "gerekce": "Destekleyen: hyperscaler capex'i (Alphabet) artıyor. Yönetim, 800G/1.6T talebinin 2027 ortasına kadar kapasiteyi aşacağını öngörüyor ve yıl sonu kapasite hedefi ayda yaklaşık 650.000 adet. Zayıflatan: ilk üç müşteri gelirin %92'si ve Digicomm tek başına alacakların %67,2'si. ABD üretimli gelir Ç2'de yalnızca 1,3 milyon $. 10 Eylül'de Ningbo'da 10 yıllık fabrika kiralandı; kapasite artışı kısmen Çin'e dayanıyor, bu da jeopolitik/gümrük vergisi maruziyeti demek. Zacks bileşen ve kapasite kısıtlarına dikkat çekiyor. Müşterilerle 1 yıldan uzun alım taahhüdü yok. Kırmızıya geçirecek kadar yeni bir olumsuzluk yok, ancak eğilim zayıflatıcı.",
+   "kanit_alinti": null,
+   "kanit_dogrulandi": null,
    "kaynak": {
-    "tip": "bilanco",
-    "tarih": "2026-08-06",
-    "accn": "0001437749-26-026278",
-    "form": "10-Q",
-    "donem_sonu": "2026-06-30",
-    "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/aaoi20260630_10q.htm",
-    "index_url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/0001437749-26-026278-index.htm",
-    "kesildi": false,
-    "karakter": 138311
+    "tip": "sali_raporu",
+    "tarih": "2026-09-26",
+    "url": "https://www.tipranks.com/news/company-announcements/applied-optoelectronics-expands-china-manufacturing-with-long-term-lease"
    },
    "olgu_mu": false,
-   "haberler": [],
-   "radar": []
+   "haberler": [
+    {
+     "kategori": "urun_sozlesme",
+     "tarih": "2026-09-24",
+     "baslik": "AOI, SCTE TechExpo'da ilk canlı Quantum30 3,0 GHz konsept demosunu yapacak",
+     "olgu": "AOI, 29 Eylül–2 Ekim'de Atlanta'daki SCTE TechExpo'da koaksiyel kablo üzerinden 3,0 GHz downstream sinyal gösteren çalışan donanımla bir konsept demosu yapacağını duyurdu. Şirket bunun bir konsept kanıtı olduğunu, sektörün henüz 3,0 GHz standardı belirlemediğini belirtti. 'Beyond 1.8 GHz' başlıklı bir teknik makale de yayımlandı.",
+     "yorum": "CATV segmenti gelir tarafında önemli; en büyük müşteri CATV distribütörü Digicomm. Ancak bu duyuru standart bile olmayan bir teknoloji için yapılmış bir demo; kısa vadeli gelir etkisi yok. Hyperscaler/800G tezine katkısı sınırlı. Asıl mesaj, şirketin CATV'de ürün yol haritasını canlı tuttuğu.",
+     "etki": "notr",
+     "sutun_id": "musteri_kapasite",
+     "onem": 2,
+     "kaynak_url": "https://www.prnewswire.com/news-releases/aoi-brings-first-live-quantum30-3-0ghz-concept-demo-to-scte-techexpo-in-atlanta-302888539.html",
+     "kaynak_adi": "PR Newswire (şirket bülteni)"
+    },
+    {
+     "kategori": "sirket",
+     "tarih": "2026-09-10",
+     "baslik": "Çin'de (Ningbo) 10 yıllık fabrika kira sözleşmesi (8-K)",
+     "olgu": "AAOI'nin tamamına sahip olduğu yan kuruluşu Global Technology, Ningbo'da 38.311,8 m²'lik bir fabrika binası için 16.09.2026–15.09.2036 dönemini kapsayan 10 yıllık kira sözleşmesi imzaladı. Yıllık kira 6.896.124 RMB; üçüncü yıldan itibaren her üç yılda bir %3 artış var. Sözleşmede 3 ay kirasız tadilat süresi ve satın almada ön alım hakkı bulunuyor.",
+     "yorum": "Dönem öncesine ait ama piyasada bu hafta konuşuldu (TipRanks haberi başlık listesinde). Kira tutarı küçük; asıl önemli olan stratejik sinyal. Kapasite artışının önemli kısmı Çin'e de yayılıyor. Bu, 'ABD içi üretim avantajı' tezini zayıflatıyor ve olası ABD'nin Çin üretimi alıcı-vericilere kısıtlaması/gümrük vergisi riskine maruziyeti artırıyor. Öte yandan kapasite darboğazını hızlı çözmenin en ucuz yolu olabilir.",
+     "etki": "zayiflatir",
+     "sutun_id": "musteri_kapasite",
+     "onem": 3,
+     "kaynak_url": "https://www.tipranks.com/news/company-announcements/applied-optoelectronics-expands-china-manufacturing-with-long-term-lease",
+     "kaynak_adi": "TipRanks / SEC 8-K"
+    },
+    {
+     "kategori": "rakip",
+     "tarih": "2026-09-23",
+     "baslik": "Zacks: AAOI tedarik kısıtları altında, Fabrinet tercih ediliyor",
+     "olgu": "Makaleye göre AAOI, üretim kapasitesi ve kritik bileşen tedarik kısıtları nedeniyle artan müşteri talebini karşılamakta zorlanıyor. 800G geliri 12,8 milyon $ ile veri merkezi gelirinin %11,9'u oldu. İleriye dönük F/S oranı AAOI'de 4,56x, FN'de 2,22x. Zacks Rank: FN #2 (Al), AAOI #3 (Tut).",
+     "yorum": "Talep sorunu değil, arz sorunu. Bu, Ç3'teki iddialı yönlendirmenin (255–290 milyon $) kapasite ve bileşen teslimatına bağlı olduğunu vurguluyor. Fabrinet gibi ölçekli bir sözleşmeli üreticinin kapasite yarışında AAOI'den önde olması rekabet riskidir.",
+     "etki": "zayiflatir",
+     "sutun_id": "musteri_kapasite",
+     "onem": 3,
+     "kaynak_url": "https://finance.yahoo.com/technology/ai/articles/aaoi-vs-fabrinet-ai-data-171300228.html",
+     "kaynak_adi": "Zacks via Yahoo Finance"
+    },
+    {
+     "kategori": "rakip",
+     "tarih": "2026-09-22",
+     "baslik": "Lumentum, ECOC 2026'da DWDM ELSFP gösterecek",
+     "olgu": "Başlığa göre LITE'ın sekiz dalga boylu DWDM ELSFP ürünü CPO ve NPO mimarilerini hedefliyor.",
+     "yorum": "Rakipler CPO/NPO lazer kaynaklarına yatırım yapıyor. AAOI'nin geleneksel pluggable alıcı-verici odaklı modeli için orta vadeli bir teknoloji geçiş riski. Bu hafta için etkisi sınırlı.",
+     "etki": "notr",
+     "sutun_id": "musteri_kapasite",
+     "onem": 1,
+     "kaynak_url": "https://finnhub.io/api/news?id=56436fcdde43af40c0b9238f3b6530e370b5d5713815328ba9be7bc8a161d6c2",
+     "kaynak_adi": "Yahoo (Finnhub)"
+    }
+   ],
+   "radar": [
+    {
+     "kategori": "konferans",
+     "sinyal": "AOI, SCTE TechExpo'da (29 Eylül–2 Ekim, Atlanta) 3,0 GHz Quantum30 konsept demosu yapacak ve bir teknik makale yayımladı.",
+     "yorum": "CATV/HFC tarafında ürün yol haritası sürüyor. Standart henüz yok, bu nedenle gelir etkisi yıllar sonra. Müşteri yoğunlaşmasında (Digicomm) CATV'nin rolü sürecek gibi.",
+     "yon": "belirsiz",
+     "guven": "yuksek",
+     "sutun_id": "musteri_kapasite",
+     "tarih": "2026-09-24",
+     "kaynak_url": "https://www.prnewswire.com/news-releases/aoi-brings-first-live-quantum30-3-0ghz-concept-demo-to-scte-techexpo-in-atlanta-302888539.html"
+    },
+    {
+     "kategori": "sektor_tedarik",
+     "sinyal": "Zacks, AAOI'de üretim kapasitesi ve kritik bileşen tedarik kısıtları olduğunu belirtiyor.",
+     "yorum": "Ç3 yönlendirmesinin gerçekleşmesi için öncü risk. Bileşen darboğazı (lazer/DSP) sektör geneline yayılırsa ölçekli rakipler avantajlı.",
+     "yon": "olumsuz",
+     "guven": "orta",
+     "sutun_id": "musteri_kapasite",
+     "tarih": "2026-09-23",
+     "kaynak_url": "https://finance.yahoo.com/technology/ai/articles/aaoi-vs-fabrinet-ai-data-171300228.html"
+    },
+    {
+     "kategori": "sektor_tedarik",
+     "sinyal": "Ningbo'da (Çin) 38.311,8 m²'lik fabrika için 10 yıllık kira sözleşmesi imzalandı.",
+     "yorum": "Kapasite artışının bir kısmı Çin'de. Olası ABD kısıtlamaları/gümrük vergileri açısından maruziyet artıyor. Aynı zamanda hızlı ve ucuz kapasite anlamına da gelebilir.",
+     "yon": "belirsiz",
+     "guven": "yuksek",
+     "sutun_id": "musteri_kapasite",
+     "tarih": "2026-09-10",
+     "kaynak_url": "https://www.tipranks.com/news/company-announcements/applied-optoelectronics-expands-china-manufacturing-with-long-term-lease"
+    },
+    {
+     "kategori": "konferans",
+     "sinyal": "Lumentum ECOC 2026'da CPO/NPO'ya yönelik DWDM ELSFP gösteriyor.",
+     "yorum": "Rakiplerin CPO/NPO lazer kaynaklarına yönelmesi, pluggable ağırlıklı AAOI için orta vadeli bir teknoloji geçiş sinyali. Zamanlaması tartışmalı; Haziran'daki CPO gecikme raporu sonrası sektörde düşüş yaşanmıştı.",
+     "yon": "belirsiz",
+     "guven": "dusuk",
+     "sutun_id": "musteri_kapasite",
+     "tarih": "2026-09-22",
+     "kaynak_url": "https://finnhub.io/api/news?id=56436fcdde43af40c0b9238f3b6530e370b5d5713815328ba9be7bc8a161d6c2"
+    }
+   ]
   }
  ],
  "cikis": [
@@ -399,6 +531,6 @@
   }
  ],
  "son_ceyrek": "FY2026 Q2",
- "guncelleme": "2026-09-26T12:15:01+00:00",
+ "guncelleme": "2026-09-26T12:40:35+00:00",
  "not": "Tez durumu fiyattan bağımsızdır. Fiyat düşüşü tek başına tezin bozulduğu anlamına gelmez."
 }

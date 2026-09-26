@@ -335,12 +335,22 @@
    "ad": "Rekabet ve yönetim",
    "tip": "yorum",
    "aciklama": "",
-   "durum": "veri_yok",
+   "durum": "sari",
    "soru": "10-Q/10-K ve basın bülteninde rekabet, müşteri yoğunlaşması ve yönetimin beklentileri hakkındaki açıklamalar tezi destekliyor mu?",
-   "gerekce": "Henüz değerlendirilmedi (Claude bilanço analizi / Salı raporu çalışmadı).",
-   "kanit_alinti": null,
-   "kanit_dogrulandi": null,
-   "kaynak": null,
+   "gerekce": "Destekleyen yönler: yönetim modüler/chiplet mimarisini farklılaştırıcı olarak sunuyor. HPE/PSC işbirliği ve C-DAC siparişi var. 108 kübitlik sistem AWS, Azure ve qBraid üzerinden erişilebilir. Kamu dışı müşteri çeşitlenmesi başladı (kamu payı %18). Zayıflatan yönler: (1) Q2 gelirinin %64'ü tek müşteriden geliyor ve müşteri seti her yıl değişiyor. (2) Hizmet ve bulut gelirleri küçülüyor. (3) Rakiplere karşı hız iddiası çeyrekten çeyreğe değişti: Q1 bülteninde trapped-ion ve neutral-atom sistemlere göre 'about 1,000 times faster', Q2'de trapped-ion'a göre '10,000 times', neutral-atom'a göre '100x'. Bu tutarsızlık pazarlama iddialarının güvenilirliğini azaltıyor. (4) Yol haritası yeniden revize edilecek ve ölçekte doğruluk düşüyor (%99,1). (5) Yönetim finansal guidance vermiyor. (6) Üst yönetim satış planları kurdu. Sonuç: yönetimin rekabet anlatısı var ama finansal kanıtı henüz yok.",
+   "kanit_alinti": "we believe our open modular approach, superconducting gate-based architecture, and chiplet-based scaling strategy continue to differentiate Rigetti in the market.",
+   "kanit_dogrulandi": true,
+   "kaynak": {
+    "tip": "bilanco",
+    "tarih": "2026-08-06",
+    "accn": "0001104659-26-091993",
+    "form": "10-Q",
+    "donem_sonu": "2026-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1838359/000110465926091993/rgti-20260630x10q.htm",
+    "index_url": "https://www.sec.gov/Archives/edgar/data/1838359/000110465926091993/0001104659-26-091993-index.htm",
+    "kesildi": false,
+    "karakter": 192894
+   },
    "olgu_mu": false,
    "haberler": [],
    "radar": []
@@ -393,6 +403,6 @@
   }
  ],
  "son_ceyrek": "FY2026 Q2",
- "guncelleme": "2026-09-26T12:15:01+00:00",
+ "guncelleme": "2026-09-26T12:40:35+00:00",
  "not": "Tez durumu fiyattan bağımsızdır. Fiyat düşüşü tek başına tezin bozulduğu anlamına gelmez."
 }
