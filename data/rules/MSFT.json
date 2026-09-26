@@ -1,22 +1,22 @@
 {
- "ticker": "META",
+ "ticker": "MSFT",
  "onay": "taslak",
  "kosul": "tez_saglam",
- "zirveden_uzaklik": -3.33,
+ "zirveden_uzaklik": -4.78,
  "kademeler": [
   {
    "dusus": 15,
-   "not": "DCA 1,5x (tez sağlamsa).",
+   "not": "Haftalık DCA tutarını 1,5x yap (tez sağlamsa).",
    "tetiklendi": false
   },
   {
    "dusus": 25,
-   "not": "DCA 2x; capex ve FCF sütununu kontrol et.",
+   "not": "Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku.",
    "tetiklendi": false
   },
   {
    "dusus": 35,
-   "not": "Ek alım düşün; regülasyon haberlerini oku.",
+   "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
    "tetiklendi": false
   }
  ],
@@ -26,24 +26,24 @@
    "zirveden_uzaklik": -0.4,
    "degisim_1a": 4.66,
    "degisim_3a": 5.38,
-   "fark_puan": -2.93
+   "fark_puan": -4.38
   },
   {
-   "sembol": "XLC",
-   "zirveden_uzaklik": -5.93,
-   "degisim_1a": 0.31,
-   "degisim_3a": 6.39,
-   "fark_puan": 2.6
+   "sembol": "IGV",
+   "zirveden_uzaklik": -9.46,
+   "degisim_1a": 3.54,
+   "degisim_3a": 20.19,
+   "fark_puan": 4.68
   }
  ],
  "guncelleme": "2026-09-26T08:31:32+00:00",
  "not": "Otomatik işlem yok. Bu bölüm önceden yazdığın kuralları hatırlatır.",
  "dusus_kaynagi": "piyasa_sektor",
  "dusus_kaynagi_aciklama": "Hissenin düşüşü karşılaştırma endeksleriyle benzer: ağırlıkla piyasa/sektör kaynaklı.",
- "en_iyi_fark": 2.6,
+ "en_iyi_fark": 4.68,
  "tetiklenen": null,
  "tez_durumu": "yesil",
  "kosul_saglaniyor": true,
  "durum": "tetiklenmedi",
- "mesaj": "Zirveden −%3,3. Sonraki kademe: −%15."
+ "mesaj": "Zirveden −%4,8. Sonraki kademe: −%15."
 }
