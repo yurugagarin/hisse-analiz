@@ -301,26 +301,3 @@ AAOI:
       operator: ">"
       esik: 40
       ardisik_ceyrek: 1
-
-MSFT:
-  onay: taslak
-  # OTOMATİK ŞABLON: eşikler şirketin bugünkü rakamlarına göre (son yıllık büyüme %18, brüt marj %67, FCF marjı %20) "mevcut kaliteyi koru"
-  # mantığıyla önerildi. Kendi tezine göre düzenle; özet ve yorum sütununu kendi cümlelerinle yaz.
-  ozet: >
-    Microsoft için tez henüz yazılmadı. Bu otomatik taslak yalnızca büyümenin, marjın, nakit üretiminin
-    ve hisse sayısının bugünkü seviyesini koruyup korumadığını izler.
-  sutunlar:
-    - {id: buyume, ad: "Gelir büyümesi", tip: metrik, metrik: revenue_yoy, operator: ">", esik: 9, uyari: 4}
-    - {id: brut_marj, ad: "Brüt marj", tip: metrik, metrik: gross_margin, operator: ">", esik: 64, uyari: 59}
-    - {id: nakit, ad: "Serbest nakit akışı", tip: metrik, metrik: fcf_margin_ttm, operator: ">", esik: 15, uyari: 5}
-    - {id: sulandirma, ad: "Hisse sayısı", tip: metrik, metrik: diluted_shares_yoy, operator: "<", esik: 2, uyari: 5}
-    - id: rekabet
-      ad: "Rekabet ve yönetim"
-      tip: yorum
-      soru: >
-        10-Q/10-K ve basın bülteninde rekabet, müşteri yoğunlaşması ve yönetimin beklentileri
-        hakkındaki açıklamalar tezi destekliyor mu?
-  cikis_kriterleri:
-    - {id: daralma, ad: "Gelir 2 çeyrek üst üste yıllık bazda daralırsa", metrik: revenue_yoy, operator: "<", esik: 0, ardisik_ceyrek: 2}
-    - {id: marj_kirilmasi, ad: "Brüt marj 2 çeyrek üst üste eşiğin (%55) altına inerse", metrik: gross_margin, operator: "<", esik: 55, ardisik_ceyrek: 2}
-    - {id: asiri_sulandirma, ad: "Hisse sayısı yıllık %10'dan fazla artarsa", metrik: diluted_shares_yoy, operator: ">", esik: 10, ardisik_ceyrek: 1}
