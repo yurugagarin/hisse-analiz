@@ -1,0 +1,224 @@
+{
+ "son": {
+  "dosya": {
+   "accn": "0001045810-26-000075",
+   "form": "10-Q",
+   "donem_sonu": "2026-07-26",
+   "tarih": "2026-08-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+   "index_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/0001045810-26-000075-index.htm",
+   "kesildi": false,
+   "karakter": 152831
+  },
+  "basin_bulteni": [],
+  "onceki_basin_bulteni": [],
+  "model": "claude-opus-5-5",
+  "guncelleme": "2026-09-26T11:57:12+00:00",
+  "analiz": {
+   "ozet": "NVDA, FY2027 2. çeyrekte (dönem sonu 26.07.2026) 96,2 milyar $ gelir açıkladı. Gelir yıllık %106, çeyreklik %18 arttı. Brüt marj %75,0, faaliyet marjı %66,2 oldu. Manşet büyüme ve marj tezi destekliyor. Kazanç kalitesi ise belirgin biçimde bozuluyor. (1) Kalıcı olmayan bir kalem ağırlaşıyor: 'Other income, net' içindeki özsermaye menkul kıymet kazançları (ilk yarıda 23,7 milyar $, 2. çeyrekte 7,8 milyar $) vergi öncesi kârın ilk yarıda yaklaşık %17'sini oluşturuyor. Kazançlar ağırlıkla gerçekleşmemiş; bir kısmı Level 3 ve lock-up'lı pozisyonlardan geliyor. Faaliyet kârı çeyreklik %19 artarken net kâr yalnızca %2 arttı. (2) Nakit dönüşümü zayıflıyor: ticari alacaklar 38,5 milyar $'dan 63,1 milyar $'a çıktı, 2. çeyrek FCF'i 21,4 milyar $'da kaldı ve TTM OCF/Net kâr oranı 0,70'e indi. Yönetim yatırım yapılabilir notlu müşterilere 1 yıla varan vade tanıdığını açıkça belirtiyor. (3) Bilanço dışı yükümlülükler hızla büyüyor: tedarik taahhüdü bir çeyrekte 119 milyar $'dan 279 milyar $'a çıktı. OpenAI adına verilen SB Energy garantisi 105 milyar $, AI cloud kapasite geri alım taahhütleri 36 milyar $. Buna ekosistemdeki 99 milyar $ özsermaye yatırımı ve 25 milyar $ yatırım taahhüdü ekleniyor. Bu yapı talebin bir kısmının NVIDIA'nın kendi bilançosuyla finanse edildiği (vendor financing / döngüsel gelir) şüphesini doğuruyor. Basın bültenleri mevcut değil, bu nedenle non-GAAP mutabakatı ve guidance karşılaştırması yapılamadı.",
+   "non_gaap": {
+    "aciklama_var": false,
+    "duzeltmeler": [
+     {
+      "kalem": "Segment faaliyet kârından hariç tutulan hisse bazlı ücret (SBC)",
+      "tutar_metni": "2. çeyrek: 2.027 milyon $; ilk yarı: 3.954 milyon $",
+      "degerlendirme": "kari_iyi_gosteriyor",
+      "gerekce": "Basın bülteni olmadığı için bülten non-GAAP mutabakatı incelenemedi. Tek referans 10-Q'daki segment mutabakatı. SBC tekrarlayan ve gerçek bir ücret maliyeti. Ödenmemiş SBC 19,4 milyar $ ve hisse stopajı için ilk yarıda 4,5 milyar $ nakit ödendi. Hariç tutulması segment kârını yaklaşık 2 milyar $/çeyrek şişiriyor. Gelire oranı düşük (TTM %2,39), bu yüzden etki büyüklüğü sınırlı.",
+      "kanit_alinti": "| Stock-based compensation expense | ( 2,027 ) | ( 1,624 ) | ( 3,954 ) | ( 3,099 ) |",
+      "kaynak_belge": "10-Q/10-K",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Satın almayla ilgili ve diğer maliyetler",
+      "tutar_metni": "2. çeyrek: 222 milyon $; ilk yarı: 469 milyon $",
+      "degerlendirme": "makul",
+      "gerekce": "Büyük ölçüde satın alma kaynaklı maddi olmayan duran varlık amortismanı (2. çeyrekte 237 milyon $). Nakit dışı ve operasyonel performansla ilişkisi zayıf. Ancak Groq lisansı gibi sürekli 'satın al-lisansla' stratejisi göz önüne alındığında tekrarlayan hale gelebilir.",
+      "kanit_alinti": "| Acquisition-related and other costs | ( 222 ) | ( 101 ) | ( 469 ) | ( 263 ) |",
+      "kaynak_belge": "10-Q/10-K",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Özsermaye menkul kıymet kazançları (GAAP net kârda duruyor)",
+      "tutar_metni": "2. çeyrek: 7.771 milyon $; ilk yarı: 23.707 milyon $",
+      "degerlendirme": "belirsiz",
+      "gerekce": "Bu bir non-GAAP düzeltmesi değil, tersine GAAP kârını şişiren bir kalem. Bülten olmadığı için şirketin non-GAAP'ta bunu çıkarıp çıkarmadığı bilinmiyor. Controller açısından GAAP EPS'nin (2,46 $) yaklaşık %11'lik vergi öncesi kısmı faaliyet dışı piyasa değerlemesinden geliyor.",
+      "kanit_alinti": "| Gains from equity securities, net | 7,771 | 2,247 | 23,707 | 2,073 |",
+      "kaynak_belge": "10-Q/10-K",
+      "kanit_alinti_dogrulandi": true
+     }
+    ],
+    "genel_yorum": "Bu çeyreğin ve önceki çeyreğin basın bültenleri stdin'de yok, bu yüzden şirketin non-GAAP mutabakatı doğrudan değerlendirilemedi. 10-Q'daki segment mutabakatı SBC'yi, dağıtılmamış giderleri ve satın alma maliyetlerini dışlıyor. Toplam fark 2. çeyrekte 2.861 milyon $ (segment kârı 66.595 milyon $, GAAP faaliyet kârı 63.734 milyon $), yani gelirin yaklaşık %3'ü. Asıl kalite sorunu non-GAAP tarafında değil, GAAP net kârın içindeki faaliyet dışı değerleme kazançlarında."
+   },
+   "musteri_yogunlasmasi": {
+    "aciklama_var": true,
+    "detay": "2. çeyrekte tek bir doğrudan müşteri gelirin %16'sını oluşturdu. İlk yarıda üç doğrudan müşterinin payı %16, %15 ve %13; toplam %44. Geçen yılın 2. çeyreğinde iki müşteri %23 ve %16 idi, yani tekil yoğunlaşma bir miktar azaldı. Buna karşılık alacak yoğunlaşması arttı: beş doğrudan müşteri alacakların %22, %14, %13, %11 ve %10'unu, toplam %70'ini tutuyor (Ocak 2026'da üç müşteri %56). Uzatılmış vadeler bu müşterilerde toplanıyor, dolayısıyla kredi riski de yoğunlaşıyor. Dolaylı taraf daha endişe verici: 'bir AI araştırma ve dağıtım şirketi' bulut hizmeti alımları üzerinden 'anlamlı' gelir katkısı sağlıyor. NVIDIA aynı zamanda OpenAI adına 105 milyar $'a kadar kira garantisi verdi. Son müşteri riski, tedarikçinin kendi bilançosuna taşınmış durumda.",
+    "bolum": "Note 7 - Supplemental Financial Statement Information; Note 13 - Segment Information; MD&A - Concentration of Revenue",
+    "kanit_alinti": "Five direct customers accounted for 22%, 14%, 13%, 11%, and 10% of our accounts receivable balance as of July 26, 2026. Three direct customers accounted for 25%, 18%, and 13% of our accounts receivable balance as of January 25, 2026.",
+    "etiket": "kirmizi_bayrak",
+    "kanit_alinti_dogrulandi": true
+   },
+   "organik_buyume": {
+    "satin_alma_var": true,
+    "detay": "Büyüme ezici biçimde organik. İlk yarıda satın almalara net nakit çıkışı yalnızca 298 milyon $, şerefiye artışı 293 milyon $. Bunlar 96,2 milyar $'lık çeyreklik gelir yanında önemsiz. Artışın kaynağı Blackwell Ultra rampası. Not edilmesi gereken iki nokta var. (1) Groq, Inc. 'münhasır olmayan lisans' anlaşması satın alma yerine lisans olarak yapılandırılmış. İlk yarıda 2.944 milyon $ ödeme yatırım yerine finansman faaliyetlerinde gösterildi; tahakkuk etmiş satın alma bedeli 3.921 milyon $'dan 986 milyon $'a indi. Bu, ekonomik özü satın almaya yakın bir işlemin bileşiminin sınıflandırma yoluyla farklı sunulması riskini taşıyor. (2) Mayıs 2026'da bir şirket satın alındı ve kilit çalışanlara yaklaşık 209 milyon $ değerinde hisse verildi. Ayrıca 2. çeyrekte bir müşteri ACIE'den Hyperscale'e yeniden sınıflandırıldı; platform bazlı büyüme karşılaştırmalarını etkiliyor.",
+    "bolum": "Condensed Consolidated Statements of Cash Flows; Note 4 - Intangible Assets and Goodwill; Note 7 (Accrued purchase consideration)",
+    "kanit_alinti": "In the first half of fiscal year 2027, goodwill increased by $293 million, which was allocated to our Compute & Networking reporting unit.",
+    "kanit_alinti_dogrulandi": true
+   },
+   "guidance": {
+    "onceki_guidance": "veri yok (önceki çeyreğin basın bülteni stdin'de bulunamadı)",
+    "onceki_alinti": "(bulunamadı)",
+    "gerceklesen": "2. çeyrek geliri 96.221 milyon $, brüt marj %75,0 (10-Q)",
+    "gerceklesen_alinti": "Revenue was $96.2 billion, up 106% from a year ago and up 18% sequentially.",
+    "sonuc": "karsilastirilamaz",
+    "yeni_guidance": "veri yok (bu çeyreğin basın bülteni stdin'de bulunamadı; 10-Q sayısal görünüm vermiyor, yalnızca Vera Rubin sevkiyatlarının 3. çeyrekte başladığını ve arz kısıtlarının sürdüğünü belirtiyor)",
+    "yeni_alinti": "Our next-generation Data Center architecture, Vera Rubin, began production shipments in the third quarter of fiscal year 2027.",
+    "onceki_alinti_dogrulandi": false,
+    "gerceklesen_alinti_dogrulandi": true,
+    "yeni_alinti_dogrulandi": true
+   },
+   "dipnot_bulgulari": [
+    {
+     "etiket": "kirmizi_bayrak",
+     "baslik": "Net kârın önemli kısmı gerçekleşmemiş yatırım değerlemesinden geliyor",
+     "aciklama": "İlk yarıda özsermaye menkul kıymet kazançları 23,7 milyar $ ve vergi öncesi kârın (141,4 milyar $) yaklaşık %17'si. 2. çeyrekte 7,8 milyar $ ile yaklaşık %11. Özel şirketlerdeki gerçekleşmemiş kazanç ilk yarıda 7,5 milyar $; bu pozisyonlar 'observable price changes' ile, yani çoğu zaman NVIDIA'nın da katıldığı yeni finansman turlarıyla yukarı değerleniyor. Halka açık hisselerin 36,9 milyar $'ı lock-up'lı. Faaliyet kârı çeyreklik %19 artarken net kârın yalnızca %2 artması, 1. çeyrekteki 16,4 milyar $'lık faaliyet dışı kazancın tekrarlanmadığını gösteriyor. Bu kalem hem oynak hem de yatırım yapılan şirketlerin çoğu aynı zamanda NVIDIA müşterisi olduğu için döngüsel.",
+     "bolum": "Note 7 - Other Income, Net; Note 5; Note 6 - Non-marketable Securities",
+     "kanit_alinti": "Other income, net, primarily consists of realized or unrealized gains and losses from investments in non-marketable securities and publicly-held equity securities. Gains from equity securities, net, were primarily driven by unrealized gains in equity securities.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "kirmizi_bayrak",
+     "baslik": "Uzatılmış ödeme vadeleri alacakları şişiriyor, nakit dönüşümü bozuluyor",
+     "aciklama": "Ticari alacaklar altı ayda 24,6 milyar $ arttı (38.466 → 63.059 milyon $). DSO 45,4'ten 59,6 güne çıktı. 2. çeyrek OCF'i 24,1 milyar $ ve net kârın (59,7 milyar $) yaklaşık %40'ı. TTM OCF/Net kâr 0,99'dan 0,70'e geriledi. Gelir teslimatta tanınıyor, tahsilat ise 1 yıla kadar erteleniyor. Bu fiilen müşteri finansmanı: gelir öne çekiliyor, kredi riski NVIDIA'da kalıyor.",
+     "bolum": "Note 7 - Supplemental Financial Statement Information; MD&A - Liquidity and Capital Resources",
+     "kanit_alinti": "In certain cases, for investment-grade customer purchases, we have and may in the future provide longer payment terms ranging from 90 days up to one year to assist customers with large data center builds depending on size.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "kirmizi_bayrak",
+     "baslik": "AI cloud anlaşmaları: ürün satışı karşılığında kapasite geri alım taahhüdü (döngüsel gelir riski)",
+     "aciklama": "AI cloud'lar NVIDIA ürünü satın alıyor, NVIDIA da karşılığında bu cloud'lardan 36 milyar $'lık kapasite satın almayı taahhüt ediyor. Kapasite üçüncü taraflara satılamazsa NVIDIA alıyor. Bu yapı, satış gelirinin bir kısmının NVIDIA'nın kendi gelecekteki harcamasıyla desteklendiği anlamına gelebilir. Bu durum ASC 606 kapsamında 'müşteriye ödenen bedel' ve satış-geri alım değerlendirmesi gerektirir. 10-Q bu satışlardan tanınan gelir tutarını ayrıca açıklamıyor. Ek olarak 29 milyar $ ayrı bulut hizmeti taahhüdü de var.",
+     "bolum": "Note 10 - Commitments and Contingencies (Additional Commitments - AI cloud agreements)",
+     "kanit_alinti": "Under these agreements, AI clouds procure our data center infrastructure products and we commit to cloud service agreements, which the AI clouds can unilaterally stop providing to us and sell to third-party customers at more advantageous rates.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "kirmizi_bayrak",
+     "baslik": "OpenAI adına 105 milyar $'lık kira garantisi (dönem sonrası)",
+     "aciklama": "Ağustos 2026'da SB Energy'ye karşı, OpenAI iştirakinin 20 yıllık kiraları için 105 milyar $ tavanlı garanti verildi. Karşılığında tesis münhasıran NVIDIA altyapısı barındıracak. Tutar NVIDIA'nın toplam özkaynağının (229 milyar $) yaklaşık %46'sı. Garantiler, müşterinin yatırım yapılabilir kredi notu olmaması nedeniyle veriliyor. Donanım talebinin NVIDIA kredi desteğine bağlanması, son müşteri kredi riskinin tedarikçiye transferi demek. 3,8 GW ek opsiyon da mevcut.",
+     "bolum": "Note 10 - Commitments and Contingencies (Guarantees - SB Energy Corp. guarantees)",
+     "kanit_alinti": "In August 2026, we entered into guarantees, capped at a total of $105 billion, to provide credit support on a land, power, and shell buildout with affiliates of SB Energy Corp. (SB Energy) on behalf of a customer, an affiliate of OpenAI Group PBC (OpenAI)",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Tedarik taahhütleri bir çeyrekte 119 milyar $'dan 279 milyar $'a çıktı",
+     "aciklama": "Tedarik ve kapasite taahhüdü, TTM gelirin (yaklaşık 303 milyar $) neredeyse tamamına eşit. Toplam taahhütler 366 milyar $, ek taahhütler 56 milyar $. Bir kısmı iptal edilebilir olsa da H20'de 4,5 milyar $ ve H200'de 0,4 milyar $ zarar yazılması bu taahhütlerin talep değişiminde hızla zarara dönüşebileceğini gösterdi. Aşırı stok alım yükümlülüğü karşılığı 2,1 milyar $ seviyesinde duruyor.",
+     "bolum": "Note 10 - Commitments and Contingencies (Supply and capacity)",
+     "kanit_alinti": "We have partnered with our extensive network to secure the necessary supply and critical components needed to meet demand for the next several years, increasing supply commitments from $119 billion last quarter to $279 billion as of July 26, 2026.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Halka açık şirketlerden alınan warrant'lar: faydanın ertelenmesi ve Level 3 değerleme",
+     "aciklama": "2. çeyrekte 4,8 milyar $ nosyonel değerli warrant alındı; gerçeğe uygun değeri 824 milyon $ (Level 3). İlk tanımada 'fayda büyük ölçüde ertelendi' ifadesi, warrant'ların bir ticari ilişkinin (muhtemelen tedarik veya müşteri anlaşması) karşılığı olduğuna işaret ediyor. Sonraki değer değişimleri 'Other income, net'e gidiyor. Karşı taraf ve ertelenen faydanın hangi kalemde (gelir mi, maliyet indirimi mi) tanınacağı açıklanmamış. Ayrıca 1 milyar $'lık equity forward contract da mevcut.",
+     "bolum": "Note 8 - Derivative Financial Instruments (Public Company Warrants)",
+     "kanit_alinti": "In the second quarter of fiscal year 2027, we received warrants to purchase shares of publicly-traded common stock with terms of three to five years. These warrants are classified as equity derivatives, initially recognized within Other assets, with the corresponding benefit substantially deferred.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Stok birikimi ve karşılıklar: hammadde üçe katlandı",
+     "aciklama": "Stoklar 21,4 milyar $'dan 31,6 milyar $'a çıktı; hammadde 3,8 milyar $'dan 11,3 milyar $'a yükseldi. DIO 119 gün ve yıllık stok artışı %111. Rubin geçişi öncesi hammadde birikimi mantıklı olabilir. Yine de mimari geçişte eski nesil ürünlerde karşılık riski yüksek. 2. çeyrek stok ve alım yükümlülüğü karşılıkları 985 milyon $ ve brüt marja net etkisi -0,8 puan. Karşılık serbest bırakmaları (177 milyon $) marjı destekliyor.",
+     "bolum": "Note 7 - Supplemental Financial Statement Information (Inventories); MD&A - Gross Profit and Gross Margin",
+     "kanit_alinti": "Provisions for inventory and excess inventory purchase obligations totaled $985 million and $2.1 billion for the second quarter and first half of fiscal year 2027, respectively.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "olumlu",
+     "baslik": "Brüt marj %75 seviyesinde istikrarlı, müşteri avansları artıyor",
+     "aciklama": "Brüt marj son üç çeyrektir yaklaşık %75 düzeyinde ve H20 yazımı olan geçen yılın ilk yarısındaki %66,6'nın üzerinde. Ertelenmiş gelir 2,6 milyar $'dan 6,4 milyar $'a çıktı. Bu artışın 2,8 milyar $'ı müşteri avansı. İlk yarıda 15,6 milyar $ avans alındı. Bu, en azından bazı müşterilerin ön ödeme yaptığını ve fiyatlama gücünün sürdüğünü gösteriyor; uzatılmış vadeleri kısmen dengeliyor.",
+     "bolum": "Note 7 - Deferred Revenue; MD&A - Gross Profit and Gross Margin",
+     "kanit_alinti": "(1) Included $15.6 billion and $7.5 billion of customer advances for the first half of fiscal years 2027 and 2026, respectively.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    }
+   ],
+   "yorum_sutunlari": [
+    {
+     "id": "rekabet_musteri",
+     "durum": "sari",
+     "gerekce": "Manşet büyüme (%106) rekabetin henüz talebi aşındırmadığını gösteriyor, bu yüzden 'kırmızı' değil. Ancak yönetimin kendi açıklamaları tezi birkaç yönden zayıflatıyor. (1) Şirket Çin veri merkezi pazarından 'fiilen dışlandığını' ve bunun rakiplerin küresel ekosistem kurmasına yardım ettiğini kabul ediyor. H200 satışları Veri Merkezi gelirinin %1'inin altında ve %25 tarifeyi müşteriye yansıtamıyor. (2) Risk faktörleri müşterilerin 'kendi dahili çözümlerini geliştirmesini' ve ihracat kontrolleri nedeniyle ABD çiplerinin 'design-out' edilmesini açıkça sayıyor. 10-Q TPU/ASIC'i isim vermeden bu riski kabul ediyor. (3) Müşteri yoğunlaşması yüksek: ilk yarıda üç doğrudan müşteri toplam %44, beş müşteri alacakların %70'i. Tek bir AI şirketi (OpenAI) dolaylı yoldan 'anlamlı' gelir sağlıyor. (4) En önemlisi, talebin bir kısmı NVIDIA'nın kendi bilançosuyla destekleniyor: 99 milyar $ ekosistem yatırımı, 105 milyar $ OpenAI garantisi, 36 milyar $ AI cloud geri alım taahhüdü ve 1 yıla kadar vade. Bu, 'yazılım kilidiyle doğal talep' tezini değil, 'finansmanla desteklenen talep' senaryosunu da destekliyor.",
+     "kanit_alinti": "we were effectively foreclosed from competing in China’s data center computing/compute market, and our effective foreclosure from the China market helped our competitors build larger developer and customer ecosystems to challenge us worldwide.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    }
+   ],
+   "seytanin_avukati": {
+    "en_guclu_arguman": "NVIDIA'nın rekor rakamları giderek kendi bilançosu tarafından finanse edilen bir talebi yansıtıyor ve kâr nakde dönüşmüyor. Gelir 1 yıla kadar vadeyle öne çekiliyor: alacaklar 6 ayda 24,6 milyar $ arttı, 2. çeyrekte OCF net kârın yalnızca %40'ı. Müşteriler NVIDIA'nın yatırım yaptığı (99 milyar $), kredi garantisi verdiği (OpenAI için 105 milyar $) ve kapasitesini geri almayı taahhüt ettiği (36 milyar $) şirketler. Bu şirketlerin değerlemesi yükseldikçe NVIDIA 'Other income' üzerinden ikinci kez kâr yazıyor: ilk yarıda 23,7 milyar $, vergi öncesi kârın yaklaşık %17'si. Aynı anda şirket bir çeyrekte tedarik taahhüdünü 160 milyar $ artırarak 279 milyar $'a çıkardı. Hisse geri alımını (ilk yarıda 39,8 milyar $) kısmen 25 milyar $ yeni borçla finanse ediyor. AI harcama döngüsü yavaşlarsa veya kredi notu olmayan tek büyük son müşteri (OpenAI) zorlanırsa şu kalemler aynı anda tersine döner: alacak tahsilatı, yatırım değerlemesi, garanti yükümlülükleri, AI cloud kapasite geri alımları ve taahhüt edilen tedarik. Bu bir kaldıraçlı döngü; 2018 kripto kanal stoku davası şirketin talep tahmin riskinin daha önce de gerçekleştiğini hatırlatıyor.",
+    "destekleyen_olgular": [
+     {
+      "olgu": "TTM OCF/Net kâr 0,99'dan (FY2026 Q1) 0,70'e (FY2027 Q2) düştü; 2. çeyrek OCF'i 24,1 milyar $, net kâr 59,7 milyar $.",
+      "kaynak": "SEC XBRL: ocf_to_ni_ttm, ocf, net_income",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Ticari alacaklar 40,7 milyar $'dan 63,1 milyar $'a çıktı; DSO 45,4'ten 59,6 güne yükseldi.",
+      "kaynak": "SEC XBRL: ar, dso",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "İlk yarıda özsermaye menkul kıymet kazançları 23.707 milyon $, vergi öncesi kâr 141.410 milyon $. Net kâr çeyreklik yalnızca %2 arttı (58.321 → 59.688 milyon $).",
+      "kaynak": "10-Q/10-K: Note 7 - Other Income, Net",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Tedarik ve kapasite taahhütleri bir çeyrekte 119 milyar $'dan 279 milyar $'a çıktı; toplam taahhütler 366 milyar $.",
+      "kaynak": "10-Q/10-K: Note 10 - Commitments and Contingencies",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "OpenAI iştiraki adına SB Energy'ye 105 milyar $ tavanlı kira garantisi; toplam maksimum garanti riski 108,5 milyar $.",
+      "kaynak": "10-Q/10-K: Note 10 - Guarantees",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "AI cloud'lara 36 milyar $'lık kapasite geri alım taahhüdü; aynı cloud'lar NVIDIA ürünü satın alıyor.",
+      "kaynak": "10-Q/10-K: Note 10 - Additional Commitments",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Haziran 2026'da 25 milyar $ yeni borç ihraç edildi (uzun vadeli borç 7,5 milyar $'dan 32,4 milyar $'a çıktı); ilk yarıda 39,0 milyar $ geri alım ve 6,3 milyar $ temettü ödendi.",
+      "kaynak": "10-Q/10-K: Note 9 - Debt; Condensed Consolidated Statements of Cash Flows",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Stoklar yıllık %111 arttı, DIO 119,3 gün; hammadde 3,8 milyar $'dan 11,3 milyar $'a çıktı.",
+      "kaynak": "SEC XBRL: inventory_yoy, dio; 10-Q/10-K: Note 7 - Inventories",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Çin veri merkezi pazarından fiilen dışlanma; H200 için 0,4 milyar $ yazım ve %25 tarife müşteriye yansıtılamıyor.",
+      "kaynak": "10-Q/10-K: Item 1A - Risk Factors",
+      "kaynak_dogrulandi": true
+     }
+    ],
+    "tezin_zayif_halkasi": "Tezin 'kâr nakde dönüşüyor' ayağı. Brüt marj (%75) ve büyüme (%106) hâlâ tezi destekliyor. Ancak nakit dönüşümü düşüyor: TTM OCF/NI 0,70, 2. çeyrekte yaklaşık 0,40. Net kârın bir kısmı gerçekleşmemiş yatırım kazancı. Müşterilerin bir bölümü NVIDIA'nın vade, garanti ve kapasite taahhüdüyle finanse ediliyor. Yani 'talep kendiliğinden güçlü' ile 'talep NVIDIA bilançosuyla destekleniyor' arasındaki ayrım belgelerden net olarak yapılamıyor.",
+    "argumani_curutecek_gostergeler": [
+     "Önümüzdeki 2-3 çeyrekte uzatılmış vadeli alacakların tahsil edilmesiyle DSO'nun 50 günün altına dönmesi ve çeyreklik OCF/Net kârın tekrar 0,9 üzerine çıkması",
+     "AI cloud kapasite taahhüdünün (36 milyar $) üçüncü taraf kullanımıyla azaldığının ve NVIDIA'nın fiilen kapasite satın almak zorunda kalmadığının raporlanması",
+     "Garanti ve taahhüt destekli müşterilerden gelen gelir payının açıklanması ve bu payın düşük olduğunun görülmesi",
+     "OpenAI'ın yatırım yapılabilir kredi notu alarak SB Energy garantilerinin sona ermesi",
+     "Rubin geçişinde stok karşılıklarının brüt marja etkisinin %1'in altında kalması ve DIO'nun düşmesi",
+     "Faaliyet dışı kazançlar hariç tutulduğunda da net kârın faaliyet kârıyla paralel büyümeye devam etmesi"
+    ]
+   }
+  }
+ }
+}

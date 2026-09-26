@@ -270,12 +270,22 @@
    "ad": "Rekabet ve müşteri yoğunlaşması",
    "tip": "yorum",
    "aciklama": "",
-   "durum": "veri_yok",
+   "durum": "sari",
    "soru": "10-Q/10-K ve basın bülteninde; doğrudan müşteri yoğunlaşması (en büyük müşterilerin gelir payı), özel çip (TPU/ASIC) ve rakip hızlandırıcılar, ihracat kısıtları hakkında yönetimin söyledikleri tezi zayıflatıyor mu?",
-   "gerekce": "Henüz değerlendirilmedi (Claude bilanço analizi / Salı raporu çalışmadı).",
-   "kanit_alinti": null,
-   "kanit_dogrulandi": null,
-   "kaynak": null,
+   "gerekce": "Manşet büyüme (%106) rekabetin henüz talebi aşındırmadığını gösteriyor, bu yüzden 'kırmızı' değil. Ancak yönetimin kendi açıklamaları tezi birkaç yönden zayıflatıyor. (1) Şirket Çin veri merkezi pazarından 'fiilen dışlandığını' ve bunun rakiplerin küresel ekosistem kurmasına yardım ettiğini kabul ediyor. H200 satışları Veri Merkezi gelirinin %1'inin altında ve %25 tarifeyi müşteriye yansıtamıyor. (2) Risk faktörleri müşterilerin 'kendi dahili çözümlerini geliştirmesini' ve ihracat kontrolleri nedeniyle ABD çiplerinin 'design-out' edilmesini açıkça sayıyor. 10-Q TPU/ASIC'i isim vermeden bu riski kabul ediyor. (3) Müşteri yoğunlaşması yüksek: ilk yarıda üç doğrudan müşteri toplam %44, beş müşteri alacakların %70'i. Tek bir AI şirketi (OpenAI) dolaylı yoldan 'anlamlı' gelir sağlıyor. (4) En önemlisi, talebin bir kısmı NVIDIA'nın kendi bilançosuyla destekleniyor: 99 milyar $ ekosistem yatırımı, 105 milyar $ OpenAI garantisi, 36 milyar $ AI cloud geri alım taahhüdü ve 1 yıla kadar vade. Bu, 'yazılım kilidiyle doğal talep' tezini değil, 'finansmanla desteklenen talep' senaryosunu da destekliyor.",
+   "kanit_alinti": "we were effectively foreclosed from competing in China’s data center computing/compute market, and our effective foreclosure from the China market helped our competitors build larger developer and customer ecosystems to challenge us worldwide.",
+   "kanit_dogrulandi": true,
+   "kaynak": {
+    "tip": "bilanco",
+    "tarih": "2026-08-26",
+    "accn": "0001045810-26-000075",
+    "form": "10-Q",
+    "donem_sonu": "2026-07-26",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+    "index_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/0001045810-26-000075-index.htm",
+    "kesildi": false,
+    "karakter": 152831
+   },
    "olgu_mu": false,
    "haberler": [],
    "radar": []
@@ -332,6 +342,6 @@
   }
  ],
  "son_ceyrek": "FY2027 Q2",
- "guncelleme": "2026-09-26T11:45:57+00:00",
+ "guncelleme": "2026-09-26T11:57:13+00:00",
  "not": "Tez durumu fiyattan bağımsızdır. Fiyat düşüşü tek başına tezin bozulduğu anlamına gelmez."
 }
