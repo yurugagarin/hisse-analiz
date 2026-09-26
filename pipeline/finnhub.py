@@ -46,6 +46,13 @@ class Finnhub:
         d = self._get("/company-news", symbol=sym, **{"from": fr, "to": to})
         return d if isinstance(d, list) else []
 
+    def earnings(self, sym, days=150):
+        to = dt.date.today() + dt.timedelta(days=days)
+        d = self._get("/calendar/earnings", symbol=sym, **{"from": dt.date.today().isoformat(), "to": to.isoformat()})
+        rows = (d or {}).get("earningsCalendar", []) if isinstance(d, dict) else []
+        rows = sorted([r for r in rows if r.get("date")], key=lambda r: r["date"])
+        return rows[0] if rows else None
+
     def insider(self, sym, days=180):
         to = dt.date.today()
         fr = to - dt.timedelta(days=days)

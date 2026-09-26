@@ -47,13 +47,49 @@ def stock_snapshot(T: str, s: dict, summary: dict, days: int = 7) -> dict:
 
 
 def rolling(stocks: list[dict], summary: dict) -> dict:
+    """Son 7 günün derlemesi — haber başlığı YOK; fiyat, tez, kural, insider, büyük hareket, SEC bildirimleri."""
+    from anlati import pc, spc, usd
     ws, we = _window(7)
     sigs = [x for x in read_jsonl(DATA / "signals.jsonl") if ws <= x["tarih"] <= we]
     per = []
     for s in stocks:
-        snap = stock_snapshot(s["ticker"], s, summary)
-        snap["basliklar"] = snap["basliklar"][:15]
-        snap["sinyaller"] = [x for x in sigs if x["ticker"] == s["ticker"]]
+        T = s["ticker"]
+        snap = stock_snapshot(T, s, summary)
+        snap.pop("basliklar", None)
+        snap["sinyaller"] = [x for x in sigs if x["ticker"] == T]
+        h = summary.get("hisseler", {}).get(T, {})
+        ins = snap["insider"]
+        tx = ins["hafta_islemleri"]
+        sat = sum((r.get("tutar") or 0) for r in tx if r["kod"] == "S")
+        al = sum((r.get("tutar") or 0) for r in tx if r["kod"] == "P")
+        cumle = []
+        f = snap["fiyat"]
+        bh = {b: v for b, v in snap["benchmark_haftalik"].items() if v is not None}
+        if f.get("haftalik") is not None:
+            c = f"Hisse bu hafta {spc(f['haftalik'])}"
+            if bh:
+                c += " (" + ", ".join(f"{b} {spc(v)}" for b, v in bh.items()) + ")"
+            c += f"; 52 haftalık zirveden {pc(f.get('zirveden'))} uzakta."
+            cumle.append(c)
+        tz = h.get("tez") or {}
+        changes = [x for x in snap["sinyaller"] if x["tur"] in ("tez_bozulma", "tez_iyilesme", "sutun_kirmizi", "cikis_kriteri")]
+        if changes:
+            cumle.append("Tezde değişiklik: " + "; ".join(f"{x['tur_adi']} ({x['aciklama']})" for x in changes) + ".")
+        else:
+            cumle.append("Tez sütunlarında bu hafta değişiklik yok.")
+        k = h.get("kural") or {}
+        if (k.get("durum") or "").startswith("tetiklendi"):
+            cumle.append(k.get("mesaj", ""))
+        if tx:
+            cumle.append(f"Insider: {len(tx)} Form 4 işlemi" + (f", satış {usd(sat)}" if sat else "") + (f", açık piyasa alımı {usd(al)}" if al else "") + ".")
+        for m in snap["buyuk_hareketler"]:
+            cumle.append(f"{m['tarih']} günü {spc(m['hareket'])} büyük hareket ({m.get('on_siniflama_aciklama', '')})")
+        for fl in snap["sec_bildirimleri"]:
+            if fl["form"] in ("10-Q", "10-K"):
+                cumle.append(f"Yeni {fl['form']} dosyalandı ({fl['tarih']}); bilanço analizi güncellendi.")
+        snap["cumleler"] = cumle
+        snap["insider_ozet"] = {"islem": len(tx), "satis_tutar": sat, "alim_tutar": al, "kodlar": ins["hafta_kodlari"]}
+        snap["sonraki_bilanco"] = h.get("sonraki_bilanco")
         per.append(snap)
     out = {"tur": "son7gun", "baslangic": ws, "bitis": we, "guncelleme": now_iso(), "hisseler": per, "sinyaller": sigs,
            "not": "Günlük Python derlemesi (Claude yok). Derin analiz Salı raporundadır."}

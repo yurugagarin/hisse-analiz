@@ -22,6 +22,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+import anlati  # noqa: E402
 import insider as insider_mod  # noqa: E402
 import moves as moves_mod  # noqa: E402
 import news  # noqa: E402
@@ -191,6 +192,21 @@ def main():
             if r:
                 fund, is_new = r
         table = fund.get("tablo", {}) or {}
+        an_txt = run.step("bilanco_yorum", T, anlati.build, T, s["name"], table, fund.get("kalite")) if table else None
+        if an_txt:
+            write_json(DATA / "anlati" / f"{T}.json", an_txt)
+        an_txt = an_txt or read_json(DATA / "anlati" / f"{T}.json", {}) or {}
+        # --- Sonraki bilanço tarihi (Finnhub) ---
+        epath = DATA / "earnings" / f"{T}.json"
+        if fh.available:
+            e = run.step("bilanco_takvimi", T, fh.earnings, T)
+            if e is not None:
+                write_json(epath, {"tarih": e.get("date"), "saat": e.get("hour"), "eps_tahmin": e.get("epsEstimate"),
+                                   "gelir_tahmin": e.get("revenueEstimate"), "ceyrek": e.get("quarter"), "yil": e.get("year"),
+                                   "kaynak": "Finnhub earnings calendar (konsensüs tahmini)", "guncelleme": now_iso()})
+        earn = read_json(epath, {}) or {}
+        if earn.get("tarih") and earn["tarih"] < today().isoformat():
+            earn = {}
         # --- Insider ---
         ins = None
         if cik and recent:
@@ -237,8 +253,21 @@ def main():
             pending.append(T)
         kal = fund.get("kalite") or {}
         week_moves = [m for m in mv.get("hareketler", []) if m["tarih"] >= (today() - dt.timedelta(days=7)).isoformat()]
+        last = (table.get("ceyrekler") or [{}])[-1]
+        metrics = {k: last.get(k) for k in ("etiket", "revenue", "revenue_yoy", "gross_margin", "operating_margin", "net_margin",
+                                            "fcf_margin_ttm", "ocf_to_ni_ttm", "diluted_shares_yoy", "sbc_to_revenue_ttm",
+                                            "net_cash", "cash_runway_months", "revenue_ttm", "fcf_ttm")}
+        spark_m = {k: [x.get(k) for x in (table.get("ceyrekler") or [])[-8:]] for k in ("revenue", "gross_margin", "fcf_margin_ttm")}
         summary["hisseler"][T] = {
             "ticker": T, "ad": s["name"], "benchmarks": s["benchmarks"], "fiyat": pstats.get(T),
+            "metrikler": metrics, "metrik_seri": spark_m,
+            "hikaye": (an_txt.get("hikaye") or [])[:2],
+            "bilanco_bolumleri": [{"id": b["id"], "baslik": b["baslik"], "durum": b["durum"], "manset": b["manset"]}
+                                  for b in an_txt.get("bolumler", [])],
+            "insider": {"durum": ins.get("durum"), "ozet": (ins.get("anlati") or [None])[0],
+                        "satis_90g": ((ins.get("pencereler") or {}).get("90", {}).get("kodlar", {}).get("S") or {}).get("tutar"),
+                        "alim_90g": ((ins.get("pencereler") or {}).get("90", {}).get("kodlar", {}).get("P") or {}).get("tutar")},
+            "sonraki_bilanco": earn or None,
             "grafik": prices.spark(read_json(DATA / "prices" / f"{T}.json", {}) or {}, 365),
             "tez": {"genel": te.get("genel"), "onay": te.get("onay"),
                     "sutunlar": [{"id": p["id"], "ad": p["ad"], "durum": p["durum"], "deger": p.get("deger"),

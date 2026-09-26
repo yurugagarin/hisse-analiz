@@ -207,7 +207,7 @@ def analyze(ticker: str, cache: dict, cfg: dict, price_stats: dict, finnhub_rows
         c = clusters[-1]
         out["uyarilar"].append({"etiket": "dikkat", "metin":
             f"Kümelenmiş satış: {c['baslangic']}–{c['bitis']} arasında {len(c['kisiler'])} yönetici satış yaptı "
-            f"(işlemlerin %{c['planli_islem_orani']:.0f}'i 10b5-1 planlı)."})
+            f"(10b5-1 planlı işlem oranı %{c['planli_islem_orani']:.0f})."})
 
     # Açık piyasa alımı yokken fiyat yükselişi
     p180 = out["pencereler"].get("180", {}).get("kodlar", {})
@@ -223,7 +223,8 @@ def analyze(ticker: str, cache: dict, cfg: dict, price_stats: dict, finnhub_rows
     else:
         out["uyarilar"].append({"etiket": "olumlu", "metin": f"Son 180 günde {buys} açık piyasa alımı (P) var."})
 
-    out["son_islemler"] = [r for r in rows if r["tarih"] >= (t0 - dt.timedelta(days=180)).isoformat()][:150]
+    out["son_islemler"] = [r for r in rows if r["tarih"] >= (t0 - dt.timedelta(days=180)).isoformat()][:300]
+    out["anlati"], out["durum"] = _story(out, rows, t0)
 
     # Finnhub çapraz kontrol (90 gün, kod bazında adet)
     if finnhub_rows is not None:
@@ -250,3 +251,52 @@ def analyze(ticker: str, cache: dict, cfg: dict, price_stats: dict, finnhub_rows
     else:
         out["capraz_kontrol"] = None
     return out
+
+
+def _usd(x):
+    from anlati import usd
+    return usd(x)
+
+
+def _story(out: dict, rows: list, t0) -> tuple[list[str], str]:
+    """Son 90 günün insider hikâyesi (kural tabanlı Türkçe özet)."""
+    w = out["pencereler"].get("90", {})
+    k = w.get("kodlar", {})
+    S, P, F, M, A = (k.get(c, {"islem": 0, "adet": 0, "tutar": 0, "plan_10b5_1_adet": 0}) for c in "SPFMA")
+    lines = []
+    durum = "notr"
+    if not any(v["islem"] for v in (S, P, F, M, A)):
+        return ["Son 90 günde Form 4 işlemi yok."], "notr"
+    if S["islem"]:
+        plan = (S["plan_10b5_1_adet"] / S["adet"] * 100) if S["adet"] else 0
+        lines.append(f"Son 90 günde yöneticiler ve yönetim kurulu üyeleri {S['islem']} satış işlemiyle toplam {_usd(S['tutar'])} "
+                     f"değerinde hisse sattı. Önceden kayda geçirilmiş 10b5-1 planı kapsamındaki satışların payı (adet bazında): %{plan:.0f}.")
+        if plan >= 80:
+            lines.append("Planlı satışlar önceden (çoğu zaman aylar önce) belirlenen takvimle yapılır; tek başına yönetimin şirkete güvenini kaybettiği anlamına gelmez.")
+        elif S["tutar"] > 0:
+            lines.append("Satışların önemli bir kısmı plansız: yöneticinin o an karar verdiği satışlar, planlılara göre daha fazla bilgi taşır.")
+            durum = "dikkat"
+    if P["islem"]:
+        lines.append(f"Açık piyasa alımı var: {P['islem']} işlem, toplam {_usd(P['tutar'])}. Yöneticinin kendi cebinden hisse alması en anlamlı olumlu insider sinyalidir.")
+        durum = "olumlu"
+    else:
+        lines.append("Bu dönemde yönetimden hiç açık piyasa alımı (P) yok.")
+    if F["islem"]:
+        lines.append(f"{F['islem']} vergi kesintisi (F) işlemi var: hak edilen hisselerin vergisi için şirkete bırakılan hisseler. Rutindir, sinyal sayılmaz.")
+    if M["islem"] or A["islem"]:
+        lines.append(f"Opsiyon/RSU kullanımı (M) {M['islem']}, hibe (A) {A['islem']} işlem: ücretlendirmenin parçası.")
+    top = [p for p in w.get("kisiler", []) if p["satis_tutar"]][:3]
+    if top:
+        lines.append("En büyük satıcılar: " + "; ".join(
+            f"{p['kisi']} ({p['unvan']}) {_usd(p['satis_tutar'])}"
+            + (f" (doğrudan pozisyonuna oranı %{p['satilan_pozisyon_orani']:.0f})" if p.get("satilan_pozisyon_orani") is not None else "")
+            for p in top) + ".")
+        if any((p.get("satilan_pozisyon_orani") or 0) >= 25 and p["planli_satis_adet"] < p["satis_adet"] * 0.5 for p in top):
+            durum = "dikkat"
+    if out.get("kumelenmis_satislar"):
+        c = out["kumelenmis_satislar"][-1]
+        lines.append(f"Kümelenme: {c['baslangic']} – {c['bitis']} arasında {len(c['kisiler'])} yönetici aynı dönemde sattı. "
+                     "Birden çok yöneticinin aynı anda satması, tek kişinin satışından daha dikkat çekicidir; ancak planlı satışlar ve kazanç sonrası açılan işlem pencereleri de kümelenme yaratır.")
+        if (c.get("planli_islem_orani") or 0) < 60:
+            durum = "dikkat" if durum != "olumlu" else durum
+    return lines, durum

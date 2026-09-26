@@ -71,6 +71,17 @@ CONCEPTS: dict[str, dict] = {
     "equity_issued": {"tablo": "Nakit akış tablosu", "c": [
         "ProceedsFromIssuanceOfCommonStock", "ProceedsFromIssuanceOrSaleOfEquity",
         "ProceedsFromStockOptionsExercised"]},
+    "da": {"tablo": "Nakit akış tablosu", "c": [
+        "DepreciationDepletionAndAmortization", "DepreciationAndAmortization", "DepreciationAmortizationAndAccretionNet",
+        "Depreciation"]},
+    "sga": {"tablo": "Gelir tablosu", "c": ["SellingGeneralAndAdministrativeExpense", "GeneralAndAdministrativeExpense"]},
+    "dividends": {"tablo": "Nakit akış tablosu", "c": ["PaymentsOfDividends", "PaymentsOfDividendsCommonStock"]},
+    "debt_issued": {"tablo": "Nakit akış tablosu", "c": [
+        "ProceedsFromIssuanceOfLongTermDebt", "ProceedsFromConvertibleDebt", "ProceedsFromIssuanceOfDebt"]},
+    "debt_repaid": {"tablo": "Nakit akış tablosu", "c": ["RepaymentsOfLongTermDebt", "RepaymentsOfDebt",
+                                                        "RepaymentsOfConvertibleDebt"]},
+    "eps_diluted": {"tablo": "Gelir tablosu (hisse başına kâr)", "unit": "USD/shares", "additive": False,
+                    "c": ["EarningsPerShareDiluted"]},
     "diluted_shares": {"tablo": "Gelir tablosu (hisse başına kâr)", "unit": "shares", "additive": False, "c": [
         "WeightedAverageNumberOfDilutedSharesOutstanding"]},
     "acquiree_revenue": {"tablo": "Dipnot: işletme birleşmeleri", "c": [
@@ -93,6 +104,26 @@ CONCEPTS: dict[str, dict] = {
     "total_debt": {"tablo": "Bilanço", "instant": True, "c": [
         "LongTermDebt", "LongTermDebtNoncurrent", "ConvertibleNotesPayable", "LongTermDebtAndCapitalLeaseObligations"]},
     "goodwill": {"tablo": "Bilanço", "instant": True, "c": ["Goodwill"]},
+    "total_assets": {"tablo": "Bilanço", "instant": True, "c": ["Assets"]},
+    "current_assets": {"tablo": "Bilanço", "instant": True, "c": ["AssetsCurrent"]},
+    "total_liabilities": {"tablo": "Bilanço", "instant": True, "c": ["Liabilities"]},
+    "current_liabilities": {"tablo": "Bilanço", "instant": True, "c": ["LiabilitiesCurrent"]},
+    "liab_and_equity": {"tablo": "Bilanço", "instant": True, "c": ["LiabilitiesAndStockholdersEquity"]},
+    "equity": {"tablo": "Bilanço", "instant": True, "c": [
+        "StockholdersEquity", "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"]},
+    "ppe": {"tablo": "Bilanço", "instant": True, "c": ["PropertyPlantAndEquipmentNet",
+                                                      "PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization"]},
+    "ap": {"tablo": "Bilanço", "instant": True, "c": ["AccountsPayableCurrent", "AccountsPayableTradeCurrent"]},
+    "intangibles": {"tablo": "Bilanço", "instant": True, "c": [
+        "IntangibleAssetsNetExcludingGoodwill", "FiniteLivedIntangibleAssetsNet"]},
+    "lt_investments": {"tablo": "Bilanço", "instant": True, "c": [
+        "LongTermInvestments", "MarketableSecuritiesNoncurrent", "AvailableForSaleSecuritiesDebtSecuritiesNoncurrent"]},
+    "debt_current": {"tablo": "Bilanço", "instant": True, "c": [
+        "LongTermDebtCurrent", "DebtCurrent", "ShortTermBorrowings", "ConvertibleNotesPayableCurrent"]},
+    "debt_noncurrent": {"tablo": "Bilanço", "instant": True, "c": [
+        "LongTermDebtNoncurrent", "ConvertibleNotesPayableNoncurrent", "ConvertibleLongTermNotesPayable"]},
+    "lease_liab": {"tablo": "Bilanço", "instant": True, "c": [
+        "OperatingLeaseLiability", "OperatingLeaseLiabilityNoncurrent"]},
     "warrant_liability": {"tablo": "Bilanço", "instant": True, "c": [
         "DerivativeLiabilitiesNoncurrent", "DerivativeLiabilities", "WarrantLiabilities"]},
 }
@@ -372,7 +403,8 @@ def build_table(cf: dict, max_quarters: int = 12) -> dict:
         r["fcf"] = (r["ocf"] - r["capex"]) if (r["ocf"] is not None and r["capex"] is not None) else None
         # TTM
         for k in ("revenue", "gross_profit", "operating_income", "net_income", "ocf", "capex", "sbc",
-                  "cogs", "acquisitions", "interest_income", "tax", "pretax"):
+                  "cogs", "acquisitions", "interest_income", "tax", "pretax", "da", "buybacks", "dividends",
+                  "rd", "sga", "equity_issued", "debt_issued", "debt_repaid"):
             if k == "gross_profit" and not S["gross_profit"].points:
                 # brüt kâr kavramı yoksa gelir − SMM'den TTM
                 a, b = _ttm(S["revenue"], end, ends), _ttm(S["cogs"], end, ends)
@@ -387,6 +419,12 @@ def build_table(cf: dict, max_quarters: int = 12) -> dict:
         r["sbc_to_revenue_ttm"] = rnd(_p(r["sbc_ttm"], rt))
         r["capex_to_revenue_ttm"] = rnd(_p(r["capex_ttm"], rt))
         r["ocf_to_ni_ttm"] = rnd(safe_div(r["ocf_ttm"], r["net_income_ttm"]) if (r["net_income_ttm"] or 0) > 0 else None)
+        r["fcf_to_ni_ttm"] = rnd(safe_div(r["fcf_ttm"], r["net_income_ttm"]) if (r["net_income_ttm"] or 0) > 0 else None)
+        r["sbc_adj_fcf_ttm"] = (r["fcf_ttm"] - r["sbc_ttm"]) if (r["fcf_ttm"] is not None and r["sbc_ttm"] is not None) else None
+        r["sbc_adj_fcf_margin_ttm"] = rnd(_p(r["sbc_adj_fcf_ttm"], rt))
+        r["capex_to_da_ttm"] = rnd(safe_div(r["capex_ttm"], r["da_ttm"]))
+        r["shareholder_return_ttm"] = ((r["buybacks_ttm"] or 0) + (r["dividends_ttm"] or 0)) if (
+            r["buybacks_ttm"] is not None or r["dividends_ttm"] is not None) else None
         qdays = _days(r["donem_basi"], end) + 1 if r.get("donem_basi") else 91
         r["dso"] = rnd(safe_div(r["ar"], rv) * qdays if safe_div(r["ar"], rv) is not None else None, 1)
         r["dio"] = rnd(safe_div(r["inventory"], r["cogs"]) * qdays if safe_div(r["inventory"], r["cogs"]) is not None else None, 1)
@@ -395,6 +433,22 @@ def build_table(cf: dict, max_quarters: int = 12) -> dict:
             dr = (r["deferred_rev_current"] or 0) + (r["deferred_rev_noncurrent"] or 0)
         r["deferred_revenue"] = dr
         r["liquidity"] = None if r["cash"] is None else r["cash"] + (r["st_investments"] or 0)
+        # --- bilanço ve verimlilik oranları ---
+        if r["total_liabilities"] is None and r["liab_and_equity"] is not None and r["equity"] is not None:
+            r["total_liabilities"] = r["liab_and_equity"] - r["equity"]
+        if r["total_debt"] is None and (r["debt_current"] is not None or r["debt_noncurrent"] is not None):
+            r["total_debt"] = (r["debt_current"] or 0) + (r["debt_noncurrent"] or 0)
+        r["net_cash"] = (r["liquidity"] - (r["total_debt"] or 0)) if r["liquidity"] is not None else None
+        r["current_ratio"] = rnd(safe_div(r["current_assets"], r["current_liabilities"]))
+        r["working_capital"] = (r["current_assets"] - r["current_liabilities"]) if (
+            r["current_assets"] is not None and r["current_liabilities"] is not None) else None
+        r["debt_to_equity"] = rnd(safe_div(r["total_debt"], r["equity"])) if (r["equity"] or 0) > 0 else None
+        r["equity_ratio"] = rnd(_p(r["equity"], r["total_assets"]))
+        r["goodwill_to_assets"] = rnd(_p(r["goodwill"], r["total_assets"]))
+        r["dpo"] = rnd(safe_div(r["ap"], r["cogs"]) * qdays if safe_div(r["ap"], r["cogs"]) is not None else None, 1)
+        r["ccc"] = rnd(r["dso"] + (r["dio"] or 0) - (r["dpo"] or 0), 1) if r["dso"] is not None else None
+        r["rd_to_revenue"] = rnd(_p(r["rd"], rv))
+        r["sga_to_revenue"] = rnd(_p(r["sga"], rv))
         # YoY
         if pr:
             r["onceki_yil_donem"] = pr["donem_sonu"]
@@ -409,12 +463,32 @@ def build_table(cf: dict, max_quarters: int = 12) -> dict:
             r["dso_yoy_change"] = _diff(r["dso"], pr.get("dso"))
             r["capex_to_revenue_ttm_yoy_pp"] = _diff(r["capex_to_revenue_ttm"], pr.get("capex_to_revenue_ttm"))
             r["receivables_vs_revenue_gap"] = _diff(r["ar_yoy"], r["revenue_yoy"])
+            r["eps_yoy"] = rnd(pct(r["eps_diluted"], pr.get("eps_diluted")))
+            r["net_income_yoy"] = rnd(pct(r["net_income"], pr.get("net_income")))
+            r["operating_income_yoy"] = rnd(pct(r["operating_income"], pr.get("operating_income")))
+            r["gross_margin_yoy_pp"] = _diff(r["gross_margin"], pr.get("gross_margin"))
+            r["operating_margin_yoy_pp"] = _diff(r["operating_margin"], pr.get("operating_margin"))
+            ae = [x for x in (r["equity"], pr.get("equity")) if x is not None]
+            aa = [x for x in (r["total_assets"], pr.get("total_assets")) if x is not None]
+            avg_eq = sum(ae) / len(ae) if ae else None
+            avg_as = sum(aa) / len(aa) if aa else None
+            r["roe_ttm"] = rnd(_p(r["net_income_ttm"], avg_eq)) if avg_eq and avg_eq > 0 else None
+            r["accruals_ratio"] = rnd(_p((r["net_income_ttm"] - r["ocf_ttm"]) if (r["net_income_ttm"] is not None and r["ocf_ttm"] is not None) else None, avg_as))
+            ic = None
+            if r["equity"] is not None:
+                ic = r["equity"] + (r["total_debt"] or 0) - (r["liquidity"] or 0)
+            r["roic_ttm"] = rnd(_p(r["operating_income_ttm"] * 0.79 if r["operating_income_ttm"] is not None else None, ic)) if ic and ic > 0 else None
             r["inventory_vs_revenue_gap"] = _diff(r["inventory_yoy"], r["revenue_yoy"])
         else:
             for k in ("revenue_yoy", "revenue_ttm_yoy", "diluted_shares_yoy", "ar_yoy", "inventory_yoy",
                       "deferred_revenue_yoy", "rpo_yoy", "gross_margin_yoy_pp", "dso_yoy_change",
-                      "capex_to_revenue_ttm_yoy_pp", "receivables_vs_revenue_gap", "inventory_vs_revenue_gap"):
+                      "capex_to_revenue_ttm_yoy_pp", "receivables_vs_revenue_gap", "inventory_vs_revenue_gap",
+                      "eps_yoy", "net_income_yoy", "operating_income_yoy", "operating_margin_yoy_pp",
+                      "roe_ttm", "accruals_ratio", "roic_ttm"):
                 r[k] = None
+        prevq = [e for e in ends if 75 <= _days(e, end) <= 105]
+        pq = idx.get(max(prevq)) if prevq else None
+        r["revenue_qoq"] = rnd(pct(rv, pq["revenue"])) if pq else None
         # Nakit pisti: sadece TTM FCF negatifse
         if r["fcf_ttm"] is not None and r["fcf_ttm"] < 0 and r["liquidity"] is not None:
             r["cash_runway_months"] = rnd(r["liquidity"] / (-r["fcf_ttm"] / 12), 1)

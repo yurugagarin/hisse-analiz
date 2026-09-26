@@ -26,18 +26,19 @@ def _returns(p: dict) -> dict[str, tuple[str, float]]:
 
 
 def classify(r: float, sector: list[float], q: float | None) -> tuple[str, str]:
+    from anlati import spc
     sec = sum(sector) / len(sector) if sector else None
     ref = sec if sec is not None else q
     if ref is None:
         return "belirsiz", "Benchmark verisi yok."
     excess = r - ref
     if abs(excess) >= 0.6 * abs(r):
-        return "sirkete_ozel", f"Hisse {r:+.1f}%, sektör/piyasa {ref:+.1f}%: hareketin çoğu şirkete özel görünüyor."
+        return "sirkete_ozel", f"Hisse {spc(r)}, sektör/piyasa {spc(ref)}: hareketin çoğu şirkete özel görünüyor."
     if q is not None and abs(q) >= 0.5 * abs(r) and (q * r) > 0:
-        return "piyasa", f"QQQ {q:+.1f}% ile aynı yönde: piyasa geneli etkisi belirgin."
+        return "piyasa", f"QQQ {spc(q)} ile aynı yönde: piyasa geneli etkisi belirgin."
     if sec is not None and (sec * r) > 0 and abs(sec) >= 0.4 * abs(r):
-        return "sektor", f"Sektör ETF ortalaması {sec:+.1f}%: sektör hareketi belirgin."
-    return "karma", f"Hisse {r:+.1f}%, sektör {ref:+.1f}%: karma."
+        return "sektor", f"Sektör ETF ortalaması {spc(sec)}: sektör hareketi belirgin."
+    return "karma", f"Hisse {spc(r)}, sektör {spc(ref)}: şirkete özel ve sektör etkisi karışık."
 
 
 def update(ticker: str, benchmarks: list[str], threshold: float, recent_filings: list[dict],

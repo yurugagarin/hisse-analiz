@@ -4,6 +4,7 @@ Otomatik işlem YOK; sadece bilgilendirme.
 """
 from __future__ import annotations
 
+from anlati import pc
 from common import now_iso, rnd
 
 
@@ -41,13 +42,13 @@ def evaluate(ticker: str, rcfg: dict, pstats: dict, bench: dict[str, dict], thes
         worst = max(diffs)  # en az negatif fark: tüm benchmark'lardan kötü mü?
         if all(d <= -thr for d in diffs):
             kaynak = "sirkete_ozel"
-            acik = f"Hisse, tüm benchmark'lardan en az {thr} puan daha fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor."
+            acik = f"Hisse, karşılaştırdığı tüm endekslerden en az {thr} puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor."
         elif any(d <= -thr for d in diffs):
             kaynak = "karma"
-            acik = "Hisse bazı benchmark'lardan belirgin kötü, bazılarına yakın: sektör + şirkete özel karma."
+            acik = "Hisse bazı endekslerden belirgin kötü, bazılarına yakın: sektör ve şirkete özel etkiler karışık."
         else:
             kaynak = "piyasa_sektor"
-            acik = "Hissenin düşüşü benchmark'larla benzer: ağırlıkla piyasa/sektör kaynaklı."
+            acik = "Hissenin düşüşü karşılaştırma endeksleriyle benzer: ağırlıkla piyasa/sektör kaynaklı."
         out["dusus_kaynagi"] = kaynak
         out["dusus_kaynagi_aciklama"] = acik
         out["en_iyi_fark"] = worst
@@ -56,12 +57,12 @@ def evaluate(ticker: str, rcfg: dict, pstats: dict, bench: dict[str, dict], thes
     out["kosul_saglaniyor"] = kosul_ok
     if triggered:
         out["durum"] = {True: "tetiklendi_kosul_ok", False: "tetiklendi_kosul_yok", None: "tetiklendi_kosul_bilinmiyor"}[kosul_ok]
-        out["mesaj"] = (f"Zirveden %{dd} düşüş: -%{triggered[-1]['dusus']} kademesi tetiklendi. "
+        out["mesaj"] = (f"Zirveden {pc(dd)}: −%{triggered[-1]['dusus']} kademesi tetiklendi. "
                         + {True: "Tez sağlam koşulu sağlanıyor.", False: "ANCAK tez durumu KIRMIZI — koşul sağlanmıyor.",
                            None: "Tez verisi yok — 'tez sağlam' koşulu doğrulanamıyor."}[kosul_ok]
                         + f" Önceden yazdığın not: {triggered[-1].get('not','')}")
     else:
         nxt = next((k for k in out["kademeler"] if not k["tetiklendi"]), None)
         out["durum"] = "tetiklenmedi"
-        out["mesaj"] = f"Zirveden %{dd}. " + (f"Sonraki kademe: -%{nxt['dusus']}." if nxt else "")
+        out["mesaj"] = f"Zirveden {pc(dd)}. " + (f"Sonraki kademe: −%{nxt['dusus']}." if nxt else "")
     return out
