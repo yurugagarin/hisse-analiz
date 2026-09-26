@@ -78,7 +78,7 @@
     });
     if (!o.spark) {
       tk.forEach(t => { el('line', { x1: pad.l, x2: W - pad.r, y1: Y(t), y2: Y(t), class: t === 0 ? 'base' : 'gl' }, s); txt(s, pad.l - 8, Y(t) + 4, (o.yFmt || id)(t), 'ax', 'end'); });
-      const nl = Math.min(o.xTicks || 5, n);
+      const nl = Math.max(2, Math.min(o.xTicks || 5, n, Math.floor((W - pad.l - pad.r) / 74) + 1));
       for (let k = 0; k < nl; k++) {
         const i = Math.round(k * (n - 1) / Math.max(1, nl - 1));
         txt(s, X(i), Hh - 7, (o.xFmt || id)(o.x[i]), 'ax', k === 0 ? 'start' : k === nl - 1 ? 'end' : 'middle');

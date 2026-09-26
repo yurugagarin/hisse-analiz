@@ -60,6 +60,10 @@ def parse_form4(xml: str) -> dict | None:
                 roles.append(_t(rel, "otherText") or "Diğer")
         owners.append({"ad": name, "unvan": ", ".join(roles) or "—",
                        "yonetici": bool(rel is not None and (_truthy(_t(rel, "isOfficer")) or _truthy(_t(rel, "isDirector"))))})
+    remarks = (root.findtext("remarks") or "").strip()
+    for o in owners:
+        if "remark" in (o["unvan"] or "").lower():
+            o["unvan"] = (remarks[:80] + ("…" if len(remarks) > 80 else "")) if remarks else "Yönetici (unvan açıklamada)"
     footnotes = {fn.get("id"): (fn.text or "") for fn in root.findall(".//footnotes/footnote")}
     aff = root.find("aff10b5One")
     plan_flag = _truthy(aff.text) if aff is not None else None
@@ -95,7 +99,7 @@ def update_cache(ticker: str, cik: int, filings: list[dict], days: int = 200) ->
         if f.get("form") not in ("4", "4/A") or f.get("filingDate", "") < cutoff:
             continue
         accn = f["accessionNumber"]
-        if accn in cache:
+        if accn in cache and cache[accn].get("v") == 2:
             continue
         doc = (f.get("primaryDocument") or "").split("/")[-1]
         if not doc.endswith(".xml"):
@@ -106,7 +110,7 @@ def update_cache(ticker: str, cik: int, filings: list[dict], days: int = 200) ->
         parsed = parse_form4(xml)
         if parsed is None:
             continue
-        parsed.update({"accn": accn, "dosyalama": f.get("filingDate"), "form": f.get("form"),
+        parsed.update({"v": 2, "accn": accn, "dosyalama": f.get("filingDate"), "form": f.get("form"),
                        "url": sec.archive_url(cik, accn, f.get("primaryDocument"))})
         cache[accn] = parsed
         new += 1

@@ -66,8 +66,9 @@ mkdir -p _site && cp -r site/. _site/ && cp -r data _site/ && python -m http.ser
 config/     stocks.yaml, theses.yaml (TASLAK), rules.yaml (TASLAK), settings.yaml
 pipeline/   run.py (günlük, Python), claude_tasks.py (Claude: bilanço + Salı raporu), claude_cli.py,
             sec.py, xbrl.py, quality.py, filing_claude.py, insider.py, prices.py, finnhub.py, news.py,
-            moves.py, thesis.py, rules.py, signals.py, weekly.py, tests/
-site/       index.html, style.css, app.js, charts.js  (vanilla, build yok; notlar/tercihler localStorage)
+            moves.py, anlati.py (bilanço yorum motoru), thesis.py, rules.py, signals.py, weekly.py, tests/
+site/       index.html, css/app.css, js/ (core, charts, rehber, v-panel, v-hisse, v-bilanco, v-diger)
+            vanilla JS, build yok; notlar ve tercihler localStorage'da
 data/       pipeline çıktıları (JSON) — signals.jsonl, usage.jsonl, weekly/, moves/, headlines/ …
 .github/workflows/hisse.yml
 ```

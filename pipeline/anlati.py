@@ -300,6 +300,12 @@ def kazanc_kalitesi(T, rows, q):
         ps.append(f"Son 12 ayda net zarar var ({usd(r['net_income_ttm'])}); nakit/kâr oranı anlamlı değil. "
                   f"İşletme nakit akışı {usd(r.get('ocf_ttm'))}.")
         durum = "kirmizi" if (r.get("ocf_ttm") or 0) < 0 else "dikkat"
+    ei = r.get("equity_investments")
+    if ei and r.get("total_assets") and ei / r["total_assets"] >= 0.05:
+        ps.append(f"Şirketin bilançosunda {usd(ei)} tutarında hisse yatırımı var (halka açık şirket hisseleri ve özel şirket payları; "
+                  f"toplam varlıkların {pc(ei / r['total_assets'] * 100, 0)}). Bu yatırımların değer değişimleri faaliyet dışı kazanç/zarar "
+                  "olarak net kâra yansır ve nakit değildir; kârdaki bu kısım tekrarlanmayabilir.")
+        durum = _worst(durum, "dikkat")
     ac = r.get("accruals_ratio")
     if ac is not None:
         ps.append(f"Tahakkuk oranı {pc(ac)} (net kâr − işletme nakit akışı, ortalama varlıklara bölünmüş). "
@@ -316,8 +322,9 @@ def kazanc_kalitesi(T, rows, q):
                       f"({usd(r['pretax'])}), yani zarar esas faaliyetten kaynaklanıyor.")
         else:
             ps.append(f"Bu çeyrek faaliyet dışı kalemlerin toplamı {usd(nonop)}; vergi öncesi kârın {pc(share, 0)}. "
-                      + ("Oran düşük: kâr esas faaliyetten geliyor." if share < 10 else
-                         "Oran yüksek: kârın önemli bir kısmı faiz, yatırım kazancı veya değerleme gibi tekrarlanması belirsiz kalemlerden geliyor. Aşağıdaki köprü tablosu kalemleri tek tek gösteriyor."))
+                      + ("Oran düşük: kâr esas faaliyetten geliyor." if share < 5 else
+                         "Kârın küçük ama göz ardı edilmemesi gereken bir kısmı faiz, yatırım kazancı veya değerleme gibi tekrarlanması belirsiz kalemlerden geliyor; köprü grafiği kalemleri tek tek gösteriyor." if share < 20 else
+                         "Oran yüksek: kârın önemli bir kısmı tekrarlanması belirsiz kalemlerden geliyor; köprü grafiği kalemleri tek tek gösteriyor."))
         if share >= 20 and r["pretax"] > 0:
             durum = _worst(durum, "dikkat")
     if r.get("sbc_to_revenue_ttm") is not None:
@@ -415,15 +422,28 @@ def bilanco_saglamligi(T, rows):
             s += f" Varlıklar bir yılda {spc((r['total_assets'] / py['total_assets'] - 1) * 100)} büyüdü."
         ps.append(s)
     comp = []
-    for k, ad in (("liquidity", "nakit ve kısa vadeli yatırımlar"), ("ar", "alacaklar"), ("inventory", "stoklar"),
+    for k, ad in (("liquidity", "nakit ve kısa vadeli yatırımlar"), ("equity_investments", "hisse yatırımları"), ("ar", "alacaklar"), ("inventory", "stoklar"),
                   ("ppe", "maddi duran varlıklar"), ("goodwill", "şerefiye"), ("intangibles", "maddi olmayan varlıklar"),
                   ("lt_investments", "uzun vadeli yatırımlar")):
         if r.get(k) and r.get("total_assets"):
             comp.append((r[k] / r["total_assets"] * 100, ad, r[k]))
     if comp:
         comp.sort(reverse=True)
-        ps.append("Varlıkların dağılımı: " + ", ".join(f"{ad} {pc(v, 0)}" for v, ad, _ in comp[:5]) + ". "
-                  "Nakit ağırlıklı bir bilanço esneklik sağlar; şerefiye ağırlığı yüksekse geçmiş satın almalar için ödenen primin büyüklüğünü ve değer düşüklüğü riskini gösterir.")
+        s = "Varlıkların dağılımı: " + ", ".join(f"{ad} {pc(v, 0)}" for v, ad, _ in comp[:5]) + "."
+        top = comp[0][1]
+        if top == "nakit ve kısa vadeli yatırımlar":
+            s += " Bilançonun en büyük kalemi nakit: kriz dönemlerinde esneklik ve fırsat alımı imkânı verir."
+        elif top == "alacaklar":
+            s += " En büyük kalem alacaklar: satışların önemli bir kısmı henüz tahsil edilmemiş; tahsilat hızı (DSO) bu yüzden kritik."
+        elif top == "stoklar":
+            s += " En büyük kalem stoklar: talep yavaşlarsa stok değer düşüklüğü riski doğar."
+        elif top == "maddi duran varlıklar":
+            s += " En büyük kalem maddi duran varlıklar: sermaye yoğun bir iş modeli; amortisman gelecekteki kârları baskılar."
+        elif top == "hisse yatırımları":
+            s += " En büyük kalem hisse yatırımları: bu varlıkların değeri piyasaya bağlı ve kârı oynatabilir."
+        if r.get("goodwill_to_assets") is not None and r["goodwill_to_assets"] >= 15:
+            s += " Şerefiye ağırlığı yüksek: geçmiş satın almalar için ödenen prim büyük ve değer düşüklüğü riski taşıyor."
+        ps.append(s)
     liq, debt = r.get("liquidity"), r.get("total_debt")
     if liq is not None:
         s = f"Nakit ve kısa vadeli yatırımlar {usd(liq)}, finansal borç {usd(debt) if debt else 'yok veya raporlanmamış'}"

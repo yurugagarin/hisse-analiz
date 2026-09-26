@@ -101,10 +101,15 @@ CONCEPTS: dict[str, dict] = {
         "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents"]},
     "st_investments": {"tablo": "Bilanço", "instant": True, "c": [
         "MarketableSecuritiesCurrent", "ShortTermInvestments", "AvailableForSaleSecuritiesDebtSecuritiesCurrent",
-        "AvailableForSaleSecuritiesCurrent", "OtherShortTermInvestments"]},
+        "DebtSecuritiesCurrent", "AvailableForSaleSecuritiesCurrent", "OtherShortTermInvestments"]},
     "cash_and_st": {"tablo": "Bilanço", "instant": True, "c": ["CashCashEquivalentsAndShortTermInvestments"]},
-    "total_debt": {"tablo": "Bilanço", "instant": True, "c": [
-        "LongTermDebt", "LongTermDebtNoncurrent", "ConvertibleNotesPayable", "LongTermDebtAndCapitalLeaseObligations"]},
+    "total_debt": {"tablo": "Bilanço", "instant": True, "c": ["LongTermDebt"]},
+    "convertible": {"tablo": "Bilanço", "instant": True, "c": [
+        "ConvertibleNotesPayable", "ConvertibleLongTermNotesPayable", "ConvertibleNotesPayableNoncurrent"]},
+    "st_borrowings": {"tablo": "Bilanço", "instant": True, "c": ["ShortTermBorrowings", "CommercialPaper"]},
+    "eq_inv_fv": {"tablo": "Bilanço (dipnot: yatırımlar)", "instant": True, "c": ["EquitySecuritiesFvNi"]},
+    "eq_inv_other": {"tablo": "Bilanço (dipnot: yatırımlar)", "instant": True, "c": [
+        "EquitySecuritiesWithoutReadilyDeterminableFairValueAmount", "EquityMethodInvestments"]},
     "goodwill": {"tablo": "Bilanço", "instant": True, "c": ["Goodwill"]},
     "total_assets": {"tablo": "Bilanço", "instant": True, "c": ["Assets"]},
     "current_assets": {"tablo": "Bilanço", "instant": True, "c": ["AssetsCurrent"]},
@@ -119,11 +124,11 @@ CONCEPTS: dict[str, dict] = {
     "intangibles": {"tablo": "Bilanço", "instant": True, "c": [
         "IntangibleAssetsNetExcludingGoodwill", "FiniteLivedIntangibleAssetsNet"]},
     "lt_investments": {"tablo": "Bilanço", "instant": True, "c": [
-        "LongTermInvestments", "MarketableSecuritiesNoncurrent", "AvailableForSaleSecuritiesDebtSecuritiesNoncurrent"]},
+        "LongTermInvestments", "MarketableSecuritiesNoncurrent", "AvailableForSaleSecuritiesDebtSecuritiesNoncurrent",
+        "OtherLongTermInvestments"]},
     "debt_current": {"tablo": "Bilanço", "instant": True, "c": [
-        "LongTermDebtCurrent", "DebtCurrent", "ShortTermBorrowings", "ConvertibleNotesPayableCurrent"]},
-    "debt_noncurrent": {"tablo": "Bilanço", "instant": True, "c": [
-        "LongTermDebtNoncurrent", "ConvertibleNotesPayableNoncurrent", "ConvertibleLongTermNotesPayable"]},
+        "LongTermDebtCurrent", "DebtCurrent", "ConvertibleNotesPayableCurrent"]},
+    "debt_noncurrent": {"tablo": "Bilanço", "instant": True, "c": ["LongTermDebtNoncurrent"]},
     "lease_liab": {"tablo": "Bilanço", "instant": True, "c": [
         "OperatingLeaseLiability", "OperatingLeaseLiabilityNoncurrent"]},
     "warrant_liability": {"tablo": "Bilanço", "instant": True, "c": [
@@ -440,8 +445,18 @@ def build_table(cf: dict, max_quarters: int = 12) -> dict:
         # --- bilanço ve verimlilik oranları ---
         if r["total_liabilities"] is None and r["liab_and_equity"] is not None and r["equity"] is not None:
             r["total_liabilities"] = r["liab_and_equity"] - r["equity"]
-        if r["total_debt"] is None and (r["debt_current"] is not None or r["debt_noncurrent"] is not None):
-            r["total_debt"] = (r["debt_current"] or 0) + (r["debt_noncurrent"] or 0)
+        # Finansal borç: LongTermDebt (kısa vadeli kısım dahil) varsa o; yoksa kısa + uzun vadeli parçalar.
+        # Dönüştürülebilir tahvil ayrı etiketlenmişse ve uzun vadeli borçtan büyükse ayrı kalem sayılır.
+        # Ticari senet / kısa vadeli banka kredisi her durumda eklenir.
+        base = r["total_debt"]
+        if base is None and (r["debt_current"] is not None or r["debt_noncurrent"] is not None or r["convertible"] is not None):
+            nc = r["debt_noncurrent"] or 0
+            cv = r["convertible"] or 0
+            base = (r["debt_current"] or 0) + (nc if nc >= cv else nc + cv)
+        if base is not None or r["st_borrowings"] is not None:
+            r["total_debt"] = (base or 0) + (r["st_borrowings"] or 0)
+        r["equity_investments"] = ((r["eq_inv_fv"] or 0) + (r["eq_inv_other"] or 0)) if (
+            r["eq_inv_fv"] is not None or r["eq_inv_other"] is not None) else None
         r["net_cash"] = (r["liquidity"] - (r["total_debt"] or 0)) if r["liquidity"] is not None else None
         r["current_ratio"] = rnd(safe_div(r["current_assets"], r["current_liabilities"]))
         r["working_capital"] = (r["current_assets"] - r["current_liabilities"]) if (

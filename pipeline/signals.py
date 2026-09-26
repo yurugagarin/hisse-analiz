@@ -55,7 +55,10 @@ def detect(ticker: str, thesis_eval: dict, rule_eval: dict, insider: dict, quali
     ps = st.get("sutun", {})
     for p in thesis_eval.get("sutunlar", []):
         if p["durum"] == "kirmizi" and ps.get(p["id"]) != "kirmizi":
-            emit("sutun_kirmizi", f"{p['ad']}: {p.get('deger', '')} {p.get('birim', '')}".strip(), f"{p['id']}{today()}")
+            from anlati import _n
+            v = p.get("deger")
+            vs = "" if v is None else (f"%{_n(v, 1)}" if p.get("birim") == "%" else f"{_n(v, 2)}{'x' if p.get('birim') == 'x' else ' ' + (p.get('birim') or '')}")
+            emit("sutun_kirmizi", f"{p['ad']}: {vs}".strip().rstrip(":"), f"{p['id']}{today()}")
     pc = set(st.get("cikis", []))
     for c in thesis_eval.get("cikis", []):
         if c["durum"] == "tetiklendi" and c["id"] not in pc:
@@ -65,7 +68,8 @@ def detect(ticker: str, thesis_eval: dict, rule_eval: dict, insider: dict, quali
     if lvl > plvl:
         k = rule_eval.get("kosul_saglaniyor")
         tur = {True: "kural_kademe_tez_saglam", False: "kural_kademe_tez_bozuk", None: "kural_kademe_tez_bilinmiyor"}[k]
-        emit(tur, f"Zirveden %{rule_eval.get('zirveden_uzaklik')} — kademe -%{lvl}; "
+        from anlati import pc
+        emit(tur, f"Zirveden {pc(rule_eval.get('zirveden_uzaklik'))}, −%{lvl} kademesi. "
                   f"{rule_eval.get('dusus_kaynagi_aciklama', '')}", f"{lvl}{today()}")
     # insider P alımları
     seen_p = set(st.get("insider_p", []))

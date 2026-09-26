@@ -80,8 +80,6 @@ def rolling(stocks: list[dict], summary: dict) -> dict:
         k = h.get("kural") or {}
         if (k.get("durum") or "").startswith("tetiklendi"):
             cumle.append(k.get("mesaj", ""))
-        if tx:
-            cumle.append(f"Insider: {len(tx)} Form 4 işlemi" + (f", satış {usd(sat)}" if sat else "") + (f", açık piyasa alımı {usd(al)}" if al else "") + ".")
         for m in snap["buyuk_hareketler"]:
             cumle.append(f"{m['tarih']} günü {spc(m['hareket'])} büyük hareket ({m.get('on_siniflama_aciklama', '')})")
         for fl in snap["sec_bildirimleri"]:

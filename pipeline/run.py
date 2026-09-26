@@ -124,6 +124,11 @@ def fundamentals(run: Run, T: str, cik: int, recent: list[dict]) -> tuple[dict, 
     return obj, True
 
 
+def _plan_pct(ins: dict):
+    s = ((ins.get("pencereler") or {}).get("90", {}).get("kodlar", {}).get("S") or {})
+    return round(s["plan_10b5_1_adet"] / s["adet"] * 100, 1) if s.get("adet") else None
+
+
 def latest_weekly_for(T: str) -> dict | None:
     idx = read_json(DATA / "weekly" / "index.json", []) or []
     for label in reversed(idx):
@@ -267,7 +272,8 @@ def main():
                                   for b in an_txt.get("bolumler", [])],
             "insider": {"durum": ins.get("durum"), "ozet": (ins.get("anlati") or [None])[0],
                         "satis_90g": ((ins.get("pencereler") or {}).get("90", {}).get("kodlar", {}).get("S") or {}).get("tutar"),
-                        "alim_90g": ((ins.get("pencereler") or {}).get("90", {}).get("kodlar", {}).get("P") or {}).get("tutar")},
+                        "alim_90g": ((ins.get("pencereler") or {}).get("90", {}).get("kodlar", {}).get("P") or {}).get("tutar"),
+                        "planli_orani": _plan_pct(ins), "kume": bool(ins.get("kumelenmis_satislar"))},
             "sonraki_bilanco": earn or None,
             "grafik": prices.spark(read_json(DATA / "prices" / f"{T}.json", {}) or {}, 365),
             "tez": {"genel": te.get("genel"), "onay": te.get("onay"),

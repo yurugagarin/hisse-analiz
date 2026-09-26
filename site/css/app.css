@@ -304,3 +304,10 @@ textarea { min-height: 130px; font-family: var(--serif); font-size: 16px; line-h
 .loading { padding: 80px 0; text-align: center; color: var(--muted); }
 .placeholder { border: 1px dashed var(--line); border-radius: var(--r); padding: 22px; background: var(--surface); display: flex; flex-direction: column; gap: 8px; }
 .placeholder h3 { font-family: var(--serif); font-weight: 500; font-size: 19px; }
+.shell > div { min-width: 0; }
+.grid-ozet { display: grid; gap: 22px; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); }
+@media (max-width: 1000px) { .grid-ozet { grid-template-columns: 1fr; } }
+.bs-row { display: grid; grid-template-columns: 120px 1fr auto; gap: 14px; align-items: center; padding: 12px 0; color: inherit; }
+.bs-row:hover { text-decoration: none; } .bs-row + .bs-row { border-top: 1px solid var(--line-2); }
+@media (max-width: 560px) { .bs-row { grid-template-columns: 1fr auto; } .bs-row > span:first-child { grid-column: 1 / -1; } }
+.side { min-height: 100vh; }
