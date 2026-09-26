@@ -2,11 +2,11 @@
  "donem": "FY2027 Q2",
  "donem_sonu": "2026-07-26",
  "hikaye": [
-  "Nvidia, MY 2027 Q2 döneminde 96,22 milyar $ gelir açıkladı; bu, geçen yılın aynı çeyreğine göre +%105,8 değişim demek. Yıllık büyüme bir önceki çeyrekteki %85,2 seviyesine göre hızlandı.",
-  "Brüt marj %75,0 (+2,6 puan yıllık), faaliyet marjı %66,2 (veri yok).",
+  "Nvidia, MY 2027 Q2 döneminde 96,22 milyar $ gelir açıkladı; bu, geçen yılın aynı çeyreğine göre +%105,8 değişim demek. Yıllık büyüme bir önceki çeyrekteki %85,2 seviyesine göre hızlandı. Bir önceki çeyreğe göre gelir +%17,9 değişti.",
+  "Brüt marj %75,0 (+2,6 puan yıllık), faaliyet marjı %66,2 (+5,4 puan). Faaliyet kârı +%124,1 ile gelirden hızlı büyüdü: giderler gelirden yavaş arttı, yani operasyonel kaldıraç çalışıyor.",
   "Net kâr 59,69 milyar $. Faaliyet dışı kalemler vergi öncesi kârı 7,77 milyar $ etkiledi (vergi öncesi kârın %11); en büyük kalem yatırım (hisse/menkul kıymet) kazançları: 7,77 milyar $. Bu tür kalemler tekrarlayan faaliyet kârı değildir; net kârı olduğundan güçlü (veya zayıf) gösterebilir.",
-  "Çeyrekte işletme faaliyetlerinden 24,08 milyar $ nakit elde edildi, net kârın 0,40 katı. İşletme sermayesinde: alacaklar 22,35 milyar $ arttı ve nakit bağladı; stoklar 5,78 milyar $ arttı ve nakit bağladı; ertelenmiş gelir 3,29 milyar $ arttı ve nakit serbest bıraktı. Son 12 ayda serbest nakit akışı 127,0 milyar $ (gelirin %41,9).",
-  "Çeyrek sonunda nakit ve kısa vadeli yatırımlar 22,44 milyar $, finansal borç 33,37 milyar $, net nakit veri yok. Seyreltilmiş hisse sayısı yıllık −%1,0 değişti, hisse bazlı ödeme (SBC) 7,24 milyar $."
+  "Çeyrekte işletme faaliyetlerinden 24,08 milyar $ nakit elde edildi, net kârın 0,40 katı. İşletme sermayesinde: alacaklar 22,35 milyar $ arttı ve nakit bağladı; stoklar 5,78 milyar $ arttı ve nakit bağladı; ticari borçlar 1,96 milyar $ arttı ve nakit serbest bıraktı; ertelenmiş gelir 3,29 milyar $ arttı ve nakit serbest bıraktı. Son 12 ayda serbest nakit akışı 127,0 milyar $ (gelirin %41,9).",
+  "Çeyrek sonunda nakit ve kısa vadeli yatırımlar 22,44 milyar $, finansal borç 33,37 milyar $, net nakit −10,92 milyar $. Seyreltilmiş hisse sayısı yıllık −%1,0 değişti; son 12 ayda 55,31 milyar $ geri alım yapıldı, hisse bazlı ödeme (SBC) 7,24 milyar $."
  ],
  "bolumler": [
   {
@@ -36,7 +36,7 @@
     },
     {
      "etiket": "Çeyrekten çeyreğe",
-     "deger": "veri yok",
+     "deger": "+%17,9",
      "alt": null,
      "rehber": "qoq",
      "ton": null
@@ -69,7 +69,10 @@
    "manset": "Brüt marj %75,0, faaliyet marjı %66,2, net marj %62,0.",
    "paragraflar": [
     "Brüt marj (her 100 $ gelirden üretim maliyeti düşüldükten sonra kalan): MY 2026 Q2 %72,4 → MY 2026 Q3 %73,4 → MY 2026 Q4 %75,0 → MY 2027 Q1 %74,9 → MY 2027 Q2 %75,0.",
-    "Faaliyet marjı (Ar-Ge, satış ve genel giderler de düşüldükten sonra): MY 2026 Q2 %60,8 → MY 2026 Q3 %63,2 → MY 2026 Q4 %65,0 → MY 2027 Q1 %65,6 → MY 2027 Q2 %66,2."
+    "Faaliyet marjı (Ar-Ge, satış ve genel giderler de düşüldükten sonra): MY 2026 Q2 %60,8 → MY 2026 Q3 %63,2 → MY 2026 Q4 %65,0 → MY 2027 Q1 %65,6 → MY 2027 Q2 %66,2.",
+    "Ar-ge gideri gelirin %7,3; satış/genel yönetim giderleri gelirin %1,4. Bu oranların zamanla düşmesi, şirketin büyürken giderlerini daha verimli kullandığını gösterir.",
+    "Operasyonel kaldıraç: faaliyet kârı yıllık +%124,1, gelir +%105,8. Kâr gelirden hızlı büyüyor; ölçek ekonomisi çalışıyor.",
+    "Seyreltilmiş hisse başına kâr (EPS) 2,46 $, yıllık +%127,8 (net kâr +%125,9)."
    ],
    "rakamlar": [
     {
@@ -82,7 +85,7 @@
     {
      "etiket": "Faaliyet marjı",
      "deger": "%66,2",
-     "alt": "veri yok yıllık",
+     "alt": "+5,4 puan yıllık",
      "rehber": "faaliyet_marji",
      "ton": null
     },
@@ -95,8 +98,8 @@
     },
     {
      "etiket": "EPS (seyreltilmiş)",
-     "deger": "veri yok",
-     "alt": null,
+     "deger": "2,46 $",
+     "alt": "+%127,8 yıllık",
      "rehber": "eps",
      "ton": null
     }
@@ -121,8 +124,9 @@
    "manset": "Kâr kalitesinde dikkat edilecek noktalar var.",
    "paragraflar": [
     "Son 12 ayda işletme nakit akışı net kârın 0,70 katı. 1'in altında olması, kârın bir kısmının henüz nakde dönmediğini gösterir: genelde alacak veya stok artışı, bazen de nakit dışı kazançlar (ör. yatırım değerlemeleri) nedeniyle.",
+    "Tahakkuk oranı %25,4 (net kâr − işletme nakit akışı, ortalama varlıklara bölünmüş). Pozitif ve yüksek olması, kârın tahakkuklara (henüz tahsil edilmemiş gelirler, değerlemeler) dayandığını gösterir; akademik çalışmalarda yüksek tahakkuk sonraki dönem zayıf getiriyle ilişkilendirilir.",
     "Bu çeyrek faaliyet dışı kalemlerin toplamı 7,77 milyar $; vergi öncesi kârın %11. Oran yüksek: kârın önemli bir kısmı faiz, yatırım kazancı veya değerleme gibi tekrarlanması belirsiz kalemlerden geliyor. Aşağıdaki köprü tablosu kalemleri tek tek gösteriyor.",
-    "Hisse bazlı ödeme (SBC) gelirin %2,4.",
+    "Hisse bazlı ödeme (SBC) gelirin %2,4. SBC gerçek bir maliyettir: serbest nakit akışından SBC düşülünce son 12 ayda 119,8 milyar $ kalıyor (gelirin %39,5).",
     "Çeyreğin efektif vergi oranı %16,5. Olağan aralıkta."
    ],
    "rakamlar": [
@@ -135,7 +139,7 @@
     },
     {
      "etiket": "Tahakkuk oranı",
-     "deger": "veri yok",
+     "deger": "%25,4",
      "alt": "düşük iyi",
      "rehber": "accruals",
      "ton": null
@@ -149,7 +153,7 @@
     },
     {
      "etiket": "SBC sonrası FCF",
-     "deger": "veri yok",
+     "deger": "119,8 milyar $",
      "alt": "TTM",
      "rehber": "sbc_fcf",
      "ton": null
@@ -175,8 +179,8 @@
    "manset": "Son 12 ayda 127,0 milyar $ serbest nakit akışı üretildi.",
    "paragraflar": [
     "Son 12 ayda işletme faaliyetlerinden 134,4 milyar $ nakit girdi, yatırım harcaması (capex) 7,35 milyar $ oldu; geriye 127,0 milyar $ serbest nakit akışı (FCF) kaldı. FCF marjı %41,9.",
-    "Capex gelirin %2,4 (bir yıl önceye göre −0,6 puan).",
-    "Son 12 ayda nakdin kullanımı: satın almalar 1,16 milyar $."
+    "Capex gelirin %2,4 (bir yıl önceye göre −0,6 puan). Capex amortismanın 2,0 katı: şirket yıpranan varlıklarını yenilemenin çok ötesinde, büyüme için yatırım yapıyor.",
+    "Son 12 ayda nakdin kullanımı: hisse geri alımı 55,31 milyar $, temettü 6,73 milyar $, satın almalar 1,16 milyar $. Hissedara dönen tutar (geri alım + temettü) FCF'nin %49."
    ],
    "rakamlar": [
     {
@@ -202,7 +206,7 @@
     },
     {
      "etiket": "Geri alım + temettü",
-     "deger": "veri yok",
+     "deger": "62,04 milyar $",
      "alt": "TTM",
      "rehber": "geri_alim",
      "ton": null
@@ -226,9 +230,14 @@
    "id": "bilanco",
    "baslik": "Bilanço sağlamlığı",
    "durum": "notr",
-   "manset": "Bilanço özeti.",
+   "manset": "Net nakit −10,92 milyar $; cari oran 4,59.",
    "paragraflar": [
-    "Nakit ve kısa vadeli yatırımlar 22,44 milyar $, finansal borç 33,37 milyar $"
+    "Toplam varlıklar 320,3 milyar $, toplam yükümlülükler 91,29 milyar $, özkaynak 229,0 milyar $. Varlıklar bir yılda +%127,6 büyüdü.",
+    "Varlıkların dağılımı: alacaklar %20, stoklar %10, nakit ve kısa vadeli yatırımlar %7, şerefiye %7, maddi duran varlıklar %4. Nakit ağırlıklı bir bilanço esneklik sağlar; şerefiye ağırlığı yüksekse geçmiş satın almalar için ödenen primin büyüklüğünü ve değer düşüklüğü riskini gösterir.",
+    "Nakit ve kısa vadeli yatırımlar 22,44 milyar $, finansal borç 33,37 milyar $; net borç pozisyonu 10,92 milyar $.",
+    "Cari oran 4,59 (dönen varlıklar / kısa vadeli yükümlülükler). 1,5'in üzerinde: kısa vadeli yükümlülükleri rahat karşılıyor.",
+    "Varlıkların %72 özkaynakla finanse ediliyor; borç/özkaynak 0,15.",
+    "Kira yükümlülükleri (operasyonel kiralama) 5,49 milyar $; finansal borca benzer sabit bir yükümlülüktür."
    ],
    "rakamlar": [
     {
@@ -247,14 +256,14 @@
     },
     {
      "etiket": "Cari oran",
-     "deger": "veri yok",
+     "deger": "4,59",
      "alt": null,
      "rehber": "cari_oran",
      "ton": null
     },
     {
      "etiket": "Özkaynak oranı",
-     "deger": "veri yok",
+     "deger": "%72",
      "alt": null,
      "rehber": "ozkaynak_orani",
      "ton": null
@@ -276,10 +285,12 @@
    "id": "isletme_sermayesi",
    "baslik": "İşletme sermayesi",
    "durum": "dikkat",
-   "manset": "Nakit dönüşüm döngüsü veri yok; DSO 60 gün.",
+   "manset": "Nakit dönüşüm döngüsü 122 gün; DSO 60 gün.",
    "paragraflar": [
     "Alacak tahsil süresi (DSO) 60 gün; bir yıl önce 54 gün. Müşteriler faturayı ortalama bu kadar günde ödüyor. Sürenin uzaması tahsilat zorluğu veya agresif satış koşullarına işaret edebilir.",
     "Stok devir süresi (DIO) 119 gün; bir yıl önce 106 gün. Stoğun satılana kadar depoda ortalama kaç gün kaldığını gösterir. Donanım şirketlerinde hızlı artış, talep yavaşlaması veya ürün geçişi riskidir.",
+    "Ticari borç ödeme süresi (DPO) 57 gün; tedarikçilere ortalama bu kadar günde ödeme yapılıyor.",
+    "Nakit dönüşüm döngüsü (DSO + DIO − DPO) 122 gün; bir yıl önce 96 gün. Şirketin bir doları üretime koyup müşteriden tahsil etmesi bu kadar sürüyor; kısalması nakit verimliliğinin arttığını gösterir.",
     "Alacaklar yıllık +%126,8, gelir +%105,8 büyüdü (fark +20,9 puan).",
     "Stoklar yıllık +%111,0, gelir +%105,8 büyüdü (fark +5,2 puan)."
    ],
@@ -300,14 +311,14 @@
     },
     {
      "etiket": "DPO",
-     "deger": "veri yok",
+     "deger": "57 gün",
      "alt": null,
      "rehber": "dpo",
      "ton": null
     },
     {
      "etiket": "Nakit dönüşüm döngüsü",
-     "deger": "veri yok",
+     "deger": "122 gün",
      "alt": null,
      "rehber": "ccc",
      "ton": null
@@ -328,9 +339,12 @@
    "id": "hissedar",
    "baslik": "Hissedar açısından",
    "durum": "olumlu",
-   "manset": "Hisse sayısı yıllık −%1,0; ROE veri yok.",
+   "manset": "Hisse sayısı yıllık −%1,0; ROE %117,2.",
    "paragraflar": [
-    "Seyreltilmiş hisse sayısı bir yılda −%1,0 değişti. Hisse sayısı azalıyor: geri alımlar, çalışanlara verilen hisselerin yarattığı sulandırmayı aşıyor. Her hisse şirketin daha büyük bir parçasını temsil ediyor."
+    "Seyreltilmiş hisse sayısı bir yılda −%1,0 değişti. Hisse sayısı azalıyor: geri alımlar, çalışanlara verilen hisselerin yarattığı sulandırmayı aşıyor. Her hisse şirketin daha büyük bir parçasını temsil ediyor.",
+    "Son 12 ayda geri alım 55,31 milyar $, SBC 7,24 milyar $: geri alım SBC'nin 7,6 katı. Geri alım SBC'yi rahatça aşıyor.",
+    "Özkaynak kârlılığı (ROE, TTM) %117,2. Çok yüksek ROE; yoğun geri alımların özkaynağı küçültmesi oranı şişirebilir, ROIC ile birlikte oku.",
+    "Yatırılan sermaye getirisi (ROIC, yaklaşık) %65,1. Hesap: faaliyet kârı × (1 − %21 varsayımsal vergi) / (özkaynak + borç − nakit). Sermaye maliyetinin (genelde %8-10) belirgin üzerinde olması değer yaratıldığını gösterir."
    ],
    "rakamlar": [
     {
@@ -342,14 +356,14 @@
     },
     {
      "etiket": "ROE (TTM)",
-     "deger": "veri yok",
+     "deger": "%117,2",
      "alt": null,
      "rehber": "roe",
      "ton": null
     },
     {
      "etiket": "ROIC (yaklaşık)",
-     "deger": "veri yok",
+     "deger": "%65,1",
      "alt": null,
      "rehber": "roic",
      "ton": null
