@@ -6,7 +6,7 @@
   "Brüt marj %70,7 (−6,8 puan yıllık), faaliyet marjı %4,1 (−7,1 puan). Faaliyet kârı −%54,8 ile gelirden yavaş büyüdü: giderler gelirden hızlı arttı; marj baskısı var.",
   "Net kâr 298,0 milyon $. Faaliyet dışı kalemler vergi öncesi kârı 276,0 milyon $ etkiledi (vergi öncesi kârın %63); en büyük kalem ayrıştırılamayan diğer faaliyet dışı kalemler: 342,0 milyon $.",
   "Çeyrekte işletme faaliyetlerinden 587,0 milyon $ nakit elde edildi, net kârın 1,97 katı. İşletme sermayesinde: alacaklar 488,0 milyon $ arttı ve nakit bağladı; ticari borçlar 265,0 milyon $ azaldı ve nakit bağladı. Son 12 ayda serbest nakit akışı 4,58 milyar $ (gelirin %31,1).",
-  "Çeyrek sonunda nakit ve kısa vadeli yatırımlar 4,66 milyar $, finansal borç 5,43 milyar $, net nakit −771,0 milyon $. Seyreltilmiş hisse sayısı yıllık −%1,2 değişti; son 12 ayda 3,41 milyar $ geri alım yapıldı, hisse bazlı ödeme (SBC) 2,19 milyar $."
+  "Çeyrek sonunda nakit ve kısa vadeli yatırımlar 4,66 milyar $, finansal borç 7,52 milyar $, net nakit −2,85 milyar $. Seyreltilmiş hisse sayısı yıllık −%1,2 değişti; son 12 ayda 3,41 milyar $ geri alım yapıldı, hisse bazlı ödeme (SBC) 2,19 milyar $."
  ],
  "bolumler": [
   {
@@ -239,13 +239,13 @@
    "id": "bilanco",
    "baslik": "Bilanço sağlamlığı",
    "durum": "dikkat",
-   "manset": "Net nakit −771,0 milyon $; cari oran 0,70.",
+   "manset": "Net nakit −2,85 milyar $; cari oran 0,70.",
    "paragraflar": [
     "Toplam varlıklar 31,67 milyar $, toplam yükümlülükler 19,15 milyar $, özkaynak 12,52 milyar $. Varlıklar bir yılda +%43,6 büyüdü.",
     "Varlıkların dağılımı: şerefiye %31, nakit ve kısa vadeli yatırımlar %15, maddi olmayan varlıklar %12, alacaklar %7, maddi duran varlıklar %7. Şerefiye ağırlığı yüksek: geçmiş satın almalar için ödenen prim büyük ve değer düşüklüğü riski taşıyor.",
-    "Nakit ve kısa vadeli yatırımlar 4,66 milyar $, finansal borç 5,43 milyar $; net borç pozisyonu 771,0 milyon $.",
+    "Nakit ve kısa vadeli yatırımlar 4,66 milyar $, finansal borç 7,52 milyar $; net borç pozisyonu 2,85 milyar $.",
     "Cari oran 0,70 (dönen varlıklar / kısa vadeli yükümlülükler). 1'in altında: kısa vadeli yükümlülükler dönen varlıklardan fazla; nakit akışına bağımlılık yüksek.",
-    "Varlıkların %40 özkaynakla finanse ediliyor; borç/özkaynak 0,43.",
+    "Varlıkların %40 özkaynakla finanse ediliyor; borç/özkaynak 0,60.",
     "Şerefiye toplam varlıkların %31; satın almaların beklenen getiriyi sağlamaması halinde değer düşüklüğü riski taşır.",
     "Kira yükümlülükleri (operasyonel kiralama) 936,0 milyon $; finansal borca benzer sabit bir yükümlülüktür."
    ],
@@ -259,7 +259,7 @@
     },
     {
      "etiket": "Finansal borç",
-     "deger": "5,43 milyar $",
+     "deger": "7,52 milyar $",
      "alt": null,
      "rehber": "net_nakit",
      "ton": null
@@ -352,7 +352,7 @@
     "Seyreltilmiş hisse sayısı bir yılda −%1,2 değişti. Hisse sayısı azalıyor: geri alımlar, çalışanlara verilen hisselerin yarattığı sulandırmayı aşıyor. Her hisse şirketin daha büyük bir parçasını temsil ediyor.",
     "Son 12 ayda geri alım 3,41 milyar $, SBC 2,19 milyar $: geri alım SBC'nin 1,6 katı. Geri alım SBC'yi rahatça aşıyor.",
     "Özkaynak kârlılığı (ROE, TTM) %14,2. ",
-    "Yatırılan sermaye getirisi (ROIC, yaklaşık) %10,0. Hesap: faaliyet kârı × (1 − %21 varsayımsal vergi) / (özkaynak + borç − nakit). Sermaye maliyetinin (genelde %8-10) belirgin üzerinde olması değer yaratıldığını gösterir."
+    "Yatırılan sermaye getirisi (ROIC, yaklaşık) %8,6. Hesap: faaliyet kârı × (1 − %21 varsayımsal vergi) / (özkaynak + borç − nakit). Sermaye maliyetinin (genelde %8-10) belirgin üzerinde olması değer yaratıldığını gösterir."
    ],
    "rakamlar": [
     {
@@ -371,7 +371,7 @@
     },
     {
      "etiket": "ROIC (yaklaşık)",
-     "deger": "%10,0",
+     "deger": "%8,6",
      "alt": null,
      "rehber": "roic",
      "ton": null

@@ -2,7 +2,7 @@
  "ticker": "AAOI",
  "cik": 1158114,
  "sirket": "APPLIED OPTOELECTRONICS, INC.",
- "guncelleme": "2026-09-26T00:39:33+00:00",
+ "guncelleme": "2026-09-26T00:49:48+00:00",
  "son_dosya": {
   "accn": "0001437749-26-026278",
   "form": "10-Q",
@@ -56,7 +56,11 @@
     "cash": 21940000.0,
     "st_investments": null,
     "cash_and_st": null,
-    "total_debt": 0.0,
+    "total_debt": 31323000.0,
+    "convertible": 0.0,
+    "st_borrowings": null,
+    "eq_inv_fv": null,
+    "eq_inv_other": null,
     "goodwill": null,
     "total_assets": 373792000.0,
     "current_assets": 164398000.0,
@@ -230,7 +234,13 @@
       "not": ""
      },
      "total_debt": {
-      "concept": "LongTermDebtNoncurrent",
+      "concept": "LongTermDebt",
+      "accn": "0001437749-23-031255",
+      "turetilmis": false,
+      "not": ""
+     },
+     "convertible": {
+      "concept": "ConvertibleLongTermNotesPayable",
       "accn": "0001437749-23-031255",
       "turetilmis": false,
       "not": ""
@@ -352,10 +362,11 @@
     "dio": 146.6,
     "deferred_revenue": 12497000.0,
     "liquidity": 21940000.0,
-    "net_cash": 21940000.0,
+    "equity_investments": null,
+    "net_cash": -9383000.0,
     "current_ratio": 0.87,
     "working_capital": -23850000.0,
-    "debt_to_equity": 0.0,
+    "debt_to_equity": 0.18,
     "equity_ratio": 47.71,
     "goodwill_to_assets": null,
     "dpo": 75.7,
@@ -380,7 +391,7 @@
     "operating_margin_yoy_pp": 13.12,
     "roe_ttm": -33.13,
     "accruals_ratio": -12.56,
-    "roic_ttm": -27.87,
+    "roic_ttm": -23.22,
     "inventory_vs_revenue_gap": -38.69,
     "revenue_qoq": 50.3,
     "cash_runway_months": 15.8,
@@ -429,7 +440,11 @@
     "cash": 45366000.0,
     "st_investments": null,
     "cash_and_st": null,
-    "total_debt": 0.0,
+    "total_debt": 23197000.0,
+    "convertible": 76233000.0,
+    "st_borrowings": null,
+    "eq_inv_fv": null,
+    "eq_inv_other": null,
     "goodwill": null,
     "total_assets": 389186000.0,
     "current_assets": 172605000.0,
@@ -579,7 +594,13 @@
       "not": ""
      },
      "total_debt": {
-      "concept": "LongTermDebtNoncurrent",
+      "concept": "LongTermDebt",
+      "accn": "0001437749-25-005575",
+      "turetilmis": false,
+      "not": ""
+     },
+     "convertible": {
+      "concept": "ConvertibleLongTermNotesPayable",
       "accn": "0001437749-25-005575",
       "turetilmis": false,
       "not": ""
@@ -701,10 +722,11 @@
     "dio": 151.2,
     "deferred_revenue": 1803000.0,
     "liquidity": 45366000.0,
-    "net_cash": 45366000.0,
+    "equity_investments": null,
+    "net_cash": 22169000.0,
     "current_ratio": 1.85,
     "working_capital": 79247000.0,
-    "debt_to_equity": 0.0,
+    "debt_to_equity": 0.11,
     "equity_ratio": 55.21,
     "goodwill_to_assets": null,
     "dpo": 77.9,
@@ -729,7 +751,7 @@
     "operating_margin_yoy_pp": 22.32,
     "roe_ttm": -28.06,
     "accruals_ratio": -12.07,
-    "roic_ttm": -19.27,
+    "roic_ttm": -16.95,
     "inventory_vs_revenue_gap": -18.01,
     "revenue_qoq": -3.35,
     "cash_runway_months": 32.0,
@@ -778,7 +800,11 @@
     "cash": 8433000.0,
     "st_investments": null,
     "cash_and_st": null,
-    "total_debt": 4313000.0,
+    "total_debt": 24129000.0,
+    "convertible": 76331000.0,
+    "st_borrowings": null,
+    "eq_inv_fv": null,
+    "eq_inv_other": null,
     "goodwill": null,
     "total_assets": 350916000.0,
     "current_assets": 133635000.0,
@@ -940,8 +966,14 @@
       "not": ""
      },
      "total_debt": {
-      "concept": "LongTermDebtNoncurrent",
-      "accn": "0001437749-25-015518",
+      "concept": "LongTermDebt",
+      "accn": "0001437749-24-015696",
+      "turetilmis": false,
+      "not": ""
+     },
+     "convertible": {
+      "concept": "ConvertibleLongTermNotesPayable",
+      "accn": "0001437749-24-015696",
       "turetilmis": false,
       "not": ""
      },
@@ -1062,10 +1094,11 @@
     "dio": 149.4,
     "deferred_revenue": 1689000.0,
     "liquidity": 8433000.0,
-    "net_cash": 4120000.0,
+    "equity_investments": null,
+    "net_cash": -15696000.0,
     "current_ratio": 1.79,
     "working_capital": 59026000.0,
-    "debt_to_equity": 0.02,
+    "debt_to_equity": 0.12,
     "equity_ratio": 55.78,
     "goodwill_to_assets": null,
     "dpo": 65.0,
@@ -1090,7 +1123,7 @@
     "operating_margin_yoy_pp": -26.5,
     "roe_ttm": -34.16,
     "accruals_ratio": -9.78,
-    "roic_ttm": -20.13,
+    "roic_ttm": -18.25,
     "inventory_vs_revenue_gap": 0.7,
     "revenue_qoq": -32.72,
     "cash_runway_months": 2.5,
@@ -1139,7 +1172,11 @@
     "cash": 10653000.0,
     "st_investments": null,
     "cash_and_st": null,
-    "total_debt": 0.0,
+    "total_debt": 22506000.0,
+    "convertible": 76690000.0,
+    "st_borrowings": null,
+    "eq_inv_fv": null,
+    "eq_inv_other": null,
     "goodwill": null,
     "total_assets": 348040000.0,
     "current_assets": 132969000.0,
@@ -1301,7 +1338,13 @@
       "not": ""
      },
      "total_debt": {
-      "concept": "LongTermDebtNoncurrent",
+      "concept": "LongTermDebt",
+      "accn": "0001437749-24-024888",
+      "turetilmis": false,
+      "not": ""
+     },
+     "convertible": {
+      "concept": "ConvertibleLongTermNotesPayable",
       "accn": "0001437749-24-024888",
       "turetilmis": false,
       "not": ""
@@ -1423,10 +1466,11 @@
     "dio": 146.7,
     "deferred_revenue": 1570000.0,
     "liquidity": 10653000.0,
-    "net_cash": 10653000.0,
+    "equity_investments": null,
+    "net_cash": -11853000.0,
     "current_ratio": 1.64,
     "working_capital": 52030000.0,
-    "debt_to_equity": 0.0,
+    "debt_to_equity": 0.12,
     "equity_ratio": 53.58,
     "goodwill_to_assets": null,
     "dpo": 90.5,
@@ -1451,7 +1495,7 @@
     "operating_margin_yoy_pp": -22.29,
     "roe_ttm": -41.23,
     "accruals_ratio": -7.9,
-    "roic_ttm": -26.56,
+    "roic_ttm": -23.54,
     "inventory_vs_revenue_gap": -22.07,
     "revenue_qoq": 6.39,
     "cash_runway_months": 2.1,
@@ -1500,7 +1544,11 @@
     "cash": 34124000.0,
     "st_investments": null,
     "cash_and_st": null,
-    "total_debt": 0.0,
+    "total_debt": 29483000.0,
+    "convertible": 77053000.0,
+    "st_borrowings": null,
+    "eq_inv_fv": null,
+    "eq_inv_other": null,
     "goodwill": null,
     "total_assets": 409972000.0,
     "current_assets": 188363000.0,
@@ -1668,7 +1716,13 @@
       "not": ""
      },
      "total_debt": {
-      "concept": "LongTermDebtNoncurrent",
+      "concept": "LongTermDebt",
+      "accn": "0001437749-24-033913",
+      "turetilmis": false,
+      "not": ""
+     },
+     "convertible": {
+      "concept": "ConvertibleLongTermNotesPayable",
       "accn": "0001437749-24-033913",
       "turetilmis": false,
       "not": ""
@@ -1790,10 +1844,11 @@
     "dio": 120.3,
     "deferred_revenue": 1439000.0,
     "liquidity": 34124000.0,
-    "net_cash": 34124000.0,
+    "equity_investments": null,
+    "net_cash": 4641000.0,
     "current_ratio": 1.61,
     "working_capital": 71261000.0,
-    "debt_to_equity": 0.0,
+    "debt_to_equity": 0.14,
     "equity_ratio": 51.73,
     "goodwill_to_assets": null,
     "dpo": 104.6,
@@ -1818,7 +1873,7 @@
     "operating_margin_yoy_pp": -14.71,
     "roe_ttm": -41.44,
     "accruals_ratio": -9.58,
-    "roic_ttm": -30.62,
+    "roic_ttm": -26.27,
     "inventory_vs_revenue_gap": -8.83,
     "revenue_qoq": 50.57,
     "cash_runway_months": 6.3,
@@ -1867,7 +1922,11 @@
     "cash": 67428000.0,
     "st_investments": null,
     "cash_and_st": null,
-    "total_debt": 4313000.0,
+    "total_debt": 26682000.0,
+    "convertible": 134497000.0,
+    "st_borrowings": null,
+    "eq_inv_fv": null,
+    "eq_inv_other": null,
     "goodwill": null,
     "total_assets": 547032000.0,
     "current_assets": 301268000.0,
@@ -2023,8 +2082,14 @@
       "not": ""
      },
      "total_debt": {
-      "concept": "LongTermDebtNoncurrent",
+      "concept": "LongTermDebt",
       "accn": "0001437749-26-005875",
+      "turetilmis": false,
+      "not": ""
+     },
+     "convertible": {
+      "concept": "ConvertibleNotesPayable",
+      "accn": "0001437749-25-033627",
       "turetilmis": false,
       "not": ""
      },
@@ -2145,10 +2210,11 @@
     "dio": 113.3,
     "deferred_revenue": 0,
     "liquidity": 67428000.0,
-    "net_cash": 63115000.0,
+    "equity_investments": null,
+    "net_cash": 40746000.0,
     "current_ratio": 1.77,
     "working_capital": 131199000.0,
-    "debt_to_equity": 0.02,
+    "debt_to_equity": 0.12,
     "equity_ratio": 41.88,
     "goodwill_to_assets": null,
     "dpo": 135.0,
@@ -2173,7 +2239,7 @@
     "operating_margin_yoy_pp": 1.05,
     "roe_ttm": -84.12,
     "accruals_ratio": -25.04,
-    "roic_ttm": -33.75,
+    "roic_ttm": -29.74,
     "inventory_vs_revenue_gap": -27.87,
     "revenue_qoq": 53.91,
     "cash_runway_months": 7.2,
@@ -2222,7 +2288,11 @@
     "cash": 51144000.0,
     "st_investments": null,
     "cash_and_st": null,
-    "total_debt": 1811000.0,
+    "total_debt": 22123000.0,
+    "convertible": 134229.0,
+    "st_borrowings": null,
+    "eq_inv_fv": null,
+    "eq_inv_other": null,
     "goodwill": null,
     "total_assets": 644668000.0,
     "current_assets": 358842000.0,
@@ -2384,7 +2454,13 @@
       "not": ""
      },
      "total_debt": {
-      "concept": "LongTermDebtNoncurrent",
+      "concept": "LongTermDebt",
+      "accn": "0001437749-25-015518",
+      "turetilmis": false,
+      "not": ""
+     },
+     "convertible": {
+      "concept": "ConvertibleNotesPayable",
       "accn": "0001437749-25-015518",
       "turetilmis": false,
       "not": ""
@@ -2506,10 +2582,11 @@
     "dio": 132.8,
     "deferred_revenue": null,
     "liquidity": 51144000.0,
-    "net_cash": 49333000.0,
+    "equity_investments": null,
+    "net_cash": 29021000.0,
     "current_ratio": 1.88,
     "working_capital": 167835000.0,
-    "debt_to_equity": 0.01,
+    "debt_to_equity": 0.07,
     "equity_ratio": 47.93,
     "goodwill_to_assets": null,
     "dpo": 162.1,
@@ -2534,7 +2611,7 @@
     "operating_margin_yoy_pp": 44.27,
     "roe_ttm": -68.45,
     "accruals_ratio": -16.23,
-    "roic_ttm": -17.71,
+    "roic_ttm": -16.42,
     "inventory_vs_revenue_gap": -57.17,
     "revenue_qoq": -0.41,
     "cash_runway_months": 3.9,
@@ -2583,7 +2660,11 @@
     "cash": 64699000.0,
     "st_investments": null,
     "cash_and_st": null,
-    "total_debt": 0.0,
+    "total_debt": 22316936.0,
+    "convertible": 133936.0,
+    "st_borrowings": null,
+    "eq_inv_fv": null,
+    "eq_inv_other": null,
     "goodwill": null,
     "total_assets": 796850000.0,
     "current_assets": 458338000.0,
@@ -2744,8 +2825,8 @@
       "turetilmis": false,
       "not": ""
      },
-     "total_debt": {
-      "concept": "LongTermDebtNoncurrent",
+     "convertible": {
+      "concept": "ConvertibleNotesPayable",
       "accn": "0001437749-25-025450",
       "turetilmis": false,
       "not": ""
@@ -2867,10 +2948,11 @@
     "dio": 176.0,
     "deferred_revenue": null,
     "liquidity": 64699000.0,
-    "net_cash": 64699000.0,
+    "equity_investments": null,
+    "net_cash": 42382064.0,
     "current_ratio": 2.11,
     "working_capital": 241495000.0,
-    "debt_to_equity": 0.0,
+    "debt_to_equity": 0.05,
     "equity_ratio": 53.33,
     "goodwill_to_assets": null,
     "dpo": 168.5,
@@ -2895,7 +2977,7 @@
     "operating_margin_yoy_pp": 45.13,
     "roe_ttm": -50.93,
     "accruals_ratio": -0.05,
-    "roic_ttm": -10.51,
+    "roic_ttm": -9.9,
     "inventory_vs_revenue_gap": 17.71,
     "revenue_qoq": 3.1,
     "cash_runway_months": 3.2,
@@ -2944,7 +3026,11 @@
     "cash": 136961000.0,
     "st_investments": null,
     "cash_and_st": null,
-    "total_debt": 0.0,
+    "total_debt": 158098000.0,
+    "convertible": 130120000.0,
+    "st_borrowings": null,
+    "eq_inv_fv": null,
+    "eq_inv_other": null,
     "goodwill": null,
     "total_assets": 978528000.0,
     "current_assets": 575312000.0,
@@ -3105,8 +3191,8 @@
       "turetilmis": false,
       "not": ""
      },
-     "total_debt": {
-      "concept": "LongTermDebtNoncurrent",
+     "convertible": {
+      "concept": "ConvertibleNotesPayable",
       "accn": "0001437749-25-033627",
       "turetilmis": false,
       "not": ""
@@ -3228,10 +3314,11 @@
     "dio": 183.4,
     "deferred_revenue": null,
     "liquidity": 136961000.0,
-    "net_cash": 136961000.0,
+    "equity_investments": null,
+    "net_cash": -21137000.0,
     "current_ratio": 2.31,
     "working_capital": 326170000.0,
-    "debt_to_equity": 0.0,
+    "debt_to_equity": 0.28,
     "equity_ratio": 57.14,
     "goodwill_to_assets": null,
     "dpo": 161.8,
@@ -3256,7 +3343,7 @@
     "operating_margin_yoy_pp": 10.07,
     "roe_ttm": -40.43,
     "accruals_ratio": 1.95,
-    "roic_ttm": -9.28,
+    "roic_ttm": -6.75,
     "inventory_vs_revenue_gap": 82.3,
     "revenue_qoq": 15.23,
     "cash_runway_months": 5.4,
@@ -3305,7 +3392,11 @@
     "cash": 206140000.0,
     "st_investments": null,
     "cash_and_st": null,
-    "total_debt": 0.0,
+    "total_debt": 33975000.0,
+    "convertible": 129829000.0,
+    "st_borrowings": null,
+    "eq_inv_fv": null,
+    "eq_inv_other": null,
     "goodwill": null,
     "total_assets": 1168423000.0,
     "current_assets": 675727000.0,
@@ -3455,7 +3546,13 @@
       "not": ""
      },
      "total_debt": {
-      "concept": "LongTermDebtNoncurrent",
+      "concept": "LongTermDebt",
+      "accn": "0001437749-26-005875",
+      "turetilmis": false,
+      "not": ""
+     },
+     "convertible": {
+      "concept": "ConvertibleNotesPayable",
       "accn": "0001437749-26-026278",
       "turetilmis": false,
       "not": ""
@@ -3577,10 +3674,11 @@
     "dio": 182.5,
     "deferred_revenue": null,
     "liquidity": 206140000.0,
-    "net_cash": 206140000.0,
+    "equity_investments": null,
+    "net_cash": 172165000.0,
     "current_ratio": 2.63,
     "working_capital": 418444000.0,
-    "debt_to_equity": 0.0,
+    "debt_to_equity": 0.05,
     "equity_ratio": 62.81,
     "goodwill_to_assets": null,
     "dpo": 143.4,
@@ -3605,7 +3703,7 @@
     "operating_margin_yoy_pp": -2.12,
     "roe_ttm": -7.94,
     "accruals_ratio": 15.88,
-    "roic_ttm": -8.17,
+    "roic_ttm": -7.68,
     "inventory_vs_revenue_gap": 73.85,
     "revenue_qoq": 13.19,
     "cash_runway_months": 7.0,
@@ -3654,7 +3752,11 @@
     "cash": 439705000.0,
     "st_investments": null,
     "cash_and_st": null,
-    "total_debt": 0.0,
+    "total_debt": 170741000.0,
+    "convertible": 129516000.0,
+    "st_borrowings": null,
+    "eq_inv_fv": null,
+    "eq_inv_other": null,
     "goodwill": null,
     "total_assets": 1565879000.0,
     "current_assets": 992577000.0,
@@ -3815,8 +3917,8 @@
       "turetilmis": false,
       "not": ""
      },
-     "total_debt": {
-      "concept": "LongTermDebtNoncurrent",
+     "convertible": {
+      "concept": "ConvertibleNotesPayable",
       "accn": "0001437749-26-015620",
       "turetilmis": false,
       "not": ""
@@ -3938,10 +4040,11 @@
     "dio": 173.1,
     "deferred_revenue": null,
     "liquidity": 439705000.0,
-    "net_cash": 439705000.0,
+    "equity_investments": null,
+    "net_cash": 268964000.0,
     "current_ratio": 3.83,
     "working_capital": 733149000.0,
-    "debt_to_equity": 0.0,
+    "debt_to_equity": 0.15,
     "equity_ratio": 70.63,
     "goodwill_to_assets": null,
     "dpo": 124.4,
@@ -3966,7 +4069,7 @@
     "operating_margin_yoy_pp": 0.35,
     "roe_ttm": -6.13,
     "accruals_ratio": 14.98,
-    "roic_ttm": -6.95,
+    "roic_ttm": -5.54,
     "inventory_vs_revenue_gap": 50.22,
     "revenue_qoq": 12.56,
     "cash_runway_months": 12.6,
@@ -4015,7 +4118,11 @@
     "cash": 499737000.0,
     "st_investments": null,
     "cash_and_st": null,
-    "total_debt": 1657000.0,
+    "total_debt": 188057000.0,
+    "convertible": 129142000.0,
+    "st_borrowings": null,
+    "eq_inv_fv": null,
+    "eq_inv_other": null,
     "goodwill": null,
     "total_assets": 2301192000.0,
     "current_assets": 1189874000.0,
@@ -4176,8 +4283,8 @@
       "turetilmis": false,
       "not": ""
      },
-     "total_debt": {
-      "concept": "LongTermDebtNoncurrent",
+     "convertible": {
+      "concept": "ConvertibleNotesPayable",
       "accn": "0001437749-26-026278",
       "turetilmis": false,
       "not": ""
@@ -4299,10 +4406,11 @@
     "dio": 182.9,
     "deferred_revenue": null,
     "liquidity": 499737000.0,
-    "net_cash": 498080000.0,
+    "equity_investments": null,
+    "net_cash": 311680000.0,
     "current_ratio": 2.78,
     "working_capital": 761426000.0,
-    "debt_to_equity": 0.0,
+    "debt_to_equity": 0.11,
     "equity_ratio": 72.49,
     "goodwill_to_assets": null,
     "dpo": 187.7,
@@ -4327,7 +4435,7 @@
     "operating_margin_yoy_pp": 2.64,
     "roe_ttm": -5.45,
     "accruals_ratio": 4.83,
-    "roic_ttm": -4.55,
+    "roic_ttm": -3.93,
     "inventory_vs_revenue_gap": 14.34,
     "revenue_qoq": 26.98,
     "cash_runway_months": 10.1,
@@ -4696,13 +4804,37 @@
    "total_debt": {
     "tablo": "Bilanço",
     "kullanilan": [
-     "LongTermDebtNoncurrent",
      "LongTermDebt"
     ],
     "etiketler": {
-     "LongTermDebtNoncurrent": "Long-term Debt, Excluding Current Maturities",
      "LongTermDebt": "Long-term Debt"
     }
+   },
+   "convertible": {
+    "tablo": "Bilanço",
+    "kullanilan": [
+     "ConvertibleNotesPayable",
+     "ConvertibleLongTermNotesPayable"
+    ],
+    "etiketler": {
+     "ConvertibleNotesPayable": "Convertible Notes Payable",
+     "ConvertibleLongTermNotesPayable": "Convertible Notes Payable, Noncurrent"
+    }
+   },
+   "st_borrowings": {
+    "tablo": "Bilanço",
+    "kullanilan": [],
+    "etiketler": {}
+   },
+   "eq_inv_fv": {
+    "tablo": "Bilanço (dipnot: yatırımlar)",
+    "kullanilan": [],
+    "etiketler": {}
+   },
+   "eq_inv_other": {
+    "tablo": "Bilanço (dipnot: yatırımlar)",
+    "kullanilan": [],
+    "etiketler": {}
    },
    "goodwill": {
     "tablo": "Bilanço",
@@ -4809,12 +4941,10 @@
    "debt_noncurrent": {
     "tablo": "Bilanço",
     "kullanilan": [
-     "LongTermDebtNoncurrent",
-     "ConvertibleLongTermNotesPayable"
+     "LongTermDebtNoncurrent"
     ],
     "etiketler": {
-     "LongTermDebtNoncurrent": "Long-term Debt, Excluding Current Maturities",
-     "ConvertibleLongTermNotesPayable": "Convertible Notes Payable, Noncurrent"
+     "LongTermDebtNoncurrent": "Long-term Debt, Excluding Current Maturities"
     }
    },
    "lease_liab": {
@@ -5581,15 +5711,16 @@
     "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/aaoi20260630_10q.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001158114/us-gaap/CashAndCashEquivalentsAtCarryingValue.json"
    },
-   "total_debt": {
-    "satir": "us-gaap:LongTermDebtNoncurrent",
+   "total_debt": null,
+   "convertible": {
+    "satir": "us-gaap:ConvertibleNotesPayable",
     "tablo": "Bilanço",
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
     "tarih": "2026-08-06",
     "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/aaoi20260630_10q.htm",
-    "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001158114/us-gaap/LongTermDebtNoncurrent.json"
+    "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001158114/us-gaap/ConvertibleNotesPayable.json"
    },
    "total_assets": {
     "satir": "us-gaap:Assets",

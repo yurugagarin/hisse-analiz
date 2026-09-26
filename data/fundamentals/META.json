@@ -2,7 +2,7 @@
  "ticker": "META",
  "cik": 1326801,
  "sirket": "Meta Platforms, Inc.",
- "guncelleme": "2026-09-26T00:39:27+00:00",
+ "guncelleme": "2026-09-26T00:49:41+00:00",
  "son_dosya": {
   "accn": "0001628280-26-050705",
   "form": "10-Q",
@@ -57,6 +57,10 @@
     "st_investments": 24233000000.0,
     "cash_and_st": null,
     "total_debt": 18383000000.0,
+    "convertible": null,
+    "st_borrowings": null,
+    "eq_inv_fv": null,
+    "eq_inv_other": 6083000000.0,
     "goodwill": 20668000000.0,
     "total_assets": 216274000000.0,
     "current_assets": 78378000000.0,
@@ -223,6 +227,12 @@
       "turetilmis": false,
       "not": ""
      },
+     "eq_inv_other": {
+      "concept": "EquitySecuritiesWithoutReadilyDeterminableFairValueAmount",
+      "accn": "0001326801-23-000103",
+      "turetilmis": false,
+      "not": ""
+     },
      "goodwill": {
       "concept": "Goodwill",
       "accn": "0001326801-23-000103",
@@ -340,6 +350,7 @@
     "dio": null,
     "deferred_revenue": 509000000.0,
     "liquidity": 61123000000.0,
+    "equity_investments": 6083000000.0,
     "net_cash": 42740000000.0,
     "current_ratio": 2.57,
     "working_capital": 47847000000.0,
@@ -418,6 +429,10 @@
     "st_investments": 23541000000.0,
     "cash_and_st": null,
     "total_debt": 18385000000.0,
+    "convertible": null,
+    "st_borrowings": null,
+    "eq_inv_fv": null,
+    "eq_inv_other": 6083000000.0,
     "goodwill": 20654000000.0,
     "total_assets": 229623000000.0,
     "current_assets": 85365000000.0,
@@ -572,6 +587,12 @@
       "turetilmis": false,
       "not": ""
      },
+     "eq_inv_other": {
+      "concept": "EquitySecuritiesWithoutReadilyDeterminableFairValueAmount",
+      "accn": "0001326801-25-000017",
+      "turetilmis": false,
+      "not": ""
+     },
      "goodwill": {
       "concept": "Goodwill",
       "accn": "0001628280-26-003942",
@@ -689,6 +710,7 @@
     "dio": null,
     "deferred_revenue": 626000000.0,
     "liquidity": 65403000000.0,
+    "equity_investments": 6083000000.0,
     "net_cash": 47018000000.0,
     "current_ratio": 2.67,
     "working_capital": 53405000000.0,
@@ -767,6 +789,10 @@
     "st_investments": 25813000000.0,
     "cash_and_st": null,
     "total_debt": 18387000000.0,
+    "convertible": null,
+    "st_borrowings": null,
+    "eq_inv_fv": null,
+    "eq_inv_other": 6161000000.0,
     "goodwill": 20654000000.0,
     "total_assets": 222844000000.0,
     "current_assets": 75330000000.0,
@@ -915,8 +941,8 @@
       "turetilmis": false,
       "not": ""
      },
-     "total_debt": {
-      "concept": "LongTermDebtNoncurrent",
+     "eq_inv_other": {
+      "concept": "EquitySecuritiesWithoutReadilyDeterminableFairValueAmount",
       "accn": "0001326801-24-000049",
       "turetilmis": false,
       "not": ""
@@ -1038,6 +1064,7 @@
     "dio": null,
     "deferred_revenue": 599000000.0,
     "liquidity": 58120000000.0,
+    "equity_investments": 6161000000.0,
     "net_cash": 39733000000.0,
     "current_ratio": 2.68,
     "working_capital": 47229000000.0,
@@ -1116,6 +1143,10 @@
     "st_investments": 26035000000.0,
     "cash_and_st": null,
     "total_debt": 18389000000.0,
+    "convertible": null,
+    "st_borrowings": null,
+    "eq_inv_fv": null,
+    "eq_inv_other": 6151000000.0,
     "goodwill": 20654000000.0,
     "total_assets": 230238000000.0,
     "current_assets": 76431000000.0,
@@ -1264,8 +1295,8 @@
       "turetilmis": false,
       "not": ""
      },
-     "total_debt": {
-      "concept": "LongTermDebtNoncurrent",
+     "eq_inv_other": {
+      "concept": "EquitySecuritiesWithoutReadilyDeterminableFairValueAmount",
       "accn": "0001326801-24-000069",
       "turetilmis": false,
       "not": ""
@@ -1387,6 +1418,7 @@
     "dio": null,
     "deferred_revenue": 637000000.0,
     "liquidity": 58080000000.0,
+    "equity_investments": 6151000000.0,
     "net_cash": 39691000000.0,
     "current_ratio": 2.83,
     "working_capital": 49427000000.0,
@@ -1465,6 +1497,10 @@
     "st_investments": 27048000000.0,
     "cash_and_st": null,
     "total_debt": 28823000000.0,
+    "convertible": null,
+    "st_borrowings": null,
+    "eq_inv_fv": null,
+    "eq_inv_other": 6018000000.0,
     "goodwill": 20654000000.0,
     "total_assets": 256408000000.0,
     "current_assets": 91067000000.0,
@@ -1631,6 +1667,12 @@
       "turetilmis": false,
       "not": ""
      },
+     "eq_inv_other": {
+      "concept": "EquitySecuritiesWithoutReadilyDeterminableFairValueAmount",
+      "accn": "0001326801-24-000081",
+      "turetilmis": false,
+      "not": ""
+     },
      "goodwill": {
       "concept": "Goodwill",
       "accn": "0001326801-24-000081",
@@ -1748,6 +1790,7 @@
     "dio": null,
     "deferred_revenue": 704000000.0,
     "liquidity": 70900000000.0,
+    "equity_investments": 6018000000.0,
     "net_cash": 42077000000.0,
     "current_ratio": 2.73,
     "working_capital": 57737000000.0,
@@ -1826,6 +1869,10 @@
     "st_investments": 33926000000.0,
     "cash_and_st": null,
     "total_debt": 28826000000.0,
+    "convertible": null,
+    "st_borrowings": null,
+    "eq_inv_fv": 1226000000.0,
+    "eq_inv_other": 6018000000.0,
     "goodwill": 20654000000.0,
     "total_assets": 276054000000.0,
     "current_assets": 100045000000.0,
@@ -1980,6 +2027,18 @@
       "turetilmis": false,
       "not": ""
      },
+     "eq_inv_fv": {
+      "concept": "EquitySecuritiesFvNi",
+      "accn": "0001628280-26-003942",
+      "turetilmis": false,
+      "not": ""
+     },
+     "eq_inv_other": {
+      "concept": "EquitySecuritiesWithoutReadilyDeterminableFairValueAmount",
+      "accn": "0001628280-26-003942",
+      "turetilmis": false,
+      "not": ""
+     },
      "goodwill": {
       "concept": "Goodwill",
       "accn": "0001628280-26-003942",
@@ -2097,6 +2156,7 @@
     "dio": null,
     "deferred_revenue": 721000000.0,
     "liquidity": 77815000000.0,
+    "equity_investments": 7244000000.0,
     "net_cash": 48989000000.0,
     "current_ratio": 2.98,
     "working_capital": 66449000000.0,
@@ -2175,6 +2235,10 @@
     "st_investments": 41480000000.0,
     "cash_and_st": null,
     "total_debt": 28829000000.0,
+    "convertible": null,
+    "st_borrowings": null,
+    "eq_inv_fv": 3086000000.0,
+    "eq_inv_other": 6119000000.0,
     "goodwill": 20654000000.0,
     "total_assets": 280213000000.0,
     "current_assets": 90227000000.0,
@@ -2311,8 +2375,14 @@
       "turetilmis": false,
       "not": ""
      },
-     "total_debt": {
-      "concept": "LongTermDebtNoncurrent",
+     "eq_inv_fv": {
+      "concept": "EquitySecuritiesFvNi",
+      "accn": "0001326801-25-000054",
+      "turetilmis": false,
+      "not": ""
+     },
+     "eq_inv_other": {
+      "concept": "EquitySecuritiesWithoutReadilyDeterminableFairValueAmount",
       "accn": "0001326801-25-000054",
       "turetilmis": false,
       "not": ""
@@ -2428,6 +2498,7 @@
     "dio": null,
     "deferred_revenue": null,
     "liquidity": 70230000000.0,
+    "equity_investments": 9205000000.0,
     "net_cash": 41401000000.0,
     "current_ratio": 2.66,
     "working_capital": 56337000000.0,
@@ -2506,6 +2577,10 @@
     "st_investments": 35066000000.0,
     "cash_and_st": null,
     "total_debt": 28832000000.0,
+    "convertible": null,
+    "st_borrowings": null,
+    "eq_inv_fv": 4861000000.0,
+    "eq_inv_other": 19966000000.0,
     "goodwill": 20654000000.0,
     "total_assets": 294744000000.0,
     "current_assets": 73613000000.0,
@@ -2648,8 +2723,14 @@
       "turetilmis": false,
       "not": ""
      },
-     "total_debt": {
-      "concept": "LongTermDebtNoncurrent",
+     "eq_inv_fv": {
+      "concept": "EquitySecuritiesFvNi",
+      "accn": "0001628280-25-036791",
+      "turetilmis": false,
+      "not": ""
+     },
+     "eq_inv_other": {
+      "concept": "EquitySecuritiesWithoutReadilyDeterminableFairValueAmount",
       "accn": "0001628280-25-036791",
       "turetilmis": false,
       "not": ""
@@ -2765,6 +2846,7 @@
     "dio": null,
     "deferred_revenue": null,
     "liquidity": 47071000000.0,
+    "equity_investments": 24827000000.0,
     "net_cash": 18239000000.0,
     "current_ratio": 1.97,
     "working_capital": 36308000000.0,
@@ -2843,6 +2925,10 @@
     "st_investments": 34261000000.0,
     "cash_and_st": null,
     "total_debt": 28834000000.0,
+    "convertible": null,
+    "st_borrowings": null,
+    "eq_inv_fv": 6128000000.0,
+    "eq_inv_other": 20017000000.0,
     "goodwill": 21158000000.0,
     "total_assets": 303844000000.0,
     "current_assets": 73118000000.0,
@@ -2985,8 +3071,14 @@
       "turetilmis": false,
       "not": ""
      },
-     "total_debt": {
-      "concept": "LongTermDebtNoncurrent",
+     "eq_inv_fv": {
+      "concept": "EquitySecuritiesFvNi",
+      "accn": "0001628280-25-047240",
+      "turetilmis": false,
+      "not": ""
+     },
+     "eq_inv_other": {
+      "concept": "EquitySecuritiesWithoutReadilyDeterminableFairValueAmount",
       "accn": "0001628280-25-047240",
       "turetilmis": false,
       "not": ""
@@ -3108,6 +3200,7 @@
     "dio": null,
     "deferred_revenue": null,
     "liquidity": 44448000000.0,
+    "equity_investments": 26145000000.0,
     "net_cash": 15614000000.0,
     "current_ratio": 1.98,
     "working_capital": 36160000000.0,
@@ -3186,6 +3279,10 @@
     "st_investments": 45719000000.0,
     "cash_and_st": null,
     "total_debt": 58744000000.0,
+    "convertible": null,
+    "st_borrowings": null,
+    "eq_inv_fv": 5992000000.0,
+    "eq_inv_other": 20076000000.0,
     "goodwill": 24534000000.0,
     "total_assets": 366021000000.0,
     "current_assets": 108722000000.0,
@@ -3322,6 +3419,18 @@
       "turetilmis": false,
       "not": ""
      },
+     "eq_inv_fv": {
+      "concept": "EquitySecuritiesFvNi",
+      "accn": "0001628280-26-050705",
+      "turetilmis": false,
+      "not": ""
+     },
+     "eq_inv_other": {
+      "concept": "EquitySecuritiesWithoutReadilyDeterminableFairValueAmount",
+      "accn": "0001628280-26-050705",
+      "turetilmis": false,
+      "not": ""
+     },
      "goodwill": {
       "concept": "Goodwill",
       "accn": "0001628280-26-050705",
@@ -3439,6 +3548,7 @@
     "dio": null,
     "deferred_revenue": null,
     "liquidity": 81592000000.0,
+    "equity_investments": 26068000000.0,
     "net_cash": 22848000000.0,
     "current_ratio": 2.6,
     "working_capital": 66886000000.0,
@@ -3517,6 +3627,10 @@
     "st_investments": 57754000000.0,
     "cash_and_st": null,
     "total_debt": 58748000000.0,
+    "convertible": null,
+    "st_borrowings": null,
+    "eq_inv_fv": 4323000000.0,
+    "eq_inv_other": 20175000000.0,
     "goodwill": 24748000000.0,
     "total_assets": 395250000000.0,
     "current_assets": 109765000000.0,
@@ -3653,8 +3767,14 @@
       "turetilmis": false,
       "not": ""
      },
-     "total_debt": {
-      "concept": "LongTermDebtNoncurrent",
+     "eq_inv_fv": {
+      "concept": "EquitySecuritiesFvNi",
+      "accn": "0001628280-26-028526",
+      "turetilmis": false,
+      "not": ""
+     },
+     "eq_inv_other": {
+      "concept": "EquitySecuritiesWithoutReadilyDeterminableFairValueAmount",
       "accn": "0001628280-26-028526",
       "turetilmis": false,
       "not": ""
@@ -3770,6 +3890,7 @@
     "dio": null,
     "deferred_revenue": null,
     "liquidity": 81180000000.0,
+    "equity_investments": 24498000000.0,
     "net_cash": 22432000000.0,
     "current_ratio": 2.35,
     "working_capital": 63012000000.0,
@@ -3848,6 +3969,10 @@
     "st_investments": 74798000000.0,
     "cash_and_st": null,
     "total_debt": 83664000000.0,
+    "convertible": null,
+    "st_borrowings": null,
+    "eq_inv_fv": 3543000000.0,
+    "eq_inv_other": 20751000000.0,
     "goodwill": 23406000000.0,
     "total_assets": 449956000000.0,
     "current_assets": 125475000000.0,
@@ -3996,6 +4121,18 @@
       "turetilmis": false,
       "not": ""
      },
+     "eq_inv_fv": {
+      "concept": "EquitySecuritiesFvNi",
+      "accn": "0001628280-26-050705",
+      "turetilmis": false,
+      "not": ""
+     },
+     "eq_inv_other": {
+      "concept": "EquitySecuritiesWithoutReadilyDeterminableFairValueAmount",
+      "accn": "0001628280-26-050705",
+      "turetilmis": false,
+      "not": ""
+     },
      "goodwill": {
       "concept": "Goodwill",
       "accn": "0001628280-26-050705",
@@ -4107,6 +4244,7 @@
     "dio": null,
     "deferred_revenue": null,
     "liquidity": 90260000000.0,
+    "equity_investments": 24294000000.0,
     "net_cash": 6596000000.0,
     "current_ratio": 2.23,
     "working_capital": 69096000000.0,
@@ -4488,12 +4626,38 @@
    "total_debt": {
     "tablo": "Bilanço",
     "kullanilan": [
-     "LongTermDebt",
-     "LongTermDebtNoncurrent"
+     "LongTermDebt"
     ],
     "etiketler": {
-     "LongTermDebt": "Long-term Debt",
-     "LongTermDebtNoncurrent": "Long-term Debt, Excluding Current Maturities"
+     "LongTermDebt": "Long-term Debt"
+    }
+   },
+   "convertible": {
+    "tablo": "Bilanço",
+    "kullanilan": [],
+    "etiketler": {}
+   },
+   "st_borrowings": {
+    "tablo": "Bilanço",
+    "kullanilan": [],
+    "etiketler": {}
+   },
+   "eq_inv_fv": {
+    "tablo": "Bilanço (dipnot: yatırımlar)",
+    "kullanilan": [
+     "EquitySecuritiesFvNi"
+    ],
+    "etiketler": {
+     "EquitySecuritiesFvNi": "Equity Securities, FV-NI"
+    }
+   },
+   "eq_inv_other": {
+    "tablo": "Bilanço (dipnot: yatırımlar)",
+    "kullanilan": [
+     "EquitySecuritiesWithoutReadilyDeterminableFairValueAmount"
+    ],
+    "etiketler": {
+     "EquitySecuritiesWithoutReadilyDeterminableFairValueAmount": "Equity Securities without Readily Determinable Fair Value, Amount"
     }
    },
    "goodwill": {
@@ -5219,6 +5383,26 @@
     "tarih": "2026-07-30",
     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001326801/us-gaap/LongTermDebt.json"
+   },
+   "eq_inv_fv": {
+    "satir": "us-gaap:EquitySecuritiesFvNi",
+    "tablo": "Bilanço (dipnot: yatırımlar)",
+    "turetilmis": false,
+    "not": "",
+    "belge": "10-Q",
+    "tarih": "2026-07-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+    "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001326801/us-gaap/EquitySecuritiesFvNi.json"
+   },
+   "eq_inv_other": {
+    "satir": "us-gaap:EquitySecuritiesWithoutReadilyDeterminableFairValueAmount",
+    "tablo": "Bilanço (dipnot: yatırımlar)",
+    "turetilmis": false,
+    "not": "",
+    "belge": "10-Q",
+    "tarih": "2026-07-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+    "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001326801/us-gaap/EquitySecuritiesWithoutReadilyDeterminableFairValueAmount.json"
    },
    "goodwill": {
     "satir": "us-gaap:Goodwill",
