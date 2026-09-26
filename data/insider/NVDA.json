@@ -430,7 +430,7 @@
  "uyarilar": [
   {
    "etiket": "dikkat",
-   "metin": "Kümelenmiş satış: 2026-09-17–2026-09-21 arasında 3 yönetici satış yaptı (işlemlerin %75'i 10b5-1 planlı)."
+   "metin": "Kümelenmiş satış: 2026-09-17–2026-09-21 arasında 3 yönetici satış yaptı (10b5-1 planlı işlem oranı %75)."
   },
   {
    "etiket": "dikkat",
@@ -1644,6 +1644,16 @@
    "tutar": 133750.0
   }
  ],
+ "anlati": [
+  "Son 90 günde yöneticiler ve yönetim kurulu üyeleri 25 satış işlemiyle toplam 967,6 milyon $ değerinde hisse sattı. Önceden kayda geçirilmiş 10b5-1 planı kapsamındaki satışların payı (adet bazında): %2.",
+  "Satışların önemli bir kısmı plansız: yöneticinin o an karar verdiği satışlar, planlılara göre daha fazla bilgi taşır.",
+  "Bu dönemde yönetimden hiç açık piyasa alımı (P) yok.",
+  "5 vergi kesintisi (F) işlemi var: hak edilen hisselerin vergisi için şirkete bırakılan hisseler. Rutindir, sinyal sayılmaz.",
+  "Opsiyon/RSU kullanımı (M) 0, hibe (A) 3 işlem: ücretlendirmenin parçası.",
+  "En büyük satıcılar: STEVENS MARK A (Yönetim kurulu üyesi) 946,6 milyon $; Teter Timothy S. (EVP, General Counsel and Sec) 13,3 milyon $; Kress Colette (EVP & Chief Financial Officer) 7,6 milyon $ (doğrudan pozisyonuna oranı %4).",
+  "Kümelenme: 2026-09-17 – 2026-09-21 arasında 3 yönetici aynı dönemde sattı. Birden çok yöneticinin aynı anda satması, tek kişinin satışından daha dikkat çekicidir; ancak planlı satışlar ve kazanç sonrası açılan işlem pencereleri de kümelenme yaratır."
+ ],
+ "durum": "dikkat",
  "capraz_kontrol": {
   "kaynak": "Finnhub /stock/insider-transactions",
   "pencere_gun": 90,

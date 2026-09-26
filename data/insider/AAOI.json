@@ -304,7 +304,7 @@
  "uyarilar": [
   {
    "etiket": "dikkat",
-   "metin": "Kümelenmiş satış: 2026-06-10–2026-06-18 arasında 5 yönetici satış yaptı (işlemlerin %38'i 10b5-1 planlı)."
+   "metin": "Kümelenmiş satış: 2026-06-10–2026-06-18 arasında 5 yönetici satış yaptı (10b5-1 planlı işlem oranı %38)."
   },
   {
    "etiket": "bilgi",
@@ -2143,6 +2143,16 @@
    "tutar": 546014.0
   }
  ],
+ "anlati": [
+  "Son 90 günde yöneticiler ve yönetim kurulu üyeleri 7 satış işlemiyle toplam 6,7 milyon $ değerinde hisse sattı. Önceden kayda geçirilmiş 10b5-1 planı kapsamındaki satışların payı (adet bazında): %43.",
+  "Satışların önemli bir kısmı plansız: yöneticinin o an karar verdiği satışlar, planlılara göre daha fazla bilgi taşır.",
+  "Bu dönemde yönetimden hiç açık piyasa alımı (P) yok.",
+  "20 vergi kesintisi (F) işlemi var: hak edilen hisselerin vergisi için şirkete bırakılan hisseler. Rutindir, sinyal sayılmaz.",
+  "Opsiyon/RSU kullanımı (M) 0, hibe (A) 1 işlem: ücretlendirmenin parçası.",
+  "En büyük satıcılar: Chang Hung-Lun (Fred) (*** See Remarks) 3,5 milyon $ (doğrudan pozisyonuna oranı %11); Yeh Shu-Hua (Joshua) (*** See Remarks) 1,6 milyon $ (doğrudan pozisyonuna oranı %3); Murry Stefan J. (Chief Financial Officer) 1,5 milyon $ (doğrudan pozisyonuna oranı %3).",
+  "Kümelenme: 2026-06-10 – 2026-06-18 arasında 5 yönetici aynı dönemde sattı. Birden çok yöneticinin aynı anda satması, tek kişinin satışından daha dikkat çekicidir; ancak planlı satışlar ve kazanç sonrası açılan işlem pencereleri de kümelenme yaratır."
+ ],
+ "durum": "dikkat",
  "capraz_kontrol": {
   "kaynak": "Finnhub /stock/insider-transactions",
   "pencere_gun": 90,

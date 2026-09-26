@@ -1,0 +1,384 @@
+{
+ "donem": "FY2026 Q2",
+ "donem_sonu": "2026-06-30",
+ "hikaye": [
+  "Applied Optoelectronics, MY 2026 Q2 döneminde 191,9 milyon $ gelir açıkladı; bu, geçen yılın aynı çeyreğine göre +%86,4 değişim demek. Yıllık büyüme bir önceki çeyrekteki %51,4 seviyesine göre hızlandı.",
+  "Brüt marj %27,7 (−2,5 puan yıllık), faaliyet marjı −%12,9 (veri yok). Şirket faaliyet düzeyinde −24,7 milyon $ zarar etti.",
+  "Net kâr −22,8 milyon $.",
+  "Çeyrekte işletme faaliyetlerinden 11,6 milyon $ nakit elde edildi. İşletme sermayesinde: alacaklar 15,0 milyon $ arttı ve nakit bağladı; stoklar 72,5 milyon $ arttı ve nakit bağladı. Son 12 ayda serbest nakit akışı −592,2 milyon $ (gelirin −%99,4).",
+  "Çeyrek sonunda nakit ve kısa vadeli yatırımlar 499,7 milyon $, finansal borç 1,7 milyon $, net nakit veri yok. Seyreltilmiş hisse sayısı yıllık +%43,7 değişti, hisse bazlı ödeme (SBC) 15,2 milyon $."
+ ],
+ "bolumler": [
+  {
+   "id": "buyume",
+   "baslik": "Büyüme",
+   "durum": "olumlu",
+   "manset": "Gelir yıllık +%86,4 büyüdü; büyüme hızlandı.",
+   "paragraflar": [
+    "Son çeyreklerde yıllık büyüme: MY 2025 Q2 %137,9 → MY 2025 Q3 %82,1 → MY 2025 Q4 %33,9 → MY 2026 Q1 %51,4 → MY 2026 Q2 %86,4.",
+    "Son 12 ay (TTM) gelir 596,0 milyon $; bir yıl önceki TTM'ye göre +%61,9. Tek çeyrekteki dalgalanmayı TTM rakamı yumuşatır; eğilimi o gösterir."
+   ],
+   "rakamlar": [
+    {
+     "etiket": "Çeyrek gelir",
+     "deger": "191,9 milyon $",
+     "alt": "MY 2026 Q2",
+     "rehber": "gelir",
+     "ton": null
+    },
+    {
+     "etiket": "Yıllık büyüme",
+     "deger": "+%86,4",
+     "alt": "önceki çeyrek %51,4",
+     "rehber": "yoy",
+     "ton": null
+    },
+    {
+     "etiket": "Çeyrekten çeyreğe",
+     "deger": "veri yok",
+     "alt": null,
+     "rehber": "qoq",
+     "ton": null
+    },
+    {
+     "etiket": "TTM gelir",
+     "deger": "596,0 milyon $",
+     "alt": "+%61,9",
+     "rehber": "ttm",
+     "ton": null
+    }
+   ],
+   "rehber": [
+    "gelir",
+    "yoy",
+    "qoq",
+    "ttm",
+    "rpo",
+    "ertelenmis_gelir"
+   ],
+   "grafik": [
+    "revenue",
+    "revenue_yoy"
+   ]
+  },
+  {
+   "id": "karlilik",
+   "baslik": "Kârlılık",
+   "durum": "kirmizi",
+   "manset": "Brüt marj %27,7, faaliyet marjı −%12,9, net marj −%11,9.",
+   "paragraflar": [
+    "Brüt marj (her 100 $ gelirden üretim maliyeti düşüldükten sonra kalan): MY 2025 Q2 %30,3 → MY 2025 Q3 %28,0 → MY 2025 Q4 %31,2 → MY 2026 Q1 %29,1 → MY 2026 Q2 %27,7.",
+    "Faaliyet marjı (Ar-Ge, satış ve genel giderler de düşüldükten sonra): MY 2025 Q2 −%15,5 → MY 2025 Q3 −%15,3 → MY 2025 Q4 −%8,6 → MY 2026 Q1 −%8,6 → MY 2026 Q2 −%12,9.",
+    "Şirket faaliyet düzeyinde zararda: son 12 ayda faaliyet marjı −%11,3."
+   ],
+   "rakamlar": [
+    {
+     "etiket": "Brüt marj",
+     "deger": "%27,7",
+     "alt": "−2,5 puan yıllık",
+     "rehber": "brut_marj",
+     "ton": null
+    },
+    {
+     "etiket": "Faaliyet marjı",
+     "deger": "−%12,9",
+     "alt": "veri yok yıllık",
+     "rehber": "faaliyet_marji",
+     "ton": null
+    },
+    {
+     "etiket": "Net marj",
+     "deger": "−%11,9",
+     "alt": null,
+     "rehber": "net_marj",
+     "ton": null
+    },
+    {
+     "etiket": "EPS (seyreltilmiş)",
+     "deger": "veri yok",
+     "alt": null,
+     "rehber": "eps",
+     "ton": null
+    }
+   ],
+   "rehber": [
+    "brut_marj",
+    "faaliyet_marji",
+    "net_marj",
+    "operasyonel_kaldirac",
+    "eps"
+   ],
+   "grafik": [
+    "gross_margin",
+    "operating_margin",
+    "net_margin"
+   ]
+  },
+  {
+   "id": "kazanc_kalitesi",
+   "baslik": "Kazanç kalitesi",
+   "durum": "kirmizi",
+   "manset": "Kâr kalitesi zayıf ya da şirket zararda.",
+   "paragraflar": [
+    "Son 12 ayda net zarar var (−57,0 milyon $); nakit/kâr oranı anlamlı değil. İşletme nakit akışı −131,8 milyon $.",
+    "Bu çeyrek faaliyet dışı kalemlerin toplamı 3,2 milyon $; şirket vergi öncesi zararda (−21,5 milyon $), yani zarar esas faaliyetten kaynaklanıyor.",
+    "Hisse bazlı ödeme (SBC) gelirin %2,6."
+   ],
+   "rakamlar": [
+    {
+     "etiket": "İşletme nakdi / net kâr",
+     "deger": "veri yok",
+     "alt": "TTM",
+     "rehber": "ocf_ni",
+     "ton": null
+    },
+    {
+     "etiket": "Tahakkuk oranı",
+     "deger": "veri yok",
+     "alt": "düşük iyi",
+     "rehber": "accruals",
+     "ton": null
+    },
+    {
+     "etiket": "SBC / gelir",
+     "deger": "%2,6",
+     "alt": "TTM",
+     "rehber": "sbc",
+     "ton": null
+    },
+    {
+     "etiket": "SBC sonrası FCF",
+     "deger": "veri yok",
+     "alt": "TTM",
+     "rehber": "sbc_fcf",
+     "ton": null
+    }
+   ],
+   "rehber": [
+    "ocf_ni",
+    "accruals",
+    "faaliyet_disi",
+    "sbc",
+    "sbc_fcf",
+    "efektif_vergi"
+   ],
+   "grafik": [
+    "ocf",
+    "net_income"
+   ]
+  },
+  {
+   "id": "nakit_akisi",
+   "baslik": "Nakit akışı ve sermaye tahsisi",
+   "durum": "kirmizi",
+   "manset": "Son 12 ayda −592,2 milyon $ nakit yakıldı.",
+   "paragraflar": [
+    "Son 12 ayda işletme faaliyetlerinden −131,8 milyon $ nakit girdi, yatırım harcaması (capex) 460,4 milyon $ oldu; geriye −592,2 milyon $ serbest nakit akışı (FCF) kaldı. FCF marjı −%99,4.",
+    "Capex gelirin %77,2 (bir yıl önceye göre +53,2 puan).",
+    "Şirket nakit yakıyor. Nakit ve kısa vadeli yatırımlar 499,7 milyon $; bu hızla yaklaşık 10,1 ay yeter. Pist kısaldıkça hisse ihracı (sulandırma) veya borçlanma olasılığı artar."
+   ],
+   "rakamlar": [
+    {
+     "etiket": "İşletme nakit akışı",
+     "deger": "−131,8 milyon $",
+     "alt": "TTM",
+     "rehber": "ocf",
+     "ton": null
+    },
+    {
+     "etiket": "Capex",
+     "deger": "460,4 milyon $",
+     "alt": "%77,2 gelir",
+     "rehber": "capex",
+     "ton": null
+    },
+    {
+     "etiket": "Serbest nakit akışı",
+     "deger": "−592,2 milyon $",
+     "alt": "−%99,4 marj",
+     "rehber": "fcf",
+     "ton": null
+    },
+    {
+     "etiket": "Geri alım + temettü",
+     "deger": "veri yok",
+     "alt": "TTM",
+     "rehber": "geri_alim",
+     "ton": null
+    },
+    {
+     "etiket": "Nakit pisti",
+     "deger": "10,1 ay",
+     "alt": null,
+     "rehber": "nakit_pisti",
+     "ton": "kirmizi"
+    }
+   ],
+   "rehber": [
+    "ocf",
+    "capex",
+    "fcf",
+    "capex_da",
+    "geri_alim",
+    "nakit_pisti"
+   ],
+   "grafik": [
+    "ocf",
+    "capex",
+    "fcf"
+   ]
+  },
+  {
+   "id": "bilanco",
+   "baslik": "Bilanço sağlamlığı",
+   "durum": "kirmizi",
+   "manset": "Bilanço özeti.",
+   "paragraflar": [
+    "Nakit ve kısa vadeli yatırımlar 499,7 milyon $, finansal borç 1,7 milyon $"
+   ],
+   "rakamlar": [
+    {
+     "etiket": "Nakit + kısa vadeli yatırım",
+     "deger": "499,7 milyon $",
+     "alt": null,
+     "rehber": "net_nakit",
+     "ton": null
+    },
+    {
+     "etiket": "Finansal borç",
+     "deger": "1,7 milyon $",
+     "alt": null,
+     "rehber": "net_nakit",
+     "ton": null
+    },
+    {
+     "etiket": "Cari oran",
+     "deger": "veri yok",
+     "alt": null,
+     "rehber": "cari_oran",
+     "ton": null
+    },
+    {
+     "etiket": "Özkaynak oranı",
+     "deger": "veri yok",
+     "alt": null,
+     "rehber": "ozkaynak_orani",
+     "ton": null
+    }
+   ],
+   "rehber": [
+    "net_nakit",
+    "cari_oran",
+    "ozkaynak_orani",
+    "serefiye",
+    "borc_ozkaynak"
+   ],
+   "grafik": [
+    "liquidity",
+    "total_debt"
+   ]
+  },
+  {
+   "id": "isletme_sermayesi",
+   "baslik": "İşletme sermayesi",
+   "durum": "notr",
+   "manset": "Nakit dönüşüm döngüsü veri yok; DSO 149 gün.",
+   "paragraflar": [
+    "Alacak tahsil süresi (DSO) 149 gün; bir yıl önce 187 gün. Müşteriler faturayı ortalama bu kadar günde ödüyor. Sürenin uzaması tahsilat zorluğu veya agresif satış koşullarına işaret edebilir.",
+    "Stok devir süresi (DIO) 183 gün; bir yıl önce 176 gün. Stoğun satılana kadar depoda ortalama kaç gün kaldığını gösterir. Donanım şirketlerinde hızlı artış, talep yavaşlaması veya ürün geçişi riskidir.",
+    "Alacaklar yıllık +%48,5, gelir +%86,4 büyüdü (fark −37,9 puan).",
+    "Stoklar yıllık +%100,8, gelir +%86,4 büyüdü (fark +14,3 puan)."
+   ],
+   "rakamlar": [
+    {
+     "etiket": "DSO",
+     "deger": "149 gün",
+     "alt": "38 gün yıllık",
+     "rehber": "dso",
+     "ton": null
+    },
+    {
+     "etiket": "DIO",
+     "deger": "183 gün",
+     "alt": null,
+     "rehber": "dio",
+     "ton": null
+    },
+    {
+     "etiket": "DPO",
+     "deger": "veri yok",
+     "alt": null,
+     "rehber": "dpo",
+     "ton": null
+    },
+    {
+     "etiket": "Nakit dönüşüm döngüsü",
+     "deger": "veri yok",
+     "alt": null,
+     "rehber": "ccc",
+     "ton": null
+    }
+   ],
+   "rehber": [
+    "dso",
+    "dio",
+    "dpo",
+    "ccc"
+   ],
+   "grafik": [
+    "dso",
+    "dio"
+   ]
+  },
+  {
+   "id": "hissedar",
+   "baslik": "Hissedar açısından",
+   "durum": "kirmizi",
+   "manset": "Hisse sayısı yıllık +%43,7; ROE veri yok.",
+   "paragraflar": [
+    "Seyreltilmiş hisse sayısı bir yılda +%43,7 değişti. Hisse sayısı artıyor (sulandırma): mevcut hissedarın şirketteki payı küçülüyor. Kaynağı SBC, hisse ihracı (ATM) veya dönüştürülebilir tahviller olabilir."
+   ],
+   "rakamlar": [
+    {
+     "etiket": "Hisse sayısı (yıllık)",
+     "deger": "+%43,7",
+     "alt": null,
+     "rehber": "sulandirma",
+     "ton": null
+    },
+    {
+     "etiket": "ROE (TTM)",
+     "deger": "veri yok",
+     "alt": null,
+     "rehber": "roe",
+     "ton": null
+    },
+    {
+     "etiket": "ROIC (yaklaşık)",
+     "deger": "veri yok",
+     "alt": null,
+     "rehber": "roic",
+     "ton": null
+    },
+    {
+     "etiket": "SBC (TTM)",
+     "deger": "15,2 milyon $",
+     "alt": null,
+     "rehber": "sbc",
+     "ton": null
+    }
+   ],
+   "rehber": [
+    "sulandirma",
+    "geri_alim",
+    "roe",
+    "roic",
+    "sbc"
+   ],
+   "grafik": [
+    "diluted_shares"
+   ]
+  }
+ ],
+ "not": "Bu yorumlar SEC XBRL verisinden kural tabanlı olarak üretilir (Claude değil). Rakamlar tablodan gelir; yorum cümleleri genel finansal analiz ilkelerini uygular. Şirkete özel bağlam için Claude dipnot analizine bak."
+}

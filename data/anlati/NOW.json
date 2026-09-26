@@ -1,0 +1,385 @@
+{
+ "donem": "FY2026 Q2",
+ "donem_sonu": "2026-06-30",
+ "hikaye": [
+  "ServiceNow, MY 2026 Q2 döneminde 3,99 milyar $ gelir açıkladı; bu, geçen yılın aynı çeyreğine göre +%24,0 değişim demek. Yıllık büyüme bir önceki çeyrekteki %22,1 seviyesine göre hızlandı.",
+  "Brüt marj %70,7 (−6,8 puan yıllık), faaliyet marjı %4,1 (veri yok).",
+  "Net kâr 298,0 milyon $. Faaliyet dışı kalemler vergi öncesi kârı 276,0 milyon $ etkiledi (vergi öncesi kârın %63); en büyük kalem ayrıştırılamayan diğer faaliyet dışı kalemler: 342,0 milyon $.",
+  "Çeyrekte işletme faaliyetlerinden 587,0 milyon $ nakit elde edildi, net kârın 1,97 katı. İşletme sermayesinde: alacaklar 488,0 milyon $ arttı ve nakit bağladı. Son 12 ayda serbest nakit akışı 4,58 milyar $ (gelirin %31,1).",
+  "Çeyrek sonunda nakit ve kısa vadeli yatırımlar 4,66 milyar $, finansal borç 5,43 milyar $, net nakit veri yok. Seyreltilmiş hisse sayısı yıllık −%1,2 değişti, hisse bazlı ödeme (SBC) 2,19 milyar $."
+ ],
+ "bolumler": [
+  {
+   "id": "buyume",
+   "baslik": "Büyüme",
+   "durum": "dikkat",
+   "manset": "Gelir yıllık +%24,0 büyüdü; büyüme hızlandı.",
+   "paragraflar": [
+    "Son çeyreklerde yıllık büyüme: MY 2025 Q2 %22,4 → MY 2025 Q3 %21,8 → MY 2025 Q4 %20,7 → MY 2026 Q1 %22,1 → MY 2026 Q2 %24,0.",
+    "Son 12 ay (TTM) gelir 14,73 milyar $; bir yıl önceki TTM'ye göre +%22,2. Tek çeyrekteki dalgalanmayı TTM rakamı yumuşatır; eğilimi o gösterir.",
+    "Kalan edim yükümlülüğü (RPO, imzalanmış ama henüz gelire dönüşmemiş sözleşmeler) 29,00 milyar $, yıllık +%21,3. RPO gelirden hızlı büyüyorsa gelecek dönem gelirleri için görünürlük artıyor demektir. Şu an RPO gelirden yavaş büyüyor; bu izlenmeli.",
+    "Ertelenmiş gelir (müşteriden peşin alınan, henüz hizmeti verilmemiş tutar) 8,19 milyar $, yıllık +%18,5.",
+    "Son 12 ayda satın almalara 9,78 milyar $ ödendi. Büyümenin bir kısmı satın alınan şirketlerden gelebilir; organik büyümeyi ayırmak için işletme birleşmeleri dipnotuna bakmak gerekir."
+   ],
+   "rakamlar": [
+    {
+     "etiket": "Çeyrek gelir",
+     "deger": "3,99 milyar $",
+     "alt": "MY 2026 Q2",
+     "rehber": "gelir",
+     "ton": null
+    },
+    {
+     "etiket": "Yıllık büyüme",
+     "deger": "+%24,0",
+     "alt": "önceki çeyrek %22,1",
+     "rehber": "yoy",
+     "ton": null
+    },
+    {
+     "etiket": "Çeyrekten çeyreğe",
+     "deger": "veri yok",
+     "alt": null,
+     "rehber": "qoq",
+     "ton": null
+    },
+    {
+     "etiket": "TTM gelir",
+     "deger": "14,73 milyar $",
+     "alt": "+%22,2",
+     "rehber": "ttm",
+     "ton": null
+    },
+    {
+     "etiket": "RPO",
+     "deger": "29,00 milyar $",
+     "alt": "+%21,3 yıllık",
+     "rehber": "rpo",
+     "ton": null
+    }
+   ],
+   "rehber": [
+    "gelir",
+    "yoy",
+    "qoq",
+    "ttm",
+    "rpo",
+    "ertelenmis_gelir"
+   ],
+   "grafik": [
+    "revenue",
+    "revenue_yoy"
+   ]
+  },
+  {
+   "id": "karlilik",
+   "baslik": "Kârlılık",
+   "durum": "dikkat",
+   "manset": "Brüt marj %70,7, faaliyet marjı %4,1, net marj %7,5.",
+   "paragraflar": [
+    "Brüt marj (her 100 $ gelirden üretim maliyeti düşüldükten sonra kalan): MY 2025 Q2 %77,5 → MY 2025 Q3 %77,3 → MY 2025 Q4 %76,6 → MY 2026 Q1 %75,1 → MY 2026 Q2 %70,7. Yıllık −6,8 puan gerileme fiyatlama gücünde zayıflama, ürün karması değişimi veya maliyet artışına işaret edebilir.",
+    "Faaliyet marjı (Ar-Ge, satış ve genel giderler de düşüldükten sonra): MY 2025 Q2 %11,1 → MY 2025 Q3 %16,8 → MY 2025 Q4 %12,4 → MY 2026 Q1 %13,3 → MY 2026 Q2 %4,1."
+   ],
+   "rakamlar": [
+    {
+     "etiket": "Brüt marj",
+     "deger": "%70,7",
+     "alt": "−6,8 puan yıllık",
+     "rehber": "brut_marj",
+     "ton": null
+    },
+    {
+     "etiket": "Faaliyet marjı",
+     "deger": "%4,1",
+     "alt": "veri yok yıllık",
+     "rehber": "faaliyet_marji",
+     "ton": null
+    },
+    {
+     "etiket": "Net marj",
+     "deger": "%7,5",
+     "alt": null,
+     "rehber": "net_marj",
+     "ton": null
+    },
+    {
+     "etiket": "EPS (seyreltilmiş)",
+     "deger": "veri yok",
+     "alt": null,
+     "rehber": "eps",
+     "ton": null
+    }
+   ],
+   "rehber": [
+    "brut_marj",
+    "faaliyet_marji",
+    "net_marj",
+    "operasyonel_kaldirac",
+    "eps"
+   ],
+   "grafik": [
+    "gross_margin",
+    "operating_margin",
+    "net_margin"
+   ]
+  },
+  {
+   "id": "kazanc_kalitesi",
+   "baslik": "Kazanç kalitesi",
+   "durum": "kirmizi",
+   "manset": "Kâr kalitesi zayıf ya da şirket zararda.",
+   "paragraflar": [
+    "Son 12 ayda işletme nakit akışı net kârın 3,18 katı. 1'in üzerinde olması, muhasebe kârının nakitle desteklendiğini gösterir (amortisman ve SBC gibi nakit dışı giderler de bunu yükseltir).",
+    "Bu çeyrek faaliyet dışı kalemlerin toplamı 276,0 milyon $; vergi öncesi kârın %63. Oran yüksek: kârın önemli bir kısmı faiz, yatırım kazancı veya değerleme gibi tekrarlanması belirsiz kalemlerden geliyor. Aşağıdaki köprü tablosu kalemleri tek tek gösteriyor.",
+    "Hisse bazlı ödeme (SBC) gelirin %14,8.",
+    "Çeyreğin efektif vergi oranı %32,0. Olağan dışı: tek seferlik vergi etkileri (ertelenmiş vergi ayarlamaları, vergi indirimleri) net kârı geçici olarak etkileyebilir."
+   ],
+   "rakamlar": [
+    {
+     "etiket": "İşletme nakdi / net kâr",
+     "deger": "3,18x",
+     "alt": "TTM",
+     "rehber": "ocf_ni",
+     "ton": null
+    },
+    {
+     "etiket": "Tahakkuk oranı",
+     "deger": "veri yok",
+     "alt": "düşük iyi",
+     "rehber": "accruals",
+     "ton": null
+    },
+    {
+     "etiket": "SBC / gelir",
+     "deger": "%14,8",
+     "alt": "TTM",
+     "rehber": "sbc",
+     "ton": null
+    },
+    {
+     "etiket": "SBC sonrası FCF",
+     "deger": "veri yok",
+     "alt": "TTM",
+     "rehber": "sbc_fcf",
+     "ton": null
+    }
+   ],
+   "rehber": [
+    "ocf_ni",
+    "accruals",
+    "faaliyet_disi",
+    "sbc",
+    "sbc_fcf",
+    "efektif_vergi"
+   ],
+   "grafik": [
+    "ocf",
+    "net_income"
+   ]
+  },
+  {
+   "id": "nakit_akisi",
+   "baslik": "Nakit akışı ve sermaye tahsisi",
+   "durum": "olumlu",
+   "manset": "Son 12 ayda 4,58 milyar $ serbest nakit akışı üretildi.",
+   "paragraflar": [
+    "Son 12 ayda işletme faaliyetlerinden 5,31 milyar $ nakit girdi, yatırım harcaması (capex) 728,0 milyon $ oldu; geriye 4,58 milyar $ serbest nakit akışı (FCF) kaldı. FCF marjı %31,1.",
+    "Capex gelirin %4,9 (bir yıl önceye göre −2,1 puan).",
+    "Son 12 ayda nakdin kullanımı: satın almalar 9,78 milyar $."
+   ],
+   "rakamlar": [
+    {
+     "etiket": "İşletme nakit akışı",
+     "deger": "5,31 milyar $",
+     "alt": "TTM",
+     "rehber": "ocf",
+     "ton": null
+    },
+    {
+     "etiket": "Capex",
+     "deger": "728,0 milyon $",
+     "alt": "%4,9 gelir",
+     "rehber": "capex",
+     "ton": null
+    },
+    {
+     "etiket": "Serbest nakit akışı",
+     "deger": "4,58 milyar $",
+     "alt": "%31,1 marj",
+     "rehber": "fcf",
+     "ton": null
+    },
+    {
+     "etiket": "Geri alım + temettü",
+     "deger": "veri yok",
+     "alt": "TTM",
+     "rehber": "geri_alim",
+     "ton": null
+    }
+   ],
+   "rehber": [
+    "ocf",
+    "capex",
+    "fcf",
+    "capex_da",
+    "geri_alim",
+    "nakit_pisti"
+   ],
+   "grafik": [
+    "ocf",
+    "capex",
+    "fcf"
+   ]
+  },
+  {
+   "id": "bilanco",
+   "baslik": "Bilanço sağlamlığı",
+   "durum": "notr",
+   "manset": "Bilanço özeti.",
+   "paragraflar": [
+    "Nakit ve kısa vadeli yatırımlar 4,66 milyar $, finansal borç 5,43 milyar $"
+   ],
+   "rakamlar": [
+    {
+     "etiket": "Nakit + kısa vadeli yatırım",
+     "deger": "4,66 milyar $",
+     "alt": null,
+     "rehber": "net_nakit",
+     "ton": null
+    },
+    {
+     "etiket": "Finansal borç",
+     "deger": "5,43 milyar $",
+     "alt": null,
+     "rehber": "net_nakit",
+     "ton": null
+    },
+    {
+     "etiket": "Cari oran",
+     "deger": "veri yok",
+     "alt": null,
+     "rehber": "cari_oran",
+     "ton": null
+    },
+    {
+     "etiket": "Özkaynak oranı",
+     "deger": "veri yok",
+     "alt": null,
+     "rehber": "ozkaynak_orani",
+     "ton": null
+    }
+   ],
+   "rehber": [
+    "net_nakit",
+    "cari_oran",
+    "ozkaynak_orani",
+    "serefiye",
+    "borc_ozkaynak"
+   ],
+   "grafik": [
+    "liquidity",
+    "total_debt"
+   ]
+  },
+  {
+   "id": "isletme_sermayesi",
+   "baslik": "İşletme sermayesi",
+   "durum": "notr",
+   "manset": "Nakit dönüşüm döngüsü veri yok; DSO 50 gün.",
+   "paragraflar": [
+    "Alacak tahsil süresi (DSO) 50 gün; bir yıl önce 48 gün. Müşteriler faturayı ortalama bu kadar günde ödüyor. Sürenin uzaması tahsilat zorluğu veya agresif satış koşullarına işaret edebilir.",
+    "Alacaklar yıllık +%29,8, gelir +%24,0 büyüdü (fark +5,8 puan)."
+   ],
+   "rakamlar": [
+    {
+     "etiket": "DSO",
+     "deger": "50 gün",
+     "alt": "+2 gün yıllık",
+     "rehber": "dso",
+     "ton": null
+    },
+    {
+     "etiket": "DIO",
+     "deger": "veri yok",
+     "alt": null,
+     "rehber": "dio",
+     "ton": null
+    },
+    {
+     "etiket": "DPO",
+     "deger": "veri yok",
+     "alt": null,
+     "rehber": "dpo",
+     "ton": null
+    },
+    {
+     "etiket": "Nakit dönüşüm döngüsü",
+     "deger": "veri yok",
+     "alt": null,
+     "rehber": "ccc",
+     "ton": null
+    }
+   ],
+   "rehber": [
+    "dso",
+    "dio",
+    "dpo",
+    "ccc"
+   ],
+   "grafik": [
+    "dso",
+    "dio"
+   ]
+  },
+  {
+   "id": "hissedar",
+   "baslik": "Hissedar açısından",
+   "durum": "olumlu",
+   "manset": "Hisse sayısı yıllık −%1,2; ROE veri yok.",
+   "paragraflar": [
+    "Seyreltilmiş hisse sayısı bir yılda −%1,2 değişti. Hisse sayısı azalıyor: geri alımlar, çalışanlara verilen hisselerin yarattığı sulandırmayı aşıyor. Her hisse şirketin daha büyük bir parçasını temsil ediyor."
+   ],
+   "rakamlar": [
+    {
+     "etiket": "Hisse sayısı (yıllık)",
+     "deger": "−%1,2",
+     "alt": null,
+     "rehber": "sulandirma",
+     "ton": null
+    },
+    {
+     "etiket": "ROE (TTM)",
+     "deger": "veri yok",
+     "alt": null,
+     "rehber": "roe",
+     "ton": null
+    },
+    {
+     "etiket": "ROIC (yaklaşık)",
+     "deger": "veri yok",
+     "alt": null,
+     "rehber": "roic",
+     "ton": null
+    },
+    {
+     "etiket": "SBC (TTM)",
+     "deger": "2,19 milyar $",
+     "alt": null,
+     "rehber": "sbc",
+     "ton": null
+    }
+   ],
+   "rehber": [
+    "sulandirma",
+    "geri_alim",
+    "roe",
+    "roic",
+    "sbc"
+   ],
+   "grafik": [
+    "diluted_shares"
+   ]
+  }
+ ],
+ "not": "Bu yorumlar SEC XBRL verisinden kural tabanlı olarak üretilir (Claude değil). Rakamlar tablodan gelir; yorum cümleleri genel finansal analiz ilkelerini uygular. Şirkete özel bağlam için Claude dipnot analizine bak."
+}

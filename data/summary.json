@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-09-26T00:15:36+00:00",
+ "guncelleme": "2026-09-26T00:31:04+00:00",
  "hisseler": {
   "NVDA": {
    "ticker": "NVDA",
@@ -25,9 +25,121 @@
     "zirveden_uzaklik": -4.53,
     "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
     "kaynak": "Nasdaq.com (historical API)",
-    "guncelleme": "2026-09-26T00:15:16+00:00",
+    "guncelleme": "2026-09-26T00:30:40+00:00",
     "taze": true,
     "finnhub_52h_zirve_gun_ici": 236.54
+   },
+   "metrikler": {
+    "etiket": "FY2027 Q2",
+    "revenue": 96221000000.0,
+    "revenue_yoy": 105.85,
+    "gross_margin": 74.98,
+    "operating_margin": 66.24,
+    "net_margin": 62.03,
+    "fcf_margin_ttm": 41.92,
+    "ocf_to_ni_ttm": 0.7,
+    "diluted_shares_yoy": -1.01,
+    "sbc_to_revenue_ttm": 2.39,
+    "net_cash": null,
+    "cash_runway_months": null,
+    "revenue_ttm": 302969000000.0,
+    "fcf_ttm": 127006000000.0
+   },
+   "metrik_seri": {
+    "revenue": [
+     35082000000.0,
+     39331000000.0,
+     44062000000.0,
+     46743000000.0,
+     57006000000.0,
+     68127000000.0,
+     81615000000.0,
+     96221000000.0
+    ],
+    "gross_margin": [
+     74.56,
+     73.03,
+     60.52,
+     72.42,
+     73.41,
+     75.0,
+     74.93,
+     74.98
+    ],
+    "fcf_margin_ttm": [
+     49.92,
+     46.63,
+     48.52,
+     43.59,
+     41.32,
+     44.77,
+     46.97,
+     41.92
+    ]
+   },
+   "hikaye": [
+    "Nvidia, MY 2027 Q2 döneminde 96,22 milyar $ gelir açıkladı; bu, geçen yılın aynı çeyreğine göre +%105,8 değişim demek. Yıllık büyüme bir önceki çeyrekteki %85,2 seviyesine göre hızlandı.",
+    "Brüt marj %75,0 (+2,6 puan yıllık), faaliyet marjı %66,2 (veri yok)."
+   ],
+   "bilanco_bolumleri": [
+    {
+     "id": "buyume",
+     "baslik": "Büyüme",
+     "durum": "olumlu",
+     "manset": "Gelir yıllık +%105,8 büyüdü; büyüme hızlandı."
+    },
+    {
+     "id": "karlilik",
+     "baslik": "Kârlılık",
+     "durum": "notr",
+     "manset": "Brüt marj %75,0, faaliyet marjı %66,2, net marj %62,0."
+    },
+    {
+     "id": "kazanc_kalitesi",
+     "baslik": "Kazanç kalitesi",
+     "durum": "dikkat",
+     "manset": "Kâr kalitesinde dikkat edilecek noktalar var."
+    },
+    {
+     "id": "nakit_akisi",
+     "baslik": "Nakit akışı ve sermaye tahsisi",
+     "durum": "olumlu",
+     "manset": "Son 12 ayda 127,0 milyar $ serbest nakit akışı üretildi."
+    },
+    {
+     "id": "bilanco",
+     "baslik": "Bilanço sağlamlığı",
+     "durum": "notr",
+     "manset": "Bilanço özeti."
+    },
+    {
+     "id": "isletme_sermayesi",
+     "baslik": "İşletme sermayesi",
+     "durum": "dikkat",
+     "manset": "Nakit dönüşüm döngüsü veri yok; DSO 60 gün."
+    },
+    {
+     "id": "hissedar",
+     "baslik": "Hissedar açısından",
+     "durum": "olumlu",
+     "manset": "Hisse sayısı yıllık −%1,0; ROE veri yok."
+    }
+   ],
+   "insider": {
+    "durum": "dikkat",
+    "ozet": "Son 90 günde yöneticiler ve yönetim kurulu üyeleri 25 satış işlemiyle toplam 967,6 milyon $ değerinde hisse sattı. Önceden kayda geçirilmiş 10b5-1 planı kapsamındaki satışların payı (adet bazında): %2.",
+    "satis_90g": 967599313.4595,
+    "alim_90g": null
+   },
+   "sonraki_bilanco": {
+    "tarih": "2026-11-17",
+    "saat": "amc",
+    "eps_tahmin": 2.5231,
+    "gelir_tahmin": 111283858317,
+    "ceyrek": 3,
+    "yil": 2027,
+    "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
+    "guncelleme": "2026-09-26T00:31:05+00:00"
    },
    "grafik": [
     [
@@ -1089,16 +1201,6 @@
    "gelismeler": [
     {
      "tarih": "2026-09-25",
-     "baslik": "Nvidia Would Have to Add Almost a Whole Broadcom to Reach $7 Trillion",
-     "olgu": null,
-     "yorum": null,
-     "sutun_id": null,
-     "etki": null,
-     "kaynak_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPamkxWDdoY1FhWlFnSU5RWjBOMjJPdjJMbzN3M1lrdDlsN0EyOGFPNEtJcUNZeU02RHphbl9KdEgzeUliZWVrXzlJMGRuOVRJT2pEaWlIMGdLbk8xSWtJZGZoUk9DamdsWkl5UHNpWlJJbFFDTGtQeDBqemJWYkd1VWUzdHRZSW1PbGRDZE9vU2tUWlE0U0k5RVN0MWN5dw?oc=5",
-     "kaynak_adi": "Yahoo Finance"
-    },
-    {
-     "tarih": "2026-09-25",
      "baslik": "SCHMID surges after Nvidia, AMD, Intel consider using glass substrates in chips",
      "olgu": null,
      "yorum": null,
@@ -1116,23 +1218,33 @@
      "etki": null,
      "kaynak_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZEoxQzk3Mno1cFg0Mm1RbEJ6RklMRUJrSWdQeHo3aE52czJ6VDJuNzZSaWpudmIwdURaVmxCSXk2MkZDalM2MXRIVU40ck5ZeFJFak05OUk4MzJuM3FoU1JJYTVDN3JBcHJKT1htT0pjaFBFY2liRVFJM2xlUlZaZXduOVM?oc=5",
      "kaynak_adi": "Barron's"
+    },
+    {
+     "tarih": "2026-09-25",
+     "baslik": "Nvidia Stock Rises as Elon Musk Reveals Huge New AI Chip Plans",
+     "olgu": null,
+     "yorum": null,
+     "sutun_id": null,
+     "etki": null,
+     "kaynak_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNV3dvMmNnWlVQUFh5N2RrMkdaSFhScU1oZV8zSDR3T1JfNnotcXR1aDFMNUJWRk1HUjEteC01dGh6SFIyWjlPZGs1SUY1N0tYZGhJdTV0N3gwZmFPT3h3VzBxYUJUaUNtaEpxcXJrZHZRTWNkZXg5SzAzdzNhcjAwcmxrNA?oc=5",
+     "kaynak_adi": "Yahoo Finance Australia"
     }
    ],
    "haber_yontem": "Otomatik seçim (Claude yok): son 7 gün, şirket adı geçen + güvenilir kaynak öncelikli. Salı raporunda Claude seçimi gösterilir.",
    "buyuk_hareketler": [],
    "kural": {
     "durum": "tetiklenmedi",
-    "mesaj": "Zirveden %-4.53. Sonraki kademe: -%15.",
+    "mesaj": "Zirveden −%4,5. Sonraki kademe: −%15.",
     "tetiklenen": null,
     "zirveden_uzaklik": -4.53,
     "dusus_kaynagi": "piyasa_sektor",
-    "dusus_kaynagi_aciklama": "Hissenin düşüşü benchmark'larla benzer: ağırlıkla piyasa/sektör kaynaklı.",
+    "dusus_kaynagi_aciklama": "Hissenin düşüşü karşılaştırma endeksleriyle benzer: ağırlıkla piyasa/sektör kaynaklı.",
     "kosul_saglaniyor": true
    },
    "insider_uyarilar": [
     {
      "etiket": "dikkat",
-     "metin": "Kümelenmiş satış: 2026-09-17–2026-09-21 arasında 3 yönetici satış yaptı (işlemlerin %75'i 10b5-1 planlı)."
+     "metin": "Kümelenmiş satış: 2026-09-17–2026-09-21 arasında 3 yönetici satış yaptı (10b5-1 planlı işlem oranı %75)."
     },
     {
      "etiket": "dikkat",
@@ -1183,9 +1295,121 @@
     "zirveden_uzaklik": -3.33,
     "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
     "kaynak": "Nasdaq.com (historical API)",
-    "guncelleme": "2026-09-26T00:15:20+00:00",
+    "guncelleme": "2026-09-26T00:30:43+00:00",
     "taze": true,
     "finnhub_52h_zirve_gun_ici": 779.8192
+   },
+   "metrikler": {
+    "etiket": "FY2026 Q2",
+    "revenue": 60801000000.0,
+    "revenue_yoy": 27.96,
+    "gross_margin": 81.37,
+    "operating_margin": 30.88,
+    "net_margin": 26.07,
+    "fcf_margin_ttm": 17.95,
+    "ocf_to_ni_ttm": 1.91,
+    "diluted_shares_yoy": -0.16,
+    "sbc_to_revenue_ttm": 10.99,
+    "net_cash": null,
+    "cash_runway_months": null,
+    "revenue_ttm": 228247000000.0,
+    "fcf_ttm": 40976000000.0
+   },
+   "metrik_seri": {
+    "revenue": [
+     40589000000.0,
+     48385000000.0,
+     42314000000.0,
+     47516000000.0,
+     51242000000.0,
+     59893000000.0,
+     56311000000.0,
+     60801000000.0
+    ],
+    "gross_margin": [
+     81.83,
+     81.73,
+     82.11,
+     82.13,
+     82.03,
+     81.79,
+     81.85,
+     81.37
+    ],
+    "fcf_margin_ttm": [
+     33.49,
+     32.87,
+     30.71,
+     28.04,
+     23.67,
+     22.94,
+     22.45,
+     17.95
+    ]
+   },
+   "hikaye": [
+    "Meta Platforms, MY 2026 Q2 döneminde 60,80 milyar $ gelir açıkladı; bu, geçen yılın aynı çeyreğine göre +%28,0 değişim demek. Yıllık büyüme bir önceki çeyrekteki %33,1 seviyesine göre yavaşladı.",
+    "Brüt marj %81,4 (−0,8 puan yıllık), faaliyet marjı %30,9 (veri yok)."
+   ],
+   "bilanco_bolumleri": [
+    {
+     "id": "buyume",
+     "baslik": "Büyüme",
+     "durum": "olumlu",
+     "manset": "Gelir yıllık +%28,0 büyüdü; büyüme yavaşladı."
+    },
+    {
+     "id": "karlilik",
+     "baslik": "Kârlılık",
+     "durum": "notr",
+     "manset": "Brüt marj %81,4, faaliyet marjı %30,9, net marj %26,1."
+    },
+    {
+     "id": "kazanc_kalitesi",
+     "baslik": "Kazanç kalitesi",
+     "durum": "dikkat",
+     "manset": "Kâr kalitesinde dikkat edilecek noktalar var."
+    },
+    {
+     "id": "nakit_akisi",
+     "baslik": "Nakit akışı ve sermaye tahsisi",
+     "durum": "olumlu",
+     "manset": "Son 12 ayda 40,98 milyar $ serbest nakit akışı üretildi."
+    },
+    {
+     "id": "bilanco",
+     "baslik": "Bilanço sağlamlığı",
+     "durum": "notr",
+     "manset": "Bilanço özeti."
+    },
+    {
+     "id": "isletme_sermayesi",
+     "baslik": "İşletme sermayesi",
+     "durum": "notr",
+     "manset": "Nakit dönüşüm döngüsü veri yok; DSO 33 gün."
+    },
+    {
+     "id": "hissedar",
+     "baslik": "Hissedar açısından",
+     "durum": "notr",
+     "manset": "Hisse sayısı yıllık −%0,2; ROE veri yok."
+    }
+   ],
+   "insider": {
+    "durum": "notr",
+    "ozet": "Son 90 günde yöneticiler ve yönetim kurulu üyeleri 94 satış işlemiyle toplam 82,7 milyon $ değerinde hisse sattı. Önceden kayda geçirilmiş 10b5-1 planı kapsamındaki satışların payı (adet bazında): %98.",
+    "satis_90g": 82728509.9397,
+    "alim_90g": null
+   },
+   "sonraki_bilanco": {
+    "tarih": "2026-10-27",
+    "saat": "amc",
+    "eps_tahmin": 6.5922,
+    "gelir_tahmin": 64528980375,
+    "ceyrek": 3,
+    "yil": 2026,
+    "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
+    "guncelleme": "2026-09-26T00:31:08+00:00"
    },
    "grafik": [
     [
@@ -2286,17 +2510,17 @@
    ],
    "kural": {
     "durum": "tetiklenmedi",
-    "mesaj": "Zirveden %-3.33. Sonraki kademe: -%15.",
+    "mesaj": "Zirveden −%3,3. Sonraki kademe: −%15.",
     "tetiklenen": null,
     "zirveden_uzaklik": -3.33,
     "dusus_kaynagi": "piyasa_sektor",
-    "dusus_kaynagi_aciklama": "Hissenin düşüşü benchmark'larla benzer: ağırlıkla piyasa/sektör kaynaklı.",
+    "dusus_kaynagi_aciklama": "Hissenin düşüşü karşılaştırma endeksleriyle benzer: ağırlıkla piyasa/sektör kaynaklı.",
     "kosul_saglaniyor": true
    },
    "insider_uyarilar": [
     {
      "etiket": "dikkat",
-     "metin": "Kümelenmiş satış: 2026-09-03–2026-09-15 arasında 3 yönetici satış yaptı (işlemlerin %100'i 10b5-1 planlı)."
+     "metin": "Kümelenmiş satış: 2026-09-03–2026-09-15 arasında 3 yönetici satış yaptı (10b5-1 planlı işlem oranı %100)."
     },
     {
      "etiket": "dikkat",
@@ -2347,9 +2571,121 @@
     "zirveden_uzaklik": -28.34,
     "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
     "kaynak": "Nasdaq.com (historical API)",
-    "guncelleme": "2026-09-26T00:15:22+00:00",
+    "guncelleme": "2026-09-26T00:30:45+00:00",
     "taze": true,
     "finnhub_52h_zirve_gun_ici": 194.73
+   },
+   "metrikler": {
+    "etiket": "FY2026 Q2",
+    "revenue": 3987000000.0,
+    "revenue_yoy": 24.01,
+    "gross_margin": 70.68,
+    "operating_margin": 4.06,
+    "net_margin": 7.47,
+    "fcf_margin_ttm": 31.09,
+    "ocf_to_ni_ttm": 3.18,
+    "diluted_shares_yoy": -1.17,
+    "sbc_to_revenue_ttm": 14.83,
+    "net_cash": null,
+    "cash_runway_months": null,
+    "revenue_ttm": 14732000000.0,
+    "fcf_ttm": 4580000000.0
+   },
+   "metrik_seri": {
+    "revenue": [
+     2797000000.0,
+     2957000000.0,
+     3088000000.0,
+     3215000000.0,
+     3407000000.0,
+     3568000000.0,
+     3770000000.0,
+     3987000000.0
+    ],
+    "gross_margin": [
+     79.12,
+     78.66,
+     78.92,
+     77.48,
+     77.28,
+     76.63,
+     75.07,
+     70.68
+    ],
+    "fcf_margin_ttm": [
+     32.27,
+     31.09,
+     32.1,
+     31.92,
+     31.25,
+     34.46,
+     33.19,
+     31.09
+    ]
+   },
+   "hikaye": [
+    "ServiceNow, MY 2026 Q2 döneminde 3,99 milyar $ gelir açıkladı; bu, geçen yılın aynı çeyreğine göre +%24,0 değişim demek. Yıllık büyüme bir önceki çeyrekteki %22,1 seviyesine göre hızlandı.",
+    "Brüt marj %70,7 (−6,8 puan yıllık), faaliyet marjı %4,1 (veri yok)."
+   ],
+   "bilanco_bolumleri": [
+    {
+     "id": "buyume",
+     "baslik": "Büyüme",
+     "durum": "dikkat",
+     "manset": "Gelir yıllık +%24,0 büyüdü; büyüme hızlandı."
+    },
+    {
+     "id": "karlilik",
+     "baslik": "Kârlılık",
+     "durum": "dikkat",
+     "manset": "Brüt marj %70,7, faaliyet marjı %4,1, net marj %7,5."
+    },
+    {
+     "id": "kazanc_kalitesi",
+     "baslik": "Kazanç kalitesi",
+     "durum": "kirmizi",
+     "manset": "Kâr kalitesi zayıf ya da şirket zararda."
+    },
+    {
+     "id": "nakit_akisi",
+     "baslik": "Nakit akışı ve sermaye tahsisi",
+     "durum": "olumlu",
+     "manset": "Son 12 ayda 4,58 milyar $ serbest nakit akışı üretildi."
+    },
+    {
+     "id": "bilanco",
+     "baslik": "Bilanço sağlamlığı",
+     "durum": "notr",
+     "manset": "Bilanço özeti."
+    },
+    {
+     "id": "isletme_sermayesi",
+     "baslik": "İşletme sermayesi",
+     "durum": "notr",
+     "manset": "Nakit dönüşüm döngüsü veri yok; DSO 50 gün."
+    },
+    {
+     "id": "hissedar",
+     "baslik": "Hissedar açısından",
+     "durum": "olumlu",
+     "manset": "Hisse sayısı yıllık −%1,2; ROE veri yok."
+    }
+   ],
+   "insider": {
+    "durum": "dikkat",
+    "ozet": "Son 90 günde yöneticiler ve yönetim kurulu üyeleri 4 satış işlemiyle toplam 1,9 milyon $ değerinde hisse sattı. Önceden kayda geçirilmiş 10b5-1 planı kapsamındaki satışların payı (adet bazında): %66.",
+    "satis_90g": 1937914.2198,
+    "alim_90g": null
+   },
+   "sonraki_bilanco": {
+    "tarih": "2026-10-27",
+    "saat": "amc",
+    "eps_tahmin": 1.0354,
+    "gelir_tahmin": 4135261876,
+    "ceyrek": 3,
+    "yil": 2026,
+    "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
+    "guncelleme": "2026-09-26T00:31:12+00:00"
    },
    "grafik": [
     [
@@ -3444,20 +3780,20 @@
    "buyuk_hareketler": [],
    "kural": {
     "durum": "tetiklendi_kosul_ok",
-    "mesaj": "Zirveden %-28.34 düşüş: -%25 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et.",
+    "mesaj": "Zirveden −%28,3: −%25 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et.",
     "tetiklenen": {
      "dusus": 25,
      "not": "DCA 2x; RPO ve SBC sütunlarını kontrol et."
     },
     "zirveden_uzaklik": -28.34,
     "dusus_kaynagi": "sirkete_ozel",
-    "dusus_kaynagi_aciklama": "Hisse, tüm benchmark'lardan en az 10 puan daha fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+    "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": true
    },
    "insider_uyarilar": [
     {
      "etiket": "dikkat",
-     "metin": "Kümelenmiş satış: 2026-08-27–2026-08-31 arasında 3 yönetici satış yaptı (işlemlerin %33'i 10b5-1 planlı)."
+     "metin": "Kümelenmiş satış: 2026-08-27–2026-08-31 arasında 3 yönetici satış yaptı (10b5-1 planlı işlem oranı %33)."
     },
     {
      "etiket": "dikkat",
@@ -3508,9 +3844,121 @@
     "zirveden_uzaklik": -54.55,
     "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
     "kaynak": "Nasdaq.com (historical API)",
-    "guncelleme": "2026-09-26T00:15:24+00:00",
+    "guncelleme": "2026-09-26T00:30:50+00:00",
     "taze": true,
     "finnhub_52h_zirve_gun_ici": 233.67
+   },
+   "metrikler": {
+    "etiket": "FY2026 Q2",
+    "revenue": 191922000.0,
+    "revenue_yoy": 86.42,
+    "gross_margin": 27.72,
+    "operating_margin": -12.88,
+    "net_margin": -11.87,
+    "fcf_margin_ttm": -99.37,
+    "ocf_to_ni_ttm": null,
+    "diluted_shares_yoy": 43.68,
+    "sbc_to_revenue_ttm": 2.56,
+    "net_cash": null,
+    "cash_runway_months": 10.1,
+    "revenue_ttm": 595970000.0,
+    "fcf_ttm": -592232000.0
+   },
+   "metrik_seri": {
+    "revenue": [
+     65151000.0,
+     100271000.0,
+     99859000.0,
+     102952000.0,
+     118630000.0,
+     134274000.0,
+     151144000.0,
+     191922000.0
+    ],
+    "gross_margin": [
+     24.43,
+     28.65,
+     30.59,
+     30.27,
+     28.04,
+     31.24,
+     29.06,
+     27.72
+    ],
+    "fcf_margin_ttm": [
+     -30.81,
+     -45.29,
+     -51.21,
+     -66.26,
+     -71.6,
+     -77.59,
+     -82.42,
+     -99.37
+    ]
+   },
+   "hikaye": [
+    "Applied Optoelectronics, MY 2026 Q2 döneminde 191,9 milyon $ gelir açıkladı; bu, geçen yılın aynı çeyreğine göre +%86,4 değişim demek. Yıllık büyüme bir önceki çeyrekteki %51,4 seviyesine göre hızlandı.",
+    "Brüt marj %27,7 (−2,5 puan yıllık), faaliyet marjı −%12,9 (veri yok). Şirket faaliyet düzeyinde −24,7 milyon $ zarar etti."
+   ],
+   "bilanco_bolumleri": [
+    {
+     "id": "buyume",
+     "baslik": "Büyüme",
+     "durum": "olumlu",
+     "manset": "Gelir yıllık +%86,4 büyüdü; büyüme hızlandı."
+    },
+    {
+     "id": "karlilik",
+     "baslik": "Kârlılık",
+     "durum": "kirmizi",
+     "manset": "Brüt marj %27,7, faaliyet marjı −%12,9, net marj −%11,9."
+    },
+    {
+     "id": "kazanc_kalitesi",
+     "baslik": "Kazanç kalitesi",
+     "durum": "kirmizi",
+     "manset": "Kâr kalitesi zayıf ya da şirket zararda."
+    },
+    {
+     "id": "nakit_akisi",
+     "baslik": "Nakit akışı ve sermaye tahsisi",
+     "durum": "kirmizi",
+     "manset": "Son 12 ayda −592,2 milyon $ nakit yakıldı."
+    },
+    {
+     "id": "bilanco",
+     "baslik": "Bilanço sağlamlığı",
+     "durum": "kirmizi",
+     "manset": "Bilanço özeti."
+    },
+    {
+     "id": "isletme_sermayesi",
+     "baslik": "İşletme sermayesi",
+     "durum": "notr",
+     "manset": "Nakit dönüşüm döngüsü veri yok; DSO 149 gün."
+    },
+    {
+     "id": "hissedar",
+     "baslik": "Hissedar açısından",
+     "durum": "kirmizi",
+     "manset": "Hisse sayısı yıllık +%43,7; ROE veri yok."
+    }
+   ],
+   "insider": {
+    "durum": "dikkat",
+    "ozet": "Son 90 günde yöneticiler ve yönetim kurulu üyeleri 7 satış işlemiyle toplam 6,7 milyon $ değerinde hisse sattı. Önceden kayda geçirilmiş 10b5-1 planı kapsamındaki satışların payı (adet bazında): %43.",
+    "satis_90g": 6671569.319999999,
+    "alim_90g": null
+   },
+   "sonraki_bilanco": {
+    "tarih": "2026-11-04",
+    "saat": "",
+    "eps_tahmin": 0.1462,
+    "gelir_tahmin": 273471588,
+    "ceyrek": 3,
+    "yil": 2026,
+    "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
+    "guncelleme": "2026-09-26T00:31:15+00:00"
    },
    "grafik": [
     [
@@ -4622,20 +5070,20 @@
    ],
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden %-54.55 düşüş: -%40 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: DCA 2x; nakit pisti ve sulandırmayı kontrol et.",
+    "mesaj": "Zirveden −%54,5: −%40 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: DCA 2x; nakit pisti ve sulandırmayı kontrol et.",
     "tetiklenen": {
      "dusus": 40,
      "not": "DCA 2x; nakit pisti ve sulandırmayı kontrol et."
     },
     "zirveden_uzaklik": -54.55,
     "dusus_kaynagi": "sirkete_ozel",
-    "dusus_kaynagi_aciklama": "Hisse, tüm benchmark'lardan en az 15 puan daha fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+    "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 15 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
    },
    "insider_uyarilar": [
     {
      "etiket": "dikkat",
-     "metin": "Kümelenmiş satış: 2026-06-10–2026-06-18 arasında 5 yönetici satış yaptı (işlemlerin %38'i 10b5-1 planlı)."
+     "metin": "Kümelenmiş satış: 2026-06-10–2026-06-18 arasında 5 yönetici satış yaptı (10b5-1 planlı işlem oranı %38)."
     },
     {
      "etiket": "bilgi",
@@ -4681,7 +5129,7 @@
    "zirveden_uzaklik": -9.46,
    "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
    "kaynak": "Nasdaq.com (historical API)",
-   "guncelleme": "2026-09-26T00:15:26+00:00",
+   "guncelleme": "2026-09-26T00:30:54+00:00",
    "taze": true,
    "finnhub_52h_zirve_gun_ici": 117.76
   },
@@ -4702,7 +5150,7 @@
    "zirveden_uzaklik": -0.4,
    "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
    "kaynak": "Nasdaq.com (historical API)",
-   "guncelleme": "2026-09-26T00:15:29+00:00",
+   "guncelleme": "2026-09-26T00:30:56+00:00",
    "taze": true,
    "finnhub_52h_zirve_gun_ici": 748.65
   },
@@ -4723,7 +5171,7 @@
    "zirveden_uzaklik": -9.32,
    "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
    "kaynak": "Nasdaq.com (historical API)",
-   "guncelleme": "2026-09-26T00:15:33+00:00",
+   "guncelleme": "2026-09-26T00:31:00+00:00",
    "taze": true,
    "finnhub_52h_zirve_gun_ici": 671.83
   },
@@ -4744,7 +5192,7 @@
    "zirveden_uzaklik": -5.93,
    "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
    "kaynak": "Nasdaq.com (historical API)",
-   "guncelleme": "2026-09-26T00:15:35+00:00",
+   "guncelleme": "2026-09-26T00:31:03+00:00",
    "taze": true,
    "finnhub_52h_zirve_gun_ici": 120.405
   }
