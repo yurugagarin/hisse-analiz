@@ -1,5 +1,135 @@
 [
  {
+  "id": "20260926T112613Z",
+  "tur": "gunluk_python",
+  "baslangic": "2026-09-26T11:26:13+00:00",
+  "bitis": "2026-09-26T11:27:05+00:00",
+  "hisseler": [
+   "AAOI",
+   "IONQ",
+   "META",
+   "NOW",
+   "NVDA",
+   "ORCL"
+  ],
+  "finnhub_aktif": true,
+  "sec_aktif": true,
+  "sec_user_agent_tanimli": true,
+  "sec_istek": 7,
+  "claude": null,
+  "bekleyen_bilanco": [
+   "NVDA",
+   "META",
+   "NOW",
+   "AAOI",
+   "IONQ",
+   "ORCL"
+  ],
+  "adimlar": {
+   "sec_ticker_listesi": {
+    "ok": 1,
+    "hata": 0,
+    "sure_sn": 0.1
+   },
+   "fiyat": {
+    "ok": 10,
+    "hata": 0,
+    "sure_sn": 32.1
+   },
+   "cik": {
+    "ok": 6,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "sec_submissions": {
+    "ok": 6,
+    "hata": 0,
+    "sure_sn": 0.3
+   },
+   "bilanco_xbrl": {
+    "ok": 6,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "bilanco_yorum": {
+    "ok": 6,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "bilanco_takvimi": {
+    "ok": 6,
+    "hata": 0,
+    "sure_sn": 3.9
+   },
+   "insider_form4": {
+    "ok": 6,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "finnhub_insider": {
+    "ok": 6,
+    "hata": 0,
+    "sure_sn": 6.8
+   },
+   "insider_analiz": {
+    "ok": 6,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "finnhub_haber": {
+    "ok": 6,
+    "hata": 0,
+    "sure_sn": 6.3
+   },
+   "google_news": {
+    "ok": 6,
+    "hata": 0,
+    "sure_sn": 2.6
+   },
+   "baslik_arsivi": {
+    "ok": 6,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "hareketler": {
+    "ok": 6,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "tez": {
+    "ok": 6,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "kural": {
+    "ok": 6,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "sinyal": {
+    "ok": 6,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "karne": {
+    "ok": 1,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "haftalik_derleme": {
+    "ok": 1,
+    "hata": 0,
+    "sure_sn": 0.0
+   }
+  },
+  "hatalar": [],
+  "argumanlar": {
+   "offline": false,
+   "force_filings": false,
+   "tickers": ""
+  }
+ },
+ {
   "id": "20260926T111408Z",
   "tur": "gunluk_python",
   "baslangic": "2026-09-26T11:14:08+00:00",

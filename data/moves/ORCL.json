@@ -1,7 +1,7 @@
 {
  "ticker": "ORCL",
  "esik_yuzde": 5,
- "guncelleme": "2026-09-26T11:15:00+00:00",
+ "guncelleme": "2026-09-26T11:27:05+00:00",
  "hareketler": [
   {
    "tarih": "2026-09-17",
@@ -10,11 +10,11 @@
    "hareket": 5.19,
    "yon": "yukari",
    "benchmark": {
-    "QQQ": 1.73,
-    "SMH": 2.76
+    "IGV": 0.78,
+    "QQQ": 1.73
    },
-   "on_siniflama": "sektor",
-   "on_siniflama_aciklama": "Sektör ETF ortalaması +%2,8: sektör hareketi belirgin.",
+   "on_siniflama": "sirkete_ozel",
+   "on_siniflama_aciklama": "Hisse +%5,2, sektör/piyasa +%0,8: hareketin çoğu şirkete özel görünüyor.",
    "basliklar": [
     {
      "zaman": "2026-09-17T23:59:00+00:00",
@@ -436,11 +436,11 @@
    "hareket": -5.38,
    "yon": "asagi",
    "benchmark": {
-    "QQQ": -1.06,
-    "SMH": -2.44
+    "IGV": -0.62,
+    "QQQ": -1.06
    },
-   "on_siniflama": "sektor",
-   "on_siniflama_aciklama": "Sektör ETF ortalaması −%2,4: sektör hareketi belirgin.",
+   "on_siniflama": "sirkete_ozel",
+   "on_siniflama_aciklama": "Hisse −%5,4, sektör/piyasa −%0,6: hareketin çoğu şirkete özel görünüyor.",
    "basliklar": [
     {
      "zaman": "2026-09-10T23:03:10+00:00",
@@ -820,11 +820,11 @@
    "hareket": 5.69,
    "yon": "yukari",
    "benchmark": {
-    "QQQ": 1.19,
-    "SMH": 0.39
+    "IGV": 3.41,
+    "QQQ": 1.19
    },
-   "on_siniflama": "sirkete_ozel",
-   "on_siniflama_aciklama": "Hisse +%5,7, sektör/piyasa +%0,4: hareketin çoğu şirkete özel görünüyor.",
+   "on_siniflama": "sektor",
+   "on_siniflama_aciklama": "Sektör ETF ortalaması +%3,4: sektör hareketi belirgin.",
    "basliklar": [
     {
      "zaman": "2026-09-03T21:51:18+00:00",
@@ -1196,11 +1196,11 @@
    "hareket": -5.23,
    "yon": "asagi",
    "benchmark": {
-    "QQQ": -1.27,
-    "SMH": -2.05
+    "IGV": -3.46,
+    "QQQ": -1.27
    },
-   "on_siniflama": "sirkete_ozel",
-   "on_siniflama_aciklama": "Hisse −%5,2, sektör/piyasa −%2,0: hareketin çoğu şirkete özel görünüyor.",
+   "on_siniflama": "sektor",
+   "on_siniflama_aciklama": "Sektör ETF ortalaması −%3,5: sektör hareketi belirgin.",
    "basliklar": [
     {
      "zaman": "2026-09-01T22:07:08+00:00",
