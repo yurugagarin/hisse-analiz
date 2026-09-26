@@ -2,7 +2,7 @@
  "ticker": "AAOI",
  "cik": 1158114,
  "sirket": "APPLIED OPTOELECTRONICS, INC.",
- "guncelleme": "2026-09-26T00:05:53+00:00",
+ "guncelleme": "2026-09-26T00:09:29+00:00",
  "son_dosya": {
   "accn": "0001437749-26-026278",
   "form": "10-Q",
@@ -144,10 +144,10 @@
       "not": "türetilmiş: 2023-01-01→2023-09-30 (10-Q) − 2023-01-01→2023-06-30"
      },
      "sbc": {
-      "concept": "ShareBasedCompensation",
+      "concept": "AllocatedShareBasedCompensationExpense",
       "accn": "0001437749-24-033913",
-      "turetilmis": true,
-      "not": "türetilmiş: 2023-01-01→2023-09-30 (10-Q) − 2023-01-01→2023-06-30"
+      "turetilmis": false,
+      "not": ""
      },
      "equity_issued": {
       "concept": "ProceedsFromIssuanceOfCommonStock",
@@ -272,7 +272,7 @@
     "acquisitions": null,
     "buybacks": null,
     "equity_issued": 36672000.0,
-    "diluted_shares": 1551776.0,
+    "diluted_shares": null,
     "acquiree_revenue": null,
     "ar": 48071000.0,
     "inventory": 63866000.0,
@@ -381,12 +381,6 @@
       "turetilmis": true,
       "not": "türetilmiş: 2023-01-01→2023-12-31 (10-K) − 2023-01-01→2023-09-30"
      },
-     "diluted_shares": {
-      "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
-      "accn": "0001437749-26-005875",
-      "turetilmis": true,
-      "not": "türetilmiş: 2023-01-01→2023-12-31 (10-K) − 2023-01-01→2023-09-30"
-     },
      "ar": {
       "concept": "AccountsReceivableNetCurrent",
       "accn": "0001437749-25-005575",
@@ -452,7 +446,7 @@
     "onceki_yil_donem": "2022-12-31",
     "revenue_yoy": -1.84,
     "revenue_ttm_yoy": -2.32,
-    "diluted_shares_yoy": 650.68,
+    "diluted_shares_yoy": null,
     "ar_yoy": -21.42,
     "inventory_yoy": -19.85,
     "deferred_revenue_yoy": -39.9,
@@ -810,10 +804,10 @@
       "not": "türetilmiş: 2024-01-01→2024-06-30 (10-Q) − 2024-01-01→2024-03-31"
      },
      "sbc": {
-      "concept": "ShareBasedCompensation",
+      "concept": "AllocatedShareBasedCompensationExpense",
       "accn": "0001437749-25-025450",
-      "turetilmis": true,
-      "not": "türetilmiş: 2024-01-01→2024-06-30 (10-Q) − 2024-01-01→2024-03-31"
+      "turetilmis": false,
+      "not": ""
      },
      "equity_issued": {
       "concept": "ProceedsFromIssuanceOfCommonStock",
@@ -928,7 +922,7 @@
     "net_income": -17757000.0,
     "ocf": -14440000.0,
     "capex": 6288000.0,
-    "sbc": 2944000.0,
+    "sbc": 2943000.0,
     "acquisitions": null,
     "buybacks": null,
     "equity_issued": 38550000.0,
@@ -1030,10 +1024,10 @@
       "not": "türetilmiş: 2024-01-01→2024-09-30 (10-Q) − 2024-01-01→2024-06-30"
      },
      "sbc": {
-      "concept": "ShareBasedCompensation",
+      "concept": "AllocatedShareBasedCompensationExpense",
       "accn": "0001437749-25-033627",
-      "turetilmis": true,
-      "not": "türetilmiş: 2024-01-01→2024-09-30 (10-Q) − 2024-01-01→2024-06-30"
+      "turetilmis": false,
+      "not": ""
      },
      "equity_issued": {
       "concept": "ProceedsFromIssuanceOfCommonStock",
@@ -1092,7 +1086,7 @@
     "net_income_ttm": -80900000.0,
     "ocf_ttm": -43360000.0,
     "capex_ttm": 21191000.0,
-    "sbc_ttm": 15138000.0,
+    "sbc_ttm": 15137000.0,
     "cogs_ttm": 154873000.0,
     "acquisitions_ttm": null,
     "interest_income_ttm": 985000.0,
@@ -1152,7 +1146,7 @@
     "acquisitions": null,
     "buybacks": null,
     "equity_issued": 87799000.0,
-    "diluted_shares": 1517551.0,
+    "diluted_shares": null,
     "acquiree_revenue": null,
     "ar": 116801000.0,
     "inventory": 88135000.0,
@@ -1261,12 +1255,6 @@
       "turetilmis": true,
       "not": "türetilmiş: 2024-01-01→2024-12-31 (10-K) − 2024-01-01→2024-09-30"
      },
-     "diluted_shares": {
-      "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
-      "accn": "0001437749-26-005875",
-      "turetilmis": true,
-      "not": "türetilmiş: 2024-01-01→2024-12-31 (10-K) − 2024-01-01→2024-09-30"
-     },
      "ar": {
       "concept": "AccountsReceivableNetCurrent",
       "accn": "0001437749-26-005875",
@@ -1312,7 +1300,7 @@
     "net_income_ttm": -186733000.0,
     "ocf_ttm": -69526000.0,
     "capex_ttm": 43406000.0,
-    "sbc_ttm": 14790000.0,
+    "sbc_ttm": 14789000.0,
     "cogs_ttm": 187566000.0,
     "acquisitions_ttm": null,
     "interest_income_ttm": 874000.0,
@@ -1332,7 +1320,7 @@
     "onceki_yil_donem": "2023-12-31",
     "revenue_yoy": 65.87,
     "revenue_ttm_yoy": 14.57,
-    "diluted_shares_yoy": -2.21,
+    "diluted_shares_yoy": null,
     "ar_yoy": 142.98,
     "inventory_yoy": 38.0,
     "deferred_revenue_yoy": -100.0,
@@ -1526,7 +1514,7 @@
     "net_income_ttm": -172735000.0,
     "ocf_ttm": -91960000.0,
     "capex_ttm": 66034000.0,
-    "sbc_ttm": 14513000.0,
+    "sbc_ttm": 14512000.0,
     "cogs_ttm": 223799000.0,
     "acquisitions_ttm": null,
     "interest_income_ttm": 838000.0,
@@ -1678,16 +1666,16 @@
       "not": "türetilmiş: 2025-01-01→2025-06-30 (10-Q) − 2025-01-01→2025-03-31"
      },
      "capex": {
-      "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "accn": "0001437749-25-025450",
+      "concept": "PaymentsToAcquireOtherPropertyPlantAndEquipment",
+      "accn": "0001437749-26-026278",
       "turetilmis": true,
       "not": "türetilmiş: 2025-01-01→2025-06-30 (10-Q) − 2025-01-01→2025-03-31"
      },
      "sbc": {
-      "concept": "ShareBasedCompensation",
+      "concept": "AllocatedShareBasedCompensationExpense",
       "accn": "0001437749-26-026278",
-      "turetilmis": true,
-      "not": "türetilmiş: 2025-01-01→2025-06-30 (10-Q) − 2025-01-01→2025-03-31"
+      "turetilmis": false,
+      "not": ""
      },
      "equity_issued": {
       "concept": "ProceedsFromIssuanceOfCommonStock",
@@ -1740,7 +1728,7 @@
     "net_income_ttm": -155718000.0,
     "ocf_ttm": -155445000.0,
     "capex_ttm": 88535000.0,
-    "sbc_ttm": 11619000.0,
+    "sbc_ttm": 11618000.0,
     "cogs_ttm": 261881000.0,
     "acquisitions_ttm": null,
     "interest_income_ttm": 1031000.0,
@@ -1898,10 +1886,10 @@
       "not": "türetilmiş: 2025-01-01→2025-09-30 (10-Q) − 2025-01-01→2025-06-30"
      },
      "sbc": {
-      "concept": "ShareBasedCompensation",
+      "concept": "AllocatedShareBasedCompensationExpense",
       "accn": "0001437749-25-033627",
-      "turetilmis": true,
-      "not": "türetilmiş: 2025-01-01→2025-09-30 (10-Q) − 2025-01-01→2025-06-30"
+      "turetilmis": false,
+      "not": ""
      },
      "equity_issued": {
       "concept": "ProceedsFromIssuanceOfCommonStock",
@@ -2014,7 +2002,7 @@
     "acquisitions": null,
     "buybacks": null,
     "equity_issued": 176353000.0,
-    "diluted_shares": 3421987.0,
+    "diluted_shares": null,
     "acquiree_revenue": null,
     "ar": 244404000.0,
     "inventory": 183105000.0,
@@ -2123,12 +2111,6 @@
       "turetilmis": true,
       "not": "türetilmiş: 2025-01-01→2025-12-31 (10-K) − 2025-01-01→2025-09-30"
      },
-     "diluted_shares": {
-      "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
-      "accn": "0001437749-26-005875",
-      "turetilmis": true,
-      "not": "türetilmiş: 2025-01-01→2025-12-31 (10-K) − 2025-01-01→2025-09-30"
-     },
      "ar": {
       "concept": "AccountsReceivableNetCurrent",
       "accn": "0001437749-26-026278",
@@ -2188,7 +2170,7 @@
     "onceki_yil_donem": "2024-12-31",
     "revenue_yoy": 33.91,
     "revenue_ttm_yoy": 82.75,
-    "diluted_shares_yoy": 125.49,
+    "diluted_shares_yoy": null,
     "ar_yoy": 109.25,
     "inventory_yoy": 107.76,
     "deferred_revenue_yoy": null,
@@ -2437,7 +2419,7 @@
     "tax": 1289000.0,
     "net_income": -22781000.0,
     "ocf": 11572000.0,
-    "capex": null,
+    "capex": 276907000.0,
     "sbc": 4863000.0,
     "acquisitions": null,
     "buybacks": null,
@@ -2533,11 +2515,17 @@
       "turetilmis": true,
       "not": "türetilmiş: 2026-01-01→2026-06-30 (10-Q) − 2026-01-01→2026-03-31"
      },
-     "sbc": {
-      "concept": "ShareBasedCompensation",
+     "capex": {
+      "concept": "PaymentsToAcquireOtherPropertyPlantAndEquipment",
       "accn": "0001437749-26-026278",
       "turetilmis": true,
       "not": "türetilmiş: 2026-01-01→2026-06-30 (10-Q) − 2026-01-01→2026-03-31"
+     },
+     "sbc": {
+      "concept": "AllocatedShareBasedCompensationExpense",
+      "accn": "0001437749-26-026278",
+      "turetilmis": false,
+      "not": ""
      },
      "equity_issued": {
       "concept": "ProceedsFromIssuanceOfCommonStock",
@@ -2583,25 +2571,25 @@
     "gross_margin": 27.72,
     "operating_margin": -12.88,
     "net_margin": -11.87,
-    "fcf": null,
+    "fcf": -265335000.0,
     "revenue_ttm": 595970000.0,
     "gross_profit_ttm": 172330000.0,
     "operating_income_ttm": -67406000.0,
     "net_income_ttm": -57020000.0,
     "ocf_ttm": -131820000.0,
-    "capex_ttm": null,
+    "capex_ttm": 460412000.0,
     "sbc_ttm": 15238000.0,
     "cogs_ttm": 423640000.0,
     "acquisitions_ttm": null,
     "interest_income_ttm": 6267000.0,
     "tax_ttm": -6138000.0,
     "pretax_ttm": -63158000.0,
-    "fcf_ttm": null,
+    "fcf_ttm": -592232000.0,
     "gross_margin_ttm": 28.92,
     "operating_margin_ttm": -11.31,
-    "fcf_margin_ttm": null,
+    "fcf_margin_ttm": -99.37,
     "sbc_to_revenue_ttm": 2.56,
-    "capex_to_revenue_ttm": null,
+    "capex_to_revenue_ttm": 77.25,
     "ocf_to_ni_ttm": null,
     "dso": 148.9,
     "dio": 182.9,
@@ -2617,10 +2605,10 @@
     "rpo_yoy": null,
     "gross_margin_yoy_pp": -2.55,
     "dso_yoy_change": -38.0,
-    "capex_to_revenue_ttm_yoy_pp": null,
+    "capex_to_revenue_ttm_yoy_pp": 53.21,
     "receivables_vs_revenue_gap": -37.92,
     "inventory_vs_revenue_gap": 14.34,
-    "cash_runway_months": null,
+    "cash_runway_months": 10.1,
     "nakit_uretiyor": false
    }
   ],
@@ -2629,10 +2617,12 @@
     "tablo": "Gelir tablosu",
     "kullanilan": [
      "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "Revenues",
      "SalesRevenueNet"
     ],
     "etiketler": {
      "RevenueFromContractWithCustomerExcludingAssessedTax": "Revenue from Contract with Customer, Excluding Assessed Tax",
+     "Revenues": "Revenues",
      "SalesRevenueNet": "Revenue, Net (Deprecated 2018-01-31)"
     }
    },
@@ -2801,9 +2791,11 @@
    "capex": {
     "tablo": "Nakit akış tablosu",
     "kullanilan": [
+     "PaymentsToAcquireOtherPropertyPlantAndEquipment",
      "PaymentsToAcquirePropertyPlantAndEquipment"
     ],
     "etiketler": {
+     "PaymentsToAcquireOtherPropertyPlantAndEquipment": "Payments to Acquire Other Property, Plant, and Equipment",
      "PaymentsToAcquirePropertyPlantAndEquipment": "Payments to Acquire Property, Plant, and Equipment"
     }
    },
@@ -2832,11 +2824,13 @@
     "tablo": "Nakit akış tablosu",
     "kullanilan": [
      "ProceedsFromIssuanceOfCommonStock",
-     "ProceedsFromStockOptionsExercised"
+     "ProceedsFromStockOptionsExercised",
+     "ProceedsFromIssuanceOrSaleOfEquity"
     ],
     "etiketler": {
      "ProceedsFromIssuanceOfCommonStock": "Proceeds from Issuance of Common Stock",
-     "ProceedsFromStockOptionsExercised": "Proceeds from Stock Options Exercised"
+     "ProceedsFromStockOptionsExercised": "Proceeds from Stock Options Exercised",
+     "ProceedsFromIssuanceOrSaleOfEquity": "Proceeds from Issuance or Sale of Equity"
     }
    },
    "diluted_shares": {
@@ -3035,6 +3029,44 @@
    },
    {
     "etiket": "kirmizi_bayrak",
+    "baslik": "Şirket nakit yakıyor",
+    "olgu": "TTM serbest nakit akışı -592.2 milyon $; nakit+kısa vadeli yatırım 499.7 milyon $; pist ≈ 10.1 ay.",
+    "yorum": "Pist kısaldıkça hisse ihracı (sulandırma) veya borçlanma olasılığı artar.",
+    "kaynaklar": [
+     {
+      "satir": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+      "tablo": "Nakit akış tablosu",
+      "turetilmis": true,
+      "not": "türetilmiş: 2026-01-01→2026-06-30 (10-Q) − 2026-01-01→2026-03-31",
+      "belge": "10-Q",
+      "tarih": "2026-08-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/aaoi20260630_10q.htm",
+      "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001158114/us-gaap/NetCashProvidedByUsedInOperatingActivities.json"
+     },
+     {
+      "satir": "us-gaap:PaymentsToAcquireOtherPropertyPlantAndEquipment",
+      "tablo": "Nakit akış tablosu",
+      "turetilmis": true,
+      "not": "türetilmiş: 2026-01-01→2026-06-30 (10-Q) − 2026-01-01→2026-03-31",
+      "belge": "10-Q",
+      "tarih": "2026-08-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/aaoi20260630_10q.htm",
+      "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001158114/us-gaap/PaymentsToAcquireOtherPropertyPlantAndEquipment.json"
+     },
+     {
+      "satir": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "tablo": "Bilanço",
+      "turetilmis": false,
+      "not": "",
+      "belge": "10-Q",
+      "tarih": "2026-08-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/aaoi20260630_10q.htm",
+      "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001158114/us-gaap/CashAndCashEquivalentsAtCarryingValue.json"
+     }
+    ]
+   },
+   {
+    "etiket": "kirmizi_bayrak",
     "baslik": "Ciddi sulandırma",
     "olgu": "Seyreltilmiş hisse sayısı yıllık %43.68 arttı.",
     "yorum": "Hisse başına değer eriyor.",
@@ -3052,20 +3084,48 @@
     ]
    },
    {
-    "etiket": "olumlu",
-    "baslik": "SBC düşük",
-    "olgu": "TTM SBC/gelir %2.56.",
-    "yorum": "",
+    "etiket": "dikkat",
+    "baslik": "Yatırım harcaması yoğunluğu hızla artıyor",
+    "olgu": "TTM capex/gelir %77.25 (yıllık +53.21 puan).",
+    "yorum": "Yüksek capex FCF'yi baskılar; getirisi gelir büyümesinde görülmeli.",
     "kaynaklar": [
      {
-      "satir": "us-gaap:ShareBasedCompensation",
+      "satir": "us-gaap:PaymentsToAcquireOtherPropertyPlantAndEquipment",
       "tablo": "Nakit akış tablosu",
       "turetilmis": true,
       "not": "türetilmiş: 2026-01-01→2026-06-30 (10-Q) − 2026-01-01→2026-03-31",
       "belge": "10-Q",
       "tarih": "2026-08-06",
       "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/aaoi20260630_10q.htm",
-      "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001158114/us-gaap/ShareBasedCompensation.json"
+      "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001158114/us-gaap/PaymentsToAcquireOtherPropertyPlantAndEquipment.json"
+     },
+     {
+      "satir": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "tablo": "Gelir tablosu",
+      "turetilmis": false,
+      "not": "",
+      "belge": "10-Q",
+      "tarih": "2026-08-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/aaoi20260630_10q.htm",
+      "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001158114/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json"
+     }
+    ]
+   },
+   {
+    "etiket": "olumlu",
+    "baslik": "SBC düşük",
+    "olgu": "TTM SBC/gelir %2.56.",
+    "yorum": "",
+    "kaynaklar": [
+     {
+      "satir": "us-gaap:AllocatedShareBasedCompensationExpense",
+      "tablo": "Nakit akış tablosu",
+      "turetilmis": false,
+      "not": "",
+      "belge": "10-Q",
+      "tarih": "2026-08-06",
+      "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/aaoi20260630_10q.htm",
+      "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001158114/us-gaap/AllocatedShareBasedCompensationExpense.json"
      },
      {
       "satir": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -3154,8 +3214,8 @@
     "fcf_margin_ttm": -45.29,
     "ocf_to_ni_ttm": null,
     "sbc_to_revenue_ttm": 5.93,
-    "diluted_shares": 1517551.0,
-    "diluted_shares_yoy": -2.21,
+    "diluted_shares": null,
+    "diluted_shares_yoy": null,
     "ar": 116801000.0,
     "dso": 107.2,
     "inventory": 88135000.0,
@@ -3278,8 +3338,8 @@
     "fcf_margin_ttm": -77.59,
     "ocf_to_ni_ttm": null,
     "sbc_to_revenue_ttm": 2.57,
-    "diluted_shares": 3421987.0,
-    "diluted_shares_yoy": 125.49,
+    "diluted_shares": null,
+    "diluted_shares_yoy": null,
     "ar": 244404000.0,
     "dso": 167.5,
     "inventory": 183105000.0,
@@ -3335,9 +3395,9 @@
     "operating_margin": -12.88,
     "net_margin": -11.87,
     "ocf": 11572000.0,
-    "fcf": null,
-    "fcf_ttm": null,
-    "fcf_margin_ttm": null,
+    "fcf": -265335000.0,
+    "fcf_ttm": -592232000.0,
+    "fcf_margin_ttm": -99.37,
     "ocf_to_ni_ttm": null,
     "sbc_to_revenue_ttm": 2.56,
     "diluted_shares": 81568000.0,
@@ -3351,9 +3411,9 @@
     "deferred_revenue_yoy": null,
     "rpo": null,
     "rpo_yoy": null,
-    "capex_to_revenue_ttm": null,
+    "capex_to_revenue_ttm": 77.25,
     "liquidity": 499737000.0,
-    "cash_runway_months": null,
+    "cash_runway_months": 10.1,
     "operating_income": -24727000.0,
     "net_income": -22781000.0
    }
@@ -3489,15 +3549,25 @@
     "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/aaoi20260630_10q.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001158114/us-gaap/NetCashProvidedByUsedInOperatingActivities.json"
    },
-   "sbc": {
-    "satir": "us-gaap:ShareBasedCompensation",
+   "capex": {
+    "satir": "us-gaap:PaymentsToAcquireOtherPropertyPlantAndEquipment",
     "tablo": "Nakit akış tablosu",
     "turetilmis": true,
     "not": "türetilmiş: 2026-01-01→2026-06-30 (10-Q) − 2026-01-01→2026-03-31",
     "belge": "10-Q",
     "tarih": "2026-08-06",
     "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/aaoi20260630_10q.htm",
-    "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001158114/us-gaap/ShareBasedCompensation.json"
+    "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001158114/us-gaap/PaymentsToAcquireOtherPropertyPlantAndEquipment.json"
+   },
+   "sbc": {
+    "satir": "us-gaap:AllocatedShareBasedCompensationExpense",
+    "tablo": "Nakit akış tablosu",
+    "turetilmis": false,
+    "not": "",
+    "belge": "10-Q",
+    "tarih": "2026-08-06",
+    "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/aaoi20260630_10q.htm",
+    "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001158114/us-gaap/AllocatedShareBasedCompensationExpense.json"
    },
    "equity_issued": {
     "satir": "us-gaap:ProceedsFromIssuanceOfCommonStock",

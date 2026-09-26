@@ -2,7 +2,7 @@
  "ticker": "META",
  "cik": 1326801,
  "sirket": "Meta Platforms, Inc.",
- "guncelleme": "2026-09-26T00:05:18+00:00",
+ "guncelleme": "2026-09-26T00:09:24+00:00",
  "son_dosya": {
   "accn": "0001628280-26-050705",
   "form": "10-Q",
@@ -126,10 +126,10 @@
       "not": "türetilmiş: 2023-01-01→2023-09-30 (10-Q) − 2023-01-01→2023-06-30"
      },
      "sbc": {
-      "concept": "ShareBasedCompensation",
+      "concept": "AllocatedShareBasedCompensationExpense",
       "accn": "0001326801-24-000081",
-      "turetilmis": true,
-      "not": "türetilmiş: 2023-01-01→2023-09-30 (10-Q) − 2023-01-01→2023-06-30"
+      "turetilmis": false,
+      "not": ""
      },
      "buybacks": {
       "concept": "PaymentsForRepurchaseOfCommonStock",
@@ -254,7 +254,7 @@
     "acquisitions": null,
     "buybacks": 5942000000.0,
     "equity_issued": null,
-    "diluted_shares": 6000000.0,
+    "diluted_shares": null,
     "acquiree_revenue": null,
     "ar": 16169000000.0,
     "inventory": null,
@@ -351,12 +351,6 @@
       "turetilmis": true,
       "not": "türetilmiş: 2023-01-01→2023-12-31 (10-K) − 2023-01-01→2023-09-30"
      },
-     "diluted_shares": {
-      "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
-      "accn": "0001628280-26-003942",
-      "turetilmis": true,
-      "not": "türetilmiş: 2023-01-01→2023-12-31 (10-K) − 2023-01-01→2023-09-30"
-     },
      "ar": {
       "concept": "AccountsReceivableNetCurrent",
       "accn": "0001326801-25-000017",
@@ -428,7 +422,7 @@
     "onceki_yil_donem": "2022-12-31",
     "revenue_yoy": 24.7,
     "revenue_ttm_yoy": 15.69,
-    "diluted_shares_yoy": 137.5,
+    "diluted_shares_yoy": null,
     "ar_yoy": 20.07,
     "inventory_yoy": null,
     "deferred_revenue_yoy": 29.88,
@@ -756,10 +750,10 @@
       "not": "türetilmiş: 2024-01-01→2024-06-30 (10-Q) − 2024-01-01→2024-03-31"
      },
      "sbc": {
-      "concept": "ShareBasedCompensation",
+      "concept": "AllocatedShareBasedCompensationExpense",
       "accn": "0001628280-25-036791",
-      "turetilmis": true,
-      "not": "türetilmiş: 2024-01-01→2024-06-30 (10-Q) − 2024-01-01→2024-03-31"
+      "turetilmis": false,
+      "not": ""
      },
      "buybacks": {
       "concept": "PaymentsForRepurchaseOfCommonStock",
@@ -970,10 +964,10 @@
       "not": "türetilmiş: 2024-01-01→2024-09-30 (10-Q) − 2024-01-01→2024-06-30"
      },
      "sbc": {
-      "concept": "ShareBasedCompensation",
+      "concept": "AllocatedShareBasedCompensationExpense",
       "accn": "0001628280-25-047240",
-      "turetilmis": true,
-      "not": "türetilmiş: 2024-01-01→2024-09-30 (10-Q) − 2024-01-01→2024-06-30"
+      "turetilmis": false,
+      "not": ""
      },
      "buybacks": {
       "concept": "PaymentsForRepurchaseOfCommonStock",
@@ -1098,7 +1092,7 @@
     "acquisitions": null,
     "buybacks": 0.0,
     "equity_issued": null,
-    "diluted_shares": -1000000.0,
+    "diluted_shares": null,
     "acquiree_revenue": null,
     "ar": 16994000000.0,
     "inventory": null,
@@ -1195,12 +1189,6 @@
       "turetilmis": true,
       "not": "türetilmiş: 2024-01-01→2024-12-31 (10-K) − 2024-01-01→2024-09-30"
      },
-     "diluted_shares": {
-      "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
-      "accn": "0001628280-26-003942",
-      "turetilmis": true,
-      "not": "türetilmiş: 2024-01-01→2024-12-31 (10-K) − 2024-01-01→2024-09-30"
-     },
      "ar": {
       "concept": "AccountsReceivableNetCurrent",
       "accn": "0001628280-26-003942",
@@ -1272,7 +1260,7 @@
     "onceki_yil_donem": "2023-12-31",
     "revenue_yoy": 20.63,
     "revenue_ttm_yoy": 21.94,
-    "diluted_shares_yoy": -116.67,
+    "diluted_shares_yoy": null,
     "ar_yoy": 5.1,
     "inventory_yoy": null,
     "deferred_revenue_yoy": 15.18,
@@ -1588,10 +1576,10 @@
       "not": "türetilmiş: 2025-01-01→2025-06-30 (10-Q) − 2025-01-01→2025-03-31"
      },
      "sbc": {
-      "concept": "ShareBasedCompensation",
+      "concept": "AllocatedShareBasedCompensationExpense",
       "accn": "0001628280-26-050705",
-      "turetilmis": true,
-      "not": "türetilmiş: 2025-01-01→2025-06-30 (10-Q) − 2025-01-01→2025-03-31"
+      "turetilmis": false,
+      "not": ""
      },
      "buybacks": {
       "concept": "PaymentsForRepurchaseOfCommonStock",
@@ -1706,7 +1694,7 @@
     "net_income": 2709000000.0,
     "ocf": 29999000000.0,
     "capex": 18829000000.0,
-    "sbc": 5556000000.0,
+    "sbc": 5555000000.0,
     "acquisitions": null,
     "buybacks": 3327000000.0,
     "equity_issued": null,
@@ -1784,10 +1772,10 @@
       "not": "türetilmiş: 2025-01-01→2025-09-30 (10-Q) − 2025-01-01→2025-06-30"
      },
      "sbc": {
-      "concept": "ShareBasedCompensation",
+      "concept": "AllocatedShareBasedCompensationExpense",
       "accn": "0001628280-25-047240",
-      "turetilmis": true,
-      "not": "türetilmiş: 2025-01-01→2025-09-30 (10-Q) − 2025-01-01→2025-06-30"
+      "turetilmis": false,
+      "not": ""
      },
      "buybacks": {
       "concept": "PaymentsForRepurchaseOfCommonStock",
@@ -1846,7 +1834,7 @@
     "net_income_ttm": 58528000000.0,
     "ocf_ttm": 107574000000.0,
     "capex_ttm": 62733000000.0,
-    "sbc_ttm": 18799000000.0,
+    "sbc_ttm": 18798000000.0,
     "cogs_ttm": 34108000000.0,
     "acquisitions_ttm": null,
     "interest_income_ttm": null,
@@ -1906,7 +1894,7 @@
     "acquisitions": null,
     "buybacks": 0.0,
     "equity_issued": null,
-    "diluted_shares": -4000000.0,
+    "diluted_shares": null,
     "acquiree_revenue": null,
     "ar": 19769000000.0,
     "inventory": null,
@@ -1991,12 +1979,6 @@
       "turetilmis": true,
       "not": "türetilmiş: 2025-01-01→2025-12-31 (10-K) − 2025-01-01→2025-09-30"
      },
-     "diluted_shares": {
-      "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
-      "accn": "0001628280-26-003942",
-      "turetilmis": true,
-      "not": "türetilmiş: 2025-01-01→2025-12-31 (10-K) − 2025-01-01→2025-09-30"
-     },
      "ar": {
       "concept": "AccountsReceivableNetCurrent",
       "accn": "0001628280-26-050705",
@@ -2042,7 +2024,7 @@
     "net_income_ttm": 60458000000.0,
     "ocf_ttm": 115800000000.0,
     "capex_ttm": 69691000000.0,
-    "sbc_ttm": 20427000000.0,
+    "sbc_ttm": 20426000000.0,
     "cogs_ttm": 36175000000.0,
     "acquisitions_ttm": null,
     "interest_income_ttm": null,
@@ -2062,7 +2044,7 @@
     "onceki_yil_donem": "2024-12-31",
     "revenue_yoy": 23.78,
     "revenue_ttm_yoy": 22.17,
-    "diluted_shares_yoy": -300.0,
+    "diluted_shares_yoy": null,
     "ar_yoy": 16.33,
     "inventory_yoy": null,
     "deferred_revenue_yoy": null,
@@ -2238,7 +2220,7 @@
     "net_income_ttm": 70587000000.0,
     "ocf_ttm": 124000000000.0,
     "capex_ttm": 75747000000.0,
-    "sbc_ttm": 22312000000.0,
+    "sbc_ttm": 22311000000.0,
     "cogs_ttm": 38821000000.0,
     "acquisitions_ttm": null,
     "interest_income_ttm": null,
@@ -2294,7 +2276,7 @@
     "net_income": 15848000000.0,
     "ocf": 31862000000.0,
     "capex": 30116000000.0,
-    "sbc": 7658000000.0,
+    "sbc": 7601000000.0,
     "acquisitions": null,
     "buybacks": 0.0,
     "equity_issued": null,
@@ -2378,10 +2360,10 @@
       "not": "türetilmiş: 2026-01-01→2026-06-30 (10-Q) − 2026-01-01→2026-03-31"
      },
      "sbc": {
-      "concept": "ShareBasedCompensation",
+      "concept": "AllocatedShareBasedCompensationExpense",
       "accn": "0001628280-26-050705",
-      "turetilmis": true,
-      "not": "türetilmiş: 2026-01-01→2026-06-30 (10-Q) − 2026-01-01→2026-03-31"
+      "turetilmis": false,
+      "not": ""
      },
      "buybacks": {
       "concept": "PaymentsForRepurchaseOfCommonStock",
@@ -2440,7 +2422,7 @@
     "net_income_ttm": 68098000000.0,
     "ocf_ttm": 130301000000.0,
     "capex_ttm": 89325000000.0,
-    "sbc_ttm": 25136000000.0,
+    "sbc_ttm": 25078000000.0,
     "cogs_ttm": 41660000000.0,
     "acquisitions_ttm": null,
     "interest_income_ttm": null,
@@ -2450,7 +2432,7 @@
     "gross_margin_ttm": 81.75,
     "operating_margin_ttm": 38.08,
     "fcf_margin_ttm": 17.95,
-    "sbc_to_revenue_ttm": 11.01,
+    "sbc_to_revenue_ttm": 10.99,
     "capex_to_revenue_ttm": 39.14,
     "ocf_to_ni_ttm": 1.91,
     "dso": 32.6,
@@ -2648,16 +2630,22 @@
    "sbc": {
     "tablo": "Nakit akış tablosu",
     "kullanilan": [
-     "ShareBasedCompensation"
+     "ShareBasedCompensation",
+     "AllocatedShareBasedCompensationExpense"
     ],
     "etiketler": {
-     "ShareBasedCompensation": "Share-based Payment Arrangement, Noncash Expense"
+     "ShareBasedCompensation": "Share-based Payment Arrangement, Noncash Expense",
+     "AllocatedShareBasedCompensationExpense": "Share-based Payment Arrangement, Expense"
     }
    },
    "acquisitions": {
     "tablo": "Nakit akış tablosu",
-    "kullanilan": [],
-    "etiketler": {}
+    "kullanilan": [
+     "PaymentsToAcquireBusinessesNetOfCashAcquired"
+    ],
+    "etiketler": {
+     "PaymentsToAcquireBusinessesNetOfCashAcquired": "Payments to Acquire Businesses, Net of Cash Acquired"
+    }
    },
    "buybacks": {
     "tablo": "Nakit akış tablosu",
@@ -2942,8 +2930,8 @@
     "fcf_margin_ttm": 32.87,
     "ocf_to_ni_ttm": 1.46,
     "sbc_to_revenue_ttm": 10.15,
-    "diluted_shares": -1000000.0,
-    "diluted_shares_yoy": -116.67,
+    "diluted_shares": null,
+    "diluted_shares_yoy": null,
     "ar": 16994000000.0,
     "dso": 32.3,
     "inventory": null,
@@ -3066,8 +3054,8 @@
     "fcf_margin_ttm": 22.94,
     "ocf_to_ni_ttm": 1.92,
     "sbc_to_revenue_ttm": 10.16,
-    "diluted_shares": -4000000.0,
-    "diluted_shares_yoy": -300.0,
+    "diluted_shares": null,
+    "diluted_shares_yoy": null,
     "ar": 19769000000.0,
     "dso": 30.4,
     "inventory": null,
@@ -3127,7 +3115,7 @@
     "fcf_ttm": 40976000000.0,
     "fcf_margin_ttm": 17.95,
     "ocf_to_ni_ttm": 1.91,
-    "sbc_to_revenue_ttm": 11.01,
+    "sbc_to_revenue_ttm": 10.99,
     "diluted_shares": 2566000000.0,
     "diluted_shares_yoy": -0.16,
     "ar": 21752000000.0,
@@ -3259,14 +3247,14 @@
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001326801/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json"
    },
    "sbc": {
-    "satir": "us-gaap:ShareBasedCompensation",
+    "satir": "us-gaap:AllocatedShareBasedCompensationExpense",
     "tablo": "Nakit akış tablosu",
-    "turetilmis": true,
-    "not": "türetilmiş: 2026-01-01→2026-06-30 (10-Q) − 2026-01-01→2026-03-31",
+    "turetilmis": false,
+    "not": "",
     "belge": "10-Q",
     "tarih": "2026-07-30",
     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
-    "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001326801/us-gaap/ShareBasedCompensation.json"
+    "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001326801/us-gaap/AllocatedShareBasedCompensationExpense.json"
    },
    "buybacks": {
     "satir": "us-gaap:PaymentsForRepurchaseOfCommonStock",

@@ -223,8 +223,8 @@
     },
     {
      "etiket": "FY2024 Q4",
-     "deger": -2.21,
-     "durum": "yesil"
+     "deger": null,
+     "durum": "veri_yok"
     },
     {
      "etiket": "FY2025 Q1",
@@ -243,8 +243,8 @@
     },
     {
      "etiket": "FY2025 Q4",
-     "deger": 125.49,
-     "durum": "kirmizi"
+     "deger": null,
+     "durum": "veri_yok"
     },
     {
      "etiket": "FY2026 Q1",
@@ -351,11 +351,11 @@
    "id": "pist",
    "ad": "Nakit pisti 12 ayın altına inerse",
    "metrik": "cash_runway_months",
-   "durum": "veri_yok",
+   "durum": "tetiklendi",
    "son_degerler": [
     {
      "etiket": "FY2026 Q2",
-     "deger": null
+     "deger": 10.1
     }
    ]
   },
@@ -389,6 +389,6 @@
   }
  ],
  "son_ceyrek": "FY2026 Q2",
- "guncelleme": "2026-09-26T00:08:23+00:00",
+ "guncelleme": "2026-09-26T00:09:31+00:00",
  "not": "Tez durumu fiyattan bağımsızdır. Fiyat düşüşü tek başına tezin bozulduğu anlamına gelmez."
 }
