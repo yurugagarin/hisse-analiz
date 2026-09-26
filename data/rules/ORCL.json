@@ -1,8 +1,8 @@
 {
- "ticker": "IONQ",
+ "ticker": "ORCL",
  "onay": "taslak",
  "kosul": "tez_saglam",
- "zirveden_uzaklik": -44.6,
+ "zirveden_uzaklik": -56.2,
  "kademeler": [
   {
    "dusus": 15,
@@ -26,27 +26,27 @@
    "zirveden_uzaklik": -0.4,
    "degisim_1a": 4.66,
    "degisim_3a": 5.38,
-   "fark_puan": -44.2
+   "fark_puan": -55.8
   },
   {
    "sembol": "SMH",
    "zirveden_uzaklik": -9.32,
    "degisim_1a": 9.14,
    "degisim_3a": -0.83,
-   "fark_puan": -35.28
+   "fark_puan": -46.88
   }
  ],
  "guncelleme": "2026-09-26T11:10:56+00:00",
  "not": "Otomatik işlem yok. Bu bölüm önceden yazdığın kuralları hatırlatır.",
  "dusus_kaynagi": "sirkete_ozel",
  "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
- "en_iyi_fark": -35.28,
+ "en_iyi_fark": -46.88,
  "tetiklenen": {
   "dusus": 35,
   "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
  },
- "tez_durumu": "kirmizi",
- "kosul_saglaniyor": false,
- "durum": "tetiklendi_kosul_yok",
- "mesaj": "Zirveden −%44,6: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
+ "tez_durumu": "sari",
+ "kosul_saglaniyor": true,
+ "durum": "tetiklendi_kosul_ok",
+ "mesaj": "Zirveden −%56,2: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
 }
