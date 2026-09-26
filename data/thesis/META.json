@@ -3,7 +3,7 @@
  "tez_var": true,
  "onay": "taslak",
  "ozet": "Reklam motoru (Family of Apps) AI destekli hedefleme ile çift haneli büyümeyi ve yüksek faaliyet marjını koruyor; ağır AI yatırımına rağmen serbest nakit akışı pozitif kalıyor ve hisse geri alımı sulandırmayı telafi ediyor.\n",
- "genel": "yesil",
+ "genel": "sari",
  "sutunlar": [
   {
    "id": "reklam_buyumesi",
@@ -270,12 +270,22 @@
    "ad": "AI yatırımının getirisi ve regülasyon",
    "tip": "yorum",
    "aciklama": "",
-   "durum": "veri_yok",
+   "durum": "sari",
    "soru": "10-Q/10-K ve basın bülteninde reklam gösterimi ve reklam başına ortalama fiyat eğilimleri, capex guidance'ı ve AB/ABD regülasyon riskleri hakkında yönetimin açıklamaları tezi destekliyor mu, zayıflatıyor mu?",
-   "gerekce": "Henüz değerlendirilmedi (Claude bilanço analizi / Salı raporu çalışmadı).",
-   "kanit_alinti": null,
-   "kanit_dogrulandi": null,
-   "kaynak": null,
+   "gerekce": "DESTEKLEYEN: Hem hacim hem fiyat hızlanıyor. Gösterim artışı %11'den %14'e, reklam başına fiyat artışı %9'dan %12'ye çıktı. Yönetim fiyat artışını 'mostly' reklam hedefleme ve ölçüm iyileştirmelerine bağlıyor ve bu, AI yatırımının gelire yansıdığına dair en güçlü kanıt. ZAYIFLATAN: (1) Fiyat artışında kurun da payı var (Q2'de +693 milyon $ reklam geliri). (2) AI'ın maliyet tarafı getiriden hızlı büyüyor: capex guidance'ı 130-145 milyar $, FoA gideri %67 arttı, 'third-party AI token costs' yeni bir gider kalemi olarak ortaya çıktı. Sonuç olarak faaliyet marjı %43'ten %31'e düştü ve TTM FCF marjı %17,95'e indi. (3) Regülasyon: AB'de LPA modeline ek değişiklik dayatılabilir ve bu Avrupa gelirini 'significant' ölçüde etkileyebilir. AB, WhatsApp API'sinin rakip AI şirketlerine ücretsiz açılması yönünde ara tedbir kararı aldı. Çocuklarla ilgili DSA bulguları, FTC'nin reşit olmayanların verisini yasaklama talebi ve AI eğitimi telif davaları sürüyor. Net değerlendirme: Gelir tarafı tezi destekliyor; getiri/maliyet dengesi ve regülasyon tezi zayıflatıyor.",
+   "kanit_alinti": "Ad impressions delivered across our Family of Apps in the second quarter of 2026 increased 14% year-over-year, and our average price per ad in the second quarter of 2026 increased 12% year-over-year.",
+   "kanit_dogrulandi": true,
+   "kaynak": {
+    "tip": "bilanco",
+    "tarih": "2026-07-30",
+    "accn": "0001628280-26-050705",
+    "form": "10-Q",
+    "donem_sonu": "2026-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+    "index_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/0001628280-26-050705-index.htm",
+    "kesildi": false,
+    "karakter": 403252
+   },
    "olgu_mu": false,
    "haberler": [],
    "radar": []
@@ -316,6 +326,6 @@
   }
  ],
  "son_ceyrek": "FY2026 Q2",
- "guncelleme": "2026-09-26T11:57:13+00:00",
+ "guncelleme": "2026-09-26T12:15:01+00:00",
  "not": "Tez durumu fiyattan bağımsızdır. Fiyat düşüşü tek başına tezin bozulduğu anlamına gelmez."
 }

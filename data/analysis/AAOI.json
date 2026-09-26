@@ -1,0 +1,272 @@
+{
+ "son": {
+  "dosya": {
+   "accn": "0001437749-26-026278",
+   "form": "10-Q",
+   "donem_sonu": "2026-06-30",
+   "tarih": "2026-08-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/aaoi20260630_10q.htm",
+   "index_url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/0001437749-26-026278-index.htm",
+   "kesildi": false,
+   "karakter": 138311
+  },
+  "basin_bulteni": [
+   {
+    "ad": "aaoi_ex9901.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1158114/000168316826006055/aaoi_ex9901.htm",
+    "tarih": "2026-08-06"
+   }
+  ],
+  "onceki_basin_bulteni": [
+   {
+    "ad": "aaoi_ex9901.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1158114/000168316826003562/aaoi_ex9901.htm",
+    "tarih": "2026-05-07"
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "guncelleme": "2026-09-26T12:06:43+00:00",
+  "analiz": {
+   "ozet": "AAOI 2026/Ç2'de gelir tarafında güçlü bir çeyrek geçirdi: gelir 191,9 milyon $ oldu (yıllık +%86,4, çeyreklik +%27). Veri merkezi geliri 107,7 milyon $'a çıktı (+%140). Gelir, önceki yönlendirme aralığının (180–198 milyon $) içinde kaldı. Kazanç kalitesi ise zayıf. Şirketin \"non-GAAP kârlılığa dönüş\" diye sunduğu 5,5 milyon $'lık non-GAAP net kâr, 14,3 milyon $'lık bir \"vergi düzeltmesine\" dayanıyor. Bu düzeltme olmasa non-GAAP sonuç yaklaşık -8,8 milyon $ zarar olurdu. Aynı mutabakatta Düzeltilmiş FAVÖK -0,5 milyon $ çıkıyor. FAVÖK negatifken net kârın pozitif olması, kârın yalnızca varsayımsal bir vergi indiriminden geldiğini gösteriyor. GAAP faaliyet zararı 24,7 milyon $'a genişledi (marj -%12,9). Brüt marj %27,7'ye geriledi. Non-GAAP brüt marj (%29,8) de ancak 3,6 milyon $'lık \"üretimi durdurulan ürün\" stok silmesi dışarıda bırakılarak yönlendirme aralığına girdi.\n\nNakit tarafı daha endişe verici. Ç2 serbest nakit akışı (SNA) -265 milyon $, TTM SNA marjı -%99. Ç2'deki +11,6 milyon $'lık faaliyet nakit akışı, ticari borçların 6 ayda 142 milyon $ şişirilmesiyle sağlandı. Alacak riski de yoğun: Digicomm tek başına 211 milyon $ alacakla toplam alacakların %67,2'sini oluşturuyor. Bu tutar, Digicomm'un 6 aylık gelirinin (147 milyon $) 1,4 katı ve yönetim bu müşteriye bilerek uzatılmış vade tanıyor.\n\nBüyüme tamamen organik, ancak finansmanı hissedarlar sağlıyor. 6 ayda ATM (piyasadan kademeli hisse satışı) ile 1,03 milyar $ net hisse satıldı. Seyreltilmiş hisse sayısı yıllık %43,7 arttı. Önümüzde ayrıca şu seyreltme kaynakları var: parası içinde olan convertible tahviller (gerçeğe uygun değeri 445 milyon $, defter değeri 129 milyon $) ve Amazon warrant'ının henüz hak edilmemiş 6,6 milyon hissesi.\n\nÇ3 yönlendirmesi (gelir 255–290 milyon $) iddialı. Bu hedef, kapasite artışının zamanında gelmesine ve aynı üç müşteriye (gelirin %92'si) bağlı.",
+   "non_gaap": {
+    "aciklama_var": true,
+    "duzeltmeler": [
+     {
+      "kalem": "Non-GAAP vergi düzeltmesi (Tax (benefit) expense related to the above)",
+      "tutar_metni": "14.262 bin $ (Ç2 2026); 6A: 16.722 bin $",
+      "degerlendirme": "kari_iyi_gosteriyor",
+      "gerekce": "GAAP vergi öncesi zarar -21.492 bin $. Vergi dışındaki düzeltmeler toplam +13.994 bin $ olduğundan non-GAAP vergi öncesi sonuç yaklaşık -7.498 bin $ zarar. 5.475 bin $ non-GAAP net kâra ulaşmak için yaklaşık 12,97 milyon $ vergi GELİRİ yazılmış. Bu, zarar üzerinde %170'in üzerinde efektif bir vergi 'indirimi' demek. Oysa ABD ve Tayvan ertelenmiş vergi varlıklarının tamamına değerleme karşılığı ayrılmış durumda (Note 16) ve fiili vergi gideri 1,3 milyon $. 'Non-GAAP kârlılığa dönüş' anlatısının tamamı bu kaleme dayanıyor. Mutabakatın en sorunlu kalemi bu.",
+      "kanit_alinti": "Tax (benefit) expense related to the above | 14,262 | 337 | 16,722 | 4,325",
+      "kaynak_belge": "basin_bulteni",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Hisse bazlı ödeme (SBC)",
+      "tutar_metni": "4.863 bin $ (Ç2 2026) / 3.164 bin $ (Ç2 2025)",
+      "degerlendirme": "kari_iyi_gosteriyor",
+      "gerekce": "Tekrarlayan, gerçek bir personel maliyeti. Ekonomik maliyet muhasebe giderinin çok üstünde: 6 ayda 71,2 milyon $ nakit, çalışan vergi stopajı (net share settlement) için ödendi. Aynı dönemde SBC gideri yalnızca 9,3 milyon $.",
+      "kanit_alinti": "Share-based compensation expense | 4,863 | 3,164 | 9,254 | 5,726",
+      "kaynak_belge": "basin_bulteni",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Üretimi durdurulan ürünlere ilişkin giderler (brüt kârdan da çıkarılıyor)",
+      "tutar_metni": "3.594 bin $ (Ç2 2026), önceki dönemlerde yok",
+      "degerlendirme": "kari_iyi_gosteriyor",
+      "gerekce": "Tutar, Note 7'deki 3,6 milyon $'lık doğrudan stok silmesiyle (hurda, üretimi durdurulan ve hasarlı stoklar) örtüşüyor. 400G'den 800G ve 1.6T'ye hızlı geçiş yapan bir şirkette stok eskimesi olağan bir faaliyet maliyeti. Bu kalem dışarıda bırakılmasa non-GAAP brüt marj yaklaşık %28,0 olurdu ve %29–30'luk yönlendirme aralığının altında kalırdı.",
+      "kanit_alinti": "Expenses associated with discontinued products | 3,594",
+      "kaynak_belge": "basin_bulteni",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Üretimi durdurulan ürünlere ilişkin nakit dışı giderler",
+      "tutar_metni": "1.102 bin $ (Ç2 2026) / 1.073 bin $ (Ç2 2025); Ç1 2026: 916 bin $",
+      "degerlendirme": "kari_iyi_gosteriyor",
+      "gerekce": "Her çeyrek yaklaşık 1 milyon $ civarında tekrarlıyor. Tanım gereği 'tek seferlik' değil; atıl ekipman amortismanı ve eskime gibi sürekli bir maliyet.",
+      "kanit_alinti": "Non-cash expenses associated with discontinued products | 1,102 | 1,073",
+      "kaynak_belge": "basin_bulteni",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Tekrarlamayan (gelir) gider",
+      "tutar_metni": "4.744 bin $ (Ç2 2026) / 862 bin $ (Ç2 2025); Ç1 2026: 276 bin $",
+      "degerlendirme": "belirsiz",
+      "gerekce": "Tutar Ç1'e göre yaklaşık 17 kat arttı ve bültende kırılımı verilmiyor. Tanım dava, kıdem tazminatı ve 'satın alma iptali/patent' danışmanlık giderlerini kapsıyor. Bu kalem her çeyrek görülüyor, bu yüzden tekrarlamadığı iddiası zayıf. Kırılım olmadan makul olup olmadığı test edilemez.",
+      "kanit_alinti": "Non-recurring (income) expense | 4,744 | 862",
+      "kaynak_belge": "basin_bulteni",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Gerçekleşmemiş kur farkı zararı (kazancı)",
+      "tutar_metni": "-432 bin $ (Ç2 2026) / -5.278 bin $ (Ç2 2025)",
+      "degerlendirme": "makul",
+      "gerekce": "Nakit dışı ve faaliyetle ilgisiz. Bu çeyrek non-GAAP sonucu aşağı çektiği için kârı şişirmiyor.",
+      "kanit_alinti": "Unrealized exchange loss (gain) | (432 | (5,278",
+      "kaynak_belge": "basin_bulteni",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Maddi olmayan duran varlık itfası",
+      "tutar_metni": "123 bin $ (Ç2 2026)",
+      "degerlendirme": "makul",
+      "gerekce": "Tutarı önemsiz ve nakit dışı.",
+      "kanit_alinti": "Amortization of intangible assets | 123 | 110",
+      "kaynak_belge": "basin_bulteni",
+      "kanit_alinti_dogrulandi": true
+     }
+    ],
+    "genel_yorum": "Mutabakat, GAAP'ta 22,8 milyon $ olan net zararı 5,5 milyon $ non-GAAP kâra çeviriyor; aradaki fark 28,3 milyon $. Bu farkın yaklaşık yarısı (14,3 milyon $) vergi kaleminden geliyor. Düzeltilmiş FAVÖK aynı çeyrekte -543 bin $. FAVÖK negatifken net kârın pozitif çıkması ancak varsayımsal bir non-GAAP vergi geliriyle mümkün, bu da manşetteki 'non-GAAP kârlılığa dönüş' mesajını aşırı iyimser kılıyor. Brüt marj tarafında da non-GAAP marjın yönlendirmeye uyması, 3,6 milyon $'lık stok silmesinin 'üretimi durdurulan ürün' diye ayrıştırılmasına bağlı. Eleştirel okumada gerçek operasyonel tablo, non-GAAP vergi öncesi yaklaşık -7,5 milyon $ zarar ve başa baş civarında bir FAVÖK. Buna nakit bazlı SBC maliyeti (6 ayda 71 milyon $ stopaj) eklendiğinde kazanç kalitesi düşük."
+   },
+   "musteri_yogunlasmasi": {
+    "aciklama_var": true,
+    "detay": "Ç2 2026'da ilk 10 müşteri gelirin %99'unu, ilk üç müşteri sırasıyla %42, %26 ve %24'ünü oluşturdu; ilk üçün toplamı %92. Ç2 2025'te dağılım %54 / %34 / %6'ydı. Yani yoğunlaşma azalmadı, ikinci ve üçüncü müşteri arasında yeniden dağıldı.\n\nEn büyük müşteri Digicomm:\n- 6 aylık gelir 147,0 milyon $, konsolide gelirin %42,8'i; gelir ağırlıklı olarak CATV kategorisinden.\n- Alacak 211,0 milyon $, toplam alacakların %67,2'si.\n- Bu alacak, Digicomm'un 6 aylık gelirinin yaklaşık 1,44 katı; ima edilen tahsil süresi yaklaşık 260 gün.\n- Digicomm dışındaki alacaklar yaklaşık 103 milyon $, bu da yaklaşık 95 günlük tahsil süresine denk geliyor.\n\nYönetim, Digicomm'a stok tutabilmesi için bilerek 'normalden uzun' vade tanıdığını açıkça yazıyor. Bu, satıcı finansmanı niteliğinde. Ayrıca gelirin öne çekilmesi ya da kanala stok yüklenmesi (channel stuffing) riskini akla getiriyor.\n\nWarrant verilen müşteri arrangement'larından (Amazon) 6 ayda 84,8 milyon $ gelir tanındı. Metrik tablosundaki toplam DSO'nun 148,9 güne düşmesi, bu müşteri bazlı bozulmayı gizliyor.",
+    "bolum": "Note 10 - Fair Value of Financial Instruments; MD&A - Customer Concentration",
+    "kanit_alinti": "For the three months ended June 30, 2026, our top three customers represented 42%, 26% and 24% of our revenue, respectively.",
+    "etiket": "kirmizi_bayrak",
+    "kanit_alinti_dogrulandi": true
+   },
+   "organik_buyume": {
+    "satin_alma_var": false,
+    "detay": "Belgelerde işletme satın alması, şerefiye veya satın alma kaynaklı gelir yok; büyüme tamamen organik.\n\nÇ2'deki 89,0 milyon $'lık yıllık gelir artışının kaynağı:\n- 62,9 milyon $ veri merkezi (+%140,4),\n- 24,6 milyon $ CATV (+%43,8; 1.8 GHz ürünlerdeki pazar payı kazanımları).\n\nSatın alma kategorisindeki işlemler yalnızca gayrimenkul ve ekipman alımı. Kirby'de bina alımı (Exhibit 10.1) ve Hightower binaları için toplam 102,25 milyon $ tutarında satın alma opsiyonu bulunuyor; bunlar işletme birleşmesi değil.\n\nOrganik büyüme yatırımcı sermayesiyle finanse ediliyor: 6 ayda 1,03 milyar $ ATM geliri, 335,1 milyon $ yatırım harcaması (capex) ve 289,7 milyon $ ekipman ön ödemesi.\n\nBüyümenin önemli bir kısmı düşük marjlı CATV'den ve tek bir distribütörden (Digicomm) geliyor. Bu yüzden 'hyperscaler kaynaklı organik büyüme' ifadesi gelirin ancak %56'sı için geçerli.",
+    "bolum": "MD&A - Comparison of Financial Results / Revenue",
+    "kanit_alinti": "$62.9 million increase in data center product revenues, reflecting continued demand for our high-speed connectivity products; and",
+    "kanit_alinti_dogrulandi": true
+   },
+   "guidance": {
+    "onceki_guidance": "Ç2 2026 için verilen yönlendirme: gelir 180–198 milyon $; non-GAAP brüt marj %29–30; non-GAAP net sonuç -2,5 milyon $ zarar ile +2,8 milyon $ kâr arası (yaklaşık 80,7 milyon hisse ile hisse başı -0,03 $ ile +0,03 $ arası).",
+    "onceki_alinti": "Revenue in the range of $180 million to $198 million.",
+    "gerceklesen": "Gelir 191,9 milyon $; aralığın içinde, orta noktanın (189 milyon $) biraz üstünde. Non-GAAP brüt marj %29,8, aralığın içinde; ancak 3,6 milyon $'lık 'discontinued products' dışlaması olmasa yaklaşık %28,0 olurdu ve aralığın altında kalırdı. Non-GAAP net kâr 5,5 milyon $ ile aralığın üstünde; bu aşım tamamen 14,3 milyon $'lık non-GAAP vergi düzeltmesinden geliyor. Düzeltilmiş FAVÖK -0,5 milyon $ ile Ç1'deki +1,0 milyon $'ın altına düştü. Özetle ana metrik olan gelir aralık içinde; kâr tarafındaki 'aşım' kalitesiz.",
+    "gerceklesen_alinti": "GAAP revenue was $191.9 million, compared with $103.0 million in the second",
+    "sonuc": "icinde",
+    "yeni_guidance": "Ç3 2026 için yeni yönlendirme: gelir 255–290 milyon $ (çeyreklik +%33 ile +%51 arası); non-GAAP brüt marj %29–30,5; non-GAAP net kâr 10,1–24,0 milyon $ (yaklaşık 92,8 milyon hisse ile hisse başı 0,11–0,26 $). Hisse varsayımı Ç2'deki 88,2 milyon seyreltilmiş hisseye göre yaklaşık %5 daha yüksek; sulandırmanın süreceğine işaret ediyor. Non-GAAP vergi yöntemi değişmediği sürece kâr yönlendirmesi de benzer bir vergi düzeltmesi içerecek. Yönetim ayrıca yıl sonuna kadar 800G/1.6T kapasitesini ayda yaklaşık 650.000 adede çıkarmayı hedefliyor ve talebin 2027 ortasına kadar kapasiteyi aşacağını öngörüyor.",
+    "yeni_alinti": "Revenue in the range of $255 million to $290 million.",
+    "onceki_alinti_dogrulandi": true,
+    "gerceklesen_alinti_dogrulandi": true,
+    "yeni_alinti_dogrulandi": true
+   },
+   "dipnot_bulgulari": [
+    {
+     "etiket": "kirmizi_bayrak",
+     "baslik": "Non-GAAP 'kârlılığa dönüş' negatif FAVÖK ile çelişiyor",
+     "aciklama": "Aynı mutabakat tablosunda Ç2 Düzeltilmiş FAVÖK -543 bin $, non-GAAP net kâr ise +5.475 bin $. Amortisman, faiz ve vergi eklenmeden önceki bir ölçü negatifken, bunlar düşüldükten sonra net kârın pozitif olabilmesi yalnızca 14,3 milyon $'lık vergi düzeltmesiyle açıklanabiliyor. Şirket, tam değerleme karşılığı ayrılmış ABD ve Tayvan zararları üzerinden 'yıllık tahmini efektif vergi oranı' uygulayıp kâğıt üzerinde vergi geliri yaratıyor. CEO'nun 'non-GAAP kârlılığa döndük' mesajı muhasebe tercihiyle üretilmiş bir sonuç.",
+     "bolum": "Basın bülteni - Reconciliation of Statements of Operations under GAAP and Non-GAAP",
+     "kanit_alinti": "Adjusted EBITDA | (543 | (3,418",
+     "kaynak_belge": "basin_bulteni",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "kirmizi_bayrak",
+     "baslik": "Digicomm alacağı 6 aylık gelirini aşıyor; bilerek uzatılmış vade",
+     "aciklama": "Digicomm'dan alacak 211,0 milyon $ (toplamın %67,2'si). Bu, 6 aylık Digicomm gelirinin (147,0 milyon $) yaklaşık 1,44 katı ve yaklaşık 260 günlük tahsil süresine denk geliyor. Yönetim, distribütörün stok tutabilmesi için 'normalden uzun' vade tanıdığını yazıyor. Bu durum gelirin nakde dönüşmesini geciktiriyor ve satıcı finansmanı niteliğinde. Ayrıca CATV gelirinin (Ç2: 80,6 milyon $, yıllık +%43,8) kanala stok yüklenmesiyle şişirilmiş olabileceği riskini doğuruyor. Tek bir karşı tarafa, özkaynağın yaklaşık %13'ü kadar kredi riski taşınıyor. Şarta bağlı bir karşılık ya da ek teminat açıklanmıyor.",
+     "bolum": "MD&A - Customer Concentration",
+     "kanit_alinti": "Management has extended longer than typical payment terms to Digicomm in order to ensure Digicomm has adequate inventory on hand to quickly provide products to customers when needed for their network builds.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "kirmizi_bayrak",
+     "baslik": "Ç2'deki pozitif faaliyet nakit akışı ticari borç şişkinliğine dayanıyor",
+     "aciklama": "Metrik tablosuna göre faaliyet nakit akışı Ç1'de -85,4 milyon $ iken Ç2'de +11,6 milyon $'a döndü. 6 aylık toplam ise -73,8 milyon $. Dönüşün ana kaynağı ticari borçlardaki 142,2 milyon $'lık artış: borç bakiyesi 143,9 milyon $'dan 286,1 milyon $'a, yani neredeyse iki katına çıktı. Aynı dönemde stoklar 94,1 milyon $ arttı. Tedarikçi vadesinin uzatılması sürdürülebilir bir nakit kaynağı değil ve tersine döndüğünde faaliyet nakit akışına ters yönde vurur.",
+     "bolum": "MD&A - Operating Activities",
+     "kanit_alinti": "Accounts payable increased by $142.2 million during the six months ended June 30, 2026, compared to an increase of approximately $28.0 million during the six months ended June 30, 2025, an increase of 407.8%.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Stok silmeleri 4 katına çıktı; karşılık serbest bırakılıp silme non-GAAP'ta dışlanıyor",
+     "aciklama": "Ç2'de doğrudan stok silmesi 3,6 milyon $ oldu (Ç2 2025: 0,9 milyon $). Aynı çeyrekte stok değer düşüklüğü karşılığı -1,3 milyon $ ile ters çevrildi, yani karşılık serbest bırakıldı ve bu brüt marja olumlu yansıdı. Silme tutarı ise non-GAAP'ta 'discontinued products' adıyla dışlandı. Hammadde stoku 85,7 milyon $'dan 164,8 milyon $'a (+%92) çıktı. Toplam karşılık ise yalnızca 17,0 milyon $'dan 18,0 milyon $'a yükseldi. Karşılık/brüt stok oranı yaklaşık %8,5'ten yaklaşık %6'ya geriledi. 400G'den 800G ve 1.6T'ye hızlı ürün geçişi sürerken bu oran iyimser görünüyor. Metrik tablosunda stok gün sayısı 182,9 gün, stoklar yıllık %100,8 artmış.",
+     "bolum": "Note 7 - Inventories",
+     "kanit_alinti": "For the three months ended June 30, 2026 and 2025, the direct inventory write-offs related to scrap, discontinued products and damaged inventories were $3.6 million and $0.9 million, respectively.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Yatırım harcaması ve ön ödemeler nakdi eritiyor; bilanço dışı ek taahhütler var",
+     "aciklama": "6 ayda yatırım faaliyetlerine 633,7 milyon $ nakit gitti: 335,1 milyon $ yatırım harcaması ve 289,7 milyon $ ekipman ön ödemesi. Diğer varlıklar 50,9 milyon $'dan 324,0 milyon $'a çıktı. Bu ön ödemeler, ekipman teslim alınıp kullanıma girene kadar amortismana tabi değil ve gelecekte amortisman yükünü artıracak. Metrik tablosuna göre Ç2 SNA -265,3 milyon $, TTM SNA marjı -%99,4, nakit pisti 10,1 ay. Buna ek olarak henüz kayda alınmamış Hightower kiraları ve toplam 102,25 milyon $ tutarındaki bina satın alma opsiyonu ile 'LCC3' tasarım-inşa sözleşmesi, taahhüt yükünü daha da artırıyor.",
+     "bolum": "Note 8 - Property, Plant & Equipment (Capital Equipment Prepayments)",
+     "kanit_alinti": "As of June 30, 2026, other assets, net was $324.0 million, compared to $50.9 million as of December 31, 2025.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "kirmizi_bayrak",
+     "baslik": "SBC'nin nakit maliyeti gider tutarının yaklaşık 7,7 katı",
+     "aciklama": "Çalışanlar adına ödenen vergi stopajı 6 ayda 71,2 milyon $ oldu (geçen yıl 7,8 milyon $). Aynı dönemin SBC gideri 9,3 milyon $. Hisse fiyatı yükseldikçe (PSU'ların hak edildiği tarihteki ortalama fiyat 181,57 $) net share settlement nakit çıkışı sert artıyor. ATM ile toplanan sermayenin yaklaşık %7'si bu yolla çalışanlara aktarıldı. SBC'yi dışlayan non-GAAP ölçüler bu ekonomik maliyeti tamamen gizliyor.",
+     "bolum": "Condensed Consolidated Statements of Cash Flows - Financing activities",
+     "kanit_alinti": "Payments of tax withholding on behalf of employees related to share-based compensation | ( 71,163 | ( 7,821",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Convertible parası içinde; Amazon warrant'ı ek sulandırma ve gelir indirimi potansiyeli taşıyor",
+     "aciklama": "2030 tahvillerinin gerçeğe uygun değeri 445,1 milyon $, defter değeri 129,1 milyon $. Dönüşüm fiyatı yaklaşık 43,31 $ ve hisse fiyatı bunun çok üzerinde. Bu, yaklaşık 2,88 milyon hisselik dönüşüm demek; şirket 15 Ocak 2027'den itibaren tahvilleri geri çağırıp dönüşümü zorlayabilir. Faiz maliyeti düşük görünüyor (efektif oran %1,0) ama asıl maliyet sulandırma. Amazon warrant'ının henüz hak edilmemiş 6,62 milyon hissesi 4 milyar $'lık alımlara bağlı. Bu hisseler hak edildikçe hem gelirden indirim olarak yazılacak hem de sulandırma yaratacak. Ayrıca ASU 2025-04'ün ölçümü değiştirme riski var.",
+     "bolum": "Note 10 - Fair Value / Note 12 - Convertible Senior Notes",
+     "kanit_alinti": "The fair value and carrying amount of our convertible senior notes as of June 30, 2026 was $445.1 million and $129.1 million, respectively.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "olumlu",
+     "baslik": "Yüksek fiyattan ATM ile güçlü likidite",
+     "aciklama": "Mart–Haziran arasında ATM ile 7,78 milyon hisse satıldı; brüt 1,05 milyar $, net 1,03 milyar $. Ortalama satış fiyatı yaklaşık 135 $; Mayıs–Haziran satışları 181–197 $ aralığında. Dönem sonunda nakit ve benzerleri 499,7 milyon $, kullanılmamış kredi limiti 106,5 milyon $, banka borcu 58,9 milyon $. Kısa vadeli iflas riski ortadan kalktı. Ancak sermaye harcaması bu hızla sürerse tampon yaklaşık 2 çeyreklik SNA açığına yetiyor.",
+     "bolum": "MD&A - Liquidity and Capital Resources (ATM Offerings)",
+     "kanit_alinti": "Total | 7,775,523 | 1,049,814 | 20,996 | 1,028,817",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    }
+   ],
+   "yorum_sutunlari": [
+    {
+     "id": "musteri_kapasite",
+     "durum": "sari",
+     "gerekce": "Tezi destekleyen olgular:\n- Veri merkezi geliri yıllık %140 artışla 107,7 milyon $ oldu ve gelirin %56'sına ulaştı.\n- 800G hacmi çeyreklik bazda iki katını aştı.\n- Kapasite ayda yaklaşık 200.000 adet; yıl sonu hedefi ayda 650.000 adet 800G/1.6T.\n- ABD'de 6 ayda 169,0 milyon $ yatırım harcaması yapıldı; ABD'deki uzun vadeli varlıklar 123,7 milyon $'dan 313,0 milyon $'a çıktı. Sugar Land ve Houston'da genişleme sürüyor ve CHIPS Act vergi kredisi potansiyeli var.\n\nTezi zayıflatan olgular:\n- Üretim yerine göre ABD geliri Ç2'de yalnızca 1,3 milyon $ (%0,7). Gelirin 108,4 milyon $'ı Tayvan, 82,2 milyon $'ı Çin üretimi. 'ABD içi üretim avantajı' henüz gelire yansımıyor, şimdilik bir vaat.\n- İlk üç müşteri gelirin %92'si; en büyük müşteri hyperscaler değil, CATV distribütörü Digicomm.\n- Finansman büyük ölçüde hisse ihracına dayanıyor: 1,03 milyar $ ATM, seyreltilmiş hisselerde yıllık +%43,7. Parası içindeki convertible ve Amazon warrant'ı ek sulandırma yaratıyor.\n- Müşterilerle 1 yıldan uzun alım taahhüdü yok.\n\nKapasite hikâyesi güçlü, ancak yoğunlaşma, sermaye yoğunluğu ve sulandırma nedeniyle durum sarı.",
+     "kanit_alinti": "The Company expects to expand manufacturing operations in the U.S. and Taiwan during 2026 and 2027 primarily to support laser diode production and production of 800G and 1.6T transceivers.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    }
+   ],
+   "seytanin_avukati": {
+    "en_guclu_arguman": "AAOI kârlılığa geçmiyor; kârlılık görüntüsü muhasebe tercihleriyle üretiliyor ve büyüme hissedarların parasıyla satın alınıyor.\n\nKâr tarafı:\n- Ç2'deki 'non-GAAP kâr' tamamen 14,3 milyon $'lık kâğıt üzerinde vergi düzeltmesinden geliyor.\n- Düzeltilmiş FAVÖK negatif (-0,5 milyon $), GAAP faaliyet zararı yıllık %55 büyüyerek 24,7 milyon $ oldu.\n- Gelir %86 artarken brüt marj %30,3'ten %27,7'ye düştü. Ölçek ekonomisi değil, marj erimesi var.\n\nNakit tarafı:\n- Ç2'de 265 milyon $ nakit yakıldı.\n- Pozitif görünen faaliyet nakit akışı, tedarikçilere ödemelerin ertelenmesiyle (ticari borçlar +142 milyon $) sağlandı.\n- En büyük müşteri Digicomm'a verilen uzun vadeler yüzünden 211 milyon $'lık alacak, 6 aylık Digicomm gelirinden fazla.\n\nSermaye tarafı:\n- 6 ayda 1,03 milyar $ hisse satıldı, seyreltilmiş hisse sayısı yıllık %44 arttı.\n- SBC'nin nakit stopaj maliyeti 71 milyon $.\n- CEO yeni 10b5-1 satış planları kurdu.\n\nÇ3 için %33–51'lik çeyreklik büyüme vaadi, henüz inşa hâlindeki kapasiteye ve üç müşteriye (gelirin %92'si) bağlı. Tek bir hyperscaler sipariş kaydırması ya da Digicomm'un stok eritmesi hâlinde, 324 milyon $'lık ön ödeme ve 169 milyon $'lık yapılmakta olan yatırım atıl kapasiteye dönüşür. Şirketin geçmişinde müşteri kaybı sonrası uzun zarar dönemleri var; birikmiş zarar 527 milyon $. Tarihsel olarak sermaye getirisi bu kadar zayıf bir şirkette, mevcut fiyat bu risklerin hiçbirini iskonto etmiyor.",
+    "destekleyen_olgular": [
+     {
+      "olgu": "Ç2 2026 SNA -265,3 milyon $; TTM SNA marjı -%99,37.",
+      "kaynak": "SEC XBRL: fcf, fcf_margin_ttm",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Faaliyet marjı -%12,88 (Ç1 2026: -%8,6); brüt marj %27,72'ye geriledi.",
+      "kaynak": "SEC XBRL: operating_margin, gross_margin",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Seyreltilmiş hisse sayısı yıllık %43,68 arttı (81,568 milyon).",
+      "kaynak": "SEC XBRL: diluted_shares_yoy",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Stok yıllık %100,76 arttı; stok gün sayısı 182,9.",
+      "kaynak": "SEC XBRL: inventory_yoy, dio",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Digicomm'dan 211,0 milyon $ alacak (toplamın %67,2'si); bu müşteriye bilerek uzun vade tanınıyor.",
+      "kaynak": "10-Q/10-K: Note 10 ve MD&A - Customer Concentration",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "İlk üç müşteri Ç2 gelirinin %42 / %26 / %24'ü; ilk 10 müşteri %99.",
+      "kaynak": "10-Q/10-K: Note 10 - Fair Value of Financial Instruments",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Çalışan vergi stopajı ödemesi 6 ayda 71,2 milyon $; SBC gideri 9,3 milyon $.",
+      "kaynak": "10-Q/10-K: Condensed Consolidated Statements of Cash Flows",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "CEO, Mayıs 2026'da toplam 224.000 hisselik iki ayrı 10b5-1 satış planı kurdu.",
+      "kaynak": "10-Q/10-K: Part II Item 5 - Other Information",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Üretim yerine göre ABD geliri Ç2'de yalnızca 1,339 milyon $.",
+      "kaynak": "10-Q/10-K: Note 17 - Segment and Geographic Information",
+      "kaynak_dogrulandi": true
+     }
+    ],
+    "tezin_zayif_halkasi": "Tezin iki dayanağı henüz kanıtlanmış değil. 'ABD içi üretim avantajı' gelire yansımıyor: ABD'de üretilen gelir %1'in altında. 'Kârlılığa geçiş' ise GAAP'ta değil, yalnızca vergi düzeltmeli non-GAAP'ta görünüyor. Kısacası tez, kapasitenin zamanında devreye girmesine, hyperscaler siparişlerinin 12 ay boyunca kesintisiz sürmesine ve sulandırmanın yavaşlamasına aynı anda bağlı. Uzun vadeli alım taahhüdü olmadığı (tüm sözleşmeler 1 yıldan kısa) için bu varsayımlardan herhangi biri bozulursa büyük sabit maliyet ve ön ödeme tabanı hızla zarara döner.",
+    "argumani_curutecek_gostergeler": [
+     "GAAP faaliyet kârının pozitife dönmesi ve Düzeltilmiş FAVÖK'ün non-GAAP vergi düzeltmesi olmadan anlamlı ölçüde pozitif olması",
+     "Ç3 gelirinin 255–290 milyon $ aralığında ya da üstünde gerçekleşmesi ve bu sırada brüt marjın %30'un üzerine çıkması",
+     "Digicomm alacağının ve toplam tahsil süresinin belirgin düşmesi; ticari borç artışı olmadan faaliyet nakit akışının pozitif olması",
+     "ABD üretim tesislerinde 800G/1.6T seri üretimine geçilmesi ve üretim yerine göre ABD gelirinin görünür biçimde artması",
+     "İlk müşteri payının %40'ın altına inmesi ve yeni hyperscaler müşterilerin açıklanması",
+     "Yeni ATM programı açılmaması ve seyreltilmiş hisse artışının yavaşlaması"
+    ]
+   }
+  }
+ }
+}

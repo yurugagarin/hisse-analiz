@@ -18,13 +18,13 @@
   "bayrak_accn": "0001045810-26-000075"
  },
  "META": {
-  "genel": "yesil",
+  "genel": "sari",
   "sutun": {
    "reklam_buyumesi": "yesil",
    "marj": "yesil",
    "capex_nakit": "yesil",
    "sulandirma": "yesil",
-   "ai_getirisi": "veri_yok"
+   "ai_getirisi": "sari"
   },
   "cikis": [],
   "kademe": 0,
@@ -39,13 +39,13 @@
   "bayrak_accn": "0001628280-26-050705"
  },
  "NOW": {
-  "genel": "yesil",
+  "genel": "sari",
   "sutun": {
    "buyume": "yesil",
    "gorunurluk": "yesil",
    "nakit": "yesil",
    "sbc": "yesil",
-   "ai_ve_yenileme": "veri_yok"
+   "ai_ve_yenileme": "sari"
   },
   "cikis": [],
   "kademe": 25,
@@ -64,7 +64,7 @@
    "faaliyet_kari": "kirmizi",
    "sulandirma": "kirmizi",
    "stok": "yesil",
-   "musteri_kapasite": "veri_yok"
+   "musteri_kapasite": "sari"
   },
   "cikis": [
    "pist",
@@ -87,7 +87,7 @@
    "karlilik": "sari",
    "pist": "yesil",
    "sulandirma": "kirmizi",
-   "rekabet": "veri_yok"
+   "rekabet": "sari"
   },
   "cikis": [
    "asiri_sulandirma"
@@ -107,7 +107,7 @@
    "karlilik": "yesil",
    "pist": "sari",
    "sulandirma": "sari",
-   "rekabet": "veri_yok"
+   "rekabet": "sari"
   },
   "cikis": [],
   "kademe": 35,
@@ -122,7 +122,7 @@
    "marj": "yesil",
    "nakit": "yesil",
    "sulandirma": "kirmizi",
-   "rekabet": "veri_yok"
+   "rekabet": "sari"
   },
   "cikis": [
    "asiri_sulandirma"

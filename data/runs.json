@@ -1,5 +1,223 @@
 [
  {
+  "id": "20260926T121501Z",
+  "tur": "offline_yeniden_hesap",
+  "baslangic": "2026-09-26T12:15:01+00:00",
+  "bitis": "2026-09-26T12:15:01+00:00",
+  "hisseler": [
+   "AAOI",
+   "CEG",
+   "IONQ",
+   "META",
+   "NOW",
+   "NVDA",
+   "ORCL",
+   "RGTI"
+  ],
+  "finnhub_aktif": false,
+  "sec_aktif": false,
+  "sec_user_agent_tanimli": true,
+  "sec_istek": 0,
+  "claude": null,
+  "bekleyen_bilanco": [
+   "RGTI"
+  ],
+  "adimlar": {
+   "bilanco_yorum": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "hareketler": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "tez": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "kural": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "sinyal": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "karne": {
+    "ok": 1,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "haftalik_derleme": {
+    "ok": 1,
+    "hata": 0,
+    "sure_sn": 0.0
+   }
+  },
+  "hatalar": [],
+  "argumanlar": {
+   "offline": true,
+   "force_filings": false,
+   "tickers": ""
+  }
+ },
+ {
+  "id": "20260926T115928Z",
+  "tur": "claude",
+  "baslangic": "2026-09-26T11:59:28+00:00",
+  "bitis": "2026-09-26T12:15:01+00:00",
+  "gorevler": {
+   "bilanco": "META,NOW,AAOI,IONQ,ORCL,CEG",
+   "sali_raporu": false
+  },
+  "model": "claude-opus-5-5",
+  "claude_aktif": true,
+  "claude": {
+   "cagri": 6,
+   "input_tokens": 14,
+   "output_tokens": 103884,
+   "cache_read": 171708,
+   "cache_write": 576116,
+   "web_search": 0,
+   "api_esdegeri_usd": 6.721,
+   "sure_sn": 923.1
+  },
+  "hatalar": []
+ },
+ {
+  "id": "20260926T115816Z",
+  "tur": "gunluk_python",
+  "baslangic": "2026-09-26T11:58:16+00:00",
+  "bitis": "2026-09-26T11:59:24+00:00",
+  "hisseler": [
+   "AAOI",
+   "CEG",
+   "IONQ",
+   "META",
+   "NOW",
+   "NVDA",
+   "ORCL",
+   "RGTI"
+  ],
+  "finnhub_aktif": true,
+  "sec_aktif": true,
+  "sec_user_agent_tanimli": true,
+  "sec_istek": 8,
+  "claude": null,
+  "bekleyen_bilanco": [
+   "META",
+   "NOW",
+   "AAOI",
+   "IONQ",
+   "ORCL",
+   "CEG",
+   "RGTI"
+  ],
+  "adimlar": {
+   "fiyat": {
+    "ok": 14,
+    "hata": 0,
+    "sure_sn": 40.7
+   },
+   "cik": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "sec_submissions": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.1
+   },
+   "bilanco_xbrl": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "bilanco_yorum": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "bilanco_takvimi": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 5.5
+   },
+   "insider_form4": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "finnhub_insider": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 9.1
+   },
+   "insider_analiz": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "finnhub_haber": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 8.5
+   },
+   "google_news": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 3.1
+   },
+   "baslik_arsivi": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "hareketler": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "tez": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "kural": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "sinyal": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "karne": {
+    "ok": 1,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "haftalik_derleme": {
+    "ok": 1,
+    "hata": 0,
+    "sure_sn": 0.0
+   }
+  },
+  "hatalar": [],
+  "argumanlar": {
+   "offline": false,
+   "force_filings": false,
+   "tickers": ""
+  }
+ },
+ {
   "id": "20260926T115713Z",
   "tur": "offline_yeniden_hesap",
   "baslangic": "2026-09-26T11:57:13+00:00",

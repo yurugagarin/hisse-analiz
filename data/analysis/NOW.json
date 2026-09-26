@@ -1,0 +1,247 @@
+{
+ "son": {
+  "dosya": {
+   "accn": "0001373715-26-000076",
+   "form": "10-Q",
+   "donem_sonu": "2026-06-30",
+   "tarih": "2026-07-23",
+   "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+   "index_url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/0001373715-26-000076-index.htm",
+   "kesildi": false,
+   "karakter": 146196
+  },
+  "basin_bulteni": [],
+  "onceki_basin_bulteni": [],
+  "model": "claude-opus-5-5",
+  "guncelleme": "2026-09-26T12:03:44+00:00",
+  "analiz": {
+   "ozet": "NOW 2026 2. çeyrek (10-Q) sonuçlarında gelir büyümesi hızlandı ama kârlılık belirgin şekilde bozuldu. Toplam gelir 3.987 milyon $ ile yıllık %24 arttı. Abonelik geliri %25 büyüdü. Aynı dönemde GAAP faaliyet kârı 358 milyon $'dan 162 milyon $'a düştü (-%55), faaliyet marjı %4,06'ya indi. Brüt marj %70,68'e geriledi; 8 çeyrek önce %79,12 idi. Abonelik brüt marjı %80'den %73'e düştü.\n\nBozulmanın ana nedenleri şunlar:\n- Armis (7,6 milyar $), Veza (1,2 milyar $) ve Moveworks (2,4 milyar $) alımlarından gelen maddi olmayan duran varlık amortismanı: çeyreklik 219 milyon $, geçen yıl 25 milyon $.\n- Üçüncü taraf bulut maliyetleri.\n- Hisse bazlı ödemedeki (SBC) artış: 655 milyon $, yıllık +%31.\n\nNet kâr 298 milyon $ oldu. Bu rakamın önemli bir kısmı, stratejik yatırımlardaki Level 3 kapsamında 273 milyon $'lık gerçekleşmemiş yukarı yönlü değer düzeltmesinden geliyor. Bu kalem olmasaydı vergi öncesi kâr, faaliyet kârı ile faiz geliri ve giderinin toplamına yakın olurdu (~166 milyon $).\n\nŞirketin non-GAAP faaliyet kârı 1.173 milyon $ (+%23). GAAP ile arasındaki 1.011 milyon $'lık fark SBC, alım amortismanı, alım maliyetleri ve iki dönemdir süren kıdem tazminatı kalemlerinden oluşuyor. Non-GAAP serbest nakit akışı (FCF) tanımı ayrıca 297 milyon $ alım maliyetini geri ekliyor.\n\nBilanço net nakitten yaklaşık net borca döndü:\n- Toplam borç 1,5 milyar $'dan yaklaşık 7,5 milyar $'a çıktı.\n- Bunun 2,1 milyar $'ı ortalama 81 gün vadeli ticari senet.\n- Aynı yarıyılda yaklaşık 2,2 milyar $ geri alım yapıldı.\n\nMüşteri tutma göstergeleri güçlü ama bunlar şirketin kendi tanımladığı metrikler:\n- Yenileme oranı %98.\n- Yıllık sözleşme değeri (ACV) 5 milyon $'ın üzerindeki müşteri sayısı 533'ten 658'e çıktı.\n\nRPO büyümesi %21'e yavaşladı ve ilk kez gelir büyümesinin (%24) altına düştü. RPO'ya satın alınan sipariş birikimi de dahil. Şirket pro forma rakam vermediği için organik büyüme ölçülemiyor.\n\nTek bir ABD federal kanal ortağı/sistem entegratörü gelirin %13'ünü oluşturuyor. Bu müşteri, kamu sektörüne ilişkin açık bir Adalet Bakanlığı (DOJ) soruşturmasıyla birlikte düşünüldüğünde yoğunlaşma riski taşıyor.\n\nBasın bültenleri mevcut değil. Bu yüzden guidance karşılaştırması yapılamadı ve Now Assist/AI katkısına dair nicel veri yok.",
+   "non_gaap": {
+    "aciklama_var": true,
+    "duzeltmeler": [
+     {
+      "kalem": "Stock-based compensation",
+      "tutar_metni": "Q2 2026: 655 milyon $ (Q2 2025: 499 milyon $); 6A: 1.213 milyon $",
+      "degerlendirme": "kari_iyi_gosteriyor",
+      "gerekce": "SBC gelirin yaklaşık %16'sı ve her çeyrek tekrarlanıyor. Metrik tablosuna göre son 12 ayda (TTM) gelire oranı %14,83. Bu kalem, GAAP faaliyet kârının (162 milyon $) 4 katından fazla. Armis kapsamında 5,9 milyon RSU ve 2,3 milyon opsiyon devralındı, 3 yılda tanınacak 4,9 milyar $ gider henüz kaydedilmedi. Bu yüzden maliyet önümüzdeki dönemde de sürecek. Hisse fiyatı düştüğü için aynı dolar tutarı daha fazla hisse demek. Dışlanması ekonomik maliyeti gizliyor.",
+      "kanit_alinti": "| Stock-based compensation | 655 | 499 | 31 | 1,213 | 969 | 25 |",
+      "kaynak_belge": "10-Q/10-K",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Amortization of purchased intangibles",
+      "tutar_metni": "Q2 2026: 219 milyon $ (Q2 2025: 25 milyon $); 6A: 296 milyon $",
+      "degerlendirme": "belirsiz",
+      "gerekce": "Nakit dışı ve muhasebe kaynaklı bir kalem, dışlanması sektörde yaygın. Ancak şirket 12 ayda Logik, Moveworks, Veza ve Armis'i satın aldı, yani satın almalar artık yapısal bir büyüme aracı. Alınan şirketlerin geliri non-GAAP rakamlara girerken teknoloji alım maliyeti (5-6 yıl ömürlü geliştirilmiş teknoloji) dışarıda kalıyor. Bu asimetri non-GAAP marjı şişiriyor. Gelecek amortisman: 2027'de 776 milyon $.",
+      "kanit_alinti": "| Amortization of purchased intangibles | 219 | 25 | NM | 296 | 46 | NM |",
+      "kaynak_belge": "10-Q/10-K",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Business combination and other related costs (kilit çalışan ertelenmiş tazminatı dahil)",
+      "tutar_metni": "Q2 2026: 75 milyon $; 6A: 118 milyon $ (FCF'de 6A: 297 milyon $ geri eklendi)",
+      "degerlendirme": "kari_iyi_gosteriyor",
+      "gerekce": "Tanım \"compensation expense\" kalemini de kapsıyor. Kilit çalışanlara verilen ertelenmiş tazminat (6A: 162 milyon $) peşin gider olarak aktifleştiriliyor ve Ar-Ge'de itfa ediliyor. Bu tutar fiilen, alınan şirketlerin çalışanlarını elde tutma maliyeti, yani bir faaliyet gideri. Arka arkaya yapılan alımlar nedeniyle 'tek seferlik' niteliği de zayıf.",
+      "kanit_alinti": "aggregate deferred compensation for certain key employees associated with the 2026 acquisitions was $91 million and $162 million for the three and six months ended June 30, 2026, respectively",
+      "kaynak_belge": "10-Q/10-K",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Severance costs",
+      "tutar_metni": "Q2 2026: 62 milyon $ (Q2 2025: 29 milyon $); 6A: 80 milyon $",
+      "degerlendirme": "kari_iyi_gosteriyor",
+      "gerekce": "Kıdem tazminatı geçen yıl da vardı ve bu yıl ikiye katlandı (+%114). Art arda yapılan yeniden yapılanma giderinin dışlanması, olağan işgücü optimizasyonunu non-GAAP'tan temizliyor.",
+      "kanit_alinti": "| Severance costs | 62 | 29 | 114 | 80 | 29 | 176 |",
+      "kaynak_belge": "10-Q/10-K",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Impairment of assets",
+      "tutar_metni": "Q2 2026: 0; Q2 2025: 30 milyon $",
+      "degerlendirme": "makul",
+      "gerekce": "Bu çeyrekte sıfır. Karşılaştırma dönemindeki 30 milyon $'lık değer düşüklüğü nakit dışı ve tek seferlik görünüyor.",
+      "kanit_alinti": "| Impairment of assets | — | 30 | (100 | %) | — | 30 | (100 | %) |",
+      "kaynak_belge": "10-Q/10-K",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Non-GAAP FCF: business combination and other related costs geri eklemesi",
+      "tutar_metni": "6A 2026: 297 milyon $ (6A 2025: 14 milyon $)",
+      "degerlendirme": "kari_iyi_gosteriyor",
+      "gerekce": "GAAP faaliyet nakit akışı %6 düştü (2.257 milyon $'a karşı 2.393 milyon $). Non-GAAP FCF ise 297 milyon $'lık geri ekleme sayesinde +%14 büyümüş görünüyor. Satın alma kaynaklı gerçek nakit çıkışları FCF'den çıkarılıyor. Oysa satın almaların nakit bedeli (8,8 milyar $) FCF'nin çok üzerinde.",
+      "kanit_alinti": "| Business combination and other related costs | 297 | 14 | NM |",
+      "kaynak_belge": "10-Q/10-K",
+      "kanit_alinti_dogrulandi": true
+     }
+    ],
+    "genel_yorum": "Non-GAAP faaliyet kârı 1.173 milyon $, GAAP faaliyet kârı 162 milyon $. Bu 7,2 katlık fark, kazanç kalitesi açısından ciddi bir uyarı. Farkın yaklaşık %65'i SBC'den (655 milyon $) oluşuyor ve bu tekrarlayan bir maliyet. Satın alma amortismanı ile alım maliyetleri, stratejik satın almalar sürekli hale geldiği için tek seferlik kalem gibi değerlendirilmemeli. Kıdem tazminatı iki dönemdir süren bir kalem. Non-GAAP FCF tanımı da GAAP faaliyet nakit akışındaki düşüşü alım maliyetlerini geri ekleyerek büyümeye çeviriyor. Ayrıca non-GAAP faaliyet kârı dışında kalan 273 milyon $'lık stratejik yatırım kazancı, GAAP net kârı destekliyor. Yani GAAP net kâr, faaliyet performansından daha iyi görünüyor."
+   },
+   "musteri_yogunlasmasi": {
+    "aciklama_var": true,
+    "detay": "Tek bir ABD federal kanal ortağı/sistem entegratörü toplam gelirin %13'ünü (geçen yıl %11) ve ticari alacakların %12'sini oluşturuyor. Yoğunlaşma artıyor. Doğrudan satış payı %78'den %75'e düştü, yani kanal/ortak bağımlılığı büyüyor. Kamu sektörü tarafında ise Army CIO'nun işe alınmasıyla ilgili bir DOJ soruşturması sürüyor ve şirket sonucu öngöremediğini söylüyor. Federal kanalın bu kadar büyük payı ile düzenleyici risk birlikte düşünülmeli. Federal sözleşmelerin 12 aylık olması ve 3. çeyrekte yoğunlaşması RPO/cRPO'da dalgalanma yaratıyor.",
+    "bolum": "Note 2 - Summary of Significant Accounting Policies (Concentration of Credit Risk and Significant Customers)",
+    "kanit_alinti": "This customer represented 13% of our total revenues for each of the three and six months ended June 30, 2026 and 11% of our total revenues for each of the three and six months ended June 30, 2025.",
+    "etiket": "dikkat",
+    "kanit_alinti_dogrulandi": true
+   },
+   "organik_buyume": {
+    "satin_alma_var": true,
+    "detay": "2026'nın ilk yarısında iki büyük alım yapıldı: Armis (20 Nisan 2026, yaklaşık 7,6 milyar $ nakit) ve Veza (2 Mart 2026, yaklaşık 1,2 milyar $). Bunların öncesinde Moveworks (Aralık 2025, 2,4 milyar $) ve Logik.io (Mayıs 2025, 506 milyon $) alınmıştı. Şerefiye 3.578 milyon $'dan 9.837 milyon $'a çıktı. Satın almalar için nakit çıkışı 8.776 milyon $. Şirket, alımların etkisinin önemsiz olduğunu söyleyerek pro forma rakam vermiyor ve alınan şirketlerin gelir katkısını ayrıca açıklamıyor. Gelir büyümesi 1. çeyrekteki %22,09'dan 2. çeyrekte %24,01'e hızlandı ve bu hızlanma Armis'in şirkete katılmasıyla aynı döneme denk geliyor. Organik büyüme ayrıştırılamıyor. Kur da büyümeye katkı yaptı: 6 ayda abonelik gelirine olumlu etkisi 138 milyon $. Kendi sunucusunda barındırılan (self-hosted) yazılımlarda peşin tanınan gelir 109 milyon $'dan 149 milyon $'a çıktı. Yani manşet büyümenin bir kısmı satın alma, kur ve peşin tanınan gelirden geliyor.",
+    "bolum": "Note 5 - Business Combinations",
+    "kanit_alinti": "Pro forma financial results related to the 2026 acquisitions have not been presented for the three and six months ended June 30, 2026 and 2025 because the effects of these acquisitions were not material to our consolidated results of operations.",
+    "kanit_alinti_dogrulandi": true
+   },
+   "guidance": {
+    "onceki_guidance": "veri yok (önceki çeyreğin basın bülteni sağlanmadı)",
+    "onceki_alinti": "(bulunamadı)",
+    "gerceklesen": "Q2 2026 toplam gelir 3.987 milyon $ (+%24). Abonelik geliri 3.877 milyon $ (+%25). Non-GAAP faaliyet kârı 1.173 milyon $. RPO 29,0 milyar $, cRPO %46, ikisi de +%21.",
+    "gerceklesen_alinti": "As of June 30, 2026, our RPO was $29.0 billion, of which 46% represented cRPO. RPO and cRPO both increased by 21% compared to June 30, 2025.",
+    "sonuc": "karsilastirilamaz",
+    "yeni_guidance": "Bu çeyreğin basın bülteni olmadığı için sayısal guidance yok. 10-Q'da yalnızca nitel beklentiler var: 2026'da abonelik brüt kâr marjının düşmesi, profesyonel hizmetler zararının büyümesi, SBC'nin mutlak tutarda artması ve satış-pazarlama giderlerinin gelire oranla hafifçe azalması bekleniyor.",
+    "yeni_alinti": "We expect our subscription gross profit percentage to decrease for the year ending December 31, 2026 compared to the year ended December 31, 2025, primarily due to the ongoing growth of our third-party cloud services usage and incremental amortization of intangible assets acquired.",
+    "onceki_alinti_dogrulandi": false,
+    "gerceklesen_alinti_dogrulandi": true,
+    "yeni_alinti_dogrulandi": true
+   },
+   "dipnot_bulgulari": [
+    {
+     "etiket": "kirmizi_bayrak",
+     "baslik": "Net kârı Level 3 stratejik yatırım değerlemeleri taşıyor",
+     "aciklama": "2. çeyrekte faaliyet kârı 162 milyon $, vergi öncesi kâr 438 milyon $. Aradaki farkın büyük kısmı, halka açık olmayan şirketlerdeki yatırımlara 'ölçüm alternatifi' yöntemiyle yapılan 273 milyon $'lık gerçekleşmemiş yukarı yönlü düzeltmeden geliyor. Değerleme Level 3 kapsamında ve yönetim yargısına dayanıyor; nakit karşılığı yok. Nakit akış tablosunda bu tutar faaliyet nakit akışından düşülüyor (6A: -360 milyon $). Bu kalem olmasaydı çeyreklik net kâr belirgin biçimde daha düşük olurdu. Tekrarlanacağı da öngörülemez.",
+     "bolum": "Note 3 - Investments (Strategic Investments)",
+     "kanit_alinti": "During the three and six months ended June 30, 2026, we recorded net upward adjustments of $273 million and $360 million, respectively. The net adjustments made during the three and six months ended June 30, 2025 were immaterial.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "kirmizi_bayrak",
+     "baslik": "Abonelik brüt marjında yapısal erozyon",
+     "aciklama": "Abonelik brüt marjı %80'den %73'e düştü. Abonelik maliyeti %65 arttı, abonelik geliri ise %25. Bunun tek nedeni amortisman değil: üçüncü taraf bulut taahhüt maliyetleri +63 milyon $, altyapı amortismanı +63 milyon $ ve personel maliyetleri +115 milyon $ arttı. Nakit bazlı marj da bozuluyor. Bulut sağlayıcılarına iptal edilemez taahhütler 2030'da 2,9 milyar $'a çıkıyor. Buna ek olarak bir BT ekipman sağlayıcısına 2028'e kadar yaklaşık 1,4 milyar $ ödenecek. AI iş yüklerinin maliyet yapısı marjı kalıcı olarak düşürebilir.",
+     "bolum": "Item 2 - MD&A: Cost of Revenues and Gross Profit Percentage; Note 17 - Commitments and Contingencies",
+     "kanit_alinti": "we have remaining payments under these agreements of approximately $324 million for the remainder of fiscal 2026, $401 million in fiscal 2027, $573 million in fiscal 2028, $704 million in fiscal 2029 and $2.9 billion in 2030.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Net nakitten net borca geçiş; kısa vadeli ticari senede dayanan finansman",
+     "aciklama": "Borç toplamı 1.491 milyon $'dan 7.517 milyon $'a çıktı: 5.435 milyon $ uzun vadeli, 2.082 milyon $ kısa vadeli. Nakit ve menkul kıymetler toplamı 10.055 milyon $'dan 6.707 milyon $'a indi. 2,1 milyar $'lık ticari senedin ortalama kalan vadesi 81 gün, yani sürekli çevrilmesi gerekiyor. Faiz gideri 6 milyon $'dan 66 milyon $'a, faiz geliri ise 116 milyon $'dan 70 milyon $'a geriledi. Ayrıca Note 11 Term Loan'ı 'unsecured', MD&A ise 'secured' olarak tanımlıyor. Bu iç tutarsızlık açıklama kalitesi açısından dikkat çekici.",
+     "bolum": "Note 11 - Debt",
+     "kanit_alinti": "As of June 30, 2026 we have $2.1 billion of commercial paper outstanding, with a weighted-average interest rate of 3.98% and a weighted-average remaining term of 81 days.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Efektif vergi oranı %18'den %32'ye çıktı: SBC kaynaklı vergi eksiği",
+     "aciklama": "Geçen yıl hisse bazlı ödemeler aşırı vergi avantajı sağlıyordu. Bu yıl vergi eksiği (shortfall) yaratıyorlar. Bu, hisse fiyatının hakların verildiği tarihteki fiyatın altına düştüğünü gösteriyor. Nitekim ASR ortalama fiyatı 107,97 $; Moveworks hisseleri 153,04 $'dan ihraç edilmişti. Kaliforniya'daki değerleme karşılığının çözülmesi vergi yükünü kısmen hafifletti. Ancak çözülen bu karşılık da tek seferlik bir yardım. Armis entegrasyonunun vergi oranında dalgalanma yaratacağı belirtiliyor.",
+     "bolum": "Note 16 - Provision for Income Taxes",
+     "kanit_alinti": "| Effective tax rate | 32% | 18% | 31% | 18% |",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Kendi sunucusunda barındırılan yazılımda peşin tanınan gelir artıyor",
+     "aciklama": "Bu yazılımlarda satış bedelinin önemli bir kısmı teslimde tek seferde gelire yazılıyor ve bu tutar RPO'da görünmüyor. Q2'de 149 milyon $ ile yıllık +%37 arttı ve abonelik gelirindeki 764 milyon $'lık artışın yaklaşık 40 milyon $'ını oluşturdu. Oranlı (ratable) tanınan gelire göre daha oynak ve düşük kaliteli bir büyüme kaynağı.",
+     "bolum": "Item 2 - MD&A: Revenues",
+     "kanit_alinti": "Included in subscription revenues is $149 million and $109 million of revenues recognized upfront from the delivery of software associated with self-hosted offerings during the three months ended June 30, 2026 and 2025, respectively",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "RPO büyümesi yavaşlıyor ve satın alınan sipariş birikimini de içeriyor",
+     "aciklama": "RPO büyümesi 2024 3. çeyrekteki %35,42'den %21,34'e geriledi ve gelir büyümesinin (%24,01) altına düştü. Bu, ileriye dönük görünürlüğün daraldığını gösteriyor. Üstelik bu %21'lik rakam Armis, Veza ve Moveworks'ün devralınan sipariş birikimi ve ertelenmiş gelirini de içeriyor. Armis ve Veza'dan 155 milyon $ ertelenmiş gelir devralındı; sipariş birikimi maddi olmayan varlığı ise 70 milyon $. Organik RPO büyümesi daha düşük olabilir.",
+     "bolum": "Note 10 - Deferred Revenue and Performance Obligations",
+     "kanit_alinti": "| rpo_yoy | 35.42 | 23.89 | 24.86 | 28.49 | 24.62 | 26.46 | 25.34 | 21.34 |",
+     "kaynak_belge": "metrik_tablosu",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Kamu sözleşmesine ilişkin DOJ soruşturması hâlâ açık",
+     "aciklama": "Army CIO'nun işe alınmasıyla ilgili çıkar çatışması soruşturmasında DOJ süreci devam ediyor. Ordunun askıya alma ve men etme ofisi de bilgilendirilmiş durumda. Gelirin %13'ü tek bir federal kanal ortağından geldiği için olası bir ceza ya da ihale dışı bırakılma etkisi orantısız olabilir. Şirket herhangi bir karşılık ayırmamış ve sonucu öngöremediğini belirtiyor.",
+     "bolum": "Note 17 - Commitments and Contingencies (Other)",
+     "kanit_alinti": "The Company cannot predict the timing, outcome or possible impact of the investigation.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "olumlu",
+     "baslik": "Yenileme oranı ve büyük müşteri sayısı güçlü",
+     "aciklama": "ACV bazlı yenileme oranı %98'de sabit kaldı. Yıllık sözleşme değeri 5 milyon $'ın üzerindeki müşteri sayısı 533'ten 658'e çıktı (+%23). Ancak iki çekince var. Birincisi, yenileme oranı fiyat ve kullanıcı değişimlerini dışlıyor; ACV'sinin çoğunluğunu kaybetmeyen küçülmeleri de 'kayıp müşteri' saymıyor. İkincisi, müşteri sayısı satın almalar için yeniden düzenleniyor.",
+     "bolum": "Item 2 - MD&A: Key Business Metrics",
+     "kanit_alinti": "We had 658 and 533 customers with ACV greater than $5 million as of June 30, 2026 and 2025, respectively.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    }
+   ],
+   "yorum_sutunlari": [
+    {
+     "id": "ai_ve_yenileme",
+     "durum": "sari",
+     "gerekce": "Müşteri tutma tarafı tezi destekliyor: yenileme oranı %98, 5 milyon $+ ACV'li müşteri sayısı 658 (+%23) ve abonelik geliri +%25. Ancak AI monetizasyonu tarafı belgelerle kanıtlanamıyor. 10-Q'da Now Assist ya da AI ürünlerinin gelir katkısına dair hiçbir sayısal açıklama yok ve basın bültenleri eksik. Alınan şirketlerin katkısı pro forma verilmediği için %24'lük büyümenin ne kadarının organik olduğu belirsiz. RPO büyümesi %21'e yavaşladı. Abonelik brüt marjı %73'e düştü ve üçüncü taraf bulut maliyeti arttı. Bu tablo, AI satışlarının kârlılığı düşük bir maliyet yapısıyla geldiğine işaret ediyor olabilir.",
+     "kanit_alinti": "Our renewal rate was 98% for each of the three and six months ended June 30, 2026 and 2025.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    }
+   ],
+   "seytanin_avukati": {
+    "en_guclu_arguman": "Tezin iki dayanağı var: yaklaşık %20 organik büyüme ve güçlü FCF'nin SBC'ye rağmen değer yaratması. Bu çeyrek ikisini de aşındırıyor. Büyüme artık kısmen satın alınıyor: 12 ayda yaklaşık 11,7 milyar $'lık alım yapıldı, şerefiye neredeyse üç katına çıktı ve pro forma rakam yok. RPO büyümesi, devralınan sipariş birikimine rağmen %21'e yavaşladı ve gelir büyümesinin altına düştü. GAAP faaliyet marjı %4'e, abonelik brüt marjı %73'e çöktü. Yönetim de 2026'da marjın daha da düşeceğini söylüyor. Önümüzdeki dönemde yılda 700 milyon $'ın üzerinde amortisman, 2030'a kadar büyüyen bulut taahhütleri ve 4,9 milyar $'lık henüz tanınmamış SBC yükü var. Net kâr bu çeyrekte ancak 273 milyon $'lık Level 3 değerleme kazancıyla korundu. Bilanço net nakitten net borca döndü: yaklaşık 2,2 milyar $'lık geri alım da borçla finanse edildi ve 2,1 milyar $ ticari senet her 81 günde bir çevrilmek zorunda. GAAP faaliyet nakit akışı 6 ayda %6 geriledi. Non-GAAP FCF'deki +%14 ise satın alma maliyetlerinin geri eklenmesinin sonucu. Gelirin %13'ü, DOJ soruşturmasının gölgesindeki tek bir federal kanal ortağından geliyor. Vergi hesabındaki SBC eksiği, çalışan hisse ödüllerinin su altında kaldığını gösteriyor. Yetenekleri elde tutmak için daha fazla hisse ödülü, dolayısıyla daha fazla seyrelme gerekebilir.",
+    "destekleyen_olgular": [
+     {
+      "olgu": "Faaliyet marjı 1 yılda %11,14'ten %4,06'ya, brüt marj %77,48'den %70,68'e düştü.",
+      "kaynak": "SEC XBRL: operating_margin, gross_margin",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "RPO yıllık büyümesi 8 çeyrekte %35,42'den %21,34'e geriledi.",
+      "kaynak": "SEC XBRL: rpo_yoy",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Faaliyet dışı kârı stratejik yatırımlardaki 273 milyon $'lık gerçekleşmemiş yukarı yönlü düzeltme taşıdı. Faaliyet kârı 162 milyon $, vergi öncesi kâr 438 milyon $.",
+      "kaynak": "10-Q/10-K: Note 3 - Investments",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Toplam borç 1.491 milyon $'dan 7.517 milyon $'a çıktı; bunun 2.082 milyon $'ı kısa vadeli ticari senet.",
+      "kaynak": "10-Q/10-K: Note 11 - Debt",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Şerefiye 3.578 milyon $'dan 9.837 milyon $'a çıktı. Satın almaların pro forma etkisi açıklanmadı.",
+      "kaynak": "10-Q/10-K: Note 5 - Business Combinations, Note 6 - Goodwill",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Tek bir federal kanal ortağı gelirin %13'ünü oluşturuyor. Açık bir DOJ soruşturması var.",
+      "kaynak": "10-Q/10-K: Note 2, Note 17",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Efektif vergi oranı %18'den %32'ye çıktı (SBC kaynaklı vergi eksiği).",
+      "kaynak": "10-Q/10-K: Note 16 - Provision for Income Taxes",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Çeyreklik FCF 526 milyon $'dan 473 milyon $'a düştü. TTM FCF marjı %34,46'dan %31,09'a geriledi.",
+      "kaynak": "SEC XBRL: fcf, fcf_margin_ttm",
+      "kaynak_dogrulandi": true
+     }
+    ],
+    "tezin_zayif_halkasi": "Tezdeki 'genişleyen AI satışı' ve 'organik %20 büyüme' iddiaları mevcut belgelerle doğrulanamıyor. 10-Q'da Now Assist/AI gelir katkısı açıklanmıyor ve satın almaların etkisi ayrıştırılmıyor. Görünen büyüme hızlanması Armis'in şirkete katılmasıyla aynı döneme denk geliyor. 'Güçlü FCF SBC'ye rağmen değer yaratıyor' iddiası da tartışmalı. Son 12 aylık SBC gelirin %14,83'ü, FCF marjı %31,09. SBC düşüldükten sonra FCF marjı yaklaşık yarıya iniyor. Buna satın almalara giden nakit eklendiğinde, hissedar başına yaratılan değer manşet FCF'nin çok altında kalıyor.",
+    "argumani_curutecek_gostergeler": [
+     "Şirketin Armis/Veza hariç organik abonelik büyümesini %20'nin üzerinde açıklaması",
+     "Önümüzdeki çeyreklerde cRPO büyümesinin yeniden gelir büyümesinin üzerine çıkması ve hızlanması",
+     "Now Assist/AI ürünlerinin ACV veya gelir katkısının sayısal olarak açıklanması ve artması",
+     "Amortisman hariç abonelik brüt marjının istikrar kazanması; üçüncü taraf bulut maliyetinin gelirden yavaş büyümesi",
+     "Ticari senedin uzun vadeli borçla ya da FCF ile hızla azaltılması ve net borcun yeniden net nakde dönmesi",
+     "DOJ soruşturmasının önemli bir ceza veya ihale dışı bırakılma olmadan kapanması",
+     "SBC'nin gelire oranının hisse sayısında seyrelme olmadan belirgin şekilde düşmesi"
+    ]
+   }
+  }
+ }
+}

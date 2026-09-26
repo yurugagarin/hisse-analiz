@@ -270,12 +270,22 @@
    "ad": "Rekabet ve yönetim",
    "tip": "yorum",
    "aciklama": "",
-   "durum": "veri_yok",
+   "durum": "sari",
    "soru": "10-Q/10-K ve basın bülteninde rekabet, müşteri yoğunlaşması ve yönetimin beklentileri hakkındaki açıklamalar tezi destekliyor mu?",
-   "gerekce": "Henüz değerlendirilmedi (Claude bilanço analizi / Salı raporu çalışmadı).",
-   "kanit_alinti": null,
-   "kanit_dogrulandi": null,
-   "kaynak": null,
+   "gerekce": "Rekabet konumu nitel olarak güçlü: 920 MW'lık yeni 15-20 yıllık nükleer PPA'lar, CyrusOne veri merkezi anlaşmaları (380 MW artı opsiyonlu 380 MW), PJM kapasite ihalesinde tavan fiyat ve gelir tarafında müşteri yoğunlaşmasının olmaması. Buna karşılık:\n- Proforma gelir ve kâr yıllık bazda geriliyor.\n- Nükleer kapasite faktörü %94,8'den %93,0'a düştü.\n- Other Power Regions'da yük kaybı var.\n- Kapasite fiyat bandı yukarı yönü sınırlıyor.\n- Yönetim sayısal guidance vermedi; basın bülteni de sağlanmadı.\n- Calpine kârı ayrıştırılamadığı için satın alma tezi doğrulanamıyor.\nSonuç: karışık tablo.",
+   "kanit_alinti": "We have signed an additional 920 MW of long-term PPAs for clean, reliable nuclear generation with a diverse set of investment grade customers",
+   "kanit_dogrulandi": true,
+   "kaynak": {
+    "tip": "bilanco",
+    "tarih": "2026-08-06",
+    "accn": "0001868275-26-000104",
+    "form": "10-Q",
+    "donem_sonu": "2026-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000104/ceg-20260630.htm",
+    "index_url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000104/0001868275-26-000104-index.htm",
+    "kesildi": false,
+    "karakter": 267348
+   },
    "olgu_mu": false,
    "haberler": [],
    "radar": []
@@ -328,6 +338,6 @@
   }
  ],
  "son_ceyrek": "FY2026 Q2",
- "guncelleme": "2026-09-26T11:57:13+00:00",
+ "guncelleme": "2026-09-26T12:15:01+00:00",
  "not": "Tez durumu fiyattan bağımsızdır. Fiyat düşüşü tek başına tezin bozulduğu anlamına gelmez."
 }

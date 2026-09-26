@@ -1,0 +1,267 @@
+{
+ "son": {
+  "dosya": {
+   "accn": "0001193125-26-341001",
+   "form": "10-Q",
+   "donem_sonu": "2026-06-30",
+   "tarih": "2026-08-10",
+   "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526341001/ionq-20260630.htm",
+   "index_url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526341001/0001193125-26-341001-index.htm",
+   "kesildi": false,
+   "karakter": 206527
+  },
+  "basin_bulteni": [
+   {
+    "ad": "ionq-ex99_1.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526335040/ionq-ex99_1.htm",
+    "tarih": "2026-08-05"
+   }
+  ],
+  "onceki_basin_bulteni": [
+   {
+    "ad": "ionq-ex99_1.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526208923/ionq-ex99_1.htm",
+    "tarih": "2026-05-06"
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "guncelleme": "2026-09-26T12:09:07+00:00",
+  "analiz": {
+   "ozet": "IonQ 2026 Q2'de 80,05 milyon $ gelir açıkladı. Bu, yıllık bazda %287 artış demek ve önceki çeyrekte verilen 65-68 milyon $ aralığının belirgin şekilde üstünde. Yıllık gelir guidance'ı 260-270 milyon $'dan 280-290 milyon $'a yükseltildi. Ancak kazanç kalitesi zayıf.\n\n(1) Faaliyet zararı 337,2 milyon $ ve gelirin %421'i. Amortisman hariç satış maliyeti 60,1 milyon $ ve gelirin %75'ine ulaştı; bir yıl önce bu oran yaklaşık %40'tı. Yani büyüme düşük marjlı donanım ve emek yoğun sözleşmelerden geliyor.\n\n(2) GAAP net zarar 1,87 milyar $. Bunun 1,65 milyar $'ı Level 3 warrant yükümlülüğünün yeniden ölçümünden kaynaklanıyor. Bilanço 3,05 milyar $'lık bir warrant yükümlülüğü ve 79 milyon adet özel warrant taşıyor. Bu, sonuçlarda çok büyük dalgalanma ve potansiyel sulanma riski yaratıyor.\n\n(3) Adjusted EBITDA (-120,3 milyon $) SBC'yi (141,8 milyon $) ve seri satın almalarda her çeyrek tekrarlanan \"transaction/integration\" maliyetlerini dışlıyor. Bu çeyrek tanıma yeni bir kalem de eklendi: nakit dışı dava uzlaşmaları. Önceki çeyrekte teyit edilen yıllık Adjusted EBITDA guidance'ı (-330 / -310 milyon $) bu bültende tekrarlanmadı. İlk yarının -217 milyon $'lık gerçekleşmesi bu aralığı fiilen imkânsız kılıyor.\n\n(4) Büyümenin önemli bir kısmı satın almalardan geliyor. Pro forma çeyrek geliri 81,9 milyon $ (bir yıl önce 39,4 milyon $), bu da yaklaşık %108 pro forma büyüme demek. \"Organik\" tanımı bu bültende değişti.\n\n(5) Bazı gelir kaynakları, şirketin hisse ya da yatırım verdiği karşı taraflarla bağlantılı. Stratejik yatırım yapılan şirketler, hisse karşılığı Ar-Ge anlaşması yapılan üniversiteler ve müşterilere QCaaS geri satış hakkı (104,7 milyon $ koşullu alım yükümlülüğü) bu kapsamda.\n\n(6) Faturalanmamış alacaklar ikiye katlandı ve DSO 120 gün.\n\n(7) SkyWater alımı 1,06 milyar $ nakit tüketti ve 24,1 milyon yeni hisse ekledi. Pro forma likidite yaklaşık 2,0 milyar $ ve çeyreklik yaklaşık 114 milyon $'lık FCF yakımına göre hâlâ güçlü. Buna karşın seyreltilmiş hisse sayısı yıllık bazda %46,5 arttı.",
+   "non_gaap": {
+    "aciklama_var": true,
+    "duzeltmeler": [
+     {
+      "kalem": "Stock-based compensation (hisse bazlı ücret)",
+      "tutar_metni": "Q2: 141.845 bin $; 6A: 270.362 bin $",
+      "degerlendirme": "kari_iyi_gosteriyor",
+      "gerekce": "SBC her çeyrek tekrarlanan, gerçek bir ücret maliyeti. Gelirin yaklaşık 1,8 katı (TTM SBC/gelir %184) ve gider kalemleri arasında Adjusted EBITDA'ya en büyük katkıyı bu yapıyor. Hisse sayısı yıllık %46,5 arttı, yani maliyet sulanma yoluyla hissedara yükleniyor. Tanınmamış SBC yaklaşık 1,145 milyar $ (542,6 + 179,2 + 389,6 + 33,8 milyon $).",
+      "kanit_alinti": "| Stock-based compensation | 141,845 | 99,168 | 270,362 | 132,421 |",
+      "kaynak_belge": "basin_bulteni",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "(Gain) loss on changes in fair value measurements (warrant, koşullu bedel, yatırımlar)",
+      "tutar_metni": "Q2: +1.576.198 bin $ (Q1: -1.052.563 bin $)",
+      "degerlendirme": "makul",
+      "gerekce": "Warrant yeniden ölçümü nakit dışı ve faaliyetle ilgisiz, dolayısıyla dışlanması makul. Ancak aynı satır stratejik yatırımlardaki gerçekleşmemiş kazançları da nette bırakıyor (1.649.115 − 1.576.198 = yaklaşık 72,9 milyon $). Bu yatırımların karşı tarafları aynı zamanda müşteri. Warrantların ekonomik maliyeti (79 milyon adet olası hisse) ise gerçek bir sulanma riski olarak kalıyor.",
+      "kanit_alinti": "| (Gain) loss on changes in fair value measurements | 1,576,198 | 39,577 | 523,635 | 1,083 |",
+      "kaynak_belge": "basin_bulteni",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Acquisition transaction and integration costs",
+      "tutar_metni": "Q2: 14.483 bin $; Q2 2025: 14.060 bin $; Q1 2026: 13.622 bin $",
+      "degerlendirme": "kari_iyi_gosteriyor",
+      "gerekce": "Şirket 2025'te 6, 2026'nın ilk yarısında 3 satın alma yaptı ve SkyWater'ı da kapattı. Büyüme stratejisi satın almaya dayandığı için bu maliyet yapısal ve tekrarlayan bir nitelik taşıyor. Kalem art arda çeyreklerde yaklaşık 14 milyon $ seviyesinde seyrediyor.",
+      "kanit_alinti": "| Acquisition transaction and integration costs | 14,483 | 14,060 | 28,105 | 15,841 |",
+      "kaynak_belge": "basin_bulteni",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Executive cash-based severance",
+      "tutar_metni": "Q2: 2.058 bin $; 6A: 2.606 bin $",
+      "degerlendirme": "belirsiz",
+      "gerekce": "Bu kalem nakit bir maliyet ve Q1'de de vardı (548 bin $). İki çeyrek üst üste görülmesi 'tek seferlik' niteliğini zayıflatıyor. Tutar küçük.",
+      "kanit_alinti": "| Executive cash-based severance | 2,058 | — | 2,606 | — |",
+      "kaynak_belge": "basin_bulteni",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Non-cash legal settlements and related costs (yeni kalem)",
+      "tutar_metni": "Q2: 5.700 bin $",
+      "degerlendirme": "belirsiz",
+      "gerekce": "Bu kalem Q1 tanımında yoktu, bu çeyrek eklendi. 10-Q Note 12 önemli bir dava bulunmadığını söylüyor ve uzlaşmanın niteliği açıklanmıyor. Tanım genişletilerek zarar küçültülmüş oluyor.",
+      "kanit_alinti": "| Non-cash legal settlements and related costs | 5,700 | — | 5,700 | — |",
+      "kaynak_belge": "basin_bulteni",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Depreciation and amortization",
+      "tutar_metni": "Q2: 46.087 bin $",
+      "degerlendirme": "makul",
+      "gerekce": "EBITDA tanımı gereği dışlanıyor. Tutarın büyük kısmı satın almalardan gelen maddi olmayan varlıkların itfası. Ancak 3 yıl ömürlü kuantum sistemleri ve uyduların amortismanı da gerçek bir ekonomik maliyet ve yeniden yatırım gerektiriyor.",
+      "kanit_alinti": "| Depreciation and amortization | 46,087 | 10,616 | 89,216 | 17,177 |",
+      "kaynak_belge": "basin_bulteni",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "SkyWater Ar-Ge harcamaları hariç 'Adjusted EBITDA' (ek sunum)",
+      "tutar_metni": "Q2: 24,7 milyon $; SkyWater hariç Adjusted EBITDA -95,6 milyon $",
+      "degerlendirme": "kari_iyi_gosteriyor",
+      "gerekce": "Bunlar gerçek, nakit Ar-Ge maliyetleri ve SkyWater artık konsolide olduğu için ortadan kalkmayacak. Aksine SkyWater'ın faaliyet giderleri de eklenecek. İkinci bir alternatif rakam sunulması zararı olduğundan küçük gösteriyor.",
+      "kanit_alinti": "Excluding the SkyWater spend, Adjusted EBITDA loss would have been ($95.6) million",
+      "kaynak_belge": "basin_bulteni",
+      "kanit_alinti_dogrulandi": true
+     }
+    ],
+    "genel_yorum": "Mutabakatta warrant/fair value dışlaması tek başına makul. Ancak SBC, tekrarlayan satın alma maliyetleri, bu çeyrek eklenen 'nakit dışı dava uzlaşması' kalemi ve SkyWater hariç ikinci bir EBITDA rakamı birlikte düşünüldüğünde Adjusted EBITDA sistematik olarak iyimser. Ayrıca Q1'de teyit edilen yıllık Adjusted EBITDA guidance'ı (-330 / -310 milyon $) Q2 bülteninde hiç anılmıyor. İlk yarı gerçekleşmesi -217 milyon $; aralığı tutturmak için ikinci yarıda çeyrek başına yalnızca yaklaşık -47 ile -57 milyon $ arası zarar gerekirdi, oysa Q2 zararı -120 milyon $. Guidance fiilen aşıldı ve bu durum açıklanmadan sessizce bırakıldı."
+   },
+   "musteri_yogunlasmasi": {
+    "aciklama_var": true,
+    "detay": "Q2 2026'da %10'u aşan iki müşteri gelirin %33'ünü oluşturdu (Q2 2025: iki müşteri, %65). 6 aylık dönemde iki müşteri toplam %27'ye denk geldi. Yoğunlaşma belirgin biçimde azaldı. Öte yandan coğrafi yoğunlaşma arttı: Kore geliri 556 bin $'dan 17.774 bin $'a çıktı ve Q2 gelirinin yaklaşık %22'si oldu. Bu, tek bir büyük sistem teslimatına bağlı olabilir. Müşterilerin bir kısmı şirketle aynı zamanda hisse, yatırım veya QCaaS geri alım ilişkisi içinde (Cambridge, UChicago, stratejik yatırım yapılan şirketler).",
+    "bolum": "Note 2 - Summary of Significant Accounting Policies (Concentrations of Credit Risk); Note 15 - Revenue",
+    "kanit_alinti": "For the three and six months ended June 30, 2026, the Company had two significant customers that accounted for 33% of total revenue and two significant customers that accounted for 27% of total revenue, respectively.",
+    "etiket": "dikkat",
+    "kanit_alinti_dogrulandi": true
+   },
+   "organik_buyume": {
+    "satin_alma_var": true,
+    "detay": "Raporlanan gelir büyümesi %287, ancak 2026 alımları dahil pro forma gelir Q2 2026'da 81.851 bin $, Q2 2025'te 39.360 bin $; yani pro forma büyüme yaklaşık %108. Bu pro forma rakamlar sadece 2026 alımlarını düzeltiyor. 2025'in ikinci yarısında alınan Oxford Ionics, Capella ve Vector Atomic, 2025 yılı karşılaştırmasında da dahil değil (id Quantique ve Lightsynq Q2 2025'te kısmen var). Yalnızca Seed ilk yarıda 14,0 milyon $ gelir katkısı sağladı. Basın bülteninde 'organik gelir' tanımı Q1'e göre değişti: Q1'de 'Ocak 2025 sonrası alınan işletmeler hariç' deniyordu, Q2'de 'IonQ'nun kuantum bilgisayar ürünlerinden elde edilen gelir' deniyor. Bu yeni ifade, sonradan satın alınan işletmelerin kuantum bilgisayar ürünlerini de kapsayabilir. %100 organik büyüme hedefi, tutarı açıklanmadan ve bu esnek tanıma dayanarak veriliyor.",
+    "bolum": "Item 2 - MD&A (Revenue); Note 3 - Business Combinations (Pro Forma Results of Operations)",
+    "kanit_alinti": "The increase was primarily driven by progress on our arrangements to build specialized quantum computing hardware, as well as increased revenue as a result of acquisitions.",
+    "kanit_alinti_dogrulandi": true
+   },
+   "guidance": {
+    "onceki_guidance": "Q2 2026 geliri 65-68 milyon $; FY2026 geliri 260-270 milyon $; FY Adjusted EBITDA zararı -330 / -310 milyon $; organik büyüme %100'ün üzerinde.",
+    "onceki_alinti": "For the full year 2026, IonQ is raising its revenue expectations to be between $260 million and $270 million, with between $65 million and $68 million for the second quarter.",
+    "gerceklesen": "Q2 geliri 80,05 milyon $ oldu; aralık ortasının %20 üstünde, üst ucun da üzerinde. Buna karşılık Q2 Adjusted EBITDA'sı -120,3 milyon $, 6 aylık toplam -217,0 milyon $. Bu seyirle yıllık EBITDA guidance'ının aşılması kaçınılmaz görünüyor.",
+    "gerceklesen_alinti": "Recognized revenue of $80.1 million for the second quarter, which is 20% above the midpoint of the previously provided range and represents 287% year-on-year growth",
+    "sonuc": "ustunde",
+    "yeni_guidance": "FY2026 geliri 280-290 milyon $ (SkyWater hariç); organik büyüme %100. Q3 için çeyreklik gelir guidance'ı verilmedi. Adjusted EBITDA guidance'ı tekrarlanmadı ya da güncellenmedi. İlk yarı geliri 144,7 milyon $ olduğundan, yeni aralık ikinci yarı için 135-145 milyon $ ima ediyor; bu da çeyrek başına yaklaşık 68-73 milyon $ demek ve Q2'nin 80 milyon $'ının altında. Yani guidance ya çok muhafazakâr ya da ikinci yarıda ivme kaybı öngörüyor.",
+    "yeni_alinti": "For the full year 2026, IonQ is raising its revenue expectations to between $280 million and $290 million. For the full year, IonQ continues to expect strong organic growth of 100% year-on-year",
+    "onceki_alinti_dogrulandi": true,
+    "gerceklesen_alinti_dogrulandi": true,
+    "yeni_alinti_dogrulandi": true
+   },
+   "dipnot_bulgulari": [
+    {
+     "etiket": "kirmizi_bayrak",
+     "baslik": "3,05 milyar $'lık Level 3 warrant yükümlülüğü ve 1,65 milyar $'lık çeyreklik zarar",
+     "aciklama": "Series A (kullanım fiyatı 99,88 $) ve Series B (155 $) özel warrantlar Black-Scholes ile değerleniyor ve beklenen volatilite varsayımı %100. Net kâr/zarar Q1'de +805 milyon $, Q2'de -1.868 milyon $ oldu; yani GAAP EPS neredeyse tamamen hisse fiyatının fonksiyonu. Yükümlülük toplam yükümlülüklerin yaklaşık %89'u. 79 milyon adet warrant kullanılırsa mevcut 381 milyon hisseye yaklaşık %21 sulanma eklenir, buna karşılık nakit girişi de olur.",
+     "bolum": "Note 5 - Fair Value Measurements (Warrant Liabilities); Note 13 - Warrants",
+     "kanit_alinti": "As of June 30, 2026, there were 1,065,043 public warrants outstanding and there were 79,053,330 of Series A and Series B private warrants outstanding.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "kirmizi_bayrak",
+     "baslik": "Müşterilere QCaaS geri satış hakkı: 104,7 milyon $ koşullu alım yükümlülüğü",
+     "aciklama": "Bazı sözleşmelerde müşteri, şirketten aldığı bilgisayar üzerinden şirkete sabit bedelle QCaaS erişimi satabiliyor. Şirket donanım satışını gelir olarak tanıyor, geri alımı ise gider olarak zamana yayıyor. Ekonomik açıdan bu, satıcı finansmanı ya da gelirin geri döngüsü (round-trip) riski taşıyor. 104,7 milyon $, yıllık gelir guidance'ının yaklaşık %37'si.",
+     "bolum": "Note 12 - Commitments and Contingencies (Contingent Purchase Obligations)",
+     "kanit_alinti": "The Company has contingent obligations to purchase an aggregate of $104.7 million of QCaaS access upon the exercise of the respective rights by its customers.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Stratejik yatırım yapılan şirketlerle eşzamanlı ticari sözleşmeler ve 63 milyon $ gerçekleşmemiş kazanç",
+     "aciklama": "Şirket 6 ayda 80,5 milyon $'lık stratejik yatırım yaptı ve her yatırım yapılan şirketle bir ticari sözleşme imzaladı. Q2'de bu sözleşmelerden 3,4 milyon $, ilk yarıda 8,7 milyon $ gelir tanındı. Aynı yatırımlar Q2'de 63,0 milyon $'lık gerçekleşmemiş kazanç yarattı ve bu kazanç 'other income' içinde yer alıyor. Satıcının parası müşterinin satın alımını finanse ediyor olabilir. Yatırımlar lock-up altında olduğundan gerçekleşme belirsiz.",
+     "bolum": "Note 5 - Fair Value Measurements (Strategic Investments)",
+     "kanit_alinti": "During the three and six months ended June 30, 2026, the Company recognized $3.4 million and $8.7 million of revenue from the commercial contracts, respectively.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Hisse karşılığı Ar-Ge anlaşmaları ve aynı karşı taraflardan gelir (Cambridge, UChicago)",
+     "aciklama": "Cambridge'e 2,56 milyon hisse, UChicago'ya 2,11 milyon hisse verildi ve karşılığında aktifleştirilmiş Ar-Ge ön ödemesi ile isim hakkı alındı. Aynı kurumlarla eşzamanlı donanım satış sözleşmeleri imzalandı. UChicago'dan ilk yarıda 13,5 milyon $ gelir tanındı. 'İlk 256 qubitlik sistem satışı' Cambridge'e yapıldı. Aktifleştirilmiş Ar-Ge ön ödemesinin uzun vadeli kısmı 60,8 milyon $'dan 120,9 milyon $'a çıktı; bu tutar gider olarak yavaş itfa ediliyor. İsim hakları için henüz hiç itfa yapılmadı.",
+     "bolum": "Note 2 - Summary of Significant Accounting Policies (Research and Development)",
+     "kanit_alinti": "In exchange for the licensed intellectual property and naming rights, the University of Cambridge received 2,562,642 shares of Company common stock, which were issued in March 2026.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Faturalanmamış alacaklar ikiye katlandı, DSO 120 gün; cost-to-cost gelir tanıma",
+     "aciklama": "Faturalanmamış alacak 32,8 milyon $'dan 68,6 milyon $'a çıktı; toplam alacağın %65'i. Donanım geliri, cost-to-cost yöntemiyle tahmini toplam maliyete göre tanınıyor. Maliyet tahminlerindeki iyimserlik geliri öne çekebilir. Bir yıldan uzun vadede tahsil edilecek tutarlar da dönen varlık olarak sınıflanıyor.",
+     "bolum": "Note 2 - Summary of Significant Accounting Policies (Accounts Receivable)",
+     "kanit_alinti": "| Unbilled accounts receivable | 68,603 | 32,769 |",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "kirmizi_bayrak",
+     "baslik": "Satış maliyeti gelirin %75'i: büyüme düşük marjlı",
+     "aciklama": "Amortisman hariç satış maliyeti 60,1 milyon $, gelir 80,05 milyon $; brüt marj yaklaşık %25. Q2 2025'te bu marj yaklaşık %60'tı (8,3 / 20,7). Artış 'hizmet sözleşmeleri için işçilik maliyetleri' ile açıklanıyor. Amortisman da eklenirse marj yaklaşık sıfıra iniyor. Ölçeklendikçe marjın genişlediğine dair kanıt yok.",
+     "bolum": "Item 2 - MD&A (Cost of revenue)",
+     "kanit_alinti": "The increase was driven primarily by an increase in labor costs to service contracts for the three months ended June 30, 2026, as well as an increase in materials costs related to quantum products.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "SkyWater: 1,06 milyar $ nakit ve 24,1 milyon hisse; döngüsel, düşük marjlı dökümhane işi",
+     "aciklama": "Dönem sonrasında kapanan alım likiditeyi yaklaşık 2,96 milyar $'dan yaklaşık 1,9-2,0 milyar $'a indirdi. Satın alma muhasebesi tamamlanmadı. Yeni risk faktörleri döngüsel yarı iletken talebini, iptal edilebilir siparişleri, düşük backlog'u ve sabit fiyatlı sözleşmelerdeki maliyet aşımlarını açıkça sayıyor. Şirketin bu iş kolunda 'önceki deneyimi yok'. Şerefiye ve maddi olmayan varlıklar zaten 2,96 milyar $ (aktiflerin %44'ü) ve alımla daha da artacak.",
+     "bolum": "Note 21 - Subsequent Events; Item 2 - Liquidity and Capital Resources; Item 1A - Risk Factors",
+     "kanit_alinti": "The acquisition required approximately $1,056.4 million in cash, including $741.3 million related to purchase consideration and approximately $315.1 million related to debt repayment and other transaction costs.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "'Organik gelir' tanımı çeyrekler arasında değişti",
+     "aciklama": "Q1'de organik gelir 'Ocak 2025 ve sonrasında alınan işletmeler hariç' olarak tanımlanıyordu. Q2'de 'IonQ'nun kuantum bilgisayar ürünleri ve 31 Aralık 2024 öncesi alımlar' olarak tanımlanıyor. Yeni tanım, Oxford Ionics gibi sonradan alınan kuantum bilgisayar ürünlerini de organik saymaya kapı açıyor. %100 organik büyüme iddiası tutarsız bir ölçüye dayanıyor ve tutarı açıklanmıyor.",
+     "bolum": "Basın bülteni - Commercial and Organic Revenue",
+     "kanit_alinti": "Organic revenue is a supplemental measure representing revenue derived from IonQ’s quantum computing products, and any acquisitions prior to December 31, 2024.",
+     "kaynak_belge": "basin_bulteni",
+     "kanit_alinti_dogrulandi": true
+    }
+   ],
+   "yorum_sutunlari": [
+    {
+     "id": "rekabet",
+     "durum": "sari",
+     "gerekce": "Olumlu yönler: müşteri yoğunlaşması belirgin azaldı (iki müşterinin payı %65'ten %33'e indi), RPO 485 milyon $ ve yıllık %297 büyüdü, gelir guidance'ı iki kez yükseltildi. Olumsuz yönler: 10-Q'daki yeni risk faktörleri rekabeti yalnızca SkyWater'ın yarı iletken dökümhane pazarı için anlatıyor; TSMC, GlobalFoundries gibi daha büyük kaynaklı rakipler sayılıyor ve CHIPS teşvikleri rakipleri güçlendiriyor. Kuantum rekabetine dair niceliksel bir bilgi yok. Yönetim Adjusted EBITDA guidance'ını sessizce bıraktı ve organik gelir tanımını değiştirdi. Bazı gelirler hisse ya da yatırım ilişkisi olan karşı taraflardan geliyor. Yönetim beklentileri iyimser ama şeffaflık azalıyor; tezin 'bugünkü seviyeyi koruma' kriteri büyüme için geçiyor, marj ve sulanma için geçmiyor.",
+     "kanit_alinti": "Integration may be particularly challenging as we are entering into a line of business with which we have no prior experience.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    }
+   ],
+   "seytanin_avukati": {
+    "en_guclu_arguman": "IonQ, gelirini hissedar sermayesiyle 'satın alan' bir şirket. Her 1 $ gelir için yaklaşık 4,2 $ faaliyet zararı ve yaklaşık 1,8 $ SBC üretiyor. Amortisman hariç brüt marj %60'tan %25'e çöktü; yani ölçek büyüdükçe birim ekonomisi kötüleşiyor. Raporlanan %287 büyümenin büyük kısmı satın almalardan, hisse ya da yatırım verilen karşı taraflardan ve geri alım yükümlülüklü sözleşmelerden geliyor. Pro forma büyüme yaklaşık %108. Buna karşılık seyreltilmiş hisse sayısı yıllık %46,5 arttı. SkyWater için 24 milyon hisse daha çıkarıldı. 79 milyon warrant ve yaklaşık 30 milyon RSU/PSU/restricted stock bekliyor. Yönetim de zayıf metrikleri gizleme eğiliminde: EBITDA guidance'ı sessizce bırakıldı, organik tanımı değişti, yeni düzeltme kalemleri eklendi, 'SkyWater hariç' ikinci bir EBITDA sunuldu. Son olarak 1,06 milyar $ nakit, deneyimi olmayan, döngüsel ve düşük marjlı bir dökümhane işine harcandı. Hisse başına değer yaratımı yerine hisse başına sulanma sürüyor.",
+    "destekleyen_olgular": [
+     {
+      "olgu": "Q2 2026 faaliyet zararı -337,2 milyon $; faaliyet marjı -%421, bir yıl önce -%776'dan yalnızca sınırlı iyileşme var ve Q1'deki -%420 ile yatay.",
+      "kaynak": "SEC XBRL: operating_income / operating_margin",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Seyreltilmiş ağırlıklı hisse sayısı yıllık %46,5 artışla 367,7 milyona çıktı; 29 Temmuz itibarıyla 381,0 milyon hisse dolaşımda ve SkyWater için 24,1 milyon hisse eklendi.",
+      "kaynak": "SEC XBRL: diluted_shares_yoy; 10-Q/10-K: Note 21 - Subsequent Events",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "TTM SBC/gelir oranı %184; tanınmamış SBC yaklaşık 1,145 milyar $.",
+      "kaynak": "SEC XBRL: sbc_to_revenue_ttm; 10-Q/10-K: Note 16 - Stock-Based Compensation",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Q2 FCF -114,0 milyon $; TTM FCF marjı -%196.",
+      "kaynak": "SEC XBRL: fcf / fcf_margin_ttm",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Warrant yükümlülüğü 3,05 milyar $ (Level 3, volatilite varsayımı %100) ve Q2'de 1,65 milyar $ zarar; 79 milyon adet özel warrant var.",
+      "kaynak": "10-Q/10-K: Note 5 - Fair Value Measurements; Note 13 - Warrants",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Amortisman hariç satış maliyeti 60,1 milyon $, gelir 80,05 milyon $ (bir yıl önce 8,3 milyon $'a karşı 20,7 milyon $).",
+      "kaynak": "10-Q/10-K: Condensed Consolidated Statements of Operations",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Müşterilere QCaaS geri satış hakkından doğan 104,7 milyon $ koşullu alım yükümlülüğü var.",
+      "kaynak": "10-Q/10-K: Note 12 - Commitments and Contingencies",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "DSO 120 gün; faturalanmamış alacak 32,8 milyon $'dan 68,6 milyon $'a çıktı.",
+      "kaynak": "SEC XBRL: dso; 10-Q/10-K: Note 2 - Accounts Receivable",
+      "kaynak_dogrulandi": true
+     }
+    ],
+    "tezin_zayif_halkasi": "Tez 'büyüme, marj, nakit üretimi ve hisse sayısının bugünkü seviyesini koruyup korumadığını' izliyor. Oysa bu dört metrikten yalnızca büyüme korunuyor. Marj (amortisman hariç brüt marj yaklaşık %25) ve hisse sayısı (yıllık +%46,5) belirgin şekilde kötüleşiyor, nakit yakımı da sürüyor. Üstelik büyümenin kalitesi (satın alma, ilişkili karşı taraflar, cost-to-cost tahmini) tezde ölçülmüyor. Ayrıca SkyWater konsolidasyonu önümüzdeki çeyreklerde gelir tabanını mekanik olarak şişirecek; organik performansı izlemek zorlaşacak.",
+    "argumani_curutecek_gostergeler": [
+     "Amortisman hariç brüt marjın ardışık çeyreklerde %40'ın üzerine çıkması",
+     "RPO'nun yıllık bazda büyümeye devam etmesi ve 12 ay içinde gelire dönüşen %50'lik payın gerçekleşmesi (faturalanmamış alacak ve DSO'nun düşmesi)",
+     "Şirketin organik gelir tutarını tutarlı bir tanımla açıklaması ve %100 büyümeyi kanıtlaması",
+     "Adjusted EBITDA guidance'ının yeniden verilmesi ve zararın daralması; çeyreklik FCF yakımının 100 milyon $'ın altına kalıcı olarak inmesi",
+     "Hisse sayısı artışının yıllık %10'un altına inmesi ve warrant kullanımlarından ciddi nakit girişi sağlanması",
+     "SkyWater'ın konsolidasyon sonrası pozitif brüt marj ve nakit katkısı göstermesi"
+    ]
+   }
+  }
+ }
+}

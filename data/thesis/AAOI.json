@@ -335,12 +335,22 @@
    "ad": "Müşteri yoğunlaşması ve kapasite",
    "tip": "yorum",
    "aciklama": "",
-   "durum": "veri_yok",
+   "durum": "sari",
    "soru": "10-Q/10-K dipnotlarında en büyük müşterilerin gelir payı, 800G/1.6T ürün geçişi, ABD (Texas) üretim kapasitesi ve finansman (ATM, convertible) hakkında açıklamalar tezi destekliyor mu?",
-   "gerekce": "Henüz değerlendirilmedi (Claude bilanço analizi / Salı raporu çalışmadı).",
-   "kanit_alinti": null,
-   "kanit_dogrulandi": null,
-   "kaynak": null,
+   "gerekce": "Tezi destekleyen olgular:\n- Veri merkezi geliri yıllık %140 artışla 107,7 milyon $ oldu ve gelirin %56'sına ulaştı.\n- 800G hacmi çeyreklik bazda iki katını aştı.\n- Kapasite ayda yaklaşık 200.000 adet; yıl sonu hedefi ayda 650.000 adet 800G/1.6T.\n- ABD'de 6 ayda 169,0 milyon $ yatırım harcaması yapıldı; ABD'deki uzun vadeli varlıklar 123,7 milyon $'dan 313,0 milyon $'a çıktı. Sugar Land ve Houston'da genişleme sürüyor ve CHIPS Act vergi kredisi potansiyeli var.\n\nTezi zayıflatan olgular:\n- Üretim yerine göre ABD geliri Ç2'de yalnızca 1,3 milyon $ (%0,7). Gelirin 108,4 milyon $'ı Tayvan, 82,2 milyon $'ı Çin üretimi. 'ABD içi üretim avantajı' henüz gelire yansımıyor, şimdilik bir vaat.\n- İlk üç müşteri gelirin %92'si; en büyük müşteri hyperscaler değil, CATV distribütörü Digicomm.\n- Finansman büyük ölçüde hisse ihracına dayanıyor: 1,03 milyar $ ATM, seyreltilmiş hisselerde yıllık +%43,7. Parası içindeki convertible ve Amazon warrant'ı ek sulandırma yaratıyor.\n- Müşterilerle 1 yıldan uzun alım taahhüdü yok.\n\nKapasite hikâyesi güçlü, ancak yoğunlaşma, sermaye yoğunluğu ve sulandırma nedeniyle durum sarı.",
+   "kanit_alinti": "The Company expects to expand manufacturing operations in the U.S. and Taiwan during 2026 and 2027 primarily to support laser diode production and production of 800G and 1.6T transceivers.",
+   "kanit_dogrulandi": true,
+   "kaynak": {
+    "tip": "bilanco",
+    "tarih": "2026-08-06",
+    "accn": "0001437749-26-026278",
+    "form": "10-Q",
+    "donem_sonu": "2026-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/aaoi20260630_10q.htm",
+    "index_url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926026278/0001437749-26-026278-index.htm",
+    "kesildi": false,
+    "karakter": 138311
+   },
    "olgu_mu": false,
    "haberler": [],
    "radar": []
@@ -389,6 +399,6 @@
   }
  ],
  "son_ceyrek": "FY2026 Q2",
- "guncelleme": "2026-09-26T11:57:13+00:00",
+ "guncelleme": "2026-09-26T12:15:01+00:00",
  "not": "Tez durumu fiyattan bağımsızdır. Fiyat düşüşü tek başına tezin bozulduğu anlamına gelmez."
 }

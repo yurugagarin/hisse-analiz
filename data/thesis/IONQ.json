@@ -335,12 +335,22 @@
    "ad": "Rekabet ve yönetim",
    "tip": "yorum",
    "aciklama": "",
-   "durum": "veri_yok",
+   "durum": "sari",
    "soru": "10-Q/10-K ve basın bülteninde rekabet, müşteri yoğunlaşması ve yönetimin beklentileri hakkındaki açıklamalar tezi destekliyor mu?",
-   "gerekce": "Henüz değerlendirilmedi (Claude bilanço analizi / Salı raporu çalışmadı).",
-   "kanit_alinti": null,
-   "kanit_dogrulandi": null,
-   "kaynak": null,
+   "gerekce": "Olumlu yönler: müşteri yoğunlaşması belirgin azaldı (iki müşterinin payı %65'ten %33'e indi), RPO 485 milyon $ ve yıllık %297 büyüdü, gelir guidance'ı iki kez yükseltildi. Olumsuz yönler: 10-Q'daki yeni risk faktörleri rekabeti yalnızca SkyWater'ın yarı iletken dökümhane pazarı için anlatıyor; TSMC, GlobalFoundries gibi daha büyük kaynaklı rakipler sayılıyor ve CHIPS teşvikleri rakipleri güçlendiriyor. Kuantum rekabetine dair niceliksel bir bilgi yok. Yönetim Adjusted EBITDA guidance'ını sessizce bıraktı ve organik gelir tanımını değiştirdi. Bazı gelirler hisse ya da yatırım ilişkisi olan karşı taraflardan geliyor. Yönetim beklentileri iyimser ama şeffaflık azalıyor; tezin 'bugünkü seviyeyi koruma' kriteri büyüme için geçiyor, marj ve sulanma için geçmiyor.",
+   "kanit_alinti": "Integration may be particularly challenging as we are entering into a line of business with which we have no prior experience.",
+   "kanit_dogrulandi": true,
+   "kaynak": {
+    "tip": "bilanco",
+    "tarih": "2026-08-10",
+    "accn": "0001193125-26-341001",
+    "form": "10-Q",
+    "donem_sonu": "2026-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526341001/ionq-20260630.htm",
+    "index_url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526341001/0001193125-26-341001-index.htm",
+    "kesildi": false,
+    "karakter": 206527
+   },
    "olgu_mu": false,
    "haberler": [],
    "radar": []
@@ -393,6 +403,6 @@
   }
  ],
  "son_ceyrek": "FY2026 Q2",
- "guncelleme": "2026-09-26T11:57:13+00:00",
+ "guncelleme": "2026-09-26T12:15:01+00:00",
  "not": "Tez durumu fiyattan bağımsızdır. Fiyat düşüşü tek başına tezin bozulduğu anlamına gelmez."
 }

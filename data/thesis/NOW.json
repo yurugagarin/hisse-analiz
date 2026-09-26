@@ -3,7 +3,7 @@
  "tez_var": true,
  "onay": "taslak",
  "ozet": "Kurumsal iş akışı platformu yüksek yenileme oranı ve genişleyen ürün (AI/Now Assist) satışıyla %20 civarı büyümeyi sürdürüyor; sözleşmeli gelir birikimi (RPO) görünürlük sağlıyor ve güçlü FCF marjı SBC maliyetine rağmen gerçek değer yaratıyor.\n",
- "genel": "yesil",
+ "genel": "sari",
  "sutunlar": [
   {
    "id": "buyume",
@@ -270,12 +270,22 @@
    "ad": "AI monetizasyonu ve müşteri tutma",
    "tip": "yorum",
    "aciklama": "",
-   "durum": "veri_yok",
+   "durum": "sari",
    "soru": "10-Q/10-K ve basın bülteninde yenileme oranı, büyük müşteri (yıllık 5M$+ ACV) sayısı, Now Assist/AI ürünlerinin katkısı ve satın almaların büyümeye etkisi hakkında açıklamalar tezi destekliyor mu?",
-   "gerekce": "Henüz değerlendirilmedi (Claude bilanço analizi / Salı raporu çalışmadı).",
-   "kanit_alinti": null,
-   "kanit_dogrulandi": null,
-   "kaynak": null,
+   "gerekce": "Müşteri tutma tarafı tezi destekliyor: yenileme oranı %98, 5 milyon $+ ACV'li müşteri sayısı 658 (+%23) ve abonelik geliri +%25. Ancak AI monetizasyonu tarafı belgelerle kanıtlanamıyor. 10-Q'da Now Assist ya da AI ürünlerinin gelir katkısına dair hiçbir sayısal açıklama yok ve basın bültenleri eksik. Alınan şirketlerin katkısı pro forma verilmediği için %24'lük büyümenin ne kadarının organik olduğu belirsiz. RPO büyümesi %21'e yavaşladı. Abonelik brüt marjı %73'e düştü ve üçüncü taraf bulut maliyeti arttı. Bu tablo, AI satışlarının kârlılığı düşük bir maliyet yapısıyla geldiğine işaret ediyor olabilir.",
+   "kanit_alinti": "Our renewal rate was 98% for each of the three and six months ended June 30, 2026 and 2025.",
+   "kanit_dogrulandi": true,
+   "kaynak": {
+    "tip": "bilanco",
+    "tarih": "2026-07-23",
+    "accn": "0001373715-26-000076",
+    "form": "10-Q",
+    "donem_sonu": "2026-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "index_url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/0001373715-26-000076-index.htm",
+    "kesildi": false,
+    "karakter": 146196
+   },
    "olgu_mu": false,
    "haberler": [],
    "radar": []
@@ -316,6 +326,6 @@
   }
  ],
  "son_ceyrek": "FY2026 Q2",
- "guncelleme": "2026-09-26T11:57:13+00:00",
+ "guncelleme": "2026-09-26T12:15:01+00:00",
  "not": "Tez durumu fiyattan bağımsızdır. Fiyat düşüşü tek başına tezin bozulduğu anlamına gelmez."
 }

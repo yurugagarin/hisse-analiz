@@ -335,12 +335,22 @@
    "ad": "Rekabet ve yönetim",
    "tip": "yorum",
    "aciklama": "",
-   "durum": "veri_yok",
+   "durum": "sari",
    "soru": "10-Q/10-K ve basın bülteninde rekabet, müşteri yoğunlaşması ve yönetimin beklentileri hakkındaki açıklamalar tezi destekliyor mu?",
-   "gerekce": "Henüz değerlendirilmedi (Claude bilanço analizi / Salı raporu çalışmadı).",
-   "kanit_alinti": null,
-   "kanit_dogrulandi": null,
-   "kaynak": null,
+   "gerekce": "Olumlu taraf: Yönetim AI talebinin arzı aştığını söylüyor, çeyrekte 30 milyar $'ın üzerinde yeni sözleşme ve 664 milyar $ RPO bildiriyor. Q1 guidance aşıldı, FY27 EPS guidance'ı hafifçe yükseltildi. Zayıf taraf: RPO'nun birkaç büyük AI müşterisine yoğunlaştığı anlaşılıyor, ancak müşteri bazında açıklama yok. Bulut ve yazılım marjı 5 puan geriledi; eski yüksek marjlı lisans (-%15) ve destek (-%1) gelirleri eriyor. OCI açıklamalarına yönelik bir toplu dava sürüyor ve Ellison 50 milyon hisseye kadar satış planı kurdu. Yönetimin 'sermaye planına ek etki yok' güvencesi, 288 milyar $'lık kira taahhüdü ve devam eden ATM veya borç ihtiyacı karşısında sınırlı teselli sağlıyor. Tez için rekabet ve yönetim sinyalleri karışık.",
+   "kanit_alinti": "Customer demand for AI Cloud Training and Inferencing Services continues to grow faster than supply.",
+   "kanit_dogrulandi": true,
+   "kaynak": {
+    "tip": "bilanco",
+    "tarih": "2026-09-11",
+    "accn": "0001193125-26-389274",
+    "form": "10-Q",
+    "donem_sonu": "2026-08-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+    "index_url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/0001193125-26-389274-index.htm",
+    "kesildi": false,
+    "karakter": 130414
+   },
    "olgu_mu": false,
    "haberler": [],
    "radar": []
@@ -393,6 +403,6 @@
   }
  ],
  "son_ceyrek": "FY2026 Q1",
- "guncelleme": "2026-09-26T11:57:13+00:00",
+ "guncelleme": "2026-09-26T12:15:01+00:00",
  "not": "Tez durumu fiyattan bağımsızdır. Fiyat düşüşü tek başına tezin bozulduğu anlamına gelmez."
 }

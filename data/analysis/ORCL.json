@@ -1,0 +1,250 @@
+{
+ "son": {
+  "dosya": {
+   "accn": "0001193125-26-389274",
+   "form": "10-Q",
+   "donem_sonu": "2026-08-31",
+   "tarih": "2026-09-11",
+   "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+   "index_url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/0001193125-26-389274-index.htm",
+   "kesildi": false,
+   "karakter": 130414
+  },
+  "basin_bulteni": [
+   {
+    "ad": "orcl-ex99_1.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm",
+    "tarih": "2026-09-10"
+   }
+  ],
+  "onceki_basin_bulteni": [
+   {
+    "ad": "orcl-ex99_1.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526265848/orcl-ex99_1.htm",
+    "tarih": "2026-06-10"
+   }
+  ],
+  "model": "claude-opus-5-5",
+  "guncelleme": "2026-09-26T12:12:57+00:00",
+  "analiz": {
+   "ozet": "Oracle Q1 FY27 (dönem sonu 31.08.2026): Gelir %30 artışla 19.345 milyon $'a çıktı. Artışın motoru bulut altyapısı (OCI); bu kalem %121 büyüyerek 7.388 milyon $'a ulaştı. Buna karşılık lisans %15, destek %1 geriledi. GAAP faaliyet marjı %29'dan %35'e çıktı (612 bp). Aynı dönemde non-GAAP marj %42'de sabit kaldı (+35 bp). Yani GAAP'taki iyileşmenin büyük kısmı operasyonel verimlilikten gelmiyor. Asıl kaynak, itfaya tabi maddi olmayan duran varlık amortismanındaki düşüş (-218 milyon $) ve yeniden yapılanma giderinin azalması (-321 milyon $). Ürün bazında bakınca bulut ve yazılım segment marjı 60%'tan 55%'e geriledi. Nakit tarafında faaliyet nakit akışı (OCF) rekor 23,1 milyar $ oldu. Ancak bunun 11,4 milyar $'ı, müşterilerden alınan ve önemli finansman bileşeni içeren ön ödeme. Bu ön ödeme hariç tutulduğunda serbest nakit akışı (FCF) yaklaşık -16,8 milyar $ (raporlanan -5,4 milyar $). Yatırım harcaması (capex) tek çeyrekte 28,5 milyar $. Açık bu çeyrekte 19,9 milyar $'lık ATM (piyasaya doğrudan) hisse ihracı (141 milyon hisse) ile finanse edildi. Seyreltilmiş hisse sayısı yıllık %3,13 arttı. Dönem sonu dolaşımdaki hisse 3.024 milyon; bu da Q2'de ek seyrelme demek. Bilanço dışında 288 milyar $ başlamamış kira taahhüdü ve 34,2 milyar $ koşulsuz alım yükümlülüğü var. Borcun gerçeğe uygun değeri (105,7 milyar $) defter değerinin (125,0 milyar $) belirgin altında. Önceki guidance aşıldı: gelir %27-29 beklenirken %30, non-GAAP EPS 1,72-1,76 $ beklenirken 1,92 $. Ancak EPS'teki aşımın bir kısmı düşük non-GAAP vergi oranından (%16,9, geçen yıl %20,5) geliyor. FY27 non-GAAP EPS guidance'ı 8,05 $'dan 8,10 $'a çıkarıldı. 664 milyar $'lık kalan edim yükümlülüğü (RPO) birkaç büyük yapay zekâ (AI) sözleşmesine dayanıyor, ancak müşteri yoğunlaşması sayısal olarak açıklanmıyor. Ayrıca Ellison 50 milyon hisseye kadar satış planı (10b5-1) kurdu.",
+   "non_gaap": {
+    "aciklama_var": true,
+    "duzeltmeler": [
+     {
+      "kalem": "Hisse bazlı ödeme (SBC)",
+      "tutar_metni": "1.127 milyon $ (Q1 FY26: 1.124 milyon $); gelirin yaklaşık %5,8'i",
+      "degerlendirme": "kari_iyi_gosteriyor",
+      "gerekce": "Yönetim bu giderin tekrarlayacağını kendisi kabul ediyor. SBC gerçek bir ücret maliyeti: nakit yerine hisseyle ödeniyor ve seyrelme yaratıyor. Tek başına non-GAAP faaliyet kârının yaklaşık %14'ünü oluşturuyor. Yönetici ücretleri de kısmen non-GAAP ölçütlere bağlı; bu da teşvik uyumsuzluğu riski yaratıyor.",
+      "kanit_alinti": "Stock-based compensation expenses will recur in future periods.",
+      "kaynak_belge": "basin_bulteni",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Maddi olmayan duran varlık amortismanı",
+      "tutar_metni": "202 milyon $ (Q1 FY26: 420 milyon $)",
+      "degerlendirme": "makul",
+      "gerekce": "Satın almalardan gelen, nakit dışı bir kalem ve sektörde yaygın bir düzeltme. Yine de dikkat: amortisman hızla eriyor (kalan 3.027 milyon $). Bu da GAAP marjını yapay biçimde yükseltiyor ve GAAP ile non-GAAP arasındaki makası kendiliğinden daraltıyor.",
+      "kanit_alinti": "Amortization of intangible assets will recur in future periods.",
+      "kaynak_belge": "basin_bulteni",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Yeniden yapılanma ve diğer",
+      "tutar_metni": "94 milyon $ (165 milyon $ yeniden yapılanma, -71 milyon $ diğer; Q1 FY26: 415 milyon $)",
+      "degerlendirme": "kari_iyi_gosteriyor",
+      "gerekce": "2026 planı 2,1 milyar $'a kadar büyüdü ve dönem sonrasında yaklaşık 700 milyon $ daha eklendi. FY26'da bu kalem 1.838 milyon $'dı. Sürekli genişleyen, yapay zekâ kaynaklı verimlilik programı olarak tanımlanan bir kalem, fiilen tekrarlayan bir faaliyet maliyeti. Ayrıca 'diğer' satırında bir dava için alınan sigorta tahsilatı (kazanç) yer alıyor ve dışlanıyor; kalemin içeriği karışık.",
+      "kanit_alinti": "Subsequent to August 31, 2026, our management supplemented the 2026 Restructuring Plan by approximately $700 million to reflect additional actions that we expect to take.",
+      "kaynak_belge": "10-Q/10-K",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Gelir vergisi etkileri (non-GAAP vergi oranı)",
+      "tutar_metni": "344 milyon $; non-GAAP efektif vergi oranı %16,9 (Q1 FY26: %20,5)",
+      "degerlendirme": "belirsiz",
+      "gerekce": "Non-GAAP vergi oranı yıllık bazda yaklaşık 3,6 puan düştü. Non-GAAP vergi öncesi kâr yaklaşık 7.030 milyon $. Bu kâr %20,5 ile vergilendirilseydi non-GAAP EPS 1,92 $ yerine yaklaşık 1,84 $ olurdu; bu da guidance üst ucuna (1,76 $) çok daha yakın. Vergi oranının sürdürülebilir olup olmadığı açıklanmıyor.",
+      "kanit_alinti": "an effective non-GAAP tax rate of 16.9% and 20.5% in the first quarter of fiscal 2027 and 2026, respectively",
+      "kaynak_belge": "basin_bulteni",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Yatırım harcamaları için net nakit çıkışı (ek non-GAAP ölçüt)",
+      "tutar_metni": "Capex 28.499 milyon $ → net nakit çıkışı 17.966 milyon $ (11.363 milyon $ müşteri ön ödemesi ve 830 milyon $ kısa vadeli finansman düzeltmesi)",
+      "degerlendirme": "kari_iyi_gosteriyor",
+      "gerekce": "Müşteri ön ödemeleri gelecekte hizmet sunma yükümlülüğü doğuran, finansman niteliğinde yükümlülükler (ertelenmiş gelir). Bunları capex'ten düşmek, fiziksel yatırım ihtiyacını olduğundan küçük gösteriyor. Aynı nakit OCF'de de yer aldığı için okuyucu 'OCF rekor' ve 'capex daha düşük' algılarını aynı anda edinebilir; bu da bir tür çift sayım algısı yaratıyor.",
+      "kanit_alinti": "Net cash outlay for capital expenditures is defined as capital expenditures, less (1) other short-term financing cash flow related to capital expenditures and (2) customer prepayments with significant financing component for capital expenditures.",
+      "kaynak_belge": "basin_bulteni",
+      "kanit_alinti_dogrulandi": true
+     }
+    ],
+    "genel_yorum": "Mutabakat şeffaf ve standart; kalemler açıkça gösteriliyor. Ancak üç eleştiri öne çıkıyor. (1) Toplam 1.423 milyon $ düzeltmenin %79'u SBC ve bu tamamen tekrarlayan bir maliyet. (2) Non-GAAP marj %42'de sabit kalırken GAAP marj 612 bp arttı. Bu, GAAP iyileşmesinin temelde amortisman erimesinden ve yeniden yapılanma giderinin düşmesinden geldiğini gösteriyor; çekirdek operasyonel kaldıraç sınırlı. (3) EPS'teki aşımın önemli bir kısmı daha düşük non-GAAP vergi oranından ve ATM nakdinin faiz gelirinden geliyor. Bunlara ek olarak 'net cash outlay for capex' ölçütü, yatırım yoğunluğunu müşteri finansmanıyla perdeliyor."
+   },
+   "musteri_yogunlasmasi": {
+    "aciklama_var": false,
+    "detay": "10-Q, müşteri bazında %10 eşiğini aşan bir yoğunlaşma açıklamıyor. Oysa 664 milyar $'lık RPO'nun artışı açıkça 'belirli önemli bulut sözleşmelerine' bağlanıyor. Bu çeyrekte 30 milyar $'ın üzerinde yeni AI sözleşmesi imzalandı. Önceki çeyrek bülteni de RPO artışının çoğunu büyük ölçekli AI sözleşmelerine dayandırıyordu. Amerika bölgesi gelirin %71'ine çıktı (geçen yıl %65) ve toplam büyümenin %90'ını sağladı. 11,4 milyar $'lık finansman bileşenli ön ödeme de sınırlı sayıda büyük müşteriye işaret ediyor. RPO yıllık gelirin yaklaşık 10 katı olmasına rağmen karşı taraf kredi riski ve yoğunlaşma nicel olarak açıklanmıyor. Controller açısından bu ciddi bir şeffaflık açığı.",
+    "bolum": "MD&A - Remaining Performance Obligations from Contracts with Customers",
+    "kanit_alinti": "The increase in remaining performance obligations as of August 31, 2026 in comparison to August 31, 2025 was primarily attributable to certain significant cloud contracts that were entered into during the period.",
+    "etiket": "kirmizi_bayrak",
+    "kanit_alinti_dogrulandi": true
+   },
+   "organik_buyume": {
+    "satin_alma_var": false,
+    "detay": "Dönemde satın alma açıklanmadı. Şerefiye neredeyse değişmedi (62.261 milyon $'dan 62.267 milyon $'a). Büyüme organik ve neredeyse tamamen OCI kaynaklı. Sabit kur bazında bulut gelirindeki büyümenin %91'ini altyapı, %9'unu uygulamalar sağladı. Yazılım lisansı %15, yazılım desteği %1 geriledi. Bu nedenle 'organik' büyüme, müşteri ön ödemeleri, ATM ve borçla finanse edilen yoğun kapasite yatırımına dayanıyor. Sermayeden bağımsız organik bir büyüme değil. Kur etkisi ihmal edilebilir düzeyde (raporlanan ve sabit kur büyümesi aynı: %30).",
+    "bolum": "MD&A - Total Revenues and Operating Expenses",
+    "kanit_alinti": "In constant currency, cloud infrastructure and cloud applications contributed 91% and 9%, respectively, to the growth in cloud revenues in the first quarter of fiscal 2027.",
+    "kanit_alinti_dogrulandi": true
+   },
+   "guidance": {
+    "onceki_guidance": "Q1 FY27 için: toplam gelir büyümesi %27-29 (USD ve sabit kur), bulut geliri büyümesi USD bazında %58-64, non-GAAP EPS USD bazında 1,72-1,76 $. FY27 için: 90 milyar $ gelir, non-GAAP EPS 8,05 $.",
+    "onceki_alinti": "Non-GAAP earnings per share is expected to grow between 16% and 19% and be between $1.71 and $1.75 in constant currency and grow between 17% and 20% and be between $1.72 and $1.76 in USD.",
+    "gerceklesen": "Gelir %30 büyüdü (bandın üstünde), bulut %62 (bandın içinde, üst yarıda), non-GAAP EPS 1,92 $ (bandın belirgin üstünde, %30 artış). Not: EPS aşımının önemli kısmı non-GAAP vergi oranının %16,9'a inmesinden ve ATM nakdinin faiz gelirinden geliyor (faiz geliri 306 milyon $, önceki yıl 103 milyon $).",
+    "gerceklesen_alinti": "non-GAAP Earnings per Share up 30% in USD and constant currency to $1.92",
+    "sonuc": "ustunde",
+    "yeni_guidance": "Q2 FY27 için: gelir büyümesi %30-34, bulut büyümesi USD bazında %65-71, non-GAAP EPS USD bazında 1,85-1,93 $. Bu rakam Ampere kazancı hariç %21-25 büyümeye, dahil edildiğinde ise %14-18 düşüşe karşılık geliyor. FY27 için: gelir en az 90 milyar $ (değişmedi), non-GAAP EPS 8,10 $ (8,05 $'dan hafif artış). Q1'deki yaklaşık 0,16 $'lık aşıma rağmen yıllık EPS yalnızca 0,05 $ yükseltildi. Bu, kalan çeyreklerde amortisman, faiz ve seyrelme baskısının beklendiğini ima ediyor.",
+    "yeni_alinti": "For fiscal year 2027, we now expect total revenue to be at least $90 billion, and non-GAAP EPS to be at $8.10.",
+    "onceki_alinti_dogrulandi": true,
+    "gerceklesen_alinti_dogrulandi": true,
+    "yeni_alinti_dogrulandi": true
+   },
+   "dipnot_bulgulari": [
+    {
+     "etiket": "kirmizi_bayrak",
+     "baslik": "OCF'nin yaklaşık yarısı finansman bileşenli müşteri ön ödemesi",
+     "aciklama": "23,1 milyar $'lık OCF'nin 11,4 milyar $'ı, önemli finansman bileşeni içeren müşteri ön ödemesi. Bu tutar ekonomik olarak müşteriden alınmış bir borç niteliğinde. Hariç tutulduğunda OCF yaklaşık 11,7 milyar $, FCF ise yaklaşık -16,8 milyar $. Toplam ertelenmiş gelir tek çeyrekte 15.395 milyon $'dan 30.789 milyon $'a iki katına çıktı; uzun vadeli kısmı 5,5 milyar $'dan 16,1 milyar $'a yükseldi. Bu nakit kalıcı değil. Gelecek dönemlerde gelir kaydedilirken karşılığında nakit girişi olmayacak ve OCF geri dönecek. OCF/NI oranındaki 2,48 (TTM) sıçraması da bu yüzden yanıltıcı.",
+     "bolum": "Note 1 - Customer Prepayments and Sales of Financing Receivables",
+     "kanit_alinti": "During the first quarter of fiscal 2027, we received $11.4 billion of prepayments from customers that included a significant financing component.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Önemli finansman bileşeninde faiz 'önemsiz' sayılıyor; gelecekte gelir şişirme potansiyeli var",
+     "aciklama": "ASC 606'ya göre müşteri ön ödemesinde finansman bileşeni için faiz gideri tahakkuk ettirilir ve sözleşme yükümlülüğüne eklenir. Bu tutar ileride hasılat olarak kaydedilir. Oracle 15,9 milyar $'lık kümülatif ön ödemeye rağmen bu faizi 'önemsiz' olarak niteliyor. İskonto oranı ve vade varsayımları, faiz giderini ve dolayısıyla gelecekteki geliri doğrudan etkiliyor. Bakiye büyüdükçe gelir kalitesi üzerinde, faiz giderinin hasılata dönüştüğü bir etki oluşacak. Tutarın her çeyrek izlenmesi gerekir.",
+     "bolum": "Note 1 - Customer Prepayments and Sales of Financing Receivables",
+     "kanit_alinti": "We recognize interest expense related to significant financing components separately from revenue. During the first quarter of fiscal 2027, such amounts were immaterial.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "kirmizi_bayrak",
+     "baslik": "288 milyar $ bilanço dışı veri merkezi kira taahhüdü ve 34,2 milyar $ koşulsuz alım",
+     "aciklama": "Bilançodaki 34,6 milyar $ operasyonel ve 9,2 milyar $ finansal kira yükümlülüğüne ek olarak, henüz başlamamış 288 milyar $ kira taahhüdü var. Vadeleri 15-19 yıl ve FY27 Q2 ile FY29 arasında devreye girecekler. Bu taahhüt, 125 milyar $'lık finansal borcun iki katından fazla. Bunun yanında donanım bileşenleri ve enerji için 34,15 milyar $ koşulsuz alım yükümlülüğü bulunuyor. Operasyonel kira gideri zaten 575 milyon $'dan 1.101 milyon $'a çıktı. Kiralar başladıkça sabit maliyet tabanı katlanarak artacak. RPO'daki sözleşmeler iptal edilir ya da ertelenirse, geriye iptal edilemez maliyetler kalır.",
+     "bolum": "Note 6 - Leases and Other Commitments",
+     "kanit_alinti": "As of August 31, 2026, we had $288 billion of additional lease commitments, substantially all related to data center arrangements",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Sunucu ömrü 6 yıl varsayımı ve 48,5 milyar $ amortismana başlamamış yapılmakta olan yatırım",
+     "aciklama": "Amortisman bir yılda 1.351 milyon $'dan 3.156 milyon $'a çıktı. Bu gider, sunucu ve ağ ekipmanı için 6 yıllık faydalı ömür varsayımına dayanıyor. GPU'ların ekonomik ömrü tartışmalı. Ömrün 4-5 yıla kısalması, amortismanı ve marjı önemli ölçüde değiştirir. Ayrıca 48,5 milyar $'lık yapılmakta olan yatırım (CIP) henüz amortismana başlamadı. Bu varlıklar devreye girdikçe amortisman gideri daha da hızlanacak.",
+     "bolum": "Note 3 - Property, Plant and Equipment",
+     "kanit_alinti": "Comprised primarily of servers and networking equipment with estimated useful life of six years.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Bulut ve yazılım segment marjı 5 puan geriledi; GAAP marj artışı amortisman erimesine dayanıyor",
+     "aciklama": "Bulut ve yazılım segment marjı %60'tan %55'e indi. Altyapı giderleri %82 arttı. Yani OCI büyümesi, eski yüksek marjlı yazılım gelirinden daha düşük marjlı. Konsolide GAAP marj artışının kaynakları büyük ölçüde şunlar: amortisman düşüşü (-218 milyon $), yeniden yapılanma giderinin azalması (-321 milyon $), satış-pazarlama (-252 milyon $) ve Ar-Ge'deki (-90 milyon $) personel kesintileri. Non-GAAP marj %42'de sabit kaldı; karma kayması maliyet kesintileriyle ancak dengelenebildi.",
+     "bolum": "MD&A - Cloud and Software Business",
+     "kanit_alinti": "Total margin as a percentage of revenues in constant currency decreased in the first quarter of fiscal 2027, relative to the first quarter of fiscal 2026, due to an increase in cloud and software business’ total expenses driven by higher infrastructure expenses",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Borcun gerçeğe uygun değeri defter değerinin yaklaşık %15 altında",
+     "aciklama": "Kıdemli tahviller ve diğer uzun vadeli borçlanmaların defter değeri 125,0 milyar $, gerçeğe uygun değeri ise 105,7 milyar $. Gerçeğe uygun değer tek çeyrekte 114,4 milyar $'dan 105,7 milyar $'a düştü; aynı sürede nominal borç yalnızca 3,1 milyar $ azaldı. Bu, piyasanın Oracle kredisine daha yüksek getiri talep ettiğine işaret ediyor (kredi marjı genişlemesi ve/veya faiz etkisi). Faiz gideri zaten %55 artışla 1.428 milyon $ oldu. Yeni borçlanmanın maliyeti daha yüksek olacak.",
+     "bolum": "Note 2 - Fair Value Measurements",
+     "kanit_alinti": "the estimated fair values of the senior notes and other long-term borrowings and the related fair value hedges, if any, using Level 2 inputs at August 31, 2026 and May 31, 2026 were $105.7 billion and $114.4 billion, respectively.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "OCI açıklamalarına yönelik menkul kıymet toplu davası",
+     "aciklama": "CTO, CEO'lardan biri ve yönetim kurulu üyesi aleyhine, bulut altyapısı işine ilişkin yanıltıcı beyan iddiasıyla toplu dava açıldı; dilekçe Temmuz 2026'da genişletildi. Şirket davanın önemli etkisi olmayacağını söylüyor. Ancak iddia, tezin tam merkezindeki iş koluna yönelik. Yönetim beyanlarının (RPO, kapasite) güvenilirliği açısından izlenmeli.",
+     "bolum": "Note 11 - Legal Proceedings",
+     "kanit_alinti": "alleging that the defendants made or are responsible for false and misleading statements regarding Oracle’s cloud infrastructure business",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Kurucu ve CTO Ellison'dan 50 milyon hisseye kadar satış planı",
+     "aciklama": "Ellison, şirket 20 milyar $'lık ATM ihracını tamamlarken 22 Haziran 2026'da 10b5-1 satış planı kabul etti. Plan 24 Ekim 2026'ya kadar geçerli ve 50 milyon hisseye kadar satışa izin veriyor. Bu satışlar, piyasaya şirket ihracına ek bir hisse arzı demek. İçerideki kişilerin satışları tek başına sinyal değil. Ancak 'talep arzı aşıyor' söylemiyle aynı zamana denk gelmesi dikkat gerektiriyor.",
+     "bolum": "Part II, Item 5 - Other Information (Rule 10b5-1 Trading Plans)",
+     "kanit_alinti": "The trading plan is intended to permit Mr. Ellison to sell up to 50 million shares of Oracle common stock.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    }
+   ],
+   "yorum_sutunlari": [
+    {
+     "id": "rekabet",
+     "durum": "sari",
+     "gerekce": "Olumlu taraf: Yönetim AI talebinin arzı aştığını söylüyor, çeyrekte 30 milyar $'ın üzerinde yeni sözleşme ve 664 milyar $ RPO bildiriyor. Q1 guidance aşıldı, FY27 EPS guidance'ı hafifçe yükseltildi. Zayıf taraf: RPO'nun birkaç büyük AI müşterisine yoğunlaştığı anlaşılıyor, ancak müşteri bazında açıklama yok. Bulut ve yazılım marjı 5 puan geriledi; eski yüksek marjlı lisans (-%15) ve destek (-%1) gelirleri eriyor. OCI açıklamalarına yönelik bir toplu dava sürüyor ve Ellison 50 milyon hisseye kadar satış planı kurdu. Yönetimin 'sermaye planına ek etki yok' güvencesi, 288 milyar $'lık kira taahhüdü ve devam eden ATM veya borç ihtiyacı karşısında sınırlı teselli sağlıyor. Tez için rekabet ve yönetim sinyalleri karışık.",
+     "kanit_alinti": "Customer demand for AI Cloud Training and Inferencing Services continues to grow faster than supply.",
+     "kaynak_belge": "basin_bulteni",
+     "kanit_alinti_dogrulandi": true
+    }
+   ],
+   "seytanin_avukati": {
+    "en_guclu_arguman": "Oracle, yüksek marjlı ve nakit üreten bir yazılım şirketinden, borç, hisse ihracı ve müşteri ön ödemeleriyle finanse edilen, sermaye yoğun bir AI altyapı kiralayıcısına dönüşüyor. Bu dönüşümde hissedar başına ekonomik değer seyreliyor. Raporlanan rekor OCF'nin yaklaşık yarısı müşteriden alınmış finansman niteliğinde. Bu ön ödeme olmadan FCF tek çeyrekte yaklaşık -17 milyar $. Açık 141 milyon yeni hisseyle kapatıldı; üstelik kurucu da aynı dönemde 50 milyon hisseye kadar satış planı kurdu. Bilanço dışında 288 milyar $'lık, 15-19 yıllık iptal edilemez kira taahhüdü birikiyor. Bu taahhüt, yoğunlaşması açıklanmayan birkaç AI müşterisinin RPO'suna dayanıyor. Bu müşterilerden biri ödeme gücünü ya da talebini kaybederse gelir gider, ama sabit maliyetler kalır. Tahvil piyasası riski fiyatlamaya başlamış görünüyor: borcun gerçeğe uygun değeri defter değerinin yaklaşık %15 altında. Non-GAAP marjın yerinde saymasına rağmen GAAP marj artışının amortisman erimesinden gelmesi, çekirdek kârlılığın iyileşmediğini gösteriyor.",
+    "destekleyen_olgular": [
+     {
+      "olgu": "FCF FY26 Q1'de -362 milyon $ iken FY27 Q1'de -5.396 milyon $. TTM FCF marjı -%40,01.",
+      "kaynak": "SEC XBRL: fcf, fcf_margin_ttm",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Capex tek çeyrekte 28.499 milyon $ ve gelirin yaklaşık 1,5 katı.",
+      "kaynak": "SEC XBRL: capex",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "OCF'nin 11.363 milyon $'ı finansman bileşenli müşteri ön ödemesi; toplam ertelenmiş gelir tek çeyrekte 15.395 milyon $'dan 30.789 milyon $'a çıktı.",
+      "kaynak": "10-Q/10-K: Condensed Consolidated Statements of Cash Flows; Note 5 - Deferred Revenues",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Seyreltilmiş hisse sayısı yıllık %3,13 arttı (3.000 milyon). ATM ile 141 milyon hisse ihraç edildi. Dolaşımdaki hisse 3.024 milyona ulaştı, bu da Q2'de ek seyrelme demek.",
+      "kaynak": "SEC XBRL: diluted_shares_yoy; 10-Q/10-K: Note 7 - Stockholders' Equity",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Başlamamış veri merkezi kira taahhüdü 288 milyar $, koşulsuz alım yükümlülüğü 34.150 milyon $.",
+      "kaynak": "10-Q/10-K: Note 6 - Leases and Other Commitments",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Borcun gerçeğe uygun değeri 105,7 milyar $, defter değeri 125,0 milyar $. Faiz gideri %55 artışla 1.428 milyon $.",
+      "kaynak": "10-Q/10-K: Note 2 - Fair Value Measurements; MD&A - Interest Expense",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Bulut ve yazılım segment marjı %60'tan %55'e geriledi. Yazılım lisansı %15, yazılım desteği %1 düştü.",
+      "kaynak": "10-Q/10-K: MD&A - Cloud and Software Business",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Ellison 22.06.2026'da 50 milyon hisseye kadar 10b5-1 satış planı kabul etti. Ayrıca OCI beyanlarına ilişkin bir menkul kıymet toplu davası sürüyor.",
+      "kaynak": "10-Q/10-K: Part II Item 5; Note 11 - Legal Proceedings",
+      "kaynak_dogrulandi": true
+     }
+    ],
+    "tezin_zayif_halkasi": "Tez 'büyüme, marj, nakit üretimi ve hisse sayısı korunuyor mu' sorusunu izliyor. Büyüme ve GAAP marj bu testi geçiyor gibi görünüyor. Ancak nakit üretimi ve hisse sayısı sütunları açıkça bozuluyor: FCF derin negatif ve seyrelme hızlanıyor. Görünürdeki güç ise müşteri ön ödemelerine ve amortisman erimesine dayanıyor. Tezin en kırılgan varsayımı, RPO'nun yoğunlaşması bilinmeyen birkaç müşteriden zamanında ve tahsil edilebilir biçimde gelire dönüşeceği. RPO'nun yalnızca yaklaşık %13'ü önümüzdeki 12 ayda gelire dönüşecek.",
+    "argumani_curutecek_gostergeler": [
+     "Müşteri ön ödemeleri hariç OCF'nin capex'i karşılamaya başlaması, yani düzeltilmiş FCF'nin sıfıra yaklaşması",
+     "FY27'de ATM veya yeni hisse ihracı olmadan finansmanın sürdürülmesi ve seyreltilmiş hisse sayısı artışının %1'in altına inmesi",
+     "Bulut ve yazılım segment marjının %55'te dengelenip yeniden yükselmesi",
+     "Müşteri yoğunlaşmasının açıklanması ve RPO'nun geniş bir müşteri tabanına yayıldığının gösterilmesi",
+     "Borcun gerçeğe uygun değeri ile defter değeri arasındaki farkın kapanması (kredi marjlarının daralması)",
+     "Ellison'ın satış planının sınırlı satışla ya da hiç satış yapılmadan sona ermesi",
+     "RPO'nun 12 ayda gelire dönüşen payının %13'ün üzerine çıkması ve OCI büyümesinin guidance ile uyumlu sürmesi"
+    ]
+   }
+  }
+ }
+}

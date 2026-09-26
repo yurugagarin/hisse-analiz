@@ -1,0 +1,245 @@
+{
+ "son": {
+  "dosya": {
+   "accn": "0001868275-26-000104",
+   "form": "10-Q",
+   "donem_sonu": "2026-06-30",
+   "tarih": "2026-08-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000104/ceg-20260630.htm",
+   "index_url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000104/0001868275-26-000104-index.htm",
+   "kesildi": false,
+   "karakter": 267348
+  },
+  "basin_bulteni": [],
+  "onceki_basin_bulteni": [],
+  "model": "claude-opus-5-5",
+  "guncelleme": "2026-09-26T12:15:01+00:00",
+  "analiz": {
+   "ozet": "CEG'in 2026 2. çeyrek 10-Q'su, Calpine satın alımıyla (7 Ocak 2026) büyük ölçüde şekillenmiş durumda. Raporlanan gelir yıllık %23 artışla 7.504 milyon $ oldu. Ancak Calpine'ın 1.907 milyon $'lık katkısı çıkarıldığında gelir 5.597 milyon $'a iniyor; bu, geçen yılın 6.101 milyon $'ına göre yaklaşık %8 daralma demek. Şirketin kendi proforma tablosu da aynı yönü gösteriyor: Q2 geliri 8.479 milyon $'dan 7.504 milyon $'a, net kâr 985 milyon $'dan 513 milyon $'a geriledi.\n\nGAAP seyreltilmiş hisse başı kâr 1,42 $ (önceki yıl 2,67 $). Düzeltilmiş (non-GAAP) HBK ise 2,55 $. Aradaki 407 milyon $'lık farkın yaklaşık 288 milyon $'ı tartışmaya açık kalemlerden geliyor:\n- satın alınan emtia sözleşmelerinin amortismanı: 149 milyon $\n- entegrasyon maliyetleri: 84 milyon $\n- emeklilik yükümlülüğünün hizmet dışı maliyeti: 20 milyon $\n- hukuki ve çevresel yükümlülük değişimi: 35 milyon $\n\nFaaliyet marjı %7,7'ye düştü (FY2025 Q2: %15,6). Birinci çeyrekteki %21'lik marj ise 995 milyon $'lık gerçekleşmemiş türev kazancıyla (6 aylık toplam) şişmişti.\n\nBilanço tarafında kaldıraç belirgin şekilde arttı:\n- Uzun vadeli borç 7,25 milyar $'dan 19,1 milyar $'a, kısa vadeli borç 1,65 milyar $'dan 5,2 milyar $'a çıktı; nakit 697 milyon $'a indi.\n- Serbest nakit akışı son iki çeyrekte negatif: FY2026 Q1 -850 milyon $, Q2 -118 milyon $.\n- Buna rağmen şirket 1,97 milyar $'lık hisse geri alımı yaptı.\n- Seyreltilmiş hisse sayısı yıllık %14,65 arttı.\n\nOlumlu tarafta:\n- PJM 2028/29 kapasite ihalesi tavan fiyattan (325 $/MW-gün) sonuçlandı.\n- 920 MW'lık yeni uzun vadeli nükleer güç satın alma anlaşması (PPA) imzalandı.\n- Veri merkezi anlaşmaları yapıldı.\n- Kalan edim yükümlülükleri (RPO) 11,9 milyar $ seviyesinde.\n\nKazanç kalitesini zayıflatan unsurlar:\n- Seviye 3 türevler 1,66 milyar $'a yükseldi.\n- Nükleer yükümlülük (ARO) tahmin güncellemesi faaliyet giderlerini 285 milyon $ azalttı.\n- Eyalet programı iadeleri 920 milyon $ tuttu.\n- Calpine'ın satın alma sonrası kârı şirket tarafından \"belirlenemez\" olarak açıklandı.\n\nBu çeyrek için basın bülteni bulunmadığından guidance karşılaştırması yapılamadı.",
+   "non_gaap": {
+    "aciklama_var": true,
+    "duzeltmeler": [
+     {
+      "kalem": "Gerçekleşmemiş gerçeğe uygun değer düzeltmeleri",
+      "tutar_metni": "Q2: +340 milyon $ (vergi sonrası); 6 ay: -381 milyon $",
+      "degerlendirme": "makul",
+      "gerekce": "Ekonomik hedge'lerin piyasa değerlemesi iki yönlü çalışıyor. Q2'de kârı artırıyor, 6 ayın toplamında ise azaltıyor. Simetrik uygulandığı sürece makul. Ancak Seviye 3 türevler hızla büyüdüğü için 'gerçekleşmiş' kısmın kalitesi ayrıca izlenmeli.",
+      "kanit_alinti": "Unrealized (Gain) Loss on Fair Value Adjustments (net of taxes of $116 and $37, respectively) (b) | 340 | 0.94",
+      "kaynak_belge": "10-Q/10-K",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Nükleer söküm (decommissioning) faaliyetleri",
+      "tutar_metni": "Q2: -221 milyon $; 6 ay: -395 milyon $",
+      "degerlendirme": "makul",
+      "gerekce": "Söküm fonu (NDT) getirileri ve ARO yeniden ölçümü faaliyetle ilgisiz ve oynak kalemler. Bunların çıkarılması düzeltilmiş kârı düşürüyor, yani muhafazakâr bir yön. 6 aylık rakamdaki ARO güncellemesi kazancı da bu yolla dışarıda bırakılıyor.",
+      "kanit_alinti": "Decommissioning-Related Activities (net of taxes of $298 and $208, respectively) (c) | (221) | (0.61)",
+      "kaynak_belge": "10-Q/10-K",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Satın alınan emtia sözleşmelerinin amortismanı",
+      "tutar_metni": "Q2: +149 milyon $; 6 ay: +303 milyon $",
+      "degerlendirme": "kari_iyi_gosteriyor",
+      "gerekce": "Calpine'dan gelen lehte sözleşmeler satın alma bedelinin parçası olarak ödendi. Bu sözleşmelerin itfası gelirden düşülüyor; itfa geri eklenince, bedeli ödenmiş sözleşme değeri tekrar kâra yazılmış oluyor. Nakit dışı olsa da ekonomik açıdan gerçek bir tüketim ve birkaç yıl tekrarlayacak: enerji sözleşmelerinin ortalama ömrü 6 yıl.",
+      "kanit_alinti": "Amortization of Acquired Commodity Contracts (net of taxes of $51 and $—, respectively) (d) | 149 | 0.41",
+      "kaynak_belge": "10-Q/10-K",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Calpine birleşme ve entegrasyon maliyetleri",
+      "tutar_metni": "Q2: +84 milyon $; 6 ay: +204 milyon $",
+      "degerlendirme": "belirsiz",
+      "gerekce": "Satın almaya bağlı bir kalem, ama iki çeyrektir sürüyor ve entegrasyonun hâlâ devam ettiği belirtiliyor. Bir kısmı vergiden düşülemiyor. Birkaç çeyrek daha sürerse fiilen tekrarlayan bir faaliyet maliyetine dönüşür.",
+      "kanit_alinti": "Calpine Merger and Integration Costs (net of taxes of $17 and $3, respectively) (e) | 84 | 0.23",
+      "kaynak_belge": "10-Q/10-K",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Emeklilik ve OPEB hizmet dışı maliyetleri",
+      "tutar_metni": "Q2: +20 milyon $; 6 ay: +40 milyon $",
+      "degerlendirme": "kari_iyi_gosteriyor",
+      "gerekce": "Her çeyrek tekrarlayan ve büyüyen bir maliyet: hizmet dışı bileşen yıllık 12'den 29 milyon $'a çıktı. Çalışanlara verilen taahhütlerin gerçek maliyeti olduğu için dışlanması düzeltilmiş kârı yukarı çekiyor.",
+      "kanit_alinti": "Pension & OPEB Non-Service (Credits) Costs (net of taxes of $7 and $3, respectively) | 20 | 0.06",
+      "kaynak_belge": "10-Q/10-K",
+      "kanit_alinti_dogrulandi": true
+     },
+     {
+      "kalem": "Hukuki ve çevresel yükümlülük değişimi",
+      "tutar_metni": "Q2: +35 milyon $",
+      "degerlendirme": "belirsiz",
+      "gerekce": "Asbest ve çevre davaları şirket için süreklilik taşıyan bir risk. Karşılık artışları dönemsel olsa da faaliyetle ilgisiz sayılamaz.",
+      "kanit_alinti": "Change in Legal and Environmental Liabilities (net of taxes of $12 and $—, respectively) | 35 | 0.10",
+      "kaynak_belge": "10-Q/10-K",
+      "kanit_alinti_dogrulandi": true
+     }
+    ],
+    "genel_yorum": "Q2'de GAAP net kâr 513 milyon $, düzeltilmiş kâr 920 milyon $: fark yaklaşık %79. Farkın büyük kısmı (340 milyon $) iki yönlü çalışan gerçekleşmemiş hedge kalemi. Söküm düzeltmesi ise kârı aşağı çekiyor (-221 milyon $). Sorunlu olan, tekrarlayan ya da satın alma bedelinin parçası olan kalemlerin eklenmesi: sözleşme amortismanı, entegrasyon, emeklilik ve hukuk kalemleri toplamı yaklaşık 288 milyon $. Bu 288 milyon $, 360 milyon hisseye bölündüğünde hisse başına yaklaşık 0,80 $ ediyor. Bunlar dahil edilmeseydi düzeltilmiş HBK yaklaşık 1,75 $ civarında kalırdı ve önceki yılın 1,91 $'ının altında olurdu. Yani düzeltilmiş HBK'daki yıllık %33'lük artış büyük ölçüde düzeltme tercihlerine dayanıyor."
+   },
+   "musteri_yogunlasmasi": {
+    "aciklama_var": true,
+    "detay": "Gelir tarafında %10'u aşan tek bir müşteri açıklanmamış. Müşteri tabanı yaklaşık 2,5 milyon hesap ve Fortune 100 şirketlerinin %80'i. Yoğunlaşma üç alanda görülüyor:\n- Türev kredi riski: tek bir yatırım yapılabilir notlu karşı taraf, 2.406 milyon $'lık net riskin 321 milyon $'ını (yaklaşık %13) oluşturuyor.\n- Tedarik tarafı: 2026 sonu–2031 arası uranyum konsantresi ihtiyacının yaklaşık %30'unu üç tedarikçi karşılıyor.\n- Crane yeniden başlatma projesi: 20 yıllık tek bir PPA'ya (Microsoft) bağlı.\nGelir yoğunlaşması düşük görünüyor; asıl yoğunlaşma riski karşı taraf kredisi ve nükleer yakıt tedarikinde.",
+    "bolum": "Note 12 - Derivative Financial Instruments (Credit Risk)",
+    "kanit_alinti": "| Investment grade | 1,938 | 59 | 1,879 | 1 | 321 |",
+    "etiket": "bilgi",
+    "kanit_alinti_dogrulandi": true
+   },
+   "organik_buyume": {
+    "satin_alma_var": true,
+    "detay": "Raporlanan Q2 gelir artışı %23; bunun tamamı ve fazlası Calpine'dan geliyor. Calpine'ın satın alma sonrası Q2 geliri 1.907 milyon $. Bu çıkarıldığında gelir yaklaşık 5.597 milyon $ ve 6.101 milyon $'a göre yaklaşık -%8,3 daralma var.\n\nŞirketin proforma tablosu (satın alma 1 Ocak 2025'te yapılmış varsayımıyla) Q2 gelirini 8.479 milyon $'dan 7.504 milyon $'a (-%11,5), net kârı 985 milyon $'dan 513 milyon $'a (-%48) indiriyor.\n\nSegment bazında zayıflıklar:\n- Other Power Regions geliri -%18,2 geriledi (New England yük hacmi düştü).\n- Nükleer üretim -%2,2 azaldı.\n- Arızi yakıt ikmali duruş günü 86'ya çıktı (önceki yıl 41).\n\nOrganik tarafı destekleyen tek güçlü unsur PJM kapasite fiyatları.\n\nCalpine'ın satın alma sonrası kârının 'belirlenemez' olarak açıklanması, satın almanın getirisinin denetlenmesini zorlaştırıyor.",
+    "bolum": "Note 2 - Mergers, Acquisitions, and Dispositions (Unaudited Pro Forma Results)",
+    "kanit_alinti": "| Operating revenues | 7,504 | 8,479 | 18,856 | 17,800 |",
+    "kanit_alinti_dogrulandi": true
+   },
+   "guidance": {
+    "onceki_guidance": "veri yok — önceki çeyreğin basın bülteni sağlanmadı",
+    "onceki_alinti": "veri yok",
+    "gerceklesen": "GAAP HBK 1,42 $; düzeltilmiş (non-GAAP) HBK 2,55 $ (Q2 2026)",
+    "gerceklesen_alinti": "Adjusted (non-GAAP) Operating Earnings | 920 | 2.55 | 599 | 1.91",
+    "sonuc": "karsilastirilamaz",
+    "yeni_guidance": "veri yok — bu çeyreğin basın bülteni sağlanmadı; 10-Q sayısal bir yönlendirme içermiyor. Yalnızca nitel beklentiler var: Brazos ve PJM varlık satışlarının yıl sonuna kadar kapanması ve nakit akışının yükümlülükleri karşılamaya yeterli olması.",
+    "yeni_alinti": "We expect the transactions to close by the end of this year.",
+    "onceki_alinti_dogrulandi": false,
+    "gerceklesen_alinti_dogrulandi": true,
+    "yeni_alinti_dogrulandi": true
+   },
+   "dipnot_bulgulari": [
+    {
+     "etiket": "kirmizi_bayrak",
+     "baslik": "Calpine'ın satın alma sonrası kârı 'belirlenemez'",
+     "aciklama": "21,8 milyar $'lık bir satın almanın kâra katkısı ayrıştırılamıyor. Buna 11,1 milyar $'lık geçici şerefiye de dahil. Segment ölçütü yalnızca RNF (gelir eksi alınan enerji ve yakıt): Q2'de 1.028 milyon $. Faiz, amortisman ve bakım-işletme giderleri dağıtılmıyor. Yatırımcı, satın almanın hisse başına kârı artırıp artırmadığını GAAP bazında doğrulayamıyor.",
+     "bolum": "Note 2 - Mergers, Acquisitions, and Dispositions",
+     "kanit_alinti": "it is impracticable to determine Calpine’s earnings since the Acquisition Date.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "kirmizi_bayrak",
+     "baslik": "Kaldıraç ve not düşüşü teminat riski",
+     "aciklama": "Uzun vadeli borç 7.250'den 19.111 milyon $'a, kısa vadeli borç 1.650'den 5.226 milyon $'a çıktı; nakit 697 milyon $. Kredi notu yatırım yapılabilir seviyenin altına düşerse 3,44 milyar $ ek teminat gerekiyor ve bu tutar 6 ayda 0,8 milyar $ arttı. Faiz gideri Q2'de 283 milyon $ (önceki yıl 118 milyon $). Bu tabloya rağmen 1,97 milyar $'lık hisse geri alımı borçla finanse edildi.",
+     "bolum": "Note 12 - Derivative Financial Instruments (Credit-Risk-Related Contingent Features)",
+     "kanit_alinti": "| Additional collateral required in the event of a credit downgrade below investment grade (at BB+/Ba1) (a)(b)(c) | 3,441 | 2,670 |",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Q1 geliri gerçekleşmemiş türev kazancıyla şişti; Seviye 3 türevler hızla büyüyor",
+     "aciklama": "6 aylık gelirde 995 milyon $ gerçekleşmemiş kazanç var. Metrik tablosundaki FY2026 Q1 gelir büyümesi (%63,85) ve %21 faaliyet marjı bu yüzden temsil edici değil. Seviye 3 net türevler 140'tan 1.663 milyon $'a çıktı. Q2'deki -514 milyon $'lık Seviye 3 kaybı, model bazlı değerlemenin oynaklığını gösteriyor.",
+     "bolum": "Note 5 - Segment Information",
+     "kanit_alinti": "Operating revenues include unrealized gains of $995 million and losses of $201 million for the six months ended June 30, 2026 and 2025, respectively.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "ARO tahmin değişikliği giderleri 285 milyon $ azalttı",
+     "aciklama": "Santrallerin varsayılan kapanış tarihleri ileri alındı (Calvert Cliffs, FitzPatrick, Limerick, Nine Mile Point). Bu, nükleer ARO'yu 1.277 milyon $ düşürdü ve 6 aylık bakım-işletme giderini 285 milyon $ azalttı. Kalem nakit dışı ve tahmine dayalı; GAAP kârını destekledi. Non-GAAP'ta söküm düzeltmesiyle dışlanıyor.",
+     "bolum": "Note 9 - Asset Retirement Obligations",
+     "kanit_alinti": "The 2026 ARO updates resulted in a decrease of $285 million in Operating and maintenance expense for the six months ended June 30, 2026",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Nükleer PTC ile bağlantılı eyalet programı iadeleri ve geriye dönük ZEC geliri",
+     "aciklama": "PTC ile bağlantılı eyalet programları nedeniyle 920 milyon $ iade edildi veya alacaklardan mahsup edildi. 6 ayda net gelir 275 milyon $ azaldı. Q2'de önceki dönemlere ait ZEC geliri 85 milyon $ (önceki yıl 201 milyon $); tahsilat 2027 Q3'te bekleniyor. Illinois ZEC programı Mayıs 2027'de sona eriyor. Bu tek seferlik ve bitmekte olan kalemler gelir kalitesini düşürüyor.",
+     "bolum": "Note 6 - Government Assistance",
+     "kanit_alinti": "we refunded or offset against outstanding receivables approximately $920 million associated with state-sponsored program compensation relating to the nuclear PTCs recorded in 2024.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Bilanço dışı alacak satışı faaliyet nakit akışını destekliyor",
+     "aciklama": "Calpine alacak satış programıyla 6 ayda 2.040 milyon $ alacak satıldı; dönem sonunda 459 milyon $ bilanço dışında. Bu satışlar faaliyet nakit akışına (OCF) yazılıyor. Ayrıca 400 milyon $'lık alacak teminatlı kredi kullanılıyor. OCF ve DSO karşılaştırmaları bu yapılardan etkileniyor. Programın süresi Kasım 2026'da doluyor ve şirket 459 milyon $'a kadar garanti veriyor.",
+     "bolum": "Note 7 - Accounts Receivable",
+     "kanit_alinti": "Receivables sold under the Calpine AR Facility are accounted for as sales and excluded from Accounts receivable, net in the Consolidated Balance Sheets and reflected as Cash provided by operating activities in the Consolidated Statements of Cash Flows.",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "dikkat",
+     "baslik": "Q2 efektif vergi oranı %44,2",
+     "aciklama": "Yükselişin nedeni nitelikli NDT fonu gelirinin yüksek oranla vergilenmesi (+20,7 puan). Vergi öncesi kâr 900 milyon $, net kâr 513 milyon $. Ertelenmiş vergi 6 ayda 740 milyon $ nakit dışı ekleme yaptı; OCF'nin önemli bir kısmı bu kalemden geliyor.",
+     "bolum": "Note 10 - Income Taxes",
+     "kanit_alinti": "| Qualified NDT fund income and losses | 20.7 | 186 | 10.5 | 134 |",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    },
+    {
+     "etiket": "olumlu",
+     "baslik": "PJM kapasite ihalesi tavan fiyattan sonuçlandı",
+     "aciklama": "2028/29 Base Residual Auction'da tüm CEG üniteleri 325 $/MW-gün tavanından temizlendi. Bu, kapasite gelirleri için orta vadeli bir görünürlük sağlıyor. Öte yandan fiyat bandı uzatıldığı için yukarı yönlü potansiyel sınırlı.",
+     "bolum": "MD&A - Other Key Business Drivers (PJM Market Reform)",
+     "kanit_alinti": "In July 2026, PJM released the results of the 2028/2029 Base Residual Auction and the entire RTO, including all submitted CEG units, cleared at the price cap of $325/MW-day",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    }
+   ],
+   "yorum_sutunlari": [
+    {
+     "id": "rekabet",
+     "durum": "sari",
+     "gerekce": "Rekabet konumu nitel olarak güçlü: 920 MW'lık yeni 15-20 yıllık nükleer PPA'lar, CyrusOne veri merkezi anlaşmaları (380 MW artı opsiyonlu 380 MW), PJM kapasite ihalesinde tavan fiyat ve gelir tarafında müşteri yoğunlaşmasının olmaması. Buna karşılık:\n- Proforma gelir ve kâr yıllık bazda geriliyor.\n- Nükleer kapasite faktörü %94,8'den %93,0'a düştü.\n- Other Power Regions'da yük kaybı var.\n- Kapasite fiyat bandı yukarı yönü sınırlıyor.\n- Yönetim sayısal guidance vermedi; basın bülteni de sağlanmadı.\n- Calpine kârı ayrıştırılamadığı için satın alma tezi doğrulanamıyor.\nSonuç: karışık tablo.",
+     "kanit_alinti": "We have signed an additional 920 MW of long-term PPAs for clean, reliable nuclear generation with a diverse set of investment grade customers",
+     "kaynak_belge": "10-Q/10-K",
+     "kanit_alinti_dogrulandi": true
+    }
+   ],
+   "seytanin_avukati": {
+    "en_guclu_arguman": "CEG, borçla finanse ettiği 21,8 milyar $'lık bir satın almayla büyüyor gibi görünüyor, ama altta yatan iş küçülüyor. Proforma Q2 geliri %11,5, proforma net kâr %48 düştü. Calpine hariç gelir yıllık yaklaşık %8 geriledi.\n\nYönetim, düzeltilmiş HBK'yı 1,91 $'dan 2,55 $'a çıkaran bir tablo sunuyor. Ancak bu artış, tekrarlayan ya da bedeli ödenmiş kalemlerin (sözleşme amortismanı, entegrasyon, emeklilik) geri eklenmesine dayanıyor. Calpine'ın kâra katkısı ise 'belirlenemez' ilan edilmiş.\n\nBilanço tarafı da zayıf:\n- Toplam borç yaklaşık 24,7 milyar $ ve nakit 0,7 milyar $.\n- Son iki çeyrekte serbest nakit akışı negatif.\n- Faiz gideri 2,4 katına çıktı.\n- Buna rağmen 2 milyar $'lık hisse geri alımı borçla yapıldı.\n- Hisse sayısı yine de %14,65 arttı.\n\nNot düşüşünde 3,4 milyar $ ek teminat gerekmesi ve Seviye 3 türevlerin 1,66 milyar $'a çıkması, kazançların hem kalitesini hem de öngörülebilirliğini zayıflatıyor.",
+    "destekleyen_olgular": [
+     {
+      "olgu": "Proforma Q2 geliri 8.479 milyon $'dan 7.504 milyon $'a, net kâr 985 milyon $'dan 513 milyon $'a düştü",
+      "kaynak": "10-Q/10-K: Note 2 - Unaudited Pro Forma Results",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "FCF FY2026 Q1'de -850 milyon $, Q2'de -118 milyon $; TTM FCF marjı %0,99",
+      "kaynak": "SEC XBRL: fcf, fcf_margin_ttm",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Seyreltilmiş hisse sayısı yıllık %14,65 artışla 360 milyona çıktı",
+      "kaynak": "SEC XBRL: diluted_shares_yoy",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Faaliyet marjı Q2'de %7,73 (FY2025 Q2: %15,59)",
+      "kaynak": "SEC XBRL: operating_margin",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Uzun vadeli borç 19.111 milyon $, kısa vadeli borç 5.226 milyon $, nakit 697 milyon $",
+      "kaynak": "10-Q/10-K: Consolidated Balance Sheets",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Not düşüşü halinde gereken ek teminat 3.441 milyon $",
+      "kaynak": "10-Q/10-K: Note 12 - Derivative Financial Instruments",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Calpine'ın satın alma sonrası kârı ayrıştırılamıyor; 11,1 milyar $'lık şerefiye geçici olarak tahsis edildi",
+      "kaynak": "10-Q/10-K: Note 2 - Mergers, Acquisitions, and Dispositions",
+      "kaynak_dogrulandi": true
+     },
+     {
+      "olgu": "Nükleer kapasite faktörü %93,0 (önceki yıl %94,8); yakıt ikmali duruş günü 86 (önceki yıl 41)",
+      "kaynak": "10-Q/10-K: MD&A - Nuclear Fleet Capacity Factor",
+      "kaynak_dogrulandi": true
+     }
+    ],
+    "tezin_zayif_halkasi": "Bu argüman, düşüşün kalıcı olduğunu varsayıyor. Oysa Q2'deki bozulmanın bir kısmı geçici etkenlerden kaynaklanıyor:\n- 320 milyon $ gerçekleşmemiş hedge kaybı (6 ayda ise net kazanç var)\n- Planlı nükleer yakıt ikmali duruşları\n- Entegrasyon maliyetleri\nAyrıca yaklaşık 5,86 milyar $'lık zorunlu varlık satışları kapanınca borç önemli ölçüde azalabilir. PJM kapasite fiyatlarının tavandan temizlenmesi ve 11,9 milyar $'lık RPO da ileriye dönük nakit görünürlüğü sağlıyor.",
+    "argumani_curutecek_gostergeler": [
+     "LS Power'a yapılacak satışların (5,0 milyar $ + 860 milyon $) yıl sonuna kadar kapanması ve gelirin borç azaltımında kullanılması",
+     "Sonraki çeyreklerde FCF'nin kalıcı olarak pozitife dönmesi ve hisse geri alımlarının FCF'nin altında kalması",
+     "Entegrasyon maliyetlerinin 2026 sonrasında sıfıra yaklaşması ve düzeltme kalemlerinin daralması",
+     "Nükleer kapasite faktörünün tekrar %94+ seviyesine dönmesi ve proforma gelirin yıllık bazda büyümeye geçmesi",
+     "Kredi notlarının (BBB+/Baa1) korunması ya da görünümün iyileşmesi"
+    ]
+   }
+  }
+ }
+}
