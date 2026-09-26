@@ -103,20 +103,14 @@
   };
 
   /* ================= SİSTEM ================= */
-  const scrollAdd = parts => { if ((parts || [])[0] === 'hisse-ekle') setTimeout(() => { const e = document.getElementById('hisse-ekle'); if (e) e.scrollIntoView({ block: 'start' }); }, 30); };
+  const scrollAdd = parts => { if ((parts || [])[0] === 'hisse-ekle') { location.replace('#/yonet'); } };
   H.views.system = async function (parts) {
     const [runs, cfg, usage] = await Promise.all([H.J('runs.json', true), H.J('config.json'), H.JL('usage.jsonl')]);
     const $ = H.$();
     const repo = await H.repo();
     const wf = repo ? `https://github.com/${repo}/actions/workflows/hisse-ekle.yml` : null;
-    const addCard = `<section class="card stack" id="hisse-ekle"><div class="sec-head"><span class="eyebrow">Hisse ekle / çıkar</span><h2 class="h-sec">Kod değiştirmeden yeni hisse</h2></div>
-      <ol class="steps">
-        <li>${wf ? `<a href="${H.esc(wf)}" target="_blank" rel="noopener">GitHub'da "Hisse ekle / çıkar" sayfasını aç</a>` : 'GitHub → Actions → "Hisse ekle / çıkar"'} (telefondaki GitHub uygulamasından da olur).</li>
-        <li>Sağdaki <b>Run workflow</b> düğmesine bas. <b>Ne yapılsın</b>: ekle, <b>Borsa kodu</b>: ör. <span class="code">AMD</span>. Şirket adı ve ETF'leri boş bırakabilirsin.</li>
-        <li>Yeşil <b>Run workflow</b> ile onayla. Sistem kodu SEC'te doğrular, listeye ekler, şirketin bugünkü rakamlarına göre bir <b>taslak tez</b> yazar ve verileri çeker.</li>
-        <li>Yaklaşık 3-5 dakika sonra hisse sol menüde ve panelde görünür. Tez taslağını <span class="code">config/theses.yaml</span> dosyasında kendi görüşüne göre düzenleyebilirsin; istersen bana söyle, birlikte yazalım.</li>
-      </ol>
-      <p class="small muted">Çıkarmak için aynı yerde "cikar" seç. Tez ve geçmiş veri silinmez; tekrar eklersen kaldığı yerden devam eder. Karşılaştırma ETF önerileri: yarı iletken SMH, yazılım IGV, iletişim/medya XLC, genel piyasa SPY.</p></section>`;
+    const addCard = `<section class="card stack-s" id="hisse-ekle"><div class="sec-head"><span class="eyebrow">Hisse ekle / çıkar</span><h2 class="h-sec">Siteden yönet</h2></div>
+      <p class="small">Hisse eklemek ve çıkarmak için <a href="#/yonet">Hisseleri yönet</a> sayfasını kullan: şirketin adını yazıp listeden seçmen yeterli. Elle yapmak istersen ${wf ? `<a href="${H.esc(wf)}" target="_blank" rel="noopener">GitHub → Actions → "Hisse ekle / çıkar"</a>` : 'GitHub → Actions → "Hisse ekle / çıkar"'} da çalışır.</p></section>`;
     if (!runs) { $.innerHTML = `<div class="wrap">${H.noData()}</div>`; return; }
     const py = runs.find(r => r.tur !== 'claude') || {}, cr = runs.find(r => r.tur === 'claude');
     const since = new Date(Date.now() - 30 * 864e5).toISOString(), u30 = usage.filter(u => u.zaman >= since);

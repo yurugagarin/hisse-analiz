@@ -2,6 +2,10 @@
 
   python pipeline/manage.py ekle AMD [--ad "Advanced Micro Devices"] [--benchmarks QQQ,SMH]
   python pipeline/manage.py cikar AMD
+  python pipeline/manage.py --issue      (GitHub issue'dan: başlık "hisse ekle CEG" / "hisse cikar CEG")
+
+Siteden ekleme/çıkarma bu betiği GitHub Actions üzerinden çalıştırır; sonuç mesajı
+iş akışında not (annotation) olarak yazılır ve site bunu okuyup gösterir.
 
 Ekleme:
   1. Kodu SEC ticker listesinde doğrular (SEC_USER_AGENT varsa); şirket adını oradan alır.
@@ -24,28 +28,44 @@ from common import CONFIG, load_yaml, setup_logging  # noqa: E402
 TICKER_RE = re.compile(r"^[A-Z][A-Z0-9.\-]{0,9}$")
 
 
+class Hata(Exception):
+    pass
+
+
 def sec_lookup(ticker: str):
-    """(cik, SEC'teki şirket adı) veya (None, None)."""
+    """(ticker, cik, SEC'teki şirket adı) veya (ticker, None, None). BRK.B gibi yazımları BRK-B'ye çevirir."""
     try:
         import sec
         if sec.sess.disabled:
-            return None, None
+            return ticker, None, None
         r = sec.sess.get("https://www.sec.gov/files/company_tickers.json")
         if r is None:
-            return None, None
-        for v in r.json().values():
-            if v["ticker"].upper() == ticker:
-                return int(v["cik_str"]), v["title"]
+            return ticker, None, None
+        m = {v["ticker"].upper(): v for v in r.json().values()}
+        for t in (ticker, ticker.replace(".", "-"), ticker.replace("-", ".")):
+            if t in m:
+                return t, int(m[t]["cik_str"]), m[t]["title"]
     except Exception as e:  # noqa: BLE001
         print("SEC sorgusu başarısız:", e)
-    return None, None
+    return ticker, None, None
 
 
 def nice_name(title: str) -> str:
-    keep = {"AI", "US", "USA", "AG", "SA", "NV", "SE", "PLC", "LP"}
-    drop = {"INC", "INC.", "CORP", "CORP.", "CORPORATION", "CO", "CO.", "LTD", "LTD.", "HOLDINGS", "/DE/", "/DE", "CLASS", "A"}
-    words = [w for w in title.replace(",", "").split() if w.upper() not in drop]
-    return " ".join(w if w.upper() in keep or (len(w) <= 4 and w.isupper() and not w.isalpha()) else w.capitalize() for w in words) or title
+    import sec
+    return sec.nice_name(title)
+
+
+def sec_profile(cik: int) -> dict:
+    """SIC sektörü ve ABD GAAP (10-Q/10-K) verisi olup olmadığı."""
+    import sec
+    out = {"sic": None, "sektor": None, "us_gaap": None, "formlar": []}
+    sub = sec.submissions(cik) or {}
+    out["sic"], out["sektor"] = sub.get("sic"), sub.get("sicDescription")
+    out["formlar"] = sorted(set((sub.get("filings", {}).get("recent", {}) or {}).get("form", [])[:200]))
+    cf = sec.companyfacts(cik)
+    if cf is not None:
+        out["us_gaap"] = bool((cf.get("facts") or {}).get("us-gaap"))
+    return out
 
 
 def latest_metrics(cik: int) -> dict:
@@ -117,15 +137,30 @@ def add(T: str, name: str | None, benchmarks: list[str]) -> str:
     stocks = load_yaml("stocks.yaml").get("stocks", [])
     if any(s["ticker"].upper() == T for s in stocks):
         return f"{T} zaten listede; değişiklik yapılmadı."
-    cik, sec_title = sec_lookup(T)
-    if cik is None and sec_title is None:
+    T, cik, sec_title = sec_lookup(T)
+    if any(s["ticker"].upper() == T for s in stocks):
+        return f"{T} zaten listede; değişiklik yapılmadı."
+    prof = {}
+    if cik is None:
         try:
             import sec
             sec_off = sec.sess.disabled
         except Exception:  # noqa: BLE001
             sec_off = True
         if not sec_off:
-            raise SystemExit(f"HATA: {T} SEC ticker listesinde bulunamadı. Kodu kontrol et (ör. Google yerine GOOGL).")
+            raise Hata(f"{T} ABD borsalarındaki SEC şirket listesinde yok. Borsa kodunu kontrol et: sitedeki arama kutusuna "
+                       "şirketin adını yazıp listeden seç (ör. Constellation Energy = CEG, Google = GOOGL). "
+                       "Frankfurt/Xetra gibi Avrupa borsa kodları burada geçmez.")
+    else:
+        prof = sec_profile(cik)
+        if prof.get("us_gaap") is False:
+            forms = [f for f in prof.get("formlar", []) if f in ("20-F", "40-F", "6-K")]
+            raise Hata(f"{T} ({nice_name(sec_title)}) SEC'e ABD GAAP bilançosu vermiyor"
+                       + (f" (yabancı şirket, {'/'.join(forms)} ile raporluyor)" if forms else "")
+                       + ". Bu sitenin bilanço, tez ve insider analizleri SEC'in 10-Q/10-K ve Form 4 verisine dayandığı için eklenmedi.")
+    if not benchmarks:
+        import sec
+        benchmarks = sec.benchmarks_for_sic(prof.get("sic"))
     name = (name or "").strip() or (nice_name(sec_title) if sec_title else T)
     bm = ", ".join(benchmarks)
     p = CONFIG / "stocks.yaml"
@@ -133,7 +168,8 @@ def add(T: str, name: str | None, benchmarks: list[str]) -> str:
     safe = name.replace('"', "'")
     txt += f'  - {{ticker: {T}, name: "{safe}", benchmarks: [{bm}], haber_anahtar: ["{safe}"]}}\n'
     p.write_text(txt, encoding="utf-8")
-    msg = [f"{T} ({name}) listeye eklendi."]
+    msg = [f"{T} ({name}) listeye eklendi."
+           + (f" Sektör: {prof['sektor']}." if prof.get("sektor") else "") + f" Karşılaştırma: {bm}."]
     theses = load_yaml("theses.yaml")
     if T not in theses:
         m = latest_metrics(cik) if cik else {}
@@ -156,29 +192,65 @@ def remove(T: str) -> str:
     return f"{T} listeden çıkarıldı. Tezi ve geçmiş verisi silinmedi; tekrar eklersen kaldığı yerden devam eder."
 
 
-def main():
-    setup_logging()
-    ap = argparse.ArgumentParser()
-    ap.add_argument("islem", choices=["ekle", "cikar"])
-    ap.add_argument("ticker")
-    ap.add_argument("--ad", default="")
-    ap.add_argument("--benchmarks", default="")
-    a = ap.parse_args()
-    T = a.ticker.strip().upper().replace(" ", "")
-    if not TICKER_RE.match(T):
-        raise SystemExit(f"HATA: '{a.ticker}' geçerli bir borsa kodu değil.")
-    if a.islem == "ekle":
-        bms = [b.strip().upper() for b in a.benchmarks.split(",") if b.strip()] or \
-            load_yaml("settings.yaml").get("default_benchmarks", ["QQQ", "SMH"])
-        bms = [b for b in bms if TICKER_RE.match(b)][:4]
-        out = add(T, a.ad, bms)
-    else:
-        out = remove(T)
-    print(out)
+def from_issue(title: str, body: str):
+    """'hisse ekle CEG' / 'hisse cikar CEG' + gövdede isteğe bağlı 'ad: ...' ve 'benchmarks: ...' satırları."""
+    m = re.match(r"^\s*hisse\s+(ekle|cikar|çıkar)\s+([A-Za-z0-9.\-]{1,10})\s*$", title or "", re.I)
+    if not m:
+        raise Hata("Başlık 'hisse ekle KOD' veya 'hisse cikar KOD' biçiminde olmalı.")
+    islem = "cikar" if m.group(1).lower() in ("cikar", "çıkar") else "ekle"
+    kv = {}
+    for line in (body or "").splitlines():
+        k, _, v = line.partition(":")
+        if k.strip().lower() in ("ad", "benchmarks") and v.strip():
+            kv[k.strip().lower()] = v.strip()[:80]
+    return islem, m.group(2), kv.get("ad", ""), kv.get("benchmarks", "")
+
+
+def _gh_out(ok: bool, msg: str, T: str, islem: str):
+    """Sonucu iş akışına yazar: annotation (site bunu okur), özet ve sonraki adımlar için çıktı."""
     import os
+    one = msg.replace("\n", " ").replace("%", "%25")
+    print(f"::{'notice' if ok else 'error'} title={'Tamam' if ok else 'Hata'}::{one}")
     if os.environ.get("GITHUB_STEP_SUMMARY"):
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
-            f.write(f"### {out}\n")
+            f.write(f"### {'✅' if ok else '❌'} {msg}\n")
+    if os.environ.get("GITHUB_OUTPUT"):
+        with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+            f.write(f"ok={'true' if ok else 'false'}\nticker={T}\nislem={islem}\n")
+            f.write(f"mesaj<<EOF_MSG\n{msg}\nEOF_MSG\n")
+
+
+def main():
+    import os
+    setup_logging()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("islem", nargs="?", choices=["ekle", "cikar"])
+    ap.add_argument("ticker", nargs="?", default="")
+    ap.add_argument("--ad", default="")
+    ap.add_argument("--benchmarks", default="")
+    ap.add_argument("--issue", action="store_true", help="ISSUE_TITLE / ISSUE_BODY ortam değişkenlerinden oku")
+    a = ap.parse_args()
+    islem, T = a.islem or "ekle", ""
+    try:
+        if a.issue:
+            islem, tk, ad, bm = from_issue(os.environ.get("ISSUE_TITLE", ""), os.environ.get("ISSUE_BODY", ""))
+        else:
+            if not a.islem:
+                raise Hata("İşlem (ekle/cikar) belirtilmedi.")
+            tk, ad, bm = a.ticker, a.ad, a.benchmarks
+        T = tk.strip().upper().replace(" ", "")
+        if not TICKER_RE.match(T):
+            raise Hata(f"'{tk}' geçerli bir borsa kodu değil.")
+        if islem == "ekle":
+            bms = [b.strip().upper() for b in bm.split(",") if b.strip() and b.strip().lower() != "otomatik"]
+            bms = [b for b in bms if TICKER_RE.match(b)][:4]
+            out = add(T, ad, bms)
+        else:
+            out = remove(T)
+    except Hata as e:
+        _gh_out(False, str(e), T, islem)
+        raise SystemExit(1)
+    _gh_out(True, out, T, islem)
 
 
 if __name__ == "__main__":

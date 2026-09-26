@@ -56,7 +56,10 @@ var H = window.H || {};
   };
 
   /* ---------- veri ---------- */
-  const stamp = () => Math.floor(Date.now() / 300000);
+  let bust = 0;
+  const stamp = () => Math.floor(Date.now() / 300000) + (bust ? '-' + bust : '');
+  /* Önbelleği boşalt ve kabuğu (sol menü) yeniden çiz: hisse eklenip çıkarıldıktan sonra */
+  H.refreshAll = async function () { bust = Date.now(); Object.keys(cache).forEach(k => delete cache[k]); await H.renderShell(); };
   H.J = async function (path, fresh) {
     if (!fresh && path in cache) return cache[path];
     try {
@@ -112,7 +115,7 @@ var H = window.H || {};
         <a href="#/sistem" data-r="sistem">Sistem</a>
       </nav>
       <div><div class="nav-h">Hisseler</div><nav class="stock-nav" aria-label="Hisseler">${stocks}</nav>
-        <a class="addstock" href="#/sistem/hisse-ekle">+ Hisse ekle / çıkar</a></div>
+        <a class="addstock" href="#/yonet" data-r="yonet">+ Hisse ekle / çıkar</a></div>
       <div class="side-foot"><span>${sum ? 'Güncelleme<br>' + H.dt(sum.guncelleme) : ''}</span><button class="iconbtn themebtn" type="button" aria-label="Temayı değiştir">${H.themeIcon()}</button></div>`;
     document.querySelectorAll('.themebtn').forEach(b => b.onclick = H.toggleTheme);
   };
@@ -123,7 +126,7 @@ var H = window.H || {};
     return owner && name ? owner + '/' + name : null;
   };
   H.markNav = function (r, t) {
-    document.querySelectorAll('.nav a').forEach(a => a.classList.toggle('on', a.dataset.r === r));
+    document.querySelectorAll('.nav a, .addstock').forEach(a => a.classList.toggle('on', a.dataset.r === r));
     document.querySelectorAll('.stock-nav a').forEach(a => a.classList.toggle('on', a.dataset.t === t));
   };
   H.closeSide = () => { document.getElementById('side').classList.remove('open'); const s = document.querySelector('.scrim'); if (s) s.remove(); };
@@ -141,7 +144,7 @@ var H = window.H || {};
     const parts = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean).map(decodeURIComponent);
     const r = parts[0] || 'panel';
     H.markNav(r === 'h' ? '' : r, r === 'h' ? (parts[1] || '').toUpperCase() : '');
-    const v = { panel: H.views.panel, h: H.views.stock, haftalik: H.views.weekly, karne: H.views.score, sistem: H.views.system, rehber: H.views.guide }[r];
+    const v = { panel: H.views.panel, h: H.views.stock, haftalik: H.views.weekly, karne: H.views.score, sistem: H.views.system, rehber: H.views.guide, yonet: H.views.manage }[r];
     try {
       if (!v) { H.$().innerHTML = '<div class="wrap"><p>Sayfa bulunamadı. <a href="#/">Panele dön</a></p></div>'; return; }
       await v(parts.slice(1));

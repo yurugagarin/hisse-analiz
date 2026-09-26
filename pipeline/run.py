@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import json
 import os
 import sys
 import time
@@ -162,6 +163,15 @@ def main():
     write_json(DATA / "config.json", {"stocks": stocks, "theses": theses, "rules": rcfg,
                                       "settings": settings, "repo": os.environ.get("GITHUB_REPOSITORY"),
                                       "guncelleme": now_iso()})
+
+    # Sitedeki "hisse ekle" arama kutusu için SEC şirket listesi (haftada bir yenilenir)
+    if not args.offline and not sec.sess.disabled:
+        tk = read_json(DATA / "tickers.json", {}) or {}
+        if not tk.get("liste") or (tk.get("guncelleme") or "")[:10] < (dt.date.today() - dt.timedelta(days=6)).isoformat():
+            lst = run.step("sec_ticker_listesi", "-", sec.ticker_list)
+            if lst and lst.get("liste"):
+                lst["guncelleme"] = now_iso()
+                (DATA / "tickers.json").write_text(json.dumps(lst, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
     bench_syms = sorted({b for s in stocks for b in s["benchmarks"]} | {"QQQ"})
     pstats = {}

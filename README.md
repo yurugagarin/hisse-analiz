@@ -38,18 +38,30 @@ Site: **https://yurugagarin.github.io/hisse-analiz/** (GitHub Pages, GitHub Acti
 - Finnhub (ücretsiz katman), SEC EDGAR, Nasdaq.com, Google News RSS: ücretsiz.
 - GitHub Actions: public repoda ücretsiz.
 
-## Yeni hisse eklemek (kod değiştirmeden)
+## Hisse eklemek / çıkarmak (siteden)
 
-1. GitHub → **Actions → "Hisse ekle / çıkar" → Run workflow** (telefondaki GitHub uygulamasından da çalışır).
-2. *Ne yapılsın*: `ekle`, *Borsa kodu*: ör. `AMD`. Şirket adı ve karşılaştırma ETF'leri boş bırakılabilir
-   (ad SEC'ten alınır, ETF varsayılanı QQQ + SMH; yazılım için IGV, iletişim için XLC, genel piyasa için SPY).
-3. Sistem kodu SEC listesinde doğrular, `config/stocks.yaml`'a ekler, şirketin **bugünkü rakamlarına göre**
-   "mevcut kaliteyi koru" mantığında bir **taslak tez** yazar (`config/theses.yaml`, `onay: taslak`) ve veri
-   pipeline'ını başlatır. 3-5 dakika içinde hisse sitede görünür.
-4. Taslak tezi kendi görüşüne göre düzenle (GitHub'da dosyayı açıp kalem ikonuyla). Kural kademeleri için
-   `config/rules.yaml`; yazılmazsa `varsayilan` kademeler kullanılır.
+Sitede sol menüdeki **+ Hisse ekle / çıkar** → **Hisseleri yönet** sayfası:
 
-Çıkarmak için aynı yerde `cikar` seç; tez ve geçmiş veri silinmez.
+1. Arama kutusuna şirketin **adını** veya borsa kodunu yaz (ör. `constellation`), listeden seç. Liste SEC'in
+   ABD borsalarındaki (Nasdaq, NYSE) şirket listesidir (`data/tickers.json`, haftalık yenilenir); listede
+   olmayan bir kod seçilemez. Frankfurt/Xetra gibi Avrupa kodları (ör. `E7S`) SEC'te yoktur.
+2. İstersen görünen adı ve karşılaştırma ETF'lerini değiştir. **Otomatik** seçilirse ETF, şirketin SEC'teki
+   sektör koduna (SIC) göre seçilir (ör. elektrik → SPY + XLU, yarı iletken → QQQ + SMH, yazılım → QQQ + IGV).
+3. **Ekle**'ye bas. İş, GitHub Actions'taki "Hisse ekle / çıkar" iş akışında yapılır; sayfa adımları canlı
+   gösterir (liste güncelleniyor → veriler hazırlanıyor → site güncelleniyor → hazır). Hata olursa mesajı
+   aynı yerde görünür (ör. yabancı şirket ABD GAAP bilançosu vermiyorsa eklenmez).
+
+İki çalışma şekli:
+- **GitHub bağlantısı olmadan:** Ekle'ye basınca GitHub'da hazır doldurulmuş bir istek (issue) açılır,
+  **Create** dersin. İş akışı yalnızca repo sahibinin açtığı `hisse ekle KOD` / `hisse cikar KOD`
+  başlıklı istekleri işler, sonucu isteğe yazar ve kapatır.
+- **GitHub bağlantısıyla (tek dokunuş):** sayfadaki adımlarla yalnızca bu repoya ve yalnızca
+  **Actions: Read and write** iznine sahip bir *fine-grained* anahtar oluşturup yapıştırırsın. Anahtar
+  yalnızca o tarayıcıda (localStorage) durur ve yalnızca api.github.com'a gönderilir.
+
+Eklenen hisse için şirketin **bugünkü rakamlarına göre** "mevcut kaliteyi koru" mantığında bir **taslak tez**
+yazılır (`config/theses.yaml`, `onay: taslak`); kendi görüşüne göre düzenle. Çıkarılan hissenin tezi ve
+geçmiş verisi silinmez. Elle yapmak istersen: GitHub → **Actions → "Hisse ekle / çıkar" → Run workflow**.
 
 ## Elle çalıştırma
 **Actions → Hisse analiz pipeline → Run workflow**: `sali_raporu` (Salı raporunu şimdi üret),

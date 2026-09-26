@@ -17,7 +17,8 @@ stooq = RateLimitedSession(0.5, headers=UA, name="Stooq")
 nasdaq = RateLimitedSession(0.6, headers={**UA, "Accept": "application/json, text/plain, */*",
                                           "Origin": "https://www.nasdaq.com", "Referer": "https://www.nasdaq.com/"},
                             name="Nasdaq")
-ETF = {"QQQ", "SMH", "XLC", "IGV", "SPY", "SOXX", "XLK", "VGT", "IWM", "DIA", "VOO", "ARKK"}
+ETF = {"QQQ", "SMH", "XLC", "IGV", "SPY", "SOXX", "XLK", "VGT", "IWM", "DIA", "VOO", "ARKK",
+       "XLU", "XLE", "XLF", "XLV", "XLI", "XLY", "XLP", "XLB", "XLRE"}
 
 
 def _yahoo(sym: str) -> list[tuple[str, float]] | None:

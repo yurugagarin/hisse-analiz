@@ -1,6 +1,10 @@
 name: Hisse ekle / çıkar
 
-# GitHub → Actions → "Hisse ekle / çıkar" → Run workflow. Telefondaki GitHub uygulamasından da çalışır.
+# Üç yoldan tetiklenir:
+#  1. Sitedeki "Hisseleri yönet" sayfası (GitHub bağlantısı kuruluysa doğrudan bu iş akışını başlatır)
+#  2. Sitedeki sayfa, bağlantı yoksa GitHub'da hazır doldurulmuş bir issue açar ("hisse ekle CEG");
+#     issue'yu yalnızca repo sahibi açtıysa işlenir, sonuç issue'ya yazılır ve issue kapatılır.
+#  3. GitHub → Actions → "Hisse ekle / çıkar" → Run workflow (elle)
 on:
   workflow_dispatch:
     inputs:
@@ -10,7 +14,7 @@ on:
         options: [ekle, cikar]
         default: ekle
       ticker:
-        description: "Borsa kodu (ör. AMD, GOOGL, TSM)"
+        description: "Borsa kodu (ör. AMD, GOOGL, CEG). Emin değilsen sitedeki arama kutusunu kullan."
         type: string
         required: true
       ad:
@@ -18,13 +22,16 @@ on:
         type: string
         default: ""
       benchmarks:
-        description: "Karşılaştırma ETF'leri, virgülle (boş bırak: QQQ, SMH). Yazılım için IGV, iletişim için XLC, genel piyasa için SPY."
+        description: "Karşılaştırma ETF'leri, virgülle (boş bırak: şirketin sektörüne göre otomatik seçilir)"
         type: string
         default: ""
+  issues:
+    types: [opened]
 
 permissions:
   contents: write
   actions: write
+  issues: write
 
 concurrency:
   group: hisse-pipeline-refs/heads/main
@@ -32,6 +39,9 @@ concurrency:
 
 jobs:
   manage:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.issue.user.login == github.repository_owner && startsWith(github.event.issue.title, 'hisse '))
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -43,27 +53,63 @@ jobs:
       - run: pip install -r pipeline/requirements.txt
 
       - name: Listeyi güncelle
+        id: m
+        continue-on-error: true
         env:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+          EVENT: ${{ github.event_name }}
           ISLEM: ${{ inputs.islem }}
           TICKER: ${{ inputs.ticker }}
           AD: ${{ inputs.ad }}
           BM: ${{ inputs.benchmarks }}
-        run: python pipeline/manage.py "$ISLEM" "$TICKER" --ad "$AD" --benchmarks "$BM"
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          if [ "$EVENT" = "issues" ]; then
+            python pipeline/manage.py --issue
+          else
+            python pipeline/manage.py "$ISLEM" "$TICKER" --ad "$AD" --benchmarks "$BM"
+          fi
 
       - name: Commit'le
+        id: c
+        if: steps.m.outputs.ok == 'true'
         env:
-          ISLEM: ${{ inputs.islem }}
-          TICKER: ${{ inputs.ticker }}
+          ISLEM: ${{ steps.m.outputs.islem }}
+          TICKER: ${{ steps.m.outputs.ticker }}
         run: |
           git config user.name "hisse-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add config
-          if git diff --cached --quiet; then echo "Değişiklik yok"; exit 0; fi
+          if git diff --cached --quiet; then echo "Değişiklik yok"; echo "degisti=false" >> "$GITHUB_OUTPUT"; exit 0; fi
           git commit -m "config: ${ISLEM} ${TICKER}"
           for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 5; done
+          echo "degisti=true" >> "$GITHUB_OUTPUT"
 
       - name: Veri pipeline'ını başlat
+        if: steps.c.outputs.degisti == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh workflow run hisse.yml --ref main -R "${{ github.repository }}"
+
+      - name: Sonucu issue'ya yaz
+        if: always() && github.event_name == 'issues'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUM: ${{ github.event.issue.number }}
+          OK: ${{ steps.m.outputs.ok }}
+          MSG: ${{ steps.m.outputs.mesaj }}
+          CHANGED: ${{ steps.c.outputs.degisti }}
+        run: |
+          if [ "$OK" = "true" ]; then
+            note=""; [ "$CHANGED" = "true" ] && note=$'\n\nVeriler hazırlanıyor; birkaç dakika içinde sitede görünür.'
+            gh issue close "$NUM" -R "${{ github.repository }}" --reason completed --comment "✅ ${MSG}${note}"
+          else
+            gh issue close "$NUM" -R "${{ github.repository }}" --reason "not planned" --comment "❌ ${MSG:-İşlem başarısız; ayrıntı için Actions kaydına bak.}"
+          fi
+
+      - name: Sonuç
+        if: steps.m.outputs.ok != 'true'
+        run: |
+          echo "İşlem yapılamadı (mesaj yukarıda)."
+          exit 1

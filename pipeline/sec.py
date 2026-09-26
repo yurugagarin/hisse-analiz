@@ -43,6 +43,67 @@ def cik_map() -> dict[str, int]:
     return m
 
 
+def nice_name(title: str) -> str:
+    """SEC unvanını okunur hale getirir: 'ORACLE CORP' -> 'Oracle', 'IonQ, Inc.' -> 'IonQ'."""
+    keep = {"AI", "US", "USA", "AG", "SA", "NV", "SE", "PLC", "LP", "ASML", "AMD", "IBM", "AT&T", "3M"}
+    drop = {"INC", "INC.", "CORP", "CORP.", "CORPORATION", "CO", "CO.", "LTD", "LTD.", "HOLDINGS", "/DE/", "/DE",
+            "CLASS", "A", "/MD/", "/NV/", "/NEW/", "NEW", "L.P.", "LLC", "PLC.", "N.V.", "S.A."}
+    words = [w for w in title.replace(",", "").split() if w.upper() not in drop]
+
+    def fix(w):
+        if w.upper() in keep or not w.isupper() or not any(c.isalpha() for c in w):
+            return w  # karışık yazımı (IonQ, eBay) ve kısaltmaları olduğu gibi bırak
+        if len(w) <= 3 and not w.isalpha():
+            return w
+        return w.capitalize()
+    return " ".join(fix(w) for w in words) or title
+
+
+def ticker_list() -> dict | None:
+    """Sitedeki arama kutusu için ABD borsalarındaki (Nasdaq/NYSE/CBOE) tüm SEC şirketleri."""
+    r = sess.get("https://www.sec.gov/files/company_tickers_exchange.json")
+    if r is None:
+        return None
+    js = r.json()
+    f = js.get("fields", [])
+    i_c, i_n, i_t, i_e = f.index("cik"), f.index("name"), f.index("ticker"), f.index("exchange")
+    seen, rows = set(), []
+    for row in js.get("data", []):
+        t, e = (row[i_t] or "").upper(), row[i_e]
+        if not t or e not in ("Nasdaq", "NYSE", "CBOE") or t in seen:
+            continue
+        seen.add(t)
+        rows.append([t, nice_name(row[i_n] or t), e, int(row[i_c])])
+    return {"alanlar": ["ticker", "ad", "borsa", "cik"], "liste": rows,
+            "kaynak": "https://www.sec.gov/files/company_tickers_exchange.json"}
+
+
+# SIC sektör kodu -> sektör ETF'i (hisse eklerken otomatik karşılaştırma seçimi)
+SIC_ETF = [
+    ((3674, 3674), "SMH"), ((3670, 3679), "SMH"), ((3570, 3579), "XLK"), ((3660, 3669), "XLK"),
+    ((7370, 7379), "IGV"), ((4800, 4899), "XLC"), ((7810, 7819), "XLC"), ((2710, 2741), "XLC"),
+    ((4922, 4925), "XLE"), ((1300, 1399), "XLE"), ((2910, 2919), "XLE"), ((4900, 4999), "XLU"),
+    ((6798, 6798), "XLRE"), ((6500, 6599), "XLRE"), ((6000, 6799), "XLF"),
+    ((2830, 2836), "XLV"), ((3840, 3851), "XLV"), ((8000, 8099), "XLV"), ((8731, 8731), "XLV"),
+    ((3720, 3729), "XLI"), ((3760, 3769), "XLI"), ((3500, 3569), "XLI"), ((4000, 4799), "XLI"),
+    ((3710, 3716), "XLY"), ((5000, 5999), "XLY"), ((7000, 7099), "XLY"), ((5800, 5899), "XLY"),
+    ((2000, 2199), "XLP"), ((5400, 5499), "XLP"), ((2840, 2844), "XLP"),
+    ((1000, 1499), "XLB"), ((2800, 2899), "XLB"), ((3300, 3399), "XLB"),
+]
+TECH_ETF = {"SMH", "XLK", "IGV", "XLC"}
+
+
+def benchmarks_for_sic(sic) -> list[str]:
+    try:
+        sic = int(sic)
+    except (TypeError, ValueError):
+        return ["SPY", "QQQ"]
+    for (lo, hi), etf in SIC_ETF:
+        if lo <= sic <= hi:
+            return ["QQQ" if etf in TECH_ETF else "SPY", etf]
+    return ["SPY", "QQQ"]
+
+
 def cik_for(ticker: str) -> int | None:
     m = cik_map()
     c = m.get(ticker.upper())
