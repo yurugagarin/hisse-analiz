@@ -1,5 +1,132 @@
 [
  {
+  "id": "20260926T113154Z",
+  "tur": "gunluk_python",
+  "baslangic": "2026-09-26T11:31:54+00:00",
+  "bitis": "2026-09-26T11:33:01+00:00",
+  "hisseler": [
+   "AAOI",
+   "CEG",
+   "IONQ",
+   "META",
+   "NOW",
+   "NVDA",
+   "ORCL"
+  ],
+  "finnhub_aktif": true,
+  "sec_aktif": true,
+  "sec_user_agent_tanimli": true,
+  "sec_istek": 7,
+  "claude": null,
+  "bekleyen_bilanco": [
+   "NVDA",
+   "META",
+   "NOW",
+   "AAOI",
+   "IONQ",
+   "ORCL",
+   "CEG"
+  ],
+  "adimlar": {
+   "fiyat": {
+    "ok": 13,
+    "hata": 0,
+    "sure_sn": 43.5
+   },
+   "cik": {
+    "ok": 7,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "sec_submissions": {
+    "ok": 7,
+    "hata": 0,
+    "sure_sn": 0.1
+   },
+   "bilanco_xbrl": {
+    "ok": 7,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "bilanco_yorum": {
+    "ok": 7,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "bilanco_takvimi": {
+    "ok": 7,
+    "hata": 0,
+    "sure_sn": 4.8
+   },
+   "insider_form4": {
+    "ok": 7,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "finnhub_insider": {
+    "ok": 7,
+    "hata": 0,
+    "sure_sn": 8.0
+   },
+   "insider_analiz": {
+    "ok": 7,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "finnhub_haber": {
+    "ok": 7,
+    "hata": 0,
+    "sure_sn": 7.4
+   },
+   "google_news": {
+    "ok": 7,
+    "hata": 0,
+    "sure_sn": 2.8
+   },
+   "baslik_arsivi": {
+    "ok": 7,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "hareketler": {
+    "ok": 7,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "tez": {
+    "ok": 7,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "kural": {
+    "ok": 7,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "sinyal": {
+    "ok": 7,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "karne": {
+    "ok": 1,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "haftalik_derleme": {
+    "ok": 1,
+    "hata": 0,
+    "sure_sn": 0.0
+   }
+  },
+  "hatalar": [],
+  "argumanlar": {
+   "offline": false,
+   "force_filings": false,
+   "tickers": ""
+  }
+ },
+ {
   "id": "20260926T113111Z",
   "tur": "offline_yeniden_hesap",
   "baslangic": "2026-09-26T11:31:11+00:00",

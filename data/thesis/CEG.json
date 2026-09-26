@@ -71,65 +71,65 @@
    "radar": []
   },
   {
-   "id": "brut_marj",
-   "ad": "Brüt marj",
+   "id": "marj",
+   "ad": "Faaliyet marjı (TTM)",
    "tip": "metrik",
    "aciklama": "",
-   "metrik": "gross_margin",
-   "metrik_adi": "Brüt marj",
+   "metrik": "operating_margin_ttm",
+   "metrik_adi": "TTM faaliyet marjı",
    "birim": "%",
-   "deger": null,
-   "donem": null,
+   "deger": 14.7,
+   "donem": "FY2026 Q2",
    "eski_donem": false,
    "operator": ">",
-   "esik": 40,
-   "uyari": 30,
-   "durum": "veri_yok",
+   "esik": 12,
+   "uyari": 7,
+   "durum": "yesil",
    "gecmis": [
     {
      "etiket": "FY2024 Q3",
-     "deger": null,
-     "durum": "veri_yok"
+     "deger": 13.81,
+     "durum": "yesil"
     },
     {
      "etiket": "FY2024 Q4",
-     "deger": null,
-     "durum": "veri_yok"
+     "deger": 18.47,
+     "durum": "yesil"
     },
     {
      "etiket": "FY2025 Q1",
-     "deger": null,
-     "durum": "veri_yok"
+     "deger": 16.49,
+     "durum": "yesil"
     },
     {
      "etiket": "FY2025 Q2",
-     "deger": null,
-     "durum": "veri_yok"
+     "deger": 15.47,
+     "durum": "yesil"
     },
     {
      "etiket": "FY2025 Q3",
-     "deger": null,
-     "durum": "veri_yok"
+     "deger": 13.93,
+     "durum": "yesil"
     },
     {
      "etiket": "FY2025 Q4",
-     "deger": null,
-     "durum": "veri_yok"
+     "deger": 12.09,
+     "durum": "yesil"
     },
     {
      "etiket": "FY2026 Q1",
-     "deger": null,
-     "durum": "veri_yok"
+     "deger": 16.63,
+     "durum": "yesil"
     },
     {
      "etiket": "FY2026 Q2",
-     "deger": null,
-     "durum": "veri_yok"
+     "deger": 14.7,
+     "durum": "yesil"
     }
    ],
    "kaynak": {
     "tip": "SEC XBRL companyfacts",
-    "donem": null
+    "donem": "FY2026 Q2"
    },
    "olgu_mu": true,
    "haberler": [],
@@ -300,17 +300,17 @@
   },
   {
    "id": "marj_kirilmasi",
-   "ad": "Brüt marj 2 çeyrek üst üste eşiğin (%26) altına inerse",
-   "metrik": "gross_margin",
-   "durum": "veri_yok",
+   "ad": "Faaliyet marjı (TTM) 2 çeyrek üst üste %3 altına inerse",
+   "metrik": "operating_margin_ttm",
+   "durum": "tetiklenmedi",
    "son_degerler": [
     {
      "etiket": "FY2026 Q1",
-     "deger": null
+     "deger": 16.63
     },
     {
      "etiket": "FY2026 Q2",
-     "deger": null
+     "deger": 14.7
     }
    ]
   },
@@ -328,6 +328,6 @@
   }
  ],
  "son_ceyrek": "FY2026 Q2",
- "guncelleme": "2026-09-26T11:31:11+00:00",
+ "guncelleme": "2026-09-26T11:33:01+00:00",
  "not": "Tez durumu fiyattan bağımsızdır. Fiyat düşüşü tek başına tezin bozulduğu anlamına gelmez."
 }
