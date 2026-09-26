@@ -2,7 +2,7 @@
  "tur": "son7gun",
  "baslangic": "2026-09-20",
  "bitis": "2026-09-26",
- "guncelleme": "2026-09-26T11:29:22+00:00",
+ "guncelleme": "2026-09-26T11:31:11+00:00",
  "hisseler": [
   {
    "ticker": "NVDA",
@@ -251,7 +251,7 @@
     "ceyrek": 3,
     "yil": 2027,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-26T11:29:03+00:00"
+    "guncelleme": "2026-09-26T11:30:42+00:00"
    }
   },
   {
@@ -869,7 +869,7 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-26T11:29:06+00:00"
+    "guncelleme": "2026-09-26T11:30:45+00:00"
    }
   },
   {
@@ -1091,7 +1091,7 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-26T11:29:09+00:00"
+    "guncelleme": "2026-09-26T11:30:49+00:00"
    }
   },
   {
@@ -1574,7 +1574,7 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-26T11:29:12+00:00"
+    "guncelleme": "2026-09-26T11:30:52+00:00"
    }
   },
   {
@@ -2200,7 +2200,7 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-26T11:29:16+00:00"
+    "guncelleme": "2026-09-26T11:30:55+00:00"
    }
   },
   {
@@ -2653,7 +2653,224 @@
     "ceyrek": 2,
     "yil": 2027,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-26T11:29:19+00:00"
+    "guncelleme": "2026-09-26T11:30:59+00:00"
+   }
+  },
+  {
+   "ticker": "CEG",
+   "ad": "Constellation Energy",
+   "donem": [
+    "2026-09-20",
+    "2026-09-26"
+   ],
+   "fiyat": {
+    "son": 263.27,
+    "tarih": "2026-09-25",
+    "haftalik": 3.36,
+    "aylik": -5.81,
+    "zirveden": -34.83,
+    "zirve_52h": 403.95,
+    "zirve_tarih": "2025-10-15",
+    "kaynak": "Nasdaq.com (historical API)"
+   },
+   "benchmark_haftalik": {
+    "SPY": 1.27,
+    "XLU": -3.87
+   },
+   "tez": {
+    "genel": "kirmizi",
+    "onay": "taslak",
+    "sutunlar": [
+     {
+      "id": "buyume",
+      "ad": "Gelir büyümesi",
+      "durum": "yesil",
+      "deger": 23.0,
+      "birim": "%",
+      "tip": "metrik"
+     },
+     {
+      "id": "brut_marj",
+      "ad": "Brüt marj",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": "%",
+      "tip": "metrik"
+     },
+     {
+      "id": "nakit",
+      "ad": "Serbest nakit akışı",
+      "durum": "yesil",
+      "deger": 0.99,
+      "birim": "%",
+      "tip": "metrik"
+     },
+     {
+      "id": "sulandirma",
+      "ad": "Hisse sayısı",
+      "durum": "kirmizi",
+      "deger": 14.65,
+      "birim": "%",
+      "tip": "metrik"
+     },
+     {
+      "id": "rekabet",
+      "ad": "Rekabet ve yönetim",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": null,
+      "tip": "yorum"
+     }
+    ],
+    "cikis_tetiklenen": [
+     "Hisse sayısı yıllık %10'dan fazla artarsa"
+    ]
+   },
+   "kural": {
+    "durum": "tetiklendi_kosul_yok",
+    "mesaj": "Zirveden −%34,8: −%25 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku.",
+    "tetiklenen": {
+     "dusus": 25,
+     "not": "Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku."
+    },
+    "zirveden_uzaklik": -34.83,
+    "dusus_kaynagi": "sirkete_ozel",
+    "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+    "kosul_saglaniyor": false
+   },
+   "insider": {
+    "hafta_islemleri": [],
+    "hafta_kodlari": {},
+    "uyarilar": [
+     {
+      "etiket": "olumlu",
+      "metin": "Son 180 günde 1 açık piyasa alımı (P) var."
+     }
+    ],
+    "kumelenmis_satislar": [],
+    "ozet_90g": {
+     "P": {
+      "islem": 1,
+      "adet": 1500.0,
+      "tutar": 417930.9,
+      "plan_10b5_1_adet": 0.0
+     },
+     "A": {
+      "islem": 1,
+      "adet": 462.0,
+      "tutar": 123469.5,
+      "plan_10b5_1_adet": 0.0
+     }
+    }
+   },
+   "buyuk_hareketler": [],
+   "sec_bildirimleri": [],
+   "bilanco": {
+    "son_ceyrek": "FY2026 Q2",
+    "kirmizi": 2,
+    "dikkat": 3,
+    "olumlu": 2,
+    "son_dosya": {
+     "accn": "0001868275-26-000104",
+     "form": "10-Q",
+     "tarih": "2026-08-06",
+     "donem_sonu": "2026-06-30",
+     "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000104/ceg-20260630.htm"
+    },
+    "xbrl_beklemede": false
+   },
+   "sinyaller": [
+    {
+     "id": "12b692895343",
+     "tarih": "2026-09-26",
+     "ticker": "CEG",
+     "tur": "tez_bozulma",
+     "tur_adi": "Tez genel durumu KIRMIZI'ya döndü",
+     "yon": "olumsuz",
+     "aciklama": "Kırmızı sütunlar: Hisse sayısı",
+     "fiyat": 263.27,
+     "fiyat_tarihi": "2026-09-25",
+     "qqq": 744.5,
+     "baslangic_kaydi": true,
+     "kayit_zamani": "2026-09-26T11:31:07+00:00"
+    },
+    {
+     "id": "1e2e098a9bcd",
+     "tarih": "2026-09-26",
+     "ticker": "CEG",
+     "tur": "sutun_kirmizi",
+     "tur_adi": "Bir tez sütunu KIRMIZI'ya döndü",
+     "yon": "olumsuz",
+     "aciklama": "Hisse sayısı: %14,7",
+     "fiyat": 263.27,
+     "fiyat_tarihi": "2026-09-25",
+     "qqq": 744.5,
+     "baslangic_kaydi": true,
+     "kayit_zamani": "2026-09-26T11:31:07+00:00"
+    },
+    {
+     "id": "df2a43f97b77",
+     "tarih": "2026-09-26",
+     "ticker": "CEG",
+     "tur": "cikis_kriteri",
+     "tur_adi": "Önceden yazılmış çıkış kriteri tetiklendi",
+     "yon": "olumsuz",
+     "aciklama": "Hisse sayısı yıllık %10'dan fazla artarsa",
+     "fiyat": 263.27,
+     "fiyat_tarihi": "2026-09-25",
+     "qqq": 744.5,
+     "baslangic_kaydi": true,
+     "kayit_zamani": "2026-09-26T11:31:07+00:00"
+    },
+    {
+     "id": "c2313959c8c1",
+     "tarih": "2026-09-26",
+     "ticker": "CEG",
+     "tur": "kural_kademe_tez_bozuk",
+     "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
+     "yon": "olumsuz",
+     "aciklama": "Zirveden −%34,8, −%25 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+     "fiyat": 263.27,
+     "fiyat_tarihi": "2026-09-25",
+     "qqq": 744.5,
+     "baslangic_kaydi": true,
+     "kayit_zamani": "2026-09-26T11:31:07+00:00"
+    },
+    {
+     "id": "89dfeefddb74",
+     "tarih": "2026-09-26",
+     "ticker": "CEG",
+     "tur": "bilanco_kirmizi_bayrak",
+     "tur_adi": "Yeni bilançoda kırmızı bayrak",
+     "yon": "olumsuz",
+     "aciklama": "Ciddi sulandırma; Alacaklar gelirden çok daha hızlı büyüyor",
+     "fiyat": 263.27,
+     "fiyat_tarihi": "2026-09-25",
+     "qqq": 744.5,
+     "baslangic_kaydi": true,
+     "kayit_zamani": "2026-09-26T11:31:07+00:00"
+    }
+   ],
+   "cumleler": [
+    "Hisse bu hafta +%3,4 (SPY +%1,3, XLU −%3,9); 52 haftalık zirveden −%34,8 uzakta.",
+    "Tezde değişiklik: Tez genel durumu KIRMIZI'ya döndü (Kırmızı sütunlar: Hisse sayısı); Bir tez sütunu KIRMIZI'ya döndü (Hisse sayısı: %14,7); Önceden yazılmış çıkış kriteri tetiklendi (Hisse sayısı yıllık %10'dan fazla artarsa).",
+    "Zirveden −%34,8: −%25 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku."
+   ],
+   "insider_ozet": {
+    "islem": 0,
+    "satis_tutar": 0,
+    "alim_tutar": 0,
+    "kodlar": {}
+   },
+   "sonraki_bilanco": {
+    "tarih": "2026-11-04",
+    "saat": "",
+    "eps_tahmin": 3.8225,
+    "gelir_tahmin": 9411197170,
+    "ceyrek": 3,
+    "yil": 2026,
+    "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
+    "guncelleme": "2026-09-26T11:31:02+00:00"
    }
   }
  ],
@@ -2909,6 +3126,76 @@
    "qqq": 744.5,
    "baslangic_kaydi": true,
    "kayit_zamani": "2026-09-26T11:10:48+00:00"
+  },
+  {
+   "id": "12b692895343",
+   "tarih": "2026-09-26",
+   "ticker": "CEG",
+   "tur": "tez_bozulma",
+   "tur_adi": "Tez genel durumu KIRMIZI'ya döndü",
+   "yon": "olumsuz",
+   "aciklama": "Kırmızı sütunlar: Hisse sayısı",
+   "fiyat": 263.27,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-26T11:31:07+00:00"
+  },
+  {
+   "id": "1e2e098a9bcd",
+   "tarih": "2026-09-26",
+   "ticker": "CEG",
+   "tur": "sutun_kirmizi",
+   "tur_adi": "Bir tez sütunu KIRMIZI'ya döndü",
+   "yon": "olumsuz",
+   "aciklama": "Hisse sayısı: %14,7",
+   "fiyat": 263.27,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-26T11:31:07+00:00"
+  },
+  {
+   "id": "df2a43f97b77",
+   "tarih": "2026-09-26",
+   "ticker": "CEG",
+   "tur": "cikis_kriteri",
+   "tur_adi": "Önceden yazılmış çıkış kriteri tetiklendi",
+   "yon": "olumsuz",
+   "aciklama": "Hisse sayısı yıllık %10'dan fazla artarsa",
+   "fiyat": 263.27,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-26T11:31:07+00:00"
+  },
+  {
+   "id": "c2313959c8c1",
+   "tarih": "2026-09-26",
+   "ticker": "CEG",
+   "tur": "kural_kademe_tez_bozuk",
+   "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
+   "yon": "olumsuz",
+   "aciklama": "Zirveden −%34,8, −%25 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+   "fiyat": 263.27,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-26T11:31:07+00:00"
+  },
+  {
+   "id": "89dfeefddb74",
+   "tarih": "2026-09-26",
+   "ticker": "CEG",
+   "tur": "bilanco_kirmizi_bayrak",
+   "tur_adi": "Yeni bilançoda kırmızı bayrak",
+   "yon": "olumsuz",
+   "aciklama": "Ciddi sulandırma; Alacaklar gelirden çok daha hızlı büyüyor",
+   "fiyat": 263.27,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-26T11:31:07+00:00"
   }
  ],
  "not": "Günlük Python derlemesi (Claude yok). Derin analiz Salı raporundadır."

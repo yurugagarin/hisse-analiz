@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-09-26T11:29:22+00:00",
+ "guncelleme": "2026-09-26T11:31:11+00:00",
  "ufuklar": [
   30,
   90,
@@ -10,7 +10,7 @@
    "tur": "tez_bozulma",
    "ad": "Tez genel durumu KIRMIZI'ya döndü",
    "beklenen_yon": "olumsuz",
-   "adet": 2,
+   "adet": 3,
    "ufuklar": {
     "30": {
      "n": 0,
@@ -56,7 +56,7 @@
    "tur": "sutun_kirmizi",
    "ad": "Bir tez sütunu KIRMIZI'ya döndü",
    "beklenen_yon": "olumsuz",
-   "adet": 3,
+   "adet": 4,
    "ufuklar": {
     "30": {
      "n": 0,
@@ -79,7 +79,7 @@
    "tur": "cikis_kriteri",
    "ad": "Önceden yazılmış çıkış kriteri tetiklendi",
    "beklenen_yon": "olumsuz",
-   "adet": 3,
+   "adet": 4,
    "ufuklar": {
     "30": {
      "n": 0,
@@ -125,7 +125,7 @@
    "tur": "kural_kademe_tez_bozuk",
    "ad": "Düşüş kademesi tetiklendi, tez kırmızı",
    "beklenen_yon": "olumsuz",
-   "adet": 2,
+   "adet": 3,
    "ufuklar": {
     "30": {
      "n": 0,
@@ -217,7 +217,7 @@
    "tur": "bilanco_kirmizi_bayrak",
    "ad": "Yeni bilançoda kırmızı bayrak",
    "beklenen_yon": "olumsuz",
-   "adet": 3,
+   "adet": 4,
    "ufuklar": {
     "30": {
      "n": 0,
@@ -238,6 +238,101 @@
   }
  ],
  "sinyaller": [
+  {
+   "id": "89dfeefddb74",
+   "tarih": "2026-09-26",
+   "ticker": "CEG",
+   "tur": "bilanco_kirmizi_bayrak",
+   "tur_adi": "Yeni bilançoda kırmızı bayrak",
+   "yon": "olumsuz",
+   "aciklama": "Ciddi sulandırma; Alacaklar gelirden çok daha hızlı büyüyor",
+   "fiyat": 263.27,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-26T11:31:07+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
+  {
+   "id": "c2313959c8c1",
+   "tarih": "2026-09-26",
+   "ticker": "CEG",
+   "tur": "kural_kademe_tez_bozuk",
+   "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
+   "yon": "olumsuz",
+   "aciklama": "Zirveden −%34,8, −%25 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+   "fiyat": 263.27,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-26T11:31:07+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
+  {
+   "id": "df2a43f97b77",
+   "tarih": "2026-09-26",
+   "ticker": "CEG",
+   "tur": "cikis_kriteri",
+   "tur_adi": "Önceden yazılmış çıkış kriteri tetiklendi",
+   "yon": "olumsuz",
+   "aciklama": "Hisse sayısı yıllık %10'dan fazla artarsa",
+   "fiyat": 263.27,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-26T11:31:07+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
+  {
+   "id": "1e2e098a9bcd",
+   "tarih": "2026-09-26",
+   "ticker": "CEG",
+   "tur": "sutun_kirmizi",
+   "tur_adi": "Bir tez sütunu KIRMIZI'ya döndü",
+   "yon": "olumsuz",
+   "aciklama": "Hisse sayısı: %14,7",
+   "fiyat": 263.27,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-26T11:31:07+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
+  {
+   "id": "12b692895343",
+   "tarih": "2026-09-26",
+   "ticker": "CEG",
+   "tur": "tez_bozulma",
+   "tur_adi": "Tez genel durumu KIRMIZI'ya döndü",
+   "yon": "olumsuz",
+   "aciklama": "Kırmızı sütunlar: Hisse sayısı",
+   "fiyat": 263.27,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-26T11:31:07+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
   {
    "id": "a31949d52696",
    "tarih": "2026-09-26",

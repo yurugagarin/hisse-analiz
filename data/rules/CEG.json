@@ -1,8 +1,8 @@
 {
- "ticker": "ORCL",
+ "ticker": "CEG",
  "onay": "taslak",
  "kosul": "tez_saglam",
- "zirveden_uzaklik": -56.2,
+ "zirveden_uzaklik": -34.83,
  "kademeler": [
   {
    "dusus": 15,
@@ -17,36 +17,36 @@
   {
    "dusus": 35,
    "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
-   "tetiklendi": true
+   "tetiklendi": false
   }
  ],
  "benchmark": [
   {
-   "sembol": "QQQ",
-   "zirveden_uzaklik": -0.4,
-   "degisim_1a": 4.66,
-   "degisim_3a": 5.38,
-   "fark_puan": -55.8
+   "sembol": "SPY",
+   "zirveden_uzaklik": -0.84,
+   "degisim_1a": 0.69,
+   "degisim_3a": 5.81,
+   "fark_puan": -33.99
   },
   {
-   "sembol": "IGV",
-   "zirveden_uzaklik": -9.46,
-   "degisim_1a": 3.54,
-   "degisim_3a": 20.19,
-   "fark_puan": -46.74
+   "sembol": "XLU",
+   "zirveden_uzaklik": -17.22,
+   "degisim_1a": -9.19,
+   "degisim_3a": -14.48,
+   "fark_puan": -17.61
   }
  ],
  "guncelleme": "2026-09-26T11:31:11+00:00",
  "not": "Otomatik işlem yok. Bu bölüm önceden yazdığın kuralları hatırlatır.",
  "dusus_kaynagi": "sirkete_ozel",
  "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
- "en_iyi_fark": -46.74,
+ "en_iyi_fark": -17.61,
  "tetiklenen": {
-  "dusus": 35,
-  "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
+  "dusus": 25,
+  "not": "Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku."
  },
- "tez_durumu": "sari",
- "kosul_saglaniyor": true,
- "durum": "tetiklendi_kosul_ok",
- "mesaj": "Zirveden −%56,2: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
+ "tez_durumu": "kirmizi",
+ "kosul_saglaniyor": false,
+ "durum": "tetiklendi_kosul_yok",
+ "mesaj": "Zirveden −%34,8: −%25 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku."
 }
