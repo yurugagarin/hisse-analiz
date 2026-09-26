@@ -279,6 +279,14 @@ def analyze(table: dict, filings: dict, cik: int, ticker: str) -> dict:
                 "Vergi indirimi/ertelenmiş vergi varlığı değerleme ayarlaması kârı geçici olarak etkileyebilir; vergi dipnotuna bak.",
                 ["tax", "pretax"])
 
+    # Kavram değişiminden türetilen değerler: kullanıcıyı uyar
+    mixed = [k for k, v in (r.get("_kaynak") or {}).items() if "farklı XBRL kavramları" in (v.get("not") or "")]
+    if mixed:
+        add(DIKKAT, "Bazı çeyrek değerleri farklı XBRL kavramlarından türetildi",
+            "Etkilenen kalemler: " + ", ".join(mixed) + ". Şirket bu dönemde etiketlemesini değiştirmiş; "
+            "YTD farkı iki farklı kavramdan hesaplandı.",
+            "Bu kalemlere dayanan metrikleri (FCF, nakit pisti vb.) SEC belgesindeki nakit akış tablosuyla doğrula.", mixed)
+
     order = {KIRMIZI: 0, DIKKAT: 1, OLUMLU: 2}
     F.sort(key=lambda x: order[x["etiket"]])
 

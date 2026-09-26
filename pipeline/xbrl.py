@@ -189,7 +189,9 @@ def _quarterize(dd: dict[tuple, dict], concept: str | None = None, additive: boo
                     qs = (D(e_short) + dt.timedelta(days=1)).isoformat()
                     q[e_long] = _mk(ent_long, ent_long.get("_concept", concept), derived=True, start=qs,
                                     val=float(ent_long["val"]) - float(ent_short["val"]),
-                                    note=f"türetilmiş: {s}→{e_long} ({ent_long['form']}) − {s}→{e_short}")
+                                    note=f"türetilmiş: {s}→{e_long} ({ent_long['form']}) − {s}→{e_short}"
+                                    + (f" · UYARI: farklı XBRL kavramları ({ent_long.get('_concept')} − {ent_short.get('_concept')}), SEC belgesinden kontrol et"
+                                       if ent_long.get("_concept") != ent_short.get("_concept") else ""))
                     break
     # Q4 = yıllık − (Q1+Q2+Q3) (9 aylık YTD raporlanmamışsa)
     for e, pa in annual.items():
