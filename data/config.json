@@ -49,6 +49,17 @@
    "haber_anahtar": [
     "Applied Optoelectronics"
    ]
+  },
+  {
+   "ticker": "IONQ",
+   "name": "Ionq",
+   "benchmarks": [
+    "QQQ",
+    "SMH"
+   ],
+   "haber_anahtar": [
+    "Ionq"
+   ]
   }
  ],
  "theses": {
@@ -357,6 +368,89 @@
      "ardisik_ceyrek": 1
     }
    ]
+  },
+  "IONQ": {
+   "onay": "taslak",
+   "ozet": "Ionq için tez henüz yazılmadı. Bu otomatik taslak yalnızca büyümenin, marjın, nakit üretiminin ve hisse sayısının bugünkü seviyesini koruyup korumadığını izler.\n",
+   "sutunlar": [
+    {
+     "id": "buyume",
+     "ad": "Gelir büyümesi",
+     "tip": "metrik",
+     "metrik": "revenue_yoy",
+     "operator": ">",
+     "esik": 143,
+     "uyari": 57
+    },
+    {
+     "id": "brut_marj",
+     "ad": "Brüt marj",
+     "tip": "metrik",
+     "metrik": "gross_margin",
+     "operator": ">",
+     "esik": 40,
+     "uyari": 30
+    },
+    {
+     "id": "karlilik",
+     "ad": "Kârlılığa gidiş",
+     "tip": "metrik",
+     "metrik": "operating_margin_ttm",
+     "operator": ">",
+     "esik": 0,
+     "uyari": -413
+    },
+    {
+     "id": "pist",
+     "ad": "Nakit pisti",
+     "tip": "metrik",
+     "metrik": "cash_runway_months",
+     "operator": ">",
+     "esik": 24,
+     "uyari": 12
+    },
+    {
+     "id": "sulandirma",
+     "ad": "Hisse sayısı",
+     "tip": "metrik",
+     "metrik": "diluted_shares_yoy",
+     "operator": "<",
+     "esik": 2,
+     "uyari": 5
+    },
+    {
+     "id": "rekabet",
+     "ad": "Rekabet ve yönetim",
+     "tip": "yorum",
+     "soru": "10-Q/10-K ve basın bülteninde rekabet, müşteri yoğunlaşması ve yönetimin beklentileri hakkındaki açıklamalar tezi destekliyor mu?\n"
+    }
+   ],
+   "cikis_kriterleri": [
+    {
+     "id": "daralma",
+     "ad": "Gelir 2 çeyrek üst üste yıllık bazda daralırsa",
+     "metrik": "revenue_yoy",
+     "operator": "<",
+     "esik": 0,
+     "ardisik_ceyrek": 2
+    },
+    {
+     "id": "marj_kirilmasi",
+     "ad": "Brüt marj 2 çeyrek üst üste eşiğin (%26) altına inerse",
+     "metrik": "gross_margin",
+     "operator": "<",
+     "esik": 26,
+     "ardisik_ceyrek": 2
+    },
+    {
+     "id": "asiri_sulandirma",
+     "ad": "Hisse sayısı yıllık %10'dan fazla artarsa",
+     "metrik": "diluted_shares_yoy",
+     "operator": ">",
+     "esik": 10,
+     "ardisik_ceyrek": 1
+    }
+   ]
   }
  },
  "rules": {
@@ -495,5 +589,5 @@
   }
  },
  "repo": "yurugagarin/hisse-analiz",
- "guncelleme": "2026-09-26T08:32:07+00:00"
+ "guncelleme": "2026-09-26T10:58:14+00:00"
 }

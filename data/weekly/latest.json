@@ -2,7 +2,7 @@
  "tur": "son7gun",
  "baslangic": "2026-09-20",
  "bitis": "2026-09-26",
- "guncelleme": "2026-09-26T08:32:43+00:00",
+ "guncelleme": "2026-09-26T10:58:14+00:00",
  "hisseler": [
   {
    "ticker": "NVDA",
@@ -251,7 +251,7 @@
     "ceyrek": 3,
     "yil": 2027,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-26T08:32:31+00:00"
+    "guncelleme": "2026-09-26T10:57:43+00:00"
    }
   },
   {
@@ -851,7 +851,7 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-26T08:32:34+00:00"
+    "guncelleme": "2026-09-26T10:57:46+00:00"
    }
   },
   {
@@ -1073,7 +1073,7 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-26T08:32:37+00:00"
+    "guncelleme": "2026-09-26T10:57:49+00:00"
    }
   },
   {
@@ -1556,7 +1556,633 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-26T08:32:41+00:00"
+    "guncelleme": "2026-09-26T10:57:53+00:00"
+   }
+  },
+  {
+   "ticker": "IONQ",
+   "ad": "Ionq",
+   "donem": [
+    "2026-09-20",
+    "2026-09-26"
+   ],
+   "fiyat": {
+    "son": 45.48,
+    "tarih": "2026-09-25",
+    "haftalik": 16.23,
+    "aylik": 13.61,
+    "zirveden": -44.6,
+    "zirve_52h": 82.09,
+    "zirve_tarih": "2025-10-13",
+    "kaynak": "Nasdaq.com (historical API)"
+   },
+   "benchmark_haftalik": {
+    "QQQ": 3.19,
+    "SMH": 5.86
+   },
+   "tez": {
+    "genel": "kirmizi",
+    "onay": "taslak",
+    "sutunlar": [
+     {
+      "id": "buyume",
+      "ad": "Gelir büyümesi",
+      "durum": "yesil",
+      "deger": 286.83,
+      "birim": "%",
+      "tip": "metrik"
+     },
+     {
+      "id": "brut_marj",
+      "ad": "Brüt marj",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": "%",
+      "tip": "metrik"
+     },
+     {
+      "id": "karlilik",
+      "ad": "Kârlılığa gidiş",
+      "durum": "sari",
+      "deger": -408.24,
+      "birim": "%",
+      "tip": "metrik"
+     },
+     {
+      "id": "pist",
+      "ad": "Nakit pisti",
+      "durum": "yesil",
+      "deger": 52.6,
+      "birim": "ay",
+      "tip": "metrik"
+     },
+     {
+      "id": "sulandirma",
+      "ad": "Hisse sayısı",
+      "durum": "kirmizi",
+      "deger": 46.5,
+      "birim": "%",
+      "tip": "metrik"
+     },
+     {
+      "id": "rekabet",
+      "ad": "Rekabet ve yönetim",
+      "durum": "veri_yok",
+      "deger": null,
+      "birim": null,
+      "tip": "yorum"
+     }
+    ],
+    "cikis_tetiklenen": [
+     "Hisse sayısı yıllık %10'dan fazla artarsa"
+    ]
+   },
+   "kural": {
+    "durum": "tetiklendi_kosul_yok",
+    "mesaj": "Zirveden −%44,6: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "tetiklenen": {
+     "dusus": 35,
+     "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
+    },
+    "zirveden_uzaklik": -44.6,
+    "dusus_kaynagi": "sirkete_ozel",
+    "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+    "kosul_saglaniyor": false
+   },
+   "insider": {
+    "hafta_islemleri": [],
+    "hafta_kodlari": {},
+    "uyarilar": [
+     {
+      "etiket": "dikkat",
+      "metin": "Kümelenmiş satış: 2026-06-18–2026-06-18 arasında 3 yönetici satış yaptı (10b5-1 planlı işlem oranı %100)."
+     },
+     {
+      "etiket": "dikkat",
+      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %65.32 yükseldi."
+     }
+    ],
+    "kumelenmis_satislar": [
+     {
+      "baslangic": "2026-06-18",
+      "bitis": "2026-06-18",
+      "kisiler": [
+       "Chou Kathryn K.",
+       "Raymond John w",
+       "TOLEDANO GABRIELLE B"
+      ],
+      "islem": 3,
+      "tutar": 513215.86,
+      "planli_islem_orani": 100.0
+     }
+    ],
+    "ozet_90g": {
+     "F": {
+      "islem": 3,
+      "adet": 26850.0,
+      "tutar": 995952.4200000002,
+      "plan_10b5_1_adet": 0.0
+     },
+     "S": {
+      "islem": 1,
+      "adet": 2407.0,
+      "tutar": 89564.47,
+      "plan_10b5_1_adet": 2407.0
+     },
+     "A": {
+      "islem": 2,
+      "adet": 11080.0,
+      "tutar": 0.0,
+      "plan_10b5_1_adet": 0.0
+     }
+    }
+   },
+   "buyuk_hareketler": [
+    {
+     "tarih": "2026-09-24",
+     "claude": null,
+     "onceki_gun": "2026-09-23",
+     "hareket": 5.74,
+     "yon": "yukari",
+     "benchmark": {
+      "QQQ": -0.01,
+      "SMH": -0.15
+     },
+     "on_siniflama": "sirkete_ozel",
+     "on_siniflama_aciklama": "Hisse +%5,7, sektör/piyasa −%0,1: hareketin çoğu şirkete özel görünüyor.",
+     "basliklar": [
+      {
+       "zaman": "2026-09-24T19:50:30+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "IonQ Sees Fault-Tolerant Quantum Within Reach in 2 Years",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUmF4Y19VM21mY05scGJ5WlgzM1lOcVc1NXZLVEVlenlVazM2dzM1dVh2dUVKelFyYXRKb0Y3WHJKSmVhSTJUb0dHYTQxcEs3czZRRzhESDV4REo2SXZXZlFvRXpEMHdvLUhVOElyczlPRUYwc0FsaGpWdkNpS1J1QTNHT0NIOHg5X0hiUUR5UnVCMWMzd3c?oc=5",
+       "kaynak": "MeriTalk",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-24T19:38:45+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "Update: IonQ Shares Rise After Signing Quantum Computer Contract With Florida International University",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbVlHc0NBbU9ob0cxUkJCdXYzOGpKR1lacWFZSGJlXzJfV29EdTc0ZF9SVzQ2cUd2djJ3VmtNWnhwenVlbkZIVTFoWGh6b2lDZDUxMnJpN0NRNkxQV1JickNnc2syT0ZWdUNJVk5PYkNSUjNfTHJyVDExMXNJXzFUNlUySXpEUjUwOVpGeElyZkt6eGJpQU1vejdhS2Mydw?oc=5",
+       "kaynak": "Yahoo Finance",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-24T18:00:00+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "Quantum Stocks Near Q3 Finish Line: How IONQ, RGTI & QBTS Are Faring",
+       "ozet": "Quantum stocks face a pivotal Q3 finish as IonQ, D-Wave and Rigetti push commercialization while rates and valuation concerns weigh on shares.",
+       "url": "https://finnhub.io/api/news?id=b1cc6e1a30317dfe2a368c63613058bf60183c084fef4c4eeb08c928c9b2a5fe",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-24T17:14:38+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "IonQ Rises 4% as Post-Breakthrough Buying Continues; D-Wave Quantum Gains 3%, Rigetti Adds 2%",
+       "ozet": "Quantum computing stocks are climbing again as a fresh wave of technical breakthroughs reshapes what investors think these companies can actually deliver, and the gap between hype and commercial reality has never mattered more.",
+       "url": "https://finnhub.io/api/news?id=d907bacef242c90f66ab08c9762c0f8e081aa404e81f42d0e95f2bd2737e81bc",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-24T16:22:00+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "Miami's first quantum computer coming to FIU",
+       "ozet": "Florida International University (FIU) will become the first university in Florida to acquire a full stack, trapped-ion quantum computer, bringing to the state an industry-leading research tool designed to take on problems that exceed classical computing limits.",
+       "url": "https://finnhub.io/api/news?id=e05039a813d88fe29357aa044b2f7a37ebad51dc2d84b8053b417af7053d6439",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-24T15:46:00+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "Here's How QUBT's Fab 2 Could Accelerate Quantum Manufacturing",
+       "ozet": "Quantum Computing's Fab 2 adds semiconductor, nanophotonics and advanced packaging capabilities that could accelerate quantum and photonics commercialization.",
+       "url": "https://finnhub.io/api/news?id=b1d2ccbeaf85fa322b6fd7033a1c39aba4c47655c606c223ceae1c5956a2bc03",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-24T15:04:30+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "IonQ Superion 256 Platform Selected by Florida International University for First Florida Deployment",
+       "ozet": "IonQ (NYSE:IONQ) has secured a contract to install its 256-qubit Superion quantum computer at Florida International University, marking the first sale and planned deployment of the system in Florida and expanding IonQ’s on-premises academic footprint. Key Investor TakeawaysIonQ (NYSE:IONQ) will deliver a Superion 256-qubit trapped-ion quantum computer to Florida International University under a new contract.",
+       "url": "https://finnhub.io/api/news?id=b58e0b7be9d0b81976bca7ffdcab979991e972bef02e08b40f83867734a6f6ef",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-24T14:58:36+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "IonQ to Deploy Superion 256 Quantum Computer at Florida International University",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNYk4tWlZHdjdOZF9FS0U4a2RveDNDRDFNbFhyalhvU0dDUmppcEZkbXJjblpteGFRc1hIZThSZXdtSTlIbllPYkFLQ3AwVE1HNElKN2JZdW5uZE8xdDRpWnNhSl9TZm5GNFN3Vy1QeVdTaENyUDBLOGtCMUVZWUNhcEc5QjM1NV83bXlNMzVIeldKZkYtb1Vz?oc=5",
+       "kaynak": "The Quantum Insider",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-24T14:47:27+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "IonQ Just Solved Quantum Computing’s Hardest Problem. The Stock Is Still Down 43% in a Year.",
+       "ozet": "IonQ just pulled off a quantum computing first that the entire industry has been chasing for years, yet its stock remains deep in the red and its losses dwarf its revenue. Something does not add up, and the explanation cuts to the heart of how markets price revolutionary science against brutal financial reality.",
+       "url": "https://finnhub.io/api/news?id=921485903f2474b7459e64c3fc3b18ee3b21e66112af48fa13aec694887b1971",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-24T14:37:47+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "After IonQ Buyout, SkyWater Reiterates Role as Quantum Foundry",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWTZaVjl3bFdZT0RlOVlYc0cxRUlVd2wtUy1VVmNLcjRBenBnWEJ6Z3ZUeG1GMHpoWHhyeFVGb29MSDh6djJ1SHZfRmhwQWpwbkNPVGFIX2VaQ0lMRGFDb0VkNjVrMFU1VXN5N0hmQTVWNmlVUUpYcE1BVnlkSTg0OUVwY3NsUUhGeGJVa2hibw?oc=5",
+       "kaynak": "EE Times",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-24T13:39:08+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "IonQ Signs Contract to Provide Quantum Computer to Florida International University",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRmRGZUlYeWVPSjBMMzZBa2NJb2xkcmNRaXMwd3JScnhhcEVvc0RQd29vTVFpQzNfNDk5ejBWTlBObVF0RzZUNS1rRkxPTF9iZzdKWVVEdlNZY0cyVHNDdE91UWlrYklTcnhiTTY2N2xDVUZWNGY4a1ZKRDNrcGNrSDZwWDlUVDZKU2txbWdCVEV1YVJ2YzZ2VEZRSFZqMkxrRHc?oc=5",
+       "kaynak": "Yahoo Finance",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-24T13:08:20+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "IonQ Demonstrates Quantum Generative Modeling for High Resolution Radar Change Detection",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMWtLWHJpN3ZCZmpRalduLUVFTFYwTVFrOFh6QzdURGUxWlE0a0c0anA4SlFuenVRQ3o4LUphMExhbXZnUVVhNUxETjRrOHRVYkI3N0NtbVUzai1iem5oYlc1OXBEaWItblcxQS1MdUFpQllkXzQ0MzJQeWJLZWNYUnhBem43dDZQREJPVHFoYUFMYjI2N1FUcDJWd2ZUQXRhY0w1bG5MN2ZnRld5VU9PaVpsM08?oc=5",
+       "kaynak": "IonQ",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-24T13:03:20+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "FIU Secures Florida’s First IonQ Superion Quantum System",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNY09TNXR2dThTRko5NC1rM3d6ZElzQ2FBeVBZMjZGcmlHbmNKbEM3MW9kV25IYzl5SmV6MHFFbTFZeHB5MVIyNEg4SU02aEhsb1k4V1g2RlQ4QVJvdndibzlhUmZlWnpsdFdreFFwX3hQRm1Pd0k2S0dNdDQ3NmNZYlp0VDhJWnJNYzRNbFVDOFBLcXZvNUhURllrV3c5ZUEyNUpUUlVERUtseDdHLWlDRzlVWFhBX3pCT1hOalpoZw?oc=5",
+       "kaynak": "IonQ",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-24T13:00:00+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "IonQ’s Superion 256 Platform Selected by Florida International University for Flagship Deployment",
+       "ozet": "MIAMI & COLLEGE PARK, Md., September 24, 2026--IonQ (NYSE: IONQ), the world’s leading full-stack quantum platform and foundry, today announced a contract with Florida International University (FIU), Miami’s top ranked state university. Under the agreement, IonQ will deliver its Superion 256-qubit trapped-ion quantum computer for installation at FIU.",
+       "url": "https://finnhub.io/api/news?id=327297626b5d0b0f4d0e99ad3e1d9f099c72faad5c6264fba16d5d49d8afb739",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-24T12:39:00+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "Company News for Sep 24, 2026",
+       "ozet": "Companies in The News Are: GIS,CBRL,WOR,IONQ",
+       "url": "https://finnhub.io/api/news?id=cbc536b8f22eb1f176554c6996d4e8e2090ab2a8e197ddc0799c89e6696acce9",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-24T12:05:46+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "Everyone’s Talking About IonQ. Smart Money Is Watching Nvidia Instead.",
+       "ozet": "IonQ just claimed a genuine quantum computing breakthrough, but its stock tells a bleaker story and its financials tell a bleaker one still. Before you chase the headline, there is a quieter position in the quantum ecosystem worth understanding.",
+       "url": "https://finnhub.io/api/news?id=e0344ec28f1f5146ca3a61efa3f6a06e51319180fa46fa72924e884b6dfa8e03",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-24T10:45:46+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "IonQ Removes Major Quantum Barrier, Driving Investor Debate Over Commercial Timelines",
+       "ozet": "IonQ Inc. (NYSE:IONQ) is drawing fresh attention to the quantum-computing industry after demonstrating real-time error correction, a development that analysts and traders see as an important step toward making the technology commercially useful. Grasso Sees Quantum Arriving Sooner CNBC’s \"Fast Money\" trader Steve Grasso said on Thursday that real-time error correction has been one of the biggest problems facing the quantum-computing industry. He believes IonQ’s breakthrough addresses that challe",
+       "url": "https://finnhub.io/api/news?id=0a14c85c25cfa026bbb4520ac02d5c1d9774e94fe08260b053f25a411cdbf29a",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-24T09:08:38+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "NVIDIA Center To Link IonQ Qubits With AI Supercomputing",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8xSF9iVjktN3BVU2ZtNjFzY1BCalQzRm1nWVFNZVcxQ1kyMnJLNFlPZi04NXl1amViWjJnMEk5Qm00MzM0SzRIRksxLURtVGRoT2hoU3RwR29CeHpaNjl6Tl9GWThDSUpERU9lVA?oc=5",
+       "kaynak": "Quantum Zeitgeist",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-24T08:12:01+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "IonQ Cleared One of Quantum Computing's Biggest Hurdles. Should You Buy the Stock?",
+       "ozet": "IonQ appears to be the clear leader in one key area of quantum computing.",
+       "url": "https://finnhub.io/api/news?id=7808be3feee5f12a7b5f4ed493f183835873b35cf4fbeecea8f130b7672d1d6d",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-24T07:14:31+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "The 5% Wall: Treasury Yields Take the Air Out of Wall Street's Muse Rally",
+       "ozet": "The 10-year Treasury yield climbed back above 5% on Wednesday and pulled all three major indices lower. A hawkish Fed governor, hot PMI data and a rebound in oil did the damage, while Meta's Muse agent hit travel stocks and McDonald's slid on a sobering investor day.",
+       "url": "https://finnhub.io/api/news?id=0518a6ef61f86a74163e1b534a000dc6875b5aad3965135408a293d3293d3fcb",
+       "kaynak": "ChartMill",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-24T05:20:32+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "Classiq, INGL, and IonQ Advance Quantum Optimization for Natural Gas Transmission Networks",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNODV3MkpfUmstT3BzcjV4dXJwcVA0bUhMWTUxM20wbS1CY1dxanJrWGxNajUxVU9UQ2hZSG9VSXk5Zzh5OGxNREc2RDgtc3BpRV9zOE1QZzAwTGM0S2Y2MUpEQml1eHRsRW4xbGRuUFR1NE9fdy1zTVpIU2dseEFrYU1qU1lBVnJWbzJRSDNVQXZOeGJYMkVnZVlrUlA3V19YNzRULU9ZWUVZZEZYLTltNFpLZW0zb0hvUUZ0SkVScm82UdIBxwFBVV95cUxPZUJmVWRva1hwLU40YTBFVDFsTS0tSklma0RZMGhqeXpjd0VKZHVZMlBJcnk4SXprTHZDQ2NsQWFLT2RHX1RqanBqNWpMSTdpbHVDQ0lTUUluQk5GU3pDQ0VUN0ZDU3NUQlVacjA5Y2V3RU9pUE45VXdFbjJoV1VHWS1vdUt4TDE5RW9EZHd6REE4OUM1MDZoVjlzUHJTbFBCVE96VXJrREY1MUstX1E2R1hkYlE2SmlxRU1tM2tnVDFlT1NKUi1F?oc=5",
+       "kaynak": "Quantum Computing Report",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-24T02:29:43+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "IonQ Partners with SDT to Deploy Superion 256 Quantum System and Establish SiV Quantum Memory Assembly Hub in South Korea",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQb3Q0bUN3RERYVmVISkNPQjk1ekNCU3YtcWdXeE95czJ3djVNREcxYnVNbXo3bDUyQTRzbm03R3RUZDZhRVBFcE41WkZkNmNnUzlYN1VmVDlWRS1YR3pBZmdLV1VyQ09ELV81d0htUGc2QVBFOWZpUXctaFZ6TGRJWHlvVjBIcnQtc1luOVNsNUphMTBpYy1NOHBMYTZJblI5ZXRDUno0WGFOenVrTDlfdDJtUmNlQjU0cVBCN1dQcWhkTVEyTnhNdTZnOUFrRnY5Wk8tdlV5dk5VWHlwY3JwQmpUUUJ1UmFiWG9SWnFB0gHzAUFVX3lxTFBRYXdHdlFNdnRIMEh0MFktX1p4X01TZDgwRC1OcDZUT19Kenk5czlVTEMwUlVHWUVXalBIM1I1ODR6bC16SFctb3FjdVphcklsdHl4RHlDQW1YaGJ2UG5pX1RIZDRfQVVWZTZVLVVWOUlFQU9RVHRiMUhoNmx0SVRqM1RwNjF0cTFRUVI1TFlDdGVoTGh0Q0ptT0czVXlqaXUwcEZrME8zd1FjYWh5eTdRTjR1VXRJVTBpSnRSTHlfSU0yOXpVRFdLZVFiMVItWkZCUC00ZDI5Q3VDc0p4c0F4ODMzRllBOGROZ0tVVE1fQWliZw?oc=5",
+       "kaynak": "Quantum Computing Report",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-24T02:29:38+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "IonQ Selected as First On-Premise QPU Deployment at NVIDIA’s Accelerated Quantum Research Center",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdGtxakpuRW5fM0FVSnhiRmIwdVlRSE9sdkZrTld4NkxDVG5fZHBkM2pWM05WMVp3NnNWcEQyZXZ6UWJsM2RsblpXbVJNcFhxQTNRa1pJZTFJU1NEYTZPRUlMM0FPSGJQYWJaZjlQUXYxYlp5Q0xYMVFGNG5QSnRmQ1V0MVNlNVFudWJoZ2UyMzA2WUdzTGxjMWU0eVdqOUg0VVlsZHhKbmYyaEdHa3ByM1ZTVWZDckR6d0JsaDJYaExnSVFzaHp1VmlXNNIB0AFBVV95cUxPVVNzYTM3bXhlSmdWV0cyOWdWZU50akN6cGh2R002aTFSZDFaQUFqd0liRVI0cWo2a3I5Z1RDaWMwdjhkZ2QxTGoyT3V4QWJKMXdIN1YtR3BCUzNqZGJnTXpBVmVaX2hldGRkR0VZUVUzcE1TZWpCc0hZcVd4NUVXMEdtb29yUTkxaHZWSGFYVVU1NlJIUTMtb0M3T1hkM1NWMGo3RGNVVnZGdUl2a3hNNzVkTmxRdmllb2EzZndUa3h2MXhRQkxhMWJCaW1zQkVt?oc=5",
+       "kaynak": "Quantum Computing Report",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-24T01:35:40+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "BigBear.ai vs. IONQ: Comparing Revenue Trends Between an Artificial Intelligence Upstart and a Quantum Computer Company",
+       "ozet": "IONQ's revenue surged to $80 million in Q2 2026, while BigBear.ai stabilized near $37 million — a widening gap that reshapes the competitive picture.",
+       "url": "https://finnhub.io/api/news?id=26c89330b611756cd26f5edeab289c463ace3aeaa01fe880de805c896d48e25d",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-24T01:17:00+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "Nvidia once rattled IonQ stock. Now it plans to install IonQ tech",
+       "ozet": "IonQ’s newest quantum processor will sit alongside Nvidia Blackwell GPUs as both companies test hybrid computing.",
+       "url": "https://finnhub.io/api/news?id=240c1f97354a55a73ed0df160dfb01cb8503f4a82af5072137ac8ea651c911ff",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-24T00:35:05+00:00",
+       "tarih": "2026-09-24",
+       "baslik": "Why IonQ Stock Is Up Today",
+       "ozet": "The quantum computing pioneer achieved a major milestone.",
+       "url": "https://finnhub.io/api/news?id=cede9f0c20f4d504c94c73ebd4dd5b28f81f1bd9f56d499f46d0b07b556065ca",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-23T23:16:19+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "Why IonQ (IONQ) Is Up 15.5% After NVIDIA Deal And Real-Time Error Correction Breakthrough",
+       "ozet": "IonQ recently announced it will deploy its Superion 256 quantum computer on-premise at NVIDIA’s Accelerated Quantum Research Center, while also unveiling an end-to-end real-time quantum error correction decoder that runs on a single off-the-shelf CPU with minimal computational delay. Together, these advances highlight IonQ’s push to link scalable error-corrected quantum hardware directly with leading AI and GPU infrastructure, potentially simplifying future hybrid quantum-classical system...",
+       "url": "https://finnhub.io/api/news?id=d809cf61524316d9c686c28ef5ce3b67f47279355a1f649dfd244cf55fb99a59",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-23T22:15:46+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "IonQ (IONQ) Stock Looks Reasonably Priced On Book Value Today",
+       "ozet": "IonQ has ridden a very large multi year upswing, capped by fresh quantum computing headlines, and that leaves a basic valuation puzzle for you to solve. With the share price now far removed from where it traded five years ago, the question is how comfortably that market value lines up with what its balance sheet currently shows. IonQ has delivered a roughly 289.2% gain over the past 5 years, which puts real weight on whether the current market capitalization can be squared with the equity...",
+       "url": "https://finnhub.io/api/news?id=5768a80c0fab4fd05d5b0b0ead9db4a90ebd7d71b0e220cef7566af50be704ad",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-23T21:59:00+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "IONQ shares jump on Quantum breakthrough",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZkhBX0NhYTQ0aEZxSmxoY3NBNlVrRmI2eldhRlNpdW4xSDZLMjZvVnMwSWZIdDdKR1dSSE1EbGJONEZhNDVBU3Q3dEc1azRVVU5OX2pzSmI4X2s1ZFc1cTM3a1VCMS11ZnhiVGVQRmdwZlE2WlFlT212cjNkSUNpZUhVQTU0ZEJhenRz?oc=5",
+       "kaynak": "CNBC",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-23T21:27:49+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "Stock Market Today, Sept. 23: IonQ Surges on Quantum Breakthrough and Nvidia Partnership",
+       "ozet": "Today, Sept. 23, 2026, the trapped-ion quantum computing provider's decoder test and research-center collaboration kept commercialization progress in focus.",
+       "url": "https://finnhub.io/api/news?id=e59c9cb6478a105fe7949c9bbb9722a6beb937562ea0f706bfbbf81cdc365e71",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-23T21:25:00+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "IonQ Wants to Be the Nvidia of Quantum. Now They Are Partners.",
+       "ozet": "IonQ’s Superion 256 quantum computer will be the first system installed at Nvidia’s quantum research center, say the partners.",
+       "url": "https://finnhub.io/api/news?id=b5946fe6b9ccf90e04c3fb67cb6585611ca60dfb922fffde6a81c8a2eae64d19",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-23T21:25:00+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "IonQ Stock Surges After Inking Quantum Computing Deal With Nvidia",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRldVcFU5d2RFRUpmV3RyU19qRHVhOGxHUjM3UURzRXAxdWtmdVFZTGg5V082UTlSSjRFVTNSN0xwU3VwTHlBcW4zcXh0d0FtVGhCNy0tMm5Bd0tPTHpZc1I3b1g2a2duRGRxaTVDV0pNUXhLTXZEbV9yREdieklvRC11QTVPR2ZtOEk0Qm1jaVF5VGs?oc=5",
+       "kaynak": "Barron's",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-23T20:37:00+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "Why Quantum World Congress Is Giving Quantum Stocks a Boost",
+       "ozet": "The quantum computing sector has seen no shortage of hype this year, and now one of the industry’s largest gatherings—Quantum World Congress—is set to give stocks another push.  Shares of quantum computing companies rallied in the lead-up to the conference, which bills itself as “the world’s premier event uniting the global quantum ecosystem.”  The ETF was up slightly on Wednesday, the inaugural day of the event, resisting a downturn in technology stocks.",
+       "url": "https://finnhub.io/api/news?id=ec2ce66fbf348355273ffea4a4efc94c5fdd6847835b78ccb938b111a22e1c77",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-23T20:33:00+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "Palantir, IonQ, Royal Caribbean, Paychex, McDonald’s, and More Stocks That Explain Today’s Market",
+       "ozet": "Stocks fell Wednesday as investors faced uncertainty with the lack of positive news on the war in Iran and as oil prices moved higher.  IonQ  gained 6.6% after the company said its latest quantum computer, Superion 256, will be the first system in  Nvidia’s   quantum research center.  The new device will act as a specialized co-processor alongside an Nvidia GPU cluster.",
+       "url": "https://finnhub.io/api/news?id=c84535fec44d9f9e2c66ce3d6145e40c217347f1d0daef9f4a1b494e6fa4e5c5",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-23T19:02:00+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "Market Navigator: Portfolio Wealth Advisors Lee Munson talks IONQ and the quantum space",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPLThWY3lsemFzcklvLXh1clM0MFdDUGJNNFVjRHAtR2U0Y3E5VklqSUJjd1dfYXZhTG5mY2VvSDk3QU9pbWJrNlNKeHRZb2VJU0JoSmtGNzBpSTVPcGFQUy05Q3dSYmxQV1lsLV9oTm5lNk1IUE05aWVCNUl2THNlNWlQWTIzUk5uU3dfT25fZldiQ29CeUtfVW9BS1IyTUNtZ0gtTVpEYVl3eEZXLTBNSTJ3R0VfbGJTdkNyYk00WVpFNnJNUzNjYw?oc=5",
+       "kaynak": "CNBC",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-23T18:33:42+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "IonQ Just Nabbed a Quantum Computing Partnership with Nvidia. How to Play IONQ Stock Here.",
+       "ozet": "IonQ stock rallies on landmark deal with Nvidia. But does that make IONQ shares worth buying today? Let’s find out!",
+       "url": "https://finnhub.io/api/news?id=1f289a7898733cd8592ebbfe17898c351e73b01f20fb9e57dae623e55985b15e",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-23T18:00:00+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "Discover the most active stocks in Wednesday's session.",
+       "ozet": "Get a pulse on the US markets on Wednesday by checking out the most active stocks in today's session. Discover the stocks that are leading the way in terms of trading volume and market activity.",
+       "url": "https://finnhub.io/api/news?id=2e7bcd8f833fbb4c7fd6a483127bf63d67080ae146ed737fa561ad7151125c97",
+       "kaynak": "ChartMill",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-23T17:57:52+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "IonQ Just Proved the Biggest Threat to Quantum Computing Scaling Was an Illusion",
+       "ozet": "IonQ just proved that fixing quantum errors does not require massive supercomputers. By running real-time correction for 408 logical qubits on a single CPU, it cleared a massive scaling roadblock.",
+       "url": "https://finnhub.io/api/news?id=fafd1aaf5d4ab698c0744ec0c1a1f40aa82fcc7584e795427875c8ea3be8df4b",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-23T17:17:02+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "Why IonQ (IONQ) Stock Is Trading Up Today",
+       "ozet": "Shares of quantum computing company IonQ (NYSE:IONQ) jumped 4.8% in the morning session after the company announced an end-to-end real-time quantum error correction decoder that runs on a single standard central processing unit.",
+       "url": "https://finnhub.io/api/news?id=68cee1e2131646c14dbf21ca864350549913458f544f7dc3ee33d443eddd0f31",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-23T16:47:24+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "IonQ to deploy first quantum computer at Nvidia’s Accelerated Quantum Research Center",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxONVdhNUk3clRpMGZ3SzZRSWF5cDNrWTNYSWRuWTZwWURGUmx6RF80aGw2UXY4aUZkUmw3anRoMGhqUEhQZkkwLWFvOHZxWjdPZi1TREZQdG4xYldnTE5GdDlsWEk4RkZXVTRMdl9OczJkR0FvZDB2NUtNR3VXNUVOaTRzel9VNHJKODlNVnBTNXRPZFlIbExuNzFlUGtfRU1iTjc5UFljaFRQNmotSVI3RVBnb1JUdzhoRFhrZ0ZxeWtPOUd1bHpF?oc=5",
+       "kaynak": "Data Center Dynamics",
+       "saglayici": "Google News RSS"
+      }
+     ],
+     "sec_bildirimleri": []
+    }
+   ],
+   "sec_bildirimleri": [],
+   "bilanco": {
+    "son_ceyrek": "FY2026 Q2",
+    "kirmizi": 5,
+    "dikkat": 3,
+    "olumlu": 2,
+    "son_dosya": {
+     "accn": "0001193125-26-341001",
+     "form": "10-Q",
+     "tarih": "2026-08-10",
+     "donem_sonu": "2026-06-30",
+     "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526341001/ionq-20260630.htm"
+    },
+    "xbrl_beklemede": false
+   },
+   "sinyaller": [
+    {
+     "id": "66c3f4d8b8f3",
+     "tarih": "2026-09-26",
+     "ticker": "IONQ",
+     "tur": "tez_bozulma",
+     "tur_adi": "Tez genel durumu KIRMIZI'ya döndü",
+     "yon": "olumsuz",
+     "aciklama": "Kırmızı sütunlar: Hisse sayısı",
+     "fiyat": 45.48,
+     "fiyat_tarihi": "2026-09-25",
+     "qqq": 744.5,
+     "baslangic_kaydi": true,
+     "kayit_zamani": "2026-09-26T10:58:05+00:00"
+    },
+    {
+     "id": "a116709dfd2e",
+     "tarih": "2026-09-26",
+     "ticker": "IONQ",
+     "tur": "sutun_kirmizi",
+     "tur_adi": "Bir tez sütunu KIRMIZI'ya döndü",
+     "yon": "olumsuz",
+     "aciklama": "Hisse sayısı: %46,5",
+     "fiyat": 45.48,
+     "fiyat_tarihi": "2026-09-25",
+     "qqq": 744.5,
+     "baslangic_kaydi": true,
+     "kayit_zamani": "2026-09-26T10:58:05+00:00"
+    },
+    {
+     "id": "a2cbc59695f7",
+     "tarih": "2026-09-26",
+     "ticker": "IONQ",
+     "tur": "cikis_kriteri",
+     "tur_adi": "Önceden yazılmış çıkış kriteri tetiklendi",
+     "yon": "olumsuz",
+     "aciklama": "Hisse sayısı yıllık %10'dan fazla artarsa",
+     "fiyat": 45.48,
+     "fiyat_tarihi": "2026-09-25",
+     "qqq": 744.5,
+     "baslangic_kaydi": true,
+     "kayit_zamani": "2026-09-26T10:58:05+00:00"
+    },
+    {
+     "id": "33799c04c9d0",
+     "tarih": "2026-09-26",
+     "ticker": "IONQ",
+     "tur": "kural_kademe_tez_bozuk",
+     "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
+     "yon": "olumsuz",
+     "aciklama": "Zirveden −%44,6, −%35 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+     "fiyat": 45.48,
+     "fiyat_tarihi": "2026-09-25",
+     "qqq": 744.5,
+     "baslangic_kaydi": true,
+     "kayit_zamani": "2026-09-26T10:58:05+00:00"
+    },
+    {
+     "id": "2abe1bb030c6",
+     "tarih": "2026-09-26",
+     "ticker": "IONQ",
+     "tur": "bilanco_kirmizi_bayrak",
+     "tur_adi": "Yeni bilançoda kırmızı bayrak",
+     "yon": "olumsuz",
+     "aciklama": "Vergi öncesi kârın yarıdan fazlası faaliyet dışı; TTM net zarar; SBC gelire oranla çok yüksek; Ciddi sulandırma; Alacaklar gelirden çok daha hızlı büyüyor",
+     "fiyat": 45.48,
+     "fiyat_tarihi": "2026-09-25",
+     "qqq": 744.5,
+     "baslangic_kaydi": true,
+     "kayit_zamani": "2026-09-26T10:58:05+00:00"
+    }
+   ],
+   "cumleler": [
+    "Hisse bu hafta +%16,2 (QQQ +%3,2, SMH +%5,9); 52 haftalık zirveden −%44,6 uzakta.",
+    "Tezde değişiklik: Tez genel durumu KIRMIZI'ya döndü (Kırmızı sütunlar: Hisse sayısı); Bir tez sütunu KIRMIZI'ya döndü (Hisse sayısı: %46,5); Önceden yazılmış çıkış kriteri tetiklendi (Hisse sayısı yıllık %10'dan fazla artarsa).",
+    "Zirveden −%44,6: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "2026-09-24 günü +%5,7 büyük hareket (Hisse +%5,7, sektör/piyasa −%0,1: hareketin çoğu şirkete özel görünüyor.)"
+   ],
+   "insider_ozet": {
+    "islem": 0,
+    "satis_tutar": 0,
+    "alim_tutar": 0,
+    "kodlar": {}
+   },
+   "sonraki_bilanco": {
+    "tarih": "2026-11-03",
+    "saat": "",
+    "eps_tahmin": -0.3543,
+    "gelir_tahmin": 73677435,
+    "ceyrek": 3,
+    "yil": 2026,
+    "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
+    "guncelleme": "2026-09-26T10:57:56+00:00"
    }
   }
  ],
@@ -1728,6 +2354,76 @@
    "qqq": 744.5,
    "baslangic_kaydi": true,
    "kayit_zamani": "2026-09-26T00:49:50+00:00"
+  },
+  {
+   "id": "66c3f4d8b8f3",
+   "tarih": "2026-09-26",
+   "ticker": "IONQ",
+   "tur": "tez_bozulma",
+   "tur_adi": "Tez genel durumu KIRMIZI'ya döndü",
+   "yon": "olumsuz",
+   "aciklama": "Kırmızı sütunlar: Hisse sayısı",
+   "fiyat": 45.48,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-26T10:58:05+00:00"
+  },
+  {
+   "id": "a116709dfd2e",
+   "tarih": "2026-09-26",
+   "ticker": "IONQ",
+   "tur": "sutun_kirmizi",
+   "tur_adi": "Bir tez sütunu KIRMIZI'ya döndü",
+   "yon": "olumsuz",
+   "aciklama": "Hisse sayısı: %46,5",
+   "fiyat": 45.48,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-26T10:58:05+00:00"
+  },
+  {
+   "id": "a2cbc59695f7",
+   "tarih": "2026-09-26",
+   "ticker": "IONQ",
+   "tur": "cikis_kriteri",
+   "tur_adi": "Önceden yazılmış çıkış kriteri tetiklendi",
+   "yon": "olumsuz",
+   "aciklama": "Hisse sayısı yıllık %10'dan fazla artarsa",
+   "fiyat": 45.48,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-26T10:58:05+00:00"
+  },
+  {
+   "id": "33799c04c9d0",
+   "tarih": "2026-09-26",
+   "ticker": "IONQ",
+   "tur": "kural_kademe_tez_bozuk",
+   "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
+   "yon": "olumsuz",
+   "aciklama": "Zirveden −%44,6, −%35 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+   "fiyat": 45.48,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-26T10:58:05+00:00"
+  },
+  {
+   "id": "2abe1bb030c6",
+   "tarih": "2026-09-26",
+   "ticker": "IONQ",
+   "tur": "bilanco_kirmizi_bayrak",
+   "tur_adi": "Yeni bilançoda kırmızı bayrak",
+   "yon": "olumsuz",
+   "aciklama": "Vergi öncesi kârın yarıdan fazlası faaliyet dışı; TTM net zarar; SBC gelire oranla çok yüksek; Ciddi sulandırma; Alacaklar gelirden çok daha hızlı büyüyor",
+   "fiyat": 45.48,
+   "fiyat_tarihi": "2026-09-25",
+   "qqq": 744.5,
+   "baslangic_kaydi": true,
+   "kayit_zamani": "2026-09-26T10:58:05+00:00"
   }
  ],
  "not": "Günlük Python derlemesi (Claude yok). Derin analiz Salı raporundadır."

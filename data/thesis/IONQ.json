@@ -1,64 +1,64 @@
 {
- "ticker": "AAOI",
+ "ticker": "IONQ",
  "tez_var": true,
  "onay": "taslak",
- "ozet": "Veri merkezi optik alıcı-vericilerde (400G/800G ve sonrası) hyperscaler talebiyle hızlı büyüme; ABD içi üretim kapasitesi avantaj sağlıyor. Şirket kârlılığa geçiş aşamasında, bu yüzden kazanç kalitesi, nakit pisti ve sulandırma kritik.\n",
+ "ozet": "Ionq için tez henüz yazılmadı. Bu otomatik taslak yalnızca büyümenin, marjın, nakit üretiminin ve hisse sayısının bugünkü seviyesini koruyup korumadığını izler.\n",
  "genel": "kirmizi",
  "sutunlar": [
   {
    "id": "buyume",
    "ad": "Gelir büyümesi",
    "tip": "metrik",
-   "aciklama": "Çeyreklik gelir büyümesi > %30.",
+   "aciklama": "",
    "metrik": "revenue_yoy",
    "metrik_adi": "Gelir büyümesi (yıllık)",
    "birim": "%",
-   "deger": 86.42,
+   "deger": 286.83,
    "donem": "FY2026 Q2",
    "eski_donem": false,
    "operator": ">",
-   "esik": 30,
-   "uyari": 10,
+   "esik": 143,
+   "uyari": 57,
    "durum": "yesil",
    "gecmis": [
     {
      "etiket": "FY2024 Q3",
-     "deger": 4.16,
-     "durum": "kirmizi"
+     "deger": 102.09,
+     "durum": "sari"
     },
     {
      "etiket": "FY2024 Q4",
-     "deger": 65.87,
-     "durum": "yesil"
+     "deger": 91.78,
+     "durum": "sari"
     },
     {
      "etiket": "FY2025 Q1",
-     "deger": 145.52,
-     "durum": "yesil"
+     "deger": -0.21,
+     "durum": "kirmizi"
     },
     {
      "etiket": "FY2025 Q2",
-     "deger": 137.93,
-     "durum": "yesil"
+     "deger": 81.83,
+     "durum": "sari"
     },
     {
      "etiket": "FY2025 Q3",
-     "deger": 82.08,
+     "deger": 221.5,
      "durum": "yesil"
     },
     {
      "etiket": "FY2025 Q4",
-     "deger": 33.91,
+     "deger": 428.52,
      "durum": "yesil"
     },
     {
      "etiket": "FY2026 Q1",
-     "deger": 51.36,
+     "deger": 754.72,
      "durum": "yesil"
     },
     {
      "etiket": "FY2026 Q2",
-     "deger": 86.42,
+     "deger": 286.83,
      "durum": "yesil"
     }
    ],
@@ -74,56 +74,121 @@
    "id": "brut_marj",
    "ad": "Brüt marj",
    "tip": "metrik",
-   "aciklama": "GAAP brüt marj > %30; ürün karması ve ölçek etkisini gösterir.",
+   "aciklama": "",
    "metrik": "gross_margin",
    "metrik_adi": "Brüt marj",
    "birim": "%",
-   "deger": 27.72,
+   "deger": null,
+   "donem": null,
+   "eski_donem": false,
+   "operator": ">",
+   "esik": 40,
+   "uyari": 30,
+   "durum": "veri_yok",
+   "gecmis": [
+    {
+     "etiket": "FY2024 Q3",
+     "deger": null,
+     "durum": "veri_yok"
+    },
+    {
+     "etiket": "FY2024 Q4",
+     "deger": null,
+     "durum": "veri_yok"
+    },
+    {
+     "etiket": "FY2025 Q1",
+     "deger": null,
+     "durum": "veri_yok"
+    },
+    {
+     "etiket": "FY2025 Q2",
+     "deger": null,
+     "durum": "veri_yok"
+    },
+    {
+     "etiket": "FY2025 Q3",
+     "deger": null,
+     "durum": "veri_yok"
+    },
+    {
+     "etiket": "FY2025 Q4",
+     "deger": null,
+     "durum": "veri_yok"
+    },
+    {
+     "etiket": "FY2026 Q1",
+     "deger": null,
+     "durum": "veri_yok"
+    },
+    {
+     "etiket": "FY2026 Q2",
+     "deger": null,
+     "durum": "veri_yok"
+    }
+   ],
+   "kaynak": {
+    "tip": "SEC XBRL companyfacts",
+    "donem": null
+   },
+   "olgu_mu": true,
+   "haberler": [],
+   "radar": []
+  },
+  {
+   "id": "karlilik",
+   "ad": "Kârlılığa gidiş",
+   "tip": "metrik",
+   "aciklama": "",
+   "metrik": "operating_margin_ttm",
+   "metrik_adi": "TTM faaliyet marjı",
+   "birim": "%",
+   "deger": -408.24,
    "donem": "FY2026 Q2",
    "eski_donem": false,
    "operator": ">",
-   "esik": 30,
-   "uyari": 25,
+   "esik": 0,
+   "uyari": -413,
    "durum": "sari",
    "gecmis": [
     {
      "etiket": "FY2024 Q3",
-     "deger": 24.43,
+     "deger": -558.86,
      "durum": "kirmizi"
     },
     {
      "etiket": "FY2024 Q4",
-     "deger": 28.65,
-     "durum": "sari"
+     "deger": -539.68,
+     "durum": "kirmizi"
     },
     {
      "etiket": "FY2025 Q1",
-     "deger": 30.59,
-     "durum": "yesil"
+     "deger": -592.84,
+     "durum": "kirmizi"
     },
     {
      "etiket": "FY2025 Q2",
-     "deger": 30.27,
-     "durum": "yesil"
+     "deger": -700.61,
+     "durum": "kirmizi"
     },
     {
      "etiket": "FY2025 Q3",
-     "deger": 28.04,
-     "durum": "sari"
+     "deger": -604.47,
+     "durum": "kirmizi"
     },
     {
      "etiket": "FY2025 Q4",
-     "deger": 31.24,
-     "durum": "yesil"
+     "deger": -487.41,
+     "durum": "kirmizi"
     },
     {
      "etiket": "FY2026 Q1",
-     "deger": 29.06,
-     "durum": "sari"
+     "deger": -443.33,
+     "durum": "kirmizi"
     },
     {
      "etiket": "FY2026 Q2",
-     "deger": 27.72,
+     "deger": -408.24,
      "durum": "sari"
     }
    ],
@@ -136,60 +201,60 @@
    "radar": []
   },
   {
-   "id": "faaliyet_kari",
-   "ad": "Faaliyetten kârlılığa geçiş",
+   "id": "pist",
+   "ad": "Nakit pisti",
    "tip": "metrik",
-   "aciklama": "TTM faaliyet marjı pozitif olmalı; warrant/türev kazançları bu metriği etkilemez.",
-   "metrik": "operating_margin_ttm",
-   "metrik_adi": "TTM faaliyet marjı",
-   "birim": "%",
-   "deger": -11.31,
+   "aciklama": "",
+   "metrik": "cash_runway_months",
+   "metrik_adi": "Nakit pisti",
+   "birim": "ay",
+   "deger": 52.6,
    "donem": "FY2026 Q2",
    "eski_donem": false,
    "operator": ">",
-   "esik": 0,
-   "uyari": -10,
-   "durum": "kirmizi",
+   "esik": 24,
+   "uyari": 12,
+   "durum": "yesil",
    "gecmis": [
     {
      "etiket": "FY2024 Q3",
-     "deger": -32.91,
-     "durum": "kirmizi"
+     "deger": 38.3,
+     "durum": "yesil"
     },
     {
      "etiket": "FY2024 Q4",
-     "deger": -28.44,
-     "durum": "kirmizi"
+     "deger": 33.0,
+     "durum": "yesil"
     },
     {
      "etiket": "FY2025 Q1",
-     "deger": -18.86,
-     "durum": "kirmizi"
+     "deger": 52.1,
+     "durum": "yesil"
     },
     {
      "etiket": "FY2025 Q2",
-     "deger": -13.02,
-     "durum": "kirmizi"
+     "deger": 42.3,
+     "durum": "yesil"
     },
     {
      "etiket": "FY2025 Q3",
-     "deger": -11.75,
-     "durum": "kirmizi"
+     "deger": 50.1,
+     "durum": "yesil"
     },
     {
      "etiket": "FY2025 Q4",
-     "deger": -11.98,
-     "durum": "kirmizi"
+     "deger": 95.8,
+     "durum": "yesil"
     },
     {
      "etiket": "FY2026 Q1",
-     "deger": -11.57,
-     "durum": "kirmizi"
+     "deger": 57.6,
+     "durum": "yesil"
     },
     {
      "etiket": "FY2026 Q2",
-     "deger": -11.31,
-     "durum": "kirmizi"
+     "deger": 52.6,
+     "durum": "yesil"
     }
    ],
    "kaynak": {
@@ -202,23 +267,23 @@
   },
   {
    "id": "sulandirma",
-   "ad": "Sulandırma",
+   "ad": "Hisse sayısı",
    "tip": "metrik",
-   "aciklama": "Seyreltilmiş hisse sayısı yıllık artışı < %10 (ATM/convertible ihraçları).",
+   "aciklama": "",
    "metrik": "diluted_shares_yoy",
    "metrik_adi": "Seyreltilmiş hisse sayısı (yıllık)",
    "birim": "%",
-   "deger": 43.68,
+   "deger": 46.5,
    "donem": "FY2026 Q2",
    "eski_donem": false,
    "operator": "<",
-   "esik": 10,
-   "uyari": 25,
+   "esik": 2,
+   "uyari": 5,
    "durum": "kirmizi",
    "gecmis": [
     {
      "etiket": "FY2024 Q3",
-     "deger": 29.1,
+     "deger": 5.37,
      "durum": "kirmizi"
     },
     {
@@ -228,17 +293,17 @@
     },
     {
      "etiket": "FY2025 Q1",
-     "deger": 30.44,
+     "deger": 9.9,
      "durum": "kirmizi"
     },
     {
      "etiket": "FY2025 Q2",
-     "deger": 44.22,
+     "deger": 18.58,
      "durum": "kirmizi"
     },
     {
      "etiket": "FY2025 Q3",
-     "deger": 49.67,
+     "deger": 37.43,
      "durum": "kirmizi"
     },
     {
@@ -248,12 +313,12 @@
     },
     {
      "etiket": "FY2026 Q1",
-     "deger": 51.84,
+     "deger": 62.28,
      "durum": "kirmizi"
     },
     {
      "etiket": "FY2026 Q2",
-     "deger": 43.68,
+     "deger": 46.5,
      "durum": "kirmizi"
     }
    ],
@@ -266,77 +331,12 @@
    "radar": []
   },
   {
-   "id": "stok",
-   "ad": "Stok ve talep uyumu",
-   "tip": "metrik",
-   "aciklama": "Stok büyümesi gelir büyümesini 25 puandan fazla aşmamalı.",
-   "metrik": "inventory_vs_revenue_gap",
-   "metrik_adi": "Stok − gelir büyümesi",
-   "birim": "puan",
-   "deger": 14.34,
-   "donem": "FY2026 Q2",
-   "eski_donem": false,
-   "operator": "<",
-   "esik": 25,
-   "uyari": 60,
-   "durum": "yesil",
-   "gecmis": [
-    {
-     "etiket": "FY2024 Q3",
-     "deger": -8.83,
-     "durum": "yesil"
-    },
-    {
-     "etiket": "FY2024 Q4",
-     "deger": -27.87,
-     "durum": "yesil"
-    },
-    {
-     "etiket": "FY2025 Q1",
-     "deger": -57.17,
-     "durum": "yesil"
-    },
-    {
-     "etiket": "FY2025 Q2",
-     "deger": 17.71,
-     "durum": "yesil"
-    },
-    {
-     "etiket": "FY2025 Q3",
-     "deger": 82.3,
-     "durum": "kirmizi"
-    },
-    {
-     "etiket": "FY2025 Q4",
-     "deger": 73.85,
-     "durum": "kirmizi"
-    },
-    {
-     "etiket": "FY2026 Q1",
-     "deger": 50.22,
-     "durum": "sari"
-    },
-    {
-     "etiket": "FY2026 Q2",
-     "deger": 14.34,
-     "durum": "yesil"
-    }
-   ],
-   "kaynak": {
-    "tip": "SEC XBRL companyfacts",
-    "donem": "FY2026 Q2"
-   },
-   "olgu_mu": true,
-   "haberler": [],
-   "radar": []
-  },
-  {
-   "id": "musteri_kapasite",
-   "ad": "Müşteri yoğunlaşması ve kapasite",
+   "id": "rekabet",
+   "ad": "Rekabet ve yönetim",
    "tip": "yorum",
    "aciklama": "",
    "durum": "veri_yok",
-   "soru": "10-Q/10-K dipnotlarında en büyük müşterilerin gelir payı, 800G/1.6T ürün geçişi, ABD (Texas) üretim kapasitesi ve finansman (ATM, convertible) hakkında açıklamalar tezi destekliyor mu?",
+   "soru": "10-Q/10-K ve basın bülteninde rekabet, müşteri yoğunlaşması ve yönetimin beklentileri hakkındaki açıklamalar tezi destekliyor mu?",
    "gerekce": "Henüz değerlendirilmedi (Claude bilanço analizi / Salı raporu çalışmadı).",
    "kanit_alinti": null,
    "kanit_dogrulandi": null,
@@ -348,42 +348,46 @@
  ],
  "cikis": [
   {
-   "id": "pist",
-   "ad": "Nakit pisti 12 ayın altına inerse",
-   "metrik": "cash_runway_months",
-   "durum": "tetiklendi",
-   "son_degerler": [
-    {
-     "etiket": "FY2026 Q2",
-     "deger": 10.1
-    }
-   ]
-  },
-  {
-   "id": "marj_coker",
-   "ad": "Brüt marj 2 çeyrek üst üste %20'nin altına inerse",
-   "metrik": "gross_margin",
+   "id": "daralma",
+   "ad": "Gelir 2 çeyrek üst üste yıllık bazda daralırsa",
+   "metrik": "revenue_yoy",
    "durum": "tetiklenmedi",
    "son_degerler": [
     {
      "etiket": "FY2026 Q1",
-     "deger": 29.06
+     "deger": 754.72
     },
     {
      "etiket": "FY2026 Q2",
-     "deger": 27.72
+     "deger": 286.83
+    }
+   ]
+  },
+  {
+   "id": "marj_kirilmasi",
+   "ad": "Brüt marj 2 çeyrek üst üste eşiğin (%26) altına inerse",
+   "metrik": "gross_margin",
+   "durum": "veri_yok",
+   "son_degerler": [
+    {
+     "etiket": "FY2026 Q1",
+     "deger": null
+    },
+    {
+     "etiket": "FY2026 Q2",
+     "deger": null
     }
    ]
   },
   {
    "id": "asiri_sulandirma",
-   "ad": "Seyreltilmiş hisse sayısı yıllık %40'tan fazla artarsa",
+   "ad": "Hisse sayısı yıllık %10'dan fazla artarsa",
    "metrik": "diluted_shares_yoy",
    "durum": "tetiklendi",
    "son_degerler": [
     {
      "etiket": "FY2026 Q2",
-     "deger": 43.68
+     "deger": 46.5
     }
    ]
   }
