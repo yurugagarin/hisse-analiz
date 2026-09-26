@@ -104,6 +104,7 @@ def fundamentals(run: Run, T: str, cik: int, recent: list[dict]) -> tuple[dict, 
     if not cf:
         raise RuntimeError("companyfacts alınamadı")
     table = xbrl.build_table(cf)
+    write_json(DATA / "debug" / f"{T}_etiketler.json", xbrl.tag_dump(cf, table))
     fmap = filings_map(cik, recent)
     q = quality.analyze(table, fmap, cik, T)
     last_end = table["ceyrekler"][-1]["donem_sonu"] if table.get("ceyrekler") else None

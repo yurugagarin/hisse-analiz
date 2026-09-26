@@ -100,7 +100,9 @@ CONCEPTS: dict[str, dict] = {
         "CashAndCashEquivalentsAtCarryingValue",
         "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents"]},
     "st_investments": {"tablo": "Bilanço", "instant": True, "c": [
-        "MarketableSecuritiesCurrent", "ShortTermInvestments", "AvailableForSaleSecuritiesDebtSecuritiesCurrent"]},
+        "MarketableSecuritiesCurrent", "ShortTermInvestments", "AvailableForSaleSecuritiesDebtSecuritiesCurrent",
+        "AvailableForSaleSecuritiesCurrent", "OtherShortTermInvestments"]},
+    "cash_and_st": {"tablo": "Bilanço", "instant": True, "c": ["CashCashEquivalentsAndShortTermInvestments"]},
     "total_debt": {"tablo": "Bilanço", "instant": True, "c": [
         "LongTermDebt", "LongTermDebtNoncurrent", "ConvertibleNotesPayable", "LongTermDebtAndCapitalLeaseObligations"]},
     "goodwill": {"tablo": "Bilanço", "instant": True, "c": ["Goodwill"]},
@@ -433,6 +435,8 @@ def build_table(cf: dict, max_quarters: int = 12) -> dict:
             dr = (r["deferred_rev_current"] or 0) + (r["deferred_rev_noncurrent"] or 0)
         r["deferred_revenue"] = dr
         r["liquidity"] = None if r["cash"] is None else r["cash"] + (r["st_investments"] or 0)
+        if r.get("cash_and_st") is not None and (r["liquidity"] is None or r["cash_and_st"] > r["liquidity"]):
+            r["liquidity"] = r["cash_and_st"]
         # --- bilanço ve verimlilik oranları ---
         if r["total_liabilities"] is None and r["liab_and_equity"] is not None and r["equity"] is not None:
             r["total_liabilities"] = r["liab_and_equity"] - r["equity"]
@@ -509,3 +513,23 @@ def _p(a, b):
 
 def _diff(a, b):
     return None if a is None or b is None else round(a - b, 2)
+
+
+def tag_dump(cf: dict, table: dict) -> dict:
+    """Teşhis: son dönem sonunda raporlanan tüm us-gaap USD etiketleri (eşleme doğrulaması için)."""
+    rows = table.get("ceyrekler") or []
+    if not rows:
+        return {}
+    end = rows[-1]["donem_sonu"]
+    used = {c for spec in CONCEPTS.values() for c in spec["c"]}
+    inst, dur = {}, {}
+    for name, node in (cf.get("facts", {}).get("us-gaap", {}) or {}).items():
+        for e in node.get("units", {}).get("USD", []):
+            if abs(_days(e["end"], end)) > 3:
+                continue
+            if e.get("start"):
+                dur[name] = {"deger": e["val"], "baslangic": e["start"], "kullaniliyor": name in used}
+            else:
+                inst[name] = {"deger": e["val"], "kullaniliyor": name in used}
+    srt = lambda d: dict(sorted(d.items(), key=lambda kv: -abs(kv[1]["deger"])))  # noqa: E731
+    return {"donem_sonu": end, "anlik": srt(inst), "donemsel": srt(dur)}
