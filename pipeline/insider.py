@@ -99,7 +99,7 @@ def update_cache(ticker: str, cik: int, filings: list[dict], days: int = 200) ->
         if f.get("form") not in ("4", "4/A") or f.get("filingDate", "") < cutoff:
             continue
         accn = f["accessionNumber"]
-        if accn in cache and cache[accn].get("v") == 2:
+        if accn in cache and cache[accn].get("v") == 3:
             continue
         doc = (f.get("primaryDocument") or "").split("/")[-1]
         if not doc.endswith(".xml"):
@@ -110,7 +110,7 @@ def update_cache(ticker: str, cik: int, filings: list[dict], days: int = 200) ->
         parsed = parse_form4(xml)
         if parsed is None:
             continue
-        parsed.update({"v": 2, "accn": accn, "dosyalama": f.get("filingDate"), "form": f.get("form"),
+        parsed.update({"v": 3, "accn": accn, "dosyalama": f.get("filingDate"), "form": f.get("form"),
                        "url": sec.archive_url(cik, accn, f.get("primaryDocument"))})
         cache[accn] = parsed
         new += 1
