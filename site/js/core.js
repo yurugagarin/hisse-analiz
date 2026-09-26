@@ -111,9 +111,16 @@ var H = window.H || {};
         <a href="#/rehber" data-r="rehber">Bilanço rehberi</a>
         <a href="#/sistem" data-r="sistem">Sistem</a>
       </nav>
-      <div><div class="nav-h">Hisseler</div><nav class="stock-nav" aria-label="Hisseler">${stocks}</nav></div>
+      <div><div class="nav-h">Hisseler</div><nav class="stock-nav" aria-label="Hisseler">${stocks}</nav>
+        <a class="addstock" href="#/sistem/hisse-ekle">+ Hisse ekle / çıkar</a></div>
       <div class="side-foot"><span>${sum ? 'Güncelleme<br>' + H.dt(sum.guncelleme) : ''}</span><button class="iconbtn themebtn" type="button" aria-label="Temayı değiştir">${H.themeIcon()}</button></div>`;
     document.querySelectorAll('.themebtn').forEach(b => b.onclick = H.toggleTheme);
+  };
+  H.repo = async function () {
+    const cfg = await H.J('config.json');
+    if (cfg && cfg.repo) return cfg.repo;
+    const owner = location.hostname.split('.')[0], name = location.pathname.split('/').filter(Boolean)[0];
+    return owner && name ? owner + '/' + name : null;
   };
   H.markNav = function (r, t) {
     document.querySelectorAll('.nav a').forEach(a => a.classList.toggle('on', a.dataset.r === r));

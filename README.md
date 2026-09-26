@@ -38,13 +38,18 @@ Site: **https://yurugagarin.github.io/hisse-analiz/** (GitHub Pages, GitHub Acti
 - Finnhub (ücretsiz katman), SEC EDGAR, Nasdaq.com, Google News RSS: ücretsiz.
 - GitHub Actions: public repoda ücretsiz.
 
-## Yeni hisse eklemek
-1. `config/stocks.yaml` → tek satır: `- {ticker: AMD, name: "Advanced Micro Devices", benchmarks: [QQQ, SMH]}`
-2. (Önerilir) `config/theses.yaml`'a tez bölümü (sütunlar + çıkış kriterleri; metrik kataloğu dosyanın başında).
-3. (Opsiyonel) `config/rules.yaml`'a düşüş kademeleri; yoksa `varsayilan` kullanılır.
-4. Commit'le → workflow otomatik çalışır.
+## Yeni hisse eklemek (kod değiştirmeden)
 
-Tezler ve kurallar `onay: taslak` ile başlar ve sitede "Taslak — Emre onaylayacak" görünür; onaylayınca `onay: onaylandi` yap.
+1. GitHub → **Actions → "Hisse ekle / çıkar" → Run workflow** (telefondaki GitHub uygulamasından da çalışır).
+2. *Ne yapılsın*: `ekle`, *Borsa kodu*: ör. `AMD`. Şirket adı ve karşılaştırma ETF'leri boş bırakılabilir
+   (ad SEC'ten alınır, ETF varsayılanı QQQ + SMH; yazılım için IGV, iletişim için XLC, genel piyasa için SPY).
+3. Sistem kodu SEC listesinde doğrular, `config/stocks.yaml`'a ekler, şirketin **bugünkü rakamlarına göre**
+   "mevcut kaliteyi koru" mantığında bir **taslak tez** yazar (`config/theses.yaml`, `onay: taslak`) ve veri
+   pipeline'ını başlatır. 3-5 dakika içinde hisse sitede görünür.
+4. Taslak tezi kendi görüşüne göre düzenle (GitHub'da dosyayı açıp kalem ikonuyla). Kural kademeleri için
+   `config/rules.yaml`; yazılmazsa `varsayilan` kademeler kullanılır.
+
+Çıkarmak için aynı yerde `cikar` seç; tez ve geçmiş veri silinmez.
 
 ## Elle çalıştırma
 **Actions → Hisse analiz pipeline → Run workflow**: `sali_raporu` (Salı raporunu şimdi üret),

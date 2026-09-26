@@ -82,16 +82,28 @@
   };
 
   /* ================= SİSTEM ================= */
-  H.views.system = async function () {
+  const scrollAdd = parts => { if ((parts || [])[0] === 'hisse-ekle') setTimeout(() => { const e = document.getElementById('hisse-ekle'); if (e) e.scrollIntoView({ block: 'start' }); }, 30); };
+  H.views.system = async function (parts) {
     const [runs, cfg, usage] = await Promise.all([H.J('runs.json', true), H.J('config.json'), H.JL('usage.jsonl')]);
     const $ = H.$();
+    const repo = await H.repo();
+    const wf = repo ? `https://github.com/${repo}/actions/workflows/hisse-ekle.yml` : null;
+    const addCard = `<section class="card stack" id="hisse-ekle"><div class="sec-head"><span class="eyebrow">Hisse ekle / çıkar</span><h2 class="h-sec">Kod değiştirmeden yeni hisse</h2></div>
+      <ol class="steps">
+        <li>${wf ? `<a href="${H.esc(wf)}" target="_blank" rel="noopener">GitHub'da "Hisse ekle / çıkar" sayfasını aç</a>` : 'GitHub → Actions → "Hisse ekle / çıkar"'} (telefondaki GitHub uygulamasından da olur).</li>
+        <li>Sağdaki <b>Run workflow</b> düğmesine bas. <b>Ne yapılsın</b>: ekle, <b>Borsa kodu</b>: ör. <span class="code">AMD</span>. Şirket adı ve ETF'leri boş bırakabilirsin.</li>
+        <li>Yeşil <b>Run workflow</b> ile onayla. Sistem kodu SEC'te doğrular, listeye ekler, şirketin bugünkü rakamlarına göre bir <b>taslak tez</b> yazar ve verileri çeker.</li>
+        <li>Yaklaşık 3-5 dakika sonra hisse sol menüde ve panelde görünür. Tez taslağını <span class="code">config/theses.yaml</span> dosyasında kendi görüşüne göre düzenleyebilirsin; istersen bana söyle, birlikte yazalım.</li>
+      </ol>
+      <p class="small muted">Çıkarmak için aynı yerde "cikar" seç. Tez ve geçmiş veri silinmez; tekrar eklersen kaldığı yerden devam eder. Karşılaştırma ETF önerileri: yarı iletken SMH, yazılım IGV, iletişim/medya XLC, genel piyasa SPY.</p></section>`;
     if (!runs) { $.innerHTML = `<div class="wrap">${H.noData()}</div>`; return; }
     const py = runs.find(r => r.tur !== 'claude') || {}, cr = runs.find(r => r.tur === 'claude');
     const since = new Date(Date.now() - 30 * 864e5).toISOString(), u30 = usage.filter(u => u.zaman >= since);
     const tot = u30.reduce((a, u) => { a.i += u.input_tokens; a.o += u.output_tokens; a.w += u.web_search; a.c += (u.api_esdegeri_usd || 0); return a; }, { i: 0, o: 0, w: 0, c: 0 });
     const ok = (b, t, f) => b ? H.chip('olumlu', t) : H.chip('kirmizi', f);
     $.innerHTML = `<div class="wrap">
-      <header class="stack-s"><h1 class="h-page">Sistem</h1><p class="lede">Veri kaynaklarının durumu, çalışma geçmişi ve Claude kullanımı.</p></header>
+      <header class="stack-s"><h1 class="h-page">Sistem</h1><p class="lede">Hisse ekleme, veri kaynaklarının durumu, çalışma geçmişi ve Claude kullanımı.</p></header>
+      ${addCard}
       <div class="grid3">
         <div class="card stack-s"><span class="eyebrow">Son günlük çalışma</span><b>${H.dt(py.bitis)}</b>
           <div class="row between small"><span>SEC EDGAR</span>${ok(py.sec_aktif, 'aktif', 'kapalı: SEC_USER_AGENT yok')}</div>
@@ -112,5 +124,6 @@
       </tbody></table></div></section>
       ${cfg ? `<section class="card stack-s"><span class="eyebrow">Konfigürasyon</span><p class="small">Takip edilen: ${cfg.stocks.map(s => `<b class="mono">${H.esc(s.ticker)}</b> (${(s.benchmarks || []).map(H.esc).join(', ')})`).join(' · ')}</p><p class="small muted">Hisse eklemek: <span class="code">config/stocks.yaml</span> dosyasına bir satır. Tez: <span class="code">config/theses.yaml</span>, kurallar: <span class="code">config/rules.yaml</span>.</p></section>` : ''}
     </div>`;
+    scrollAdd(parts);
   };
 })();

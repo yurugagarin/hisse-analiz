@@ -160,7 +160,8 @@ def main():
         sec.sess.disabled = True
 
     write_json(DATA / "config.json", {"stocks": stocks, "theses": theses, "rules": rcfg,
-                                      "settings": settings, "guncelleme": now_iso()})
+                                      "settings": settings, "repo": os.environ.get("GITHUB_REPOSITORY"),
+                                      "guncelleme": now_iso()})
 
     bench_syms = sorted({b for s in stocks for b in s["benchmarks"]} | {"QQQ"})
     pstats = {}
