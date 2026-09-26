@@ -236,15 +236,18 @@
 
   /* ---- Yüzde yığılmış yatay çubuk ---- o: {rows:[{label, total, parts:[{name,value,color}]}], fmt} */
   C.stack100 = function (c, o) {
-    const W = width(c), rowH = 34, gap = 16, lbw = Math.min(150, W * 0.28);
-    const Hh = o.rows.length * (rowH + gap) + 6;
+    const W = width(c), rowH = 34, gap = 16, narrow = W < 520, lbw = narrow ? 0 : Math.min(150, W * 0.28), lblH = narrow ? 20 : 0;
+    const Hh = o.rows.length * (rowH + gap + lblH) + 6;
     c.innerHTML = '';
     const s = svg(W, Hh, o.label);
     const names = new Map();
     o.rows.forEach((r, k) => {
-      const y = k * (rowH + gap) + 4, tot = r.parts.reduce((a, p) => a + Math.max(0, p.value || 0), 0) || 1;
-      txt(s, 0, y + rowH / 2 - 2, r.label, 'dlbl');
-      if (r.total != null) txt(s, 0, y + rowH / 2 + 12, (o.fmt || id)(r.total), 'ax');
+      const y0 = k * (rowH + gap + lblH) + 4, y = y0 + lblH, tot = r.parts.reduce((a, p) => a + Math.max(0, p.value || 0), 0) || 1;
+      if (narrow) txt(s, 0, y0 + 12, r.label + (r.total != null ? ' · ' + (o.fmt || id)(r.total) : ''), 'dlbl');
+      else {
+        txt(s, 0, y + rowH / 2 - 2, r.label, 'dlbl');
+        if (r.total != null) txt(s, 0, y + rowH / 2 + 12, (o.fmt || id)(r.total), 'ax');
+      }
       let x = lbw;
       const avail = W - lbw - 2;
       r.parts.forEach((p, j) => {

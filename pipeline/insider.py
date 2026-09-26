@@ -60,7 +60,7 @@ def parse_form4(xml: str) -> dict | None:
                 roles.append(_t(rel, "otherText") or "Diğer")
         owners.append({"ad": name, "unvan": ", ".join(roles) or "—",
                        "yonetici": bool(rel is not None and (_truthy(_t(rel, "isOfficer")) or _truthy(_t(rel, "isDirector"))))})
-    remarks = (root.findtext("remarks") or "").strip()
+    remarks = (root.findtext("remarks") or "").strip().lstrip("* ").strip()
     for o in owners:
         if "remark" in (o["unvan"] or "").lower():
             o["unvan"] = (remarks[:80] + ("…" if len(remarks) > 80 else "")) if remarks else "Yönetici (unvan açıklamada)"
