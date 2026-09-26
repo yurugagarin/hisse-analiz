@@ -2,7 +2,7 @@
  "ticker": "NOW",
  "cik": 1373715,
  "sirket": "ServiceNow, Inc.",
- "guncelleme": "2026-09-26T00:32:22+00:00",
+ "guncelleme": "2026-09-26T00:39:30+00:00",
  "son_dosya": {
   "accn": "0001373715-26-000076",
   "form": "10-Q",
@@ -55,6 +55,7 @@
     "rpo": 14400000000.0,
     "cash": 1112000000.0,
     "st_investments": 2955000000.0,
+    "cash_and_st": null,
     "total_debt": 1487000000.0,
     "goodwill": 1204000000.0,
     "total_assets": 15091000000.0,
@@ -415,6 +416,7 @@
     "rpo": 18000000000.0,
     "cash": 1897000000.0,
     "st_investments": 2980000000.0,
+    "cash_and_st": null,
     "total_debt": 1488000000.0,
     "goodwill": 1231000000.0,
     "total_assets": 17387000000.0,
@@ -763,6 +765,7 @@
     "rpo": 17700000000.0,
     "cash": 2056000000.0,
     "st_investments": 3054000000.0,
+    "cash_and_st": null,
     "total_debt": 1488000000.0,
     "goodwill": 1224000000.0,
     "total_assets": 17544000000.0,
@@ -1123,6 +1126,7 @@
     "rpo": 18600000000.0,
     "cash": 2159000000.0,
     "st_investments": 3254000000.0,
+    "cash_and_st": null,
     "total_debt": 1488000000.0,
     "goodwill": 1239000000.0,
     "total_assets": 18207000000.0,
@@ -1483,6 +1487,7 @@
     "rpo": 19500000000.0,
     "cash": 1885000000.0,
     "st_investments": 3410000000.0,
+    "cash_and_st": null,
     "total_debt": 1489000000.0,
     "goodwill": 1291000000.0,
     "total_assets": 18434000000.0,
@@ -1843,6 +1848,7 @@
     "rpo": 22300000000.0,
     "cash": 2304000000.0,
     "st_investments": 3458000000.0,
+    "cash_and_st": null,
     "total_debt": 1489000000.0,
     "goodwill": 1273000000.0,
     "total_assets": 20383000000.0,
@@ -2191,6 +2197,7 @@
     "rpo": 22100000000.0,
     "cash": 3369000000.0,
     "st_investments": 3228000000.0,
+    "cash_and_st": null,
     "total_debt": 1490000000.0,
     "goodwill": 1305000000.0,
     "total_assets": 20972000000.0,
@@ -2551,6 +2558,7 @@
     "rpo": 23900000000.0,
     "cash": 3124000000.0,
     "st_investments": 3008000000.0,
+    "cash_and_st": null,
     "total_debt": 1490000000.0,
     "goodwill": 1778000000.0,
     "total_assets": 22051000000.0,
@@ -2917,6 +2925,7 @@
     "rpo": 24300000000.0,
     "cash": 2725000000.0,
     "st_investments": 2686000000.0,
+    "cash_and_st": null,
     "total_debt": 1491000000.0,
     "goodwill": 1820000000.0,
     "total_assets": 21789000000.0,
@@ -3277,6 +3286,7 @@
     "rpo": 28200000000.0,
     "cash": 3726000000.0,
     "st_investments": 2558000000.0,
+    "cash_and_st": null,
     "total_debt": 1491000000.0,
     "goodwill": 3578000000.0,
     "total_assets": 26038000000.0,
@@ -3637,6 +3647,7 @@
     "rpo": 27700000000.0,
     "cash": 2702000000.0,
     "st_investments": 2480000000.0,
+    "cash_and_st": null,
     "total_debt": 1491000000.0,
     "goodwill": 4541000000.0,
     "total_assets": 24381000000.0,
@@ -3997,6 +4008,7 @@
     "rpo": 29000000000.0,
     "cash": 2503000000.0,
     "st_investments": 2161000000.0,
+    "cash_and_st": null,
     "total_debt": 5435000000.0,
     "goodwill": 9837000000.0,
     "total_assets": 31666000000.0,
@@ -4666,11 +4678,18 @@
    "st_investments": {
     "tablo": "Bilanço",
     "kullanilan": [
-     "AvailableForSaleSecuritiesDebtSecuritiesCurrent"
+     "AvailableForSaleSecuritiesDebtSecuritiesCurrent",
+     "AvailableForSaleSecuritiesCurrent"
     ],
     "etiketler": {
-     "AvailableForSaleSecuritiesDebtSecuritiesCurrent": "Debt Securities, Available-for-sale, Current"
+     "AvailableForSaleSecuritiesDebtSecuritiesCurrent": "Debt Securities, Available-for-sale, Current",
+     "AvailableForSaleSecuritiesCurrent": "Available-for-sale Securities, Current"
     }
+   },
+   "cash_and_st": {
+    "tablo": "Bilanço",
+    "kullanilan": [],
+    "etiketler": {}
    },
    "total_debt": {
     "tablo": "Bilanço",
