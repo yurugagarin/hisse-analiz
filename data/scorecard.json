@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-09-28T11:19:27+00:00",
+ "guncelleme": "2026-09-29T10:58:49+00:00",
  "ufuklar": [
   30,
   90,
@@ -125,7 +125,7 @@
    "tur": "kural_kademe_tez_bozuk",
    "ad": "Düşüş kademesi tetiklendi, tez kırmızı",
    "beklenen_yon": "olumsuz",
-   "adet": 4,
+   "adet": 6,
    "ufuklar": {
     "30": {
      "n": 0,
@@ -194,7 +194,7 @@
    "tur": "insider_kume_satis",
    "ad": "Kümelenmiş yönetici satışı",
    "beklenen_yon": "olumsuz",
-   "adet": 4,
+   "adet": 5,
    "ufuklar": {
     "30": {
      "n": 0,
@@ -238,6 +238,63 @@
   }
  ],
  "sinyaller": [
+  {
+   "id": "48d359458a3c",
+   "tarih": "2026-09-29",
+   "ticker": "CEG",
+   "tur": "kural_kademe_tez_bozuk",
+   "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
+   "yon": "olumsuz",
+   "aciklama": "Zirveden −%35,5, −%35 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+   "fiyat": 260.43,
+   "fiyat_tarihi": "2026-09-28",
+   "qqq": 736.53,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-09-29T10:58:45+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
+  {
+   "id": "4094372d0a35",
+   "tarih": "2026-09-29",
+   "ticker": "AAOI",
+   "tur": "kural_kademe_tez_bozuk",
+   "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
+   "yon": "olumsuz",
+   "aciklama": "Zirveden −%56,6, −%55 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 15 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+   "fiyat": 96.82,
+   "fiyat_tarihi": "2026-09-28",
+   "qqq": 736.53,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-09-29T10:58:36+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
+  {
+   "id": "b79bd878124c",
+   "tarih": "2026-09-29",
+   "ticker": "META",
+   "tur": "insider_kume_satis",
+   "tur_adi": "Kümelenmiş yönetici satışı",
+   "yon": "olumsuz",
+   "aciklama": "2026-09-21–2026-09-24: Cox Christopher K, Olivan Javier, Zuckerberg Mark",
+   "fiyat": 715.62,
+   "fiyat_tarihi": "2026-09-28",
+   "qqq": 736.53,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-09-29T10:58:29+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
   {
    "id": "826bb629aba7",
    "tarih": "2026-09-26",

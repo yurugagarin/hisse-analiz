@@ -1,29 +1,29 @@
 {
  "tur": "son7gun",
- "baslangic": "2026-09-22",
- "bitis": "2026-09-28",
- "guncelleme": "2026-09-28T11:19:27+00:00",
+ "baslangic": "2026-09-23",
+ "bitis": "2026-09-29",
+ "guncelleme": "2026-09-29T10:58:49+00:00",
  "hisseler": [
   {
    "ticker": "NVDA",
    "ad": "Nvidia",
    "donem": [
-    "2026-09-22",
-    "2026-09-28"
+    "2026-09-23",
+    "2026-09-29"
    ],
    "fiyat": {
-    "son": 225.07,
-    "tarih": "2026-09-25",
-    "haftalik": 1.26,
-    "aylik": 7.35,
-    "zirveden": -4.53,
+    "son": 228.86,
+    "tarih": "2026-09-28",
+    "haftalik": 0.65,
+    "aylik": 5.2,
+    "zirveden": -2.92,
     "zirve_52h": 235.74,
     "zirve_tarih": "2026-05-14",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": 3.19,
-    "SMH": 5.86
+    "QQQ": -0.67,
+    "SMH": 0.67
    },
    "tez": {
     "genel": "sari",
@@ -74,9 +74,9 @@
    },
    "kural": {
     "durum": "tetiklenmedi",
-    "mesaj": "Zirveden −%4,5. Sonraki kademe: −%15.",
+    "mesaj": "Zirveden −%2,9. Sonraki kademe: −%15.",
     "tetiklenen": null,
-    "zirveden_uzaklik": -4.53,
+    "zirveden_uzaklik": -2.92,
     "dusus_kaynagi": "piyasa_sektor",
     "dusus_kaynagi_aciklama": "Hissenin düşüşü karşılaştırma endeksleriyle benzer: ağırlıkla piyasa/sektör kaynaklı.",
     "kosul_saglaniyor": true
@@ -91,7 +91,7 @@
      },
      {
       "etiket": "dikkat",
-      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %34.35 yükseldi."
+      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %38.56 yükseldi."
      }
     ],
     "kumelenmis_satislar": [
@@ -180,7 +180,7 @@
     }
    ],
    "cumleler": [
-    "Hisse bu hafta +%1,3 (QQQ +%3,2, SMH +%5,9); 52 haftalık zirveden −%4,5 uzakta.",
+    "Hisse bu hafta +%0,7 (QQQ −%0,7, SMH +%0,7); 52 haftalık zirveden −%2,9 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok."
    ],
    "insider_ozet": {
@@ -197,29 +197,29 @@
     "ceyrek": 3,
     "yil": 2027,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-28T11:19:01+00:00"
+    "guncelleme": "2026-09-29T10:58:23+00:00"
    }
   },
   {
    "ticker": "META",
    "ad": "Meta Platforms",
    "donem": [
-    "2026-09-22",
-    "2026-09-28"
+    "2026-09-23",
+    "2026-09-29"
    ],
    "fiyat": {
-    "son": 751.66,
-    "tarih": "2026-09-25",
-    "haftalik": 12.9,
-    "aylik": 30.46,
-    "zirveden": -3.33,
+    "son": 715.62,
+    "tarih": "2026-09-28",
+    "haftalik": -3.46,
+    "aylik": 23.81,
+    "zirveden": -7.97,
     "zirve_52h": 777.59,
     "zirve_tarih": "2026-09-24",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": 3.19,
-    "XLC": 1.94
+    "QQQ": -0.67,
+    "XLC": -3.11
    },
    "tez": {
     "genel": "sari",
@@ -270,24 +270,171 @@
    },
    "kural": {
     "durum": "tetiklenmedi",
-    "mesaj": "Zirveden −%3,3. Sonraki kademe: −%15.",
+    "mesaj": "Zirveden −%8,0. Sonraki kademe: −%15.",
     "tetiklenen": null,
-    "zirveden_uzaklik": -3.33,
+    "zirveden_uzaklik": -7.97,
     "dusus_kaynagi": "piyasa_sektor",
     "dusus_kaynagi_aciklama": "Hissenin düşüşü karşılaştırma endeksleriyle benzer: ağırlıkla piyasa/sektör kaynaklı.",
     "kosul_saglaniyor": true
    },
    "insider": {
-    "hafta_islemleri": [],
-    "hafta_kodlari": {},
+    "hafta_islemleri": [
+     {
+      "tarih": "2026-09-24",
+      "kisi": "Zuckerberg Mark",
+      "unvan": "Yönetim kurulu üyesi, COB and CEO, %10+ hissedar",
+      "kod": "C",
+      "adet": 17140.0,
+      "fiyat": 0.0,
+      "tutar": null,
+      "plan_10b5_1": true,
+      "sonrasi": 17140.0,
+      "sahiplik": "I",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/xslF345X06/ownership.xml"
+     },
+     {
+      "tarih": "2026-09-24",
+      "kisi": "Zuckerberg Mark",
+      "unvan": "Yönetim kurulu üyesi, COB and CEO, %10+ hissedar",
+      "kod": "S",
+      "adet": 2093.0,
+      "fiyat": 775.3906,
+      "tutar": 1622892.5258,
+      "plan_10b5_1": true,
+      "sonrasi": 15047.0,
+      "sahiplik": "I",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/xslF345X06/ownership.xml"
+     },
+     {
+      "tarih": "2026-09-24",
+      "kisi": "Zuckerberg Mark",
+      "unvan": "Yönetim kurulu üyesi, COB and CEO, %10+ hissedar",
+      "kod": "S",
+      "adet": 2516.0,
+      "fiyat": 776.5564,
+      "tutar": 1953815.9024,
+      "plan_10b5_1": true,
+      "sonrasi": 12531.0,
+      "sahiplik": "I",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/xslF345X06/ownership.xml"
+     },
+     {
+      "tarih": "2026-09-24",
+      "kisi": "Zuckerberg Mark",
+      "unvan": "Yönetim kurulu üyesi, COB and CEO, %10+ hissedar",
+      "kod": "S",
+      "adet": 7607.0,
+      "fiyat": 777.6303,
+      "tutar": 5915433.692100001,
+      "plan_10b5_1": true,
+      "sonrasi": 4924.0,
+      "sahiplik": "I",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/xslF345X06/ownership.xml"
+     },
+     {
+      "tarih": "2026-09-24",
+      "kisi": "Zuckerberg Mark",
+      "unvan": "Yönetim kurulu üyesi, COB and CEO, %10+ hissedar",
+      "kod": "S",
+      "adet": 4324.0,
+      "fiyat": 778.3554,
+      "tutar": 3365608.7496,
+      "plan_10b5_1": true,
+      "sonrasi": 600.0,
+      "sahiplik": "I",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/xslF345X06/ownership.xml"
+     },
+     {
+      "tarih": "2026-09-24",
+      "kisi": "Zuckerberg Mark",
+      "unvan": "Yönetim kurulu üyesi, COB and CEO, %10+ hissedar",
+      "kod": "S",
+      "adet": 600.0,
+      "fiyat": 779.3263,
+      "tutar": 467595.77999999997,
+      "plan_10b5_1": true,
+      "sonrasi": 0.0,
+      "sahiplik": "I",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/xslF345X06/ownership.xml"
+     },
+     {
+      "tarih": "2026-09-24",
+      "kisi": "Zuckerberg Mark",
+      "unvan": "Yönetim kurulu üyesi, COB and CEO, %10+ hissedar",
+      "kod": "S",
+      "adet": 1133.0,
+      "fiyat": 775.3185,
+      "tutar": 878435.8605,
+      "plan_10b5_1": true,
+      "sonrasi": 1229904.0,
+      "sahiplik": "I",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/xslF345X06/ownership.xml"
+     },
+     {
+      "tarih": "2026-09-24",
+      "kisi": "Zuckerberg Mark",
+      "unvan": "Yönetim kurulu üyesi, COB and CEO, %10+ hissedar",
+      "kod": "S",
+      "adet": 1769.0,
+      "fiyat": 776.5624,
+      "tutar": 1373738.8856000002,
+      "plan_10b5_1": true,
+      "sonrasi": 1228135.0,
+      "sahiplik": "I",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/xslF345X06/ownership.xml"
+     },
+     {
+      "tarih": "2026-09-24",
+      "kisi": "Zuckerberg Mark",
+      "unvan": "Yönetim kurulu üyesi, COB and CEO, %10+ hissedar",
+      "kod": "S",
+      "adet": 4810.0,
+      "fiyat": 777.6616,
+      "tutar": 3740552.296,
+      "plan_10b5_1": true,
+      "sonrasi": 1223325.0,
+      "sahiplik": "I",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/xslF345X06/ownership.xml"
+     },
+     {
+      "tarih": "2026-09-24",
+      "kisi": "Zuckerberg Mark",
+      "unvan": "Yönetim kurulu üyesi, COB and CEO, %10+ hissedar",
+      "kod": "S",
+      "adet": 2146.0,
+      "fiyat": 778.3993,
+      "tutar": 1670444.8978000002,
+      "plan_10b5_1": true,
+      "sonrasi": 1221179.0,
+      "sahiplik": "I",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/xslF345X06/ownership.xml"
+     },
+     {
+      "tarih": "2026-09-24",
+      "kisi": "Zuckerberg Mark",
+      "unvan": "Yönetim kurulu üyesi, COB and CEO, %10+ hissedar",
+      "kod": "S",
+      "adet": 476.0,
+      "fiyat": 779.2765,
+      "tutar": 370935.614,
+      "plan_10b5_1": true,
+      "sonrasi": 1220703.0,
+      "sahiplik": "I",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/xslF345X06/ownership.xml"
+     }
+    ],
+    "hafta_kodlari": {
+     "C": 1,
+     "S": 10
+    },
     "uyarilar": [
      {
       "etiket": "dikkat",
-      "metin": "Kümelenmiş satış: 2026-09-03–2026-09-15 arasında 3 yönetici satış yaptı (10b5-1 planlı işlem oranı %100)."
+      "metin": "Kümelenmiş satış: 2026-09-21–2026-09-24 arasında 3 yönetici satış yaptı (10b5-1 planlı işlem oranı %100)."
      },
      {
       "etiket": "dikkat",
-      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %42.98 yükseldi."
+      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %33.42 yükseldi."
      }
     ],
     "kumelenmis_satislar": [
@@ -354,14 +501,32 @@
       "islem": 30,
       "tutar": 32849738.308199998,
       "planli_islem_orani": 100.0
+     },
+     {
+      "baslangic": "2026-09-21",
+      "bitis": "2026-09-24",
+      "kisiler": [
+       "Cox Christopher K",
+       "Olivan Javier",
+       "Zuckerberg Mark"
+      ],
+      "islem": 17,
+      "tutar": 50941139.4538,
+      "planli_islem_orani": 100.0
      }
     ],
     "ozet_90g": {
+     "diger": {
+      "islem": 6,
+      "adet": 1796498.0,
+      "tutar": 0.0,
+      "plan_10b5_1_adet": 17140.0
+     },
      "S": {
-      "islem": 94,
-      "adet": 126386.0,
-      "tutar": 82728509.9397,
-      "plan_10b5_1_adet": 123833.0
+      "islem": 104,
+      "adet": 153860.0,
+      "tutar": 104087964.1435,
+      "plan_10b5_1_adet": 151307.0
      },
      "M": {
       "islem": 28,
@@ -374,17 +539,20 @@
       "adet": 38035.0,
       "tutar": 22434944.75,
       "plan_10b5_1_adet": 0.0
-     },
-     "diger": {
-      "islem": 5,
-      "adet": 1779358.0,
-      "tutar": 0.0,
-      "plan_10b5_1_adet": 0.0
      }
     }
    },
    "buyuk_hareketler": [],
    "sec_bildirimleri": [
+    {
+     "form": "144",
+     "tarih": "2026-09-28",
+     "donem": "",
+     "items": "",
+     "aciklama": "",
+     "accn": "0001921094-26-001053",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000192109426001053/xsl144X01/primary_doc.xml"
+    },
     {
      "form": "144",
      "tarih": "2026-09-24",
@@ -423,49 +591,66 @@
      "qqq": 744.5,
      "baslangic_kaydi": true,
      "kayit_zamani": "2026-09-26T00:49:44+00:00"
+    },
+    {
+     "id": "b79bd878124c",
+     "tarih": "2026-09-29",
+     "ticker": "META",
+     "tur": "insider_kume_satis",
+     "tur_adi": "Kümelenmiş yönetici satışı",
+     "yon": "olumsuz",
+     "aciklama": "2026-09-21–2026-09-24: Cox Christopher K, Olivan Javier, Zuckerberg Mark",
+     "fiyat": 715.62,
+     "fiyat_tarihi": "2026-09-28",
+     "qqq": 736.53,
+     "baslangic_kaydi": false,
+     "kayit_zamani": "2026-09-29T10:58:29+00:00"
     }
    ],
    "cumleler": [
-    "Hisse bu hafta +%12,9 (QQQ +%3,2, XLC +%1,9); 52 haftalık zirveden −%3,3 uzakta.",
+    "Hisse bu hafta −%3,5 (QQQ −%0,7, XLC −%3,1); 52 haftalık zirveden −%8,0 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok."
    ],
    "insider_ozet": {
-    "islem": 0,
-    "satis_tutar": 0,
+    "islem": 11,
+    "satis_tutar": 21359454.2038,
     "alim_tutar": 0,
-    "kodlar": {}
+    "kodlar": {
+     "C": 1,
+     "S": 10
+    }
    },
    "sonraki_bilanco": {
-    "tarih": "2026-10-27",
+    "tarih": "2026-10-28",
     "saat": "amc",
     "eps_tahmin": 6.5922,
     "gelir_tahmin": 64528980375,
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-28T11:19:04+00:00"
+    "guncelleme": "2026-09-29T10:58:26+00:00"
    }
   },
   {
    "ticker": "NOW",
    "ad": "ServiceNow",
    "donem": [
-    "2026-09-22",
-    "2026-09-28"
+    "2026-09-23",
+    "2026-09-29"
    ],
    "fiyat": {
-    "son": 135.62,
-    "tarih": "2026-09-25",
-    "haftalik": 0.11,
-    "aylik": 7.81,
-    "zirveden": -28.34,
+    "son": 131.45,
+    "tarih": "2026-09-28",
+    "haftalik": -4.52,
+    "aylik": -9.16,
+    "zirveden": -30.54,
     "zirve_52h": 189.258,
     "zirve_tarih": "2025-10-27",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": 3.19,
-    "IGV": 1.59
+    "QQQ": -0.67,
+    "IGV": -1.59
    },
    "tez": {
     "genel": "sari",
@@ -516,12 +701,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_ok",
-    "mesaj": "Zirveden −%28,3: −%25 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et.",
+    "mesaj": "Zirveden −%30,5: −%25 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et.",
     "tetiklenen": {
      "dusus": 25,
      "not": "DCA 2x; RPO ve SBC sütunlarını kontrol et."
     },
-    "zirveden_uzaklik": -28.34,
+    "zirveden_uzaklik": -30.54,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": true
@@ -535,8 +720,8 @@
       "metin": "Kümelenmiş satış: 2026-08-27–2026-08-31 arasında 3 yönetici satış yaptı (10b5-1 planlı işlem oranı %33)."
      },
      {
-      "etiket": "dikkat",
-      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %36.42 yükseldi."
+      "etiket": "bilgi",
+      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok."
      }
     ],
     "kumelenmis_satislar": [
@@ -647,9 +832,9 @@
     }
    ],
    "cumleler": [
-    "Hisse bu hafta +%0,1 (QQQ +%3,2, IGV +%1,6); 52 haftalık zirveden −%28,3 uzakta.",
+    "Hisse bu hafta −%4,5 (QQQ −%0,7, IGV −%1,6); 52 haftalık zirveden −%30,5 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%28,3: −%25 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et."
+    "Zirveden −%30,5: −%25 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et."
    ],
    "insider_ozet": {
     "islem": 0,
@@ -658,36 +843,36 @@
     "kodlar": {}
    },
    "sonraki_bilanco": {
-    "tarih": "2026-10-27",
+    "tarih": "2026-10-28",
     "saat": "amc",
     "eps_tahmin": 1.0354,
     "gelir_tahmin": 4135261876,
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-28T11:19:08+00:00"
+    "guncelleme": "2026-09-29T10:58:30+00:00"
    }
   },
   {
    "ticker": "AAOI",
    "ad": "Applied Optoelectronics",
    "donem": [
-    "2026-09-22",
-    "2026-09-28"
+    "2026-09-23",
+    "2026-09-29"
    ],
    "fiyat": {
-    "son": 101.4,
-    "tarih": "2026-09-25",
-    "haftalik": -3.58,
-    "aylik": -10.86,
-    "zirveden": -54.55,
+    "son": 96.82,
+    "tarih": "2026-09-28",
+    "haftalik": -10.9,
+    "aylik": -8.86,
+    "zirveden": -56.6,
     "zirve_52h": 223.1,
     "zirve_tarih": "2026-05-13",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": 3.19,
-    "SMH": 5.86
+    "QQQ": -0.67,
+    "SMH": 0.67
    },
    "tez": {
     "genel": "kirmizi",
@@ -749,12 +934,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%54,5: −%40 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: DCA 2x; nakit pisti ve sulandırmayı kontrol et.",
+    "mesaj": "Zirveden −%56,6: −%55 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Pozisyon büyüklüğünü sınırla; tez gerçekten sağlam mı yeniden yaz.",
     "tetiklenen": {
-     "dusus": 40,
-     "not": "DCA 2x; nakit pisti ve sulandırmayı kontrol et."
+     "dusus": 55,
+     "not": "Pozisyon büyüklüğünü sınırla; tez gerçekten sağlam mı yeniden yaz."
     },
-    "zirveden_uzaklik": -54.55,
+    "zirveden_uzaklik": -56.6,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 15 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -1148,12 +1333,26 @@
      "qqq": 744.5,
      "baslangic_kaydi": true,
      "kayit_zamani": "2026-09-26T00:49:50+00:00"
+    },
+    {
+     "id": "4094372d0a35",
+     "tarih": "2026-09-29",
+     "ticker": "AAOI",
+     "tur": "kural_kademe_tez_bozuk",
+     "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
+     "yon": "olumsuz",
+     "aciklama": "Zirveden −%56,6, −%55 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 15 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+     "fiyat": 96.82,
+     "fiyat_tarihi": "2026-09-28",
+     "qqq": 736.53,
+     "baslangic_kaydi": false,
+     "kayit_zamani": "2026-09-29T10:58:36+00:00"
     }
    ],
    "cumleler": [
-    "Hisse bu hafta −%3,6 (QQQ +%3,2, SMH +%5,9); 52 haftalık zirveden −%54,5 uzakta.",
+    "Hisse bu hafta −%10,9 (QQQ −%0,7, SMH +%0,7); 52 haftalık zirveden −%56,6 uzakta.",
     "Tezde değişiklik: Tez genel durumu KIRMIZI'ya döndü (Kırmızı sütunlar: Faaliyetten kârlılığa geçiş, Sulandırma); Bir tez sütunu KIRMIZI'ya döndü (Faaliyetten kârlılığa geçiş: %11,3); Bir tez sütunu KIRMIZI'ya döndü (Sulandırma: %43,7); Önceden yazılmış çıkış kriteri tetiklendi (Nakit pisti 12 ayın altına inerse); Önceden yazılmış çıkış kriteri tetiklendi (Seyreltilmiş hisse sayısı yıllık %40'tan fazla artarsa).",
-    "Zirveden −%54,5: −%40 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: DCA 2x; nakit pisti ve sulandırmayı kontrol et.",
+    "Zirveden −%56,6: −%55 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Pozisyon büyüklüğünü sınırla; tez gerçekten sağlam mı yeniden yaz.",
     "2026-09-23 günü −%5,5 büyük hareket (Hisse −%5,6, sektör/piyasa −%1,0: hareketin çoğu şirkete özel görünüyor.)"
    ],
    "insider_ozet": {
@@ -1170,29 +1369,29 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-28T11:19:11+00:00"
+    "guncelleme": "2026-09-29T10:58:33+00:00"
    }
   },
   {
    "ticker": "IONQ",
    "ad": "IonQ",
    "donem": [
-    "2026-09-22",
-    "2026-09-28"
+    "2026-09-23",
+    "2026-09-29"
    ],
    "fiyat": {
-    "son": 45.48,
-    "tarih": "2026-09-25",
-    "haftalik": 16.23,
-    "aylik": 13.61,
-    "zirveden": -44.6,
+    "son": 44.58,
+    "tarih": "2026-09-28",
+    "haftalik": 10.05,
+    "aylik": 13.72,
+    "zirveden": -45.69,
     "zirve_52h": 82.09,
     "zirve_tarih": "2025-10-13",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": 3.19,
-    "SMH": 5.86
+    "QQQ": -0.67,
+    "SMH": 0.67
    },
    "tez": {
     "genel": "kirmizi",
@@ -1253,12 +1452,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%44,6: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "mesaj": "Zirveden −%45,7: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "tetiklenen": {
      "dusus": 35,
      "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -44.6,
+    "zirveden_uzaklik": -45.69,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -1273,7 +1472,7 @@
      },
      {
       "etiket": "dikkat",
-      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %65.32 yükseldi."
+      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %67.66 yükseldi."
      }
     ],
     "kumelenmis_satislar": [
@@ -1645,6 +1844,15 @@
        "saglayici": "Finnhub"
       },
       {
+       "zaman": "2026-09-23T19:32:49+00:00",
+       "tarih": "2026-09-23",
+       "baslik": "IonQ Targets Quantum Error-Correction Bottleneck With Single-CPU Decoder",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMDB2Q3JmZThJU2JUa2lpTDlvYk5BYi1xa1g2a29TS3ZGcmdUeWlzeGdJbXdnd3A4U3YzbG9fNWUzSWZ6cjhWM2pfODQzYWFpRGJsSE43Nng4Q25wVHpONHhuaTk5Z1JlUm1RRWUwVXdPc1ByVElvVHNxbzhjTVlLUzZxWi1IYldYZE82Vkx0ZVlSb1VDdDkwNlNPV0lIR0lzV3h4QlItRGNLUWNockpPQjFTb1h4Z9IBuwFBVV95cUxPZFRWMDdhRXVBbG9MZTRUMExLWV9XMlUzYjlrbDY3VlJkanllVkpwM2lJMjlxbGY3VUFVcDRxcDJZT3ZGN3Y1YmY3OFMxc1owdVpmYkxzMGIzYVdMdzZaTGQ2ZXcwaEFDeGRuVFBtSGNEZkZDVld4LWdTeDZFTFFuWlVYbWRXY3VaZVBYXzZsczF1NW5NOUNFOGFiaFhBRWZGSW8zcUF0RTh2QW9SREs0N084Q0Q0SHRmb0p3?oc=5",
+       "kaynak": "SecurityWeek",
+       "saglayici": "Google News RSS"
+      },
+      {
        "zaman": "2026-09-23T19:02:00+00:00",
        "tarih": "2026-09-23",
        "baslik": "Market Navigator: Portfolio Wealth Advisors Lee Munson talks IONQ and the quantum space",
@@ -1686,15 +1894,6 @@
        "baslik": "IonQ Just Proved the Biggest Threat to Quantum Computing Scaling Was an Illusion",
        "ozet": "IonQ just proved that fixing quantum errors does not require massive supercomputers. By running real-time correction for 408 logical qubits on a single CPU, it cleared a massive scaling roadblock.",
        "url": "https://finnhub.io/api/news?id=fafd1aaf5d4ab698c0744ec0c1a1f40aa82fcc7584e795427875c8ea3be8df4b",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-23T17:17:02+00:00",
-       "tarih": "2026-09-23",
-       "baslik": "Why IonQ (IONQ) Stock Is Trading Up Today",
-       "ozet": "Shares of quantum computing company IonQ (NYSE:IONQ) jumped 4.8% in the morning session after the company announced an end-to-end real-time quantum error correction decoder that runs on a single standard central processing unit.",
-       "url": "https://finnhub.io/api/news?id=68cee1e2131646c14dbf21ca864350549913458f544f7dc3ee33d443eddd0f31",
        "kaynak": "Yahoo",
        "saglayici": "Finnhub"
       }
@@ -1790,9 +1989,9 @@
     }
    ],
    "cumleler": [
-    "Hisse bu hafta +%16,2 (QQQ +%3,2, SMH +%5,9); 52 haftalık zirveden −%44,6 uzakta.",
+    "Hisse bu hafta +%10,1 (QQQ −%0,7, SMH +%0,7); 52 haftalık zirveden −%45,7 uzakta.",
     "Tezde değişiklik: Tez genel durumu KIRMIZI'ya döndü (Kırmızı sütunlar: Hisse sayısı); Bir tez sütunu KIRMIZI'ya döndü (Hisse sayısı: %46,5); Önceden yazılmış çıkış kriteri tetiklendi (Hisse sayısı yıllık %10'dan fazla artarsa).",
-    "Zirveden −%44,6: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "Zirveden −%45,7: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "2026-09-24 günü +%5,7 büyük hareket (Hisse +%5,7, sektör/piyasa −%0,1: hareketin çoğu şirkete özel görünüyor.)"
    ],
    "insider_ozet": {
@@ -1809,29 +2008,29 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-28T11:19:14+00:00"
+    "guncelleme": "2026-09-29T10:58:36+00:00"
    }
   },
   {
    "ticker": "ORCL",
    "ad": "Oracle",
    "donem": [
-    "2026-09-22",
-    "2026-09-28"
+    "2026-09-23",
+    "2026-09-29"
    ],
    "fiyat": {
-    "son": 137.1,
-    "tarih": "2026-09-25",
-    "haftalik": -7.12,
-    "aylik": -7.91,
-    "zirveden": -56.2,
+    "son": 132.6,
+    "tarih": "2026-09-28",
+    "haftalik": -10.74,
+    "aylik": -12.1,
+    "zirveden": -57.64,
     "zirve_52h": 313.0,
     "zirve_tarih": "2025-10-16",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": 3.19,
-    "IGV": 1.59
+    "QQQ": -0.67,
+    "IGV": -1.59
    },
    "tez": {
     "genel": "sari",
@@ -1890,48 +2089,19 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_ok",
-    "mesaj": "Zirveden −%56,2: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "mesaj": "Zirveden −%57,6: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "tetiklenen": {
      "dusus": 35,
      "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -56.2,
+    "zirveden_uzaklik": -57.64,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": true
    },
    "insider": {
-    "hafta_islemleri": [
-     {
-      "tarih": "2026-09-22",
-      "kisi": "Smith Maria",
-      "unvan": "EVP, Chief  Accounting Officer",
-      "kod": "S",
-      "adet": 2631.0,
-      "fiyat": 151.7,
-      "tutar": 399122.69999999995,
-      "plan_10b5_1": false,
-      "sonrasi": 64357.0,
-      "sahiplik": "D",
-      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000134143926000096/xslF345X06/form4.xml"
-     },
-     {
-      "tarih": "2026-09-22",
-      "kisi": "Sicilia Michael D.",
-      "unvan": "Chief Executive Officer",
-      "kod": "S",
-      "adet": 22562.0,
-      "fiyat": 151.59,
-      "tutar": 3420173.58,
-      "plan_10b5_1": true,
-      "sonrasi": 182929.279,
-      "sahiplik": "D",
-      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000134143926000094/xslF345X06/form4.xml"
-     }
-    ],
-    "hafta_kodlari": {
-     "S": 2
-    },
+    "hafta_islemleri": [],
+    "hafta_kodlari": {},
     "uyarilar": [
      {
       "etiket": "bilgi",
@@ -1979,24 +2149,6 @@
      "aciklama": "DEF 14A",
      "accn": "0001193125-26-402816",
      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526402816/orcl-20260925.htm"
-    },
-    {
-     "form": "144",
-     "tarih": "2026-09-22",
-     "donem": "",
-     "items": "",
-     "aciklama": "",
-     "accn": "0001959173-26-007070",
-     "url": "https://www.sec.gov/Archives/edgar/data/1341439/000195917326007070/xsl144X01/primary_doc.xml"
-    },
-    {
-     "form": "144",
-     "tarih": "2026-09-22",
-     "donem": "",
-     "items": "",
-     "aciklama": "",
-     "accn": "0001959173-26-007068",
-     "url": "https://www.sec.gov/Archives/edgar/data/1341439/000195917326007068/xsl144X01/primary_doc.xml"
     }
    ],
    "bilanco": {
@@ -2030,17 +2182,15 @@
     }
    ],
    "cumleler": [
-    "Hisse bu hafta −%7,1 (QQQ +%3,2, IGV +%1,6); 52 haftalık zirveden −%56,2 uzakta.",
+    "Hisse bu hafta −%10,7 (QQQ −%0,7, IGV −%1,6); 52 haftalık zirveden −%57,6 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%56,2: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
+    "Zirveden −%57,6: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
    ],
    "insider_ozet": {
-    "islem": 2,
-    "satis_tutar": 3819296.2800000003,
+    "islem": 0,
+    "satis_tutar": 0,
     "alim_tutar": 0,
-    "kodlar": {
-     "S": 2
-    }
+    "kodlar": {}
    },
    "sonraki_bilanco": {
     "tarih": "2026-12-08",
@@ -2050,29 +2200,29 @@
     "ceyrek": 2,
     "yil": 2027,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-28T11:19:18+00:00"
+    "guncelleme": "2026-09-29T10:58:40+00:00"
    }
   },
   {
    "ticker": "CEG",
    "ad": "Constellation Energy",
    "donem": [
-    "2026-09-22",
-    "2026-09-28"
+    "2026-09-23",
+    "2026-09-29"
    ],
    "fiyat": {
-    "son": 263.27,
-    "tarih": "2026-09-25",
-    "haftalik": 3.36,
-    "aylik": -5.81,
-    "zirveden": -34.83,
+    "son": 260.43,
+    "tarih": "2026-09-28",
+    "haftalik": -0.64,
+    "aylik": -5.9,
+    "zirveden": -35.53,
     "zirve_52h": 403.95,
     "zirve_tarih": "2025-10-15",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "SPY": 1.27,
-    "XLU": -3.87
+    "SPY": -1.02,
+    "XLU": -3.47
    },
    "tez": {
     "genel": "kirmizi",
@@ -2125,12 +2275,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%34,8: −%25 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku.",
+    "mesaj": "Zirveden −%35,5: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "tetiklenen": {
-     "dusus": 25,
-     "not": "Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku."
+     "dusus": 35,
+     "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -34.83,
+    "zirveden_uzaklik": -35.53,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -2246,12 +2396,26 @@
      "qqq": 744.5,
      "baslangic_kaydi": true,
      "kayit_zamani": "2026-09-26T11:31:07+00:00"
+    },
+    {
+     "id": "48d359458a3c",
+     "tarih": "2026-09-29",
+     "ticker": "CEG",
+     "tur": "kural_kademe_tez_bozuk",
+     "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
+     "yon": "olumsuz",
+     "aciklama": "Zirveden −%35,5, −%35 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+     "fiyat": 260.43,
+     "fiyat_tarihi": "2026-09-28",
+     "qqq": 736.53,
+     "baslangic_kaydi": false,
+     "kayit_zamani": "2026-09-29T10:58:45+00:00"
     }
    ],
    "cumleler": [
-    "Hisse bu hafta +%3,4 (SPY +%1,3, XLU −%3,9); 52 haftalık zirveden −%34,8 uzakta.",
+    "Hisse bu hafta −%0,6 (SPY −%1,0, XLU −%3,5); 52 haftalık zirveden −%35,5 uzakta.",
     "Tezde değişiklik: Tez genel durumu KIRMIZI'ya döndü (Kırmızı sütunlar: Hisse sayısı); Bir tez sütunu KIRMIZI'ya döndü (Hisse sayısı: %14,7); Önceden yazılmış çıkış kriteri tetiklendi (Hisse sayısı yıllık %10'dan fazla artarsa).",
-    "Zirveden −%34,8: −%25 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku."
+    "Zirveden −%35,5: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
    ],
    "insider_ozet": {
     "islem": 0,
@@ -2267,29 +2431,29 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-28T11:19:21+00:00"
+    "guncelleme": "2026-09-29T10:58:43+00:00"
    }
   },
   {
    "ticker": "RGTI",
    "ad": "Rigetti Computing",
    "donem": [
-    "2026-09-22",
-    "2026-09-28"
+    "2026-09-23",
+    "2026-09-29"
    ],
    "fiyat": {
-    "son": 16.66,
-    "tarih": "2026-09-25",
-    "haftalik": 5.71,
-    "aylik": 4.52,
-    "zirveden": -70.43,
+    "son": 15.95,
+    "tarih": "2026-09-28",
+    "haftalik": -3.51,
+    "aylik": 2.31,
+    "zirveden": -71.69,
     "zirve_52h": 56.34,
     "zirve_tarih": "2025-10-15",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": 3.19,
-    "IGV": 1.59
+    "QQQ": -0.67,
+    "IGV": -1.59
    },
    "tez": {
     "genel": "kirmizi",
@@ -2350,12 +2514,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%70,4: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "mesaj": "Zirveden −%71,7: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "tetiklenen": {
      "dusus": 35,
      "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -70.43,
+    "zirveden_uzaklik": -71.69,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -2537,9 +2701,9 @@
     }
    ],
    "cumleler": [
-    "Hisse bu hafta +%5,7 (QQQ +%3,2, IGV +%1,6); 52 haftalık zirveden −%70,4 uzakta.",
+    "Hisse bu hafta −%3,5 (QQQ −%0,7, IGV −%1,6); 52 haftalık zirveden −%71,7 uzakta.",
     "Tezde değişiklik: Tez genel durumu KIRMIZI'ya döndü (Kırmızı sütunlar: Nakit pisti, Hisse sayısı); Bir tez sütunu KIRMIZI'ya döndü (Nakit pisti: 3,80 ay); Bir tez sütunu KIRMIZI'ya döndü (Hisse sayısı: %11,7); Önceden yazılmış çıkış kriteri tetiklendi (Hisse sayısı yıllık %10'dan fazla artarsa).",
-    "Zirveden −%70,4: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
+    "Zirveden −%71,7: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
    ],
    "insider_ozet": {
     "islem": 0,
@@ -2555,7 +2719,7 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-28T11:19:24+00:00"
+    "guncelleme": "2026-09-29T10:58:46+00:00"
    }
   }
  ],
@@ -2979,6 +3143,48 @@
    "qqq": 744.5,
    "baslangic_kaydi": true,
    "kayit_zamani": "2026-09-26T11:45:53+00:00"
+  },
+  {
+   "id": "b79bd878124c",
+   "tarih": "2026-09-29",
+   "ticker": "META",
+   "tur": "insider_kume_satis",
+   "tur_adi": "Kümelenmiş yönetici satışı",
+   "yon": "olumsuz",
+   "aciklama": "2026-09-21–2026-09-24: Cox Christopher K, Olivan Javier, Zuckerberg Mark",
+   "fiyat": 715.62,
+   "fiyat_tarihi": "2026-09-28",
+   "qqq": 736.53,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-09-29T10:58:29+00:00"
+  },
+  {
+   "id": "4094372d0a35",
+   "tarih": "2026-09-29",
+   "ticker": "AAOI",
+   "tur": "kural_kademe_tez_bozuk",
+   "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
+   "yon": "olumsuz",
+   "aciklama": "Zirveden −%56,6, −%55 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 15 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+   "fiyat": 96.82,
+   "fiyat_tarihi": "2026-09-28",
+   "qqq": 736.53,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-09-29T10:58:36+00:00"
+  },
+  {
+   "id": "48d359458a3c",
+   "tarih": "2026-09-29",
+   "ticker": "CEG",
+   "tur": "kural_kademe_tez_bozuk",
+   "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
+   "yon": "olumsuz",
+   "aciklama": "Zirveden −%35,5, −%35 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+   "fiyat": 260.43,
+   "fiyat_tarihi": "2026-09-28",
+   "qqq": 736.53,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-09-29T10:58:45+00:00"
   }
  ],
  "not": "Günlük Python derlemesi (Claude yok). Derin analiz Salı raporundadır."
