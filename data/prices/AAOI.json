@@ -1,7 +1,7 @@
 {
  "sembol": "AAOI",
- "kaynak": "Nasdaq.com (historical API)",
- "guncelleme": "2026-09-29T10:57:50+00:00",
+ "kaynak": "Nasdaq.com (historical API) + Finnhub quote",
+ "guncelleme": "2026-09-30T00:05:25+00:00",
  "taze": true,
  "kapanislar": [
   [
@@ -2043,6 +2043,10 @@
   [
    "2026-09-28",
    96.82
+  ],
+  [
+   "2026-09-29",
+   100.67
   ]
  ],
  "finnhub_52h_zirve": 233.67,

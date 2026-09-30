@@ -1,6 +1,6 @@
 {
  "ticker": "NVDA",
- "guncelleme": "2026-09-29",
+ "guncelleme": "2026-09-30",
  "pencereler": {
   "90": {
    "kodlar": {
@@ -11,10 +11,10 @@
      "plan_10b5_1_adet": 95378.0
     },
     "diger": {
-     "islem": 4,
-     "adet": 1938000.0,
+     "islem": 3,
+     "adet": 1438000.0,
      "tutar": 0.0,
-     "plan_10b5_1_adet": 1500000.0
+     "plan_10b5_1_adet": 1000000.0
     },
     "F": {
      "islem": 5,
@@ -434,7 +434,7 @@
   },
   {
    "etiket": "dikkat",
-   "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %38.56 yükseldi."
+   "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %30.28 yükseldi."
   }
  ],
  "kaynak": "SEC EDGAR Form 4 (XML)",
@@ -1678,8 +1678,8 @@
     "kod": "G",
     "edgar_islem": 0,
     "edgar_adet": 0,
-    "finnhub_islem": 4,
-    "finnhub_adet": 1938000.0,
+    "finnhub_islem": 3,
+    "finnhub_adet": 1438000.0,
     "uyumlu": false
    },
    {
@@ -1692,8 +1692,8 @@
    },
    {
     "kod": "diger",
-    "edgar_islem": 4,
-    "edgar_adet": 1938000.0,
+    "edgar_islem": 3,
+    "edgar_adet": 1438000.0,
     "finnhub_islem": 0,
     "finnhub_adet": 0,
     "uyumlu": false

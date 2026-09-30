@@ -1,6 +1,6 @@
 {
  "ticker": "META",
- "guncelleme": "2026-09-29",
+ "guncelleme": "2026-09-30",
  "pencereler": {
   "90": {
    "kodlar": {
@@ -11,10 +11,10 @@
      "plan_10b5_1_adet": 17140.0
     },
     "S": {
-     "islem": 104,
-     "adet": 153860.0,
-     "tutar": 104087964.1435,
-     "plan_10b5_1_adet": 151307.0
+     "islem": 103,
+     "adet": 153360.0,
+     "tutar": 103784089.1435,
+     "plan_10b5_1_adet": 150807.0
     },
     "M": {
      "islem": 28,
@@ -131,15 +131,15 @@
     {
      "kisi": "KIMMITT ROBERT M",
      "unvan": "Yönetim kurulu üyesi",
-     "satis_adet": 1000.0,
-     "satis_tutar": 584655.0,
+     "satis_adet": 500.0,
+     "satis_tutar": 280780.0,
      "alim_adet": 0.0,
      "vergi_adet": 0.0,
-     "planli_satis_adet": 1000.0,
-     "ilk_satis_oncesi": 3943.0,
+     "planli_satis_adet": 500.0,
+     "ilk_satis_oncesi": 3443.0,
      "son_pozisyon": 2943.0,
      "son_tarih": "2026-08-03",
-     "satilan_pozisyon_orani": 25.4,
+     "satilan_pozisyon_orani": 14.5,
      "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
     },
     {
@@ -587,8 +587,8 @@
    "metin": "Kümelenmiş satış: 2026-09-21–2026-09-24 arasında 3 yönetici satış yaptı (10b5-1 planlı işlem oranı %100)."
   },
   {
-   "etiket": "dikkat",
-   "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %33.42 yükseldi."
+   "etiket": "bilgi",
+   "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok."
   }
  ],
  "kaynak": "SEC EDGAR Form 4 (XML)",
@@ -6373,7 +6373,7 @@
   }
  ],
  "anlati": [
-  "Son 90 günde yöneticiler ve yönetim kurulu üyeleri 104 satış işlemiyle toplam 104,1 milyon $ değerinde hisse sattı. Önceden kayda geçirilmiş 10b5-1 planı kapsamındaki satışların payı (adet bazında): %98.",
+  "Son 90 günde yöneticiler ve yönetim kurulu üyeleri 103 satış işlemiyle toplam 103,8 milyon $ değerinde hisse sattı. Önceden kayda geçirilmiş 10b5-1 planı kapsamındaki satışların payı (adet bazında): %98.",
   "Planlı satışlar önceden (çoğu zaman aylar önce) belirlenen takvimle yapılır; tek başına yönetimin şirkete güvenini kaybettiği anlamına gelmez.",
   "Bu dönemde yönetimden hiç açık piyasa alımı (P) yok.",
   "9 vergi kesintisi (F) işlemi var: hak edilen hisselerin vergisi için şirkete bırakılan hisseler. Rutindir, sinyal sayılmaz.",
@@ -6390,8 +6390,8 @@
     "kod": "C",
     "edgar_islem": 0,
     "edgar_adet": 0,
-    "finnhub_islem": 6,
-    "finnhub_adet": 1191956.0,
+    "finnhub_islem": 8,
+    "finnhub_adet": 1226236.0,
     "uyumlu": false
    },
    {
@@ -6420,11 +6420,11 @@
    },
    {
     "kod": "S",
-    "edgar_islem": 104,
-    "edgar_adet": 153860.0,
-    "finnhub_islem": 94,
-    "finnhub_adet": 126386.0,
-    "uyumlu": false
+    "edgar_islem": 103,
+    "edgar_adet": 153360.0,
+    "finnhub_islem": 103,
+    "finnhub_adet": 153360.0,
+    "uyumlu": true
    },
    {
     "kod": "diger",
