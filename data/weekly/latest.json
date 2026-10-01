@@ -1,29 +1,29 @@
 {
  "tur": "son7gun",
- "baslangic": "2026-09-24",
- "bitis": "2026-09-30",
- "guncelleme": "2026-09-30T10:48:52+00:00",
+ "baslangic": "2026-09-25",
+ "bitis": "2026-10-01",
+ "guncelleme": "2026-10-01T11:15:15+00:00",
  "hisseler": [
   {
    "ticker": "NVDA",
    "ad": "Nvidia",
    "donem": [
-    "2026-09-24",
-    "2026-09-30"
+    "2026-09-25",
+    "2026-10-01"
    ],
    "fiyat": {
-    "son": 227.21,
-    "tarih": "2026-09-29",
-    "haftalik": -0.73,
-    "aylik": 4.44,
-    "zirveden": -3.62,
+    "son": 228.38,
+    "tarih": "2026-09-30",
+    "haftalik": 1.27,
+    "aylik": 3.44,
+    "zirveden": -3.12,
     "zirve_52h": 235.74,
     "zirve_tarih": "2026-05-14",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": -1.27,
-    "SMH": -0.09
+    "QQQ": -0.19,
+    "SMH": 1.26
    },
    "tez": {
     "genel": "sari",
@@ -74,9 +74,9 @@
    },
    "kural": {
     "durum": "tetiklenmedi",
-    "mesaj": "Zirveden −%3,6. Sonraki kademe: −%15.",
+    "mesaj": "Zirveden −%3,1. Sonraki kademe: −%15.",
     "tetiklenen": null,
-    "zirveden_uzaklik": -3.62,
+    "zirveden_uzaklik": -3.12,
     "dusus_kaynagi": "piyasa_sektor",
     "dusus_kaynagi_aciklama": "Hissenin düşüşü karşılaştırma endeksleriyle benzer: ağırlıkla piyasa/sektör kaynaklı.",
     "kosul_saglaniyor": true
@@ -90,8 +90,8 @@
       "metin": "Kümelenmiş satış: 2026-09-17–2026-09-21 arasında 3 yönetici satış yaptı (10b5-1 planlı işlem oranı %75)."
      },
      {
-      "etiket": "dikkat",
-      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %30.28 yükseldi."
+      "etiket": "bilgi",
+      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok."
      }
     ],
     "kumelenmis_satislar": [
@@ -180,7 +180,7 @@
     }
    ],
    "cumleler": [
-    "Hisse bu hafta −%0,7 (QQQ −%1,3, SMH −%0,1); 52 haftalık zirveden −%3,6 uzakta.",
+    "Hisse bu hafta +%1,3 (QQQ −%0,2, SMH +%1,3); 52 haftalık zirveden −%3,1 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok."
    ],
    "insider_ozet": {
@@ -192,34 +192,34 @@
    "sonraki_bilanco": {
     "tarih": "2026-11-17",
     "saat": "amc",
-    "eps_tahmin": 2.5231,
-    "gelir_tahmin": 111283858317,
+    "eps_tahmin": 2.5253,
+    "gelir_tahmin": 111317945942,
     "ceyrek": 3,
     "yil": 2027,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-30T10:48:26+00:00"
+    "guncelleme": "2026-10-01T11:14:49+00:00"
    }
   },
   {
    "ticker": "META",
    "ad": "Meta Platforms",
    "donem": [
-    "2026-09-24",
-    "2026-09-30"
+    "2026-09-25",
+    "2026-10-01"
    ],
    "fiyat": {
-    "son": 738.79,
-    "tarih": "2026-09-29",
-    "haftalik": 0.3,
-    "aylik": 27.81,
-    "zirveden": -4.99,
+    "son": 725.18,
+    "tarih": "2026-09-30",
+    "haftalik": -2.54,
+    "aylik": 26.7,
+    "zirveden": -6.74,
     "zirve_52h": 777.59,
     "zirve_tarih": "2026-09-24",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": -1.27,
-    "XLC": -1.81
+    "QQQ": -0.19,
+    "XLC": -1.41
    },
    "tez": {
     "genel": "sari",
@@ -270,9 +270,9 @@
    },
    "kural": {
     "durum": "tetiklenmedi",
-    "mesaj": "Zirveden −%5,0. Sonraki kademe: −%15.",
+    "mesaj": "Zirveden −%6,7. Sonraki kademe: −%15.",
     "tetiklenen": null,
-    "zirveden_uzaklik": -4.99,
+    "zirveden_uzaklik": -6.74,
     "dusus_kaynagi": "piyasa_sektor",
     "dusus_kaynagi_aciklama": "Hissenin düşüşü karşılaştırma endeksleriyle benzer: ağırlıkla piyasa/sektör kaynaklı.",
     "kosul_saglaniyor": true
@@ -280,157 +280,78 @@
    "insider": {
     "hafta_islemleri": [
      {
-      "tarih": "2026-09-24",
-      "kisi": "Zuckerberg Mark",
-      "unvan": "Yönetim kurulu üyesi, COB and CEO, %10+ hissedar",
-      "kod": "C",
-      "adet": 17140.0,
-      "fiyat": 0.0,
-      "tutar": null,
+      "tarih": "2026-09-28",
+      "kisi": "Olivan Javier",
+      "unvan": "Chief Operating Officer",
+      "kod": "S",
+      "adet": 946.0,
+      "fiyat": 750.425,
+      "tutar": 709902.0499999999,
       "plan_10b5_1": true,
-      "sonrasi": 17140.0,
-      "sahiplik": "I",
-      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/xslF345X06/ownership.xml"
+      "sonrasi": 8824.0,
+      "sahiplik": "D",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014886/xslF345X06/ownership.xml"
      },
      {
-      "tarih": "2026-09-24",
-      "kisi": "Zuckerberg Mark",
-      "unvan": "Yönetim kurulu üyesi, COB and CEO, %10+ hissedar",
+      "tarih": "2026-09-28",
+      "kisi": "Olivan Javier",
+      "unvan": "Chief Operating Officer",
       "kod": "S",
-      "adet": 2093.0,
-      "fiyat": 775.3906,
-      "tutar": 1622892.5258,
+      "adet": 82.0,
+      "fiyat": 748.91,
+      "tutar": 61410.619999999995,
       "plan_10b5_1": true,
-      "sonrasi": 15047.0,
+      "sonrasi": 5916.0,
       "sahiplik": "I",
-      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/xslF345X06/ownership.xml"
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014886/xslF345X06/ownership.xml"
      },
      {
-      "tarih": "2026-09-24",
-      "kisi": "Zuckerberg Mark",
-      "unvan": "Yönetim kurulu üyesi, COB and CEO, %10+ hissedar",
+      "tarih": "2026-09-28",
+      "kisi": "Olivan Javier",
+      "unvan": "Chief Operating Officer",
       "kod": "S",
-      "adet": 2516.0,
-      "fiyat": 776.5564,
-      "tutar": 1953815.9024,
+      "adet": 57.0,
+      "fiyat": 748.91,
+      "tutar": 42687.869999999995,
       "plan_10b5_1": true,
-      "sonrasi": 12531.0,
+      "sonrasi": 1118.0,
       "sahiplik": "I",
-      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/xslF345X06/ownership.xml"
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014886/xslF345X06/ownership.xml"
      },
      {
-      "tarih": "2026-09-24",
-      "kisi": "Zuckerberg Mark",
-      "unvan": "Yönetim kurulu üyesi, COB and CEO, %10+ hissedar",
+      "tarih": "2026-09-28",
+      "kisi": "Olivan Javier",
+      "unvan": "Chief Operating Officer",
       "kod": "S",
-      "adet": 7607.0,
-      "fiyat": 777.6303,
-      "tutar": 5915433.692100001,
+      "adet": 82.0,
+      "fiyat": 748.91,
+      "tutar": 61410.619999999995,
       "plan_10b5_1": true,
-      "sonrasi": 4924.0,
+      "sonrasi": 5916.0,
       "sahiplik": "I",
-      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/xslF345X06/ownership.xml"
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014886/xslF345X06/ownership.xml"
      },
      {
-      "tarih": "2026-09-24",
-      "kisi": "Zuckerberg Mark",
-      "unvan": "Yönetim kurulu üyesi, COB and CEO, %10+ hissedar",
+      "tarih": "2026-09-28",
+      "kisi": "Olivan Javier",
+      "unvan": "Chief Operating Officer",
       "kod": "S",
-      "adet": 4324.0,
-      "fiyat": 778.3554,
-      "tutar": 3365608.7496,
+      "adet": 408.0,
+      "fiyat": 748.91,
+      "tutar": 305555.27999999997,
       "plan_10b5_1": true,
-      "sonrasi": 600.0,
+      "sonrasi": 77029.0,
       "sahiplik": "I",
-      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/xslF345X06/ownership.xml"
-     },
-     {
-      "tarih": "2026-09-24",
-      "kisi": "Zuckerberg Mark",
-      "unvan": "Yönetim kurulu üyesi, COB and CEO, %10+ hissedar",
-      "kod": "S",
-      "adet": 600.0,
-      "fiyat": 779.3263,
-      "tutar": 467595.77999999997,
-      "plan_10b5_1": true,
-      "sonrasi": 0.0,
-      "sahiplik": "I",
-      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/xslF345X06/ownership.xml"
-     },
-     {
-      "tarih": "2026-09-24",
-      "kisi": "Zuckerberg Mark",
-      "unvan": "Yönetim kurulu üyesi, COB and CEO, %10+ hissedar",
-      "kod": "S",
-      "adet": 1133.0,
-      "fiyat": 775.3185,
-      "tutar": 878435.8605,
-      "plan_10b5_1": true,
-      "sonrasi": 1229904.0,
-      "sahiplik": "I",
-      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/xslF345X06/ownership.xml"
-     },
-     {
-      "tarih": "2026-09-24",
-      "kisi": "Zuckerberg Mark",
-      "unvan": "Yönetim kurulu üyesi, COB and CEO, %10+ hissedar",
-      "kod": "S",
-      "adet": 1769.0,
-      "fiyat": 776.5624,
-      "tutar": 1373738.8856000002,
-      "plan_10b5_1": true,
-      "sonrasi": 1228135.0,
-      "sahiplik": "I",
-      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/xslF345X06/ownership.xml"
-     },
-     {
-      "tarih": "2026-09-24",
-      "kisi": "Zuckerberg Mark",
-      "unvan": "Yönetim kurulu üyesi, COB and CEO, %10+ hissedar",
-      "kod": "S",
-      "adet": 4810.0,
-      "fiyat": 777.6616,
-      "tutar": 3740552.296,
-      "plan_10b5_1": true,
-      "sonrasi": 1223325.0,
-      "sahiplik": "I",
-      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/xslF345X06/ownership.xml"
-     },
-     {
-      "tarih": "2026-09-24",
-      "kisi": "Zuckerberg Mark",
-      "unvan": "Yönetim kurulu üyesi, COB and CEO, %10+ hissedar",
-      "kod": "S",
-      "adet": 2146.0,
-      "fiyat": 778.3993,
-      "tutar": 1670444.8978000002,
-      "plan_10b5_1": true,
-      "sonrasi": 1221179.0,
-      "sahiplik": "I",
-      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/xslF345X06/ownership.xml"
-     },
-     {
-      "tarih": "2026-09-24",
-      "kisi": "Zuckerberg Mark",
-      "unvan": "Yönetim kurulu üyesi, COB and CEO, %10+ hissedar",
-      "kod": "S",
-      "adet": 476.0,
-      "fiyat": 779.2765,
-      "tutar": 370935.614,
-      "plan_10b5_1": true,
-      "sonrasi": 1220703.0,
-      "sahiplik": "I",
-      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/xslF345X06/ownership.xml"
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014886/xslF345X06/ownership.xml"
      }
     ],
     "hafta_kodlari": {
-     "C": 1,
-     "S": 10
+     "S": 5
     },
     "uyarilar": [
      {
       "etiket": "dikkat",
-      "metin": "Kümelenmiş satış: 2026-09-21–2026-09-24 arasında 3 yönetici satış yaptı (10b5-1 planlı işlem oranı %100)."
+      "metin": "Kümelenmiş satış: 2026-09-21–2026-09-28 arasında 3 yönetici satış yaptı (10b5-1 planlı işlem oranı %100)."
      },
      {
       "etiket": "bilgi",
@@ -504,29 +425,29 @@
      },
      {
       "baslangic": "2026-09-21",
-      "bitis": "2026-09-24",
+      "bitis": "2026-09-28",
       "kisiler": [
        "Cox Christopher K",
        "Olivan Javier",
        "Zuckerberg Mark"
       ],
-      "islem": 17,
-      "tutar": 50941139.4538,
+      "islem": 22,
+      "tutar": 52122105.8938,
       "planli_islem_orani": 100.0
      }
     ],
     "ozet_90g": {
+     "S": {
+      "islem": 108,
+      "adet": 154935.0,
+      "tutar": 104965055.5835,
+      "plan_10b5_1_adet": 152382.0
+     },
      "diger": {
       "islem": 6,
       "adet": 1796498.0,
       "tutar": 0.0,
       "plan_10b5_1_adet": 17140.0
-     },
-     "S": {
-      "islem": 103,
-      "adet": 153360.0,
-      "tutar": 103784089.1435,
-      "plan_10b5_1_adet": 150807.0
      },
      "M": {
       "islem": 28,
@@ -552,15 +473,6 @@
      "aciklama": "",
      "accn": "0001921094-26-001053",
      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000192109426001053/xsl144X01/primary_doc.xml"
-    },
-    {
-     "form": "144",
-     "tarih": "2026-09-24",
-     "donem": "",
-     "items": "",
-     "aciklama": "",
-     "accn": "0001921094-26-001050",
-     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000192109426001050/xsl144X01/primary_doc.xml"
     }
    ],
    "bilanco": {
@@ -608,49 +520,48 @@
     }
    ],
    "cumleler": [
-    "Hisse bu hafta +%0,3 (QQQ −%1,3, XLC −%1,8); 52 haftalık zirveden −%5,0 uzakta.",
+    "Hisse bu hafta −%2,5 (QQQ −%0,2, XLC −%1,4); 52 haftalık zirveden −%6,7 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok."
    ],
    "insider_ozet": {
-    "islem": 11,
-    "satis_tutar": 21359454.2038,
+    "islem": 5,
+    "satis_tutar": 1180966.44,
     "alim_tutar": 0,
     "kodlar": {
-     "C": 1,
-     "S": 10
+     "S": 5
     }
    },
    "sonraki_bilanco": {
-    "tarih": "2026-10-28",
+    "tarih": "2026-10-27",
     "saat": "amc",
-    "eps_tahmin": 6.5922,
-    "gelir_tahmin": 64528980375,
+    "eps_tahmin": 6.6125,
+    "gelir_tahmin": 64538879444,
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-30T10:48:30+00:00"
+    "guncelleme": "2026-10-01T11:14:53+00:00"
    }
   },
   {
    "ticker": "NOW",
    "ad": "ServiceNow",
    "donem": [
-    "2026-09-24",
-    "2026-09-30"
+    "2026-09-25",
+    "2026-10-01"
    ],
    "fiyat": {
-    "son": 129.94,
-    "tarih": "2026-09-29",
-    "haftalik": -5.15,
-    "aylik": -10.21,
-    "zirveden": -31.34,
+    "son": 134.01,
+    "tarih": "2026-09-30",
+    "haftalik": -4.81,
+    "aylik": -9.45,
+    "zirveden": -29.19,
     "zirve_52h": 189.258,
     "zirve_tarih": "2025-10-27",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": -1.27,
-    "IGV": -1.43
+    "QQQ": -0.19,
+    "IGV": -1.5
    },
    "tez": {
     "genel": "sari",
@@ -701,12 +612,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_ok",
-    "mesaj": "Zirveden −%31,3: −%25 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et.",
+    "mesaj": "Zirveden −%29,2: −%25 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et.",
     "tetiklenen": {
      "dusus": 25,
      "not": "DCA 2x; RPO ve SBC sütunlarını kontrol et."
     },
-    "zirveden_uzaklik": -31.34,
+    "zirveden_uzaklik": -29.19,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": true
@@ -832,9 +743,9 @@
     }
    ],
    "cumleler": [
-    "Hisse bu hafta −%5,2 (QQQ −%1,3, IGV −%1,4); 52 haftalık zirveden −%31,3 uzakta.",
+    "Hisse bu hafta −%4,8 (QQQ −%0,2, IGV −%1,5); 52 haftalık zirveden −%29,2 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%31,3: −%25 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et."
+    "Zirveden −%29,2: −%25 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et."
    ],
    "insider_ozet": {
     "islem": 0,
@@ -843,36 +754,36 @@
     "kodlar": {}
    },
    "sonraki_bilanco": {
-    "tarih": "2026-10-28",
+    "tarih": "2026-10-27",
     "saat": "amc",
     "eps_tahmin": 1.0354,
     "gelir_tahmin": 4135261876,
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-30T10:48:33+00:00"
+    "guncelleme": "2026-10-01T11:14:56+00:00"
    }
   },
   {
    "ticker": "AAOI",
    "ad": "Applied Optoelectronics",
    "donem": [
-    "2026-09-24",
-    "2026-09-30"
+    "2026-09-25",
+    "2026-10-01"
    ],
    "fiyat": {
-    "son": 100.67,
-    "tarih": "2026-09-29",
-    "haftalik": -5.92,
-    "aylik": -5.23,
-    "zirveden": -54.88,
+    "son": 99.26,
+    "tarih": "2026-09-30",
+    "haftalik": -1.78,
+    "aylik": -7.83,
+    "zirveden": -55.51,
     "zirve_52h": 223.1,
     "zirve_tarih": "2026-05-13",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": -1.27,
-    "SMH": -0.09
+    "QQQ": -0.19,
+    "SMH": 1.26
    },
    "tez": {
     "genel": "kirmizi",
@@ -934,12 +845,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%54,9: −%40 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: DCA 2x; nakit pisti ve sulandırmayı kontrol et.",
+    "mesaj": "Zirveden −%55,5: −%55 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Pozisyon büyüklüğünü sınırla; tez gerçekten sağlam mı yeniden yaz.",
     "tetiklenen": {
-     "dusus": 40,
-     "not": "DCA 2x; nakit pisti ve sulandırmayı kontrol et."
+     "dusus": 55,
+     "not": "Pozisyon büyüklüğünü sınırla; tez gerçekten sağlam mı yeniden yaz."
     },
-    "zirveden_uzaklik": -54.88,
+    "zirveden_uzaklik": -55.51,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 15 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -1155,12 +1066,26 @@
      "qqq": 736.53,
      "baslangic_kaydi": false,
      "kayit_zamani": "2026-09-29T10:58:36+00:00"
+    },
+    {
+     "id": "a8434c0b1f00",
+     "tarih": "2026-10-01",
+     "ticker": "AAOI",
+     "tur": "kural_kademe_tez_bozuk",
+     "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
+     "yon": "olumsuz",
+     "aciklama": "Zirveden −%55,5, −%55 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 15 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+     "fiyat": 99.26,
+     "fiyat_tarihi": "2026-09-30",
+     "qqq": 739.77,
+     "baslangic_kaydi": false,
+     "kayit_zamani": "2026-10-01T11:15:02+00:00"
     }
    ],
    "cumleler": [
-    "Hisse bu hafta −%5,9 (QQQ −%1,3, SMH −%0,1); 52 haftalık zirveden −%54,9 uzakta.",
+    "Hisse bu hafta −%1,8 (QQQ −%0,2, SMH +%1,3); 52 haftalık zirveden −%55,5 uzakta.",
     "Tezde değişiklik: Tez genel durumu KIRMIZI'ya döndü (Kırmızı sütunlar: Faaliyetten kârlılığa geçiş, Sulandırma); Bir tez sütunu KIRMIZI'ya döndü (Faaliyetten kârlılığa geçiş: %11,3); Bir tez sütunu KIRMIZI'ya döndü (Sulandırma: %43,7); Önceden yazılmış çıkış kriteri tetiklendi (Nakit pisti 12 ayın altına inerse); Önceden yazılmış çıkış kriteri tetiklendi (Seyreltilmiş hisse sayısı yıllık %40'tan fazla artarsa).",
-    "Zirveden −%54,9: −%40 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: DCA 2x; nakit pisti ve sulandırmayı kontrol et."
+    "Zirveden −%55,5: −%55 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Pozisyon büyüklüğünü sınırla; tez gerçekten sağlam mı yeniden yaz."
    ],
    "insider_ozet": {
     "islem": 0,
@@ -1176,29 +1101,29 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-30T10:48:36+00:00"
+    "guncelleme": "2026-10-01T11:14:59+00:00"
    }
   },
   {
    "ticker": "IONQ",
    "ad": "IonQ",
    "donem": [
-    "2026-09-24",
-    "2026-09-30"
+    "2026-09-25",
+    "2026-10-01"
    ],
    "fiyat": {
-    "son": 43.91,
-    "tarih": "2026-09-29",
-    "haftalik": 7.78,
-    "aylik": 12.02,
-    "zirveden": -46.51,
+    "son": 43.86,
+    "tarih": "2026-09-30",
+    "haftalik": 3.1,
+    "aylik": 11.57,
+    "zirveden": -46.57,
     "zirve_52h": 82.09,
     "zirve_tarih": "2025-10-13",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": -1.27,
-    "SMH": -0.09
+    "QQQ": -0.19,
+    "SMH": 1.26
    },
    "tez": {
     "genel": "kirmizi",
@@ -1259,12 +1184,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%46,5: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "mesaj": "Zirveden −%46,6: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "tetiklenen": {
      "dusus": 35,
      "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -46.51,
+    "zirveden_uzaklik": -46.57,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -1279,7 +1204,7 @@
      },
      {
       "etiket": "dikkat",
-      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %52.31 yükseldi."
+      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %57.83 yükseldi."
      }
     ],
     "kumelenmis_satislar": [
@@ -1317,398 +1242,18 @@
      }
     }
    },
-   "buyuk_hareketler": [
+   "buyuk_hareketler": [],
+   "sec_bildirimleri": [
     {
-     "tarih": "2026-09-24",
-     "claude": {
-      "tarih": "2026-09-24",
-      "neden": "Sabah FIU ile Superion 256 sözleşmesi duyuruldu. Üstüne 22–23 Eylül'deki hata kod çözücü ve NVIDIA duyurularının ardından alımlar sürdü. Haberlere göre aynı gün D-Wave +%3, Rigetti +%2 yükseldi; IonQ ise +%5,74 kapattı. QQQ −%0,01, SMH −%0,15 ile yatay kaldı.",
-      "siniflama": "sirkete_ozel",
-      "teze_etki": "Rekabet ve teknoloji sütunu algısını destekliyor. Metrik sütunlara (sulandırma, kârlılık, brüt marj) etkisi yok. FIU'nun geliri 2027 sonundaki kuruluma bağlı ve tutarı açıklanmadı; kısa vadeli büyüme sütununa katkısı ölçülemez.",
-      "kalicilik": "belirsiz",
-      "kaynak_urls": [
-       "https://www.ionq.com/news/ionqs-superion-256-platform-selected-by-florida-international-university-for-flagship-deployment",
-       "https://finnhub.io/api/news?id=d907bacef242c90f66ab08c9762c0f8e081aa404e81f42d0e95f2bd2737e81bc",
-       "https://finance.yahoo.com/markets/stocks/articles/quantum-computing-stocks-tumble-stunning-162156964.html"
-      ],
-      "rapor": "2026-W39",
-      "model": "claude-opus-5-5"
-     },
-     "onceki_gun": "2026-09-23",
-     "hareket": 5.74,
-     "yon": "yukari",
-     "benchmark": {
-      "QQQ": -0.01,
-      "SMH": -0.15
-     },
-     "on_siniflama": "sirkete_ozel",
-     "on_siniflama_aciklama": "Hisse +%5,7, sektör/piyasa −%0,1: hareketin çoğu şirkete özel görünüyor.",
-     "basliklar": [
-      {
-       "zaman": "2026-09-24T19:50:30+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "IonQ Sees Fault-Tolerant Quantum Within Reach in 2 Years",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUmF4Y19VM21mY05scGJ5WlgzM1lOcVc1NXZLVEVlenlVazM2dzM1dVh2dUVKelFyYXRKb0Y3WHJKSmVhSTJUb0dHYTQxcEs3czZRRzhESDV4REo2SXZXZlFvRXpEMHdvLUhVOElyczlPRUYwc0FsaGpWdkNpS1J1QTNHT0NIOHg5X0hiUUR5UnVCMWMzd3c?oc=5",
-       "kaynak": "MeriTalk",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-09-24T19:38:45+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "Update: IonQ Shares Rise After Signing Quantum Computer Contract With Florida International University",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbVlHc0NBbU9ob0cxUkJCdXYzOGpKR1lacWFZSGJlXzJfV29EdTc0ZF9SVzQ2cUd2djJ3VmtNWnhwenVlbkZIVTFoWGh6b2lDZDUxMnJpN0NRNkxQV1JickNnc2syT0ZWdUNJVk5PYkNSUjNfTHJyVDExMXNJXzFUNlUySXpEUjUwOVpGeElyZkt6eGJpQU1vejdhS2Mydw?oc=5",
-       "kaynak": "Yahoo Finance",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-09-24T18:00:00+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "Quantum Stocks Near Q3 Finish Line: How IONQ, RGTI & QBTS Are Faring",
-       "ozet": "Quantum stocks face a pivotal Q3 finish as IonQ, D-Wave and Rigetti push commercialization while rates and valuation concerns weigh on shares.",
-       "url": "https://finnhub.io/api/news?id=b1cc6e1a30317dfe2a368c63613058bf60183c084fef4c4eeb08c928c9b2a5fe",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-24T17:14:38+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "IonQ Rises 4% as Post-Breakthrough Buying Continues; D-Wave Quantum Gains 3%, Rigetti Adds 2%",
-       "ozet": "Quantum computing stocks are climbing again as a fresh wave of technical breakthroughs reshapes what investors think these companies can actually deliver, and the gap between hype and commercial reality has never mattered more.",
-       "url": "https://finnhub.io/api/news?id=d907bacef242c90f66ab08c9762c0f8e081aa404e81f42d0e95f2bd2737e81bc",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-24T16:22:00+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "Miami's first quantum computer coming to FIU",
-       "ozet": "Florida International University (FIU) will become the first university in Florida to acquire a full stack, trapped-ion quantum computer, bringing to the state an industry-leading research tool designed to take on problems that exceed classical computing limits.",
-       "url": "https://finnhub.io/api/news?id=e05039a813d88fe29357aa044b2f7a37ebad51dc2d84b8053b417af7053d6439",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-24T15:46:00+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "Here's How QUBT's Fab 2 Could Accelerate Quantum Manufacturing",
-       "ozet": "Quantum Computing's Fab 2 adds semiconductor, nanophotonics and advanced packaging capabilities that could accelerate quantum and photonics commercialization.",
-       "url": "https://finnhub.io/api/news?id=b1d2ccbeaf85fa322b6fd7033a1c39aba4c47655c606c223ceae1c5956a2bc03",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-24T15:04:30+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "IonQ Superion 256 Platform Selected by Florida International University for First Florida Deployment",
-       "ozet": "IonQ (NYSE:IONQ) has secured a contract to install its 256-qubit Superion quantum computer at Florida International University, marking the first sale and planned deployment of the system in Florida and expanding IonQ’s on-premises academic footprint. Key Investor TakeawaysIonQ (NYSE:IONQ) will deliver a Superion 256-qubit trapped-ion quantum computer to Florida International University under a new contract.",
-       "url": "https://finnhub.io/api/news?id=b58e0b7be9d0b81976bca7ffdcab979991e972bef02e08b40f83867734a6f6ef",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-24T14:58:36+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "IonQ to Deploy Superion 256 Quantum Computer at Florida International University",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNYk4tWlZHdjdOZF9FS0U4a2RveDNDRDFNbFhyalhvU0dDUmppcEZkbXJjblpteGFRc1hIZThSZXdtSTlIbllPYkFLQ3AwVE1HNElKN2JZdW5uZE8xdDRpWnNhSl9TZm5GNFN3Vy1QeVdTaENyUDBLOGtCMUVZWUNhcEc5QjM1NV83bXlNMzVIeldKZkYtb1Vz?oc=5",
-       "kaynak": "The Quantum Insider",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-09-24T14:47:27+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "IonQ Just Solved Quantum Computing’s Hardest Problem. The Stock Is Still Down 43% in a Year.",
-       "ozet": "IonQ just pulled off a quantum computing first that the entire industry has been chasing for years, yet its stock remains deep in the red and its losses dwarf its revenue. Something does not add up, and the explanation cuts to the heart of how markets price revolutionary science against brutal financial reality.",
-       "url": "https://finnhub.io/api/news?id=921485903f2474b7459e64c3fc3b18ee3b21e66112af48fa13aec694887b1971",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-24T14:37:47+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "After IonQ Buyout, SkyWater Reiterates Role as Quantum Foundry",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWTZaVjl3bFdZT0RlOVlYc0cxRUlVd2wtUy1VVmNLcjRBenBnWEJ6Z3ZUeG1GMHpoWHhyeFVGb29MSDh6djJ1SHZfRmhwQWpwbkNPVGFIX2VaQ0lMRGFDb0VkNjVrMFU1VXN5N0hmQTVWNmlVUUpYcE1BVnlkSTg0OUVwY3NsUUhGeGJVa2hibw?oc=5",
-       "kaynak": "EE Times",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-09-24T13:39:08+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "IonQ Signs Contract to Provide Quantum Computer to Florida International University",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRmRGZUlYeWVPSjBMMzZBa2NJb2xkcmNRaXMwd3JScnhhcEVvc0RQd29vTVFpQzNfNDk5ejBWTlBObVF0RzZUNS1rRkxPTF9iZzdKWVVEdlNZY0cyVHNDdE91UWlrYklTcnhiTTY2N2xDVUZWNGY4a1ZKRDNrcGNrSDZwWDlUVDZKU2txbWdCVEV1YVJ2YzZ2VEZRSFZqMkxrRHc?oc=5",
-       "kaynak": "Yahoo Finance",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-09-24T13:08:20+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "IonQ Demonstrates Quantum Generative Modeling for High Resolution Radar Change Detection",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMWtLWHJpN3ZCZmpRalduLUVFTFYwTVFrOFh6QzdURGUxWlE0a0c0anA4SlFuenVRQ3o4LUphMExhbXZnUVVhNUxETjRrOHRVYkI3N0NtbVUzai1iem5oYlc1OXBEaWItblcxQS1MdUFpQllkXzQ0MzJQeWJLZWNYUnhBem43dDZQREJPVHFoYUFMYjI2N1FUcDJWd2ZUQXRhY0w1bG5MN2ZnRld5VU9PaVpsM08?oc=5",
-       "kaynak": "IonQ",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-09-24T13:03:20+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "FIU Secures Florida’s First IonQ Superion Quantum System",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNY09TNXR2dThTRko5NC1rM3d6ZElzQ2FBeVBZMjZGcmlHbmNKbEM3MW9kV25IYzl5SmV6MHFFbTFZeHB5MVIyNEg4SU02aEhsb1k4V1g2RlQ4QVJvdndibzlhUmZlWnpsdFdreFFwX3hQRm1Pd0k2S0dNdDQ3NmNZYlp0VDhJWnJNYzRNbFVDOFBLcXZvNUhURllrV3c5ZUEyNUpUUlVERUtseDdHLWlDRzlVWFhBX3pCT1hOalpoZw?oc=5",
-       "kaynak": "IonQ",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-09-24T13:00:00+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "IonQ’s Superion 256 Platform Selected by Florida International University for Flagship Deployment",
-       "ozet": "MIAMI & COLLEGE PARK, Md., September 24, 2026--IonQ (NYSE: IONQ), the world’s leading full-stack quantum platform and foundry, today announced a contract with Florida International University (FIU), Miami’s top ranked state university. Under the agreement, IonQ will deliver its Superion 256-qubit trapped-ion quantum computer for installation at FIU.",
-       "url": "https://finnhub.io/api/news?id=327297626b5d0b0f4d0e99ad3e1d9f099c72faad5c6264fba16d5d49d8afb739",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-24T12:39:00+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "Company News for Sep 24, 2026",
-       "ozet": "Companies in The News Are: GIS,CBRL,WOR,IONQ",
-       "url": "https://finnhub.io/api/news?id=cbc536b8f22eb1f176554c6996d4e8e2090ab2a8e197ddc0799c89e6696acce9",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-24T12:05:46+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "Everyone’s Talking About IonQ. Smart Money Is Watching Nvidia Instead.",
-       "ozet": "IonQ just claimed a genuine quantum computing breakthrough, but its stock tells a bleaker story and its financials tell a bleaker one still. Before you chase the headline, there is a quieter position in the quantum ecosystem worth understanding.",
-       "url": "https://finnhub.io/api/news?id=e0344ec28f1f5146ca3a61efa3f6a06e51319180fa46fa72924e884b6dfa8e03",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-24T10:45:46+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "IonQ Removes Major Quantum Barrier, Driving Investor Debate Over Commercial Timelines",
-       "ozet": "IonQ Inc. (NYSE:IONQ) is drawing fresh attention to the quantum-computing industry after demonstrating real-time error correction, a development that analysts and traders see as an important step toward making the technology commercially useful. Grasso Sees Quantum Arriving Sooner CNBC’s \"Fast Money\" trader Steve Grasso said on Thursday that real-time error correction has been one of the biggest problems facing the quantum-computing industry. He believes IonQ’s breakthrough addresses that challe",
-       "url": "https://finnhub.io/api/news?id=0a14c85c25cfa026bbb4520ac02d5c1d9774e94fe08260b053f25a411cdbf29a",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-24T09:08:38+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "NVIDIA Center To Link IonQ Qubits With AI Supercomputing",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8xSF9iVjktN3BVU2ZtNjFzY1BCalQzRm1nWVFNZVcxQ1kyMnJLNFlPZi04NXl1amViWjJnMEk5Qm00MzM0SzRIRksxLURtVGRoT2hoU3RwR29CeHpaNjl6Tl9GWThDSUpERU9lVA?oc=5",
-       "kaynak": "Quantum Zeitgeist",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-09-24T08:12:01+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "IonQ Cleared One of Quantum Computing's Biggest Hurdles. Should You Buy the Stock?",
-       "ozet": "IonQ appears to be the clear leader in one key area of quantum computing.",
-       "url": "https://finnhub.io/api/news?id=7808be3feee5f12a7b5f4ed493f183835873b35cf4fbeecea8f130b7672d1d6d",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-24T07:14:31+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "The 5% Wall: Treasury Yields Take the Air Out of Wall Street's Muse Rally",
-       "ozet": "The 10-year Treasury yield climbed back above 5% on Wednesday and pulled all three major indices lower. A hawkish Fed governor, hot PMI data and a rebound in oil did the damage, while Meta's Muse agent hit travel stocks and McDonald's slid on a sobering investor day.",
-       "url": "https://finnhub.io/api/news?id=0518a6ef61f86a74163e1b534a000dc6875b5aad3965135408a293d3293d3fcb",
-       "kaynak": "ChartMill",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-24T05:20:32+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "Classiq, INGL, and IonQ Advance Quantum Optimization for Natural Gas Transmission Networks",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNODV3MkpfUmstT3BzcjV4dXJwcVA0bUhMWTUxM20wbS1CY1dxanJrWGxNajUxVU9UQ2hZSG9VSXk5Zzh5OGxNREc2RDgtc3BpRV9zOE1QZzAwTGM0S2Y2MUpEQml1eHRsRW4xbGRuUFR1NE9fdy1zTVpIU2dseEFrYU1qU1lBVnJWbzJRSDNVQXZOeGJYMkVnZVlrUlA3V19YNzRULU9ZWUVZZEZYLTltNFpLZW0zb0hvUUZ0SkVScm82UdIBxwFBVV95cUxPZUJmVWRva1hwLU40YTBFVDFsTS0tSklma0RZMGhqeXpjd0VKZHVZMlBJcnk4SXprTHZDQ2NsQWFLT2RHX1RqanBqNWpMSTdpbHVDQ0lTUUluQk5GU3pDQ0VUN0ZDU3NUQlVacjA5Y2V3RU9pUE45VXdFbjJoV1VHWS1vdUt4TDE5RW9EZHd6REE4OUM1MDZoVjlzUHJTbFBCVE96VXJrREY1MUstX1E2R1hkYlE2SmlxRU1tM2tnVDFlT1NKUi1F?oc=5",
-       "kaynak": "Quantum Computing Report",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-09-24T02:29:43+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "IonQ Partners with SDT to Deploy Superion 256 Quantum System and Establish SiV Quantum Memory Assembly Hub in South Korea",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQb3Q0bUN3RERYVmVISkNPQjk1ekNCU3YtcWdXeE95czJ3djVNREcxYnVNbXo3bDUyQTRzbm03R3RUZDZhRVBFcE41WkZkNmNnUzlYN1VmVDlWRS1YR3pBZmdLV1VyQ09ELV81d0htUGc2QVBFOWZpUXctaFZ6TGRJWHlvVjBIcnQtc1luOVNsNUphMTBpYy1NOHBMYTZJblI5ZXRDUno0WGFOenVrTDlfdDJtUmNlQjU0cVBCN1dQcWhkTVEyTnhNdTZnOUFrRnY5Wk8tdlV5dk5VWHlwY3JwQmpUUUJ1UmFiWG9SWnFB0gHzAUFVX3lxTFBRYXdHdlFNdnRIMEh0MFktX1p4X01TZDgwRC1OcDZUT19Kenk5czlVTEMwUlVHWUVXalBIM1I1ODR6bC16SFctb3FjdVphcklsdHl4RHlDQW1YaGJ2UG5pX1RIZDRfQVVWZTZVLVVWOUlFQU9RVHRiMUhoNmx0SVRqM1RwNjF0cTFRUVI1TFlDdGVoTGh0Q0ptT0czVXlqaXUwcEZrME8zd1FjYWh5eTdRTjR1VXRJVTBpSnRSTHlfSU0yOXpVRFdLZVFiMVItWkZCUC00ZDI5Q3VDc0p4c0F4ODMzRllBOGROZ0tVVE1fQWliZw?oc=5",
-       "kaynak": "Quantum Computing Report",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-09-24T02:29:38+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "IonQ Selected as First On-Premise QPU Deployment at NVIDIA’s Accelerated Quantum Research Center",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdGtxakpuRW5fM0FVSnhiRmIwdVlRSE9sdkZrTld4NkxDVG5fZHBkM2pWM05WMVp3NnNWcEQyZXZ6UWJsM2RsblpXbVJNcFhxQTNRa1pJZTFJU1NEYTZPRUlMM0FPSGJQYWJaZjlQUXYxYlp5Q0xYMVFGNG5QSnRmQ1V0MVNlNVFudWJoZ2UyMzA2WUdzTGxjMWU0eVdqOUg0VVlsZHhKbmYyaEdHa3ByM1ZTVWZDckR6d0JsaDJYaExnSVFzaHp1VmlXNNIB0AFBVV95cUxPVVNzYTM3bXhlSmdWV0cyOWdWZU50akN6cGh2R002aTFSZDFaQUFqd0liRVI0cWo2a3I5Z1RDaWMwdjhkZ2QxTGoyT3V4QWJKMXdIN1YtR3BCUzNqZGJnTXpBVmVaX2hldGRkR0VZUVUzcE1TZWpCc0hZcVd4NUVXMEdtb29yUTkxaHZWSGFYVVU1NlJIUTMtb0M3T1hkM1NWMGo3RGNVVnZGdUl2a3hNNzVkTmxRdmllb2EzZndUa3h2MXhRQkxhMWJCaW1zQkVt?oc=5",
-       "kaynak": "Quantum Computing Report",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-09-24T01:35:40+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "BigBear.ai vs. IONQ: Comparing Revenue Trends Between an Artificial Intelligence Upstart and a Quantum Computer Company",
-       "ozet": "IONQ's revenue surged to $80 million in Q2 2026, while BigBear.ai stabilized near $37 million — a widening gap that reshapes the competitive picture.",
-       "url": "https://finnhub.io/api/news?id=26c89330b611756cd26f5edeab289c463ace3aeaa01fe880de805c896d48e25d",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-24T01:17:00+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "Nvidia once rattled IonQ stock. Now it plans to install IonQ tech",
-       "ozet": "IonQ’s newest quantum processor will sit alongside Nvidia Blackwell GPUs as both companies test hybrid computing.",
-       "url": "https://finnhub.io/api/news?id=240c1f97354a55a73ed0df160dfb01cb8503f4a82af5072137ac8ea651c911ff",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-24T00:35:05+00:00",
-       "tarih": "2026-09-24",
-       "baslik": "Why IonQ Stock Is Up Today",
-       "ozet": "The quantum computing pioneer achieved a major milestone.",
-       "url": "https://finnhub.io/api/news?id=cede9f0c20f4d504c94c73ebd4dd5b28f81f1bd9f56d499f46d0b07b556065ca",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-23T23:16:19+00:00",
-       "tarih": "2026-09-23",
-       "baslik": "Why IonQ (IONQ) Is Up 15.5% After NVIDIA Deal And Real-Time Error Correction Breakthrough",
-       "ozet": "IonQ recently announced it will deploy its Superion 256 quantum computer on-premise at NVIDIA’s Accelerated Quantum Research Center, while also unveiling an end-to-end real-time quantum error correction decoder that runs on a single off-the-shelf CPU with minimal computational delay. Together, these advances highlight IonQ’s push to link scalable error-corrected quantum hardware directly with leading AI and GPU infrastructure, potentially simplifying future hybrid quantum-classical system...",
-       "url": "https://finnhub.io/api/news?id=d809cf61524316d9c686c28ef5ce3b67f47279355a1f649dfd244cf55fb99a59",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-23T22:15:46+00:00",
-       "tarih": "2026-09-23",
-       "baslik": "IonQ (IONQ) Stock Looks Reasonably Priced On Book Value Today",
-       "ozet": "IonQ has ridden a very large multi year upswing, capped by fresh quantum computing headlines, and that leaves a basic valuation puzzle for you to solve. With the share price now far removed from where it traded five years ago, the question is how comfortably that market value lines up with what its balance sheet currently shows. IonQ has delivered a roughly 289.2% gain over the past 5 years, which puts real weight on whether the current market capitalization can be squared with the equity...",
-       "url": "https://finnhub.io/api/news?id=5768a80c0fab4fd05d5b0b0ead9db4a90ebd7d71b0e220cef7566af50be704ad",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-23T21:59:00+00:00",
-       "tarih": "2026-09-23",
-       "baslik": "IONQ shares jump on Quantum breakthrough",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZkhBX0NhYTQ0aEZxSmxoY3NBNlVrRmI2eldhRlNpdW4xSDZLMjZvVnMwSWZIdDdKR1dSSE1EbGJONEZhNDVBU3Q3dEc1azRVVU5OX2pzSmI4X2s1ZFc1cTM3a1VCMS11ZnhiVGVQRmdwZlE2WlFlT212cjNkSUNpZUhVQTU0ZEJhenRz?oc=5",
-       "kaynak": "CNBC",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-09-23T21:27:49+00:00",
-       "tarih": "2026-09-23",
-       "baslik": "Stock Market Today, Sept. 23: IonQ Surges on Quantum Breakthrough and Nvidia Partnership",
-       "ozet": "Today, Sept. 23, 2026, the trapped-ion quantum computing provider's decoder test and research-center collaboration kept commercialization progress in focus.",
-       "url": "https://finnhub.io/api/news?id=e59c9cb6478a105fe7949c9bbb9722a6beb937562ea0f706bfbbf81cdc365e71",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-23T21:25:00+00:00",
-       "tarih": "2026-09-23",
-       "baslik": "IonQ Wants to Be the Nvidia of Quantum. Now They Are Partners.",
-       "ozet": "IonQ’s Superion 256 quantum computer will be the first system installed at Nvidia’s quantum research center, say the partners.",
-       "url": "https://finnhub.io/api/news?id=b5946fe6b9ccf90e04c3fb67cb6585611ca60dfb922fffde6a81c8a2eae64d19",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-23T21:25:00+00:00",
-       "tarih": "2026-09-23",
-       "baslik": "IonQ Stock Surges After Inking Quantum Computing Deal With Nvidia",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRldVcFU5d2RFRUpmV3RyU19qRHVhOGxHUjM3UURzRXAxdWtmdVFZTGg5V082UTlSSjRFVTNSN0xwU3VwTHlBcW4zcXh0d0FtVGhCNy0tMm5Bd0tPTHpZc1I3b1g2a2duRGRxaTVDV0pNUXhLTXZEbV9yREdieklvRC11QTVPR2ZtOEk0Qm1jaVF5VGs?oc=5",
-       "kaynak": "Barron's",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-09-23T20:37:00+00:00",
-       "tarih": "2026-09-23",
-       "baslik": "Why Quantum World Congress Is Giving Quantum Stocks a Boost",
-       "ozet": "The quantum computing sector has seen no shortage of hype this year, and now one of the industry’s largest gatherings—Quantum World Congress—is set to give stocks another push.  Shares of quantum computing companies rallied in the lead-up to the conference, which bills itself as “the world’s premier event uniting the global quantum ecosystem.”  The ETF was up slightly on Wednesday, the inaugural day of the event, resisting a downturn in technology stocks.",
-       "url": "https://finnhub.io/api/news?id=ec2ce66fbf348355273ffea4a4efc94c5fdd6847835b78ccb938b111a22e1c77",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-23T20:33:00+00:00",
-       "tarih": "2026-09-23",
-       "baslik": "Palantir, IonQ, Royal Caribbean, Paychex, McDonald’s, and More Stocks That Explain Today’s Market",
-       "ozet": "Stocks fell Wednesday as investors faced uncertainty with the lack of positive news on the war in Iran and as oil prices moved higher.  IonQ  gained 6.6% after the company said its latest quantum computer, Superion 256, will be the first system in  Nvidia’s   quantum research center.  The new device will act as a specialized co-processor alongside an Nvidia GPU cluster.",
-       "url": "https://finnhub.io/api/news?id=c84535fec44d9f9e2c66ce3d6145e40c217347f1d0daef9f4a1b494e6fa4e5c5",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-23T19:32:49+00:00",
-       "tarih": "2026-09-23",
-       "baslik": "IonQ Targets Quantum Error-Correction Bottleneck With Single-CPU Decoder",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMDB2Q3JmZThJU2JUa2lpTDlvYk5BYi1xa1g2a29TS3ZGcmdUeWlzeGdJbXdnd3A4U3YzbG9fNWUzSWZ6cjhWM2pfODQzYWFpRGJsSE43Nng4Q25wVHpONHhuaTk5Z1JlUm1RRWUwVXdPc1ByVElvVHNxbzhjTVlLUzZxWi1IYldYZE82Vkx0ZVlSb1VDdDkwNlNPV0lIR0lzV3h4QlItRGNLUWNockpPQjFTb1h4Z9IBuwFBVV95cUxPZFRWMDdhRXVBbG9MZTRUMExLWV9XMlUzYjlrbDY3VlJkanllVkpwM2lJMjlxbGY3VUFVcDRxcDJZT3ZGN3Y1YmY3OFMxc1owdVpmYkxzMGIzYVdMdzZaTGQ2ZXcwaEFDeGRuVFBtSGNEZkZDVld4LWdTeDZFTFFuWlVYbWRXY3VaZVBYXzZsczF1NW5NOUNFOGFiaFhBRWZGSW8zcUF0RTh2QW9SREs0N084Q0Q0SHRmb0p3?oc=5",
-       "kaynak": "SecurityWeek",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-09-23T19:02:00+00:00",
-       "tarih": "2026-09-23",
-       "baslik": "Market Navigator: Portfolio Wealth Advisors Lee Munson talks IONQ and the quantum space",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPLThWY3lsemFzcklvLXh1clM0MFdDUGJNNFVjRHAtR2U0Y3E5VklqSUJjd1dfYXZhTG5mY2VvSDk3QU9pbWJrNlNKeHRZb2VJU0JoSmtGNzBpSTVPcGFQUy05Q3dSYmxQV1lsLV9oTm5lNk1IUE05aWVCNUl2THNlNWlQWTIzUk5uU3dfT25fZldiQ29CeUtfVW9BS1IyTUNtZ0gtTVpEYVl3eEZXLTBNSTJ3R0VfbGJTdkNyYk00WVpFNnJNUzNjYw?oc=5",
-       "kaynak": "CNBC",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-09-23T18:37:36+00:00",
-       "tarih": "2026-09-23",
-       "baslik": "IonQ (IONQ) Will Install Superion 256 At A Major AI Research Center",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPMHpISU9yN1VabHJsQ0kxV0pfRFlNZFd5ZHRvWldPN3FKamVqN3o0S2FMMDdZeWVJNXpkbjljRllBeHplNlFBb05TbkhJNnlwYWU1WWNLeFJPcDhOOVZuX1dfT1BrOEFjaFp2aC1aM2RBTWJUeVlRVHpTUWY3cTFLVVp3OHJlWlZ2dVN5NWo3Y01JQng1S2VqX0JfbmN1TkYzU2lFdHRHR3JNWFBNVFlzMGpzWFFEZ1g3SV90WmdVM1ZYdDRHemfSAcsBQVVfeXFMTnpNQTY2V0JNbmFqOEc3RU9QUzQteWVCLUNDSFpDVHBoS3Qyem0wR2E4YW12VVBNN1VYWDhxLWJDcmdFd3BWUzJyWmZDTVJIOHd5RTRuUDUxWmtBVU55bkJZVlluRWtfelZ1MjJlUnJzY3pJT2sxc2UzX2dGNkd2RDlJczhTMVZuMklPRkdjYzl1MEtoazFHSU5ELU5HUEgwUWhzeE5vM2RZUUxid1BkeFJwOFFhYW1rZTRJZ1FJTXpQOC1hUERpaXdDd1E?oc=5",
-       "kaynak": "simplywall.st",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-09-23T18:33:42+00:00",
-       "tarih": "2026-09-23",
-       "baslik": "IonQ Just Nabbed a Quantum Computing Partnership with Nvidia. How to Play IONQ Stock Here.",
-       "ozet": "IonQ stock rallies on landmark deal with Nvidia. But does that make IONQ shares worth buying today? Let’s find out!",
-       "url": "https://finnhub.io/api/news?id=1f289a7898733cd8592ebbfe17898c351e73b01f20fb9e57dae623e55985b15e",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-23T18:00:00+00:00",
-       "tarih": "2026-09-23",
-       "baslik": "Discover the most active stocks in Wednesday's session.",
-       "ozet": "Get a pulse on the US markets on Wednesday by checking out the most active stocks in today's session. Discover the stocks that are leading the way in terms of trading volume and market activity.",
-       "url": "https://finnhub.io/api/news?id=2e7bcd8f833fbb4c7fd6a483127bf63d67080ae146ed737fa561ad7151125c97",
-       "kaynak": "ChartMill",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-09-23T17:57:52+00:00",
-       "tarih": "2026-09-23",
-       "baslik": "IonQ Just Proved the Biggest Threat to Quantum Computing Scaling Was an Illusion",
-       "ozet": "IonQ just proved that fixing quantum errors does not require massive supercomputers. By running real-time correction for 408 logical qubits on a single CPU, it cleared a massive scaling roadblock.",
-       "url": "https://finnhub.io/api/news?id=fafd1aaf5d4ab698c0744ec0c1a1f40aa82fcc7584e795427875c8ea3be8df4b",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      }
-     ],
-     "sec_bildirimleri": []
+     "form": "25-NSE",
+     "tarih": "2026-09-30",
+     "donem": "",
+     "items": "",
+     "aciklama": "",
+     "accn": "0000876661-26-000804",
+     "url": "https://www.sec.gov/Archives/edgar/data/1824920/000087666126000804/xslF25X02/primary_doc.xml"
     }
    ],
-   "sec_bildirimleri": [],
    "bilanco": {
     "son_ceyrek": "FY2026 Q2",
     "kirmizi": 5,
@@ -1796,10 +1341,9 @@
     }
    ],
    "cumleler": [
-    "Hisse bu hafta +%7,8 (QQQ −%1,3, SMH −%0,1); 52 haftalık zirveden −%46,5 uzakta.",
+    "Hisse bu hafta +%3,1 (QQQ −%0,2, SMH +%1,3); 52 haftalık zirveden −%46,6 uzakta.",
     "Tezde değişiklik: Tez genel durumu KIRMIZI'ya döndü (Kırmızı sütunlar: Hisse sayısı); Bir tez sütunu KIRMIZI'ya döndü (Hisse sayısı: %46,5); Önceden yazılmış çıkış kriteri tetiklendi (Hisse sayısı yıllık %10'dan fazla artarsa).",
-    "Zirveden −%46,5: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
-    "2026-09-24 günü +%5,7 büyük hareket (Hisse +%5,7, sektör/piyasa −%0,1: hareketin çoğu şirkete özel görünüyor.)"
+    "Zirveden −%46,6: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
    ],
    "insider_ozet": {
     "islem": 0,
@@ -1810,34 +1354,34 @@
    "sonraki_bilanco": {
     "tarih": "2026-11-03",
     "saat": "",
-    "eps_tahmin": -0.3543,
-    "gelir_tahmin": 73677435,
+    "eps_tahmin": -0.3653,
+    "gelir_tahmin": 74503717,
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-30T10:48:39+00:00"
+    "guncelleme": "2026-10-01T11:15:03+00:00"
    }
   },
   {
    "ticker": "ORCL",
    "ad": "Oracle",
    "donem": [
-    "2026-09-24",
-    "2026-09-30"
+    "2026-09-25",
+    "2026-10-01"
    ],
    "fiyat": {
-    "son": 137.79,
-    "tarih": "2026-09-29",
-    "haftalik": -7.65,
-    "aylik": -8.66,
-    "zirveden": -55.98,
+    "son": 137.3,
+    "tarih": "2026-09-30",
+    "haftalik": -5.02,
+    "aylik": -7.93,
+    "zirveden": -56.13,
     "zirve_52h": 313.0,
     "zirve_tarih": "2025-10-16",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": -1.27,
-    "IGV": -1.43
+    "QQQ": -0.19,
+    "IGV": -1.5
    },
    "tez": {
     "genel": "sari",
@@ -1896,12 +1440,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_ok",
-    "mesaj": "Zirveden −%56,0: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "mesaj": "Zirveden −%56,1: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "tetiklenen": {
      "dusus": 35,
      "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -55.98,
+    "zirveden_uzaklik": -56.13,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": true
@@ -1989,9 +1533,9 @@
     }
    ],
    "cumleler": [
-    "Hisse bu hafta −%7,7 (QQQ −%1,3, IGV −%1,4); 52 haftalık zirveden −%56,0 uzakta.",
+    "Hisse bu hafta −%5,0 (QQQ −%0,2, IGV −%1,5); 52 haftalık zirveden −%56,1 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%56,0: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
+    "Zirveden −%56,1: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
    ],
    "insider_ozet": {
     "islem": 0,
@@ -2007,29 +1551,29 @@
     "ceyrek": 2,
     "yil": 2027,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-30T10:48:43+00:00"
+    "guncelleme": "2026-10-01T11:15:06+00:00"
    }
   },
   {
    "ticker": "CEG",
    "ad": "Constellation Energy",
    "donem": [
-    "2026-09-24",
-    "2026-09-30"
+    "2026-09-25",
+    "2026-10-01"
    ],
    "fiyat": {
-    "son": 264.58,
-    "tarih": "2026-09-29",
-    "haftalik": 0.43,
-    "aylik": -4.4,
-    "zirveden": -34.5,
+    "son": 254.02,
+    "tarih": "2026-09-30",
+    "haftalik": -3.74,
+    "aylik": -7.55,
+    "zirveden": -37.12,
     "zirve_52h": 403.95,
     "zirve_tarih": "2025-10-15",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "SPY": -1.19,
-    "XLU": -2.02
+    "SPY": -0.67,
+    "XLU": -0.78
    },
    "tez": {
     "genel": "kirmizi",
@@ -2082,12 +1626,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%34,5: −%25 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku.",
+    "mesaj": "Zirveden −%37,1: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "tetiklenen": {
-     "dusus": 25,
-     "not": "Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku."
+     "dusus": 35,
+     "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -34.5,
+    "zirveden_uzaklik": -37.12,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -2217,12 +1761,26 @@
      "qqq": 736.53,
      "baslangic_kaydi": false,
      "kayit_zamani": "2026-09-29T10:58:45+00:00"
+    },
+    {
+     "id": "444c64b0e9e9",
+     "tarih": "2026-10-01",
+     "ticker": "CEG",
+     "tur": "kural_kademe_tez_bozuk",
+     "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
+     "yon": "olumsuz",
+     "aciklama": "Zirveden −%37,1, −%35 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+     "fiyat": 254.02,
+     "fiyat_tarihi": "2026-09-30",
+     "qqq": 739.77,
+     "baslangic_kaydi": false,
+     "kayit_zamani": "2026-10-01T11:15:12+00:00"
     }
    ],
    "cumleler": [
-    "Hisse bu hafta +%0,4 (SPY −%1,2, XLU −%2,0); 52 haftalık zirveden −%34,5 uzakta.",
+    "Hisse bu hafta −%3,7 (SPY −%0,7, XLU −%0,8); 52 haftalık zirveden −%37,1 uzakta.",
     "Tezde değişiklik: Tez genel durumu KIRMIZI'ya döndü (Kırmızı sütunlar: Hisse sayısı); Bir tez sütunu KIRMIZI'ya döndü (Hisse sayısı: %14,7); Önceden yazılmış çıkış kriteri tetiklendi (Hisse sayısı yıllık %10'dan fazla artarsa).",
-    "Zirveden −%34,5: −%25 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku."
+    "Zirveden −%37,1: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
    ],
    "insider_ozet": {
     "islem": 0,
@@ -2233,34 +1791,34 @@
    "sonraki_bilanco": {
     "tarih": "2026-11-04",
     "saat": "",
-    "eps_tahmin": 3.8225,
+    "eps_tahmin": 3.8218,
     "gelir_tahmin": 9411197170,
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-30T10:48:46+00:00"
+    "guncelleme": "2026-10-01T11:15:09+00:00"
    }
   },
   {
    "ticker": "RGTI",
    "ad": "Rigetti Computing",
    "donem": [
-    "2026-09-24",
-    "2026-09-30"
+    "2026-09-25",
+    "2026-10-01"
    ],
    "fiyat": {
     "son": 15.74,
-    "tarih": "2026-09-29",
-    "haftalik": -4.72,
-    "aylik": 0.96,
+    "tarih": "2026-09-30",
+    "haftalik": -1.66,
+    "aylik": 0.51,
     "zirveden": -72.06,
     "zirve_52h": 56.34,
     "zirve_tarih": "2025-10-15",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": -1.27,
-    "IGV": -1.43
+    "QQQ": -0.19,
+    "IGV": -1.5
    },
    "tez": {
     "genel": "kirmizi",
@@ -2508,7 +2066,7 @@
     }
    ],
    "cumleler": [
-    "Hisse bu hafta −%4,7 (QQQ −%1,3, IGV −%1,4); 52 haftalık zirveden −%72,1 uzakta.",
+    "Hisse bu hafta −%1,7 (QQQ −%0,2, IGV −%1,5); 52 haftalık zirveden −%72,1 uzakta.",
     "Tezde değişiklik: Tez genel durumu KIRMIZI'ya döndü (Kırmızı sütunlar: Nakit pisti, Hisse sayısı); Bir tez sütunu KIRMIZI'ya döndü (Nakit pisti: 3,80 ay); Bir tez sütunu KIRMIZI'ya döndü (Hisse sayısı: %11,7); Önceden yazılmış çıkış kriteri tetiklendi (Hisse sayısı yıllık %10'dan fazla artarsa).",
     "Zirveden −%72,1: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
    ],
@@ -2526,7 +2084,7 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-09-30T10:48:49+00:00"
+    "guncelleme": "2026-10-01T11:15:13+00:00"
    }
   }
  ],
@@ -2992,6 +2550,34 @@
    "qqq": 736.53,
    "baslangic_kaydi": false,
    "kayit_zamani": "2026-09-29T10:58:45+00:00"
+  },
+  {
+   "id": "a8434c0b1f00",
+   "tarih": "2026-10-01",
+   "ticker": "AAOI",
+   "tur": "kural_kademe_tez_bozuk",
+   "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
+   "yon": "olumsuz",
+   "aciklama": "Zirveden −%55,5, −%55 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 15 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+   "fiyat": 99.26,
+   "fiyat_tarihi": "2026-09-30",
+   "qqq": 739.77,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-10-01T11:15:02+00:00"
+  },
+  {
+   "id": "444c64b0e9e9",
+   "tarih": "2026-10-01",
+   "ticker": "CEG",
+   "tur": "kural_kademe_tez_bozuk",
+   "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
+   "yon": "olumsuz",
+   "aciklama": "Zirveden −%37,1, −%35 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+   "fiyat": 254.02,
+   "fiyat_tarihi": "2026-09-30",
+   "qqq": 739.77,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-10-01T11:15:12+00:00"
   }
  ],
  "not": "Günlük Python derlemesi (Claude yok). Derin analiz Salı raporundadır."

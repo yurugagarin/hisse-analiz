@@ -1,7 +1,817 @@
 {
  "ticker": "META",
- "guncelleme": "2026-09-30T10:48:32+00:00",
+ "guncelleme": "2026-10-01T11:14:55+00:00",
  "basliklar": [
+  {
+   "zaman": "2026-10-01T09:30:00+00:00",
+   "tarih": "2026-10-01",
+   "baslik": "Elizabeth Warren demands answers on $96B in lost federal revenue as Amazon, Google, Meta and Microsoft claim tax breaks",
+   "ozet": "Tech giants have gotten generous tax breaks just as programs like Social Security and SNAP are under strain.",
+   "url": "https://finnhub.io/api/news?id=4c44fa3eaf40e63f729fd396a88968419d1488a87b997933463f7a59c3a112d5",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-10-01T07:27:01+00:00",
+   "tarih": "2026-10-01",
+   "baslik": "Most S&P 500 Stocks Sank In September — But Retail Traders Didn't Flee",
+   "ozet": "Chipmakers and Meta kept the index steady while financials, real estate and materials sank, and Stocktwits chatter jumped most on the hardest-hit names.",
+   "url": "https://finnhub.io/api/news?id=e34201097669739441b7604311d68180b7bc7ab37a437cb5484e0f33aedef707",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-10-01T06:50:00+00:00",
+   "tarih": "2026-10-01",
+   "baslik": "Amazon Stock Pays $0 in Dividends. Here's Why Long-Term Investors Should Own It Anyway.",
+   "ozet": "Ultimately, it is difficult to argue with a 251,000% lifetime return.",
+   "url": "https://finnhub.io/api/news?id=dbe9450ec9de024303ab0f09867d7692f61b3a89a10d963ff549e791be1f195d",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-10-01T05:54:00+00:00",
+   "tarih": "2026-10-01",
+   "baslik": "Apple CoreGraphics PoC Emerges as WhatsApp PDF Checks Hint at Possible Delivery Path",
+   "ozet": "",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1rdW9rUUlIcGRXWHYtMkpXOW4yZVFheGdtczZIcGQxOGhEOF9oVEdEVEdDSHoxUk16cmVXWHZDbGw3Tk1EeDNvMjVTUGpHaFJhT1NYTDAtMkdIMVJZMm9TMWFUN2xjVS1uZ1h0Rmx3SkdkN01CUkdfaE82NUI?oc=5",
+   "kaynak": "The Hacker News",
+   "saglayici": "Google News RSS"
+  },
+  {
+   "zaman": "2026-10-01T04:13:04+00:00",
+   "tarih": "2026-10-01",
+   "baslik": "A stranger tracked me down on Instagram to body shame me, and I'm done being silent",
+   "ozet": "",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPZUtveHVJMW8wMUYtNVpmQkxVZEk5ZWFSQnJCUlVfVVM4U2YyV2ZFM0RNRG52dElnNk9WMkhJTFJkMWxSdHpjUlpFMnF3S1RaOWQ0dV9INERwQUdGTVE0dWVqcERWdmJBT0VNLTZ3Vnp0XzFpaHljVGowVUxKRWVPX2xEXzBRdmw5THo1b2RST3UtUWZrcThJNWFWWXlFa2pMQlQ1LUtmQlRqSDJuV3JoU2ZlaHVPVURqUW1yMG8yUkthdzFpTjF0QWVOTVZLak9CbVhtSkp3?oc=5",
+   "kaynak": "Yahoo Creators",
+   "saglayici": "Google News RSS"
+  },
+  {
+   "zaman": "2026-10-01T04:05:00+00:00",
+   "tarih": "2026-10-01",
+   "baslik": "Meta counted Mark Zuckerberg’s $4.1B stock payout as research pay to claim a $355M tax break — and the IRS wants it back",
+   "ozet": "Meta says Zuckerberg was writing code when he got his options in 2005. The IRS says only his work from 2008 to 2010 counts, and $355 million rides on who's right.",
+   "url": "https://finnhub.io/api/news?id=33ec95c1f0ceb3141ee4c96bd32572993c77b3a4ea640c27c05c60135b2616f3",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-10-01T03:55:00+00:00",
+   "tarih": "2026-10-01",
+   "baslik": "Meta reportedly calls its AI data centers ‘pilot models’ — its research tax credits jumped from $700M to $3.9B",
+   "ozet": "The company appears to have netted the most from that credit among all publicly traded companies.",
+   "url": "https://finnhub.io/api/news?id=73a6b3acf6abccb23eda01e659055599fcb1fce5052a73eb838971bfb1742182",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-10-01T02:09:00+00:00",
+   "tarih": "2026-10-01",
+   "baslik": "WhatsApp expands parental controls to teen accounts with group alerts, Meta AI restrictions",
+   "ozet": "",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZDZBeERaUWtaWC04UVZhMkV1aWpEV21rQlFWX00wWjA1anAzOUdMckdyZWxMQUg3MThOQjNuUEZ3T3VYY0JwV1ljY0JGSXpxZGRJbXpaakp0ZFlNdS1aN29YWlBfYURKSDVXdUxyOURDR1V2RlBZV0U3RFJPQS1EenpWYmtBMlRuRVdMSmZCdWM0bE8yVHgzVWNuZUpwQkp2VGpjODJWT0wzRnJ1Z0dMM2pwcWNsemltNENXOHBJTQ?oc=5",
+   "kaynak": "9to5Mac",
+   "saglayici": "Google News RSS"
+  },
+  {
+   "zaman": "2026-10-01T01:37:00+00:00",
+   "tarih": "2026-10-01",
+   "baslik": "Carvana, CarMax jockey as agentic AI tools look to fix the worst parts of car buying",
+   "ozet": "AI shopping agents could make price, inventory, and fulfillment more important than the digital storefront.",
+   "url": "https://finnhub.io/api/news?id=beb32d03e591b413cf1dbaaa5adc61214baf07d5e70a7cf5700e5d149975e229",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-10-01T01:03:00+00:00",
+   "tarih": "2026-10-01",
+   "baslik": "Bank of America warns Apple investors because of Meta's Muse",
+   "ozet": "Bank of America sees something changing beneath the surface for two tech giants.",
+   "url": "https://finnhub.io/api/news?id=2bc76414ccf46b7763fb166303f76c97cd55493e8929a09047c4416a9abbc212",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T22:47:59+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "'AI or bust:' Tech trade powered stocks through volatile September",
+   "ozet": "Wall Street fared better than expected in September, given the month's historical reputation as the worst month for stocks.",
+   "url": "https://finnhub.io/api/news?id=170ba7372fe2294fc40a734dde16cf0abff20301866e10da30e83de3d900198f",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T22:35:21+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "VIG Cannot Own Meta’s or Alphabet’s Dividends Until 2035 at the Earliest: The 10-Year Rule Written Into Its Index",
+   "ozet": "VIG promises exposure to America's greatest dividend growers, but a single rule in its index methodology keeps two of the biggest new payers completely locked out for the next decade.",
+   "url": "https://finnhub.io/api/news?id=385fe360bd925dc7aec0eaf265ded2160ac19c98a77a7438b11801e72ced6398",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T22:33:21+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Tech CEOs questioned Anthropic leader over AI safety warnings, WSJ reports",
+   "ozet": "Investing.com -- Top artificial intelligence executives confronted Anthropic (NASDAQ:ANTP) Chief Executive Dario Amodei during a high-stakes White House gathering, exposing deep strategic fractures across Silicon Valley even as leaders publicly aligned around new safety protocols. The private clash followed a lunch hosted by President Donald Trump and House Speaker Mike Johnson, according to reporting from The Wall Street Journal.",
+   "url": "https://finnhub.io/api/news?id=2e7c30b64a15bca359cc262d3161efd378f87d094791c9aa2fa423cbb8138cad",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T22:19:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Inside Zuckerberg, Huang’s push for White House AI pact",
+   "ozet": "",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNOURTbFpaOVQyYWZYcDhnWEtUMWZPNXdNRmE2UzBUb2IwNUg4UWF0bnoxeFg1NFJHYW1iSWlOMEhET01USmtPam1GMHZaeWZzTl9lcDFSd2RJeVVmZW1vbDZ4eG9Zbkd3a3Z0d21iM255MmZQcVhHYUoyTV9aQmtVdTB0cHVlekptRDFGdVM4OA?oc=5",
+   "kaynak": "Politico",
+   "saglayici": "Google News RSS"
+  },
+  {
+   "zaman": "2026-09-30T22:05:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "In AI Race, Software Is Now Winning Alongside Chips",
+   "ozet": "Services like Meta’s Muse AI just increase demand for chips. But they’re also a big win for software",
+   "url": "https://finnhub.io/api/news?id=95bd5ac68e57c5a9991fc6b2f4a279e49e2c1b61ee64e24e0a4cf8e70818f5ee",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T21:33:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "JPMorgan sends a strong message to Mag-7 stock investors",
+   "ozet": "Wall Street has been watching the Magnificent Seven slide all year. JPMorgan just weighed in.",
+   "url": "https://finnhub.io/api/news?id=5d3c1a924a076dd4a318800346bb7a073aa74b0c7fb9e2beed62fe6dc73e49f5",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T21:32:06+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Consumer Groups Press Congress to Probe Scams on Tech Platforms",
+   "ozet": "A coalition of advocacy groups urged key lawmakers on Wednesday to hold technology companies accountable for alleged scams occurring on their platforms.",
+   "url": "https://finnhub.io/api/news?id=53c921321b553dc7a52355da719a952e0083093dffcd98e537f74bf071890e07",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T21:07:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Florence Pugh Slams Instagram After Two Cornell 7 Posts Get 'Censored'",
+   "ozet": "",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNYjQ5cUZlX09QYmwwNTZ4UWdtektmZkZ1aElMaDNOSS1DWmRuVzlONmoyRTQxWDA2RUdHdndjMW5ic18zeVZtd3Z3ekkzV1hOTGJuNGxOYUN2Wk1DeC1GajBqMGt6aDZ3bzhGNGwtbDF5THZwanNka0poejVOX2stZXhXcGdGWnprN3ZLYjczMERIVS16N2hIRExaUkdqS3FWYlVLaEZHVXo5ZjBB?oc=5",
+   "kaynak": "variety.com",
+   "saglayici": "Google News RSS"
+  },
+  {
+   "zaman": "2026-09-30T20:45:02+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Meta Platforms (META) Registers a Bigger Fall Than the Market: Important Facts to Note",
+   "ozet": "In the closing of the recent trading day, Meta Platforms (META) stood at $725.18, denoting a -1.84% move from the preceding trading day.",
+   "url": "https://finnhub.io/api/news?id=de2fcd9660f1058a2de7d5b9b79299946dce488ec9852ed0d272f3ddc7d2bb2c",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T20:41:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Exclusive / How Zuckerberg shaped Trump’s AI industry pledge",
+   "ozet": "",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPWDRuQ01kVGRNWEFnMWNGTF9SSFdpaDl2a3dGb24tbzJqU3dnaXNZQmVWS1EzQjFtRjlMUXUwLXplbkhkQTZYN2J4VmNsYjRDYl9HRmZLdHNvTEdGMmlqQmNnd1F2YWl2OTFaa1V1a3EtU2EzM2RVbWpLUVZiczZScVVKaU9mNFhwdU8yLW40T09oOUh3?oc=5",
+   "kaynak": "Semafor",
+   "saglayici": "Google News RSS"
+  },
+  {
+   "zaman": "2026-09-30T20:05:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Yext Signs Definitive Agreement to Acquire Flamel.ai, Extending Its Agentic Marketing Platform Into Local Paid Media",
+   "ozet": "NEW YORK, September 30, 2026--Yext, Inc. (NYSE: YEXT), the enterprise marketing platform for an agentic world, has signed a definitive agreement to acquire Flamel.ai. Flamel.ai helps multi-location brands run localized paid campaigns across Google, Meta, and ChatGPT. This news was announced today at Envision, the company’s customer conference.",
+   "url": "https://finnhub.io/api/news?id=7656204197e672d3b85199f5f438ec4c5cd3077fca312c4756b78e3b54903282",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T19:48:14+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Top-Ranked Apps Like Muse AI Send Meta Shares Soaring",
+   "ozet": "Meta Platforms, Inc. (META) shares up 1,781% since first institutional outlier signal in 2013.",
+   "url": "https://finnhub.io/api/news?id=d54d8c8d4f72821b9138727b360d1aad6aae0ce78ff00153c1a129e5579518f9",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T19:20:01+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Alphabet vs. Meta Platforms: Which Media Stock Is a Better Buy in 2026?",
+   "ozet": "Alphabet boasts a 32.8% net margin and fortress balance sheet, while Meta's 22.2% revenue growth signals stronger momentum, but their risk profiles diverge sharply.",
+   "url": "https://finnhub.io/api/news?id=5bceab2bac74aef23be7c1f95f359bde3d84abc57b5d230a1bfd824d3745393a",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T19:10:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Meta Platforms Is Making a Push Into AI Hardware. History Says Apple Investors Shouldn't Worry.",
+   "ozet": "The social media giant continues to try to establish a stronger competitive position in physical devices.",
+   "url": "https://finnhub.io/api/news?id=27d14a5d52cec1809e8dfbda6b3b40ad50700ab104797d63328bc1482989fabd",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T18:58:20+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "FTC reportedly looking into whether OpenAI, Anthropic violated consumer protection laws",
+   "ozet": "The FTC is reportedly preparing an investigation into leading AI labs over potential consumer hams.",
+   "url": "https://finnhub.io/api/news?id=ca7d22d6f98957ab3ebe007176a87463c5598922eb77078f01d1955d4b3b7f88",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T18:33:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Jim Cramer says battered travel stock everyone uses is a 'steal'",
+   "ozet": "“It may be my absolute fave of the Muse casualties,” said Cramer.",
+   "url": "https://finnhub.io/api/news?id=4cfae91149493d5204f61a3354d87e4393b8011cb707bd23e70fe8cb346526ea",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T18:32:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Oracle Stock Is Down 60% From Its High. Here's Why I'm Still Not Buying.",
+   "ozet": "Oracle's AI business is booming. The question is whether its cash flow can catch up with its spending.",
+   "url": "https://finnhub.io/api/news?id=7497e076cb0508135a64dcf3be06ba5a6124ddd2c84eef6f1708a0a73eb2a543",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T18:15:41+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "What makes OpenAI's GPT-6.1 Sol model unique",
+   "ozet": "OpenAI (OPAI.PVT) made several announcements at its Dev Day on Tuesday, including its new GPT-6.1 Sol AI model. In The Loop host Ejaaz Ahamadeen explains the ins and outs of the new model in the video above.",
+   "url": "https://finnhub.io/api/news?id=ad0a6a6214dab5aa2d7880ea6320017794fd0c2f55b697b32a1a42e51fa55c7e",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T18:12:02+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Unity Software Surges 5% as Traders Weigh Meta Platforms VR Glasses Support; Adobe Rises 3%, Intuit Adds 2%",
+   "ozet": "Unity Software jumped after announcing day-one support for Meta's next-generation VR headset, but a timely product catalyst and a struggling business are not the same thing, and traders now face the harder question of which one matters more.",
+   "url": "https://finnhub.io/api/news?id=a571eadbd7b858c4a9ca351a9362202b5572279496a1a79e459f15b7ec16c8e0",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T18:11:56+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "The oil and AI tug-of-war, the ‘AI OPEC’ idea, and grading September’s market",
+   "ozet": "Market Hang's panel discusses the tug-of-war between AI and oil, Liz Hoffman’s article, \"An 'AI OPEC’,” and gives their grades for September's market conditions. Today's Market Hang panel consists of host Turney Duff, Semafor Business and Finance Editor Liz Hoffman, TMX Wall Street Horizon Head of Corporate Event Research Christine Short, Kelly Intelligence Founder, CEO, and CCO Kevin  Kelly, and Yahoo Finance's Julie Hyman.",
+   "url": "https://finnhub.io/api/news?id=ea3522b098e596ff046e26bf548e8ddc005cd8970e7b6fcde948612a07ad3ed8",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T18:10:19+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "The S&P 500 Is Up in September, but Market Breadth Has Been Terrible",
+   "ozet": "The S&P 500 may narrowly end the month of September with a gain.  The market benchmark is up 0.2% on the month, while the Nasdaq Composite is up 2.4%.  The S&P’s second-consecutive monthly gain included major assists from Meta Platforms and Apple.",
+   "url": "https://finnhub.io/api/news?id=ce0be5009ca003a0f471cdc586d02396ddf1fe4fa7633907b77b182bb5c08b5c",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T17:38:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "MongoDB has AI momentum on its side, BofA says following investor day",
+   "ozet": "MongoDB Inc (NASDAQ:MDB) raised its long-term growth targets at its investor day, with Bank of America saying the event was a net positive and maintaining its Buy rating on the stock. For fiscal 2028 to 2030, the database company now targets total revenue growth of 20% or more, up from the...",
+   "url": "https://finnhub.io/api/news?id=24f01ea2765aaacfcad8665c9d0bfcb75927b32dd299516c1ed3af00d5a420ba",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T17:34:09+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Sector Update: Tech Stocks Mixed Wednesday Afternoon",
+   "ozet": "Tech stocks were mixed Wednesday afternoon, with the State Street Technology Select Sector SPDR ETF",
+   "url": "https://finnhub.io/api/news?id=ccbe097de06ad01327ecc5b99b64da6fd9ca720ded6a86d8a33569539bba93de",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T17:19:39+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Ultrafast mode: How OpenAI pulled off what Anthropic, Meta, & SpaceX couldn't",
+   "ozet": "OpenAI (OPAI.PVT) made several announcements at its Dev Day on Tuesday, including its new \"Ultrafast\" mode. In The Loop host Ejaaz Ahamadeen explains everything you need to know in the video above.",
+   "url": "https://finnhub.io/api/news?id=7014831bb41a142e256f7b1efaca7c87be4c14dc28434b7a025c01608ceb3d86",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T17:10:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Alphabet Rides on Google Services Growth: Can It Beat META & AAPL?",
+   "ozet": "GOOGL gains from strong Google Services growth as Search, YouTube, and subscriptions gain momentum, while AI boosts engagement and advertiser performance.",
+   "url": "https://finnhub.io/api/news?id=d05848414f7a3dc1a7a03dfe9d1d96a7f72aea80d83660daf99c16a7082616fa",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T17:07:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "The next big problem for AI agents is identity",
+   "ozet": "The technology making AI agents more capable has moved fast. The infrastructure making them trustworthy is still catching up.",
+   "url": "https://finnhub.io/api/news?id=c020844172a8d02af84340e725a3bfb68d5323b30280b3452fa93f164ca026ad",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T17:01:51+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Washington Refuses To Regulate AI",
+   "ozet": "The White House AI summit backs self-regulationâbullish for hyperscalers. Learn state-level risks to data center CapEx & top AI trades like Mag 7, MAGS & AIHY.",
+   "url": "https://finnhub.io/api/news?id=bd6dcad00dcb357187fce1e7713a91d262f823f473d2ce2e7cd252cfb7d2d8b8",
+   "kaynak": "SeekingAlpha",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T16:47:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Victoria’s Secret Sued By Model Over Instagram Ad Overreach",
+   "ozet": "",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPWU1JdjRUTGUwZGVZcktiaGJTRDE0cmpDT1pOVURKUnlDaEJMajFWWl94S2VmQXBTT3JROG9nUGlwODdYMjJ6cWM0eU1OaUd4dHRRVloxVTE3TW9DTTNaeUJpUUpkRWh6LUhFZEdVRXdRT2Z4N20xdVVHQkRVZjAyQ2xOYmFJV3lFN2Q2ZmNMZlBjV0VCSG5jalpLUQ?oc=5",
+   "kaynak": "news.bloomberglaw.com",
+   "saglayici": "Google News RSS"
+  },
+  {
+   "zaman": "2026-09-30T16:46:59+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Cramer Says Buy Apple Before New Phone Comes Out. Because Apple’s Duo Model Is, “Kind Of Astounding”",
+   "ozet": "Jim Cramer just called Apple's first foldable phone kind of astounding and told followers to buy shares before it ships, but a closer look at supply constraints, memory costs, and a one-time earnings boost raises real questions about whether the Duo can actually move the needle.",
+   "url": "https://finnhub.io/api/news?id=49cacb9c9c1d8eae92007f150c6e13417160ceb7987bfb2b4a354933b1295a61",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T16:40:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Here's What a $1,500 Investment in Meta Platforms Stock Could Be Worth in 5 Years",
+   "ozet": "The social media giant's stock has the potential to nearly triple in the next five years.",
+   "url": "https://finnhub.io/api/news?id=c97711782089904b16e10c1f13315021f88c581daff34a57415def776e75472e",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T16:28:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Code3 Celebrates Four Major 2026 Award Wins Across Meta and Amazon Ads",
+   "ozet": "Code3, an independent digital marketing agency uniting commerce, media and creative to drive full-funnel growth for modern brands, is celebrating another major industry win: the 2026 Amazon Ads Partner Award for Programmatic Optimization, earned alongside Gigi for work with Nordic Naturals.",
+   "url": "https://finnhub.io/api/news?id=9262ef44ea86115130e6b32d04c284553a50a1f5a55d59c55155a71f67ad5080",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T16:13:47+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "OpenAI's Dots agents will matter for crypto investors. Here's why.",
+   "ozet": "Scott Melker explains how OpenAI's (OPAI.PVT) new, always-on AI agent Dots will eventually have an impact on the crypto landscape.",
+   "url": "https://finnhub.io/api/news?id=d92477f3db2a05b5f901c4b453b9ec6d49534ad0e40885ea0d6b239e9a74d9c4",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T16:11:45+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Meta's Muse tops 5 million downloads, faster than ChatGPT, Claude",
+   "ozet": "Meta's Muse has topped 5 million downloads faster than ChatGPT.",
+   "url": "https://finnhub.io/api/news?id=dde6d7255fd708f66328953adcec78224337cdf13ae79030b80628bedfb9a164",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T16:10:32+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Needham names top SaaS picks amid Meta Enterprise Platform concerns",
+   "ozet": "Investing.com -- Needham analyst Scott Berg identified three software stocks as top picks following a recent market selloff triggered by Meta's Enterprise Platform announcement, noting that the new offering does not directly compete with enterprise software vendors in his coverage universe.",
+   "url": "https://finnhub.io/api/news?id=f780585e80668e58ed78611a1192777b226a0d8daa12853a9aaf4e8ae3126e34",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T16:07:35+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Alphabet Rallies 3% as Traders Weigh White House Safety Accord; Apple Gains 2.5%, Meta Platforms Treads Water",
+   "ozet": "A White House lunch brought together the biggest names in AI to sign a voluntary safety accord that Trump called morally binding, and the market reaction split sharply across Alphabet, Apple, and Meta Platforms in ways that reveal who traders trust most with the AI era.",
+   "url": "https://finnhub.io/api/news?id=e78302ba4b7d703ab42b3af3dca61ad71ef6c56cff4412ccefb1a4af1f1ce767",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T16:03:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Kin Welcomes AI Insurance Shopping: Muse Can Shop on Kin.com",
+   "ozet": "As some insurance companies and marketplaces move to block AI shopping agents, Kin is taking a different approach. Kin, the direct-to-consumer provider of insurance and home finance solutions for homeowners, today announced that it will allow consumers using Meta's Muse AI agent and other AI agents to easily shop for insurance quotes through Kin's digital experience.",
+   "url": "https://finnhub.io/api/news?id=90a5efc42f222df85bf2383c5e7f6994a3873637ac8f5bb5539f5de0b0439be7",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T16:00:59+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "MongoDB Stock Regains Ground. How Investor Day Addressed CEO Leaving For Meta.",
+   "ozet": "MongoDB stock regained some ground Wednesday after news its CEO was leaving for a job at Meta Platforms caused a sell-off.",
+   "url": "https://finnhub.io/api/news?id=05ce5b2bda0dabc75027d75379cb815d08fb1633b49b0efeba9fd0a905de643d",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T15:48:47+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "What Could Derail AppLovin Stock?",
+   "ozet": "AppLovin (APP) holders have been through a rough stretch. The shares lost 54% over the past year, while the S&P 500 gained 16.8%. A $10,000 holding from a year ago is now worth about $4,560. In September, law firms began announcing a securities class action over what AppLovin told investors. For you, the bigger issue is a business problem, not the legal fight. So what is the biggest risk for AppLovin stock from here.",
+   "url": "https://finnhub.io/api/news?id=d788ef14cab400bf3ea80c677861ca11035b249e00c63f1ce479d68f854cf3f0",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T15:31:28+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Safety Disclosures in Instagram Skin Care",
+   "ozet": "",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZkVxeE9rT2RJRS1aeTBNMy03eGZmVjNvcEJtNnhKNHJZNVE5STFhdHJ6MkJSWmpwZGVMc3Jtck5rQzltRlFwa1NzTnIxYy1sN21LSDl1TU1QQXU5ZmJOSHlCdjRLWWJXeGlkb0pibVdOZjhSTFdnLXFPdEo4Q2NqZXZ5amdSU2E0ZzBUamNwVUpLcVM5S1hlem1lUmxNQV9OQm95WFZvRmtFUXBm?oc=5",
+   "kaynak": "Medscape",
+   "saglayici": "Google News RSS"
+  },
+  {
+   "zaman": "2026-09-30T15:28:34+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Top Midday Stories: Fed's Preferred Inflation Gauge Rises as Expected in August; AI Companies Sign White House Accord",
+   "ozet": "All three major US stock indexes were up in late-morning trading Wednesday after the latest reading",
+   "url": "https://finnhub.io/api/news?id=c51fe03761bdf6a695ea9c95b6ae8be182927ca0959f6e0ca8872796207e1991",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T15:07:32+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Jensen Huang's biggest Q3 moves, Rubrik CEO talks tech & cybersecurity",
+   "ozet": "Yahoo Finance Executive Editor Brian Sozzi takes a look at the biggest stories as the trading day kicks off, weighing in on Micron (MU), SanDisk (SNDK), Jensen Huang's big third quarter, and more.Rubrik (RBRK) CEO Bipul Sinha sits down with Sozzi for a conversation about the state of tech and cybersecurity.",
+   "url": "https://finnhub.io/api/news?id=93c2707e2f0a9186fdc9d902e22d99166b282dd6cefb5bab97000b1450b46872",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T15:00:23+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Meta Stock Could Be Worth Much More If Its AI Strategy Pays Off",
+   "ozet": "Meta is riding a 25% monthly rally while simultaneously pouring over $130 billion into AI and watching free cash flow crater. Whether that gamble transforms the ad giant into something far more valuable depends on a few critical variables analysts are split on.",
+   "url": "https://finnhub.io/api/news?id=017b1425c9698e9d16834379721f56834544526d5c497d09abdbdc16b98b86c2",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T14:39:33+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Remember Siri? In the Muse and Dots era, Apple needs to pick it up.",
+   "ozet": "Yahoo Finance Executive Editor Brian Sozzi sounds the alarm about Apple's (AAPL) Siri as new AI assistants from Meta (META), OpenAI (OPAI.PVT), and Salesforce (CRM) flood the market.",
+   "url": "https://finnhub.io/api/news?id=5f62921f3a4198511b8c8fc571690cfa63fda26d18efa7576f3fe5329bd6b45b",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T14:30:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Instagram rolls out an AI video assistant for creators",
+   "ozet": "",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPS1Nxa1djM3BqQV9HUkJrRF9RRWJLSEdUZGtHN2VIUVRBaE9oZWF3SUM1YkxwMmNXMHQ0QzVzYTdFRzFvNFV6OWx0clNkLVN1MDVncVdyYzdkcjRzNi13OEpOOEFrbGtsblZhYnFWR1RRTzB6am5hbGpwRmU2V3ZNeGpFMFlGTjQzdU83OTlPWW1DUTA?oc=5",
+   "kaynak": "TechCrunch",
+   "saglayici": "Google News RSS"
+  },
+  {
+   "zaman": "2026-09-30T14:29:34+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "From equations to Instagram feeds: how ‘algorithm’ changed its meaning",
+   "ozet": "",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOeEFsZzRreXZQZjJvMUFPVjIzYWZVRk1BZ2dRX3ZERF80aWVHdlRDZUQ0d1Y0OXlsd2gwYTRTQkktVGNpcjVfU0wxSlNXaHRCVTczVjk5YndTQlJDb3NZYXFRSnBmeE9CWXJSTkUzQXdBLUZLb0JDQkdPRlhyclFpbmdpN2ZUbkxTbjlfS0lsbGxuSHQ3WEQtblMxaHVqUUVrUmxJdw?oc=5",
+   "kaynak": "The Conversation",
+   "saglayici": "Google News RSS"
+  },
+  {
+   "zaman": "2026-09-30T14:25:06+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Could Amazon Stock Survive AI Spending Outrunning Its Cash?",
+   "ozet": "Amazon now spends more on building its business than the business brings in as cash. On its July 2026 earnings call, management raised its 2026 spending plan to about $220 billion. Most of the prior $200 billion budget had been allocated toward AI and AWS. Management has not said when the spending will slow, though it noted on the call that Amazon has already issued debt this year and cited further borrowing among its options to cover any shortfall. So could Amazon keep paying for the build-out",
+   "url": "https://finnhub.io/api/news?id=cf26d14d1d6279ddbbdadae9810d248328028cbc74fadb362302fc47a9fb2754",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T14:18:42+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Snap Jumps 6% as Fundamentals Outweigh Regulatory Pressure; Reddit Gains 4%, Meta Platforms Dips",
+   "ozet": "Snap is surging while its biggest rival in digital advertising slides, and the split reveals a battle investors in social media stocks cannot ignore right now.",
+   "url": "https://finnhub.io/api/news?id=8661cda64b9ccb54888ce882d44ec9ea6a80b40d3838f1f419108dde66832fe7",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T14:16:44+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "OpenAI Launches Muse Competitor. Meta Seen As 'Clear Leader' In Personal AI Agent Battle.",
+   "ozet": "Meta stock pulled back slightly early Wednesday after it initially climbed following OpenAI's presentation of Dots.",
+   "url": "https://finnhub.io/api/news?id=bf44c3896d1251fa262ee186463f068fc3a4e08661eaaa99b6d0d0da5325aeea",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T13:56:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Meta Stock Slides as Muse Faces OpenAI Threat",
+   "ozet": "The Facebook parent’s move into AI personal assistants may end up costing more than its worth, StoneX analyst Mark Zgutowicz says.",
+   "url": "https://finnhub.io/api/news?id=2ea158198f59abd89aa7f719bdbbf589be2f3fd30fedbc462a0801faa5b1876f",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T13:50:17+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Big Tech's equally big debt pile is raising concerns about the AI boom",
+   "ozet": "The total capital raised by AI hyperscaler, data center, and neo-cloud companies from high-grade debt sales has doubled from $172 billion in 2025 to $346 billion in 2026 year-to-date, according to Barclays strategist Venu Krishna. Yahoo Finance Executive Editor Brian Sozzi reacts to Krishna's findings and what it means for the AI ecosystem, especially as major companies prepare to go public.",
+   "url": "https://finnhub.io/api/news?id=43bce7fb64f0459dd6ac0e705a6aae8340998c354362638057e7ccb8215722fc",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T13:50:16+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "WhatsApp adds new parental controls for teen accounts",
+   "ozet": "",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQVlhmNGpyeFpxMmpodUdGMnRJTjBHR0NaV0pjNW9JV3lxNG1ZWFVlX2ItX0ZDWFBjcDhjOGZ3YmpnVHVXM0VZcElqYWxtV2hnaUxiZDZQcklZNnRhRl9YNFo3QXBiR25NZTlkcDh5d2pEMlE0UFFFeE8wSnJnNjZnY1hpQkFOTEhCT2xldzZwTHlmdw?oc=5",
+   "kaynak": "TechCrunch",
+   "saglayici": "Google News RSS"
+  },
+  {
+   "zaman": "2026-09-30T13:47:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Meta's Stock Has Rocketed Over 30% in the Past Month. Here's How the Embattled \"Magnificent Seven\" Company Completely Flipped the Script",
+   "ozet": "The release of Meta Muse made investors bullish on the company.",
+   "url": "https://finnhub.io/api/news?id=bc94bc5c85359413a26d4e9d79ff3e8fef4836246eb77bd3759d8c90eb1e7bc5",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T13:45:30+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Micron reports Q4 today: Why Lynx Equity sees massive upside",
+   "ozet": "Investing.com -- Lynx Equity Strategies is positioning long on Micron Technology (NASDAQ: MU) ahead of the company's highly anticipated fiscal fourth-quarter earnings report, scheduled for release today after the market close. Alongside its Q4 results, Micron will provide critical quarterly guidance that investors are closely watching to gauge the longevity of the AI-driven memory boom.",
+   "url": "https://finnhub.io/api/news?id=dddd365d56047e77a10c47d3445de08a48e6cc360b974f5f058573d142230164",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T13:35:17+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "What Is Going On With Alphabet Stock?",
+   "ozet": "Alphabet (GOOGL) stock costs 22% less than the median S&P 500 company, measured by price against the past year's earnings. Alphabet's revenue still grew 20.1% over the past year, against 8.3% for the median S&P 500 company. Investors usually pay more for faster growth. So is Alphabet stock a bargain, or is the low price a warning.",
+   "url": "https://finnhub.io/api/news?id=49d1d3b79d7dc5a1efd555d654302647783c97744349a8e8cb34cf1ff6d695be",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T13:17:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Virtuix Expands Omni One for Quest Library to 75+ Games as Meta Unveils Next-Generation VR Glasses",
+   "ozet": "Omni One Orders Up 3X Quarter-to-Date Following June Meta Quest Launch Launch of New Meta and Valve Headsets Signal Continued Investment and Innovation Across VR Ecosystem AUSTIN, Texas, Sept. 30, 2026 (GLOBE NEWSWIRE) -- Virtuix Holdings Inc. (NASDAQ: VTIX), a leading developer of AI-driven, full-body simulation systems, today announced that its Omni One for Quest content library has expanded to over 75 compatible or upcoming Meta Quest titles, as continued hardware innovation from Meta and Val",
+   "url": "https://finnhub.io/api/news?id=da9c77e2581134ccb19658af50579813010361a61855f0e3b0ada76063f77927",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T13:01:30+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "WhatsApp introduces optional parental controls for teenagers",
+   "ozet": "",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9NdG1fYlBWem1tRThLQnhyVnVNVUlJcTg4TTNlc2M2MnlmVlBrUDEwSXpLc1hRQ01ST2RqTDJXNk5nSFphN05pRy11WERWbElSMC12Z2V0Z3l3WEk?oc=5",
+   "kaynak": "BBC",
+   "saglayici": "Google News RSS"
+  },
+  {
+   "zaman": "2026-09-30T13:00:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Abbott hosts conference call for third-quarter earnings",
+   "ozet": "Abbott (NYSE: ABT) will announce its third-quarter 2026 financial results on Wednesday, Oct. 21, before the market opens.",
+   "url": "https://finnhub.io/api/news?id=e96441c578b2005cbdb75492fe76d4c9be0ab21b62f504ea058ab7589ac2ac07",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T12:44:22+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Meta: From Hated To Loved, The Story Did Not Change",
+   "ozet": "Meta Platforms, Inc.âs new AI launches clarify monetization as Muse and business tools scale. Click for this META stock update.",
+   "url": "https://finnhub.io/api/news?id=ef20a453dd029159b9dbf933a487e1ee9d3539ee33bfaaed6c8b41721e58a145",
+   "kaynak": "SeekingAlpha",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T12:26:36+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Bank of America Flags Surprising Risk to Apple Stock",
+   "ozet": "The bigger threat may have little to do with iPhone sales.",
+   "url": "https://finnhub.io/api/news?id=8be6b79d823a39a6e73c2fc096879317bf7429491cfe77f02253f7dc16139d3f",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T12:12:31+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Why Is Apple Stock Falling When Chipmakers Are Rising?",
+   "ozet": "Apple stock drops 2.7% on a double top and Ternus restructuring news. See the support levels traders now watch.",
+   "url": "https://finnhub.io/api/news?id=bdd6871d37f08c701e7abd8a2c02207a4e1b7e8db58f8c455f96d6cf0e0cea7e",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T12:08:09+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Meta Faces Challenge in Enterprise Market As OpenAI Launches Autonomous Dots Agents",
+   "ozet": "Key Stats for Meta StockPrice change for Meta stock in last 6 months: 29%$META Stock Price as of Sep. 29: $73952-Week High: $780$META Stock Price Target: $794What Happened?OpenAI unveiled a new set of AI agents called “dots” on Tuesday.",
+   "url": "https://finnhub.io/api/news?id=021dfaeb9209ebe03551cdcfb013522ba26453fdd48da1435b141150eb5f285b",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T12:00:03+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "If You Invest $1,000 in Meta Today, Here’s What It Could Be Worth by 2030",
+   "ozet": "Meta is spending more than a hundred billion dollars on AI while free cash flow has cratered and earnings missed expectations, yet a five-year price model still sees your stake growing substantially. The question is which scenario plays out.",
+   "url": "https://finnhub.io/api/news?id=f318fda2382c4e14b35eed3fa393b4ca527651b157fcc3b38606c5ec4bd55989",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T12:00:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Meta Launches Partnership With Recycled PET Manufacturer",
+   "ozet": "This partnership will fast-track development of MacroCycle’s first American PET recycling and production plant.",
+   "url": "https://finnhub.io/api/news?id=66eb847d6bae845e5ec1e948292d584815deb7435ceaa4babb27824b70143064",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T11:53:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "It’s Inflation Day and the Stock Market Is on Edge",
+   "ozet": "Megan Leonhardt explains that the way the government is measuring several prices is changing so the big takeaway for the next inflation report will be less clear cut.  Micron  which posts earnings after the bell, was one of the biggest movers before the market opened along with  Cal-Maine  which fell as much as 7.7%.  Well now they have fallen back down—and the egg producer’s quarterly sales declined more than 40%.",
+   "url": "https://finnhub.io/api/news?id=6030efb25abaee424cdadbec0b4c5c035b7580b19cce79c00c245ae6cd82e817",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T11:51:06+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Meta cut its tax bill billions by labeling AI data centers experimental",
+   "ozet": "The company's research tax credits trimmed $3.9 billion from its 2025 tax bill, up from $700 million in 2023",
+   "url": "https://finnhub.io/api/news?id=75362e589cf71b3165d971a2225b6fabaf4f0a2ede9733b6a78f233c8c365ba0",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T11:42:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Meta Platforms Is Up Nearly 25% in September. Does It Have Room to Rise Further?",
+   "ozet": "Meta Platforms shareholders had a great September, but October will also be a telling month for the stock.",
+   "url": "https://finnhub.io/api/news?id=13adfcc9a66dacb93ebc35a539710763d01a05ecef6af1b3617e3cf90b6b5f84",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T11:31:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Musk, Zuckerberg and Amodei react to Trump's self-policing AI pact",
+   "ozet": "",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNaUpYNHlhRVRvV1Y5SThUWEpib3ExTjVSS1Z6RGdsVnE2REhHclcyQXRoYUx2T1FXemUzaEk1dkNOUnZhWjFNTGRYRXVEc0tDaXpiSzMtRXVSb3JrNENXbVdUT0xuUkZ4YzRlWEtNdlF6b214cjhZTjRTcE11QVVPMnJrVElKb01kQzk3TXdkYm1TeHN3WHl2UUlfd0w5cjg0cDlzQnBRQQ?oc=5",
+   "kaynak": "CBS News",
+   "saglayici": "Google News RSS"
+  },
+  {
+   "zaman": "2026-09-30T11:23:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Meta Stock Slides as Meta’s Muse Faces OpenAI Threat",
+   "ozet": "The Facebook parent’s move into AI personal assistants may end up costing more than its worth, StoneX analyst Mark Zgutowicz says.",
+   "url": "https://finnhub.io/api/news?id=4a19b04f4f649fe5f70a00f6f049d0a55dec18ac18e8765a437293bdc917f372",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T11:22:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Amazon Stock Has 46% Upside. Muse and Dots Threats Are ‘Overstated.’",
+   "ozet": "Amazon stock has 46% upside even as Wall Street worries AI consumer AI agents could hit the business, according to one Wall Street firm.",
+   "url": "https://finnhub.io/api/news?id=0a4f13400531f5bbec3d95e045f18ac3db63df098ebe6dacf3394f1203e2cbbd",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T11:07:06+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Nvidia CEO Jensen Huang: AI data center build-out could create 1 million jobs and reshape the US economy",
+   "ozet": "Nvidia (NVDA) CEO Jensen Huang, sitting next to SpaceX (SPCX) and Tesla (TSLA) CEO Elon Musk, said the AI data center buildout will create \"probably about a million jobs.\"",
+   "url": "https://finnhub.io/api/news?id=55b92248f3b7ddcb83acc800231305d7469e90dc34de4314f1786a6e1c05139b",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T11:02:49+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Truist Assesses Potential Impact of Meta Muse AI Agent on Online Travel Agencies",
+   "ozet": "Meta Platforms’ (NASDAQ:META) newly launched Muse artificial intelligence agent has increased investor attention on online travel agencies because of the application’s ability to book travel, according to analysts at Truist. The brokerage said previously launched large language models appeared to have had a limited effect on online travel agencies’ share of bookings.",
+   "url": "https://finnhub.io/api/news?id=a7ec2645e2c5a9d0e98dde1d39e01e72167e42a2fc7f89d893f639e6b17b7523",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T11:00:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "OpenAI's Dots connect to 4,000 apps and never sleep",
+   "ozet": "OpenAI just unveiled Dots: an always-on AI assistant with 4,000+ tools that might just be the closest thing yet to Tony Stark's \"Jarvis.\" In The Loop host Ejaaz Ahamadeen explains how Dots stacks up against Meta's Muse and Elon Musk's Grok Bot, and how OpenAI's other Dev Day launches fit together with the new, 24/7 agent. If you want to know where AI assistants are headed, start here.",
+   "url": "https://finnhub.io/api/news?id=f176ede7444ef0683a82195580a89bda301107420de266d3c7bcb96164c7b133",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T10:19:44+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "OpenAI's DevDay: Private Intelligence Could Unlock Enterprise Growth",
+   "ozet": "OpenAIâs surging revenue, enterprise adoption and IPO outlookâplus risks like losses, privacy and trust. Read why I cannot recommend exposure to the company.",
+   "url": "https://finnhub.io/api/news?id=e67d37e816c83c0474bd0020d9a8f6d504c01bd01d902d4883664872b971cfd5",
+   "kaynak": "SeekingAlpha",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T10:16:40+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "JCE: Bond Market Turmoil Could Pose Problems For This Tech-Heavy Fund",
+   "ozet": "The Nuveen Core Equity Alpha Fund (JCE) offers an 8.67% yield and tech-heavy large-cap U.S. equity exposure, using a call-writing strategy.",
+   "url": "https://finnhub.io/api/news?id=312766d212be6da15879b2955cc794db1a216bf06156073bbefc4a3d561f48b8",
+   "kaynak": "SeekingAlpha",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T10:11:27+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Google, Anthropic, Meta, Nvidia, OpenAI, xAI Executives Sign White House Accord on 'Super Intelligence'",
+   "ozet": "Alphabet's Google (GOOG, GOOGL), Anthropic, Meta (META), Nvidia (NVDA), OpenAI and SpaceX's xAI (SPC",
+   "url": "https://finnhub.io/api/news?id=e75d8fd4356ca607e222ad6475e00056229b113b40d9b63e8d7be16e21cee9bf",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T10:09:44+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "PayPal (PYPL) Stock Looks Reasonable Based On Current Earnings",
+   "ozet": "PayPal Holdings has seen its share price fall sharply over the past few years, even as new partnerships put the company back in the headlines. With the stock around US$53.89, the question for investors is whether that price is adequately backed by the earnings the business is generating today. PayPal shares have declined 79.4% over the past 5 years, which puts the focus squarely on whether the current earnings profile supports where the stock now trades. Fresh tie ups with Meta on AI driven...",
+   "url": "https://finnhub.io/api/news?id=5b8d6241a302d1580626e6ba3601ef996e3a8ee72d131342a2744e9ac3d699e1",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T10:08:47+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "AI in America has a huge 1.7 million job shortage problem",
+   "ozet": "Got skilled workers?",
+   "url": "https://finnhub.io/api/news?id=850daf5a30871df0216aeacc228c972f4606806b7fdf905eca76563e1c26e47b",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T10:00:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "HighLevel connects to Muse, a new AI product from Meta, bringing AI into everyday business workflows",
+   "ozet": "HighLevel, the AI-powered operating system for businesses, agencies and founders, has announced that HighLevel now connects to Muse, a new AI product from Meta, giving businesses a way to use Muse across the workflows, conversations, calendars and customer information they already manage in HighLevel.",
+   "url": "https://finnhub.io/api/news?id=ffc39022c275fb593886e8f520a46cde4e1b77f0a8fd2f18995e2a6bf4d47846",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T10:00:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Alliance for America's Skilled Trades Expands with New Companies, Unveils New Research - The State of America’s Skilled Trades: A National Report",
+   "ozet": "DETROIT, September 30, 2026--A new report released today by the Alliance for America's Skilled Trades finds the U.S. will need to fill an estimated 1.7 million skilled trades openings each year through 2035, while training programs produce just 55 workers for every 100 needed.",
+   "url": "https://finnhub.io/api/news?id=504f29613b31eb5f5f053d73107da800e77c5ac364e56badbf5e345d82ec1414",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T10:00:00+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "The $3T AI spend, grid bottlenecks, and the indexing trap",
+   "ozet": "Kelly Intelligence's Kevin Kelly and Visible Alpha's Melissa Otto map out the next phase of the AI supercycle and break the massive energy grid bottleneck threatening the AI boom.",
+   "url": "https://finnhub.io/api/news?id=d1034a4ebf86c8ee8cf8b12310cd48cbbfe6cdd9a50e3a816b903d9d74dbe591",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
   {
    "zaman": "2026-09-30T09:58:52+00:00",
    "tarih": "2026-09-30",
@@ -9,6 +819,24 @@
    "ozet": "Eyes on tech penmanship.",
    "url": "https://finnhub.io/api/news?id=a9b37e8345986b8edacc784cd063df7f8eb171e1a2299aaa60d5c3a54b32cfaf",
    "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T09:58:52+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "AI companies just signed a White House accord, and tech folks can't get enough of the signatures",
+   "ozet": "Eyes on tech penmanship.",
+   "url": "https://finnhub.io/api/news?id=3b5c0af667193183a726d569e9eafbf0d7e7a8f3a0c72900504125601b05617c",
+   "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T09:18:43+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Virtuix Announces Expansion Of Omni One For Quest Content Library To More Than 75 Meta Quest Titles",
+   "ozet": "Virtuix Holdings Inc. (NASDAQ:VTIX), a leading developer of AI-driven, full-body simulation systems, today announced that its Omni One for Quest content library has expanded to over 75 compatible or upcoming Meta Quest",
+   "url": "https://finnhub.io/api/news?id=3116c534cd1b80721ab291de54f3013fa9a5059d56a9a3e281f353eef55ace14",
+   "kaynak": "Benzinga",
    "saglayici": "Finnhub"
   },
   {
@@ -30,6 +858,33 @@
    "saglayici": "Finnhub"
   },
   {
+   "zaman": "2026-09-30T08:19:54+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "What's Going on With Nebius Stock on Wednesday?",
+   "ozet": "Nebius Group (NASDAQ: NBIS) stock gained Wednesday following AI growth catalysts from OpenAI and Meta Platforms. Here is what is driving the move.",
+   "url": "https://finnhub.io/api/news?id=2a07ac3c82eb09ab0268c09c6417b47d34fa96746a6b7e9cd2be6d7b555a83dd",
+   "kaynak": "Benzinga",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T08:00:01+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "OpenAI follows Meta into the red-hot market for personal agents. But will users pay?",
+   "ozet": "Following Meta's blockbuster release of its Muse AI agent earlier this month, OpenAI jumped into the personal agent market with Dots.",
+   "url": "https://finnhub.io/api/news?id=c336a358297a50a5f788f378cd91773cbcbe6e953f4000b2445d8b011f032272",
+   "kaynak": "CNBC",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T07:51:35+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Booking Holdings: Meta's Muse Doesn't Break The ~9% Shareholder Yield",
+   "ozet": "Booking Holdings (BKNG) earns a Buy: strong cash flow, merchant model growth, and AI disruption fears look overdone.",
+   "url": "https://finnhub.io/api/news?id=540d8b9c1511335b68bcf94c9e10da58e10bed3e981e0ad3828337071377b3ce",
+   "kaynak": "SeekingAlpha",
+   "saglayici": "Finnhub"
+  },
+  {
    "zaman": "2026-09-30T07:50:00+00:00",
    "tarih": "2026-09-30",
    "baslik": "These 3 AI Stocks Are Poised to Be Big Winners from Amazon's Choice to Block Meta's Muse",
@@ -48,12 +903,66 @@
    "saglayici": "Google News RSS"
   },
   {
+   "zaman": "2026-09-30T07:31:56+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Meta’s Next AI Gold Mine? Muse Targets 200 Million Small Businesses As Zuckerberg Eyes Fees, Subscriptions",
+   "ozet": "Meta is expanding its #1 AI app with Muse for Small Business, tapping 200M merchants for automated ops, sales, and task management.",
+   "url": "https://finnhub.io/api/news?id=1d81ada80ecb934385cd0f2a0f1c6c5d5deca2c2e6d400f2327ec8fbb74a537a",
+   "kaynak": "Benzinga",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T07:00:01+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Trump's meeting with tech leaders leaves AI safety more unsettled than ever",
+   "ozet": "Following Trump's lunch with artificial intelligence leaders at the White House, the industry remains largely unchanged on AI safety.",
+   "url": "https://finnhub.io/api/news?id=959c50133f1ca89006712a2bbc401fd01d61a0e533bbdf116b3ebdfa2fa6407c",
+   "kaynak": "CNBC",
+   "saglayici": "Finnhub"
+  },
+  {
    "zaman": "2026-09-30T07:00:00+00:00",
    "tarih": "2026-09-30",
    "baslik": "Bull of the Day: Astera Labs (ALAB)",
    "ozet": "Triple-digit growth, consecutive earnings beats, and a juicy technical setup back the bull case.",
    "url": "https://finnhub.io/api/news?id=488c86af7be2a4c1abfe64a3213ea82fc2c20b8b7d9a0f870a4d0c4858af176a",
    "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T06:58:06+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Mark Zuckerberg's Muse Could Charge You for Saving You Money — META President Reveals AI Agent's Potential Monetization Model",
+   "ozet": "Meta President Dina Powell McCormick reveals Muse AI will monetize by taking a fee on user savings and offering paid subscriptions.",
+   "url": "https://finnhub.io/api/news?id=959c393f48cc9b2fcd093272be99bd409e9f63176ba6e484beedfe9cb8d31838",
+   "kaynak": "Benzinga",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T06:39:59+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Reported Earlier, 'Tech Giants Face Questions Over Secret AI Data-Center Deals; Democratic Rep. Jamie Raskin seeks information from Amazon, Google, Meta and Oracle' - WSJ Exclusive",
+   "ozet": "https://www.wsj.com/politics/policy/tech-giants-face-questions-over-secret-ai-data-center-deals-bdc9de98",
+   "url": "https://finnhub.io/api/news?id=e5ac72c4b2b61d2e998c0877a3760ceb5eb9bef4136abb7427636bc721793bb1",
+   "kaynak": "Benzinga",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T06:38:32+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Trump Rejects Deeper AI Cooperation With China, Says It Could Mean Giving Away ‘Lot Of Secrets’ — ‘Whoever Wins Super Intelligence Wins’",
+   "ozet": "Trump opposes deeper U.S.-China AI ties over security risks, while both maintain risk talks and tech firms adopt voluntary safety controls.",
+   "url": "https://finnhub.io/api/news?id=f6e38bd65dc68340dc61da75470ff2266ca78431369e25f4239ffd5a0d86a0fd",
+   "kaynak": "Benzinga",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T06:32:54+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "At 5% Yields, Big Tech Marches Onto the Death Ground",
+   "ozet": "Big Tech has marched onto &#34;death ground,&#34; risking trillions in AI capex against 5%+ yields. Will it spark historic growth or a bubble burst?",
+   "url": "https://finnhub.io/api/news?id=3c28c38d0630c21b651499a4488772e6e88943ee6169bfac474415b17253a401",
+   "kaynak": "Benzinga",
    "saglayici": "Finnhub"
   },
   {
@@ -75,12 +984,48 @@
    "saglayici": "Finnhub"
   },
   {
+   "zaman": "2026-09-30T06:10:54+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Instagram Ad Spend On Track To Surpass Facebook 09/20/2023",
+   "ozet": "",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPbFAwQWZ0THRETjdOdVYyblJhMXFxMVFydUdJUVVRRllRN2Z1MnhHbVVUdlZkQmtyQVVGSXdlTzUzdXZJR0xHUkRHQ00xYmpwRWtXTktUTkJteWhoc1ZsYUZTa3FVbkozdHlOYlk3S25sQXd0TC1tN3BvUjVIRnZUYnd3d3llUkEwY3FrWEJET2VCbmswTlhnTEtocDlfNWxPdWlUV0pDdnNHd1EzTGQweWZVVnlJVXhoYkJtbmZJRDFqSmIzMjdTTy1FYTJXTDBUdU81TERtbldaT19VRVFiYjZSWQ?oc=5",
+   "kaynak": "MediaPost",
+   "saglayici": "Google News RSS"
+  },
+  {
+   "zaman": "2026-09-30T06:06:52+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Could AI Agents Cut Apple Out of the Checkout? Analyst Flags Meta’s Muse Threat",
+   "ozet": "CNBC traders debate if Meta&#39;s Muse AI agent threatens Apple&#39;s App Store, as BofA warns AI could redirect user spending.",
+   "url": "https://finnhub.io/api/news?id=d66f88c7674c27ed34e988b0ec352e9bdca1461c5f0ab7a04883813876792310",
+   "kaynak": "Benzinga",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T05:53:45+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Sam Altman-Linked World Token Rallies 35% in a Month, Leaving BTC, DOGE Behind — Here's Why AI Agents Could Be Fueling the Surge",
+   "ozet": "World Network token staged an impressive rebound in September, climbing to its highest levels in over three months.",
+   "url": "https://finnhub.io/api/news?id=3b0ff4938069779a1d950f98f95f1e8b9a3601a32117d52995ea2af411a5ceb9",
+   "kaynak": "Benzinga",
+   "saglayici": "Finnhub"
+  },
+  {
    "zaman": "2026-09-30T05:33:00+00:00",
    "tarih": "2026-09-30",
    "baslik": "Zuckerberg lost $8.9 billion in a day as Meta's AI rally cracked: his net worth fell from $266.4 billion to $257.5 billion as Meta shares dropped about 4% to $749.26 after Goldman Sachs warned AI spenders need about $300 billion a year in AI revenue just to break even.",
    "ozet": "One Goldman Sachs note put a price tag on the AI boom, and Meta’s founder paid first.",
    "url": "https://finnhub.io/api/news?id=0b565584ed742e93763e03c39714309075484c614447d33a7c56a88334da78c0",
    "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T04:52:33+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "OpenAI CFO Accidentally Calls Dots as Muse Giving Meta's AI Agent an Unexpected Shoutout in Faux Pas Moment — Shay Boloor Takes a Dig at 'Brand Differentiation'",
+   "ozet": "OpenAI CFO Sarah Friar mistakenly called Dots “Muse” on CNBC, prompting Shay Boloor to mock the AI agent’s brand differentiation.",
+   "url": "https://finnhub.io/api/news?id=1f4fd83358b39836e7223c608a3bfc161f5bef0c4bb39b41c9692df15363073b",
+   "kaynak": "Benzinga",
    "saglayici": "Finnhub"
   },
   {
@@ -138,12 +1083,30 @@
    "saglayici": "Finnhub"
   },
   {
+   "zaman": "2026-09-30T02:19:35+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "CNBC Daily Open: AI will be marking its own homework — for now",
+   "ozet": "President Donald Trump has formalized his plan to rename AI as \"Super Intelligence\" as tech bosses sign an agreement to regulate the safety of models.",
+   "url": "https://finnhub.io/api/news?id=91c9b810202ec800fbd323cdede09c7aa0628c432bdb2f8986a46cbf8cebb0be",
+   "kaynak": "CNBC",
+   "saglayici": "Finnhub"
+  },
+  {
    "zaman": "2026-09-30T02:12:17+00:00",
    "tarih": "2026-09-30",
    "baslik": "Mark Zuckerberg Labels It 'Significant Positive Step,' Musk Nods Yes as Trump Inks New AI Safety Deal With Top CEOs",
    "ozet": "On Tuesday, President Donald Trump brought leaders of some of the world’s biggest AI companies together around a voluntary safety pact calling for independent audits, stronger internal controls and board-level oversight of advanced AI systems. Trump’s AI Safety Accord In a Truth Social post, Trump released the White House Accord on Super Intelligence, also described as a \"Joint Commitment on Frontier Responsibilities,\" after hosting leading technology executives at the White House. The agreement",
    "url": "https://finnhub.io/api/news?id=5492ee23a4bf8e7ae06b48b095ef2db0204bb26fe59174be277543c04ca48561",
    "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-30T01:06:01+00:00",
+   "tarih": "2026-09-30",
+   "baslik": "Steve Wozniak Shares 'Unique Perspective' on How AI Will Replace Humans, While Gene Munster Says Chatbots Will 'Blow' Users 'Away' Within a Year",
+   "ozet": "Steve Wozniak warned that AI could replace humans through chatbot attachment, while Gene Munster says few people grasp these bots&#39; power.",
+   "url": "https://finnhub.io/api/news?id=ce09f5441cc0e3768ba25df61f088b96064aab1d7ad20b6b3271e1c1ef0aeece",
+   "kaynak": "Benzinga",
    "saglayici": "Finnhub"
   },
   {
@@ -165,13 +1128,13 @@
    "saglayici": "Finnhub"
   },
   {
-   "zaman": "2026-09-29T23:53:50+00:00",
+   "zaman": "2026-09-29T23:08:59+00:00",
    "tarih": "2026-09-29",
-   "baslik": "Meta Platforms President Dina Powell McCormick goes one-on-one with Jim Cramer",
-   "ozet": "",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWXVYYTdua2JGWncyNHpmdF9wc2hSM21rOF9ycWg0bi1CSVh2X2hyU1FZRzc1eWhRSnY3WWRKTV83WldoZURJZi1jY2hkMENFdzdvLTVyQUlCZG1rNkJNekZyYWVoMEsxUlZzdnk0VHUwZFV2cFNIRXhmRzlfS1dvM1plZ2x6RlU5UXVSWXpoZENEWHhXMjBhWnFCcl92Vl9PS0FweFR3WEgyelgxM0RWYi0xam9JU1QwQk5YQmVn?oc=5",
-   "kaynak": "CNBC",
-   "saglayici": "Google News RSS"
+   "baslik": "Trump Doing 'Free PR' For AI Bosses, Says Ro Khanna: He Also Let Xi Jinping 'Walk Away' Without Tech Treaty",
+   "ozet": "Khanna criticized Trump’s voluntary AI pact with tech CEOs, saying he gave them “free PR” while failing to secure a AI deal with China.",
+   "url": "https://finnhub.io/api/news?id=4ac0b716b8b534e07d617680128ba1bde7a61efb02d90430beeee043e8dea25d",
+   "kaynak": "Benzinga",
+   "saglayici": "Finnhub"
   },
   {
    "zaman": "2026-09-29T22:11:22+00:00",
@@ -208,6 +1171,15 @@
    "url": "https://finnhub.io/api/news?id=615b7162b6eaf6b0f459774c262e937f67c680f35108b40823c55b60f222259a",
    "kaynak": "Yahoo",
    "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-29T21:20:59+00:00",
+   "tarih": "2026-09-29",
+   "baslik": "Zuckerberg describes 'historic' agreement between AI leaders and White House",
+   "ozet": "",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQWEN0WFAycGVzVjN4RHFSNVhMaGtkbWI1YzkxcHBzUmpZaXVZejl2TWVQWHp3bTZ2aUVVVFpacXN1UlVNb2RWREZOSHA5ejNWaFhJMHdvcGRvNG42ZDRYeTVGT0FMaU1pWTV2czhoSmdRVGV0dU9tNUVwMXFRN0YySEJROXROMEN1Vm1CNU1keUJ3ckJjU0lSOGRtWFJwVzl2WV9QX0VKbUI0VXJxVl93LTluaXg0ck9ZSFpNNVRUdDBUQQ?oc=5",
+   "kaynak": "NBC News",
+   "saglayici": "Google News RSS"
   },
   {
    "zaman": "2026-09-29T21:07:36+00:00",
@@ -261,6 +1233,15 @@
    "ozet": "Key TakeawaysMeta’s Muse rally helped push its NTM P/E from roughly 17x at its 2026 low to about 22x, even as earnings estimates moved much less dramatically. Meta is building a commercial path for its AI technology through Meta Enterprise Platform and the hiring of MongoDB CEO Chirantan “CJ” Desai.",
    "url": "https://finnhub.io/api/news?id=9eda3b34b1ca28546d0ec2f34665c395c67524a5e6838bd671837e213e1e275c",
    "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-29T19:53:51+00:00",
+   "tarih": "2026-09-29",
+   "baslik": "Meta Platforms President Dina Powell McCormick goes one-on-one with Jim Cramer",
+   "ozet": "Meta Platforms President and Vice Chairman Dina Powell McCormick joins 'Mad Money' host Jim Cramer to talk the launch of Muse AI, its data center buildout, the state of Meta's core business and much more.",
+   "url": "https://finnhub.io/api/news?id=5af5e61640ac35f295a8a6e0cf47a1bec0c4fb07961441ad76e8ae61c7e56f8d",
+   "kaynak": "CNBC",
    "saglayici": "Finnhub"
   },
   {
@@ -318,12 +1299,30 @@
    "saglayici": "Finnhub"
   },
   {
+   "zaman": "2026-09-29T19:14:08+00:00",
+   "tarih": "2026-09-29",
+   "baslik": "AI companies need to tell a better story, says Jim Cramer",
+   "ozet": "'Mad Money' host Jim Cramer talks what threats the AI trade is actually facing.",
+   "url": "https://finnhub.io/api/news?id=659b8c178e72947e6820bda4f0245f6abfd4b552526a40955a24f0acb5853c86",
+   "kaynak": "CNBC",
+   "saglayici": "Finnhub"
+  },
+  {
    "zaman": "2026-09-29T19:14:07+00:00",
    "tarih": "2026-09-29",
    "baslik": "Meta Stock Rises Higher as Enterprise AI Becomes a Fourth Pillar",
    "ozet": "Meta is packaging its models, agents and infrastructure for companies without disclosing pricing or revenue targets.",
    "url": "https://finnhub.io/api/news?id=a6f43aeeaa20d922467d469e99036b58c7f504865309e80b6a40d54229c96863",
    "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-29T19:12:15+00:00",
+   "tarih": "2026-09-29",
+   "baslik": "We have a President who says full speed ahead with 'super intelligence', says Jim Cramer",
+   "ozet": "'Mad Money' host Jim Cramer talks what threats the AI trade is actually facing.",
+   "url": "https://finnhub.io/api/news?id=5de58a51acf609b419cd4e8aba50615d5441dc7d5bf6c3e502044b4a6c0f90b9",
+   "kaynak": "CNBC",
    "saglayici": "Finnhub"
   },
   {
@@ -361,6 +1360,15 @@
    "url": "https://finnhub.io/api/news?id=724a728ca5e233e142dfe5cae4ec9b25c9415c4e2230796a27f6f2ea29ebc481",
    "kaynak": "Yahoo",
    "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-29T18:46:00+00:00",
+   "tarih": "2026-09-29",
+   "baslik": "WhatsApp scam costs Lehigh County victim $2M in virtual currency, cops say",
+   "ozet": "",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVjNOSm54NVpJRFZoZGlzQ2F1M3pFa1NtRnBGMjdyVWF2ekdDQ3RqSVU3SmpMeVBMRnVtZmdrREhMSktWT2lpVVFhUWh1aldwdEk2LXdWSTluWjhiNV9uNEsxaVIxUzMyTDN1dXJQdE5rQnFZdVpVX0hpb00xc3lVWVJySEVXN3JzQl90MTBkdXg5a0NLQldLQWhMWnVSUmc5M0d2M05KZllvN0Via05GdlBIOU5sWUtFVE9oZl9Vc3Q?oc=5",
+   "kaynak": "LehighValleyLive.com",
+   "saglayici": "Google News RSS"
   },
   {
    "zaman": "2026-09-29T18:42:48+00:00",
@@ -462,6 +1470,15 @@
    "saglayici": "Finnhub"
   },
   {
+   "zaman": "2026-09-29T17:58:41+00:00",
+   "tarih": "2026-09-29",
+   "baslik": "Elon Musk, Jeff Bezos and Mark Zuckerberg among 31 guests at Trump’s AI lunch",
+   "ozet": "",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9PdVpFelZEOGtMejlwdWtzSEFzR20tb0RiYzRQQzdfTXdTR3FnSkMxM3hvZE5nVlZ1Xy16WGxaWHdLN3JzczRXNTNVRXRqdkdkcjBQVEpfQVRUMmtnT2o3MjA3dWJPWHNYM2hQUDR4UlAwcGc?oc=5",
+   "kaynak": "The Next Web",
+   "saglayici": "Google News RSS"
+  },
+  {
    "zaman": "2026-09-29T17:58:00+00:00",
    "tarih": "2026-09-29",
    "baslik": "Liberty High School placed on lockdown over Instagram threat",
@@ -489,6 +1506,15 @@
    "saglayici": "Finnhub"
   },
   {
+   "zaman": "2026-09-29T17:44:05+00:00",
+   "tarih": "2026-09-29",
+   "baslik": "BofA warns Meta's Muse could threaten Apple",
+   "ozet": "The 'Fast Money' traders talk BofA's latest warning to Apple.",
+   "url": "https://finnhub.io/api/news?id=38c5146872afb85cc46d57af000d28e76b3714e63a22ac18111ec8d7202e9ae0",
+   "kaynak": "CNBC",
+   "saglayici": "Finnhub"
+  },
+  {
    "zaman": "2026-09-29T17:43:07+00:00",
    "tarih": "2026-09-29",
    "baslik": "Apple Falls 2% as Bank of America Flags Meta’s Shopping Agent; Alphabet Slips, Microsoft Holds Steady",
@@ -504,6 +1530,15 @@
    "ozet": "OpenAI’s DevDay kicked off on Tuesday afternoon by introducing its own highly anticipated artificial intelligence agent.  CEO Sam Altman showcased “Dots,” at the beginning of his keynote on Tuesday.  Dots are “remarkably capable, always on agents built to handle really anything you can think of,” Altman said, before showing one working on website designs, decks, and managing users’ calendars.",
    "url": "https://finnhub.io/api/news?id=cb8b407140df7b6e9a92ade68792c12e5e452e98a98a7c85769b6a5a159f6eb5",
    "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-29T17:18:31+00:00",
+   "tarih": "2026-09-29",
+   "baslik": "Meta’s Muse Has Found Apple’s Weak Spot, Bank of America Warns",
+   "ozet": "Meta’s Muse could bypass Apple’s control of user intent, forcing Siri, Apple Pay and Apple’s AI strategy to evolve much faster.",
+   "url": "https://finnhub.io/api/news?id=02bb168956546b587a3f3ec81f96e9d13d0b33289adaab88bcfbf4acd21f8e45",
+   "kaynak": "Benzinga",
    "saglayici": "Finnhub"
   },
   {
@@ -525,6 +1560,33 @@
    "saglayici": "Google News RSS"
   },
   {
+   "zaman": "2026-09-29T16:32:54+00:00",
+   "tarih": "2026-09-29",
+   "baslik": "Microsoft Brings OpenAI’s Autonomous ‘Dots’ AI Workers Into the Enterprise",
+   "ozet": "Microsoft is bringing OpenAI’s autonomous Dots under its enterprise security stack as companies prepare to manage AI workers.",
+   "url": "https://finnhub.io/api/news?id=f960169dde164b3d8022b25e85ed5867c151d1ffbaf817901f61444531f691b3",
+   "kaynak": "Benzinga",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-29T16:32:03+00:00",
+   "tarih": "2026-09-29",
+   "baslik": "Donald Trump, Cathie Wood Bet on the Same 32 Stocks – Some Might Surprise You",
+   "ozet": "A look at the stocks that are owned by Cathie Wood&#39;s Ark Invest and Donald Trump.",
+   "url": "https://finnhub.io/api/news?id=d045ab6b0c4376bf4a2ea7aa473ff0560d74d081f9b6d94301e57de6a14ea47f",
+   "kaynak": "Benzinga",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-29T16:11:13+00:00",
+   "tarih": "2026-09-29",
+   "baslik": "Meta Platforms CEO Zuckerberg Says Commitments Made Around Building Controls And Detecting Issues With Technology; Will Have Our Boards Of Directors Review Reports From Auditors; Tech Companies Agreed To Set Up 'robust' Internal Controls, Multiple Layers Of Auditing Of AI",
+   "ozet": "https://www.youtube.com/watch?v=ZtLTHbzw7_g",
+   "url": "https://finnhub.io/api/news?id=22c78defaca34653ac868f244f7abe7b576aa95b1f4000fd4617032e7228d961",
+   "kaynak": "Benzinga",
+   "saglayici": "Finnhub"
+  },
+  {
    "zaman": "2026-09-29T16:09:04+00:00",
    "tarih": "2026-09-29",
    "baslik": "Apple Stock Falls After Bank of America Flags a New AI Threat",
@@ -534,12 +1596,39 @@
    "saglayici": "Finnhub"
   },
   {
+   "zaman": "2026-09-29T16:00:58+00:00",
+   "tarih": "2026-09-29",
+   "baslik": "President Trump Says Will Be Naming AI Czar In Next Three Or Four Days",
+   "ozet": "https://www.youtube.com/watch?v=CqlX1TZwdVE ",
+   "url": "https://finnhub.io/api/news?id=c4fe75c7bf2568411d03c3d0bad0502d3f92fa1673b290c07f9ef0b13b5f2032",
+   "kaynak": "Benzinga",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-29T15:54:08+00:00",
+   "tarih": "2026-09-29",
+   "baslik": "President Trump On Meeting With AI Leaders, Says Signed AI Document That Is A Form Of Protection, I Think Document Is Morally Binding; Think We Are Seeing Tremendous Self-Policing, AI Leaders Understand That; We Are Thking Of Creating Committee To Watch Over",
+   "ozet": "https://www.youtube.com/watch?v=CqlX1TZwdVE ",
+   "url": "https://finnhub.io/api/news?id=99b6e5e15e2dd86e29de1ebb558da9ab961be6cfa6ee5672147c9238f42655d3",
+   "kaynak": "Benzinga",
+   "saglayici": "Finnhub"
+  },
+  {
    "zaman": "2026-09-29T15:50:00+00:00",
    "tarih": "2026-09-29",
    "baslik": "GOOGL's Prospects Ride on AI Initiatives: Can It Beat RDDT and META?",
    "ozet": "Alphabet's accelerating AI adoption across Search, advertising, Cloud and Gemini strengthens its growth prospects as competition with META and RDDT intensifies.",
    "url": "https://finnhub.io/api/news?id=ea1f0fd066012c6850d49bd0d3053b9083e83a2863fc42c7afc18b5f0db534aa",
    "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-29T15:41:23+00:00",
+   "tarih": "2026-09-29",
+   "baslik": "U.S. House Speaker Johnson On Meeting With AI Leaders, Says We Discussed Striking Right Balance; Discussed AI Companies Ensuring Safety; AI Providers Committed To Building Trust; We Just Signed Accord On AI, Which Is A Statement Of Standards; We'll Continue To Assess And Deliberate In Coming Days; We Can Keep Edge In A Safe Way",
+   "ozet": "- Reuters",
+   "url": "https://finnhub.io/api/news?id=97b75be0a5569ca32d4e29863c38f02aacdfa5bbd0ca864c6e9746c0cfe126f5",
+   "kaynak": "Benzinga",
    "saglayici": "Finnhub"
   },
   {
@@ -567,6 +1656,15 @@
    "ozet": "Nvidia has the largest buyback program in the stock market. Outside of Nvidia and Apple, capital returns aren’t large at any of the Mag Seven stocks.",
    "url": "https://finnhub.io/api/news?id=65aad0f38b34f2481e4750ad38b8692fce951cda07046159db6c44b354b53f3e",
    "kaynak": "Yahoo",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-29T15:25:23+00:00",
+   "tarih": "2026-09-29",
+   "baslik": "Jim Cramer’s META Muse Bull Case Is About to Get a Revenue Test",
+   "ozet": "Jim Cramer sees Meta’s Muse reshaping its valuation. Now paid plans and business adoption will test whether AI can become a revenue engine.",
+   "url": "https://finnhub.io/api/news?id=7d0201c703145ab9148e209dc85197a2dad1b7cbed9f411787575398aaaff237",
+   "kaynak": "Benzinga",
    "saglayici": "Finnhub"
   },
   {
@@ -811,6 +1909,24 @@
    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92MEZ1alJfN0trQ3VkRHFlTHZpWmVpbmlYN3JmUGQ3MEc4TXRRbXpWRm5yV3JlUUU1ZUR0M0dodXBNTnA0Q1QtYVIxOGZtci0waF9xb2RILVFxRXc?oc=5",
    "kaynak": "BBC",
    "saglayici": "Google News RSS"
+  },
+  {
+   "zaman": "2026-09-29T12:26:27+00:00",
+   "tarih": "2026-09-29",
+   "baslik": "Meta's Muse Can Dox Vulnerable Users if Asked Twice, Report Finds",
+   "ozet": "Meta’s Muse AI agent reportedly compiled accounts of vulnerable people from social platforms, potentially exposing privacy and safety risks.",
+   "url": "https://finnhub.io/api/news?id=5f1dddb7c213c81dd4ea22979a2a10dc27eecbbda148b50f98f4d869c4d7dfb9",
+   "kaynak": "Benzinga",
+   "saglayici": "Finnhub"
+  },
+  {
+   "zaman": "2026-09-29T12:09:08+00:00",
+   "tarih": "2026-09-29",
+   "baslik": "Meta Releases Forum App For iOS And Android In U.S. To Bring Facebook Groups Together With Enhanced Community And Admin Tools",
+   "ozet": "https://about.fb.com/news/2026/09/find-community-forum-dedicated-app-facebook-groups/",
+   "url": "https://finnhub.io/api/news?id=cc7526aaeaf3089b87378e4b1d3b751cf221532111e8bbeab711805c52a19ebe",
+   "kaynak": "Benzinga",
+   "saglayici": "Finnhub"
   },
   {
    "zaman": "2026-09-29T12:02:51+00:00",

@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-09-30T10:48:52+00:00",
+ "guncelleme": "2026-10-01T11:15:15+00:00",
  "ufuklar": [
   30,
   90,
@@ -125,7 +125,7 @@
    "tur": "kural_kademe_tez_bozuk",
    "ad": "Düşüş kademesi tetiklendi, tez kırmızı",
    "beklenen_yon": "olumsuz",
-   "adet": 6,
+   "adet": 8,
    "ufuklar": {
     "30": {
      "n": 0,
@@ -238,6 +238,44 @@
   }
  ],
  "sinyaller": [
+  {
+   "id": "444c64b0e9e9",
+   "tarih": "2026-10-01",
+   "ticker": "CEG",
+   "tur": "kural_kademe_tez_bozuk",
+   "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
+   "yon": "olumsuz",
+   "aciklama": "Zirveden −%37,1, −%35 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+   "fiyat": 254.02,
+   "fiyat_tarihi": "2026-09-30",
+   "qqq": 739.77,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-10-01T11:15:12+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
+  {
+   "id": "a8434c0b1f00",
+   "tarih": "2026-10-01",
+   "ticker": "AAOI",
+   "tur": "kural_kademe_tez_bozuk",
+   "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
+   "yon": "olumsuz",
+   "aciklama": "Zirveden −%55,5, −%55 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 15 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+   "fiyat": 99.26,
+   "fiyat_tarihi": "2026-09-30",
+   "qqq": 739.77,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-10-01T11:15:02+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
   {
    "id": "48d359458a3c",
    "tarih": "2026-09-29",
