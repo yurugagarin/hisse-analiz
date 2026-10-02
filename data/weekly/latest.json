@@ -1,29 +1,29 @@
 {
  "tur": "son7gun",
- "baslangic": "2026-09-25",
- "bitis": "2026-10-01",
- "guncelleme": "2026-10-01T11:15:15+00:00",
+ "baslangic": "2026-09-26",
+ "bitis": "2026-10-02",
+ "guncelleme": "2026-10-02T10:47:51+00:00",
  "hisseler": [
   {
    "ticker": "NVDA",
    "ad": "Nvidia",
    "donem": [
-    "2026-09-25",
-    "2026-10-01"
+    "2026-09-26",
+    "2026-10-02"
    ],
    "fiyat": {
-    "son": 228.38,
-    "tarih": "2026-09-30",
-    "haftalik": 1.27,
-    "aylik": 3.44,
-    "zirveden": -3.12,
+    "son": 230.86,
+    "tarih": "2026-10-01",
+    "haftalik": 2.8,
+    "aylik": 6.17,
+    "zirveden": -2.07,
     "zirve_52h": 235.74,
     "zirve_tarih": "2026-05-14",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": -0.19,
-    "SMH": 1.26
+    "QQQ": 0.13,
+    "SMH": 2.88
    },
    "tez": {
     "genel": "sari",
@@ -74,9 +74,9 @@
    },
    "kural": {
     "durum": "tetiklenmedi",
-    "mesaj": "Zirveden −%3,1. Sonraki kademe: −%15.",
+    "mesaj": "Zirveden −%2,1. Sonraki kademe: −%15.",
     "tetiklenen": null,
-    "zirveden_uzaklik": -3.12,
+    "zirveden_uzaklik": -2.07,
     "dusus_kaynagi": "piyasa_sektor",
     "dusus_kaynagi_aciklama": "Hissenin düşüşü karşılaştırma endeksleriyle benzer: ağırlıkla piyasa/sektör kaynaklı.",
     "kosul_saglaniyor": true
@@ -90,8 +90,8 @@
       "metin": "Kümelenmiş satış: 2026-09-17–2026-09-21 arasında 3 yönetici satış yaptı (10b5-1 planlı işlem oranı %75)."
      },
      {
-      "etiket": "bilgi",
-      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok."
+      "etiket": "dikkat",
+      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %30.14 yükseldi."
      }
     ],
     "kumelenmis_satislar": [
@@ -180,7 +180,7 @@
     }
    ],
    "cumleler": [
-    "Hisse bu hafta +%1,3 (QQQ −%0,2, SMH +%1,3); 52 haftalık zirveden −%3,1 uzakta.",
+    "Hisse bu hafta +%2,8 (QQQ +%0,1, SMH +%2,9); 52 haftalık zirveden −%2,1 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok."
    ],
    "insider_ozet": {
@@ -197,29 +197,29 @@
     "ceyrek": 3,
     "yil": 2027,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-01T11:14:49+00:00"
+    "guncelleme": "2026-10-02T10:47:25+00:00"
    }
   },
   {
    "ticker": "META",
    "ad": "Meta Platforms",
    "donem": [
-    "2026-09-25",
-    "2026-10-01"
+    "2026-09-26",
+    "2026-10-02"
    ],
    "fiyat": {
-    "son": 725.18,
-    "tarih": "2026-09-30",
-    "haftalik": -2.54,
-    "aylik": 26.7,
-    "zirveden": -6.74,
+    "son": 725.93,
+    "tarih": "2026-10-01",
+    "haftalik": -6.64,
+    "aylik": 25.48,
+    "zirveden": -6.64,
     "zirve_52h": 777.59,
     "zirve_tarih": "2026-09-24",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": -0.19,
-    "XLC": -1.41
+    "QQQ": 0.13,
+    "XLC": -3.55
    },
    "tez": {
     "genel": "sari",
@@ -270,9 +270,9 @@
    },
    "kural": {
     "durum": "tetiklenmedi",
-    "mesaj": "Zirveden −%6,7. Sonraki kademe: −%15.",
+    "mesaj": "Zirveden −%6,6. Sonraki kademe: −%15.",
     "tetiklenen": null,
-    "zirveden_uzaklik": -6.74,
+    "zirveden_uzaklik": -6.64,
     "dusus_kaynagi": "piyasa_sektor",
     "dusus_kaynagi_aciklama": "Hissenin düşüşü karşılaştırma endeksleriyle benzer: ağırlıkla piyasa/sektör kaynaklı.",
     "kosul_saglaniyor": true
@@ -520,7 +520,7 @@
     }
    ],
    "cumleler": [
-    "Hisse bu hafta −%2,5 (QQQ −%0,2, XLC −%1,4); 52 haftalık zirveden −%6,7 uzakta.",
+    "Hisse bu hafta −%6,6 (QQQ +%0,1, XLC −%3,5); 52 haftalık zirveden −%6,6 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok."
    ],
    "insider_ozet": {
@@ -532,36 +532,36 @@
     }
    },
    "sonraki_bilanco": {
-    "tarih": "2026-10-27",
+    "tarih": "2026-10-28",
     "saat": "amc",
     "eps_tahmin": 6.6125,
     "gelir_tahmin": 64538879444,
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-01T11:14:53+00:00"
+    "guncelleme": "2026-10-02T10:47:28+00:00"
    }
   },
   {
    "ticker": "NOW",
    "ad": "ServiceNow",
    "donem": [
-    "2026-09-25",
-    "2026-10-01"
+    "2026-09-26",
+    "2026-10-02"
    ],
    "fiyat": {
-    "son": 134.01,
-    "tarih": "2026-09-30",
-    "haftalik": -4.81,
-    "aylik": -9.45,
-    "zirveden": -29.19,
+    "son": 137.76,
+    "tarih": "2026-10-01",
+    "haftalik": -0.01,
+    "aylik": -3.6,
+    "zirveden": -27.21,
     "zirve_52h": 189.258,
     "zirve_tarih": "2025-10-27",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": -0.19,
-    "IGV": -1.5
+    "QQQ": 0.13,
+    "IGV": 1.01
    },
    "tez": {
     "genel": "sari",
@@ -612,12 +612,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_ok",
-    "mesaj": "Zirveden −%29,2: −%25 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et.",
+    "mesaj": "Zirveden −%27,2: −%25 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et.",
     "tetiklenen": {
      "dusus": 25,
      "not": "DCA 2x; RPO ve SBC sütunlarını kontrol et."
     },
-    "zirveden_uzaklik": -29.19,
+    "zirveden_uzaklik": -27.21,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": true
@@ -631,8 +631,8 @@
       "metin": "Kümelenmiş satış: 2026-08-27–2026-08-31 arasında 3 yönetici satış yaptı (10b5-1 planlı işlem oranı %33)."
      },
      {
-      "etiket": "bilgi",
-      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok."
+      "etiket": "dikkat",
+      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %35.06 yükseldi."
      }
     ],
     "kumelenmis_satislar": [
@@ -743,9 +743,9 @@
     }
    ],
    "cumleler": [
-    "Hisse bu hafta −%4,8 (QQQ −%0,2, IGV −%1,5); 52 haftalık zirveden −%29,2 uzakta.",
+    "Hisse bu hafta −%0,0 (QQQ +%0,1, IGV +%1,0); 52 haftalık zirveden −%27,2 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%29,2: −%25 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et."
+    "Zirveden −%27,2: −%25 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et."
    ],
    "insider_ozet": {
     "islem": 0,
@@ -754,36 +754,36 @@
     "kodlar": {}
    },
    "sonraki_bilanco": {
-    "tarih": "2026-10-27",
+    "tarih": "2026-10-28",
     "saat": "amc",
     "eps_tahmin": 1.0354,
     "gelir_tahmin": 4135261876,
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-01T11:14:56+00:00"
+    "guncelleme": "2026-10-02T10:47:32+00:00"
    }
   },
   {
    "ticker": "AAOI",
    "ad": "Applied Optoelectronics",
    "donem": [
-    "2026-09-25",
-    "2026-10-01"
+    "2026-09-26",
+    "2026-10-02"
    ],
    "fiyat": {
-    "son": 99.26,
-    "tarih": "2026-09-30",
-    "haftalik": -1.78,
-    "aylik": -7.83,
-    "zirveden": -55.51,
+    "son": 107.32,
+    "tarih": "2026-10-01",
+    "haftalik": 6.23,
+    "aylik": 3.8,
+    "zirveden": -51.9,
     "zirve_52h": 223.1,
     "zirve_tarih": "2026-05-13",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": -0.19,
-    "SMH": 1.26
+    "QQQ": 0.13,
+    "SMH": 2.88
    },
    "tez": {
     "genel": "kirmizi",
@@ -845,12 +845,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%55,5: −%55 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Pozisyon büyüklüğünü sınırla; tez gerçekten sağlam mı yeniden yaz.",
+    "mesaj": "Zirveden −%51,9: −%40 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: DCA 2x; nakit pisti ve sulandırmayı kontrol et.",
     "tetiklenen": {
-     "dusus": 55,
-     "not": "Pozisyon büyüklüğünü sınırla; tez gerçekten sağlam mı yeniden yaz."
+     "dusus": 40,
+     "not": "DCA 2x; nakit pisti ve sulandırmayı kontrol et."
     },
-    "zirveden_uzaklik": -55.51,
+    "zirveden_uzaklik": -51.9,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 15 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -938,7 +938,123 @@
      }
     }
    },
-   "buyuk_hareketler": [],
+   "buyuk_hareketler": [
+    {
+     "tarih": "2026-10-01",
+     "claude": null,
+     "onceki_gun": "2026-09-30",
+     "hareket": 8.12,
+     "yon": "yukari",
+     "benchmark": {
+      "QQQ": 0.31,
+      "SMH": 1.45
+     },
+     "on_siniflama": "sirkete_ozel",
+     "on_siniflama_aciklama": "Hisse +%8,1, sektör/piyasa +%1,4: hareketin çoğu şirkete özel görünüyor.",
+     "basliklar": [
+      {
+       "zaman": "2026-10-01T22:52:46+00:00",
+       "tarih": "2026-10-01",
+       "baslik": "Is Applied Optoelectronics Inc (AAOI) Overvalued After 8.1% Rall",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQVN5bW92dGpvVkJTQ3lnYlF1LUhTR3hQaGdIa3RXbWVGRWx4Mm5leUxFMWNBeHBrVnNFSFhYMi0wc1I1U3E5YjRGcHVlLVVxblEzaWNKU00xUHBPZmwzVXZJQThHMDkzajh6U3VmZmpUaEQ4SDVuNlNFWHB0YlYtcVFfQ0VtWkRmeFdLYXlhNTJ2QXVsVl94bUJoLUlaMW9qZGtVWk1lT3lHeS04WFpsMHZHX0w4LXZuYmUyS0hNTER4R0U?oc=5",
+       "kaynak": "GuruFocus",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-01T20:47:00+00:00",
+       "tarih": "2026-10-01",
+       "baslik": "AAOI Stock Rallies As Hyperscale AI Orders Boost Outlook",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPMldSXzJRTHRxZVFNZU9rVEtyWk1HcnI1Rkk0SS0yYlBBRnpJMWl3SnNOUjdhUXVHNkxuVXdrOVI5NDQ2QmItX1VRcHJ2Ny1EUW9QQjFyQWEwWExGUEpib2lidGlPYmNNbzN4WFp2clVCWGdDNjBfSzhaMjltdnp5ZWFmcXFrMWM?oc=5",
+       "kaynak": "StocksToTrade",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-01T19:16:35+00:00",
+       "tarih": "2026-10-01",
+       "baslik": "Applied Optoelectronics stock soars 205% in 202...",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQempyN3A2Sk1FNDZBdVhHQ3pZQkxMZjgtOGNnRXVnUnlNYnBMTnZTdWlsQW9oYXIyQzNmS2I5cEFGUk0tR0xtUFlKRVZKZnRBc095V2toVG1PYmtiM01FOUFVWmxiWWJrejQtY3VHdWVrOTVxb2ZBQll3N0hPYnZHWG82a1BaeHNlNDlRSEVmdVpsbmp3QlRvaGN6NjFNdnFaTlNKYlJn?oc=5",
+       "kaynak": "Pluang",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-01T18:55:11+00:00",
+       "tarih": "2026-10-01",
+       "baslik": "Applied Optoelectronics Is Up 205% This Year. Is It Too Late to Buy AAOI Stock Now?",
+       "ozet": "Applied Optoelectronics has left its optical rivals and the broader chip sector in the dust this year, but the expansion driving that run is still under construction. Whether buyers step in now or wait depends on how much execution risk they are willing to accept.",
+       "url": "https://finnhub.io/api/news?id=8e63c4e4940e9dcc86f5f954f72978361a420535c019446f7d82516f89827b61",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-01T15:18:38+00:00",
+       "tarih": "2026-10-01",
+       "baslik": "Bullish Options Frenzy Sends Applied Optoelectronics Soaring",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNekI1WF96YmdHSjlmMG1rNncyVmRZSGNNTjl4TENOSlhFdzNQM0IyNHBTeENKc0ZDMkZtZTQ2NGx6RjJBM0hmLWpXcEt1djVFUWpXOTltN1JDU2haYWxmeUwyLWktOGhkMTdOMWZRQ0l5clJWWUVPMG9HU2R6UGgyd2t6Q293SWJhcnV5MmRaRkNEQmZrZEdYc08tZGRWWFEy?oc=5",
+       "kaynak": "TipRanks",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-01T00:20:04+00:00",
+       "tarih": "2026-10-01",
+       "baslik": "Applied Optoelectronics stock up 566% in 10 years, beats market",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNVUZ1c1FMTWVKWnpuS3MxOWhfMUEwY1lBd3pSWTEyMUpkTl9ranRDSWM4YXRzX0lLVmtaeXVKaWVjYkJ3M0YzLWRicmVoRWx5TnVfdVlMS1g3V3VaYjdFYWZTQTBUaFpUNVg1Zl93Rlp5T1hZRElBX0Q1WXUxVm5RS3o1WElLR01jRm02Q2xWaEI4cmhsOGZuRnVocV9GbHlpZWtCVVcwV0NVRW93emhtQXI5ekMyWjM1bXduag?oc=5",
+       "kaynak": "scanx.trade",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-30T23:27:53+00:00",
+       "tarih": "2026-09-30",
+       "baslik": "Learn Why The Bull Case For Applied Optoelectronics (AAOI) Could Change Following AI Network Automation Launch",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQdUJsX0pNRVhnQkFUTldydmE4QzU5UHZBeVFKRUphRXNkbnN4Yi03ZGw2MHBpZmdzNmtUNGVVR0Zyc0JFWnF6aFVJQ0o3VS1EbDd2SmY3SkFIVVV6TlFHb0ZCbEpWdktzN0lETm1zLXNSR2kxN2trWnZPenlKWE9pZ0FuV2plY3Q1S0Q1RG5KRmd2am1oN2kzeTNETTlnczhwaDBDejV4b1JpLV9yR1EwTThyb3ZyOVl3QzhLdmtuYVNMMXpkZTg1U1NQWmpoZTVqNFBkM29LZk9DQdIB2gFBVV95cUxQdUJsX0pNRVhnQkFUTldydmE4QzU5UHZBeVFKRUphRXNkbnN4Yi03ZGw2MHBpZmdzNmtUNGVVR0Zyc0JFWnF6aFVJQ0o3VS1EbDd2SmY3SkFIVVV6TlFHb0ZCbEpWdktzN0lETm1zLXNSR2kxN2trWnZPenlKWE9pZ0FuV2plY3Q1S0Q1RG5KRmd2am1oN2kzeTNETTlnczhwaDBDejV4b1JpLV9yR1EwTThyb3ZyOVl3QzhLdmtuYVNMMXpkZTg1U1NQWmpoZTVqNFBkM29LZk9DQQ?oc=5",
+       "kaynak": "Simply Wall Street",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-30T15:26:05+00:00",
+       "tarih": "2026-09-30",
+       "baslik": "Applied Optoelectronics revenue soars 86% with strong 800G data center demand, supply tight through 2027",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOelpFNUsyWXh4d1VLcGFLZ05kYmp5NnVwbHdiTVdYc3AyOVZmaGhaOFh4S2t6WFRXWktaTnFQVWozaVNCZmhfNmZ6ZE5BbnNaZ3BpXzRyRmpBMDk1QUlwOVNLZ2xjejg0NkcwRGRISWM2cnZZRncyMnBDcTlwdFZMV3FyeWYyR0hxLVRR?oc=5",
+       "kaynak": "Pluang",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-30T15:12:09+00:00",
+       "tarih": "2026-09-30",
+       "baslik": "Applied Optoelectronics: The Biggest Test Is Still Ahead (NASDAQ:AAOI)",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOOVU0QTg0RERXdnJnbjF0b3puSVlFTU01LXlESU0xZkd1Q1dqYnFaVmRvMzlDRWZfMWJDc1FFOXFmcldvbjhEUExKV3ZUQ212dHg5NmdXV0xiZnBJa2tGQ2JNaXZWRXBwRnZoNDBFTy16Q3IxMmkybnVjYlQ3Z3A4SVdWSWFfTUxsN2V4bWtRNVRYUmJoU3k1N3RnQmI?oc=5",
+       "kaynak": "Seeking Alpha",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-09-30T11:12:09+00:00",
+       "tarih": "2026-09-30",
+       "baslik": "Applied Optoelectronics: The Biggest Test Is Still Ahead",
+       "ozet": "Applied Optoelectronics revenue jumped 86% to $191.9 million, while data center revenue surged 140% as the 800G ramp accelerated. Click for more on AAOI stock.",
+       "url": "https://finnhub.io/api/news?id=606e45f0c2d82e824197a974dbd12139058425bc7650c90b7ca3914a87273b9e",
+       "kaynak": "SeekingAlpha",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-09-30T08:40:31+00:00",
+       "tarih": "2026-09-30",
+       "baslik": "Applied Optoelectronics, Inc. (AAOI) latest stock news and headlines",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1tazE3QjBFaC1mSlFKMFFTd0owYVRpZHBSQlVxTFFaQjVHSjBmTko1Tms4Y3VnMExudWFaZjFhRzRNVGwzdnZ4MjBRLXphdm9jOWpKczFoMXo?oc=5",
+       "kaynak": "Yahoo Finance Singapore",
+       "saglayici": "Google News RSS"
+      }
+     ],
+     "sec_bildirimleri": []
+    }
+   ],
    "sec_bildirimleri": [],
    "bilanco": {
     "son_ceyrek": "FY2026 Q2",
@@ -1083,9 +1199,10 @@
     }
    ],
    "cumleler": [
-    "Hisse bu hafta −%1,8 (QQQ −%0,2, SMH +%1,3); 52 haftalık zirveden −%55,5 uzakta.",
+    "Hisse bu hafta +%6,2 (QQQ +%0,1, SMH +%2,9); 52 haftalık zirveden −%51,9 uzakta.",
     "Tezde değişiklik: Tez genel durumu KIRMIZI'ya döndü (Kırmızı sütunlar: Faaliyetten kârlılığa geçiş, Sulandırma); Bir tez sütunu KIRMIZI'ya döndü (Faaliyetten kârlılığa geçiş: %11,3); Bir tez sütunu KIRMIZI'ya döndü (Sulandırma: %43,7); Önceden yazılmış çıkış kriteri tetiklendi (Nakit pisti 12 ayın altına inerse); Önceden yazılmış çıkış kriteri tetiklendi (Seyreltilmiş hisse sayısı yıllık %40'tan fazla artarsa).",
-    "Zirveden −%55,5: −%55 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Pozisyon büyüklüğünü sınırla; tez gerçekten sağlam mı yeniden yaz."
+    "Zirveden −%51,9: −%40 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: DCA 2x; nakit pisti ve sulandırmayı kontrol et.",
+    "2026-10-01 günü +%8,1 büyük hareket (Hisse +%8,1, sektör/piyasa +%1,4: hareketin çoğu şirkete özel görünüyor.)"
    ],
    "insider_ozet": {
     "islem": 0,
@@ -1101,29 +1218,29 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-01T11:14:59+00:00"
+    "guncelleme": "2026-10-02T10:47:35+00:00"
    }
   },
   {
    "ticker": "IONQ",
    "ad": "IonQ",
    "donem": [
-    "2026-09-25",
-    "2026-10-01"
+    "2026-09-26",
+    "2026-10-02"
    ],
    "fiyat": {
-    "son": 43.86,
-    "tarih": "2026-09-30",
-    "haftalik": 3.1,
-    "aylik": 11.57,
-    "zirveden": -46.57,
+    "son": 43.99,
+    "tarih": "2026-10-01",
+    "haftalik": -2.2,
+    "aylik": 16.44,
+    "zirveden": -46.41,
     "zirve_52h": 82.09,
     "zirve_tarih": "2025-10-13",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": -0.19,
-    "SMH": 1.26
+    "QQQ": 0.13,
+    "SMH": 2.88
    },
    "tez": {
     "genel": "kirmizi",
@@ -1184,12 +1301,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%46,6: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "mesaj": "Zirveden −%46,4: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "tetiklenen": {
      "dusus": 35,
      "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -46.57,
+    "zirveden_uzaklik": -46.41,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -1204,7 +1321,7 @@
      },
      {
       "etiket": "dikkat",
-      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %57.83 yükseldi."
+      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %50.14 yükseldi."
      }
     ],
     "kumelenmis_satislar": [
@@ -1341,9 +1458,9 @@
     }
    ],
    "cumleler": [
-    "Hisse bu hafta +%3,1 (QQQ −%0,2, SMH +%1,3); 52 haftalık zirveden −%46,6 uzakta.",
+    "Hisse bu hafta −%2,2 (QQQ +%0,1, SMH +%2,9); 52 haftalık zirveden −%46,4 uzakta.",
     "Tezde değişiklik: Tez genel durumu KIRMIZI'ya döndü (Kırmızı sütunlar: Hisse sayısı); Bir tez sütunu KIRMIZI'ya döndü (Hisse sayısı: %46,5); Önceden yazılmış çıkış kriteri tetiklendi (Hisse sayısı yıllık %10'dan fazla artarsa).",
-    "Zirveden −%46,6: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
+    "Zirveden −%46,4: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
    ],
    "insider_ozet": {
     "islem": 0,
@@ -1359,29 +1476,29 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-01T11:15:03+00:00"
+    "guncelleme": "2026-10-02T10:47:38+00:00"
    }
   },
   {
    "ticker": "ORCL",
    "ad": "Oracle",
    "donem": [
-    "2026-09-25",
-    "2026-10-01"
+    "2026-09-26",
+    "2026-10-02"
    ],
    "fiyat": {
-    "son": 137.3,
-    "tarih": "2026-09-30",
-    "haftalik": -5.02,
-    "aylik": -7.93,
-    "zirveden": -56.13,
+    "son": 138.07,
+    "tarih": "2026-10-01",
+    "haftalik": -1.05,
+    "aylik": -2.3,
+    "zirveden": -55.89,
     "zirve_52h": 313.0,
     "zirve_tarih": "2025-10-16",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": -0.19,
-    "IGV": -1.5
+    "QQQ": 0.13,
+    "IGV": 1.01
    },
    "tez": {
     "genel": "sari",
@@ -1440,27 +1557,49 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_ok",
-    "mesaj": "Zirveden −%56,1: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "mesaj": "Zirveden −%55,9: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "tetiklenen": {
      "dusus": 35,
      "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -56.13,
+    "zirveden_uzaklik": -55.89,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": true
    },
    "insider": {
-    "hafta_islemleri": [],
-    "hafta_kodlari": {},
+    "hafta_islemleri": [
+     {
+      "tarih": "2026-09-29",
+      "kisi": "RUSCKOWSKI STEPHEN H",
+      "unvan": "Yönetim kurulu üyesi",
+      "kod": "P",
+      "adet": 25000.0,
+      "fiyat": 139.352,
+      "tutar": 3483800.0,
+      "plan_10b5_1": false,
+      "sonrasi": 25390.0,
+      "sahiplik": "I",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000134143926000099/xslF345X06/form4.xml"
+     }
+    ],
+    "hafta_kodlari": {
+     "P": 1
+    },
     "uyarilar": [
      {
-      "etiket": "bilgi",
-      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok."
+      "etiket": "olumlu",
+      "metin": "Son 180 günde 1 açık piyasa alımı (P) var."
      }
     ],
     "kumelenmis_satislar": [],
     "ozet_90g": {
+     "P": {
+      "islem": 1,
+      "adet": 25000.0,
+      "tutar": 3483800.0,
+      "plan_10b5_1_adet": 0.0
+     },
      "S": {
       "islem": 3,
       "adet": 36075.0,
@@ -1482,26 +1621,7 @@
     }
    },
    "buyuk_hareketler": [],
-   "sec_bildirimleri": [
-    {
-     "form": "DEFA14A",
-     "tarih": "2026-09-25",
-     "donem": "",
-     "items": "",
-     "aciklama": "DEFA14A",
-     "accn": "0001193125-26-402831",
-     "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526402831/orcl-defa14a-2026_notice.htm"
-    },
-    {
-     "form": "DEF 14A",
-     "tarih": "2026-09-25",
-     "donem": "2026-11-18",
-     "items": "",
-     "aciklama": "DEF 14A",
-     "accn": "0001193125-26-402816",
-     "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526402816/orcl-20260925.htm"
-    }
-   ],
+   "sec_bildirimleri": [],
    "bilanco": {
     "son_ceyrek": "FY2026 Q1",
     "kirmizi": 0,
@@ -1530,18 +1650,34 @@
      "qqq": 744.5,
      "baslangic_kaydi": true,
      "kayit_zamani": "2026-09-26T11:10:48+00:00"
+    },
+    {
+     "id": "52aee660fa08",
+     "tarih": "2026-10-02",
+     "ticker": "ORCL",
+     "tur": "insider_alim",
+     "tur_adi": "Yönetimden açık piyasa alımı (P)",
+     "yon": "olumlu",
+     "aciklama": "RUSCKOWSKI STEPHEN H — toplam ≈ $3,483,800",
+     "fiyat": 138.07,
+     "fiyat_tarihi": "2026-10-01",
+     "qqq": 742.03,
+     "baslangic_kaydi": false,
+     "kayit_zamani": "2026-10-02T10:47:44+00:00"
     }
    ],
    "cumleler": [
-    "Hisse bu hafta −%5,0 (QQQ −%0,2, IGV −%1,5); 52 haftalık zirveden −%56,1 uzakta.",
+    "Hisse bu hafta −%1,1 (QQQ +%0,1, IGV +%1,0); 52 haftalık zirveden −%55,9 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%56,1: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
+    "Zirveden −%55,9: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
    ],
    "insider_ozet": {
-    "islem": 0,
+    "islem": 1,
     "satis_tutar": 0,
-    "alim_tutar": 0,
-    "kodlar": {}
+    "alim_tutar": 3483800.0,
+    "kodlar": {
+     "P": 1
+    }
    },
    "sonraki_bilanco": {
     "tarih": "2026-12-08",
@@ -1551,29 +1687,29 @@
     "ceyrek": 2,
     "yil": 2027,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-01T11:15:06+00:00"
+    "guncelleme": "2026-10-02T10:47:42+00:00"
    }
   },
   {
    "ticker": "CEG",
    "ad": "Constellation Energy",
    "donem": [
-    "2026-09-25",
-    "2026-10-01"
+    "2026-09-26",
+    "2026-10-02"
    ],
    "fiyat": {
-    "son": 254.02,
-    "tarih": "2026-09-30",
-    "haftalik": -3.74,
-    "aylik": -7.55,
-    "zirveden": -37.12,
+    "son": 258.92,
+    "tarih": "2026-10-01",
+    "haftalik": -1.03,
+    "aylik": -7.63,
+    "zirveden": -35.9,
     "zirve_52h": 403.95,
     "zirve_tarih": "2025-10-15",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "SPY": -0.67,
-    "XLU": -0.78
+    "SPY": -0.42,
+    "XLU": 0.81
    },
    "tez": {
     "genel": "kirmizi",
@@ -1626,12 +1762,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%37,1: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "mesaj": "Zirveden −%35,9: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "tetiklenen": {
      "dusus": 35,
      "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -37.12,
+    "zirveden_uzaklik": -35.9,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -1778,9 +1914,9 @@
     }
    ],
    "cumleler": [
-    "Hisse bu hafta −%3,7 (SPY −%0,7, XLU −%0,8); 52 haftalık zirveden −%37,1 uzakta.",
+    "Hisse bu hafta −%1,0 (SPY −%0,4, XLU +%0,8); 52 haftalık zirveden −%35,9 uzakta.",
     "Tezde değişiklik: Tez genel durumu KIRMIZI'ya döndü (Kırmızı sütunlar: Hisse sayısı); Bir tez sütunu KIRMIZI'ya döndü (Hisse sayısı: %14,7); Önceden yazılmış çıkış kriteri tetiklendi (Hisse sayısı yıllık %10'dan fazla artarsa).",
-    "Zirveden −%37,1: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
+    "Zirveden −%35,9: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
    ],
    "insider_ozet": {
     "islem": 0,
@@ -1796,29 +1932,29 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-01T11:15:09+00:00"
+    "guncelleme": "2026-10-02T10:47:45+00:00"
    }
   },
   {
    "ticker": "RGTI",
    "ad": "Rigetti Computing",
    "donem": [
-    "2026-09-25",
-    "2026-10-01"
+    "2026-09-26",
+    "2026-10-02"
    ],
    "fiyat": {
-    "son": 15.74,
-    "tarih": "2026-09-30",
-    "haftalik": -1.66,
-    "aylik": 0.51,
-    "zirveden": -72.06,
+    "son": 15.62,
+    "tarih": "2026-10-01",
+    "haftalik": -5.33,
+    "aylik": 4.2,
+    "zirveden": -72.28,
     "zirve_52h": 56.34,
     "zirve_tarih": "2025-10-15",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": -0.19,
-    "IGV": -1.5
+    "QQQ": 0.13,
+    "IGV": 1.01
    },
    "tez": {
     "genel": "kirmizi",
@@ -1879,12 +2015,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%72,1: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "mesaj": "Zirveden −%72,3: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "tetiklenen": {
      "dusus": 35,
      "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -72.06,
+    "zirveden_uzaklik": -72.28,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -2066,9 +2202,9 @@
     }
    ],
    "cumleler": [
-    "Hisse bu hafta −%1,7 (QQQ −%0,2, IGV −%1,5); 52 haftalık zirveden −%72,1 uzakta.",
+    "Hisse bu hafta −%5,3 (QQQ +%0,1, IGV +%1,0); 52 haftalık zirveden −%72,3 uzakta.",
     "Tezde değişiklik: Tez genel durumu KIRMIZI'ya döndü (Kırmızı sütunlar: Nakit pisti, Hisse sayısı); Bir tez sütunu KIRMIZI'ya döndü (Nakit pisti: 3,80 ay); Bir tez sütunu KIRMIZI'ya döndü (Hisse sayısı: %11,7); Önceden yazılmış çıkış kriteri tetiklendi (Hisse sayısı yıllık %10'dan fazla artarsa).",
-    "Zirveden −%72,1: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
+    "Zirveden −%72,3: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
    ],
    "insider_ozet": {
     "islem": 0,
@@ -2084,7 +2220,7 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-01T11:15:13+00:00"
+    "guncelleme": "2026-10-02T10:47:48+00:00"
    }
   }
  ],
@@ -2578,6 +2714,20 @@
    "qqq": 739.77,
    "baslangic_kaydi": false,
    "kayit_zamani": "2026-10-01T11:15:12+00:00"
+  },
+  {
+   "id": "52aee660fa08",
+   "tarih": "2026-10-02",
+   "ticker": "ORCL",
+   "tur": "insider_alim",
+   "tur_adi": "Yönetimden açık piyasa alımı (P)",
+   "yon": "olumlu",
+   "aciklama": "RUSCKOWSKI STEPHEN H — toplam ≈ $3,483,800",
+   "fiyat": 138.07,
+   "fiyat_tarihi": "2026-10-01",
+   "qqq": 742.03,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-10-02T10:47:44+00:00"
   }
  ],
  "not": "Günlük Python derlemesi (Claude yok). Derin analiz Salı raporundadır."
