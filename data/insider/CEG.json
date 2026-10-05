@@ -1,6 +1,6 @@
 {
  "ticker": "CEG",
- "guncelleme": "2026-10-02",
+ "guncelleme": "2026-10-05",
  "pencereler": {
   "90": {
    "kodlar": {
@@ -216,6 +216,44 @@
  "kaynak": "SEC EDGAR Form 4 (XML)",
  "kumelenmis_satislar": [],
  "son_islemler": [
+  {
+   "turev": true,
+   "menkul": "Deferred Compensation - Phantom Share Equivalents",
+   "tarih": "2026-09-30",
+   "kod": "A",
+   "adet": 188.0,
+   "fiyat": 254.02,
+   "yon": "A",
+   "sonrasi": 5542.0,
+   "sahiplik": "D",
+   "plan_10b5_1": false,
+   "kisi": "Harrington Charles L.",
+   "unvan": "Yönetim kurulu üyesi",
+   "yonetici": true,
+   "accn": "0000905148-26-004335",
+   "url": "https://www.sec.gov/Archives/edgar/data/1868275/000090514826004335/xslF345X06/form4.xml",
+   "dosyalama": "2026-10-02",
+   "tutar": 47755.76
+  },
+  {
+   "turev": true,
+   "menkul": "Deferred Compensation - Phantom Share Equivalents",
+   "tarih": "2026-09-30",
+   "kod": "A",
+   "adet": 82.0,
+   "fiyat": 254.02,
+   "yon": "A",
+   "sonrasi": 82.0,
+   "sahiplik": "D",
+   "plan_10b5_1": false,
+   "kisi": "CRANDALL ROGER W",
+   "unvan": "Yönetim kurulu üyesi",
+   "yonetici": true,
+   "accn": "0000905148-26-004333",
+   "url": "https://www.sec.gov/Archives/edgar/data/1868275/000090514826004333/xslF345X06/form4.xml",
+   "dosyalama": "2026-10-02",
+   "tutar": 20829.64
+  },
   {
    "turev": false,
    "menkul": "Common Stock",
@@ -477,9 +515,9 @@
     "kod": "A",
     "edgar_islem": 1,
     "edgar_adet": 462.0,
-    "finnhub_islem": 1,
-    "finnhub_adet": 462.0,
-    "uyumlu": true
+    "finnhub_islem": 3,
+    "finnhub_adet": 732.0,
+    "uyumlu": false
    },
    {
     "kod": "P",

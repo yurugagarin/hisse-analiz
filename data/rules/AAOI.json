@@ -2,7 +2,7 @@
  "ticker": "AAOI",
  "onay": "taslak",
  "kosul": "tez_saglam",
- "zirveden_uzaklik": -51.9,
+ "zirveden_uzaklik": -48.19,
  "kademeler": [
   {
    "dusus": 25,
@@ -23,24 +23,24 @@
  "benchmark": [
   {
    "sembol": "QQQ",
-   "zirveden_uzaklik": -0.73,
-   "degisim_1a": 4.86,
-   "degisim_3a": 4.13,
-   "fark_puan": -51.17
+   "zirveden_uzaklik": 0.0,
+   "degisim_1a": 5.69,
+   "degisim_3a": 5.19,
+   "fark_puan": -48.19
   },
   {
    "sembol": "SMH",
-   "zirveden_uzaklik": -7.64,
-   "degisim_1a": 13.31,
-   "degisim_3a": 4.31,
-   "fark_puan": -44.26
+   "zirveden_uzaklik": -5.73,
+   "degisim_1a": 14.55,
+   "degisim_3a": 6.47,
+   "fark_puan": -42.46
   }
  ],
- "guncelleme": "2026-10-02T10:47:37+00:00",
+ "guncelleme": "2026-10-05T11:55:20+00:00",
  "not": "Otomatik işlem yok. Bu bölüm önceden yazdığın kuralları hatırlatır.",
  "dusus_kaynagi": "sirkete_ozel",
  "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 15 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
- "en_iyi_fark": -44.26,
+ "en_iyi_fark": -42.46,
  "tetiklenen": {
   "dusus": 40,
   "not": "DCA 2x; nakit pisti ve sulandırmayı kontrol et."
@@ -48,5 +48,5 @@
  "tez_durumu": "kirmizi",
  "kosul_saglaniyor": false,
  "durum": "tetiklendi_kosul_yok",
- "mesaj": "Zirveden −%51,9: −%40 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: DCA 2x; nakit pisti ve sulandırmayı kontrol et."
+ "mesaj": "Zirveden −%48,2: −%40 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: DCA 2x; nakit pisti ve sulandırmayı kontrol et."
 }
