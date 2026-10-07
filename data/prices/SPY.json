@@ -1,7 +1,7 @@
 {
  "sembol": "SPY",
- "kaynak": "Nasdaq.com (historical API)",
- "guncelleme": "2026-10-06T11:35:08+00:00",
+ "kaynak": "Nasdaq.com (historical API) + Finnhub quote",
+ "guncelleme": "2026-10-07T00:24:06+00:00",
  "taze": true,
  "kapanislar": [
   [
@@ -2063,6 +2063,10 @@
   [
    "2026-10-05",
    774.83
+  ],
+  [
+   "2026-10-06",
+   779.09
   ]
  ],
  "finnhub_52h_zirve": 779.37,

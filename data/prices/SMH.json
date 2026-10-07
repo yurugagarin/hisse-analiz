@@ -1,7 +1,7 @@
 {
  "sembol": "SMH",
- "kaynak": "Nasdaq.com (historical API)",
- "guncelleme": "2026-10-06T11:35:04+00:00",
+ "kaynak": "Nasdaq.com (historical API) + Finnhub quote",
+ "guncelleme": "2026-10-07T00:24:03+00:00",
  "taze": true,
  "kapanislar": [
   [
@@ -2063,6 +2063,10 @@
   [
    "2026-10-05",
    633.9
+  ],
+  [
+   "2026-10-06",
+   632.5
   ]
  ],
  "finnhub_52h_zirve": 671.83,

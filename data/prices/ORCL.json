@@ -1,7 +1,7 @@
 {
  "sembol": "ORCL",
- "kaynak": "Nasdaq.com (historical API)",
- "guncelleme": "2026-10-06T11:34:45+00:00",
+ "kaynak": "Nasdaq.com (historical API) + Finnhub quote",
+ "guncelleme": "2026-10-07T00:23:48+00:00",
  "taze": true,
  "kapanislar": [
   [
@@ -2063,6 +2063,10 @@
   [
    "2026-10-05",
    142.48
+  ],
+  [
+   "2026-10-06",
+   144.77
   ]
  ],
  "finnhub_52h_zirve": 322.54,

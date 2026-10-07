@@ -1,29 +1,29 @@
 {
  "tur": "son7gun",
- "baslangic": "2026-09-30",
- "bitis": "2026-10-06",
- "guncelleme": "2026-10-06T11:35:43+00:00",
+ "baslangic": "2026-10-01",
+ "bitis": "2026-10-07",
+ "guncelleme": "2026-10-07T00:24:39+00:00",
  "hisseler": [
   {
    "ticker": "NVDA",
    "ad": "Nvidia",
    "donem": [
-    "2026-09-30",
-    "2026-10-06"
+    "2026-10-01",
+    "2026-10-07"
    ],
    "fiyat": {
-    "son": 238.9,
-    "tarih": "2026-10-05",
-    "haftalik": 4.39,
-    "aylik": 3.71,
+    "son": 239.24,
+    "tarih": "2026-10-06",
+    "haftalik": 5.29,
+    "aylik": 3.85,
     "zirveden": 0.0,
-    "zirve_52h": 238.9,
-    "zirve_tarih": "2026-10-05",
-    "kaynak": "Nasdaq.com (historical API)"
+    "zirve_52h": 239.24,
+    "zirve_tarih": "2026-10-06",
+    "kaynak": "Nasdaq.com (historical API) + Finnhub quote"
    },
    "benchmark_haftalik": {
-    "QQQ": 2.67,
-    "SMH": 5.65
+    "QQQ": 2.94,
+    "SMH": 4.22
    },
    "tez": {
     "genel": "sari",
@@ -91,7 +91,7 @@
      },
      {
       "etiket": "dikkat",
-      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %34.49 yükseldi."
+      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %34.33 yükseldi."
      }
     ],
     "kumelenmis_satislar": [
@@ -165,7 +165,7 @@
    },
    "sinyaller": [],
    "cumleler": [
-    "Hisse bu hafta +%4,4 (QQQ +%2,7, SMH +%5,7); 52 haftalık zirveden %0,0 uzakta.",
+    "Hisse bu hafta +%5,3 (QQQ +%2,9, SMH +%4,2); 52 haftalık zirveden %0,0 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok."
    ],
    "insider_ozet": {
@@ -182,29 +182,29 @@
     "ceyrek": 3,
     "yil": 2027,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-06T11:35:18+00:00"
+    "guncelleme": "2026-10-07T00:24:13+00:00"
    }
   },
   {
    "ticker": "META",
    "ad": "Meta Platforms",
    "donem": [
-    "2026-09-30",
-    "2026-10-06"
+    "2026-10-01",
+    "2026-10-07"
    ],
    "fiyat": {
-    "son": 741.9,
-    "tarih": "2026-10-05",
-    "haftalik": 3.67,
-    "aylik": 20.29,
-    "zirveden": -4.59,
+    "son": 738.88,
+    "tarih": "2026-10-06",
+    "haftalik": 0.01,
+    "aylik": 19.8,
+    "zirveden": -4.98,
     "zirve_52h": 777.59,
     "zirve_tarih": "2026-09-24",
-    "kaynak": "Nasdaq.com (historical API)"
+    "kaynak": "Nasdaq.com (historical API) + Finnhub quote"
    },
    "benchmark_haftalik": {
-    "QQQ": 2.67,
-    "XLC": 0.39
+    "QQQ": 2.94,
+    "XLC": 0.16
    },
    "tez": {
     "genel": "sari",
@@ -255,9 +255,9 @@
    },
    "kural": {
     "durum": "tetiklenmedi",
-    "mesaj": "Zirveden −%4,6. Sonraki kademe: −%15.",
+    "mesaj": "Zirveden −%5,0. Sonraki kademe: −%15.",
     "tetiklenen": null,
-    "zirveden_uzaklik": -4.59,
+    "zirveden_uzaklik": -4.98,
     "dusus_kaynagi": "piyasa_sektor",
     "dusus_kaynagi_aciklama": "Hissenin düşüşü karşılaştırma endeksleriyle benzer: ağırlıkla piyasa/sektör kaynaklı.",
     "kosul_saglaniyor": true
@@ -408,7 +408,7 @@
    },
    "sinyaller": [],
    "cumleler": [
-    "Hisse bu hafta +%3,7 (QQQ +%2,7, XLC +%0,4); 52 haftalık zirveden −%4,6 uzakta.",
+    "Hisse bu hafta +%0,0 (QQQ +%2,9, XLC +%0,2); 52 haftalık zirveden −%5,0 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok."
    ],
    "insider_ozet": {
@@ -425,29 +425,29 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-06T11:35:21+00:00"
+    "guncelleme": "2026-10-07T00:24:17+00:00"
    }
   },
   {
    "ticker": "NOW",
    "ad": "ServiceNow",
    "donem": [
-    "2026-09-30",
-    "2026-10-06"
+    "2026-10-01",
+    "2026-10-07"
    ],
    "fiyat": {
-    "son": 136.08,
-    "tarih": "2026-10-05",
-    "haftalik": 3.52,
-    "aylik": -3.67,
-    "zirveden": -28.1,
+    "son": 137.97,
+    "tarih": "2026-10-06",
+    "haftalik": 6.18,
+    "aylik": -2.33,
+    "zirveden": -27.1,
     "zirve_52h": 189.258,
     "zirve_tarih": "2025-10-27",
-    "kaynak": "Nasdaq.com (historical API)"
+    "kaynak": "Nasdaq.com (historical API) + Finnhub quote"
    },
    "benchmark_haftalik": {
-    "QQQ": 2.67,
-    "IGV": 4.07
+    "QQQ": 2.94,
+    "IGV": 5.65
    },
    "tez": {
     "genel": "sari",
@@ -498,12 +498,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_ok",
-    "mesaj": "Zirveden −%28,1: −%25 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et.",
+    "mesaj": "Zirveden −%27,1: −%25 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et.",
     "tetiklenen": {
      "dusus": 25,
      "not": "DCA 2x; RPO ve SBC sütunlarını kontrol et."
     },
-    "zirveden_uzaklik": -28.1,
+    "zirveden_uzaklik": -27.1,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": true
@@ -518,7 +518,7 @@
      },
      {
       "etiket": "dikkat",
-      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %32.86 yükseldi."
+      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %37.22 yükseldi."
      }
     ],
     "kumelenmis_satislar": [
@@ -586,9 +586,9 @@
    },
    "sinyaller": [],
    "cumleler": [
-    "Hisse bu hafta +%3,5 (QQQ +%2,7, IGV +%4,1); 52 haftalık zirveden −%28,1 uzakta.",
+    "Hisse bu hafta +%6,2 (QQQ +%2,9, IGV +%5,7); 52 haftalık zirveden −%27,1 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%28,1: −%25 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et."
+    "Zirveden −%27,1: −%25 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et."
    ],
    "insider_ozet": {
     "islem": 0,
@@ -604,29 +604,29 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-06T11:35:24+00:00"
+    "guncelleme": "2026-10-07T00:24:20+00:00"
    }
   },
   {
    "ticker": "AAOI",
    "ad": "Applied Optoelectronics",
    "donem": [
-    "2026-09-30",
-    "2026-10-06"
+    "2026-10-01",
+    "2026-10-07"
    ],
    "fiyat": {
-    "son": 121.57,
-    "tarih": "2026-10-05",
-    "haftalik": 25.56,
-    "aylik": 15.2,
-    "zirveden": -45.51,
+    "son": 130.16,
+    "tarih": "2026-10-06",
+    "haftalik": 29.29,
+    "aylik": 23.34,
+    "zirveden": -41.66,
     "zirve_52h": 223.1,
     "zirve_tarih": "2026-05-13",
-    "kaynak": "Nasdaq.com (historical API)"
+    "kaynak": "Nasdaq.com (historical API) + Finnhub quote"
    },
    "benchmark_haftalik": {
-    "QQQ": 2.67,
-    "SMH": 5.65
+    "QQQ": 2.94,
+    "SMH": 4.22
    },
    "tez": {
     "genel": "kirmizi",
@@ -688,12 +688,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%45,5: −%40 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: DCA 2x; nakit pisti ve sulandırmayı kontrol et.",
+    "mesaj": "Zirveden −%41,7: −%40 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: DCA 2x; nakit pisti ve sulandırmayı kontrol et.",
     "tetiklenen": {
      "dusus": 40,
      "not": "DCA 2x; nakit pisti ve sulandırmayı kontrol et."
     },
-    "zirveden_uzaklik": -45.51,
+    "zirveden_uzaklik": -41.66,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 15 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -783,6 +783,165 @@
    },
    "buyuk_hareketler": [
     {
+     "tarih": "2026-10-06",
+     "claude": null,
+     "onceki_gun": "2026-10-05",
+     "hareket": 7.07,
+     "yon": "yukari",
+     "benchmark": {
+      "QQQ": 0.46,
+      "SMH": -0.22
+     },
+     "on_siniflama": "sirkete_ozel",
+     "on_siniflama_aciklama": "Hisse +%7,1, sektör/piyasa −%0,2: hareketin çoğu şirkete özel görünüyor.",
+     "basliklar": [
+      {
+       "zaman": "2026-10-06T22:29:07+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Applied Optoelectronics Inc (AAOI) Shares Surge 7.1% -- What GF Score of 62 Tells Investors",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPc0NHS2xudllncWJvTGI4YmQ5X3J0Z2ZfTWlhWllONU5jWEd0b0FEQWlVMnBxSzVheGVfWmg5aEJlTFFENFJQWDdfRWh3Y2NhZUg5QzVad2VPZmFOa2dRWVFYNjU3bWl0YjA3VEFZSzhCRjY0X0RfVWM1UGxmdWs4TjdVY3FnaVNHYjJmVERCTzd1NFVsbExrdHFfb0pORU53cVZsN3BpRkNNZC0wSEpqUjRYN08wTlFqeWR3dUJsMGo?oc=5",
+       "kaynak": "GuruFocus",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-06T17:05:00+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Applied Optoelectronics (NASDAQ:AAOI) Stock Jumps 6.2% - Should You Buy?",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNVWxqRC1CaWZZZ054QW5PbHpHYzQ0UGhWclVGRUg0NXFHOVg4ZlQyUndia1lRNHZPcWk5elVGcU1XbDZpVVBXeFhCdDVnMUFHck54ZERlTzRvX1B6emtlTEY1RnU0eTlscURBRjJqZWE1U3paRU5LMFVMOE1acmZ6R3NmNjZZejMzaXllTTlYNzRFZDhUOVlsaFAyT3YxRmN6aUFCR0lyUTFuVXV3RUZESVE2b2ZJbnhLYkhmcDZwZTc4S0U?oc=5",
+       "kaynak": "MarketBeat",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-06T16:19:00+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Applied Optoelectronics Rises as Investors React to Completed $600 Million ATM Program",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRWNVanhtSlBYT2JoMzlNMkpaM1pWVmRyNGxBaDF2SVRNTmFoX1BQZzlYd21QaGgwc0hmdnlnUmloRGlqS3FMcUJuNHNSaDh5bkFHcXp4a3hKYmpSWUpydWJqOTd2NFh2N0NNR21rUzY5VUtiWEhWYXVCdkpSMkxRSzNSZ19zMG4tRlk0cnlxSTN3UGE2SGJxUFJTcUxQYXQ2eWhad2I5RVNKbjJzaF8wcHBUUE9xUjlzN2x4ZjhR?oc=5",
+       "kaynak": "Quiver Quantitative",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-06T15:38:05+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Applied Optoelectronics Surges as Dilution Overhang Vanishes",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbzhkeW5aWDdKbmZZQWJjajd0ci1YVG82NjlFNWVfQ0YxTzEtbWVrclZhSlJWd0oyaXJVMmIzcmRkeC1MY21DUllrYU5VQzkzYU1nWDdoVUlXbW9HMlZqUFZGM3RpdjFITV9TVWJBM0VpZDFCaVRiaEh1MTJOY0dlX3BBdEcwVU5tTWRDYVoySjFfZHFkaWxSWDFwbHA3NkUt?oc=5",
+       "kaynak": "TipRanks",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-06T14:45:30+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Applied Optoelectronics Stock Rises on Possible Continued Momentum as It Completes Share Sale",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPUTc4bF9LMVJERE9lbnhHTFBpYmNhZ3dEWFBHdGZZSlVsWlNhYlZxbFg5d2hRT3IwcEJHc1BDYXMydVY4UUJ1cWRGbDNyWlNPbzNiYlhPUDJoZDJ2ZGlid2FJNjJxclkwaGo0VjZlYzl0dUVaNWJ0Wm5abXlrT0dRLTJrLUt5dlpubUV0MXVlRGpqZzVwdGlYNVdEaTN4V2ZUak8wYXFxakhBVHh0V2lPM0hJVXVhYWk0NDJGT0Y1UHdONTJUdG42RFRLNDRhNWp4bWlZZlZJWVdpM0FWV0dYd3ZKa0pRSV9vdWc?oc=5",
+       "kaynak": "Benzinga",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-06T14:05:16+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Applied Optoelectronics jumps 6% after closing $600M share sale program, boosting its growth funding.",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOYXVHQUVkQ0Y5VDRtZndMSVJpLUZUTno2WXZYcjRuUHV4aEY1cHpLNm1mS29OUTNnand4eUItUFVWT0huSE1SdFNrWDZHZmtvcGRDV1ROaUtWU01heDZjYkN0Q0xvT1J4MlpVU3ZGZ0lvOS1xdTVqQTQ2Q3pfZlhDandZVVpyb2U1YVY1emgwRVdRbzhRZjExZmhNMFR5TVZHVDMwRExocE43Ui1DTnc?oc=5",
+       "kaynak": "Pluang",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-06T13:52:00+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Applied Optoelectronics Surges 6% as $600M Share Sale Program Closes; Lumentum Sits Out the Rally, Corning Edges Higher",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNSVlodlNnMlRxcEp2QkFyekY2dk9iVEMtNFZWTWR2dURQNzlOOV9PM1RYYXBvYU44NUlaTUs5clFKUlN6TjdpWWdSQ0lOUVQzYmtVQWVQYlNneTFDNHhsMTN5dlhIOGh2M1dzUGtLV0pNTlNXelZzZDhoVzR4bW5oUG9UR1pZQTAxaUVoTnAtci1ScVF0dnRRbzVzQjM3WEI1clBXbkVYTjFOeTUwR1FVYVEtSDVHRFY0WkF6RVpKR0xObXpERVdxeGRoU2lPVE5iZkVuY0gydHFwYmNkOFc2aEcxN0l1NFpHdGFFMF9STEs?oc=5",
+       "kaynak": "24/7 Wall St.",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-06T03:49:45+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Applied Optoelectronics closes $600M equity offering to fuel AI connectivity push",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPS3ZOaXFjc3I2WVNBME9HZ21ReFIydVNSUjNnRUtIUW13Y2pfQVVDLTl3SjVyNFd1cUp5Y0xKZGJRTDBzZWNSUjBQZnhQR2hMekRDNkRIckdtZ1lhR1ljek1sNEFjUHRQRC1yYi12bmJzR1YwYWFSdU93THNrblNQclRsY0JFREdSOFZEcDl6S1U1dm5DR0NjVGNnQ1VUdXVxOUhGZGtocTZuLXd0NlRpWUJmb24?oc=5",
+       "kaynak": "Dealroom",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-05T23:33:22+00:00",
+       "tarih": "2026-10-05",
+       "baslik": "AAOI stock plunges 17% after Zuckerberg comments on AI spending",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPR0dfM2JQb0JHOFItcTNpUWdKZThiREJYMlI4dVpjdWJZeHBhWHQ3TnVkeTRQN3BWX25FODJmWldxZWFTREg2SEZCTjN6T21yZWhaOE5jOFJTMm85UEtDYUlQZXRjbktxNmVHdGpDdGVxVE1zMmdJT2tmU05LTFR2UnExc2dDaDJ6UWRES0wyNzJzcWF0X0c3bjhDV25ncVl1NlVEVlYwZW5tOHNiXzduNENrZzVIRFVzV2NTTzN1aVlrN3MtZ0ljYUh1Z2Nsb0djRjZWNTY5MF9sQQ?oc=5",
+       "kaynak": "scanx.trade",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-05T23:07:35+00:00",
+       "tarih": "2026-10-05",
+       "baslik": "Applied Optoelectronics Inc (AAOI) Stock Up 5.2% but GF Value Sa",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQWXN0SGt1SnJseTgzOGxIUzY1UnVJd3J4TVVFZjR4MW4xdEtWSVRSYm1aUno0TV9teVNxWE1jUzFDTTFIUEcyOHdoYTFNTWJEd3dYdkpCbU55dS1IUVlSeWRZaTdfQk0zbi1uVHgzeDBxX21NZzNsTTllUzZCM1QtR2F4YVlNT1dvTzQ4VjBoeXZ1RjVSS2RjbUZUMlo0LTZpZTg4NkF4YUtPRWFvRmRIZ3dMQlhfNUVlNmxPYWdzQnljeGI4Nnc?oc=5",
+       "kaynak": "GuruFocus",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-05T22:53:25+00:00",
+       "tarih": "2026-10-05",
+       "baslik": "Applied Optoelectronics completes $600M at-the-market equity offering",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPcW1lak9xbXptS09pNk8wdDBMMW5Xc1RnWmFXTHlmU1hDLVBPbUstb3NwVHhtMUdPanNHVjBMd2k0RWkzY0F5UGNXTHcyTUk5eGdaYy1kaFk5LWE4NnJmNWYwTFF0ajh1MWhQZ2xFRUZLekJ3S1k2QlJjZlkwTFY2OTdIQU1fYjlTRkh6SXZvT1J3MkoySnd1cXdwY0UyN0ltLUM2cFBNNWxOZ1BoMl8yQmM0dGV1X1hvcURMekVyMnVvUGRrc254VWh3?oc=5",
+       "kaynak": "StreetInsider",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-05T12:01:00+00:00",
+       "tarih": "2026-10-05",
+       "baslik": "Zacks Investment Ideas feature highlights: Arm Holdings, Advanced Micro Devices, Marvell, Applied Optoelectronics and Nebius",
+       "ozet": "Arm Holdings, Advanced Micro Devices, Marvell, Applied Optoelectronics and Nebius have been highlighted in this Investment Ideas article.",
+       "url": "https://finnhub.io/api/news?id=be79c6548e2e6ca178d7ec8b86255da7a8c548ebd10ff7826947ca5c18473794",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-05T11:37:30+00:00",
+       "tarih": "2026-10-05",
+       "baslik": "Applied Optoelectronics completes $588m equity offering By Investing.com",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNTTkxcUhnMHRMSWhZMks5UkQtaURSY2hRMExKWVU4V0hmdHZla2FWNlpna0cxZmVLd2ZyVjdyR1c3TzlmSFdZT25ndHhxNFAxUklDS2NOdmlIeEE3YVZrZ2hQMGdOM3BBNnNTd0JncWd0YWxBbjFWLXJYUVBFV3JIMnNPRVVSMXM0T2ZaempITlFiSFZSanZxaVpNdU02d3NqZUFFMldiX201bm11NnFnck54amJjZw?oc=5",
+       "kaynak": "Investing.com India",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-05T11:15:46+00:00",
+       "tarih": "2026-10-05",
+       "baslik": "Applied Optoelectronics completes $600M equity offering to fund AI data center growth.",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUnd5bGJzRldsMVZuRHlESnp0SzVxYWhFYUZUSnRkamZKbUd3c09HdlhLcVExaElQTkE2VFRxUHFFNjdXNEVpbEYxdlhmOUh2dFVDNE50Vnd4bXFJMUFoSTJCZkFUSTVveFBZcGpHNFZYTU9YbUtSODY0OU0wWWJGbTdleDdBN0R4NDdVTEJJUnMzUGRtTmc?oc=5",
+       "kaynak": "Pluang",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-05T11:00:00+00:00",
+       "tarih": "2026-10-05",
+       "baslik": "Applied Optoelectronics Announces Completion of Previously Announced At the Market Offering",
+       "ozet": "Applied Optoelectronics, Inc. (NASDAQ: AAOI) (\"AOI\"), a leading provider of advanced optical and HFC networking products that power AI, today announced that it has completed its previously disclosed $600 million \"at-the-market\" equity offering program (the \"ATM Program\").",
+       "url": "https://finnhub.io/api/news?id=fb90a0ab5c32675c1aca3c7bab27e8f6036290388c9f536860bdda93abd88eaa",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      }
+     ],
+     "sec_bildirimleri": [
+      {
+       "form": "144",
+       "tarih": "2026-10-05",
+       "items": "",
+       "url": "https://www.sec.gov/Archives/edgar/data/1158114/000197407826000376/xsl144X01/primary_doc.xml",
+       "aciklama": ""
+      }
+     ]
+    },
+    {
      "tarih": "2026-10-05",
      "claude": null,
      "onceki_gun": "2026-10-02",
@@ -795,6 +954,15 @@
      "on_siniflama": "sirkete_ozel",
      "on_siniflama_aciklama": "Hisse +%5,2, sektör/piyasa +%0,5: hareketin çoğu şirkete özel görünüyor.",
      "basliklar": [
+      {
+       "zaman": "2026-10-05T23:33:22+00:00",
+       "tarih": "2026-10-05",
+       "baslik": "AAOI stock plunges 17% after Zuckerberg comments on AI spending",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPR0dfM2JQb0JHOFItcTNpUWdKZThiREJYMlI4dVpjdWJZeHBhWHQ3TnVkeTRQN3BWX25FODJmWldxZWFTREg2SEZCTjN6T21yZWhaOE5jOFJTMm85UEtDYUlQZXRjbktxNmVHdGpDdGVxVE1zMmdJT2tmU05LTFR2UnExc2dDaDJ6UWRES0wyNzJzcWF0X0c3bjhDV25ncVl1NlVEVlYwZW5tOHNiXzduNENrZzVIRFVzV2NTTzN1aVlrN3MtZ0ljYUh1Z2Nsb0djRjZWNTY5MF9sQQ?oc=5",
+       "kaynak": "scanx.trade",
+       "saglayici": "Google News RSS"
+      },
       {
        "zaman": "2026-10-05T23:07:35+00:00",
        "tarih": "2026-10-05",
@@ -874,6 +1042,15 @@
        "ozet": "",
        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5jcjdYVGhIRWhSTjZoT2ZYXzFCbFpmNk8wNklPV1NZaDhwWWVnOFJxLVdUZlJSVkFIY0htaWVoVEd6enFpWGVWUFpDTzFoYWlN?oc=5",
        "kaynak": "CNN",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-03T07:00:00+00:00",
+       "tarih": "2026-10-03",
+       "baslik": "Trending Industry Today: Applied Optoelectronics Leads Gains Pre-Market In Optical Communication Stocks",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSElHMlgzT1d6aXRGaGhjSHMzZ0JLcFJPU0Fma3RBZEtnQXhhWDA2WWFGb216S3JaR2ZSXzNkZmgtOTVWc0h6WDFubFhpLU05WmZaV0NJcGFRVWVBWGFwX3cwTy1HMVdlOXhMWXpvcHBQdzVUOW9ZcEhoSlJwUzEtRFNqNXlsOVExMmh3LVNyczhtdGhSa3dwZE5DRTRBbjJMdk9OMTNaaGR1dUZNdHNYTXNpaHFxZw?oc=5",
+       "kaynak": "Moomoo",
        "saglayici": "Google News RSS"
       },
       {
@@ -1322,9 +1499,10 @@
     }
    ],
    "cumleler": [
-    "Hisse bu hafta +%25,6 (QQQ +%2,7, SMH +%5,7); 52 haftalık zirveden −%45,5 uzakta.",
+    "Hisse bu hafta +%29,3 (QQQ +%2,9, SMH +%4,2); 52 haftalık zirveden −%41,7 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%45,5: −%40 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: DCA 2x; nakit pisti ve sulandırmayı kontrol et.",
+    "Zirveden −%41,7: −%40 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: DCA 2x; nakit pisti ve sulandırmayı kontrol et.",
+    "2026-10-06 günü +%7,1 büyük hareket (Hisse +%7,1, sektör/piyasa −%0,2: hareketin çoğu şirkete özel görünüyor.)",
     "2026-10-05 günü +%5,2 büyük hareket (Hisse +%5,2, sektör/piyasa +%0,5: hareketin çoğu şirkete özel görünüyor.)",
     "2026-10-02 günü +%7,7 büyük hareket (Hisse +%7,7, sektör/piyasa +%2,1: hareketin çoğu şirkete özel görünüyor.)",
     "2026-10-01 günü +%8,1 büyük hareket (Hisse +%8,1, sektör/piyasa +%1,4: hareketin çoğu şirkete özel görünüyor.)"
@@ -1343,29 +1521,29 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-06T11:35:28+00:00"
+    "guncelleme": "2026-10-07T00:24:23+00:00"
    }
   },
   {
    "ticker": "IONQ",
    "ad": "IonQ",
    "donem": [
-    "2026-09-30",
-    "2026-10-06"
+    "2026-10-01",
+    "2026-10-07"
    ],
    "fiyat": {
-    "son": 42.97,
-    "tarih": "2026-10-05",
-    "haftalik": -3.61,
-    "aylik": 8.73,
-    "zirveden": -47.66,
+    "son": 43.29,
+    "tarih": "2026-10-06",
+    "haftalik": -1.41,
+    "aylik": 9.54,
+    "zirveden": -47.27,
     "zirve_52h": 82.09,
     "zirve_tarih": "2025-10-13",
-    "kaynak": "Nasdaq.com (historical API)"
+    "kaynak": "Nasdaq.com (historical API) + Finnhub quote"
    },
    "benchmark_haftalik": {
-    "QQQ": 2.67,
-    "SMH": 5.65
+    "QQQ": 2.94,
+    "SMH": 4.22
    },
    "tez": {
     "genel": "kirmizi",
@@ -1426,12 +1604,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%47,7: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "mesaj": "Zirveden −%47,3: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "tetiklenen": {
      "dusus": 35,
      "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -47.66,
+    "zirveden_uzaklik": -47.27,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -1446,7 +1624,7 @@
      },
      {
       "etiket": "dikkat",
-      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %46.96 yükseldi."
+      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %51.95 yükseldi."
      }
     ],
     "kumelenmis_satislar": [
@@ -1485,17 +1663,7 @@
     }
    },
    "buyuk_hareketler": [],
-   "sec_bildirimleri": [
-    {
-     "form": "25-NSE",
-     "tarih": "2026-09-30",
-     "donem": "",
-     "items": "",
-     "aciklama": "",
-     "accn": "0000876661-26-000804",
-     "url": "https://www.sec.gov/Archives/edgar/data/1824920/000087666126000804/xslF25X02/primary_doc.xml"
-    }
-   ],
+   "sec_bildirimleri": [],
    "bilanco": {
     "son_ceyrek": "FY2026 Q2",
     "kirmizi": 5,
@@ -1512,9 +1680,9 @@
    },
    "sinyaller": [],
    "cumleler": [
-    "Hisse bu hafta −%3,6 (QQQ +%2,7, SMH +%5,7); 52 haftalık zirveden −%47,7 uzakta.",
+    "Hisse bu hafta −%1,4 (QQQ +%2,9, SMH +%4,2); 52 haftalık zirveden −%47,3 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%47,7: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
+    "Zirveden −%47,3: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
    ],
    "insider_ozet": {
     "islem": 0,
@@ -1530,29 +1698,29 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-06T11:35:31+00:00"
+    "guncelleme": "2026-10-07T00:24:26+00:00"
    }
   },
   {
    "ticker": "ORCL",
    "ad": "Oracle",
    "donem": [
-    "2026-09-30",
-    "2026-10-06"
+    "2026-10-01",
+    "2026-10-07"
    ],
    "fiyat": {
-    "son": 142.48,
-    "tarih": "2026-10-05",
-    "haftalik": 7.45,
-    "aylik": -10.27,
-    "zirveden": -54.48,
+    "son": 144.77,
+    "tarih": "2026-10-06",
+    "haftalik": 5.07,
+    "aylik": -8.82,
+    "zirveden": -53.75,
     "zirve_52h": 313.0,
     "zirve_tarih": "2025-10-16",
-    "kaynak": "Nasdaq.com (historical API)"
+    "kaynak": "Nasdaq.com (historical API) + Finnhub quote"
    },
    "benchmark_haftalik": {
-    "QQQ": 2.67,
-    "IGV": 4.07
+    "QQQ": 2.94,
+    "IGV": 5.65
    },
    "tez": {
     "genel": "sari",
@@ -1611,12 +1779,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_ok",
-    "mesaj": "Zirveden −%54,5: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "mesaj": "Zirveden −%53,8: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "tetiklenen": {
      "dusus": 35,
      "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -54.48,
+    "zirveden_uzaklik": -53.75,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": true
@@ -1691,9 +1859,9 @@
     }
    ],
    "cumleler": [
-    "Hisse bu hafta +%7,5 (QQQ +%2,7, IGV +%4,1); 52 haftalık zirveden −%54,5 uzakta.",
+    "Hisse bu hafta +%5,1 (QQQ +%2,9, IGV +%5,7); 52 haftalık zirveden −%53,8 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%54,5: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
+    "Zirveden −%53,8: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
    ],
    "insider_ozet": {
     "islem": 0,
@@ -1709,29 +1877,29 @@
     "ceyrek": 2,
     "yil": 2027,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-06T11:35:34+00:00"
+    "guncelleme": "2026-10-07T00:24:30+00:00"
    }
   },
   {
    "ticker": "CEG",
    "ad": "Constellation Energy",
    "donem": [
-    "2026-09-30",
-    "2026-10-06"
+    "2026-10-01",
+    "2026-10-07"
    ],
    "fiyat": {
-    "son": 267.62,
-    "tarih": "2026-10-05",
-    "haftalik": 2.76,
-    "aylik": -10.48,
-    "zirveden": -33.75,
+    "son": 300.4,
+    "tarih": "2026-10-06",
+    "haftalik": 13.54,
+    "aylik": 0.48,
+    "zirveden": -25.63,
     "zirve_52h": 403.95,
     "zirve_tarih": "2025-10-15",
-    "kaynak": "Nasdaq.com (historical API)"
+    "kaynak": "Nasdaq.com (historical API) + Finnhub quote"
    },
    "benchmark_haftalik": {
-    "SPY": 1.2,
-    "XLU": 1.83
+    "SPY": 1.95,
+    "XLU": 3.65
    },
    "tez": {
     "genel": "kirmizi",
@@ -1784,12 +1952,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%33,8: −%25 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku.",
+    "mesaj": "Zirveden −%25,6: −%25 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku.",
     "tetiklenen": {
      "dusus": 25,
      "not": "Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku."
     },
-    "zirveden_uzaklik": -33.75,
+    "zirveden_uzaklik": -25.63,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -1819,7 +1987,385 @@
      }
     }
    },
-   "buyuk_hareketler": [],
+   "buyuk_hareketler": [
+    {
+     "tarih": "2026-10-06",
+     "claude": null,
+     "onceki_gun": "2026-10-05",
+     "hareket": 12.25,
+     "yon": "yukari",
+     "benchmark": {
+      "QQQ": 0.46,
+      "SPY": 0.55,
+      "XLU": 2.98
+     },
+     "on_siniflama": "sirkete_ozel",
+     "on_siniflama_aciklama": "Hisse +%12,2, sektör/piyasa +%1,8: hareketin çoğu şirkete özel görünüyor.",
+     "basliklar": [
+      {
+       "zaman": "2026-10-06T23:09:00+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Google to invest $4.3 billion in Constellation Energy nuclear plants",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeHNzazdVOV9NSGZETHF2aFNfVjVHSXo4NHdWUG5ucHkxSjJrbXFfNXlncGctSjFrRG9CWm13SXVJTkRLTWtfY0pPSXhFZWdVUG9rY2JMOGQ3ZUVxalNBcW95YmxNOHFrbzB0U3dSdkNySWgwU2dKWmdaVS1EYzE1MmlUZWRabVNfcXU3bG01b1ZtTTNkZU9kdlNVU2xMalREY3ZHRzhUT1B3dw?oc=5",
+       "kaynak": "CBS News",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-06T22:35:29+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "S&P 500 And Nasdaq 100 Soar To Record Highs Amid Rising Bets Of Strong Quarterly Earnings — CEG, LCID, SPCX, MRVL In Focus",
+       "ozet": "Constellation Energy was the top Nasdaq 100 gainer on its multi-year nuclear power deal with Google.",
+       "url": "https://finnhub.io/api/news?id=682fd04d3d7589318662fd1cea2c31cda184b5f97c1ee5bc306840484d4455e9",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T21:59:00+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "ERock Stock Jumps 10% on AI Power Surge",
+       "ozet": "After falling out of favor, shares of power stocks got plugged in on Tuesday on a big deal between Constellation Energy and Google.",
+       "url": "https://finnhub.io/api/news?id=1c66eb9f43a299db090ccc98d9b5f7e82411108cc20dfaa562662649591e7eb7",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T21:11:26+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Google and Constellation Energy sign latest nuclear energy deal",
+       "ozet": "Google and Constellation Energy announced a deal in which Constellation will invest $4.3 billion to upgrade 11 nuclear units in three states to help meet growing demand for electricity.",
+       "url": "https://finnhub.io/api/news?id=4288451f39c9c75ad7c3ca98fb992399fab6327365dc2a010ae6a943da7de9d2",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T20:43:09+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Stock Market Today: Dow, S&P 500 Rally; Cathie Wood Buys This Stock Amid 56% Dive",
+       "ozet": "The Dow Jones index rises on the stock market today amid a flurry of breakouts. Seagate falls on a report. Cathie Wood snaps up a plunging stock.",
+       "url": "https://finnhub.io/api/news?id=ecd0a449183cc5b59536653b5886a95168da8c11b0fdfe02872d15c9a08989fd",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T20:42:26+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Google and Constellation Energy Strike a Sweeping Nuclear-Power Deal -- Update",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSmRDWi1UTDlPTHQzajhhbFJCNlEwaXhyNm5KN21HVmM5SXpSU2I5OF9WNEdLdmNKTk5FdS1hMnh1SjdUakxER3FXTXZCVU1XUnA1YmwwMTUzelVVWnhvWTVvb3VuYk9HN0oxaThCdVNHZW41RGE1S0dmNWc2QzE0Tk1UaXR4dUdFdzJscUdtOWJRbjhabzZTYjQwR1NNRTZnM1F1akFxdm10MWVJX0RmZmdR?oc=5",
+       "kaynak": "Moomoo",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-06T20:35:51+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Watch Constellation Energy Surges 12% on Google Nuclear Power Deal | Closing Bell",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPSWZyNWNrUm5tYWhnV28xcDRiQlFNWEU3OUN4R3lJdkdZTmRIYW1xMTJ4VC15OFlDNGlHNGxlZkZRUG1uczZkNlFiSkJScnhpeFE5bHF1UTM1NjdjVFdxMDl5WkE3bVlmaGJoam0xNmpIbVh1R1ZZQmswdW1NaWx4SzlsN3RuTXVaVUdvbUlGbnI0enZwbXpRUG5oQ2NVOUk?oc=5",
+       "kaynak": "Bloomberg.com",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-06T20:34:32+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Constellation Energy Surges 12% on Google Nuclear Power Deal | Closing Bell",
+       "ozet": "Comprehensive cross-platform coverage of the U.S. market close on Bloomberg Television, Bloomberg Radio, and YouTube with Romaine Bostick, Sally Bakewell, Carol Massar and Jess Menton.",
+       "url": "https://finnhub.io/api/news?id=61d67e58385854d15b3609a1110db516d715884f22b42805531a8d8e97deb2cb",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T20:33:10+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Google Joins Microsoft, Amazon, and Meta on Constellation’s Energy Roster",
+       "ozet": "Google & Constellation join forces for 20 years.",
+       "url": "https://finnhub.io/api/news?id=f206aafb473d886268e6c4b6c97cd2605ca995e0dee3b0bf2de7013e2939b798",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T20:32:00+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Google and Constellation Energy Strike a Sweeping Nuclear-Power Deal",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQOGx4RnB0ZHFqa2cyQzltaWJtR1k0Y2llR0lwTHJUYU4xYkR4Vkd6WXJXRmpNcUI3SFh6TXdzVnV0d29ZSDZPRzZiZXJDQkpQX1kydGVCMW9SSGdHNFN4WnhJOEMtOUtMbjlxamlSMHkyYzF6bThsUngyQzVVaFNBR1drQ25nQkxkSXk5MkZlVWdCVWVDamZ4V2pOdHo2LXA1MVozVjNZTWl1cGtFRGttc0IxY3h1NTRX?oc=5",
+       "kaynak": "WSJ",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-06T20:32:00+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Constellation Energy stock surges on landmark 20-year nuclear deal with Google",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOc3hROUtabkhHdjByODVrcTBaaWd3VmdoMF82ZGFNV3k0dkRXTXFBYjlaSmUzTzI5YXpJRTVtQTRRNGlDTVlUZW1lNGFYSy14Y0thZ01QQV9UbWl1aWpGZndKZ3ZWY19zYjU1bkJDMnROOHYwT0MtdFMtdnBzTGVWTHItaVJrN09kejhDMXFHVmRwUU1rN0V5c1ln?oc=5",
+       "kaynak": "Business Insider",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-06T20:30:00+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Power Stocks Just Broke Out of a Long Slump. Here’s Why.",
+       "ozet": "Companies that sell electricity have finally figured out a way to make money off the data center boom without ending up on the wrong side of the political fight against data centers.",
+       "url": "https://finnhub.io/api/news?id=9750004f50c82b125a5c431cf2ae6baf2447025707324996bf45741676bf8fd6",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T20:26:06+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "US Equity Markets End Higher as Big Tech Gains, Government Bond Yields Fall",
+       "ozet": "US equity indexes ended higher Tuesday after big-tech names pushed the S&P 500 and the Nasdaq Compos",
+       "url": "https://finnhub.io/api/news?id=37fde2aeb596728cee7e73351c8fc3402395926c60d0cc1eaafd8d661257a678",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T20:22:09+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Constellation Energy surges 12% on Google nuclear deal (CEG:NASDAQ)",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxORGQzbXJIRElWU1gwVjJnenR3SjFnQnA2aVgyY0ZzdFN6ZjZVdXI0ZF9zY0Zqcnhid3RkWktvV3h1cHlNcmhGYmZqazJfb0dadmFxTjdaWDhlRXg0TGhLY0FYWHY3c21lV19kak5wcWN0VVZib09sVGlNR01NVzdkWTJuaURWbFZGeHN6OEhhSkE2MURWM0E?oc=5",
+       "kaynak": "Seeking Alpha",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-06T20:21:55+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "How major US stock indexes fared Tuesday 10/6/2026",
+       "ozet": "stock market hit an all-time high as expectations rise for companies to keep making more money.6% Tuesday and topped its prior record set in August.",
+       "url": "https://finnhub.io/api/news?id=387c38ff5445ae377913803db77a517549e37ee5dc5d82fa62f7eef648231a03",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T20:02:22+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "S&P 500 Breaks Out to Record High as AI Rally Broadens Beyond Tech",
+       "ozet": "The S&P 500 just hit a new record high as the AI trade lifts stocks beyond the tech sector.",
+       "url": "https://finnhub.io/api/news?id=d148895d402993b7591010a893a31671bef2eb3b3a6a7cc6d44b5534d661fc32",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T19:49:36+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Sector Update: Energy Stocks Gain Late Afternoon",
+       "ozet": "Energy stocks rose late Tuesday afternoon with the NYSE Energy Sector Index and the State Street Ene",
+       "url": "https://finnhub.io/api/news?id=0650c7d7f4b6b68e1e03ecebc5aa01a7489673474094e7ac043773bbf7443fac",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T19:49:23+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Why Constellation Energy Rallied Today",
+       "ozet": "Constellation Energy signed a big power deal with Alphabet.",
+       "url": "https://finnhub.io/api/news?id=2bca42318cba03e444b33759a0b5bb91d776e4a7b479e0451a7e28392f535d70",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T19:40:24+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Constellation Energy Leads S&P 500 to Record Peak",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPMndqaTlYX1FrUFMwaEw4ZTh5UE1UaVJzU3oySzBtb21BZzRHbVhVX1dxeldobm92RU5mckN3MUhRaDh0dFZoWHJEZEtFV1piQ2lJUWdWQlNzbHh1bzBTcjhUa3hhdzVvemFoYVdQdURTVTZpNEFLZE5pVWxUXzZnQl9yOW5FMnVOby12RWh0WFNud01RX3ZsWXcyWm9sdw?oc=5",
+       "kaynak": "Yahoo Finance",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-06T19:35:38+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Constellation Energy (CEG) stock analysis: Google deal, valuation, and technicals",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQdlcxMTNxZVNiLWlKMExIelQwTEs1LWhfLWFxSnlQZXptRjZvb2piZzc1U1VqeDBXNl9SUFVQTTc0ZHMyNGswc3p5MmRpemhpdFZ1T2NVeVJ4QVp2UkRwNUFfcWVmdHJGcElsazlHbGoydGJEamhUTTRjZHlIbFB3T2diREUtS0RoWFlhY0o1V0M0dlFqeGNxM2xxUmNKdXVyeGFFN2o3ZnkwRkJmLU5URndYcGJrMWxZOUJOdHQzOXVPakdqU3p2WGd2VXJXekdaeHFlVw?oc=5",
+       "kaynak": "Investing.com",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-06T19:34:50+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Stock Market Today: Dow Rises, But Seagate Dives On This; AI Stock, Electronics Play Clear Entries (Live Coverage)",
+       "ozet": "The Dow Jones index rises on the stock market today but Seagate falls on a report. AMD pops. Zebra and an AI stock test entries.",
+       "url": "https://finnhub.io/api/news?id=1978a1c82c4d9c59958a6ba206f27ca78d48bd7846ee379ed8b186b3e2f133e2",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T19:33:14+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Why investors' 'proverbial wall of worry' is no match for the market rally",
+       "ozet": "Hennion & Walsh chief investment officer, Kevin Mahn, sits down with Yahoo Finance Senior Reporter Brooke DiPalma to share his thoughts on what's driving the market rally.",
+       "url": "https://finnhub.io/api/news?id=5852e4e5fb6886c877e520978a5e07c54d68b1d19b0939174752290c952e0236",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T19:03:00+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Constellation Energy CEG Jumps As Amazon Backs $3B Nuclear Deal",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQNm9RZ2J4SDdBdHdQTFlGSjJ2eTQyVUdSVUxBVGdWTWM2cEcwU0hZam91VmhlXzdIYWVsSy12dWxrbkhQYjFBRTRhVVh0cW5acDFfWUR2V2lmS052eHFpTnZjV3BSV0tVYnprbGhWWDFycDZfWm0yR3JYMWo3d0FFb2k1a2VTc1hxYW1EemtVT3ltZFk?oc=5",
+       "kaynak": "Timothy Sykes",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-06T18:55:17+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Constellation Energy (NASDAQ:CEG) Stock Surges 15% After Massive Google Nuclear Power Deal",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUWFROG4zaUU0REVwWUZzcG8xaXpkOWhqQTdHQ2NmYUdhbFEtUmctMUNSeHMyRUg2aEljUEJ4MGlvX2N3WkxpblZKZ2Z4blM1OU1pV3JtVjlyV3VJXzNvdlhEYmJSSnJLNC1kclc0d0dlQVpOTlBta1BOcTh2eFBabg?oc=5",
+       "kaynak": "Stocks Down Under",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-06T18:39:09+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Google enters massive power deal with Constellation Energy",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORUxKMkZGbUQ2OXg4UG1yandOVnQ0R0dxYkpGcHlUOVVIMUFLa1lOYWJ2ZmM2ZnNOYWk2a0d0a0F3NDBzUTZsUHhGV0ZWLUlUdFJsWGxaaHA1dFNBcEc0am5UQVRLZXh4TXlLM2lFNHNybDFJM2pyeXdaUEpFQmtyZjA1MFNyLVlySGxmZWJRdklHb010RFNTVFliaXdsZDRBU29WY2Vfc3pvc1lW?oc=5",
+       "kaynak": "The Globe and Mail",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-06T18:31:19+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "CEG, VST, TLN Jump: Google’s Power Deal Sparks A Nuclear Rally",
+       "ozet": "Constellation and Google announced two contracts on Tuesday, totaling about 3,590 megawatts, sparking buying in CEG, as well as peers VST and TLN.",
+       "url": "https://finnhub.io/api/news?id=2530723524186edfad2fd6e733b0c13c1a155eaed32777e4940ccfa634595340",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T18:14:57+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Google’s $4.3 Billion Bet on Nuclear Comes Just Days After Amazon’s",
+       "ozet": "Key TakeawaysConstellation Energy shares rose about 13% after Google agreed to buy about 3. 6 gigawatts of its power, including a 20-year contract for 890 megawatts of new nuclear capacity.",
+       "url": "https://finnhub.io/api/news?id=645fba0295f899f90036130559b5d3476ef36615337a2c0084a3946a3acb24d2",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T18:13:58+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "3 S&P 500 Utility Giants Soar Above Key Resistance. This Is Why.",
+       "ozet": "A federal loan and a Google deal tied to nuclear plants fueled rally for Vistra, Constellation, NRG.",
+       "url": "https://finnhub.io/api/news?id=ae7c0f8667bebee97f7b1c727c973189e20858cae8677c4ed3b0d1d70582f828",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T18:04:35+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "The Utilities Sector Goes Nuclear as AI Drives More Than Tech Higher",
+       "ozet": "Tech wasn't the top sector performer during Tuesday's broad-based rally, but the AI trade was still among the top forces fueling new records.",
+       "url": "https://finnhub.io/api/news?id=97795aec96547b7c262b588e27646e8a35fd8256ebd60f96c291cb946c5b6550",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T17:48:41+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Is the stock market boom too good to be true? Plus the growing divide in AI adoption",
+       "ozet": "The Market Hang panel engages in a variety of conversations centered around whether the latest stock market rally is too good to be true, forecasts on hyperscaler capex, the growing divide in AI adoption, and the latest nuclear energy deal between Alphabet (GOOG, GOOGL) and Constellation (CEG). Today's panel includes Business Insider Today executive editor Dan DeFrancesco, Aptus Capital Advisors head of equity David Wagner, Laffer Tengler Investments CEO Nancy Tengler, Advisors Capital Managemen",
+       "url": "https://finnhub.io/api/news?id=1412cc00173c6f49931a4761ea42f458387bc0bbad37234a884afb99c0760e48",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T17:39:35+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "The big bottleneck issue for clean nuclear power",
+       "ozet": "Nuclear energy is back in focus after Google (GOOG, GOOGL) and Constellation Energy (CEG) inked a $1 billion deal. Should people still be skeptical about the legitimacy of clean nuclear power? Today's Market Hang panel includes Business Insider Today executive editor Dan DeFrancesco, Aptus Capital Advisors head of equity David Wagner, Laffer Tengler Investments CEO Nancy Tengler, Advisors Capital Management senior portfolio manager Gus Scacco, and Siebert Financial CIO Mark Malek.",
+       "url": "https://finnhub.io/api/news?id=3033ff888041fd2906361e28a80b0617c529f6f5103e301102a7866cc34bd682",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T17:37:11+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Sector Update: Tech Stocks Gain Tuesday Afternoon",
+       "ozet": "Tech stocks were higher Tuesday afternoon, with the State Street Technology Select Sector SPDR ETF (",
+       "url": "https://finnhub.io/api/news?id=24b621155622e9286c497d6c2c3af50ea97e4fa564002811b7017ff996bf6a6d",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T17:09:00+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Marvell, Nvidia, AMD, Constellation Energy, Seagate, and More Stocks That Explain Today’s Market",
+       "ozet": "Advanced Micro Devices rises after Citi boosts its price target on the chip maker’s stock.",
+       "url": "https://finnhub.io/api/news?id=e14cb1f84105eeea2ce25251fab8bb7afcf95ba31acd31677687619808c240c5",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T17:08:38+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Nuclear Stocks in Focus as Constellation Energy (Nasdaq: CEG) Signs Google AI Power Deal",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOeDBxaFJSSVgtTndTWWdKczk1MFZDTjlzVGpsTWJ5akd5TnRISHVXbE54bk5hV1BiTW03a3UwY3BPTWRqUDdodm1rN3A0VW9JVWlZemtySzRVZlY1NjFIelBka044UVY1dXh1Q0loLWxZSjItcHpueUhrdWRuSzVzUWhGN1lWS0I2eHVoSFFlZ1J2SEdrQmYxdXFaSkJZdVNUdnFxYzBJVTlMM2dYQWxtSzBZcTlrUElfUE5PZ19wY2Njd19GUVExV2daRHdwWXRUalVhOFJnNA?oc=5",
+       "kaynak": "Investorideas.com",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-06T17:05:00+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "These S&P500 stocks have an unusual volume in today's session",
+       "ozet": "Discover the S&P500 stocks that are experiencing unusual trading volume in today's session. Find out more about these stocks below.",
+       "url": "https://finnhub.io/api/news?id=6e6e4872a1bef1389e03be062240d21fa4a529e1968b71d693e86f30ed0ebd95",
+       "kaynak": "ChartMill",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T16:38:08+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Stock Market Midday, Oct. 6: S&P 500 Sets New High, Nuclear Stocks Surge",
+       "ozet": "Falling oil prices eased inflation concerns and lifted equities across industrials and energy-sensitive sectors, today, Oct. 6, 2026.",
+       "url": "https://finnhub.io/api/news?id=e926d562270e4ff09dc7a33caebfeab23435484b1bd4edafb1d8a98b426fff1d",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T16:35:02+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Which S&P500 stocks are moving on Tuesday?",
+       "ozet": "Stay updated with the movement of S&P500 stocks in today's session. Discover which S&P500 stocks are making waves on Tuesday.",
+       "url": "https://finnhub.io/api/news?id=77d86f15549f5f68cb794b92dd883f9ce67028af48767f3a173cdb7c589f7e8d",
+       "kaynak": "ChartMill",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-06T16:33:00+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Constellation Energy Jumps As Amazon Nuclear Deal Fuels $3B+ Expansion",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQ3BKazY5ZGxPaDBTWVlJZkNrUkpNc0NFMTZ4WlQ3a0hvT0ExSVRHbk1OUzVzZl9JdE8zTFZ3OWU2VXJMUk1GOHlzb1FlSHctSXJvNkFkNWl5a3hfMGJfRTJCOFpIOWRmekV4N2N1ZDJiM0lxY0I0TGIzNHlHdmlKUWlEczI2RXdVQS1ZaXdUMzQ?oc=5",
+       "kaynak": "Timothy Sykes",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-06T16:33:00+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Constellation Energy Jumps As Amazon Deal Fuels $3B Nuclear Push",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPMkpKd3RwV2N4M1pDYnZ2UkYtdGVfVm56RXpZM2lUQXRLQVZmc2pYT2tmeFljcjNGXzVQZlNfUTFPbFhiV09mckdYQko5Q21KN1BxX3BIaW1jdVpVZUNENGJqbUZZS2lsbmVPT3BRanBXdWZyNlFLU2JHYTdkNDVxX2twOGNBUU5sMkJBTw?oc=5",
+       "kaynak": "StocksToTrade",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-06T16:31:21+00:00",
+       "tarih": "2026-10-06",
+       "baslik": "Google, Constellation Energy Strike Deal for Nuclear Power",
+       "ozet": "Google parent Alphabet agreed to buy nuclear power from Constellation Energy Corp. in a 20-year power-purchase agreement that will drive more than $4.3 billion in investments to upgrade systems at 11 Constellation reactors. Bloomberg's Will Wade joins to discuss.",
+       "url": "https://finnhub.io/api/news?id=28380b6170d99638d5dc37706d946c6908e0aaa412c188423614957ac393c426",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      }
+     ],
+     "sec_bildirimleri": []
+    }
+   ],
    "sec_bildirimleri": [],
    "bilanco": {
     "son_ceyrek": "FY2026 Q2",
@@ -1852,9 +2398,10 @@
     }
    ],
    "cumleler": [
-    "Hisse bu hafta +%2,8 (SPY +%1,2, XLU +%1,8); 52 haftalık zirveden −%33,8 uzakta.",
+    "Hisse bu hafta +%13,5 (SPY +%1,9, XLU +%3,6); 52 haftalık zirveden −%25,6 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%33,8: −%25 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku."
+    "Zirveden −%25,6: −%25 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku.",
+    "2026-10-06 günü +%12,2 büyük hareket (Hisse +%12,2, sektör/piyasa +%1,8: hareketin çoğu şirkete özel görünüyor.)"
    ],
    "insider_ozet": {
     "islem": 0,
@@ -1870,29 +2417,29 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-06T11:35:37+00:00"
+    "guncelleme": "2026-10-07T00:24:33+00:00"
    }
   },
   {
    "ticker": "RGTI",
    "ad": "Rigetti Computing",
    "donem": [
-    "2026-09-30",
-    "2026-10-06"
+    "2026-10-01",
+    "2026-10-07"
    ],
    "fiyat": {
-    "son": 15.15,
-    "tarih": "2026-10-05",
-    "haftalik": -5.02,
-    "aylik": -0.33,
-    "zirveden": -73.11,
+    "son": 15.17,
+    "tarih": "2026-10-06",
+    "haftalik": -3.62,
+    "aylik": -0.2,
+    "zirveden": -73.07,
     "zirve_52h": 56.34,
     "zirve_tarih": "2025-10-15",
-    "kaynak": "Nasdaq.com (historical API)"
+    "kaynak": "Nasdaq.com (historical API) + Finnhub quote"
    },
    "benchmark_haftalik": {
-    "QQQ": 2.67,
-    "IGV": 4.07
+    "QQQ": 2.94,
+    "IGV": 5.65
    },
    "tez": {
     "genel": "kirmizi",
@@ -1958,7 +2505,7 @@
      "dusus": 35,
      "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -73.11,
+    "zirveden_uzaklik": -73.07,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -2041,7 +2588,7 @@
    },
    "sinyaller": [],
    "cumleler": [
-    "Hisse bu hafta −%5,0 (QQQ +%2,7, IGV +%4,1); 52 haftalık zirveden −%73,1 uzakta.",
+    "Hisse bu hafta −%3,6 (QQQ +%2,9, IGV +%5,7); 52 haftalık zirveden −%73,1 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
     "Zirveden −%73,1: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
    ],
@@ -2059,7 +2606,7 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-06T11:35:41+00:00"
+    "guncelleme": "2026-10-07T00:24:36+00:00"
    }
   }
  ],
