@@ -1,20 +1,20 @@
 {
  "ticker": "AAOI",
- "guncelleme": "2026-10-07",
+ "guncelleme": "2026-10-08",
  "pencereler": {
   "90": {
    "kodlar": {
+    "S": {
+     "islem": 8,
+     "adet": 62172.0,
+     "tutar": 7391749.319999999,
+     "plan_10b5_1_adet": 30000.0
+    },
     "diger": {
      "islem": 1,
      "adet": 2200.0,
      "tutar": 0.0,
      "plan_10b5_1_adet": 0.0
-    },
-    "S": {
-     "islem": 7,
-     "adet": 56172.0,
-     "tutar": 6671569.319999999,
-     "plan_10b5_1_adet": 24000.0
     },
     "A": {
      "islem": 1,
@@ -47,15 +47,15 @@
     {
      "kisi": "Yeh Shu-Hua (Joshua)",
      "unvan": "Senior Vice President and Asia General Manager.",
-     "satis_adet": 12000.0,
-     "satis_tutar": 1637053.1999999997,
+     "satis_adet": 18000.0,
+     "satis_tutar": 2357233.1999999997,
      "alim_adet": 0.0,
      "vergi_adet": 4709.0,
-     "planli_satis_adet": 12000.0,
+     "planli_satis_adet": 18000.0,
      "ilk_satis_oncesi": 394207.0,
-     "son_pozisyon": 377498.0,
-     "son_tarih": "2026-08-18",
-     "satilan_pozisyon_orani": 3.0,
+     "son_pozisyon": 371498.0,
+     "son_tarih": "2026-10-05",
+     "satilan_pozisyon_orani": 4.6,
      "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
     },
     {
@@ -118,17 +118,17 @@
   },
   "180": {
    "kodlar": {
+    "S": {
+     "islem": 27,
+     "adet": 562387.0,
+     "tutar": 94200179.6575,
+     "plan_10b5_1_adet": 84329.0
+    },
     "diger": {
      "islem": 5,
      "adet": 1617404.0,
      "tutar": 0.0,
      "plan_10b5_1_adet": 0.0
-    },
-    "S": {
-     "islem": 27,
-     "adet": 560387.0,
-     "tutar": 94026013.6575,
-     "plan_10b5_1_adet": 82329.0
     },
     "A": {
      "islem": 12,
@@ -175,29 +175,29 @@
     {
      "kisi": "Yeh Shu-Hua (Joshua)",
      "unvan": "Senior Vice President and Asia General Manager.",
-     "satis_adet": 95980.0,
-     "satis_tutar": 16303309.02,
+     "satis_adet": 101980.0,
+     "satis_tutar": 17023489.02,
      "alim_adet": 0.0,
      "vergi_adet": 40743.0,
-     "planli_satis_adet": 18000.0,
+     "planli_satis_adet": 24000.0,
      "ilk_satis_oncesi": 501584.0,
-     "son_pozisyon": 377498.0,
-     "son_tarih": "2026-08-18",
-     "satilan_pozisyon_orani": 19.1,
+     "son_pozisyon": 371498.0,
+     "son_tarih": "2026-10-05",
+     "satilan_pozisyon_orani": 20.3,
      "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
     },
     {
      "kisi": "Murry Stefan J.",
      "unvan": "Chief Financial Officer",
-     "satis_adet": 90000.0,
-     "satis_tutar": 14571825.6,
+     "satis_adet": 86000.0,
+     "satis_tutar": 14025811.6,
      "alim_adet": 0.0,
      "vergi_adet": 72012.0,
-     "planli_satis_adet": 24000.0,
-     "ilk_satis_oncesi": 280070.0,
+     "planli_satis_adet": 20000.0,
+     "ilk_satis_oncesi": 270126.0,
      "son_pozisyon": 367168.0,
      "son_tarih": "2026-09-10",
-     "satilan_pozisyon_orani": 32.1,
+     "satilan_pozisyon_orani": 31.8,
      "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
     },
     {
@@ -356,6 +356,25 @@
   }
  ],
  "son_islemler": [
+  {
+   "turev": false,
+   "menkul": "Common Stock, $.001 par value",
+   "tarih": "2026-10-05",
+   "kod": "S",
+   "adet": 6000.0,
+   "fiyat": 120.03,
+   "yon": "D",
+   "sonrasi": 371498.0,
+   "sahiplik": "D",
+   "plan_10b5_1": true,
+   "kisi": "Yeh Shu-Hua (Joshua)",
+   "unvan": "Senior Vice President and Asia General Manager.",
+   "yonetici": true,
+   "accn": "0001683168-26-007698",
+   "url": "https://www.sec.gov/Archives/edgar/data/1158114/000168316826007698/xslF345X06/ownership.xml",
+   "dosyalama": "2026-10-07",
+   "tutar": 720180.0
+  },
   {
    "turev": false,
    "menkul": "Common Stock, $.001 par value",
@@ -2122,34 +2141,15 @@
    "url": "https://www.sec.gov/Archives/edgar/data/1158114/000168316826003183/xslF345X06/ownership.xml",
    "dosyalama": "2026-04-24",
    "tutar": 67304.79
-  },
-  {
-   "turev": false,
-   "menkul": "Common Stock, $.001 par value",
-   "tarih": "2026-04-10",
-   "kod": "S",
-   "adet": 4000.0,
-   "fiyat": 136.5035,
-   "yon": "D",
-   "sonrasi": 276070.0,
-   "sahiplik": "D",
-   "plan_10b5_1": true,
-   "kisi": "Murry Stefan J.",
-   "unvan": "Chief Financial Officer",
-   "yonetici": true,
-   "accn": "0001683168-26-002918",
-   "url": "https://www.sec.gov/Archives/edgar/data/1158114/000168316826002918/xslF345X06/ownership.xml",
-   "dosyalama": "2026-04-14",
-   "tutar": 546014.0
   }
  ],
  "anlati": [
-  "Son 90 günde yöneticiler ve yönetim kurulu üyeleri 7 satış işlemiyle toplam 6,7 milyon $ değerinde hisse sattı. Önceden kayda geçirilmiş 10b5-1 planı kapsamındaki satışların payı (adet bazında): %43.",
+  "Son 90 günde yöneticiler ve yönetim kurulu üyeleri 8 satış işlemiyle toplam 7,4 milyon $ değerinde hisse sattı. Önceden kayda geçirilmiş 10b5-1 planı kapsamındaki satışların payı (adet bazında): %48.",
   "Satışların önemli bir kısmı plansız: yöneticinin o an karar verdiği satışlar, planlılara göre daha fazla bilgi taşır.",
   "Bu dönemde yönetimden hiç açık piyasa alımı (P) yok.",
   "20 vergi kesintisi (F) işlemi var: hak edilen hisselerin vergisi için şirkete bırakılan hisseler. Rutindir, sinyal sayılmaz.",
   "Opsiyon/RSU kullanımı (M) 0, hibe (A) 1 işlem: ücretlendirmenin parçası.",
-  "En büyük satıcılar: Chang Hung-Lun (Fred) (Senior Vice President and North America General Manager) 3,5 milyon $ (doğrudan pozisyonuna oranı %11); Yeh Shu-Hua (Joshua) (Senior Vice President and Asia General Manager.) 1,6 milyon $ (doğrudan pozisyonuna oranı %3); Murry Stefan J. (Chief Financial Officer) 1,5 milyon $ (doğrudan pozisyonuna oranı %3).",
+  "En büyük satıcılar: Chang Hung-Lun (Fred) (Senior Vice President and North America General Manager) 3,5 milyon $ (doğrudan pozisyonuna oranı %11); Yeh Shu-Hua (Joshua) (Senior Vice President and Asia General Manager.) 2,4 milyon $ (doğrudan pozisyonuna oranı %5); Murry Stefan J. (Chief Financial Officer) 1,5 milyon $ (doğrudan pozisyonuna oranı %3).",
   "Kümelenme: 2026-06-10 – 2026-06-18 arasında 5 yönetici aynı dönemde sattı. Birden çok yöneticinin aynı anda satması, tek kişinin satışından daha dikkat çekicidir; ancak planlı satışlar ve kazanç sonrası açılan işlem pencereleri de kümelenme yaratır."
  ],
  "durum": "dikkat",
@@ -2183,11 +2183,11 @@
    },
    {
     "kod": "S",
-    "edgar_islem": 7,
-    "edgar_adet": 56172.0,
+    "edgar_islem": 8,
+    "edgar_adet": 62172.0,
     "finnhub_islem": 7,
     "finnhub_adet": 56172.0,
-    "uyumlu": true
+    "uyumlu": false
    },
    {
     "kod": "diger",

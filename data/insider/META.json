@@ -1,14 +1,14 @@
 {
  "ticker": "META",
- "guncelleme": "2026-10-07",
+ "guncelleme": "2026-10-08",
  "pencereler": {
   "90": {
    "kodlar": {
     "S": {
-     "islem": 98,
-     "adet": 149700.0,
-     "tutar": 101819633.7499,
-     "plan_10b5_1_adet": 147147.0
+     "islem": 103,
+     "adet": 151275.0,
+     "tutar": 102966359.74990001,
+     "plan_10b5_1_adet": 148722.0
     },
     "diger": {
      "islem": 6,
@@ -61,15 +61,15 @@
     {
      "kisi": "Olivan Javier",
      "unvan": "Chief Operating Officer",
-     "satis_adet": 16866.0,
-     "satis_tutar": 10873575.6412,
+     "satis_adet": 18441.0,
+     "satis_tutar": 12020301.641200002,
      "alim_adet": 0.0,
      "vergi_adet": 7744.0,
-     "planli_satis_adet": 16866.0,
+     "planli_satis_adet": 18441.0,
      "ilk_satis_oncesi": 9498.0,
-     "son_pozisyon": 8824.0,
-     "son_tarih": "2026-09-28",
-     "satilan_pozisyon_orani": 177.6,
+     "son_pozisyon": 7878.0,
+     "son_tarih": "2026-10-05",
+     "satilan_pozisyon_orani": 194.2,
      "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
     },
     {
@@ -259,10 +259,10 @@
   "180": {
    "kodlar": {
     "S": {
-     "islem": 189,
-     "adet": 194857.0,
-     "tutar": 129636303.01809995,
-     "plan_10b5_1_adet": 192304.0
+     "islem": 194,
+     "adet": 196432.0,
+     "tutar": 130783029.01809996,
+     "plan_10b5_1_adet": 193879.0
     },
     "diger": {
      "islem": 8,
@@ -301,15 +301,15 @@
     {
      "kisi": "Olivan Javier",
      "unvan": "Chief Operating Officer",
-     "satis_adet": 38782.0,
-     "satis_tutar": 24488805.875899997,
+     "satis_adet": 40357.0,
+     "satis_tutar": 25635531.875899993,
      "alim_adet": 0.0,
      "vergi_adet": 15488.0,
-     "planli_satis_adet": 38782.0,
+     "planli_satis_adet": 40357.0,
      "ilk_satis_oncesi": 13335.0,
-     "son_pozisyon": 8824.0,
-     "son_tarih": "2026-09-28",
-     "satilan_pozisyon_orani": 290.8,
+     "son_pozisyon": 7878.0,
+     "son_tarih": "2026-10-05",
+     "satilan_pozisyon_orani": 302.6,
      "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
     },
     {
@@ -584,7 +584,7 @@
  "uyarilar": [
   {
    "etiket": "dikkat",
-   "metin": "Kümelenmiş satış: 2026-09-21–2026-09-28 arasında 3 yönetici satış yaptı (10b5-1 planlı işlem oranı %100)."
+   "metin": "Kümelenmiş satış: 2026-09-21–2026-10-05 arasında 3 yönetici satış yaptı (10b5-1 planlı işlem oranı %100)."
   },
   {
    "etiket": "bilgi",
@@ -659,18 +659,113 @@
   },
   {
    "baslangic": "2026-09-21",
-   "bitis": "2026-09-28",
+   "bitis": "2026-10-05",
    "kisiler": [
     "Cox Christopher K",
     "Olivan Javier",
     "Zuckerberg Mark"
    ],
-   "islem": 22,
-   "tutar": 52122105.8938,
+   "islem": 27,
+   "tutar": 53268831.8938,
    "planli_islem_orani": 100.0
   }
  ],
  "son_islemler": [
+  {
+   "turev": false,
+   "menkul": "Class A Common Stock",
+   "tarih": "2026-10-05",
+   "kod": "S",
+   "adet": 946.0,
+   "fiyat": 728.08,
+   "yon": "D",
+   "sonrasi": 7878.0,
+   "sahiplik": "D",
+   "plan_10b5_1": true,
+   "kisi": "Olivan Javier",
+   "unvan": "Chief Operating Officer",
+   "yonetici": true,
+   "accn": "0000950103-26-015324",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015324/xslF345X06/ownership.xml",
+   "dosyalama": "2026-10-07",
+   "tutar": 688763.68
+  },
+  {
+   "turev": false,
+   "menkul": "Class A Common Stock",
+   "tarih": "2026-10-05",
+   "kod": "S",
+   "adet": 82.0,
+   "fiyat": 728.08,
+   "yon": "D",
+   "sonrasi": 5834.0,
+   "sahiplik": "I",
+   "plan_10b5_1": true,
+   "kisi": "Olivan Javier",
+   "unvan": "Chief Operating Officer",
+   "yonetici": true,
+   "accn": "0000950103-26-015324",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015324/xslF345X06/ownership.xml",
+   "dosyalama": "2026-10-07",
+   "tutar": 59702.560000000005
+  },
+  {
+   "turev": false,
+   "menkul": "Class A Common Stock",
+   "tarih": "2026-10-05",
+   "kod": "S",
+   "adet": 57.0,
+   "fiyat": 728.08,
+   "yon": "D",
+   "sonrasi": 1061.0,
+   "sahiplik": "I",
+   "plan_10b5_1": true,
+   "kisi": "Olivan Javier",
+   "unvan": "Chief Operating Officer",
+   "yonetici": true,
+   "accn": "0000950103-26-015324",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015324/xslF345X06/ownership.xml",
+   "dosyalama": "2026-10-07",
+   "tutar": 41500.560000000005
+  },
+  {
+   "turev": false,
+   "menkul": "Class A Common Stock",
+   "tarih": "2026-10-05",
+   "kod": "S",
+   "adet": 82.0,
+   "fiyat": 728.08,
+   "yon": "D",
+   "sonrasi": 5834.0,
+   "sahiplik": "I",
+   "plan_10b5_1": true,
+   "kisi": "Olivan Javier",
+   "unvan": "Chief Operating Officer",
+   "yonetici": true,
+   "accn": "0000950103-26-015324",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015324/xslF345X06/ownership.xml",
+   "dosyalama": "2026-10-07",
+   "tutar": 59702.560000000005
+  },
+  {
+   "turev": false,
+   "menkul": "Class A Common Stock",
+   "tarih": "2026-10-05",
+   "kod": "S",
+   "adet": 408.0,
+   "fiyat": 728.08,
+   "yon": "D",
+   "sonrasi": 76621.0,
+   "sahiplik": "I",
+   "plan_10b5_1": true,
+   "kisi": "Olivan Javier",
+   "unvan": "Chief Operating Officer",
+   "yonetici": true,
+   "accn": "0000950103-26-015324",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015324/xslF345X06/ownership.xml",
+   "dosyalama": "2026-10-07",
+   "tutar": 297056.64
+  },
   {
    "turev": false,
    "menkul": "Class A Common Stock",
@@ -6275,111 +6370,16 @@
    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326007478/xslF345X06/ownership.xml",
    "dosyalama": "2026-05-19",
    "tutar": null
-  },
-  {
-   "turev": false,
-   "menkul": "Class A Common Stock",
-   "tarih": "2026-05-15",
-   "kod": "M",
-   "adet": 600.0,
-   "fiyat": 0.0,
-   "yon": "A",
-   "sonrasi": 4447.0,
-   "sahiplik": "D",
-   "plan_10b5_1": false,
-   "kisi": "KIMMITT ROBERT M",
-   "unvan": "Yönetim kurulu üyesi",
-   "yonetici": true,
-   "accn": "0000950103-26-007475",
-   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326007475/xslF345X06/ownership.xml",
-   "dosyalama": "2026-05-19",
-   "tutar": null
-  },
-  {
-   "turev": true,
-   "menkul": "Restricted Stock Units (RSU) (Class A)",
-   "tarih": "2026-05-15",
-   "kod": "M",
-   "adet": 600.0,
-   "fiyat": 0.0,
-   "yon": "D",
-   "sonrasi": 0.0,
-   "sahiplik": "D",
-   "plan_10b5_1": false,
-   "kisi": "KIMMITT ROBERT M",
-   "unvan": "Yönetim kurulu üyesi",
-   "yonetici": true,
-   "accn": "0000950103-26-007475",
-   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326007475/xslF345X06/ownership.xml",
-   "dosyalama": "2026-05-19",
-   "tutar": null
-  },
-  {
-   "turev": false,
-   "menkul": "Class A Common Stock",
-   "tarih": "2026-05-15",
-   "kod": "M",
-   "adet": 109.0,
-   "fiyat": 0.0,
-   "yon": "A",
-   "sonrasi": 820.0,
-   "sahiplik": "D",
-   "plan_10b5_1": false,
-   "kisi": "Elkann John",
-   "unvan": "Yönetim kurulu üyesi",
-   "yonetici": true,
-   "accn": "0000950103-26-007474",
-   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326007474/xslF345X06/ownership.xml",
-   "dosyalama": "2026-05-19",
-   "tutar": null
-  },
-  {
-   "turev": false,
-   "menkul": "Class A Common Stock",
-   "tarih": "2026-05-15",
-   "kod": "M",
-   "adet": 600.0,
-   "fiyat": 0.0,
-   "yon": "A",
-   "sonrasi": 1420.0,
-   "sahiplik": "D",
-   "plan_10b5_1": false,
-   "kisi": "Elkann John",
-   "unvan": "Yönetim kurulu üyesi",
-   "yonetici": true,
-   "accn": "0000950103-26-007474",
-   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326007474/xslF345X06/ownership.xml",
-   "dosyalama": "2026-05-19",
-   "tutar": null
-  },
-  {
-   "turev": false,
-   "menkul": "Class A Common Stock",
-   "tarih": "2026-05-15",
-   "kod": "F",
-   "adet": 77.0,
-   "fiyat": 618.43,
-   "yon": "D",
-   "sonrasi": 1343.0,
-   "sahiplik": "D",
-   "plan_10b5_1": false,
-   "kisi": "Elkann John",
-   "unvan": "Yönetim kurulu üyesi",
-   "yonetici": true,
-   "accn": "0000950103-26-007474",
-   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326007474/xslF345X06/ownership.xml",
-   "dosyalama": "2026-05-19",
-   "tutar": 47619.10999999999
   }
  ],
  "anlati": [
-  "Son 90 günde yöneticiler ve yönetim kurulu üyeleri 98 satış işlemiyle toplam 101,8 milyon $ değerinde hisse sattı. Önceden kayda geçirilmiş 10b5-1 planı kapsamındaki satışların payı (adet bazında): %98.",
+  "Son 90 günde yöneticiler ve yönetim kurulu üyeleri 103 satış işlemiyle toplam 103,0 milyon $ değerinde hisse sattı. Önceden kayda geçirilmiş 10b5-1 planı kapsamındaki satışların payı (adet bazında): %98.",
   "Planlı satışlar önceden (çoğu zaman aylar önce) belirlenen takvimle yapılır; tek başına yönetimin şirkete güvenini kaybettiği anlamına gelmez.",
   "Bu dönemde yönetimden hiç açık piyasa alımı (P) yok.",
   "9 vergi kesintisi (F) işlemi var: hak edilen hisselerin vergisi için şirkete bırakılan hisseler. Rutindir, sinyal sayılmaz.",
   "Opsiyon/RSU kullanımı (M) 28, hibe (A) 0 işlem: ücretlendirmenin parçası.",
-  "En büyük satıcılar: Cox Christopher K (Chief Product Officer) 55,0 milyon $; Zuckerberg Mark (Yönetim kurulu üyesi, COB and CEO, %10+ hissedar) 21,4 milyon $; Olivan Javier (Chief Operating Officer) 10,9 milyon $ (doğrudan pozisyonuna oranı %178).",
-  "Kümelenme: 2026-09-21 – 2026-09-28 arasında 3 yönetici aynı dönemde sattı. Birden çok yöneticinin aynı anda satması, tek kişinin satışından daha dikkat çekicidir; ancak planlı satışlar ve kazanç sonrası açılan işlem pencereleri de kümelenme yaratır."
+  "En büyük satıcılar: Cox Christopher K (Chief Product Officer) 55,0 milyon $; Zuckerberg Mark (Yönetim kurulu üyesi, COB and CEO, %10+ hissedar) 21,4 milyon $; Olivan Javier (Chief Operating Officer) 12,0 milyon $ (doğrudan pozisyonuna oranı %194).",
+  "Kümelenme: 2026-09-21 – 2026-10-05 arasında 3 yönetici aynı dönemde sattı. Birden çok yöneticinin aynı anda satması, tek kişinin satışından daha dikkat çekicidir; ancak planlı satışlar ve kazanç sonrası açılan işlem pencereleri de kümelenme yaratır."
  ],
  "durum": "notr",
  "capraz_kontrol": {
@@ -6420,8 +6420,8 @@
    },
    {
     "kod": "S",
-    "edgar_islem": 98,
-    "edgar_adet": 149700.0,
+    "edgar_islem": 103,
+    "edgar_adet": 151275.0,
     "finnhub_islem": 93,
     "finnhub_adet": 148125.0,
     "uyumlu": true
