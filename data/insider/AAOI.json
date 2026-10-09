@@ -1,14 +1,14 @@
 {
  "ticker": "AAOI",
- "guncelleme": "2026-10-08",
+ "guncelleme": "2026-10-09",
  "pencereler": {
   "90": {
    "kodlar": {
     "S": {
-     "islem": 8,
-     "adet": 62172.0,
-     "tutar": 7391749.319999999,
-     "plan_10b5_1_adet": 30000.0
+     "islem": 7,
+     "adet": 58172.0,
+     "tutar": 6903389.319999999,
+     "plan_10b5_1_adet": 26000.0
     },
     "diger": {
      "islem": 1,
@@ -61,15 +61,15 @@
     {
      "kisi": "Murry Stefan J.",
      "unvan": "Chief Financial Officer",
-     "satis_adet": 12000.0,
-     "satis_tutar": 1488840.0,
+     "satis_adet": 8000.0,
+     "satis_tutar": 1000480.0,
      "alim_adet": 0.0,
      "vergi_adet": 5408.0,
-     "planli_satis_adet": 12000.0,
-     "ilk_satis_oncesi": 384576.0,
+     "planli_satis_adet": 8000.0,
+     "ilk_satis_oncesi": 375168.0,
      "son_pozisyon": 367168.0,
      "son_tarih": "2026-09-10",
-     "satilan_pozisyon_orani": 3.1,
+     "satilan_pozisyon_orani": 2.1,
      "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
     },
     {
@@ -2144,12 +2144,12 @@
   }
  ],
  "anlati": [
-  "Son 90 günde yöneticiler ve yönetim kurulu üyeleri 8 satış işlemiyle toplam 7,4 milyon $ değerinde hisse sattı. Önceden kayda geçirilmiş 10b5-1 planı kapsamındaki satışların payı (adet bazında): %48.",
+  "Son 90 günde yöneticiler ve yönetim kurulu üyeleri 7 satış işlemiyle toplam 6,9 milyon $ değerinde hisse sattı. Önceden kayda geçirilmiş 10b5-1 planı kapsamındaki satışların payı (adet bazında): %45.",
   "Satışların önemli bir kısmı plansız: yöneticinin o an karar verdiği satışlar, planlılara göre daha fazla bilgi taşır.",
   "Bu dönemde yönetimden hiç açık piyasa alımı (P) yok.",
   "20 vergi kesintisi (F) işlemi var: hak edilen hisselerin vergisi için şirkete bırakılan hisseler. Rutindir, sinyal sayılmaz.",
   "Opsiyon/RSU kullanımı (M) 0, hibe (A) 1 işlem: ücretlendirmenin parçası.",
-  "En büyük satıcılar: Chang Hung-Lun (Fred) (Senior Vice President and North America General Manager) 3,5 milyon $ (doğrudan pozisyonuna oranı %11); Yeh Shu-Hua (Joshua) (Senior Vice President and Asia General Manager.) 2,4 milyon $ (doğrudan pozisyonuna oranı %5); Murry Stefan J. (Chief Financial Officer) 1,5 milyon $ (doğrudan pozisyonuna oranı %3).",
+  "En büyük satıcılar: Chang Hung-Lun (Fred) (Senior Vice President and North America General Manager) 3,5 milyon $ (doğrudan pozisyonuna oranı %11); Yeh Shu-Hua (Joshua) (Senior Vice President and Asia General Manager.) 2,4 milyon $ (doğrudan pozisyonuna oranı %5); Murry Stefan J. (Chief Financial Officer) 1,0 milyon $ (doğrudan pozisyonuna oranı %2).",
   "Kümelenme: 2026-06-10 – 2026-06-18 arasında 5 yönetici aynı dönemde sattı. Birden çok yöneticinin aynı anda satması, tek kişinin satışından daha dikkat çekicidir; ancak planlı satışlar ve kazanç sonrası açılan işlem pencereleri de kümelenme yaratır."
  ],
  "durum": "dikkat",
@@ -2183,11 +2183,11 @@
    },
    {
     "kod": "S",
-    "edgar_islem": 8,
-    "edgar_adet": 62172.0,
+    "edgar_islem": 7,
+    "edgar_adet": 58172.0,
     "finnhub_islem": 7,
-    "finnhub_adet": 56172.0,
-    "uyumlu": false
+    "finnhub_adet": 58172.0,
+    "uyumlu": true
    },
    {
     "kod": "diger",

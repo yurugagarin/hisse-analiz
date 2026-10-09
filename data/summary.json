@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-10-08T11:40:35+00:00",
+ "guncelleme": "2026-10-09T11:34:01+00:00",
  "hisseler": {
   "NVDA": {
    "ticker": "NVDA",
@@ -9,23 +9,23 @@
     "SMH"
    ],
    "fiyat": {
-    "fiyat": 237.47,
-    "tarih": "2026-10-07",
-    "degisim_1g": -0.74,
-    "degisim_1h": 3.98,
-    "degisim_1a": 3.09,
-    "degisim_3a": 16.34,
-    "degisim_6a": 30.42,
-    "degisim_1y": 28.33,
-    "degisim_ytd": 27.33,
+    "fiyat": 230.48,
+    "tarih": "2026-10-08",
+    "degisim_1g": -2.94,
+    "degisim_1h": -0.16,
+    "degisim_1a": 2.1,
+    "degisim_3a": 13.66,
+    "degisim_6a": 25.32,
+    "degisim_1y": 21.88,
+    "degisim_ytd": 23.58,
     "zirve_52h": 239.24,
     "zirve_52h_tarih": "2026-10-06",
     "dip_52h": 165.17,
     "dip_52h_tarih": "2026-03-30",
-    "zirveden_uzaklik": -0.74,
+    "zirveden_uzaklik": -3.66,
     "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
     "kaynak": "Nasdaq.com (historical API)",
-    "guncelleme": "2026-10-08T11:39:52+00:00",
+    "guncelleme": "2026-10-09T11:33:17+00:00",
     "taze": true,
     "finnhub_52h_zirve_gun_ici": 243.37
    },
@@ -141,13 +141,9 @@
     "ceyrek": 3,
     "yil": 2027,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-08T11:40:36+00:00"
+    "guncelleme": "2026-10-09T11:34:02+00:00"
    },
    "grafik": [
-    [
-     "2025-10-07",
-     185.04
-    ],
     [
      "2025-10-08",
      189.11
@@ -1151,6 +1147,10 @@
     [
      "2026-10-07",
      237.47
+    ],
+    [
+     "2026-10-08",
+     230.48
     ]
    ],
    "tez": {
@@ -1202,6 +1202,16 @@
    },
    "gelismeler": [
     {
+     "tarih": "2026-10-08",
+     "baslik": "Melissa Otto: Nvidia is the bellwether of the AI trade",
+     "olgu": "Melissa Otto, Head of Research at Visible Alpha at S&P Global, discusses Nvidia's AI dominance, market concentration, emerging markets, energy stocks, diversification and consumer sector valuations.",
+     "yorum": null,
+     "sutun_id": null,
+     "etki": null,
+     "kaynak_url": "https://finnhub.io/api/news?id=183101790fd229366b7e1d1ca7f6077d85f304f5a5275a5b4d606862d61147c0",
+     "kaynak_adi": "CNBC"
+    },
+    {
      "tarih": "2026-10-07",
      "baslik": "Apollo, banks in talks to finance SpaceX's $40 billion Nvidia GPU purchase",
      "olgu": "Since SpaceX's record-breaking IPO in June, rates have sold off, and yields on its bonds have risen, along with other AI-related bonds.",
@@ -1220,25 +1230,15 @@
      "etki": null,
      "kaynak_url": "https://finnhub.io/api/news?id=ed53438eb9f93b9ec6ef7f48195d312277db36fd7fe6855605a3dedb3798cb12",
      "kaynak_adi": "CNBC"
-    },
-    {
-     "tarih": "2026-10-05",
-     "baslik": "Nvidia's $6 trillion milestone looms. Here's when options traders see it happening",
-     "olgu": "Nvidia will likely cross the $6 trillion threshold by the end of this month, according to options traders.",
-     "yorum": null,
-     "sutun_id": null,
-     "etki": null,
-     "kaynak_url": "https://finnhub.io/api/news?id=4ba94cbfc81784bcb12e003a30040bdff4fba4573b1967852e62acf3400b7875",
-     "kaynak_adi": "CNBC"
     }
    ],
    "haber_yontem": "Otomatik seçim (Claude yok): son 7 gün, şirket adı geçen + güvenilir kaynak öncelikli. Salı raporunda Claude seçimi gösterilir.",
    "buyuk_hareketler": [],
    "kural": {
     "durum": "tetiklenmedi",
-    "mesaj": "Zirveden −%0,7. Sonraki kademe: −%15.",
+    "mesaj": "Zirveden −%3,7. Sonraki kademe: −%15.",
     "tetiklenen": null,
-    "zirveden_uzaklik": -0.74,
+    "zirveden_uzaklik": -3.66,
     "dusus_kaynagi": "piyasa_sektor",
     "dusus_kaynagi_aciklama": "Hissenin düşüşü karşılaştırma endeksleriyle benzer: ağırlıkla piyasa/sektör kaynaklı.",
     "kosul_saglaniyor": true
@@ -1249,8 +1249,8 @@
      "metin": "Kümelenmiş satış: 2026-09-17–2026-09-21 arasında 3 yönetici satış yaptı (10b5-1 planlı işlem oranı %75)."
     },
     {
-     "etiket": "dikkat",
-     "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %30.42 yükseldi."
+     "etiket": "bilgi",
+     "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok."
     }
    ],
    "bilanco": {
@@ -1293,23 +1293,23 @@
     "XLC"
    ],
    "fiyat": {
-    "fiyat": 721.31,
-    "tarih": "2026-10-07",
-    "degisim_1g": -2.38,
-    "degisim_1h": -0.53,
-    "degisim_1a": 16.95,
-    "degisim_3a": 19.6,
-    "degisim_6a": 17.78,
-    "degisim_1y": 1.15,
-    "degisim_ytd": 9.27,
+    "fiyat": 720.89,
+    "tarih": "2026-10-08",
+    "degisim_1g": -0.06,
+    "degisim_1h": -0.69,
+    "degisim_1a": 17.51,
+    "degisim_3a": 14.16,
+    "degisim_6a": 14.72,
+    "degisim_1y": 0.42,
+    "degisim_ytd": 9.21,
     "zirve_52h": 777.59,
     "zirve_52h_tarih": "2026-09-24",
     "dip_52h": 525.72,
     "dip_52h_tarih": "2026-03-27",
-    "zirveden_uzaklik": -7.24,
+    "zirveden_uzaklik": -7.29,
     "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
     "kaynak": "Nasdaq.com (historical API)",
-    "guncelleme": "2026-10-08T11:39:56+00:00",
+    "guncelleme": "2026-10-09T11:33:19+00:00",
     "taze": true,
     "finnhub_52h_zirve_gun_ici": 779.8192
    },
@@ -1425,13 +1425,9 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-08T11:40:40+00:00"
+    "guncelleme": "2026-10-09T11:34:06+00:00"
    },
    "grafik": [
-    [
-     "2025-10-07",
-     713.08
-    ],
     [
      "2025-10-08",
      717.84
@@ -2435,6 +2431,10 @@
     [
      "2026-10-07",
      721.31
+    ],
+    [
+     "2026-10-08",
+     720.89
     ]
    ],
    "tez": {
@@ -2486,33 +2486,33 @@
    },
    "gelismeler": [
     {
-     "tarih": "2026-10-07",
-     "baslik": "Meta's Muse assistant tops app charts. Now it needs to become a habit",
-     "olgu": "Meta’s Muse is free for now as the company searches for a business surrounding its personal AI agent.",
+     "tarih": "2026-10-08",
+     "baslik": "Trump bought up to $25 million in Meta and millions in SpaceX debt in August",
+     "olgu": "Trump disclosed 517 August trades, including up to $5 million in debt from SpaceX, a major Pentagon contractor and NASA launch provider.",
      "yorum": null,
      "sutun_id": null,
      "etki": null,
-     "kaynak_url": "https://finnhub.io/api/news?id=04b86374f6f2709893dc281028215723d87d0fe7c0fd81af598147cada4a0e6c",
+     "kaynak_url": "https://finnhub.io/api/news?id=b1b9838842b04984e36d6cd51c9df26021b5e0546d8f91bcace82869bbbf24ba",
+     "kaynak_adi": "CNBC"
+    },
+    {
+     "tarih": "2026-10-08",
+     "baslik": "AI startup Manus raises $500 million in first funding round since Meta breakup",
+     "olgu": "The deal is handing the AI agent developer fresh capital after Beijing forced Meta to unwind its roughly $2 billion acquisition.",
+     "yorum": null,
+     "sutun_id": null,
+     "etki": null,
+     "kaynak_url": "https://finnhub.io/api/news?id=521fba932babbe95ca8298baebe55f1c5bfe54971b7f3355acefdba77470d1ae",
      "kaynak_adi": "CNBC"
     },
     {
      "tarih": "2026-10-07",
-     "baslik": "Meta partners with companies to set standards for doing business with AI bots",
-     "olgu": "CNBC's Andrew Ross Sorkin reports on the latest news.",
+     "baslik": "Final Trades: SK Hynix, Airbnb, Meta and ServiceTitan",
+     "olgu": "The Investment Committee gives you their top stocks to watch for the second half.",
      "yorum": null,
      "sutun_id": null,
      "etki": null,
-     "kaynak_url": "https://finnhub.io/api/news?id=7d6b1bef0623b75bd69d3300c14e6c6d29b38fc9b299367226ca2b45c5fa1fb6",
-     "kaynak_adi": "CNBC"
-    },
-    {
-     "tarih": "2026-10-06",
-     "baslik": "Meta, Walmart, Stripe, and Sierra partner to establish rules for personal AI agents",
-     "olgu": "CNBC's Kate Rooney reports on companies teaming up to create a new rulebook for AI agents.",
-     "yorum": null,
-     "sutun_id": null,
-     "etki": null,
-     "kaynak_url": "https://finnhub.io/api/news?id=f55bdfb319a498f47273aa32ea692ff597b8683b468da3b07feda37410eb29d6",
+     "kaynak_url": "https://finnhub.io/api/news?id=94eeb8b077cb6bb2dd1708f98fbcdd4c5367b0e3794818859943f0e7a393e008",
      "kaynak_adi": "CNBC"
     }
    ],
@@ -2520,9 +2520,9 @@
    "buyuk_hareketler": [],
    "kural": {
     "durum": "tetiklenmedi",
-    "mesaj": "Zirveden −%7,2. Sonraki kademe: −%15.",
+    "mesaj": "Zirveden −%7,3. Sonraki kademe: −%15.",
     "tetiklenen": null,
-    "zirveden_uzaklik": -7.24,
+    "zirveden_uzaklik": -7.29,
     "dusus_kaynagi": "piyasa_sektor",
     "dusus_kaynagi_aciklama": "Hissenin düşüşü karşılaştırma endeksleriyle benzer: ağırlıkla piyasa/sektör kaynaklı.",
     "kosul_saglaniyor": true
@@ -2576,23 +2576,23 @@
     "IGV"
    ],
    "fiyat": {
-    "fiyat": 137.87,
-    "tarih": "2026-10-07",
-    "degisim_1g": -0.07,
-    "degisim_1h": 2.88,
-    "degisim_1a": -2.4,
-    "degisim_3a": 27.92,
-    "degisim_6a": 41.45,
-    "degisim_1y": -23.76,
-    "degisim_ytd": -10.0,
+    "fiyat": 139.75,
+    "tarih": "2026-10-08",
+    "degisim_1g": 1.36,
+    "degisim_1h": 1.44,
+    "degisim_1a": 4.13,
+    "degisim_3a": 28.4,
+    "degisim_6a": 55.61,
+    "degisim_1y": -23.58,
+    "degisim_ytd": -8.77,
     "zirve_52h": 189.258,
     "zirve_52h_tarih": "2025-10-27",
     "dip_52h": 83.0,
     "dip_52h_tarih": "2026-04-10",
-    "zirveden_uzaklik": -27.15,
+    "zirveden_uzaklik": -26.16,
     "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
     "kaynak": "Nasdaq.com (historical API)",
-    "guncelleme": "2026-10-08T11:39:59+00:00",
+    "guncelleme": "2026-10-09T11:33:23+00:00",
     "taze": true,
     "finnhub_52h_zirve_gun_ici": 192.97
    },
@@ -2708,13 +2708,9 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-08T11:40:43+00:00"
+    "guncelleme": "2026-10-09T11:34:09+00:00"
    },
    "grafik": [
-    [
-     "2025-10-07",
-     180.848
-    ],
     [
      "2025-10-08",
      182.864
@@ -3718,6 +3714,10 @@
     [
      "2026-10-07",
      137.87
+    ],
+    [
+     "2026-10-08",
+     139.75
     ]
    ],
    "tez": {
@@ -3769,6 +3769,16 @@
    },
    "gelismeler": [
     {
+     "tarih": "2026-10-08",
+     "baslik": "JPM sees software rally extending, favors Microsoft, ServiceNow, Snowflake (MSFT:NASDAQ)",
+     "olgu": null,
+     "yorum": null,
+     "sutun_id": null,
+     "etki": null,
+     "kaynak_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxONUZzUEFqc0R4V1NLUmpxdG91ZFNtR3N5OVZTSkRJVmRuN1lJUWhrQml4cEtZSUFtQUF6MXNLOWtMYWsyTFFRZTJ6c0VCMUVEeDhnenQwaXVlZkg1TXAxM1I5R2pyX3RrWnZRYl82Mk9ja1pKRXVudDVMYXlTVlNJX3M5Z3ZaQWFLM0lKYktQaFZON0tidnhqbDVmeEJudHBYNDU4bDhsUjRIZGxnZlE?oc=5",
+     "kaynak_adi": "Seeking Alpha"
+    },
+    {
      "tarih": "2026-10-07",
      "baslik": "ServiceNow to Announce Third Quarter 2026 Financial Results on October 28",
      "olgu": null,
@@ -3787,28 +3797,18 @@
      "etki": null,
      "kaynak_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOeDhzRkFvMWtlQW9ZSTFtejlncHJtZ0ZnQUdzRFhkSGdvVXVRT2FxSVJDMlZrOFJOMmwtVFNXc1hDUTJYMEljdjM1NFhfaVo1cm8xcFFTS3dUZlBuREFuNFhYSFZMMlVKZlI3VWpFbTBTS1NMMXI1eGR1ZFNLV2JZNkRMN3pjY3VsSklMaUhFSDAzRmRnbFJ4R3dKa1ZoS1p1QUxTRnAzR1d2RjE3?oc=5",
      "kaynak_adi": "Bloomberg.com"
-    },
-    {
-     "tarih": "2026-10-04",
-     "baslik": "ServiceNow, Inc. (0L5N.IL) stock price, news, quote and history",
-     "olgu": null,
-     "yorum": null,
-     "sutun_id": null,
-     "etki": null,
-     "kaynak_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9leTI5aTVfQTExWEVWMWxWVUV2RlQwUXJXOTFsYUZQTThTQ1RBc3E5Y1lWRW1kUkV4WU9kdFBsTnNGTldObWw5VlZUQjVXb3Rwa3lrX1NhQVJsbmpNcUU4UmxSTk0?oc=5",
-     "kaynak_adi": "Yahoo Finance Australia"
     }
    ],
    "haber_yontem": "Otomatik seçim (Claude yok): son 7 gün, şirket adı geçen + güvenilir kaynak öncelikli. Salı raporunda Claude seçimi gösterilir.",
    "buyuk_hareketler": [],
    "kural": {
     "durum": "tetiklendi_kosul_ok",
-    "mesaj": "Zirveden −%27,1: −%25 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et.",
+    "mesaj": "Zirveden −%26,2: −%25 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 2x; RPO ve SBC sütunlarını kontrol et.",
     "tetiklenen": {
      "dusus": 25,
      "not": "DCA 2x; RPO ve SBC sütunlarını kontrol et."
     },
-    "zirveden_uzaklik": -27.15,
+    "zirveden_uzaklik": -26.16,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": true
@@ -3820,7 +3820,7 @@
     },
     {
      "etiket": "dikkat",
-     "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %41.45 yükseldi."
+     "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %55.61 yükseldi."
     }
    ],
    "bilanco": {
@@ -3863,23 +3863,23 @@
     "SMH"
    ],
    "fiyat": {
-    "fiyat": 122.54,
-    "tarih": "2026-10-07",
-    "degisim_1g": -5.85,
-    "degisim_1h": 23.45,
-    "degisim_1a": 16.12,
-    "degisim_3a": 7.08,
-    "degisim_6a": -7.66,
-    "degisim_1y": 291.06,
-    "degisim_ytd": 251.52,
+    "fiyat": 105.9,
+    "tarih": "2026-10-08",
+    "degisim_1g": -13.58,
+    "degisim_1h": -1.32,
+    "degisim_1a": -5.06,
+    "degisim_3a": -13.35,
+    "degisim_6a": -20.56,
+    "degisim_1y": 228.68,
+    "degisim_ytd": 203.79,
     "zirve_52h": 223.1,
     "zirve_52h_tarih": "2026-05-13",
     "dip_52h": 19.49,
     "dip_52h_tarih": "2025-11-20",
-    "zirveden_uzaklik": -45.07,
+    "zirveden_uzaklik": -52.53,
     "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
     "kaynak": "Nasdaq.com (historical API)",
-    "guncelleme": "2026-10-08T11:40:02+00:00",
+    "guncelleme": "2026-10-09T11:33:27+00:00",
     "taze": true,
     "finnhub_52h_zirve_gun_ici": 233.67
    },
@@ -3981,10 +3981,10 @@
    ],
    "insider": {
     "durum": "dikkat",
-    "ozet": "Son 90 günde yöneticiler ve yönetim kurulu üyeleri 8 satış işlemiyle toplam 7,4 milyon $ değerinde hisse sattı. Önceden kayda geçirilmiş 10b5-1 planı kapsamındaki satışların payı (adet bazında): %48.",
-    "satis_90g": 7391749.319999999,
+    "ozet": "Son 90 günde yöneticiler ve yönetim kurulu üyeleri 7 satış işlemiyle toplam 6,9 milyon $ değerinde hisse sattı. Önceden kayda geçirilmiş 10b5-1 planı kapsamındaki satışların payı (adet bazında): %45.",
+    "satis_90g": 6903389.319999999,
     "alim_90g": null,
-    "planli_orani": 48.3,
+    "planli_orani": 44.7,
     "kume": true
    },
    "sonraki_bilanco": {
@@ -3995,13 +3995,9 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-08T11:40:46+00:00"
+    "guncelleme": "2026-10-09T11:34:12+00:00"
    },
    "grafik": [
-    [
-     "2025-10-07",
-     31.335
-    ],
     [
      "2025-10-08",
      32.22
@@ -5005,6 +5001,10 @@
     [
      "2026-10-07",
      122.54
+    ],
+    [
+     "2026-10-08",
+     105.9
     ]
    ],
    "tez": {
@@ -5067,6 +5067,16 @@
    },
    "gelismeler": [
     {
+     "tarih": "2026-10-08",
+     "baslik": "U.S. Indexes Ended Thursday Mixed As CoStar Group Led, Applied Optoelectronics Lagged",
+     "olgu": null,
+     "yorum": null,
+     "sutun_id": null,
+     "etki": null,
+     "kaynak_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOUy16bUYwVHJZRnZ0dE4ycVBXRGxaN1gteTUxODFjZWN5a05pUWhsSjZNbE0yRjN4Uy13MzN6UlR0STJDUnRjUUQ4WFI0c2JjUENJUlg5U2NlS0tMNW1semlIMzVTOU1mLUhpUTYzM2JuQzZINDJCZk9mNllLVFM5LUVab0huRmpzdkQ4c0ZIRDMwQUNDTVlPdmhiY1NUOVZIcnM4dUNGRHJjZ2lHcEtWajJ6V2MxcmZ1SEVRaTJsUmwzbkU?oc=5",
+     "kaynak_adi": "Barron's"
+    },
+    {
      "tarih": "2026-10-06",
      "baslik": "Applied Optoelectronics, Inc. (AAOI) interactive stock chart",
      "olgu": null,
@@ -5085,20 +5095,15 @@
      "etki": null,
      "kaynak_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0tMC1ab2E5c2ctYVFVVV94bUItX2ptS0I1OENxcUVHUkozRVVQOGFSNnRTcHRCdm1VSEZMUXk0U0FVVXhENmV6U0cydkd6MHM2U2JHU2t3TTBibXF2cTI2UUp0VW8?oc=5",
      "kaynak_adi": "Yahoo Finance Australia"
-    },
-    {
-     "tarih": "2026-10-07",
-     "baslik": "AAOI Stock Gains 17% in a Month: Should You Buy, Sell or Hold?",
-     "olgu": "Applied Optoelectronics rallies 16.6% in a month as AI-driven optical demand accelerates, but supply constraints, competition and a premium valuation remain concerns.",
-     "yorum": null,
-     "sutun_id": null,
-     "etki": null,
-     "kaynak_url": "https://finnhub.io/api/news?id=2e5f89b0c446c366025b1e870ca6a8262c9e06692cf87b3e7f62cb9b1fd0b11c",
-     "kaynak_adi": "Yahoo"
     }
    ],
    "haber_yontem": "Otomatik seçim (Claude yok): son 7 gün, şirket adı geçen + güvenilir kaynak öncelikli. Salı raporunda Claude seçimi gösterilir.",
    "buyuk_hareketler": [
+    {
+     "tarih": "2026-10-08",
+     "hareket": -13.58,
+     "on_siniflama": "sirkete_ozel"
+    },
     {
      "tarih": "2026-10-07",
      "hareket": -5.85,
@@ -5118,21 +5123,16 @@
      "tarih": "2026-10-02",
      "hareket": 7.71,
      "on_siniflama": "sirkete_ozel"
-    },
-    {
-     "tarih": "2026-10-01",
-     "hareket": 8.12,
-     "on_siniflama": "sirkete_ozel"
     }
    ],
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%45,1: −%40 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: DCA 2x; nakit pisti ve sulandırmayı kontrol et.",
+    "mesaj": "Zirveden −%52,5: −%40 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: DCA 2x; nakit pisti ve sulandırmayı kontrol et.",
     "tetiklenen": {
      "dusus": 40,
      "not": "DCA 2x; nakit pisti ve sulandırmayı kontrol et."
     },
-    "zirveden_uzaklik": -45.07,
+    "zirveden_uzaklik": -52.53,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 15 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -5187,23 +5187,23 @@
     "SMH"
    ],
    "fiyat": {
-    "fiyat": 41.34,
-    "tarih": "2026-10-07",
-    "degisim_1g": -4.5,
-    "degisim_1h": -5.75,
-    "degisim_1a": 4.61,
-    "degisim_3a": -8.3,
-    "degisim_6a": 42.6,
-    "degisim_1y": -47.82,
-    "degisim_ytd": -7.87,
+    "fiyat": 39.45,
+    "tarih": "2026-10-08",
+    "degisim_1g": -4.57,
+    "degisim_1h": -10.32,
+    "degisim_1a": -2.52,
+    "degisim_3a": -11.88,
+    "degisim_6a": 40.49,
+    "degisim_1y": -46.9,
+    "degisim_ytd": -12.08,
     "zirve_52h": 82.09,
     "zirve_52h_tarih": "2025-10-13",
     "dip_52h": 26.59,
     "dip_52h_tarih": "2026-03-30",
-    "zirveden_uzaklik": -49.64,
+    "zirveden_uzaklik": -51.94,
     "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
     "kaynak": "Nasdaq.com (historical API)",
-    "guncelleme": "2026-10-08T11:40:04+00:00",
+    "guncelleme": "2026-10-09T11:33:31+00:00",
     "taze": true,
     "finnhub_52h_zirve_gun_ici": 84.64
    },
@@ -5319,13 +5319,9 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-08T11:40:49+00:00"
+    "guncelleme": "2026-10-09T11:34:16+00:00"
    },
    "grafik": [
-    [
-     "2025-10-07",
-     79.23
-    ],
     [
      "2025-10-08",
      74.3
@@ -6329,6 +6325,10 @@
     [
      "2026-10-07",
      41.34
+    ],
+    [
+     "2026-10-08",
+     39.45
     ]
    ],
    "tez": {
@@ -6391,13 +6391,13 @@
    "gelismeler": [
     {
      "tarih": "2026-10-08",
-     "baslik": "Why Are Nasdaq, Dow Futures Falling Premarket? MU, TSM, APLD, IONQ, HOOD, BULL, SLS In Focus",
+     "baslik": "DARPA selects IBM and IonQ for next phase in development of fault-tolerant quantum computer",
      "olgu": null,
      "yorum": null,
      "sutun_id": null,
      "etki": null,
-     "kaynak_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQZUNsdEN3QVhMYWNpaEx2VDBINGJPdEY0ZUw2VlM4azE0NU55T3ZDVVVfVFpsT0JtQjM3bXZjd1NCb0pqMjd0WG14Z05ZUDRuVWNiS0lvWHZlbWU1Z0FlN19acC05QzhscWFBNEdYdzNnVWdNN0ZnOFBzLXVXU2xaTVo4cU9rZEJ2S2tseXU5WUNhM3pXVkRtS2puWQ?oc=5",
-     "kaynak_adi": "Yahoo Finance"
+     "kaynak_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPVGg4c0pzMUJyN3FFblQ1aW5UT19ySzRWeWlKbVVqUGt4OFkza0FHR3RfTTNYemdTbnZjMURrRE9vLWY5QVJmZVM0VkVlUXdXQlBRbTBDMVJJTHBlOFM2MmxsNzZiNi0zUV9BcldKOEs3YkFzWTl0TjUzQUowTzhJd1BGYVAyc19WTE9OTUxCdWU5TUJqb01tUFhJSTlwaS15SkJsZG52OWJLNTRSbElsSUpjNmM4VzFXRVVwRUZIdVBMNS12R2ZDNw?oc=5",
+     "kaynak_adi": "Seeking Alpha"
     },
     {
      "tarih": "2026-10-07",
@@ -6424,12 +6424,12 @@
    "buyuk_hareketler": [],
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%49,6: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "mesaj": "Zirveden −%51,9: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "tetiklenen": {
      "dusus": 35,
      "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -49.64,
+    "zirveden_uzaklik": -51.94,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -6441,7 +6441,7 @@
     },
     {
      "etiket": "dikkat",
-     "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %42.6 yükseldi."
+     "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %40.49 yükseldi."
     }
    ],
    "bilanco": {
@@ -6484,23 +6484,23 @@
     "IGV"
    ],
    "fiyat": {
-    "fiyat": 143.56,
-    "tarih": "2026-10-07",
-    "degisim_1g": -0.84,
-    "degisim_1h": 4.56,
-    "degisim_1a": -9.59,
-    "degisim_3a": 2.19,
-    "degisim_6a": -0.07,
-    "degisim_1y": -49.49,
-    "degisim_ytd": -26.35,
+    "fiyat": 135.69,
+    "tarih": "2026-10-08",
+    "degisim_1g": -5.48,
+    "degisim_1h": -1.72,
+    "degisim_1a": -16.51,
+    "degisim_3a": -5.91,
+    "degisim_6a": -1.57,
+    "degisim_1y": -52.99,
+    "degisim_ytd": -30.38,
     "zirve_52h": 313.0,
     "zirve_52h_tarih": "2025-10-16",
     "dip_52h": 114.99,
     "dip_52h_tarih": "2026-07-24",
-    "zirveden_uzaklik": -54.13,
+    "zirveden_uzaklik": -56.65,
     "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
     "kaynak": "Nasdaq.com (historical API)",
-    "guncelleme": "2026-10-08T11:40:09+00:00",
+    "guncelleme": "2026-10-09T11:33:34+00:00",
     "taze": true,
     "finnhub_52h_zirve_gun_ici": 322.54
    },
@@ -6616,13 +6616,9 @@
     "ceyrek": 2,
     "yil": 2027,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-08T11:40:53+00:00"
+    "guncelleme": "2026-10-09T11:34:19+00:00"
    },
    "grafik": [
-    [
-     "2025-10-07",
-     284.24
-    ],
     [
      "2025-10-08",
      288.63
@@ -7626,6 +7622,10 @@
     [
      "2026-10-07",
      143.56
+    ],
+    [
+     "2026-10-08",
+     135.69
     ]
    ],
    "tez": {
@@ -7685,46 +7685,52 @@
    },
    "gelismeler": [
     {
-     "tarih": "2026-10-07",
-     "baslik": "Exclusive | Oracle, Broadcom and SpaceX Seek Blockbuster Debt Deals to Pay for AI Chips",
+     "tarih": "2026-10-09",
+     "baslik": "Prediction: Oracle Has 49% Upside as Cloud Backlog Signals Major Growth Shift",
      "olgu": null,
      "yorum": null,
      "sutun_id": null,
      "etki": null,
-     "kaynak_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQlQwOUh0Wlhtb1B1T1YxN1ItVmh1ck5xeE5Xa0FWR2ZRcjlDdGZSM1hUVTltMHp1aHhVM1FCYUZKNnIweDhKWjlxUGpGeVlJTFFlNElVQnBkT2VMaERTRTBCVXFTbk1BRFRPRVpRWVA2blBxbnMwR3Q4VUZVQU9iVEFyRExCVW5aSjl3bXFOYlZERUxTY0l4QjA1RS1BVjRQS1lCOW5kSWtqY0t3?oc=5",
-     "kaynak_adi": "WSJ"
+     "kaynak_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZ3BveWJCMnVFVlBJR2VSQ2o3UXdzS1lUV3NORTAwQWp4SHJSYkNOSUpJZHdXc1IzRUphTE1SWFgtQmk2alhFcm04NlFubGF5VzFuQ3Z3aEZwVnQtc1d0bENrUGxZWnRrRlNyZGhWREZJQlI5eHc3RDVpMThWaEdSeXp0RVJobnduc1c5cC1BVEdCM3BmU3FseG9abEt5NXM?oc=5",
+     "kaynak_adi": "Yahoo Finance"
     },
     {
-     "tarih": "2026-10-07",
-     "baslik": "Oracle: Earnings Acceleration Is Now Kicking In (NYSE:ORCL)",
+     "tarih": "2026-10-08",
+     "baslik": "Can Oracle (ORCL) Stay Cheap As AI Spending Clouds Cash Flow?",
      "olgu": null,
      "yorum": null,
      "sutun_id": null,
      "etki": null,
-     "kaynak_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPczFZbjYtMVhFSXM3Q0dqdlNWSTdkTGhrbEVaSHRMYlNwN2I2TmpzUDhXcjFHekd5ckNBdlJURTBVUGZxbnRzRXJsTVRfWWZLVzBKLXkxQWtLZzUwbGo3S2FZNldNTVV1NmZEVUhXbnpGMktQZXY1eUl1ZHZQbWR4S3RGYWxUeGFYbjJ3SmJxdzQ?oc=5",
-     "kaynak_adi": "Seeking Alpha"
+     "kaynak_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOVjVPVmdvOThMbkVnNGwtN2c2djE0blFQQmRsa1Ryb0ZXeXJ4bnF6S25RWGd5WUZUZ2VHNmRBalFFS0JtR2lOeDY2Q0QwWGEtR0o1Q2F4SWpGR3lxYmxieFBqMkF3VURRUGZXcGN5NEFwTHlvYUVpWm1pYV93elQ4cTNaLThfcEdJdlRVQ0lpMW0tRkc0?oc=5",
+     "kaynak_adi": "Yahoo Finance"
     },
     {
-     "tarih": "2026-10-06",
-     "baslik": "‘AI Snake Oil’ author sees chatbots evolving into a ‘truth oracle’—and journalism heading somewhere it hasn’t been in 200 years",
+     "tarih": "2026-10-08",
+     "baslik": "Oracle Moves Gas by Trucks to Avoid Data Center Power Delays",
      "olgu": null,
      "yorum": null,
      "sutun_id": null,
      "etki": null,
-     "kaynak_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNV2d2Mmx1bmJ4T004T3NKY3NDYXhXUE9KUmEyZ3RfRmxDSnBsekxSX05BRU81M2JZdUtQVFl0Z1FGYTFJNmJYSGVrUHhTNUdsakRmUXotQTF1MHNyeG9mX0hGczlpT3EyanBQcTFVMnVPWTVPbExLamdCQ0tLVk1YZE9IQ3BEakg1QW1kTEdJSXRHOXkzRVdib3R3?oc=5",
-     "kaynak_adi": "Fortune"
+     "kaynak_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdmhWSnNDR2M0SmVKWjFLZ1RGd3JCcXFrOE5mVW92RzZYNjR1Zzhfa1RQZGlMbFlDUE1sbFV1ZnlteVFXalZ6N3dpTnI3R3pLMWpBa1JmbFN4UFVidXFPVElFS25EcGkwbGxrenNaQ2ZMal9BOXNIdzY5NnQtMnV2YlZISVlnellDUUsyLTF5TnJLTi1MUVJ1ZW5hWkl1cENpa25pNHpaNGd6T0VKWFpGTQ?oc=5",
+     "kaynak_adi": "Bloomberg.com"
     }
    ],
    "haber_yontem": "Otomatik seçim (Claude yok): son 7 gün, şirket adı geçen + güvenilir kaynak öncelikli. Salı raporunda Claude seçimi gösterilir.",
-   "buyuk_hareketler": [],
+   "buyuk_hareketler": [
+    {
+     "tarih": "2026-10-08",
+     "hareket": -5.48,
+     "on_siniflama": "sirkete_ozel"
+    }
+   ],
    "kural": {
     "durum": "tetiklendi_kosul_ok",
-    "mesaj": "Zirveden −%54,1: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "mesaj": "Zirveden −%56,6: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "tetiklenen": {
      "dusus": 35,
      "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -54.13,
+    "zirveden_uzaklik": -56.65,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": true
@@ -7763,23 +7769,23 @@
     "XLU"
    ],
    "fiyat": {
-    "fiyat": 299.59,
-    "tarih": "2026-10-07",
-    "degisim_1g": -0.27,
-    "degisim_1h": 17.94,
-    "degisim_1a": 0.21,
-    "degisim_3a": 22.52,
-    "degisim_6a": 5.39,
-    "degisim_1y": -16.35,
-    "degisim_ytd": -15.2,
+    "fiyat": 285.07,
+    "tarih": "2026-10-08",
+    "degisim_1g": -4.85,
+    "degisim_1h": 10.1,
+    "degisim_1a": -4.67,
+    "degisim_3a": 13.69,
+    "degisim_6a": 1.72,
+    "degisim_1y": -23.16,
+    "degisim_ytd": -19.31,
     "zirve_52h": 403.95,
     "zirve_52h_tarih": "2025-10-15",
     "dip_52h": 236.5,
     "dip_52h_tarih": "2026-07-01",
-    "zirveden_uzaklik": -25.83,
+    "zirveden_uzaklik": -29.43,
     "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
     "kaynak": "Nasdaq.com (historical API)",
-    "guncelleme": "2026-10-08T11:40:13+00:00",
+    "guncelleme": "2026-10-09T11:33:36+00:00",
     "taze": true,
     "finnhub_52h_zirve_gun_ici": 412.7
    },
@@ -7895,13 +7901,9 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-08T11:40:56+00:00"
+    "guncelleme": "2026-10-09T11:34:22+00:00"
    },
    "grafik": [
-    [
-     "2025-10-07",
-     358.16
-    ],
     [
      "2025-10-08",
      371.0
@@ -8905,6 +8907,10 @@
     [
      "2026-10-07",
      299.59
+    ],
+    [
+     "2026-10-08",
+     285.07
     ]
    ],
    "tez": {
@@ -8998,12 +9004,12 @@
    ],
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%25,8: −%25 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku.",
+    "mesaj": "Zirveden −%29,4: −%25 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku.",
     "tetiklenen": {
      "dusus": 25,
      "not": "Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku."
     },
-    "zirveden_uzaklik": -25.83,
+    "zirveden_uzaklik": -29.43,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -9042,23 +9048,23 @@
     "IGV"
    ],
    "fiyat": {
-    "fiyat": 14.59,
-    "tarih": "2026-10-07",
-    "degisim_1g": -3.82,
-    "degisim_1h": -7.31,
-    "degisim_1a": -4.01,
-    "degisim_3a": -13.77,
-    "degisim_6a": 0.41,
-    "degisim_1y": -66.77,
-    "degisim_ytd": -34.13,
+    "fiyat": 14.14,
+    "tarih": "2026-10-08",
+    "degisim_1g": -3.08,
+    "degisim_1h": -9.48,
+    "degisim_1a": -10.56,
+    "degisim_3a": -16.77,
+    "degisim_6a": -1.19,
+    "degisim_1y": -67.29,
+    "degisim_ytd": -36.16,
     "zirve_52h": 56.34,
     "zirve_52h_tarih": "2025-10-15",
     "dip_52h": 12.9,
     "dip_52h_tarih": "2026-03-30",
-    "zirveden_uzaklik": -74.1,
+    "zirveden_uzaklik": -74.9,
     "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
     "kaynak": "Nasdaq.com (historical API)",
-    "guncelleme": "2026-10-08T11:40:15+00:00",
+    "guncelleme": "2026-10-09T11:33:41+00:00",
     "taze": true,
     "finnhub_52h_zirve_gun_ici": 58.15
    },
@@ -9174,13 +9180,9 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-08T11:40:59+00:00"
+    "guncelleme": "2026-10-09T11:34:26+00:00"
    },
    "grafik": [
-    [
-     "2025-10-07",
-     43.91
-    ],
     [
      "2025-10-08",
      43.23
@@ -10184,6 +10186,10 @@
     [
      "2026-10-07",
      14.59
+    ],
+    [
+     "2026-10-08",
+     14.14
     ]
    ],
    "tez": {
@@ -10279,12 +10285,12 @@
    "buyuk_hareketler": [],
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%74,1: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "mesaj": "Zirveden −%74,9: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "tetiklenen": {
      "dusus": 35,
      "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -74.1,
+    "zirveden_uzaklik": -74.9,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -10322,128 +10328,128 @@
  },
  "benchmarklar": {
   "IGV": {
-   "fiyat": 109.84,
-   "tarih": "2026-10-07",
-   "degisim_1g": -1.19,
-   "degisim_1h": 3.16,
-   "degisim_1a": 5.04,
-   "degisim_3a": 18.77,
-   "degisim_6a": 37.73,
-   "degisim_1y": -3.96,
-   "degisim_ytd": 3.93,
+   "fiyat": 109.59,
+   "tarih": "2026-10-08",
+   "degisim_1g": -0.23,
+   "degisim_1h": 1.26,
+   "degisim_1a": 6.75,
+   "degisim_3a": 16.73,
+   "degisim_6a": 42.99,
+   "degisim_1y": -5.27,
+   "degisim_ytd": 3.69,
    "zirve_52h": 117.08,
    "zirve_52h_tarih": "2025-10-27",
    "dip_52h": 74.67,
    "dip_52h_tarih": "2026-04-10",
-   "zirveden_uzaklik": -6.18,
+   "zirveden_uzaklik": -6.4,
    "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
    "kaynak": "Nasdaq.com (historical API)",
-   "guncelleme": "2026-10-08T11:40:18+00:00",
+   "guncelleme": "2026-10-09T11:33:43+00:00",
    "taze": true,
    "finnhub_52h_zirve_gun_ici": 117.76
   },
   "QQQ": {
-   "fiyat": 757.73,
-   "tarih": "2026-10-07",
-   "degisim_1g": -0.25,
-   "degisim_1h": 2.43,
-   "degisim_1a": 5.39,
-   "degisim_3a": 6.51,
-   "degisim_6a": 25.02,
-   "degisim_1y": 25.35,
-   "degisim_ytd": 23.35,
+   "fiyat": 747.58,
+   "tarih": "2026-10-08",
+   "degisim_1g": -1.34,
+   "degisim_1h": 0.75,
+   "degisim_1a": 4.07,
+   "degisim_3a": 3.36,
+   "degisim_6a": 22.52,
+   "degisim_1y": 22.27,
+   "degisim_ytd": 21.69,
    "zirve_52h": 759.66,
    "zirve_52h_tarih": "2026-10-06",
    "dip_52h": 558.28,
    "dip_52h_tarih": "2026-03-30",
-   "zirveden_uzaklik": -0.25,
+   "zirveden_uzaklik": -1.59,
    "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
    "kaynak": "Nasdaq.com (historical API)",
-   "guncelleme": "2026-10-08T11:40:22+00:00",
+   "guncelleme": "2026-10-09T11:33:47+00:00",
    "taze": true,
    "finnhub_52h_zirve_gun_ici": 762.86
   },
   "SMH": {
-   "fiyat": 625.03,
-   "tarih": "2026-10-07",
-   "degisim_1g": -1.18,
-   "degisim_1h": 2.63,
-   "degisim_1a": 10.23,
-   "degisim_3a": 5.4,
-   "degisim_6a": 47.79,
-   "degisim_1y": 85.44,
-   "degisim_ytd": 73.56,
+   "fiyat": 607.27,
+   "tarih": "2026-10-08",
+   "degisim_1g": -2.84,
+   "degisim_1h": -1.71,
+   "degisim_1a": 5.85,
+   "degisim_3a": -0.08,
+   "degisim_6a": 41.12,
+   "degisim_1y": 75.48,
+   "degisim_ytd": 68.63,
    "zirve_52h": 668.91,
    "zirve_52h_tarih": "2026-06-22",
    "dip_52h": 325.1,
    "dip_52h_tarih": "2025-11-20",
-   "zirveden_uzaklik": -6.56,
+   "zirveden_uzaklik": -9.21,
    "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
    "kaynak": "Nasdaq.com (historical API)",
-   "guncelleme": "2026-10-08T11:40:26+00:00",
+   "guncelleme": "2026-10-09T11:33:49+00:00",
    "taze": true,
    "finnhub_52h_zirve_gun_ici": 671.83
   },
   "SPY": {
-   "fiyat": 777.22,
-   "tarih": "2026-10-07",
-   "degisim_1g": -0.24,
-   "degisim_1h": 1.91,
-   "degisim_1a": 0.91,
-   "degisim_3a": 4.27,
-   "degisim_6a": 14.97,
-   "degisim_1y": 16.16,
-   "degisim_ytd": 13.98,
+   "fiyat": 773.93,
+   "tarih": "2026-10-08",
+   "degisim_1g": -0.42,
+   "degisim_1h": 1.3,
+   "degisim_1a": 1.04,
+   "degisim_3a": 2.96,
+   "degisim_6a": 13.83,
+   "degisim_1y": 14.98,
+   "degisim_ytd": 13.49,
    "zirve_52h": 779.09,
    "zirve_52h_tarih": "2026-10-06",
    "dip_52h": 631.97,
    "dip_52h_tarih": "2026-03-30",
-   "zirveden_uzaklik": -0.24,
+   "zirveden_uzaklik": -0.66,
    "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
    "kaynak": "Nasdaq.com (historical API)",
-   "guncelleme": "2026-10-08T11:40:28+00:00",
+   "guncelleme": "2026-10-09T11:33:51+00:00",
    "taze": true,
    "finnhub_52h_zirve_gun_ici": 781.62
   },
   "XLC": {
-   "fiyat": 111.26,
-   "tarih": "2026-10-07",
-   "degisim_1g": -0.35,
-   "degisim_1h": 0.26,
-   "degisim_1a": -0.69,
-   "degisim_3a": 1.64,
-   "degisim_6a": -2.24,
-   "degisim_1y": -4.14,
-   "degisim_ytd": -5.49,
+   "fiyat": 112.07,
+   "tarih": "2026-10-08",
+   "degisim_1g": 0.73,
+   "degisim_1h": 1.94,
+   "degisim_1a": 0.49,
+   "degisim_3a": 1.41,
+   "degisim_6a": -1.93,
+   "degisim_1y": -3.04,
+   "degisim_ytd": -4.8,
    "zirve_52h": 120.08,
    "zirve_52h_tarih": "2026-01-30",
    "dip_52h": 105.38,
    "dip_52h_tarih": "2026-07-23",
-   "zirveden_uzaklik": -7.35,
+   "zirveden_uzaklik": -6.67,
    "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
    "kaynak": "Nasdaq.com (historical API)",
-   "guncelleme": "2026-10-08T11:40:32+00:00",
+   "guncelleme": "2026-10-09T11:33:56+00:00",
    "taze": true,
    "finnhub_52h_zirve_gun_ici": 120.405
   },
   "XLU": {
-   "fiyat": 41.15,
-   "tarih": "2026-10-07",
-   "degisim_1g": -0.02,
-   "degisim_1h": 4.34,
-   "degisim_1a": -4.48,
-   "degisim_3a": -9.28,
-   "degisim_6a": -12.04,
-   "degisim_1y": -8.74,
-   "degisim_ytd": -3.61,
+   "fiyat": 41.07,
+   "tarih": "2026-10-08",
+   "degisim_1g": -0.19,
+   "degisim_1h": 3.5,
+   "degisim_1a": -5.48,
+   "degisim_3a": -9.0,
+   "degisim_6a": -12.9,
+   "degisim_1y": -9.54,
+   "degisim_ytd": -3.79,
    "zirve_52h": 47.73,
    "zirve_52h_tarih": "2026-02-27",
    "dip_52h": 39.25,
    "dip_52h_tarih": "2026-09-28",
-   "zirveden_uzaklik": -13.79,
+   "zirveden_uzaklik": -13.95,
    "zirve_notu": "52 haftalık zirve kapanış fiyatları üzerinden hesaplandı (gün içi zirve değil).",
    "kaynak": "Nasdaq.com (historical API)",
-   "guncelleme": "2026-10-08T11:40:34+00:00",
+   "guncelleme": "2026-10-09T11:34:00+00:00",
    "taze": true,
    "finnhub_52h_zirve_gun_ici": 47.8
   }
