@@ -1,20 +1,20 @@
 {
  "ticker": "NVDA",
- "guncelleme": "2026-10-09",
+ "guncelleme": "2026-10-12",
  "pencereler": {
   "90": {
    "kodlar": {
+    "diger": {
+     "islem": 4,
+     "adet": 1938000.0,
+     "tutar": 0.0,
+     "plan_10b5_1_adet": 1500000.0
+    },
     "S": {
      "islem": 25,
      "adet": 4332118.0,
      "tutar": 967599313.4595,
      "plan_10b5_1_adet": 95378.0
-    },
-    "diger": {
-     "islem": 3,
-     "adet": 1438000.0,
-     "tutar": 0.0,
-     "plan_10b5_1_adet": 1000000.0
     },
     "F": {
      "islem": 5,
@@ -160,17 +160,17 @@
   },
   "180": {
    "kodlar": {
+    "diger": {
+     "islem": 7,
+     "adet": 3145500.0,
+     "tutar": 0.0,
+     "plan_10b5_1_adet": 2000000.0
+    },
     "S": {
      "islem": 32,
      "adet": 6233243.0,
      "tutar": 1378179464.8395,
      "plan_10b5_1_adet": 96003.0
-    },
-    "diger": {
-     "islem": 6,
-     "adet": 2645500.0,
-     "tutar": 0.0,
-     "plan_10b5_1_adet": 1500000.0
     },
     "F": {
      "islem": 10,
@@ -465,6 +465,25 @@
   }
  ],
  "son_islemler": [
+  {
+   "turev": false,
+   "menkul": "Common",
+   "tarih": "2026-10-07",
+   "kod": "G",
+   "adet": 500000.0,
+   "fiyat": 0.0,
+   "yon": "D",
+   "sonrasi": 23671360.0,
+   "sahiplik": "I",
+   "plan_10b5_1": true,
+   "kisi": "COXE TENCH",
+   "unvan": "Yönetim kurulu üyesi",
+   "yonetici": true,
+   "accn": "0001197647-26-000011",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119764726000011/xslF345X06/wk-form4_1791579847.xml",
+   "dosyalama": "2026-10-09",
+   "tutar": null
+  },
   {
    "turev": false,
    "menkul": "Common Stock",
@@ -1678,8 +1697,8 @@
     "kod": "G",
     "edgar_islem": 0,
     "edgar_adet": 0,
-    "finnhub_islem": 3,
-    "finnhub_adet": 1438000.0,
+    "finnhub_islem": 4,
+    "finnhub_adet": 1938000.0,
     "uyumlu": false
    },
    {
@@ -1692,8 +1711,8 @@
    },
    {
     "kod": "diger",
-    "edgar_islem": 3,
-    "edgar_adet": 1438000.0,
+    "edgar_islem": 4,
+    "edgar_adet": 1938000.0,
     "finnhub_islem": 0,
     "finnhub_adet": 0,
     "uyumlu": false
