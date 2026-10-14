@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-10-13T12:17:09+00:00",
+ "guncelleme": "2026-10-14T00:11:08+00:00",
  "ufuklar": [
   30,
   90,
@@ -125,7 +125,7 @@
    "tur": "kural_kademe_tez_bozuk",
    "ad": "Düşüş kademesi tetiklendi, tez kırmızı",
    "beklenen_yon": "olumsuz",
-   "adet": 8,
+   "adet": 9,
    "ufuklar": {
     "30": {
      "n": 0,
@@ -238,6 +238,25 @@
   }
  ],
  "sinyaller": [
+  {
+   "id": "dace09c3044d",
+   "tarih": "2026-10-14",
+   "ticker": "AAOI",
+   "tur": "kural_kademe_tez_bozuk",
+   "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
+   "yon": "olumsuz",
+   "aciklama": "Zirveden −%56,2, −%55 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 15 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+   "fiyat": 97.78,
+   "fiyat_tarihi": "2026-10-13",
+   "qqq": 743.57,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-10-14T00:10:55+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
   {
    "id": "52aee660fa08",
    "tarih": "2026-10-02",

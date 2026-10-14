@@ -1,6 +1,6 @@
 {
  "ticker": "ORCL",
- "guncelleme": "2026-10-13",
+ "guncelleme": "2026-10-14",
  "pencereler": {
   "90": {
    "kodlar": {
@@ -139,10 +139,10 @@
      "plan_10b5_1_adet": 0.0
     },
     "S": {
-     "islem": 15,
-     "adet": 451075.0,
-     "tutar": 71649012.9477,
-     "plan_10b5_1_adet": 448444.0
+     "islem": 14,
+     "adet": 436075.0,
+     "tutar": 69006162.9477,
+     "plan_10b5_1_adet": 433444.0
     },
     "F": {
      "islem": 19,
@@ -155,12 +155,6 @@
      "adet": 1005568.0,
      "tutar": 16372000.0,
      "plan_10b5_1_adet": 561886.0
-    },
-    "diger": {
-     "islem": 2,
-     "adet": 1490000.0,
-     "tutar": 0.0,
-     "plan_10b5_1_adet": 0.0
     }
    },
    "kisiler": [
@@ -190,20 +184,6 @@
      "son_pozisyon": 182929.279,
      "son_tarih": "2026-09-22",
      "satilan_pozisyon_orani": 20.9,
-     "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
-    },
-    {
-     "kisi": "Levey Stuart",
-     "unvan": "EVP, Chief Legal Officer",
-     "satis_adet": 15000.0,
-     "satis_tutar": 2642850.0,
-     "alim_adet": 0.0,
-     "vergi_adet": 22128.0,
-     "planli_satis_adet": 15000.0,
-     "ilk_satis_oncesi": 18429.0,
-     "son_pozisyon": 28523.0,
-     "son_tarih": "2026-09-21",
-     "satilan_pozisyon_orani": 81.4,
      "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
     },
     {
@@ -314,6 +294,20 @@
      "planli_satis_adet": 0.0,
      "ilk_satis_oncesi": null,
      "son_pozisyon": 250148.0,
+     "son_tarih": "2026-09-21",
+     "satilan_pozisyon_orani": null,
+     "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
+    },
+    {
+     "kisi": "Levey Stuart",
+     "unvan": "EVP, Chief Legal Officer",
+     "satis_adet": 0.0,
+     "satis_tutar": 0.0,
+     "alim_adet": 0.0,
+     "vergi_adet": 22128.0,
+     "planli_satis_adet": 0.0,
+     "ilk_satis_oncesi": null,
+     "son_pozisyon": 28523.0,
      "son_tarih": "2026-09-21",
      "satilan_pozisyon_orani": null,
      "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
@@ -2143,63 +2137,6 @@
    "url": "https://www.sec.gov/Archives/edgar/data/1341439/000134143926000029/xslF345X06/form4.xml",
    "dosyalama": "2026-04-28",
    "tutar": 60010.50288000001
-  },
-  {
-   "turev": false,
-   "menkul": "Common Stock",
-   "tarih": "2026-04-16",
-   "kod": "S",
-   "adet": 15000.0,
-   "fiyat": 176.19,
-   "yon": "D",
-   "sonrasi": 3429.0,
-   "sahiplik": "D",
-   "plan_10b5_1": true,
-   "kisi": "Levey Stuart",
-   "unvan": "EVP, Chief Legal Officer",
-   "yonetici": true,
-   "accn": "0001341439-26-000027",
-   "url": "https://www.sec.gov/Archives/edgar/data/1341439/000134143926000027/xslF345X06/form4.xml",
-   "dosyalama": "2026-04-20",
-   "tutar": 2642850.0
-  },
-  {
-   "turev": false,
-   "menkul": "Common Stock",
-   "tarih": "2026-04-16",
-   "kod": "J",
-   "adet": 745000.0,
-   "fiyat": 0.0,
-   "yon": "D",
-   "sonrasi": 455910.0,
-   "sahiplik": "I",
-   "plan_10b5_1": false,
-   "kisi": "HENLEY JEFFREY",
-   "unvan": "Yönetim kurulu üyesi, Vice Chairman",
-   "yonetici": true,
-   "accn": "0001341439-26-000025",
-   "url": "https://www.sec.gov/Archives/edgar/data/1341439/000134143926000025/xslF345X06/form4.xml",
-   "dosyalama": "2026-04-17",
-   "tutar": null
-  },
-  {
-   "turev": false,
-   "menkul": "Common Stock",
-   "tarih": "2026-04-16",
-   "kod": "J",
-   "adet": 745000.0,
-   "fiyat": 0.0,
-   "yon": "A",
-   "sonrasi": 745000.0,
-   "sahiplik": "I",
-   "plan_10b5_1": false,
-   "kisi": "HENLEY JEFFREY",
-   "unvan": "Yönetim kurulu üyesi, Vice Chairman",
-   "yonetici": true,
-   "accn": "0001341439-26-000025",
-   "url": "https://www.sec.gov/Archives/edgar/data/1341439/000134143926000025/xslF345X06/form4.xml",
-   "dosyalama": "2026-04-17",
-   "tutar": null
   }
  ],
  "anlati": [

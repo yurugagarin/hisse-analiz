@@ -1,6 +1,6 @@
 {
  "ticker": "NVDA",
- "guncelleme": "2026-10-13",
+ "guncelleme": "2026-10-14",
  "pencereler": {
   "90": {
    "kodlar": {
@@ -23,8 +23,8 @@
      "plan_10b5_1_adet": 40747.0
     },
     "A": {
-     "islem": 3,
-     "adet": 174917.0,
+     "islem": 4,
+     "adet": 335335.0,
      "tutar": 0.0,
      "plan_10b5_1_adet": 0.0
     }
@@ -179,8 +179,8 @@
      "plan_10b5_1_adet": 40747.0
     },
     "A": {
-     "islem": 14,
-     "adet": 245325.0,
+     "islem": 15,
+     "adet": 405743.0,
      "tutar": 0.0,
      "plan_10b5_1_adet": 0.0
     }
@@ -749,6 +749,25 @@
    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119764926000012/xslF345X06/wk-form4_1789765856.xml",
    "dosyalama": "2026-09-18",
    "tutar": 9702109.76
+  },
+  {
+   "turev": false,
+   "menkul": "Common Stock",
+   "tarih": "2026-09-09",
+   "kod": "A",
+   "adet": 160418.0,
+   "fiyat": 0.0,
+   "yon": "A",
+   "sonrasi": 160418.0,
+   "sahiplik": "D",
+   "plan_10b5_1": false,
+   "kisi": "Parker Nicholas P.",
+   "unvan": "EVP, Worldwide Field Ops",
+   "yonetici": true,
+   "accn": "0002152188-26-000007",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000215218826000007/xslF345X06/wk-form4a_1791925767.xml",
+   "dosyalama": "2026-10-13",
+   "tutar": null
   },
   {
    "turev": false,
@@ -1668,7 +1687,7 @@
   "Satışların önemli bir kısmı plansız: yöneticinin o an karar verdiği satışlar, planlılara göre daha fazla bilgi taşır.",
   "Bu dönemde yönetimden hiç açık piyasa alımı (P) yok.",
   "5 vergi kesintisi (F) işlemi var: hak edilen hisselerin vergisi için şirkete bırakılan hisseler. Rutindir, sinyal sayılmaz.",
-  "Opsiyon/RSU kullanımı (M) 0, hibe (A) 3 işlem: ücretlendirmenin parçası.",
+  "Opsiyon/RSU kullanımı (M) 0, hibe (A) 4 işlem: ücretlendirmenin parçası.",
   "En büyük satıcılar: STEVENS MARK A (Yönetim kurulu üyesi) 946,6 milyon $; Teter Timothy S. (EVP, General Counsel and Sec) 13,3 milyon $; Kress Colette (EVP & Chief Financial Officer) 7,6 milyon $ (doğrudan pozisyonuna oranı %4).",
   "Kümelenme: 2026-09-17 – 2026-09-21 arasında 3 yönetici aynı dönemde sattı. Birden çok yöneticinin aynı anda satması, tek kişinin satışından daha dikkat çekicidir; ancak planlı satışlar ve kazanç sonrası açılan işlem pencereleri de kümelenme yaratır."
  ],
@@ -1679,11 +1698,11 @@
   "satirlar": [
    {
     "kod": "A",
-    "edgar_islem": 3,
-    "edgar_adet": 174917.0,
+    "edgar_islem": 4,
+    "edgar_adet": 335335.0,
     "finnhub_islem": 3,
     "finnhub_adet": 174917.0,
-    "uyumlu": true
+    "uyumlu": false
    },
    {
     "kod": "F",

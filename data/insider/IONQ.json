@@ -1,6 +1,6 @@
 {
  "ticker": "IONQ",
- "guncelleme": "2026-10-13",
+ "guncelleme": "2026-10-14",
  "pencereler": {
   "90": {
    "kodlar": {
@@ -119,10 +119,10 @@
      "plan_10b5_1_adet": 0.0
     },
     "S": {
-     "islem": 6,
-     "adet": 18009.0,
-     "tutar": 903303.03,
-     "plan_10b5_1_adet": 18009.0
+     "islem": 5,
+     "adet": 15509.0,
+     "tutar": 791053.03,
+     "plan_10b5_1_adet": 15509.0
     },
     "A": {
      "islem": 7,
@@ -131,27 +131,13 @@
      "plan_10b5_1_adet": 9052.0
     },
     "M": {
-     "islem": 2,
-     "adet": 6273.0,
-     "tutar": 70508.52,
-     "plan_10b5_1_adet": 6273.0
+     "islem": 1,
+     "adet": 3773.0,
+     "tutar": 42408.520000000004,
+     "plan_10b5_1_adet": 3773.0
     }
    },
    "kisiler": [
-    {
-     "kisi": "Cardillo Robert T.",
-     "unvan": "Yönetim kurulu üyesi, Executive Chair, IonQ Federal",
-     "satis_adet": 6273.0,
-     "satis_tutar": 300522.69999999995,
-     "alim_adet": 0.0,
-     "vergi_adet": 904.0,
-     "planli_satis_adet": 6273.0,
-     "ilk_satis_oncesi": 142467.0,
-     "son_pozisyon": 139063.0,
-     "son_tarih": "2026-06-11",
-     "satilan_pozisyon_orani": 4.4,
-     "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
-    },
     {
      "kisi": "Raymond John w",
      "unvan": "Yönetim kurulu üyesi, Special Advisor",
@@ -164,6 +150,20 @@
      "son_pozisyon": 77741.0,
      "son_tarih": "2026-09-10",
      "satilan_pozisyon_orani": 7.4,
+     "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
+    },
+    {
+     "kisi": "Cardillo Robert T.",
+     "unvan": "Yönetim kurulu üyesi, Executive Chair, IonQ Federal",
+     "satis_adet": 3773.0,
+     "satis_tutar": 188272.69999999998,
+     "alim_adet": 0.0,
+     "vergi_adet": 904.0,
+     "planli_satis_adet": 3773.0,
+     "ilk_satis_oncesi": 143740.0,
+     "son_pozisyon": 139063.0,
+     "son_tarih": "2026-06-11",
+     "satilan_pozisyon_orani": 2.6,
      "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
     },
     {
@@ -751,63 +751,6 @@
    "accn": "0001193125-26-215307",
    "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526215307/xslF345X06/ownership.xml",
    "dosyalama": "2026-05-08",
-   "tutar": null
-  },
-  {
-   "turev": false,
-   "menkul": "Common Stock",
-   "tarih": "2026-04-16",
-   "kod": "M",
-   "adet": 2500.0,
-   "fiyat": 11.24,
-   "yon": "A",
-   "sonrasi": 142467.0,
-   "sahiplik": "D",
-   "plan_10b5_1": true,
-   "kisi": "Cardillo Robert T.",
-   "unvan": "Yönetim kurulu üyesi, Executive Chair, IonQ Federal",
-   "yonetici": true,
-   "accn": "0001193125-26-162187",
-   "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526162187/xslF345X06/ownership.xml",
-   "dosyalama": "2026-04-17",
-   "tutar": 28100.0
-  },
-  {
-   "turev": false,
-   "menkul": "Common Stock",
-   "tarih": "2026-04-16",
-   "kod": "S",
-   "adet": 2500.0,
-   "fiyat": 44.9,
-   "yon": "A",
-   "sonrasi": 139967.0,
-   "sahiplik": "D",
-   "plan_10b5_1": true,
-   "kisi": "Cardillo Robert T.",
-   "unvan": "Yönetim kurulu üyesi, Executive Chair, IonQ Federal",
-   "yonetici": true,
-   "accn": "0001193125-26-162187",
-   "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526162187/xslF345X06/ownership.xml",
-   "dosyalama": "2026-04-17",
-   "tutar": 112250.0
-  },
-  {
-   "turev": true,
-   "menkul": "Stock Option (Right to Buy)",
-   "tarih": "2026-04-16",
-   "kod": "M",
-   "adet": 2500.0,
-   "fiyat": 0.0,
-   "yon": "D",
-   "sonrasi": 12547.0,
-   "sahiplik": "D",
-   "plan_10b5_1": true,
-   "kisi": "Cardillo Robert T.",
-   "unvan": "Yönetim kurulu üyesi, Executive Chair, IonQ Federal",
-   "yonetici": true,
-   "accn": "0001193125-26-162187",
-   "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526162187/xslF345X06/ownership.xml",
-   "dosyalama": "2026-04-17",
    "tutar": null
   }
  ],
