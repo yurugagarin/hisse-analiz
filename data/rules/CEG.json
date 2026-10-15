@@ -2,7 +2,7 @@
  "ticker": "CEG",
  "onay": "taslak",
  "kosul": "tez_saglam",
- "zirveden_uzaklik": -26.78,
+ "zirveden_uzaklik": -30.8,
  "kademeler": [
   {
    "dusus": 15,
@@ -23,24 +23,24 @@
  "benchmark": [
   {
    "sembol": "SPY",
-   "zirveden_uzaklik": -0.14,
-   "degisim_1a": 1.8,
-   "degisim_3a": 3.48,
-   "fark_puan": -26.64
+   "zirveden_uzaklik": -1.22,
+   "degisim_1a": 1.15,
+   "degisim_3a": 1.96,
+   "fark_puan": -29.58
   },
   {
    "sembol": "XLU",
-   "zirveden_uzaklik": -12.28,
-   "degisim_1a": -1.23,
-   "degisim_3a": -8.36,
-   "fark_puan": -14.5
+   "zirveden_uzaklik": -12.59,
+   "degisim_1a": -0.24,
+   "degisim_3a": -7.74,
+   "fark_puan": -18.21
   }
  ],
- "guncelleme": "2026-10-14T09:50:27+00:00",
+ "guncelleme": "2026-10-15T09:31:02+00:00",
  "not": "Otomatik işlem yok. Bu bölüm önceden yazdığın kuralları hatırlatır.",
  "dusus_kaynagi": "sirkete_ozel",
  "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
- "en_iyi_fark": -14.5,
+ "en_iyi_fark": -18.21,
  "tetiklenen": {
   "dusus": 25,
   "not": "Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku."
@@ -48,5 +48,5 @@
  "tez_durumu": "kirmizi",
  "kosul_saglaniyor": false,
  "durum": "tetiklendi_kosul_yok",
- "mesaj": "Zirveden −%26,8: −%25 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku."
+ "mesaj": "Zirveden −%30,8: −%25 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku."
 }
