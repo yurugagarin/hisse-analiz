@@ -1,5 +1,130 @@
 [
  {
+  "id": "20261019T102214Z",
+  "tur": "gunluk_python",
+  "baslangic": "2026-10-19T10:22:14+00:00",
+  "bitis": "2026-10-19T10:23:29+00:00",
+  "hisseler": [
+   "AAOI",
+   "CEG",
+   "IONQ",
+   "META",
+   "NOW",
+   "NVDA",
+   "ORCL",
+   "RGTI"
+  ],
+  "finnhub_aktif": true,
+  "sec_aktif": true,
+  "sec_user_agent_tanimli": true,
+  "sec_istek": 9,
+  "claude": null,
+  "bekleyen_bilanco": [],
+  "adimlar": {
+   "sec_ticker_listesi": {
+    "ok": 1,
+    "hata": 0,
+    "sure_sn": 0.3
+   },
+   "fiyat": {
+    "ok": 14,
+    "hata": 0,
+    "sure_sn": 47.8
+   },
+   "cik": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "sec_submissions": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.1
+   },
+   "bilanco_xbrl": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "bilanco_yorum": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "bilanco_takvimi": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 5.1
+   },
+   "insider_form4": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "finnhub_insider": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 9.2
+   },
+   "insider_analiz": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "finnhub_haber": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 8.4
+   },
+   "google_news": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 3.3
+   },
+   "baslik_arsivi": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.1
+   },
+   "hareketler": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "tez": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "kural": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "sinyal": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "karne": {
+    "ok": 1,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "haftalik_derleme": {
+    "ok": 1,
+    "hata": 0,
+    "sure_sn": 0.1
+   }
+  },
+  "hatalar": [],
+  "argumanlar": {
+   "offline": false,
+   "force_filings": false,
+   "tickers": ""
+  }
+ },
+ {
   "id": "20261016T092235Z",
   "tur": "gunluk_python",
   "baslangic": "2026-10-16T09:22:35+00:00",
