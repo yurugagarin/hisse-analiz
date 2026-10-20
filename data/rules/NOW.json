@@ -2,7 +2,7 @@
  "ticker": "NOW",
  "onay": "taslak",
  "kosul": "tez_saglam",
- "zirveden_uzaklik": -23.19,
+ "zirveden_uzaklik": -20.99,
  "kademeler": [
   {
    "dusus": 15,
@@ -23,24 +23,24 @@
  "benchmark": [
   {
    "sembol": "QQQ",
-   "zirveden_uzaklik": -5.44,
-   "degisim_1a": -0.43,
-   "degisim_3a": 3.2,
-   "fark_puan": -17.75
+   "zirveden_uzaklik": -5.53,
+   "degisim_1a": -0.53,
+   "degisim_3a": 1.22,
+   "fark_puan": -15.46
   },
   {
    "sembol": "IGV",
-   "zirveden_uzaklik": -9.47,
-   "degisim_1a": 1.57,
-   "degisim_3a": 13.99,
-   "fark_puan": -13.72
+   "zirveden_uzaklik": -8.67,
+   "degisim_1a": 2.47,
+   "degisim_3a": 16.46,
+   "fark_puan": -12.32
   }
  ],
- "guncelleme": "2026-10-20T09:43:09+00:00",
+ "guncelleme": "2026-10-20T23:39:55+00:00",
  "not": "Otomatik işlem yok. Bu bölüm önceden yazdığın kuralları hatırlatır.",
  "dusus_kaynagi": "sirkete_ozel",
  "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
- "en_iyi_fark": -13.72,
+ "en_iyi_fark": -12.32,
  "tetiklenen": {
   "dusus": 15,
   "not": "DCA 1,5x (tez sağlamsa)."
@@ -48,5 +48,5 @@
  "tez_durumu": "sari",
  "kosul_saglaniyor": true,
  "durum": "tetiklendi_kosul_ok",
- "mesaj": "Zirveden −%23,2: −%15 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 1,5x (tez sağlamsa)."
+ "mesaj": "Zirveden −%21,0: −%15 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 1,5x (tez sağlamsa)."
 }

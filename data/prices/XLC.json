@@ -1,7 +1,7 @@
 {
  "sembol": "XLC",
- "kaynak": "Nasdaq.com (historical API)",
- "guncelleme": "2026-10-20T09:42:54+00:00",
+ "kaynak": "Nasdaq.com (historical API) + Finnhub quote",
+ "guncelleme": "2026-10-20T23:39:41+00:00",
  "taze": true,
  "kapanislar": [
   [
@@ -2103,6 +2103,10 @@
   [
    "2026-10-19",
    110.09
+  ],
+  [
+   "2026-10-20",
+   110.19
   ]
  ],
  "finnhub_52h_zirve": 120.405,

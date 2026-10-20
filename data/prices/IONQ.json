@@ -1,7 +1,7 @@
 {
  "sembol": "IONQ",
- "kaynak": "Nasdaq.com (historical API)",
- "guncelleme": "2026-10-20T09:42:25+00:00",
+ "kaynak": "Nasdaq.com (historical API) + Finnhub quote",
+ "guncelleme": "2026-10-20T23:39:09+00:00",
  "taze": true,
  "kapanislar": [
   [
@@ -2103,6 +2103,10 @@
   [
    "2026-10-19",
    30.78
+  ],
+  [
+   "2026-10-20",
+   31.26
   ]
  ],
  "finnhub_52h_zirve": 73.87,

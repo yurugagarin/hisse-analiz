@@ -1,7 +1,7 @@
 {
  "sembol": "IGV",
- "kaynak": "Nasdaq.com (historical API)",
- "guncelleme": "2026-10-20T09:42:41+00:00",
+ "kaynak": "Nasdaq.com (historical API) + Finnhub quote",
+ "guncelleme": "2026-10-20T23:39:26+00:00",
  "taze": true,
  "kapanislar": [
   [
@@ -2103,6 +2103,10 @@
   [
    "2026-10-19",
    105.99
+  ],
+  [
+   "2026-10-20",
+   106.93
   ]
  ],
  "finnhub_52h_zirve": 117.76,

@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-10-20T09:43:26+00:00",
+ "guncelleme": "2026-10-20T23:40:12+00:00",
  "ufuklar": [
   30,
   90,
@@ -125,7 +125,7 @@
    "tur": "kural_kademe_tez_bozuk",
    "ad": "Düşüş kademesi tetiklendi, tez kırmızı",
    "beklenen_yon": "olumsuz",
-   "adet": 9,
+   "adet": 10,
    "ufuklar": {
     "30": {
      "n": 0,
@@ -238,6 +238,25 @@
   }
  ],
  "sinyaller": [
+  {
+   "id": "d8a701cdb0e9",
+   "tarih": "2026-10-20",
+   "ticker": "CEG",
+   "tur": "kural_kademe_tez_bozuk",
+   "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
+   "yon": "olumsuz",
+   "aciklama": "Zirveden −%35,5, −%35 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+   "fiyat": 258.84,
+   "fiyat_tarihi": "2026-10-20",
+   "qqq": 717.63,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-10-20T23:40:08+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
   {
    "id": "dace09c3044d",
    "tarih": "2026-10-14",
