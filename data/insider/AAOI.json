@@ -1,6 +1,6 @@
 {
  "ticker": "AAOI",
- "guncelleme": "2026-10-20",
+ "guncelleme": "2026-10-21",
  "pencereler": {
   "90": {
    "kodlar": {
@@ -21,12 +21,6 @@
      "adet": 9251.0,
      "tutar": 0.0,
      "plan_10b5_1_adet": 0.0
-    },
-    "F": {
-     "islem": 20,
-     "adet": 33697.0,
-     "tutar": 4018704.219999999,
-     "plan_10b5_1_adet": 4709.0
     }
    },
    "kisiler": [
@@ -36,7 +30,7 @@
      "satis_adet": 32172.0,
      "satis_tutar": 3545676.1199999996,
      "alim_adet": 0.0,
-     "vergi_adet": 4676.0,
+     "vergi_adet": 0.0,
      "planli_satis_adet": 0.0,
      "ilk_satis_oncesi": 281448.0,
      "son_pozisyon": 249276.0,
@@ -46,11 +40,11 @@
     },
     {
      "kisi": "Yeh Shu-Hua (Joshua)",
-     "unvan": "Senior Vice President and Asia General Manager.",
+     "unvan": "Senior Vice President and Asia General Manager",
      "satis_adet": 16715.0,
      "satis_tutar": 2203007.5,
      "alim_adet": 0.0,
-     "vergi_adet": 4709.0,
+     "vergi_adet": 0.0,
      "planli_satis_adet": 16715.0,
      "ilk_satis_oncesi": 388213.0,
      "son_pozisyon": 371498.0,
@@ -64,7 +58,7 @@
      "satis_adet": 12000.0,
      "satis_tutar": 1411960.0,
      "alim_adet": 0.0,
-     "vergi_adet": 5408.0,
+     "vergi_adet": 0.0,
      "planli_satis_adet": 12000.0,
      "ilk_satis_oncesi": 375168.0,
      "son_pozisyon": 363168.0,
@@ -73,26 +67,12 @@
      "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
     },
     {
-     "kisi": "Kuo David C",
-     "unvan": "Senior Vice President and Chief Legal Officer",
-     "satis_adet": 0.0,
-     "satis_tutar": 0.0,
-     "alim_adet": 0.0,
-     "vergi_adet": 3264.0,
-     "planli_satis_adet": 0.0,
-     "ilk_satis_oncesi": null,
-     "son_pozisyon": 145814.0,
-     "son_tarih": "2026-07-22",
-     "satilan_pozisyon_orani": null,
-     "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
-    },
-    {
      "kisi": "Lin Chih-Hsiang (Thompson)",
      "unvan": "Yönetim kurulu üyesi, President and CEO",
      "satis_adet": 0.0,
      "satis_tutar": 0.0,
      "alim_adet": 0.0,
-     "vergi_adet": 15640.0,
+     "vergi_adet": 0.0,
      "planli_satis_adet": 0.0,
      "ilk_satis_oncesi": null,
      "son_pozisyon": 1296047.0,
@@ -1786,9 +1766,8 @@
   "Son 90 günde yöneticiler ve yönetim kurulu üyeleri 7 satış işlemiyle toplam 7,2 milyon $ değerinde hisse sattı. Önceden kayda geçirilmiş 10b5-1 planı kapsamındaki satışların payı (adet bazında): %47.",
   "Satışların önemli bir kısmı plansız: yöneticinin o an karar verdiği satışlar, planlılara göre daha fazla bilgi taşır.",
   "Bu dönemde yönetimden hiç açık piyasa alımı (P) yok.",
-  "20 vergi kesintisi (F) işlemi var: hak edilen hisselerin vergisi için şirkete bırakılan hisseler. Rutindir, sinyal sayılmaz.",
   "Opsiyon/RSU kullanımı (M) 0, hibe (A) 1 işlem: ücretlendirmenin parçası.",
-  "En büyük satıcılar: Chang Hung-Lun (Fred) (Senior Vice President and North America General Manager) 3,5 milyon $ (doğrudan pozisyonuna oranı %11); Yeh Shu-Hua (Joshua) (Senior Vice President and Asia General Manager.) 2,2 milyon $ (doğrudan pozisyonuna oranı %4); Murry Stefan J. (Chief Financial Officer) 1,4 milyon $ (doğrudan pozisyonuna oranı %3).",
+  "En büyük satıcılar: Chang Hung-Lun (Fred) (Senior Vice President and North America General Manager) 3,5 milyon $ (doğrudan pozisyonuna oranı %11); Yeh Shu-Hua (Joshua) (Senior Vice President and Asia General Manager) 2,2 milyon $ (doğrudan pozisyonuna oranı %4); Murry Stefan J. (Chief Financial Officer) 1,4 milyon $ (doğrudan pozisyonuna oranı %3).",
   "Kümelenme: 2026-06-10 – 2026-06-18 arasında 5 yönetici aynı dönemde sattı. Birden çok yöneticinin aynı anda satması, tek kişinin satışından daha dikkat çekicidir; ancak planlı satışlar ve kazanç sonrası açılan işlem pencereleri de kümelenme yaratır."
  ],
  "durum": "dikkat",
@@ -1802,14 +1781,6 @@
     "edgar_adet": 9251.0,
     "finnhub_islem": 1,
     "finnhub_adet": 9251.0,
-    "uyumlu": true
-   },
-   {
-    "kod": "F",
-    "edgar_islem": 20,
-    "edgar_adet": 33697.0,
-    "finnhub_islem": 20,
-    "finnhub_adet": 33697.0,
     "uyumlu": true
    },
    {

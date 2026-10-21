@@ -1,15 +1,15 @@
 {
  "tur": "son7gun",
- "baslangic": "2026-10-14",
- "bitis": "2026-10-20",
- "guncelleme": "2026-10-20T23:40:12+00:00",
+ "baslangic": "2026-10-15",
+ "bitis": "2026-10-21",
+ "guncelleme": "2026-10-21T09:44:48+00:00",
  "hisseler": [
   {
    "ticker": "NVDA",
    "ad": "Nvidia",
    "donem": [
-    "2026-10-14",
-    "2026-10-20"
+    "2026-10-15",
+    "2026-10-21"
    ],
    "fiyat": {
     "son": 216.47,
@@ -19,7 +19,7 @@
     "zirveden": -9.52,
     "zirve_52h": 239.24,
     "zirve_tarih": "2026-10-06",
-    "kaynak": "Nasdaq.com (historical API) + Finnhub quote"
+    "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
     "QQQ": -3.49,
@@ -182,15 +182,15 @@
     "ceyrek": 3,
     "yil": 2027,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-20T23:39:46+00:00"
+    "guncelleme": "2026-10-21T09:44:22+00:00"
    }
   },
   {
    "ticker": "META",
    "ad": "Meta Platforms",
    "donem": [
-    "2026-10-14",
-    "2026-10-20"
+    "2026-10-15",
+    "2026-10-21"
    ],
    "fiyat": {
     "son": 694.25,
@@ -200,7 +200,7 @@
     "zirveden": -10.72,
     "zirve_52h": 777.59,
     "zirve_tarih": "2026-09-24",
-    "kaynak": "Nasdaq.com (historical API) + Finnhub quote"
+    "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
     "QQQ": -3.49,
@@ -425,15 +425,15 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-20T23:39:49+00:00"
+    "guncelleme": "2026-10-21T09:44:26+00:00"
    }
   },
   {
    "ticker": "NOW",
    "ad": "ServiceNow",
    "donem": [
-    "2026-10-14",
-    "2026-10-20"
+    "2026-10-15",
+    "2026-10-21"
    ],
    "fiyat": {
     "son": 149.54,
@@ -443,7 +443,7 @@
     "zirveden": -20.99,
     "zirve_52h": 189.258,
     "zirve_tarih": "2025-10-27",
-    "kaynak": "Nasdaq.com (historical API) + Finnhub quote"
+    "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
     "QQQ": -3.49,
@@ -982,15 +982,15 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-20T23:39:53+00:00"
+    "guncelleme": "2026-10-21T09:44:29+00:00"
    }
   },
   {
    "ticker": "AAOI",
    "ad": "Applied Optoelectronics",
    "donem": [
-    "2026-10-14",
-    "2026-10-20"
+    "2026-10-15",
+    "2026-10-21"
    ],
    "fiyat": {
     "son": 76.74,
@@ -1000,7 +1000,7 @@
     "zirveden": -65.6,
     "zirve_52h": 223.1,
     "zirve_tarih": "2026-05-13",
-    "kaynak": "Nasdaq.com (historical API) + Finnhub quote"
+    "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
     "QQQ": -3.49,
@@ -1150,12 +1150,6 @@
       "adet": 9251.0,
       "tutar": 0.0,
       "plan_10b5_1_adet": 0.0
-     },
-     "F": {
-      "islem": 20,
-      "adet": 33697.0,
-      "tutar": 4018704.219999999,
-      "plan_10b5_1_adet": 4709.0
      }
     }
    },
@@ -1408,6 +1402,15 @@
        "saglayici": "Google News RSS"
       },
       {
+       "zaman": "2026-10-15T07:00:00+00:00",
+       "tarih": "2026-10-15",
+       "baslik": "Applied Optoelectronics (NasdaqGM:AAOI) Stock Forecast & Analyst Predictions",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNTmRBa2YyZlZXampCdERFS29DS0liT3JONkZDQkREMmNMUEdITTZZSGV5LXlfaExiNWliakEyMTdyX0xTRGoxOUZYMFlKZGVLYldoakhTWTFXVmFsVWo3bkdEX25VTW1qanZGVUhZMk5XQTM3dXhzZFJhc1FwSWFYZ0RhUThadw?oc=5",
+       "kaynak": "Simply Wall Street",
+       "saglayici": "Google News RSS"
+      },
+      {
        "zaman": "2026-10-15T01:34:04+00:00",
        "tarih": "2026-10-15",
        "baslik": "Applied Optoelectronics (AAOI) CFO Stefan Murry Sells 4,000 Shar",
@@ -1418,235 +1421,6 @@
       }
      ],
      "sec_bildirimleri": []
-    },
-    {
-     "tarih": "2026-10-14",
-     "claude": null,
-     "onceki_gun": "2026-10-13",
-     "hareket": -11.82,
-     "yon": "asagi",
-     "benchmark": {
-      "QQQ": -1.97,
-      "SMH": -3.98
-     },
-     "on_siniflama": "sirkete_ozel",
-     "on_siniflama_aciklama": "Hisse −%11,8, sektör/piyasa −%4,0: hareketin çoğu şirkete özel görünüyor.",
-     "basliklar": [
-      {
-       "zaman": "2026-10-14T21:50:48+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Applied Optoelectronics (NASDAQ:AAOI) Stock Falls 11.8% on Insider Selling",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPN3N5MUdFREVlckNLamNrSXNseFNFMEtvN2pJb2RGWU1pNm9jZklHVm9MYWlZcWtXaWRuQVZGOUxyWE1xRlFETDY5dnFMazAzZ00xQVRtbGg3UjVfeEhNallZcTByRFFRa1pRbHVIRTlYdDFoeG1jZ2hwVlFHQTV3MTdHbmNkR1B3Ymx3WXJ1dGo5RWhvd09telVjeHhjTjVlV2w5eENfRWppZ0RRT1ppd3dZNFE5N0NScUlkdF9OX0VicTd3TTNqeDRn?oc=5",
-       "kaynak": "MarketBeat",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T21:45:26+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Applied optoelectronics CFO Murry sells $411,480 shares. By Investing.com",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQZUdEQmxIbFlCSTZKLTQ3SUM1UktXRG1reXo5ejJYQWVRbDJ4TzdnQzV6eVIwMnlHbWVjMENoejQ2amJINEdvQ1BsVWRMZDhmX1FNQThKZHNpVDZra0JfRGdQYk9ySHN6b3RveF9mUlhpRUcyUjV2dm1qYjcwMGM0c19KM2RyeGpCaUlfYWlxN3NOaVJsX3VDbzZyU2JxOGN2QjJpY21iZWExQ01NeTVyLVdyOW0?oc=5",
-       "kaynak": "Investing.com Australia",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T21:20:40+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Applied Optoelectronics (NASDAQ:AAOI) CFO Stefan Murry Sells 4,000 Shares of Company Stock",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNWUpfdkRkcEVfTEVuTXg0Rm9UdjBFQmtJN09Gbm11anFfdEpKYUtqNGdnUjJ1TnBTdVoyNUdiUnFlMzVVd1MyRlV4czlUU3lqYmdESDM2VlFibnVVQXk0VFE1Y1RxSlJfOXBla2JyNTNlV0d5Q0o1d05zU3NTQWtiMXZtNTNyb29yT25POC1nMFhKemF1UllQYkFRVWtLSzdPWEFlQ0thNE1UUVNiV3BfOVc5RHRyTkRpVjA5LVJ2Tm5IcGR6SFhfN3o0a2VfeTFvNFFHWHBYU3pzVkJ4cTRHdXA4Yw?oc=5",
-       "kaynak": "MarketBeat",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T20:36:00+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Applied optoelectronics CFO Murry sells $411,480 shares.",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSUFmcXFxNEZtOFlucWpSSmhBWFFjZGUtTzNlY1NJdWVwVzliZmRKRjlndlFzRThvV1RkNll3VWxITjdoUXdETU1VRWNldUVSdTlDUFgyUkp3dTNFYkl2U0pleEJqNWd1NFZoVC0wQTNrOXZEYU85ZXFkOXJ4OEYzU3JNZjhYcHRMMUg0Mkp0aW5uVjQxNVF1OGc3bGxCc1h6YnJJdHRlTmstZ09STy1fWVhQZXlwV29EREE?oc=5",
-       "kaynak": "Investing.com",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T20:20:58+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Form 4 Applied Optoelectronics, Inc: Stefan J. Murry (CFO) For: 12 October",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPZDRDUzVaQ3BBMHhrRUNmaTdISkhhemtTTnl0MzhNVEo5MjVuYUJnZ0N6ZjF0bWpqSWR2VkdNdldIdk1uemVwOG11UFNmeFZlakotQ1NybTQxR2F0a29xdkZIaUVUcUhseHNEVjJjTUdJOUxRTmpNQ3g3S0RGYnprVUpXTVYwUWxlalpVODBITjE4WUlMMmM3bmlDRkkwUlVaTjE5ckVHTHNTNjc4NDFWT0c5dzJmdllZYlM3ZmtVZlNhTXU5WVlpNA?oc=5",
-       "kaynak": "Investing.com Canada",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T20:05:27+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Under a trading plan, Applied Optoelectronics (AAOI) CFO sells 4,000 shares.",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOa0lZOUNGSEdqVldzYlcxQTZoemdMSm9DWWh3TE9JMlREeWg0MFZaYkl5ZmM0Um1zSFpoZWhyOFRJcko3dzNIZGd5QVdHNTN6MjU0dWpVZk5qQVJuT3AySVljc0JJamg4NU5Tb1FVMGFRZUtKbWdCZUhLMFRvbXVENzRVUUozLV9xRG9oemg4eGh3dE1lVkNBcHVUVTNVUHJZdWZ1c19iYnBhQmJWOGNoNk9KWWl0YUJ0eG8xOHhB?oc=5",
-       "kaynak": "Stock Titan",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T18:47:54+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Struggling Photonics Stock Flashing 'Buy the Dip' Signal",
-       "ozet": "AAOI has multiple layers of short and building short squeeze potential",
-       "url": "https://finnhub.io/api/news?id=d0d599d05bfd3e884e2655d315e0f19083d16d92891f8e02d882759a78d957e1",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T16:35:58+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Applied Optoelectronics Dives 9% as AI Funding Fears Hit Optical Stocks; Coherent Slides 7%, Lumentum Drops 7%",
-       "ozet": "Warnings from two chip giants about AI funding constraints have sent optical networking stocks into a sharp sector-wide slide, and the smallest supplier in the group faces the steepest drop despite record revenue and a CEO forecasting demand that outpaces capacity through mid-2027.",
-       "url": "https://finnhub.io/api/news?id=405e0bf2467d0f5c8354ba12268c0e6364e75009e3569490781e86560ef649fd",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T16:35:00+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Can Coherent's AI Data Center Expansion Fuel Long-Term Growth?",
-       "ozet": "COHR is expanding AI data center capacity and advancing optical technologies as demand grows for faster, more energy-efficient connectivity.",
-       "url": "https://finnhub.io/api/news?id=1f560faf63323fa4361045531cb495c52be606bedc5a10c846f6bb02b8ae965e",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T16:03:43+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Applied Optoelectronics Shares Slide Nearly 9% as AI Optics Sell-Off Deepens, Stock Falls Below $90 Mark",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPempuTm5NSVV5eFpaT21SLUozbk1iQmpzM3V0aDVmR2JSamt6Y0FoWDJUdWhaZlBmWURMZDBRT01DWl9MUjhvOW9uUGhkVHd3blNEeldJd0w2WTNpeHA4M0JpR0xVMnE2eWhBSHFBbkwwbTJKdFZtSmQyYlNMLUVoVl9DWkVFWVVNNmUtd1lTYTQtdw?oc=5",
-       "kaynak": "International Business Times Australia",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T11:10:01+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Sono-Tek Corporation (SOTK) Misses Q2 Earnings and Revenue Estimates",
-       "ozet": "SonoTek (SOTK) delivered earnings and revenue surprises of -60.00% and -7.82%, respectively, for the quarter ended August 2026. Do the numbers hold clues to what lies ahead for the stock?",
-       "url": "https://finnhub.io/api/news?id=9b1fce2a510a8b23d5c03a6832973aa03d0cfdc2eb46decc291ec8965eb01659",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T10:50:57+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Applied Optoelectronics (AAOI) Raises $600 Million On Capacity Push But Is The Upside Priced In",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNRHc3U0VLeGZId3JCcWZ0TUdndkhpRkliSUJ6bVMyRGZPdGpsbFpfcEpHc3plNy02NVNEU1lrdDgxckFnNXhKQVA3eTFXVzhhM2h1VXF3OUxGSm9fNU5tSl92WHk3d2RmcTVJR1Bocl9Hemh1ZXJFeldVemkxdkpSUkoxdVllN0RQR0ZyamFfSlZVclR3LXdzd1Q2NEdGMDF4NXBuSGhONTZqQUlqRGFuQThQeHI5YzREeEMzb2pwN0hBa3BjUkNWSFR0ZzRCSWhxN2tJ0gHYAUFVX3lxTFBhc3RNckRJdGhraWJIT0g2VVlDc2hWVmgwN0cwYXRla2JWRlVhNW81ZEozT0pja254UUZITGdfRHp4Q0ZLbjl5U3hYb01Xb1J6VUo2bDhZT3hSc0JkT1RYNy16d0xZRXlGc19URUxfMTFGVkw4OXF6UFhfaEdILVhWQ3FVaGE1YXZQYzZuWjBzZDZUYlR1WW0xZGFzaWd6OHhWVEtGRlhXUzdGVUVJaEl2LUQzN3hMNDVBWldGcjBIc1VTM2lzZTVmWnVIeGxlR3RCenMzc0w3dA?oc=5",
-       "kaynak": "Simply Wall Street",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T05:58:10+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Applied Optoelectronics Tokenized Stock (Robinhood) USD (AAOI40699-USD) Cryptocurrency Profile & Facts",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE95Rm9UaURXNEZTV19rYUJKWGhLQVFLaFFvVUs2eGNfS3ctVG55QmUtR3NFYmNEZW9aTTJOYmJKZ3VXblVZUGZBS3lNMmZNc1Y4UzJaYXJJUEpBZkpBTEZIMk1PUXFSMS15?oc=5",
-       "kaynak": "Yahoo! Finance Canada",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T21:37:01+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Applied Optoelectronics (NASDAQ:AAOI) Shares Down 2.9% - Should You Sell?",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOLUxiTVV1RzQ4V1dIak1TZFBfUllFcV85QThVaW56d0tUTi1oNzljMEZIa1pIaWlFc0FKR2tFZE1OcUVlRTBqQkcwNHNsb0lhbk83S0NkMW8zQ0JSZTNWSlJPcGRHbVNfYUZHUmp2X25WaW15UGpZM3JkekdSTkhuWURLTEVYQkNwUHRnUXVGNnRjY3FTNENqNVBVZG02RHZTcUh5c2dTc0dKVG5XMGhuRl9PbmpjNWVKbWxMMzJVSW1oSUxV?oc=5",
-       "kaynak": "MarketBeat",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T19:10:47+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Applied Optoelectronics Is Up 175% in 2026 and Lumentum Is Up 164%: Take Profits, or Hold On for the Ride?",
-       "ozet": "Optical connectivity stocks have handed some investors gains that dwarf the broader market this year, but a 9% pullback in just the past month signals the window for a clean exit may already be closing.",
-       "url": "https://finnhub.io/api/news?id=4f227f3daf864a3ebbc982f9360cca4bc3982ebc8c5bab8c2f5aefd48f48190d",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-13T18:08:31+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Applied Optoelectronics Inc Tokenized Stock (Coinbase) price today, AAOIc to USD live price, marketcap and chart",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUnI4NXNDT2RDUlFzS1oxR1RXaHE5ampmMGxndDdpbWp4bmEzdFJwdGEtLWRIdG1KUlRDYS1MdlZ6cnJ4MUJFazJQSUlFVUZSR3Y5NW40RWdGMWZXbllEZko2cnJZRk4zTnBOSE5fZVpZeFdGeGhFUlRrV040aEdGRjNYUmF6Z1J3RWR1RXBrQkVBVnVH?oc=5",
-       "kaynak": "CoinMarketCap",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T17:36:00+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Applied Optoelectronics Slides 4.5% As AI Optics Selloff and Share-Supply Overhang Weigh on Sentiment",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPY3Q1S0NpWmVSQmo3cWctbnU0cm54NkhsbjRzVnpuNVY0RGlzOFQ2S0FZYjlQaDByNXhLbHJSU1BISWY3enk1YmxlMXUxS2E3Szk0WUptZy1VUjFwQjcwZ2Z4N2pYOFhMRWVyaVIwalZqS0tGLVBUdnhHVXc1Y3FvUWNaYVY4RFFoa0JmcUNsODdwZDRsM1dUVkpmUV9UY0doTC1sRG5uU2ZxNmJEQ2c2NUxCdmlReUNReEQ2OXZsbUg4TXp1Y3JJdWtoQjdxQ3gtY1E?oc=5",
-       "kaynak": "Quiver Quantitative",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T13:21:16+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Form 144 APPLIED OPTOELECTRONICS For: 13 October By Investing.com",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZkotR0V1cmtHSjJ6QjRvbTZJamFTV2tZSUVXdlpub0VBMV9MR0JPTnlMNDhjRk9BV0NaZFdnRG9CTTVjRGF4bTRvTl9PMmxxX1ByS3NySG9ucTF3MXVZckpwNkdKeWZKbjhWUUgyS0tZRlJ4dVFrT1ByMVNFOWh4eU03MG9YdkpQelVLUFEza1ltWkZiNkZMSnU4c0J5NGtqeHBpQ0RLNjNvcXdm?oc=5",
-       "kaynak": "Investing.com Canada",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T09:35:00+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "The Zacks Analyst Blog Highlights Innodata, Calix, Applied Optoelectronics and Palantir Technologies",
-       "ozet": "Innodata, Calix and Applied Optoelectronics trade at discounts of over 45% to their 52-week highs, with AI-driven growth and substantial analyst price targets.",
-       "url": "https://finnhub.io/api/news?id=a9e2e5695570f6c9b30a257f9bc7e24e6bdd0515c825df6b75e0681a318b0151",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-13T08:31:19+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Applied Optoelectronics Inc. Shs Thailand Depositary Receipts Repr 1 Sh Actuals & Estimates (SET:AAOI23)",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQlhfc1ZpRDBUQVhMY2lTLXlVQjRVMTBoSWt5cE5IS2FJbmJObnI5REo3TTByT041SExlc0pfdXcza0tLRTJ5UmpSaWQ1X3lzUk1SNFVZYTBxTTJ2a2dwUWJvVUJOY3E1NUNPRW9HeXBCT1VkNWZSLUFRWnB1MVVSbl9oTnpROEN6VWh2ZUpVTEpIRFI0cGp4dUdzOGxDR2tENzJJ?oc=5",
-       "kaynak": "TradingView",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T06:09:20+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Applied Optoelectronics, Inc. (AAOI) Options Chain - Yahoo Finance",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQcnFNRmVjbG53dU5lbi1IVnlnNWlvSmFpeksxNnAzTGkxRDYwMW5yaW1ObzFRLVZyT0l2eUJ6Smw3cGFaUy1RY2JlQnl5Mkp6VlhQdlN1alRaM09TTFdjZUpUMUxqMkphZDh1SERIM1htNDZuMzdDR0I2SEwyRkg2STRrZTExUHZIWHJKenI1YkFGQQ?oc=5",
-       "kaynak": "Yahoo! Finance Canada",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T02:56:16+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "AAOI, LITE, COHR Extend Sell-Off Overnight: AI Funding Fears Hit Optical Networking Trade, But Retail Bulls Eye Rebound",
-       "ozet": "AI spending concerns rattle optical stocks after strong year-to-date gains amid robust demand for high-speed connectivity.",
-       "url": "https://finnhub.io/api/news?id=135979aeff99ad364c027b25218b0fc7cdd62e58e59471b65c1f43c1e358537d",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      }
-     ],
-     "sec_bildirimleri": [
-      {
-       "form": "4",
-       "tarih": "2026-10-14",
-       "items": "",
-       "url": "https://www.sec.gov/Archives/edgar/data/1158114/000168316826007844/xslF345X06/ownership.xml",
-       "aciklama": ""
-      },
-      {
-       "form": "144",
-       "tarih": "2026-10-13",
-       "items": "",
-       "url": "https://www.sec.gov/Archives/edgar/data/1158114/000197407826000378/xsl144X01/primary_doc.xml",
-       "aciklama": ""
-      }
-     ]
     }
    ],
    "sec_bildirimleri": [],
@@ -1664,28 +1438,12 @@
     },
     "xbrl_beklemede": false
    },
-   "sinyaller": [
-    {
-     "id": "dace09c3044d",
-     "tarih": "2026-10-14",
-     "ticker": "AAOI",
-     "tur": "kural_kademe_tez_bozuk",
-     "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
-     "yon": "olumsuz",
-     "aciklama": "Zirveden −%56,2, −%55 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 15 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
-     "fiyat": 97.78,
-     "fiyat_tarihi": "2026-10-13",
-     "qqq": 743.57,
-     "baslangic_kaydi": false,
-     "kayit_zamani": "2026-10-14T00:10:55+00:00"
-    }
-   ],
+   "sinyaller": [],
    "cumleler": [
     "Hisse bu hafta −%21,5 (QQQ −%3,5, SMH −%7,1); 52 haftalık zirveden −%65,6 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
     "Zirveden −%65,6: −%55 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Pozisyon büyüklüğünü sınırla; tez gerçekten sağlam mı yeniden yaz.",
-    "2026-10-16 günü −%9,8 büyük hareket (Hisse −%9,7, sektör/piyasa −%3,4: hareketin çoğu şirkete özel görünüyor.)",
-    "2026-10-14 günü −%11,8 büyük hareket (Hisse −%11,8, sektör/piyasa −%4,0: hareketin çoğu şirkete özel görünüyor.)"
+    "2026-10-16 günü −%9,8 büyük hareket (Hisse −%9,7, sektör/piyasa −%3,4: hareketin çoğu şirkete özel görünüyor.)"
    ],
    "insider_ozet": {
     "islem": 0,
@@ -1701,15 +1459,15 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-20T23:39:56+00:00"
+    "guncelleme": "2026-10-21T09:44:32+00:00"
    }
   },
   {
    "ticker": "IONQ",
    "ad": "IonQ",
    "donem": [
-    "2026-10-14",
-    "2026-10-20"
+    "2026-10-15",
+    "2026-10-21"
    ],
    "fiyat": {
     "son": 31.26,
@@ -1719,7 +1477,7 @@
     "zirveden": -56.63,
     "zirve_52h": 72.07,
     "zirve_tarih": "2026-05-29",
-    "kaynak": "Nasdaq.com (historical API) + Finnhub quote"
+    "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
     "QQQ": -3.49,
@@ -2617,404 +2375,6 @@
        "aciklama": "424B5"
       }
      ]
-    },
-    {
-     "tarih": "2026-10-14",
-     "claude": null,
-     "onceki_gun": "2026-10-13",
-     "hareket": -9.53,
-     "yon": "asagi",
-     "benchmark": {
-      "QQQ": -1.97,
-      "SMH": -3.98
-     },
-     "on_siniflama": "sektor",
-     "on_siniflama_aciklama": "Sektör ETF ortalaması −%4,0: sektör hareketi belirgin.",
-     "basliklar": [
-      {
-       "zaman": "2026-10-14T22:39:35+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ Announces Pricing of $2.0 Billion Equity Offering Purchased by Heights Capital Management",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQzRtc3h0cEVUb1ZNT2xSeVl4d2hiQXBPQXMwNHM0MVVuaHU0MXVMZm5udFJxUmp2N05wcDdtSFREM1NpTlh1bk5yMmE1bk9nUTdVdVV5MmxTNkQybFRzTFo4N3NxUDVzcFZNS0l2b1BuVFlJTzNvZlNMNGtoYVZfeHlLRGx6ai1yOXhrN01pa3hNYURqQTI1RDRqbm8wd0VQZENqUnRzY0M2bVM0c2xiaEtOLTl6S09uYTkyVVJHNm5iTTQ4RU5vVdIBzgFBVV95cUxNVHZGelhhUExhZGlIMEJOamZUWURWRmJ0T2tKbDQweFFMaG02NG5LMXB2TkxLWkZUWHlId0xscDZtdmwwdzlubjkwZi1mWHN1WlJYVzA5cEZRZ1Bnc21BQ2FPNzZGdEliOTNxaEpkdU5zQWtWcHRmaGcxam44LUt5T05GNTdYN0RlcGh0MGFxeUgwS3RCdWZ2azlRU3ZJUUhvSWNyX25SbFplbjBBNlFCVFE5OHhiQ3AtUUVhQVRyYXFBU3RnVUVNZWJVMmdNZw?oc=5",
-       "kaynak": "Quantum Computing Report",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T22:26:33+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ shares slide as company prices $2 billion equity offering",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOeU4xcjZ2MUJtempiLXVsTnY4NVZDaXRldHExWjdNUlV2R2F6ZEJDZkFGR0xwMUF0b2xMcFp4ZWZyaGhJNWFwTUFmbGhGOVRpR211cXVFZUFZdVFoYWZfNnpxWFBtWU1iMEJmcWczUjgtS09VN2hpajRGZmJrbmwzUmthcXJ2S2xGc2tMbTN1RlVzdUhrU1N1LUVidW1KaVQ2aEtkTU5ld3c1ckYxRC1haFRVOHlCazFWX2dkTHVBYnB6Z1VqNHViSFBBaXQ3WXhxT1VjcA?oc=5",
-       "kaynak": "finchannel",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T21:50:49+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ (NYSE:IONQ) Stock Falls 9.6% - Here's Why",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPLUNqbTZKV0dTT1ZmQ0RnZURDc2ZNVXE2S0dxajNaVjBlRnlHNTh3cWRxWEhoZzB4VVpPbnlRMHcyemlKZ0VnRHV0RHo3UGFyeU1tb0hYUVVvc1lycUdrRF9aTjFaSW4zcjBMNWNHbkJEM3NVR2p3c1BWTGVTSjVhR041SlBiZktjNFdrQndaUGp3bmp4Z09rTmRCNjJMV1dL?oc=5",
-       "kaynak": "MarketBeat",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T21:45:11+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Dallas Cybersecurity Company Elisity Agrees to $1.3B Acquisition by Quantum Computing Company IonQ",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQV1JrRTJvUW12Tm84anVSM2Y0Wlo3ZGcyYk5xRmU0R2xoTG03NzhjRnZ4M2pvWnNmWjNRSWg2eGhfZ1V2ZnBoeWFZOFFkLU1iU3VBcV96VEVWUkQwbHJ3eXVuV0dfRjRXT3VYQ2FKdHlEajdPNUhHX3A2ZS1Ec2FIZEh5RHBlLTNNanppbzVoVkhKcE12ZjBINHdSQ3V6SDB5RDhsOXllRXJRQjQ1ZEtkRWU0a2JnNzMxZmRocGFlSVBmeWhZ?oc=5",
-       "kaynak": "Dallas Innovates",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T20:27:00+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ Stock Tumbles on $2 Billion Equity Offering. Why Other Quantum Names Are Falling Just as Hard.",
-       "ozet": "IonQ stock dropped 9.5% Wednesday. An equity raise isn’t wholly to blame. D-Wave, Quantinuum, and Rigetti Computing also saw substantial declines.",
-       "url": "https://finnhub.io/api/news?id=fb12acdf27d816ea62af31a4e57259af94e5dbf09ae1de66ec2ed9cd797afcac",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T19:40:05+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ vs. Nebius Group: Which Technology Stock Is a Better Buy in 2026?",
-       "ozet": "Nebius is growing at an extraordinary pace with demand outpacing supply. IonQ has a diversified quantum backlog but a longer road to commercial scale.",
-       "url": "https://finnhub.io/api/news?id=ac37d2f420ed8a1958c8705720887c4bcc79e46407cdc8ad40ca2319873d6f24",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T19:14:00+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ secures another $2B equity stake from Heights Capital",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdXFYN0JyR3BTQWYwbTdldlAtZVdpQlBINzhZSWc4N1p1NnRsXzVTVm1qRllhT3pVZGZrZkRZaFp6QmJrLU5zMkQtbmQ5eGVVdXZBck5KdXMzUVJteFNjQkthTldVenZoX21WOWpBaUt1bnJQLUNYajhwZWpReEx2UkFwSXV0WGNQQjZUQVJ3eWlDTWswNnpHSEhyVWtBRnktVWxWZg?oc=5",
-       "kaynak": "The Business Journals",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T18:30:40+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Innodata vs. IONQ: A Look at Revenue Trends Between Artificial Intelligence and Quantum Computing Innovators",
-       "ozet": "IONQ's revenue has surged sevenfold in two years, while Innodata's growth remains steady — but the gap between them is closing faster than most investors realize.",
-       "url": "https://finnhub.io/api/news?id=67d3ab65eefb934e639f6bde67b4761320b96ff28dfeb602092270365d6334ef",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T18:21:42+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Why IonQ Stock Just Crashed",
-       "ozet": "Heading off a cash crunch, IonQ raises $2 billion.",
-       "url": "https://finnhub.io/api/news?id=0c7a9e916e69dd9369b81e940652a3d202ddb4a64162fcebff4f4f544e50d82f",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T18:05:35+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ (NYSE:IONQ) Shares Gap Down - What's Next?",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVjltaVBMQXB4QUdmMS1lUGtRMmx3MlJ2S1ZnOEljbV81ZUJBWUJsQ2dBdGtob1J1QVVHTW9PZUtNS2JpZ1A0VHR0anpKTHJFOXN3UmFRRGpBMGM0VFdSSTg1bHdPTkZ1X3lzSlNkYmhibS03cjVwOFQ1T2s1VHJPQkJXRHFScURwem5uS0RCMkIyU3hGTkRwU3FIamQ2ajI5TDBZ?oc=5",
-       "kaynak": "MarketBeat",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T17:56:07+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Why IonQ (IONQ) Shares Are Plunging Today",
-       "ozet": "Shares of quantum computing company IonQ (NYSE:IONQ) fell 5.2% in the pre-market session after the company announced the pricing of a $2.0 billion equity offering to accelerate the commercialization of its full-stack quantum platform.",
-       "url": "https://finnhub.io/api/news?id=b60404975e25433bf48c2788d1f91d749f9271b5a4306e5600161a1c75c2fca1",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T16:20:00+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ Slides as Investors Digest All-Stock Elisity Deal and Dilution Risk",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZFFKX2NuZ1BCdmlrV2x4NEs4a3JqOV9TRVpGMG41UzFGeUZoZjVISDBiVGVrV1ZYSkM1SlFkaG9ndFI4WGM4T1NHQnV5Sk5HbDVub2NHZFdTZVZtdmxzUnNpOFlITi1MS1Y1WmY3Xy1qVnNFb2JWdDZGS3RjbkpQZ3BtZTFJQTlPSDRqX0h2NXpVZEFzZkpPQjMyNGNDNmExMUM4?oc=5",
-       "kaynak": "Quiver Quantitative",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T15:36:49+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "$IonQ Inc (IONQ.US)$ You suffered the sharpest decline today.",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUHFpbWlXZnIwWlE3WDR0enIxbEpYamtDeWNGbEM2a0xvNl9Ka1V3bDEtdWozT2VmdHFWeHBoSkV5dFdJaTBEWHl2M2w5dGVoY2ZKTXZCQ29UY1FFa3dXeTh5dHQ0OHUxWGdIeTFwY0FLVmFoY0FYbU5YbDgtaHBDbkUzVFBMTnVxeGwtMDJLUW91ZktjcWQ4WTUycjJFdw?oc=5",
-       "kaynak": "Moomoo",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T15:00:05+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ (IONQ) Upgraded to Buy: Here's What You Should Know",
-       "ozet": "IonQ (IONQ) might move higher on growing optimism about its earnings prospects, which is reflected by its upgrade to a Zacks Rank #2 (Buy).",
-       "url": "https://finnhub.io/api/news?id=5eadac60f825b03459d6582e3c504fa402f3805a1d4f42d710b7e19dfc2ffc5e",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T14:37:26+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ Has Lost 56% Since Last October: Rosenblatt Sees 176% Upside",
-       "ozet": "Key TakeawaysIonQ shares have fallen 56% since October 2025. That includes a 9% drop on Oct.",
-       "url": "https://finnhub.io/api/news?id=f10293c7d4d246399527ef3def8f7b8bbc2fcecb36fdb2e9c5418cf0bc9efbf8",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T14:14:39+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IBM, IonQ, Diraq, and Atom Computing advance to DARPA's quantum hardware testing stage",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQa0JIX1E5cEhsWG9VQjFQMk5DbFY3UTI0b1ZZaWhnNkFGallCU0xiZ09ETlEwaXNOLVMzemtaTGpXOHZjdDZtYkxLeHhfRFJfSkt1OXpWbGhjbXREdVV4WkR3Y1dQODRCejRURUlQbEtTQmZjbDZEUHl3OVZpQ0k3YkxXOVlMSkRQdE9QMlBIQURmbWxGaHdraEg1MzJyeTZpZTlNQzV0YzJyNHhPVUFIZ1FmSjRSVmdqVkxmZjRVeHh3Y19aVkR5QmZ5ZEk?oc=5",
-       "kaynak": "Network World",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T14:10:38+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ Stock Falls Amid Quantum Firm's $2 Billion Equity Offering",
-       "ozet": "IonQ stock fell after the quantum computing company announced a $2 billion equity offering to help bring products to market.",
-       "url": "https://finnhub.io/api/news?id=e34bdb2637469bd64aee4f8aaffd2ae3c1d5a3a69f55fa98750bc6edc7074841",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T13:44:08+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ Falls 6% as $2B Equity Offering Follows $1.3B Elisity Stock Deal; D-Wave and Rigetti Retreat 4%",
-       "ozet": "IonQ just handed investors two rounds of dilution in rapid succession, and the quantum sector is selling off in response. Whether the company's breakneck revenue growth can outpace its expanding share count may define who stays and who bails.",
-       "url": "https://finnhub.io/api/news?id=147dc2d16b78362dbe7e459d929750067040492bd4accdb6d3ef728d9f64bd39",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T13:38:14+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ Prices $2 Billion Equity Offering",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQLWxUZUZDcDJFQ1lMcEpBdlJLemFjNExIZlBNYVpXWHFjVHNHNkl4NmRZVDBYTldoRFFhZmZhWVVkYVJLcTdKV1FiNU1HOS1SQjA0ZTVDWU9CeUMxck5iVG43Q3Rfbkkxd2YtcHg5cWVITWNpczk2QWlfQVFmXzRyUXNhVUtmQ01Ec0tGbzR2S2dMdGRI?oc=5",
-       "kaynak": "marketscreener.com",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T13:35:11+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "10 Information Technology Stocks Whale Activity In Today’s Session",
-       "ozet": "This whale alert can help traders discover the next big trading opportunities.\nWhales are entities with large sums of money and we track their transactions here at Benzinga on our options activity scanner.\nTraders often",
-       "url": "https://finnhub.io/api/news?id=8e33dcc061f5694d2cc0da77d0aa9e2496c544d8bd59c3015b5a5fa700c6c8d4",
-       "kaynak": "Benzinga",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T13:01:47+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ: A Risky Buy With A Compelling Path To $60 (NYSE:IONQ)",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSm9KSUFZVk16eC1TNk5BV3ZFT3p3ZjZTdXE1OC1zR2xkQUh4UzRoS3FOYVRxUmNsS29QanhUdjZwX21RVExCbkRtSmhNOG5FQkE3ZVZBcXNfUGpZb0dLRndIcU5RbkFBWjZTbUw5MWVuSE50YktsQXhMWWw1bUdlY3AycEdBalRkaWM0blg1UQ?oc=5",
-       "kaynak": "Seeking Alpha",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T12:54:42+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "$IonQ Inc (IONQ.US)$",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9BaUl6TjFGdFBzaU51M1oyTXZvWXBCWERQQWVWeTFvUHQyWEROTkhYS1pkVzI3SG5PdHN4Q1QzRXJucnBlSTBBRmEzSnE3MEZOeUZVR0RsX3FqSDd4T1U2T1p3T0VUTkFkLUFGZkVCS2I1N255WXhOTlZ3?oc=5",
-       "kaynak": "Moomoo",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T12:53:29+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ seeks nearly $2B in net proceeds from stock, warrant offering (IONQ:NYSE)",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOSFhNM3dHUjRUMWZORXRvNUIydlBTRHhyOVRYTWZZSXpUT0V4Z0ZZTlZyMVo3NWxMdUJiUHFYalI4OHBSbG9xcVBRbkJuc2QyTWd2WW1Wc0tBV0FjcHVDaGhUQ0ZmZGhZckpiaUZqOXRYWkRyNWczeGgyMDhqcFZlY0JCLS1zcmxTbHF4YTNTSXB4OWhRZUJ3N28wNldhekE2MW1PMQ?oc=5",
-       "kaynak": "Seeking Alpha",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T12:53:29+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ seeks nearly $2B in net proceeds from stock, warrant offering",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOVXQ3V1N3VE9LUnhfVFd2TV8wN0dfZ3Y4NGdfLUhoTmNhcHZKbGs0OVRmY0NES3RXM29vU1RJWUttanFSUldpV1Q3SVpwazFYU2RkSU9FTmMyOGl0UmREYmpRYXhmOS1vclBHci1WU1VHWWZzSzdXWFFLRFBaQkpwQ2Y2bnp2YTRLQms0Ti1oYktXVGx3cnpSeFRGSGQwNDFoMnQyemtXU3o4MHlPUmJwRnM3R3pZTTYwbVdCdFFsWWp2R2dCQ1E?oc=5",
-       "kaynak": "TradingView",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T12:50:00+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ Announces Pricing of $2.0 Billion Equity Offering",
-       "ozet": "COLLEGE PARK, Md., October 14, 2026--IonQ (NYSE: IONQ), a leading full-stack quantum platform and foundry, today announced the pricing of a $2.0 billion equity offering.",
-       "url": "https://finnhub.io/api/news?id=27290f3e0f8c57a8c7b6f888c1ddbc8977e37183ff15dca3987a56c1d4380015",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T12:29:17+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ to acquire Zero Trust provider Elisity for up to $1.3 billion",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQOWxHSDR2NlFBeWRobUNxWUhZSURVSDJsZDhJWUN0RFlPeTk5WEN4eVl2ZHpZTDlRYjdQeWl3eXE0REVDMTB4Mk1JZVU3X0gxUmNOTGVXeThqRzlpUWM3STJ6NTZJajVEM1pnMDRhbHoxdDhudVlOczdxbVM1alVRYzZCLU52aHFpQXNpU3Boc2NodGZqdmNvUEs3enJPUQ?oc=5",
-       "kaynak": "MSSP Alert",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T12:22:54+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Did The Market Read IonQ Stock Right?",
-       "ozet": "IonQ (IONQ) stock fell 19.8% in the week to October 13, 2026. The S&P 500 slipped 0.2% over the same period. The company was not alone in its decline, as Rigetti Computing, a peer, lost 15.8%. Yet IonQ's worst day of the week was a 9.1% drop on October 12, following its own corporate news. The company announced it would purchase Elisity in an all-stock deal valued at up to $1.3 billion. So how much of IonQ are its owners giving away.",
-       "url": "https://finnhub.io/api/news?id=909450bd0d762dbf8ddff2db744423b7b2801a19725386ec599acd8b803fe28c",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T12:11:26+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "What Is Happening With IonQ Stock?",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOb2xTMmtwRVdpYkExVmJWeXZUa0Q2aHFUeXlpakdjVm1zUTMzcjRfMkZFSjdKd2h6My0wS2ZOYUxWaDlWcjJNSy03eHBDYy0xUTRkbjVZNXRBLXJiLWVZcE1pMU9BTjRQU1hNeDU1VC12bGxCOFoya2JSWG1qTkMxajRocWh6YU83bUswQzI2OW1aZFN1eFJZ?oc=5",
-       "kaynak": "Forbes",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T11:50:17+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ: Elisity Acquisition And The Bigger Picture (NYSE:IONQ)",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNDQzUXZwa3lQY2VhcUhVWnpydU5VdHN5NUlwLURtc0xhUkEwR0tTMmlVSzdzT0dkaXBJSDdKMlp3Ym1mTW04eXEwbnNwem96M2pBOTNjaHZOZmx6QkQ3RF92M3YtUlVfRlh3V25jZmRuZ0hmeVF1QVJuTzNMMmI0NS13YXR2NEdKelJJZTloQV9XVVE5cHMwX1hn?oc=5",
-       "kaynak": "Seeking Alpha",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T10:57:38+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ to acquire Zero Trust cybersecurity firm Elisity for up to $1.3 bn",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9JVUVXQWlRaVlzYlZqZUFpVzN5VUZmcFFGd2VtTFRZaktFcjU2MGZRdW80bGRGR1hTa2ttdUVBX3NmT2lNS1hFZ2xfX19RNWtPWGVtbmtxX1Y5M3J4QVc4?oc=5",
-       "kaynak": "Beinsure",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T10:25:04+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Why Is IonQ Stock Falling on Wednesday?",
-       "ozet": "Why is IonQ (NYSE: IONQ) stock falling? The company priced a $2 billion offering of common stock and warrants on October 14, 2026. Here are the terms.",
-       "url": "https://finnhub.io/api/news?id=8de178b110177ee2caba65ce90531b5a6517f4ecc616c260f3eb1f230219f695",
-       "kaynak": "Benzinga",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T09:01:47+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ: A Risky Buy With A Compelling Path To $60",
-       "ozet": "IonQ is a speculative Buy, targeting $50â$60 long-term, driven by Superion 256, SkyWater, and Nvidia collaborations. Learn why IONQ stock is a buy.",
-       "url": "https://finnhub.io/api/news?id=271e258238409361d06eda256c6e11cea049bc61874c8f8a1509cdcdeef31db3",
-       "kaynak": "SeekingAlpha",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T08:46:20+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ Announces Offering Of 20.5M Shares & Warrants At A Combined Price Of $40",
-       "ozet": "20,500,000 shares of common stock100,000,000 warrants to purchase 100,000,000 shares of common stock29,500,000 pre-funded warrants to purchase 29,500,000 shares of common stock and129,500,000 shares of common stock",
-       "url": "https://finnhub.io/api/news?id=2baf4d1fe1eb8d4e3a10ac3e92b3ed47ae60c04950cb67fc09a4778629e4bbfc",
-       "kaynak": "Benzinga",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T08:44:26+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ To Issue $1.15B In Shares Priced Between $33.07-$49.61, Plus Up To $150M In Earnout Shares And $100M In Employee RSUs For Elisity Acquisition",
-       "ozet": "On October 9, 2026, IonQ, Inc., a Delaware corporation (the &#34;Company&#34;), Espresso Acquisition Sub, Inc., a Delaware corporation and a wholly owned subsidiary of the Company (the &#34;Merger Sub&#34;), Elisity,",
-       "url": "https://finnhub.io/api/news?id=8412135ef8eeb0686a6485430dc68a0dda8454e1b1c26ed418380bd97bf268fb",
-       "kaynak": "Benzinga",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T08:39:42+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ (IONQ) Dropped, So What Is Behind The Move?",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdGVRTnNGQXVxb2ZlN1hKcGgwSndOZ1E5VUh6MG1Qc1ZsclNXNUxMYVlHUWl2Z3hpc2dDZkFuWHJJTlB6YmxPWUZtckppbF8zTms5SzhGdF9NVURtUXBRRUxoUHF3bzJQYkhuWDlFQXVnS2MwX3AxM1RIdGdvdkIzclRGRDFQVVdJOFBmSDZPV2hxNmJmRWhJbi0yemg0TmhIOGFYbXhpNnEtVzZHV1NxNdIBtgFBVV95cUxONWhZMVY2SWF5MUtuMmFjam9LOUFkSlh2MHd4cWZmNVowcU9tWWdjc042dmJmU1RkR3NUb1pwdm9XU1d6b0xUMUpWYmdER0FiWjQzSEQwMlRld194M0RqeE9kR0hORElxMXRPWTZTVVV0RDJsb3lIRy1BY1ZpSmx2dU01Y003d1MwTzBPQ01nR3Rxem52ZHNRcTg2ZEwwZEhUczQ2VVBUYm5zR3dqRFE3bDY0azRDQQ?oc=5",
-       "kaynak": "Simply Wall Street",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T07:50:17+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ: Elisity Acquisition And The Bigger Picture",
-       "ozet": "IonQ is acquiring Elisity, a microsegmentation cybersecurity firm, in a $1.3 billion all-stock deal. Read more on IONQ stock here.",
-       "url": "https://finnhub.io/api/news?id=4c7dd344423ed1984df061237bca3fb364f30e3a997094231a5b174de31e46e7",
-       "kaynak": "SeekingAlpha",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T03:23:03+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ’s $1.2 billion acquisition of Elisity is trying to position it for quantum cybersecurity",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZXVxcU03NFNIUGlWSnlLYWRqLTcyZG5LZkhUV2ZqT0RtMjlEWGxfVlZxdkxMaFNlaHMzSGs1RzNnbmQyYVVTRmZGQXFpVHJsTWU3ZjdDRVM1NEJ2Rl96TDV6RmVnZkpQQmpBQUFqc0lWQVdJbnVtRm5iTDRoZmJpWXVaY2p0M2w3Y1FxNS1ZR0FFNXR2cGU5d2pLZTV6bEZWWnNVc3JfWGNLU3VZX01CbC02b2FiZnhtUW80WUM1aXFxTmU4LUQ5aklmZnAtd3p4alRiVA?oc=5",
-       "kaynak": "CSO Online",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T00:37:12+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ’s SkyWater And Elisity Deals Reshape The Quantum Supply Chain",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSFBCaG1mSmM3SHZlZTFSVEc3MFlaRW53NjRFcF9kbDNIR2NaOU1vZF9xWndtdzF0SW8weldwZl9zUEpjLWMxQ2ZwRGl6RXYyUVpyS3g3R0dlWFRrSmhPYkdPckhTOVBLRGd5SGpuYWtTRndSZzdrNnY0aTExYXJ0MXZGdEtmcFdzY3dEcUFIUWczNFFlRGxqMEZTUDdFTkIwUVlGUzU4U2FIN19mVUUwWjAxVElYeE1PNUVKbA?oc=5",
-       "kaynak": "Forbes",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T22:52:20+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "IonQ to Buy Elisity in Cybersecurity Deal Worth Up to $1.3B",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNY1pVVDdjNkh1NU1QdzNnbHZwNHVLUXVNWXJtZXdpSnFhMUJELWRTOEVzd1pMUDZtVXl6TmdyMWVhQzEtQk5hS2ItMUtpek1rZkdzX1pPUmg5bU5uU1BncGlSUUxrTVBlWGwwWDRweUt1bkVsQ003NU0xT09IVWtPZlh0RnB5Wkg3SXZtUW52bk5JR1RMaEZJemp6ZmhBLWFRZmY0Y0g3MEMzTmx6NkxDX2hRWk05YUxXZ2VTZg?oc=5",
-       "kaynak": "Channel Insider",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T21:42:54+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "IonQ to Buy Elisity for $1.3 Billion",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOcFdWZXBEZFpwT1hwZUZlY2ljOFRrU053WXFoVGhmbTlDTzRoUnlleldSMnh3N0RocnlJV1NPejJNaS1aaF9vZDFYbUNNalJ4dVpuVHNqRFlGQk0zWlF1NUFJVVpGR0V5OWpKMnUyVm1QYjNISlRQWGlmQ20xc1VMSV9xc0NycWl4enc?oc=5",
-       "kaynak": "Futuriom",
-       "saglayici": "Google News RSS"
-      }
-     ],
-     "sec_bildirimleri": [
-      {
-       "form": "424B5",
-       "tarih": "2026-10-14",
-       "items": "",
-       "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526421074/d165327d424b5.htm",
-       "aciklama": "424B5"
-      },
-      {
-       "form": "424B5",
-       "tarih": "2026-10-14",
-       "items": "",
-       "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526421072/d162787d424b5.htm",
-       "aciklama": "424B5"
-      },
-      {
-       "form": "8-K",
-       "tarih": "2026-10-13",
-       "items": "1.01,3.02,7.01,9.01",
-       "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526419609/ionq-20261009.htm",
-       "aciklama": "8-K"
-      }
-     ]
     }
    ],
    "sec_bildirimleri": [
@@ -3026,24 +2386,6 @@
      "aciklama": "8-K",
      "accn": "0001193125-26-424230",
      "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526424230/ionq-20261014.htm"
-    },
-    {
-     "form": "424B5",
-     "tarih": "2026-10-14",
-     "donem": "",
-     "items": "",
-     "aciklama": "424B5",
-     "accn": "0001193125-26-421074",
-     "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526421074/d165327d424b5.htm"
-    },
-    {
-     "form": "424B5",
-     "tarih": "2026-10-14",
-     "donem": "",
-     "items": "",
-     "aciklama": "424B5",
-     "accn": "0001193125-26-421072",
-     "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526421072/d162787d424b5.htm"
     }
    ],
    "bilanco": {
@@ -3066,8 +2408,7 @@
     "Tez sütunlarında bu hafta değişiklik yok.",
     "Zirveden −%56,6: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "2026-10-16 günü −%8,9 büyük hareket (Hisse −%8,9, sektör/piyasa −%3,4: hareketin çoğu şirkete özel görünüyor.)",
-    "2026-10-15 günü +%9,3 büyük hareket (Hisse +%9,3, sektör/piyasa −%1,0: hareketin çoğu şirkete özel görünüyor.)",
-    "2026-10-14 günü −%9,5 büyük hareket (Sektör ETF ortalaması −%4,0: sektör hareketi belirgin.)"
+    "2026-10-15 günü +%9,3 büyük hareket (Hisse +%9,3, sektör/piyasa −%1,0: hareketin çoğu şirkete özel görünüyor.)"
    ],
    "insider_ozet": {
     "islem": 0,
@@ -3076,22 +2417,22 @@
     "kodlar": {}
    },
    "sonraki_bilanco": {
-    "tarih": "2026-11-03",
+    "tarih": "2026-11-11",
     "saat": "",
     "eps_tahmin": -0.3843,
     "gelir_tahmin": 144457602,
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-20T23:39:59+00:00"
+    "guncelleme": "2026-10-21T09:44:36+00:00"
    }
   },
   {
    "ticker": "ORCL",
    "ad": "Oracle",
    "donem": [
-    "2026-10-14",
-    "2026-10-20"
+    "2026-10-15",
+    "2026-10-21"
    ],
    "fiyat": {
     "son": 131.14,
@@ -3101,7 +2442,7 @@
     "zirveden": -53.71,
     "zirve_52h": 283.33,
     "zirve_tarih": "2025-10-24",
-    "kaynak": "Nasdaq.com (historical API) + Finnhub quote"
+    "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
     "QQQ": -3.49,
@@ -3211,384 +2552,7 @@
      }
     }
    },
-   "buyuk_hareketler": [
-    {
-     "tarih": "2026-10-14",
-     "claude": null,
-     "onceki_gun": "2026-10-13",
-     "hareket": -8.83,
-     "yon": "asagi",
-     "benchmark": {
-      "IGV": -3.0,
-      "QQQ": -1.97
-     },
-     "on_siniflama": "sirkete_ozel",
-     "on_siniflama_aciklama": "Hisse −%8,8, sektör/piyasa −%3,0: hareketin çoğu şirkete özel görünüyor.",
-     "basliklar": [
-      {
-       "zaman": "2026-10-14T22:20:00+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Shares of Oracle, neoclouds drop on CoreWeave debt concerns",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOLXhITUJkSDZPOUE5T01hdUFyMGdBT0N0bWFPd2hIYVN4djJ2Q2gzWWJNZTQ2ajc3NkNJSGM2VkhHQ21KT1QyRnRINDZMWTF1SGJoVnE5Z0psaHFCajBZdDlwNTc0REV3RXE2NDA0dW5rbFVZVDVWN2VoVVJLZ0dicHR6dnd3OU5obkVBMTlMb0JSNlkyMXdIVXp0WQ?oc=5",
-       "kaynak": "SiliconANGLE",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T22:09:48+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "‘Practical Magic 2’ to screen at Oracle Park for Giants’ movie night",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOX1ZfMngtWkR2TDdadWR2Tk04Vnd3dUFVM0UyY3Fvc19PSUpEd2NEUnM1dm9iQ0VtLW94T0N4TkFDVkxYQktXTnZYODNMQ21wVlJnVF8weTZubW00OUJjN2xqUGhBWkkyaXJ5a2gzSFpxZ3VUdWJ2bDRLQTJfblg5bVExSUZCdkdzUHhIZmxVd1IyRUNoYWUzOVRZbW9tS0l2c1B0Uw?oc=5",
-       "kaynak": "San Francisco Chronicle",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T21:48:36+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Stock Market Today, Oct. 14: CoreWeave Plummets on Gartner Neocloud Warning and Bond Yield Surge",
-       "ozet": "Gartner's prediction that 80% of neoclouds could vanish by 2030 intensified investor concerns about the company's long-term viability, today, Oct. 14, 2026.",
-       "url": "https://finnhub.io/api/news?id=96acfc4efc21c8673a198f4601ee41b44756fb4fabd29527c25caea7afb1fec2",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T21:28:25+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Oracle slumps 9% amid tech selloff, AI buildout concerns (ORCL:NYSE)",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOeExubURhM1h0Ujl6UjRoM3pqRDdYRnZvNTlBODNBTDlzaDhlajlXQjFVZ1ZGLWdwRDM4TnVSZXRfQk1NSWxBMlJSRzJoUHRVQWVfSGpiZkdYWGpYUzE1QW5WamRaZ0RJQ2hMTnBxVU1JZnVKaFp4Wk5KTlZzd0x0RlVLMUVXNUF2Yk9adkVtX1pWa1h1ZWlV?oc=5",
-       "kaynak": "Seeking Alpha",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T21:12:46+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Stock Market Today, Oct. 14: Oracle Tumbles on Hotter CPI Data Lifting Treasury Yields",
-       "ozet": "Today, Oct. 14, 2026, hotter-than-expected inflation data revived rate-hike bets, pressuring the enterprise software giant alongside lingering AI cloud expansion concerns.",
-       "url": "https://finnhub.io/api/news?id=f9a52c478fc8d81991719f1c120d8597e5bc6a2991b749bdc134870a2a92ae22",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T20:40:44+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "CoreWeave, Intel, Micron, & other tech stocks are plummeting. Here's why.",
-       "ozet": "Baird tech strategist, Ted Mortonson, sits down with Yahoo Finance Senior Reporter Brooke DiPalma to explain what's going on in the markets with tech names like CoreWeave (CRWV), ASML (ASML), Micron (MU), and Intel (INTC).",
-       "url": "https://finnhub.io/api/news?id=9a972fc3dfa397990af772db13828e08a255962c3dcea4be101de858b338f981",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T20:23:29+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Nvidia stock sinks as chip sell-off deepens on hot inflation data",
-       "ozet": "Nvidia closed the session down more than 3% Wednesday amid mounting worries over the AI trade and rising bond yields.",
-       "url": "https://finnhub.io/api/news?id=2304aea6b3ab6fe1e212ce75b00f7bc326cfa7d16155ee99518d6aa474593e7d",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T20:12:17+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "AI stocks drop after hot inflation report bolsters bets for Fed rate hikes",
-       "ozet": "High-flying technology stocks are taking a bruising this week, as investors grow more skeptical about whether the AI boom will live up to expectations.",
-       "url": "https://finnhub.io/api/news?id=a509cbf387dca42fa426cdfbd5774c50a3ce5ea0250f336c18706a6ee9e76732",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T19:55:17+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Oracle's renewable energy plan raises questions over Project Jupiter emissions, local benefits",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOS1NSTWVkWjdiNXBKWkU1T0hfcnE3SGx4YXVNcnkwZElkV0tfaDI5T1A5V3JUTlUyanI3QmVLVjNNenVVaDVQWXFUdEJFWGhoUFNvazhWTXJmTTBsVmU1TVhoWWhNby0tR2xxVUV5OHVJWjNWb1hmME1xb1NSLVFGQThOZTd2U0tCVEFlM080OWJxZ19rT040alpZXzRzNWxyTW1teEtLVk8?oc=5",
-       "kaynak": "Organ Mountain News",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T19:15:49+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Open Cloud Security And Testing Partnerships Could Be A Game Changer For Oracle (ORCL)",
-       "ozet": "In recent days, Marvell Technology, Microsoft and Oracle, working through the Open Compute Project, formed a new security working group to define open NIST FIPS 140-3 Level 3 integrated HSM specifications for cloud and hyperscale data centers, while UiPath Test Cloud also became available on Oracle Marketplace for AI-powered testing of Oracle applications. This combination of open-standards security collaboration and expanded partner solutions highlights Oracle’s push to enhance the...",
-       "url": "https://finnhub.io/api/news?id=1d6eac8efc98beb843e9a60d3152ddbb0873cdff79ff9ba9b9df3ff87a45f597",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T19:05:01+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Top S&P500 movers in Wednesday's session",
-       "ozet": "Wondering what's happening in today's session for the S&P500 index? Stay informed with the top movers within the S&P500 index on Wednesday.",
-       "url": "https://finnhub.io/api/news?id=0b7c292179b56ca652306005b9567d0a0523eab678139849606472987ea2e20f",
-       "kaynak": "ChartMill",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T18:22:58+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Oracle seeks FERC order on 17.77-mile Green Chile pipeline",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOc2gyam5MNGxtcGI5eFFBQkE2WHlkSmRyTlliSnUwaENVU192ZGpPcC1tN3NXT0JtVi1CZE5ySHN0dkxvRm54TzBoSHllV3ZKekdrb3BjbGZiV3NtVVlkTUhfeTZOUzIyRDRZSzZndGpMOVd4SkdOQlYxWkQxdVZodnNROS1tRzUwM0JPZ1Z4c2p2LW9VTmVXTFBEQ0swa1cxeDVTeDNSQ3RncDFwU0FxcmxpNTljLTZOUWNDNlU5X001ZTZnUFJBNFNqeGNHdw?oc=5",
-       "kaynak": "Pipeline and Gas Journal",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T18:19:00+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Stocks Turn Lower as AI, Tech Shares Slump",
-       "ozet": "U.S. stocks were lower, with the Nasdaq bearing the brunt of the declines, as a hotter-than-expected September inflation report put a dampener on the mood in markets .",
-       "url": "https://finnhub.io/api/news?id=c4ac89ae3e1b6a15510ed4520b6865987f4d95c5a40087242656c5dc11b3d0a9",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T18:17:43+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Marvell Technology (MRVL) Forms Security Group And Unveils Six Channel AI Memory",
-       "ozet": "Marvell Technology (NasdaqGS:MRVL) formed an Open Compute Project working group with Microsoft and Oracle to define server-level silicon security standards. The collaboration targets a common hardware security model for data center servers, aiming to align chip vendors and major cloud operators. Marvell introduced industry-first six-channel CXL-based memory expansion solutions designed to feed data hungry AI accelerators in large-scale data centers. The firm also announced new 224G per lane...",
-       "url": "https://finnhub.io/api/news?id=f57e3468d6bdb9381b4627b1985f42085e33dc0e61140d779083d3aae0877217",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T18:05:02+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Most active S&P500 stocks in Wednesday's session",
-       "ozet": "Looking for the most active S&P500 stocks in today's session? Join us as we dive into the US markets on Wednesday and discover the stocks that are dominating the trading activity and setting the pace for the market.",
-       "url": "https://finnhub.io/api/news?id=4a188658206b81a14d2781a8560ffb791badea88fc7af0c4f67ced56d4798879",
-       "kaynak": "ChartMill",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T18:03:25+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Explore quantum computing with Oracle and register for a free preview",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQOW1KaDl6VzliT05GbFBVbW8wZEV3aEg4dHhTRk5takRmZ3hjRU5ORUFPdEJKc1JjdG1JMWpOUldlT0UtX2ktbmw1NG9fZjFybTN1c2Y3NjYybmZJSVJ6VkxEQ20wYnM2RmttT09TbVN0YXNPVHZKUk1tcTNPNm9CS2JFZnJlLWtxQm1ZTjdReHhCLTA?oc=5",
-       "kaynak": "Oracle Blogs",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T18:01:09+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Why CoreWeave Stock Tumbled Today",
-       "ozet": "CoreWeave's bond yield on one of its loans hit 15%, sparking a scare.",
-       "url": "https://finnhub.io/api/news?id=9ff815aed28cf2f98dad859da06e5a6257d71327372101be8e76f09b6370662c",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T17:53:23+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "The Right View for Every Kubernetes Question: Oracle-Defined Dashboards in Oracle Log Analytics",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMGhLLUZlbWp2SFUzczd6UDhUZlFxbk4zdWdQRUdoU3N6cHRlRU5ZdDNpUVJ1MGFpdUp4bGhCUXlNMzNZLXJZQnVZY0NEdE45UVlhbXo1VEFvRnZCX08tc0hLM0xfM3NDMENIaWZ0ZnpOTWlsUEZPT0lKV3gwbXJTUFlUWk8?oc=5",
-       "kaynak": "Oracle Blogs",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T17:39:49+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "'Fast Money' traders talk selling in AI-related names on debt concerns",
-       "ozet": "The 'Fast Money' traders talk selling in AI-related names on debt concerns.",
-       "url": "https://finnhub.io/api/news?id=a46e10792da1cb770eae3c4694211f3542f851a4c22b5a82a41b6d68c825715d",
-       "kaynak": "CNBC",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T17:39:24+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Bond investors starting to doubt long-term prospects of some AI hyperscalers: BondCliQ's Chris White",
-       "ozet": "Chris White, BondCliQ CEO, joins 'Fast Money' to talk what the bond market is signaling about the AI trade and why it had an impact on equities.",
-       "url": "https://finnhub.io/api/news?id=b1aa0e5345a8827871ffe600cc5dbc94ca826253949d1d4230e35e4f4b66f72e",
-       "kaynak": "CNBC",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T17:38:11+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Evan Goldberg on NetSuite Quick Start and AI-Powered Startup Finance",
-       "ozet": "In this NYSE Live interview, Evan Goldberg, Co-Founder and Executive Vice President of Oracle NetSuite, discusses the introduction of NetSuite Quick Start and how artificial intelligence is helping reshape financial management for early-stage technology companies. Goldberg explains that while startup formation has accelerated in recent years, founders continue to face significant challenges when building the financial infrastructure needed to support long-term growth. Quick Start was created to ",
-       "url": "https://finnhub.io/api/news?id=ddaf915db414baf9e73c287142a0298c9f8e80164d4badb92df0c7e487eb7e10",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T16:49:58+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "OpenAI infrastructure lead Sachin Katti to depart next month, WSJ reports",
-       "ozet": "Investing.com -- OpenAI's (NASDAQ:OAI) head of computing capacity, Sachin Katti, is set to step down next month after roughly a year in the role, according to a report from The Wall Street Journal. The departure marks the latest high-profile management shift within a critical unit tasked with overseeing hundreds of billions of dollars in infrastructure investments over the coming years.",
-       "url": "https://finnhub.io/api/news?id=596b63aa7e468ca38a4b58411a056b37860eae4bd7f2207f318e5a1d369e3323",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T16:35:03+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Exploring the top movers within the S&P500 index during today's session.",
-       "ozet": "Wondering what's happening in today's session for the S&P500 index? Stay informed with the top movers within the S&P500 index on Wednesday.",
-       "url": "https://finnhub.io/api/news?id=b622cb959cbffaf6a3f606c989db14bb104d90fd68454f6db70586c3daa7cf5d",
-       "kaynak": "ChartMill",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T16:32:13+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Michael Burry Says Stocks Could Peak Within 9 Months — and He’s Betting Against the Nasdaq and Chip Stocks",
-       "ozet": "Michael Burry just collapsed his bearish bets into two concentrated positions, set a nine-month window for a possible market peak, and left a critical question unanswered: did he actually get more bearish, or just louder about it?",
-       "url": "https://finnhub.io/api/news?id=e84f30289117e203c06e6af8dcee96c91c728e9bddb75854efd40e821ef905a9",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T16:31:19+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Oracle trading more like a neo-cloud than a software company, says KeyBanc's Jackson Ader",
-       "ozet": "Jackson Ader, KeyBanc Capital Markets, joins 'Closing Bell Overtime' to talk the market moving on AI debt concerns.",
-       "url": "https://finnhub.io/api/news?id=88ce721ad4281a3a08c6db6be46efe9ea0fdde11c8ac728c9954fae86515cd31",
-       "kaynak": "CNBC",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T16:15:47+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Oracle Red Bull Racing and Laurent Mekies commit to the future through 2031",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOOHlNMDZjcHVDY3k3Nl9CS1ZXUDRyWnlmV1BNTEVUZ21ZQzdZTlhqSGhzcjZ0d3p0alBjZ2dxNjYwWXVGcEFiN0RGT3ZncHFNZTN1UmJPbWpHZjFiSGZHYnRJWEx0TWxiclZ4UzBpOVVINzdZR2RoRXZWWG1FT3FWbHhDSjdQM08zZ3Y1TGhsZHpvVWpxZFVyUXVZNTVzNENEdWlJY3JCcw?oc=5",
-       "kaynak": "Oracle Red Bull Racing",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T15:04:01+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Oracle Stock Tumbles: What's Going On? - Oracle (NYSE:ORCL)",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNUkExUm81MjZ3bHFacXhXOFBDc3VLcU90YktiSmtnY2k0OFBFNVBqNmo0aWJidXpRZzR6ZVFJalZXX1o3NXVoWmRqUEE0WFJQRFdyZFN2WkVtUFVuSGFfRkRQd2dxS0ZIRXZfQWw1NlpvdExHWjlJY1FUQW9XRXdEWXpEOUFDUE01SncxMXlrZTFUTXZPR0o0NGN4RVU?oc=5",
-       "kaynak": "Benzinga",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T14:51:07+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Why Did Oracle Stock Drop Today?",
-       "ozet": "Wall Street reiterates a buy call on Oracle, but investors aren't convinced.",
-       "url": "https://finnhub.io/api/news?id=315655de51559b89f169e732b84480f539f338be94daa60936e58b2a1d3e0b68",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T14:39:41+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Oracle executive walks back El Paso Electric proposal after county pushback: Report",
-       "ozet": "Oracle EVP Mahesh Thiagarajan offered to undo a proposed El Paso Electric power deal and bill-credit plan after commissioners said a utility tie-in conflicts with Project Jupiter's onsite power commitments.",
-       "url": "https://finnhub.io/api/news?id=5306e1f155d6d0baa8bc71028c2b05edd10b7fe2b7c209c85222ee6bbd3a376d",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T14:38:58+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Wall Street analyst updates Oracle stock price target",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1VdjBoWGY3TTFUMlRwSDBNdTZ6ZWNxYWZ0RDQ3VXhrenZ2Um0wSFhlSkpKM19UQnFZSjJSaHRlbXU4Sl9iM0FGc0txODhUYkVPbWZ5aVlsTG5YRGlUYy1KUnZKUzZmaEE3enVkSFVsdWlSOHJDNW5xRjNSVWR3dkk?oc=5",
-       "kaynak": "Finbold",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T14:38:01+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "'Yikes': CoreWeave stock tanks after its bond yield touched 15%",
-       "ozet": "CoreWeave stock fell as much as 15% in morning trading on Wednesday, a day after a chart of its rising borrowing costs drew a one-word reply from Elon Musk: \"Yikes.\"",
-       "url": "https://finnhub.io/api/news?id=b5222e388d3763b1e0fb951389da24ba92b2c481084e7647948cba9519708f49",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T14:38:01+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "'Yikes': CoreWeave stock sinks after its bond yield touched 15%",
-       "ozet": "CoreWeave stock fell as much as 15% in morning trading on Wednesday, a day after a chart of its rising borrowing costs drew a one-word reply from Elon Musk: \"Yikes.\"",
-       "url": "https://finnhub.io/api/news?id=9f5c52103d0a5311f3a31423b2df64265840cb0d2f2cca45194c4fe0b19a3802",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T14:35:01+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "These S&P500 stocks are gapping in today's session",
-       "ozet": "Wednesday's session is showcasing interesting market movements in the S&P500 index, with notable gap up and gap down stocks. Stay updated with the gapping S&P500 stocks in today's session.",
-       "url": "https://finnhub.io/api/news?id=a78342fabdb99b41234efe2b802c0c5151f1ccfe807efcaaede744a50c74596b",
-       "kaynak": "ChartMill",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T14:23:18+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Why is Oracle stock sliding today?",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOOVh5aHVVQ3pqLWdtRnl6ZFdReURpUkswcnE3aEpxOUNDMWZ5UGY2QkItLWY4TVI1LTRpZm5aR1hzcDVkSHFJVnlKWDhPTDd4eDFndGpsMnRGdmk0NXZ6dzlTUFJneFRoRGg2cU5YUXBsOU1OSTRzNjA1YjhRMzU0cG82Y3c2aExrc25VMThEb1VBVXM0bHlZemY0NA?oc=5",
-       "kaynak": "Investing.com",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T14:11:07+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Oracle asks regulators to expedite pipeline for data center",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE91NGdsOTktdEMtMENlN0tXT25meUZmODZKbk4wUFBwQ3dxRjQzeUJkYXo0RlJxbVdYa1BTVlo0N1NnMVcxa3FFc1NxTmp0ZVl5dUNFZHdXTm8ybTNHd0JuSHlBcGNWd0U?oc=5",
-       "kaynak": "Transport Topics",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T13:47:18+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Oracle Corp Stock (ORCL) Opened Down by 6.61% on Oct 14: Key Drivers Unveiled",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPQ2xjcTM5VlplUmpRVVNYemRnSzdKWXFQNnJnM2RVU1kwa2ZBQW55dEFRWlFSUl94b0w2ckp6V2RUQmIxczRJakNyT2lCY1NvNUhwMk9iTUUwcFJzcVpqQ2oyUUdfNEJKWW5OMGRfLXJJZ0F2NEE5WDZoNVRqU29Ld3Q5S2x0OG1xRFBJ?oc=5",
-       "kaynak": "TradingKey",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T13:35:00+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Tech layoffs tracker 2026: All the job losses across Netflix, Amazon, Apple, Oracle, TikTok, Meta and others",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPUi04VG53NGg5eV9GWTg4NmxvNzNROU9UenhvLU1sRzhWVGJkSExqZGh4S3lYU2hGUGQ0VUgyLUpTYm1fWmxtY21OZDNkeU90cFFhLXZ6MU1xalFPTDVsX2otemVDT1g2WkwyNF91d0lNU05wbDhuUVgxdVNsOUpfQWF1RjFFY1VObDU1RjhKcktHckpSdlNJak9tMEF4Ung4dFB5THlpY2Q5cGMzalZMQ1R0Yk9HZThXNHpuaEZUdHV5alNzSnNrMHIyYkU5M2hJNDROa0IwVzhGRDdQUGVOVWRwNzhUSnphWHBiSV9Qd0VzOHpiVlZGSldnY1Fyakk?oc=5",
-       "kaynak": "Yahoo Tech",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T13:33:40+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "CoreWeave Falls 10% as Bond Yield Touches 15% and Elon Musk Says ‘Yikes’; Nebius Drops 6%, Oracle Slips",
-       "ozet": "CoreWeave's bond yield just touched a level that made Elon Musk say 'Yikes,' and now investors are questioning whether the company's massive chip-backed debt machine can survive its own success.",
-       "url": "https://finnhub.io/api/news?id=0662c412d01a130a511c64c1d4d47419d86e5d62afced52a0af376d36c795860",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T13:05:41+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IDS Next Expands Wellness Technology Offering Through Oracle Marketplace",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTU9UYkdQV0VpaGF2QmFscUFaSWJERzhyMVhWRU9EbDdSYkxIcDdMYUJBcGtrUjdVYlZVdkR5VkpocDVyN0ZNdXB3S2szTGd3TWFFVGtyRktCZlhVRE5hVW9yXzEwMHRaUzJQS3MtQjlXUVlZTkVTRFNrb2NnSmk1RWVUVEFhTHBlekFjLVpXRzl0NzljX1hQUDFFM2p5bjROSDBfTVBONzlnNkdfQVV0QUowSy0zLVU?oc=5",
-       "kaynak": "Hospitality Net",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T13:02:00+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Will Rising Capex Weigh on Oracle's Free Cash Flow Outlook?",
-       "ozet": "ORCL's AI infrastructure spending pushes free cash flow into negative territory, but surging cloud demand and $664 billion in remaining performance obligations offer support.",
-       "url": "https://finnhub.io/api/news?id=55971594ebeb06ab61b7837997042cf22b47d76fb6e77534dc2f8a82c5ff1325",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      }
-     ],
-     "sec_bildirimleri": []
-    }
-   ],
+   "buyuk_hareketler": [],
    "sec_bildirimleri": [],
    "bilanco": {
     "son_ceyrek": "FY2026 Q1",
@@ -3608,8 +2572,7 @@
    "cumleler": [
     "Hisse bu hafta −%8,4 (QQQ −%3,5, IGV −%3,6); 52 haftalık zirveden −%53,7 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%53,7: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
-    "2026-10-14 günü −%8,8 büyük hareket (Hisse −%8,8, sektör/piyasa −%3,0: hareketin çoğu şirkete özel görünüyor.)"
+    "Zirveden −%53,7: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
    ],
    "insider_ozet": {
     "islem": 0,
@@ -3625,15 +2588,15 @@
     "ceyrek": 2,
     "yil": 2027,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-20T23:40:03+00:00"
+    "guncelleme": "2026-10-21T09:44:39+00:00"
    }
   },
   {
    "ticker": "CEG",
    "ad": "Constellation Energy",
    "donem": [
-    "2026-10-14",
-    "2026-10-20"
+    "2026-10-15",
+    "2026-10-21"
    ],
    "fiyat": {
     "son": 258.84,
@@ -3643,7 +2606,7 @@
     "zirveden": -35.52,
     "zirve_52h": 401.43,
     "zirve_tarih": "2025-10-29",
-    "kaynak": "Nasdaq.com (historical API) + Finnhub quote"
+    "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
     "SPY": -1.15,
@@ -3735,250 +2698,7 @@
      }
     }
    },
-   "buyuk_hareketler": [
-    {
-     "tarih": "2026-10-14",
-     "claude": null,
-     "onceki_gun": "2026-10-13",
-     "hareket": -5.49,
-     "yon": "asagi",
-     "benchmark": {
-      "QQQ": -1.97,
-      "SPY": -1.08,
-      "XLU": -0.36
-     },
-     "on_siniflama": "sirkete_ozel",
-     "on_siniflama_aciklama": "Hisse −%5,5, sektör/piyasa −%0,7: hareketin çoğu şirkete özel görünüyor.",
-     "basliklar": [
-      {
-       "zaman": "2026-10-14T22:34:16+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Constellation Energy (CEG) Stock: Plunges 5.49% Despite Completing Major Power Plant Sale to LS Power",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQN00tTWtveVphdmtvdVRtYnRDY29PWk5JcndiM0RvVWU2bXZaREFZbllha2pFSGlYYUY4U0NEeTU2N0hXRG42SWlZclQ4dnhxeHpZcDhzSUo4TExrQWhBRy13M1JwVDVJQjQ3SW9uWFJLZFlLbEZsd1FHX2czZWRFRU1WcENJUWw0ZVl3eTRTaklRZ25zMmZBVkU2NnhnUVNvNEh2RWh4SlJoUk04VHFUd3hiUTN0MkFlYm9taGNB?oc=5",
-       "kaynak": "Blockonomi",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T22:03:00+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Alphabet's Constellation Energy (NASDAQ: CEG) Deal Sends Oklo (NYSE: OKLO) and NuScale (NYSE: SMR) Shares Soaring Despite No Direct Involvement",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQRXZNdlpuNjgxcEJlTkh2Nl9Vam4zelRucEpnbjJyTHQ5VTF6MjJibTI1VzJBVEN3T1NXLUp1b0pYbThOd0hvLXFJaENWMXBuOERWWmY1ZFBMTy01OEJHQTd2amIxc2Q1TzlDeWFHdi1xbkRidjlucXJlUDFFYUFWTld1RXBqVE0xWktvZ0FtWUJPbEl2ZHVKNjZUNGtwUU5nbl8xOTVYM3Z4NTA5RFRwZl9nNkV2SnBMclE2R2RrWXI2THRBc2ZkVHYzSEROb1BnWFJSNFZjcXhzQ1BYcE1FX01yRjFUdENTclMxZF9FdXBtWk5DZDNrY0h1RVRQSjUtOG9LWkIzY3J4RzlfeW1v?oc=5",
-       "kaynak": "Foreign Policy Journal",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T21:33:30+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Is Constellation Energy Corp (CEG) a Bargain After 5.5% Drop? GF Value Says Undervalued",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRlliMnc3eDZYRkI1aGppeFo4aGZiTldRcXR3WEJTS3NPYUdaRVdfLU0xN1prdFNwemZ5UjZHWjBGWlRJTWpoaF9lZVBLSTdza01sVW5RWVRLY2tVNlZ3Ui1GU0FONDRBc0hUdUdDZ21UNkkzSDNrQUpOSTcwdlhKTTJMeWJrelE2T25RZl81b2JvVlZNZDI5T0d3ZjZFaDZRRUtxcnFSYVBrUS1VNjNHQzhVVjA2dzlrSGlhaE1n?oc=5",
-       "kaynak": "GuruFocus",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T20:14:05+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Constellation Energy Closes Sale of Natural Gas-Fired Facility to LS Power",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNdXZzaVV2d19lZmRlbWtVTU95RWVSc3VjTTdUZnA0Z2drVzVHaHhpUU94cFdVQTRCdHR0bkFaVjdFQUFPb2hRcGxwd2g1XzdLUjBTNmk3RXh6alNQeHh2TDdSTW0tT1pFWEk5SWU1ckpybE5ocDhBOHpYSHkxTVk0djhVX0xjZGlWY0Rqc29vVUFPNm0yTVJWNGR5RnFmdw?oc=5",
-       "kaynak": "Yahoo Finance",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T20:00:00+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Constellation Completes Sale of Brazos Valley Energy Center to LS Power",
-       "ozet": "BALTIMORE, October 14, 2026--Constellation (Nasdaq: CEG) today announced that it has completed the sale of the Brazos Valley Energy Center to LS Power. The 606-megawatt (MW) natural gas-fired combined-cycle facility is located outside Houston and operates in the ERCOT market.",
-       "url": "https://finnhub.io/api/news?id=9b4c8d04623da0e670c169c05713233636a66c93dd5f55d051c95a4b606ea32a",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T18:50:00+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Is Constellation Stock a Buy After Jumping 12% on Google's 20-Year Nuclear Deal?",
-       "ozet": "The stock, after a 12% jump, is now down more than 3% since Alphabet, the parent company of Google, announced its power purchase agreement.",
-       "url": "https://finnhub.io/api/news?id=73d33434d7e29d84bb655fc5f71e61c7b4534c01c7babb958042335cb848e428",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T16:41:50+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Constellation Energy (CEG) vs. VST and TLN: Can Nuclear Power and AI Demand Drive Earnings Growth?",
-       "ozet": "Is CEG a good stock to buy? We came across a bullish thesis on Constellation Energy Corporation on Astute Optics – US’s Substack. The thesis was published on September 12th, when the stock was trading at $284.75, and CEG gained 3.87% since then. The gain appears to reflect optimism around long-term nuclear power agreements with Google and […]",
-       "url": "https://finnhub.io/api/news?id=cff74c1b4daa149807a17d39ceb7fb2a23f2a4480a89495dd060a2cf77fd552a",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T15:05:00+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Can Renewable Energy Expansion Support CEG's Long-Term Growth?",
-       "ozet": "Constellation Energy's expanding renewable assets, battery storage capacity and corporate clean energy agreements support diversification and long-term growth.",
-       "url": "https://finnhub.io/api/news?id=b9d9fe62c5e3d72458dc5a8e12a63621cd79cf8c3feffd0ec291e64098d232c7",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T13:39:22+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Talen Energy shares are trading lower after Barclays lowered its price target on the stock from $425 to $408.",
-       "ozet": "",
-       "url": "https://finnhub.io/api/news?id=be3a2e14988b35c699e3e1273962c450b1d7973899330ce652d27ab23bc2d103",
-       "kaynak": "Benzinga",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T11:57:01+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Constellation Energy (CEG) Just Gave Investors Something To Think About",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQOWZ3dnVEVVJHX2VOVnhnMzNDVnpOaFBma0pJUFBtX1FzSEJIRDMyMUdmM0Zhek9zbFZ6TFBFSTJBWS1wNEZJaUxpRFcwM1VwUjZYRjFFUFY0dnZWRzdSMlBKbGt0OG5GU2Y0U1BKR2xrMGIweEwxX0VxaURzVFhOeUd6V1hDc0t0VWdXR202QlEtTVBHd1BKWm0xUERmcWNpellRWURFUnprM3dwNnU1cGF0V08xMnVYRWZqc3ItOFlnS19iTF9MWVJyWDNYb0tBbzBCbnJR0gHbAUFVX3lxTE4xQnh6MFRLdy1sU09vaGh2VU8yQXVxaUFSUHNTTWtDa0FBNHR6MXJYX0hKN0ttLXdHNHJsVDhiNHJjWEZXZFh1bFJpMHk2X19jeXRQc2djV05SVDROOU5IdVROS182RktTdVdEUlprU1B5T1BqNm1QbXNPRGhFWWxnZVhoMlZYOVdGVktVZkZtLW1ROXh5ZnUxWHFnQjAzMlJhY19jV2tzSEF2U2htd2xZdEJBcXJtZmltOHUyaVl0ZmlVSnJoeTdkZWw1MWhMUzgyd1NhUnZOTG9fUQ?oc=5",
-       "kaynak": "Simply Wall Street",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T10:09:00+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Google Signed a Deal for Existing Reactors. So Why Did Oklo and NuScale Jump on the Constellation Energy News? The Read-Through Investors Are Missing.",
-       "ozet": "It's another upvote for an energy source that just a few years ago seemed to be moving toward obsolescence.",
-       "url": "https://finnhub.io/api/news?id=7a118eaff971fca81634c2b06dbb4c14f3fe0ea1c742f8c2976b45ec78a2bec4",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T10:08:17+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Is Constellation Energy (CEG) Above Fair Value After New Nuclear Deals?",
-       "ozet": "Constellation Energy has delivered a very strong 3 year share price run, yet the recent pullback and fresh long term power deals raise a simple question for investors: Is the current valuation of Constellation Energy stock still grounded in the cash flows the business is expected to generate? The share price has gained about 157% over 3 years, which puts real pressure on the question of whether the current market value is aligned with the cash that can flow out of the business over time. New...",
-       "url": "https://finnhub.io/api/news?id=296eee9045303e1d8a34fcf298ce499bf6ccdfb1747e89398c0d73d2ec82af71",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T05:45:00+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Is Data-Center Power Demand Putting Constellation Energy (NASDAQ:CEG) in Focus?",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNY2Q5U21LMElMSXY3V1oxT3VTSlJBbW9rLXZiTmlhQnQwXzgyVFp3NlJfVkIyQmVNUF8wdDhzeDdmQkt4SjBpUlpiUnA1VmdwR01Ec0hrNGdUQzhyNDgxUjNDeFBzSGFPNEw2OHNkRGt1alFrVGttWkhZelF2MlY2akN0aGl1a0RnZkZrNnp0aXBMQzZCb3F6UXR3S0VFOEdJLTdab2pkUUVya29qWDdEOHkxQ1kwNFBB?oc=5",
-       "kaynak": "Kalkine Media",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T23:10:30+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Constellation Energy (CEG) Stock Price, News & Analysis",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBWUkRoMUlPYVloY2lURzhaOFY3UHdOVFR5OUR1WUlRWm1fajVBMWxLU3dueWcxQWRib0pEdk9uaHktTFBWa3gwLUw1VjY?oc=5",
-       "kaynak": "24/7 Wall St.",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T23:01:00+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Should This One Number Scare You About NuScale Power Stock?",
-       "ozet": "NuScale Power (SMR) reported revenue of $0.1 million for the three months ended June 30, 2026, compared with $8.1 million a year earlier. That number matters because NuScale is still spending to get its nuclear power modules ready to sell. The company recorded an operating loss of about $0.7 billion over the last twelve months, but most of it was a one-time payment of about $507 million to partner ENTRA1. In the latest quarter, the operating loss was about $64 million and operations used about $",
-       "url": "https://finnhub.io/api/news?id=14b22d454b1e25f1d5aa0cacdbf2ada28a9197d35f37c50b1315bc1e0d651a0d",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-13T21:48:01+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "MASSIVE POWER DEAL: Google Enters Massive 3.6-GW Power Deal with Constellation Energy",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOeXRoQ2ZLWk1oemNaN2ozYkdBdTAyV2VjbGNEOGZxMDEyVTBCQndvTmxWQU5ESkdKcVBGSTVmcHhBOWwxbzRGZFpmekF0YzVhNnVDcnhIcHFQUjNhcWVMZWlmNXQydUlsQU5kMnFjejVnODJnaHhBLU83MThTbzByTVFJdXFkR1dTTzdhcExFVURkUm5BYV84dWlFUWI?oc=5",
-       "kaynak": "EnergyNow.com",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T20:25:42+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Constellation Energy stock gains 0.41 percent after-hours to EUR 264.13",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNeUxUYzFJQjh6cE1XX0tCUWNUS1pfVlhEVFU1RkllM3Izb3h0d1pPd1cwVFNaZU5lRkc3VTB6S0QwSFhPWkQtV3lkTjUzMV81MVlYV2RoQ19xNDJIS1YtcFdoRDUzbUtETkU2aEphVkthWjdBbWFIc21YVGR4cTM3VGZIXzdaMVZlNVUxQXlHZVJKMER3bEwxR0hYVmF0RlZZejlGT0pGNk5qQjM5S09PVW5Calk4S3Y4X1BHZXRWbmtEZjQxcFBzVzN3?oc=5",
-       "kaynak": "ad-hoc-news.de",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T15:11:00+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "TTE Expands U.S. Renewable Portfolio Through KKR Joint Venture",
-       "ozet": "TotalEnergies expands its U.S. renewable energy footprint through a KKR joint venture, adding 700 MW of solar capacity to a $1.2 billion portfolio.",
-       "url": "https://finnhub.io/api/news?id=1bb7d693c1762315faf5c928f2e4cc3a5f2276028c5fb9a96e3fee8568353f66",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-13T14:44:23+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Analysts set USD 340.00 average target for Constellation Energy stock",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOaUk1a1F3bmNwdzd1Znl5ZmtWTE5zUjBEMnY4d1l4YTF6Qms2Y2Y2QlhiQldJU0x5UW5Ea2JrMG9sTGFDYVo5OFJmM3U0LXp2MkhqaHVOWTFtQ0w2UHlYMkpWNFlPWWJRbE9WbzJrQ2NZZDJDLUliNzFYbkl4NTlxT3VpQncwdUxaYXpjTlhWR0QtVUdnWDN1NXlLNHl4ZzRkbGZOemFaUklPN3F2WFZEb2xCNExBOG5uenhWRjBkRkhYTDRoMlpOQ21Xa1c?oc=5",
-       "kaynak": "ad-hoc-news.de",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T11:15:32+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Vistra Bombed Over The Last Year: One Analyst Says The AI Power Play Will Gain 90% Within a Year",
-       "ozet": "Vistra has shed nearly a fifth of its value over the past year while Wall Street keeps piling on Buy ratings and one analyst sees nearly 90% upside ahead. The disconnect between the stock price and that conviction points to a fight over whether cheap Texas power or AI nuclear deals define this company's future.",
-       "url": "https://finnhub.io/api/news?id=ab2a6f7b7e2d66104ba0dbfb9525f3f0c2078499b616c2935865d0f27901d2d2",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-13T11:05:00+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Constellation's $4.3 Billion Google-Backed Upgrades vs. Vistra's $4.2 Billion Government Loan: Which Nuclear Plan Is Better for Shareholders?",
-       "ozet": "A different means to the same end gives interested investors something to think about, although this difference doesn't necessarily make one stock a better bet than the other.",
-       "url": "https://finnhub.io/api/news?id=2efb2780eeaacf08fc622ad2958a9f2a2d201895beaadc3643f4fd3878fc3179",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-13T10:10:58+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Google deal added 890 MW as Constellation Energy stock fell 2.11%",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNSVFvNVZodnJlRzJCaVhndGU1OVUzeWJRampkMlRzQnluOFF4U2piUUkwWUpJMWNxMVZxQTJuZVFoUkxMeTBOQjB2cGVfU3A2by14SWdCRGFlWTh6WGV6MC1sWjJaUTl1SGxnNzdqVDZBWEtCcVBFY1FqdDJrQ3FSTnFqV0p4WnVlSU5qZ3Nrd21PYncyNEpjeV9wa1VzU0twTmw1aFl5MEd4cGMySEs4Z2JzRVBuSmZLeHMwRG9pWXZBQzBoM3lQVlN5VzlUZFdS?oc=5",
-       "kaynak": "ad-hoc-news.de",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T06:33:02+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Constellation Energy (CEG) Stock Could Be 47% Undervalued After A Nuclear Power Deal",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPd3JVWERPVWE1TGk3SDhIcE9IQzhNOWNZMmlZUjVwbV9ic3paUEItRXdTWERuNGZnZXJydVg3T3QzZG1FME9lSzNrUExsdWtYaEgwQkRiM3ZtdEVkdnQ1Q29vMzlWOGM5TXB6MGphYVVNaVNlTlNMeE9YWG4xbFI1MU9aLWx0V3p1bERveFg0TGNUckZSOXNidjczLWR3UVR5dy0wSmVBWklmM3RwWlA2SlVhSWhydXdZRjI3UDEzOWdVc1dSNFRmeUdMUE1IZExqMnVuaE1R0gHbAUFVX3lxTE5pTzZZTTVmdWVuV0Z2MXJVdWM1clZEVjZ6ei1mNVo3U1doQUNtTVlEazFjU29JTUl0bU1ORVB6b3ZpRjFGQUc4MU9Wbl9NV1otdUVvVnk0X1ZDVUFteWRyQ2d0bnBWRU5UZEhiNTEyRDNWcjg1ajhCNVM2S3FST3lacW1vM0NmOXp2Y1cwVGFJdWFmSjNnSS1jTjRiZ1loVlhEaFE5OFVIcHNnU2RCT0p3dDVfSk9SWVF2MWRmWmxxN0pvSURwLUUxVHg3QTRCSHZUTldxYVJRU0JKSQ?oc=5",
-       "kaynak": "Simply Wall Street",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T05:37:08+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Constellation Energy stock pre-market at EUR 262.13",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYzktYll2V2R4OVJCQkhPOXR3NU5KZEplTEpYelRHY3I2VGxIQUwyWUpkYVV1emFxazZ4WWp0V1F2eXM2aWVJVEtEa3VnWTgzdFFIMUN4dUFOeFluNld2eVF2WjJ1d3VpOVE1OGFIMzczOUVGajAwZ2hfOXpteHFIb0ZURkxOSXNXaTRlc1lkeXNGN01uc2d0c0VkR3VQMVA1djFSWFN0QURhU2w5akE?oc=5",
-       "kaynak": "ad-hoc-news.de",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T05:07:00+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Does a Nuclear Power Deal Fuel AI Data Centers for Constellation Energy (NASDAQ:CEG)?",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQdWNwSjNIR1Z6NnR0OUxiczVxVXRGU0xLZFdoT0dzcjh4MUg0RWtCekxXakNVSllqdndzQzBtTGZTeXNrQ180NVI1SFd3TUZCYUIwOTZMNVZQdlhZOHFsWnFOd0hJVV9GT2hNbXhLbmZkSXdJSmx1MGlDSEFzWEJlcFN0R0RQR21sRVdwQS1rRWRJRElJeU9VZlJkc0dLdGVwT0FPcTBnY01RZjFDdDlVeGVqdFFySDI4eDZROVJEdkw?oc=5",
-       "kaynak": "Kalkine Media",
-       "saglayici": "Google News RSS"
-      }
-     ],
-     "sec_bildirimleri": []
-    }
-   ],
+   "buyuk_hareketler": [],
    "sec_bildirimleri": [
     {
      "form": "144",
@@ -4023,8 +2743,7 @@
    "cumleler": [
     "Hisse bu hafta −%12,5 (SPY −%1,1, XLU +%0,0); 52 haftalık zirveden −%35,5 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%35,5: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
-    "2026-10-14 günü −%5,5 büyük hareket (Hisse −%5,5, sektör/piyasa −%0,7: hareketin çoğu şirkete özel görünüyor.)"
+    "Zirveden −%35,5: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
    ],
    "insider_ozet": {
     "islem": 0,
@@ -4033,22 +2752,22 @@
     "kodlar": {}
    },
    "sonraki_bilanco": {
-    "tarih": "2026-11-04",
+    "tarih": "2026-11-09",
     "saat": "",
     "eps_tahmin": 3.7905,
     "gelir_tahmin": 9351171860,
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-20T23:40:06+00:00"
+    "guncelleme": "2026-10-21T09:44:42+00:00"
    }
   },
   {
    "ticker": "RGTI",
    "ad": "Rigetti Computing",
    "donem": [
-    "2026-10-14",
-    "2026-10-20"
+    "2026-10-15",
+    "2026-10-21"
    ],
    "fiyat": {
     "son": 11.66,
@@ -4058,7 +2777,7 @@
     "zirveden": -73.66,
     "zirve_52h": 44.27,
     "zirve_tarih": "2025-10-31",
-    "kaynak": "Nasdaq.com (historical API) + Finnhub quote"
+    "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
     "QQQ": -3.49,
@@ -4495,211 +3214,6 @@
       }
      ],
      "sec_bildirimleri": []
-    },
-    {
-     "tarih": "2026-10-14",
-     "claude": null,
-     "onceki_gun": "2026-10-13",
-     "hareket": -8.61,
-     "yon": "asagi",
-     "benchmark": {
-      "IGV": -3.0,
-      "QQQ": -1.97
-     },
-     "on_siniflama": "sirkete_ozel",
-     "on_siniflama_aciklama": "Hisse −%8,6, sektör/piyasa −%3,0: hareketin çoğu şirkete özel görünüyor.",
-     "basliklar": [
-      {
-       "zaman": "2026-10-14T22:27:05+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Rigetti Computing Options Spot-On: On October 14th, 73,218 Contracts Were Traded, With 672.26K Open Interest",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPRFQ2N25xSlByN1RnN0t6a0pQT1IwVy1NRmdqV2hzTkxWZnljNWctY2lOUGM0MWZXQ2lSRlBHbEV1VkVnNHd2REkyWkdxMHBlU0NnWEc1SlJFa1BURFdHM3licGZsYWx1akN1MHZNUXNDdG5RTkFLVVBrWXY5NW9yQU80S2NQZ2lVNG00cUdKZXlwRjJYbmtXanowRF9EMHpfV1JfOXI3WUMxdklYN2c?oc=5",
-       "kaynak": "Moomoo",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T21:11:54+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Rigetti Computing (RGTI) Loss Concerns Put Its Undervalued Narrative Back In Focus",
-       "ozet": "Rigetti Computing stock reaction and recent performance Rigetti Computing (RGTI) moved back into focus after shares declined 3.55% in the latest session and are down 13.23% over the past month, prompting fresh scrutiny of expectations ahead of upcoming results. At a share price of US$12.78, Rigetti Computing has seen momentum fade, with the 30 day share price return down 16.31% and the year to date move weaker, even though the 3 year total shareholder return is still very large in absolute...",
-       "url": "https://finnhub.io/api/news?id=df10d00b05748a51a3085bbb8723202b461959a07d5a5838529d35153e24a413",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T20:27:00+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ Stock Tumbles on $2 Billion Equity Offering. Why Other Quantum Names Are Falling Just as Hard.",
-       "ozet": "IonQ stock dropped 9.5% Wednesday. An equity raise isn’t wholly to blame. D-Wave, Quantinuum, and Rigetti Computing also saw substantial declines.",
-       "url": "https://finnhub.io/api/news?id=fb12acdf27d816ea62af31a4e57259af94e5dbf09ae1de66ec2ed9cd797afcac",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T15:32:22+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Rigetti Computing stock hits 52-week low at 12.36 USD",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONnZ2cmhDLUctRWx4UmRqdHZXTjdHTFZHZTZYMVpnb1pubVpKOVZUTmt5Xy1sSkdwUlItSGJWM09VdVBtUWZ2Y1ZZVWctS3B3eDdabDdhOTNSVEQzU0hESEhTVEdRaHR5Uk9mTEpHSGpRcU9WODYtY2puUHBfaHZqbHdzTnJDbExuMU5rb2dNYlpkTkMtemhUSExmTUllYW5WcVVqVTFNaV90T1RB?oc=5",
-       "kaynak": "Investing.com",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T14:28:35+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Shares of companies in the broader semiconductor sector are trading nigher, rebounding after Thursday's weakness. Additionally, stocks across sectors are rising after NY Fed President Williams indicated he sees room for a further policy adjustment in the near term.",
-       "ozet": "",
-       "url": "https://finnhub.io/api/news?id=7458536a30c24259ca5b2aeb0b0fd7ae84b16f95e84f5ce9e430533e09c4ddf4",
-       "kaynak": "Benzinga",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T14:26:42+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "RGTI Stock Price and Chart — NASDAQ:RGTI",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9LT0doYnRsLTBaMUhXd1pTRFVwQ0tMQWNSNVJjSDNTaFlVR1JCcVVHS3daX3E1N20xUVFIZzBCd2RaZWNwUlR4V3R0Q016blBQWGR6aEJTelBCVHRf?oc=5",
-       "kaynak": "TradingView",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T14:04:43+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Rigetti Computing (NASDAQ:RGTI) Hits New 1-Year Low - Here's What Happened",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPXzVGamo1Mk5qTWE1R2prSEVDUElVbGliT3B4ZmJjSDR5cHlTOFFmU2ZrcmtWN2g5ZjV2aldDU3hnMDFaZElNWF9SR0VUa0pyeEc2V0ZDZk83YndSdVNiVzlGem5NOEpmaUc3bGJCY1M5cm1DSnNQWDAzek5jelJyWHBsd3dCckpYemd5RURkb3g1aVhFbU9VRUZIWXo5TzNzRDN4M191cEZYR3d2MU4yS3o3d0NJd0VJWnYwcHpjcTdUM1RHSjJLQg?oc=5",
-       "kaynak": "MarketBeat",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T13:44:08+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "IonQ Falls 6% as $2B Equity Offering Follows $1.3B Elisity Stock Deal; D-Wave and Rigetti Retreat 4%",
-       "ozet": "IonQ just handed investors two rounds of dilution in rapid succession, and the quantum sector is selling off in response. Whether the company's breakneck revenue growth can outpace its expanding share count may define who stays and who bails.",
-       "url": "https://finnhub.io/api/news?id=147dc2d16b78362dbe7e459d929750067040492bd4accdb6d3ef728d9f64bd39",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T12:22:54+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Did The Market Read IonQ Stock Right?",
-       "ozet": "IonQ (IONQ) stock fell 19.8% in the week to October 13, 2026. The S&P 500 slipped 0.2% over the same period. The company was not alone in its decline, as Rigetti Computing, a peer, lost 15.8%. Yet IonQ's worst day of the week was a 9.1% drop on October 12, following its own corporate news. The company announced it would purchase Elisity in an all-stock deal valued at up to $1.3 billion. So how much of IonQ are its owners giving away.",
-       "url": "https://finnhub.io/api/news?id=909450bd0d762dbf8ddff2db744423b7b2801a19725386ec599acd8b803fe28c",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-14T10:47:14+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Price to sales forward of Rigetti Computing, Inc. – TRADEGATE:A00",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWVhlXzhxTDBuOENrQm5VNFhCazB5UzkzbFIxQU9LeDJ3TC1QeDJJdEc3WXlNQXVvbnNFNEJXeC1BNll1dzRKbExPUll6TW9EWW1HWGE4M3R6RHVzZ0NOU2lSVm15eW5Vc0t3c3NQZUxBODdtdjlWaFZYWFhrLXVobm5iVUNTeTV2ODJkeFJMVllYQzRqWmEzMEJfMHdIWDRo?oc=5",
-       "kaynak": "TradingView",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-14T05:56:00+00:00",
-       "tarih": "2026-10-14",
-       "baslik": "Why Is Rigetti Computing (NASDAQ:RGTI) Volatile as Quantum News Builds?",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOOWlRMTB5QzdqaXlzejlHSXdaTF9QVEFxcmdMaXVrUkxnUXEwcXEzU0V1YkRQSVdtVmNabGFGd1luRFVkLTBJb2lwcDZscHg3VndOXzcwUk9Kb1VzWThRd3VFeHdIZjVnYzV5WU1HZWR3N1RoWGd3S2FsbkVhU1lYalZFTWtzWWdqS1hxMlE0eHJON3Fra3VZckpoT3lPbkJfSkVZRU41bnpjZlJC?oc=5",
-       "kaynak": "Kalkine Media",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T21:00:05+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Rigetti Computing, Inc. (RGTI) Declines More Than Market: Some Information for Investors",
-       "ozet": "In the closing of the recent trading day, Rigetti Computing, Inc. (RGTI) stood at $12.78, denoting a -3.55% move from the preceding trading day.",
-       "url": "https://finnhub.io/api/news?id=75fb12b9976351f25e8747eac20601fcb6f55c4f1a41461f28af53bfb1d10968",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-13T19:44:00+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Rigetti Computing (NASDAQ: RGTI) Faces Steep Valuation Gap As Quantum Sales Crawl Forward",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQMzhfRjhtZ0V5YnNETmhTWVRBMlFmWk5jREszWDkzT3BHa3RqUVNWa1FGTWliQ1JzYmNjNEhudkgwYm1oYTNobjZwekFUWC0zNEFDWENLOGM5VkhiTTk1QU9kWVJtcDdha3UwX2FZd1hSYmdmenhjZVB3Y09TLVZ4RVZ0QldGU0JhcEk1SC1EVXk2b2dySi1tWmcteUJUYjN4ZFBIZWl3OGJkM1daYXZyQVdMblRvNUpQbXF3UlNpTjdXT0xXQ2lwQkhVZE55M2Zw?oc=5",
-       "kaynak": "Foreign Policy Journal",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T19:15:00+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Is Rigetti Computing (NASDAQ:RGTI) Nearing A Quantum Advantage Milestone?",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNSVc4LWU0d0JEY1N6Q3Y1TmhiSEtObGQ2TElRQ3FqaWdiUnlZb1dSNzBaLUVEQVhEbDNmWWRiV2VCdWxxZTlpcXAtUmxOLTVsclVRR1hVWUZOLVFibmNRVkNabWRpOE95RDF1SVdyeXRxUEJkbjZ2WXhyVHRDREkzaUlCX0QtenBuLVVubkZqZUkyLXZ3eS1MeFozZWpwR0VFckN6MVpPc2h1UHJDZm1Z?oc=5",
-       "kaynak": "Kalkine Media",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T18:48:02+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Rigetti Computing call volume above normal and directionally bullish",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPRVFmdklXU2lsTFlkbzNrYng0V1NpSWVNdHN0ekhpNXZLOXQ3aWxDYnNlN2FsdXVlY0Jnd2Q4eXd2cFpMVDRTT1BwMmJlSEtLWEt5QUlSU1Q0bko3WndrZWdDeTRQV1hUMC1IeEI5SHFvR2Y4WlJkcUlPblFHYWxQT2JhcWNPMUhfVnpvZG53bDZaaklwOFJRX1kzUmtPcTZIdGRJUW53UDF0MWhvLTVaOGtFcWZhR2E4dzhzYw?oc=5",
-       "kaynak": "TipRanks",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T10:09:09+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Rigetti Computing gains $100M US government fun...",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQa014OC1Edm9qZ0J6R0tDMzBKOGNJS1ZiUi11MzhWTjlGVXdFcjhiQUJBWlgyWVd6bVduTW1ySTRVdmJMMnZ5NFRtcFNmZENvNHJkSzd5VmYxeGdJVl9CNldDN3pxT0ZrVnVIcW1UU3lqN2RSQmxaZm92a2o3OFlaN2RRNA?oc=5",
-       "kaynak": "Pluang",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T09:52:23+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Rigetti Could Be The Ideal Buy-And-Forget Stock Right Now (NASDAQ:RGTI)",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNeFU3VlU2TzlsNHpyX1NPRnhGald1VWZaQkZkQ3l4UXJxMUlTSnNFMGJMY3NxTy01RllFMlhYaVREa2pzRmZSV2hwUmxvaUs2ak8zdGxLNm81Rl9qc1dCenRQdTlENm9QcFVVR21VT3h4YmFBRHcxOHBCVWp1Wm5rSXBTUTJlenBBRThTT2ZENzNFZTROWExTZnBiMlJ3Z1E?oc=5",
-       "kaynak": "Seeking Alpha",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T05:52:23+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Rigetti Could Be The Ideal Buy-And-Forget Stock Right Now",
-       "ozet": "Rigetti Computing is transitioning from speculative hype to tangible progress, with operational milestones now driving its investment narrative. Learn more about RGTI stock here.",
-       "url": "https://finnhub.io/api/news?id=710b2a83a3bdec3638302b2500b1053f7113e2839fae312c82c1979719ffe7e3",
-       "kaynak": "SeekingAlpha",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-13T05:18:00+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Is Quantum Momentum Building for Rigetti Computing (NASDAQ:RGTI)?",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWGR2UU9qR1FKekRCRko4eEctd0tIOE1JMDduUk1NSmZ4NXAxYl9KNFJiV2R1YW5KMzA1aXYwSFRNZm9rV3VPZG1uWnUwaWg0N2QwXy00OENUaDhiNGRCS0JlMlFmTmJ0T0JGNW5HMjUzcDB2MHpQdFA3YkdYUE9JOTdsRTN1RlZudktubXdxZ0QxUkxHVlZ1WmJ5WnZ1NHhteWZqMg?oc=5",
-       "kaynak": "Kalkine Media",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-13T04:03:35+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "Rigetti Computing Q2 2026 Earnings Call Transcript",
-       "ozet": "On Thursday, Rigetti Computing (NASDAQ:RGTI) discussed second-quarter financial results during its earnings call. The full transcript is provided below.\nThis transcript is brought to you by Benzinga APIs. For real-time",
-       "url": "https://finnhub.io/api/news?id=ddfb3d3a8e22a93b089d00de60511594f29f63fdc4ae29e4d9f9f3b9faa6c522",
-       "kaynak": "Benzinga",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-13T03:18:13+00:00",
-       "tarih": "2026-10-13",
-       "baslik": "RGTI Stock Quote Price and Forecast",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBZOFJiS3VzeW5tUmRKU2FCZTVVXzE2a0llRDE5cHIzeGpqajhkX0FoR2pwNkJBMW1UNGszVUpJUU16eG93Q24xQ3VxRkkwUEtT?oc=5",
-       "kaynak": "CNN",
-       "saglayici": "Google News RSS"
-      }
-     ],
-     "sec_bildirimleri": []
     }
    ],
    "sec_bildirimleri": [],
@@ -4723,8 +3237,7 @@
     "Tez sütunlarında bu hafta değişiklik yok.",
     "Zirveden −%73,7: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "2026-10-16 günü −%6,6 büyük hareket (Sektör ETF ortalaması −%4,8: sektör hareketi belirgin.)",
-    "2026-10-15 günü +%8,1 büyük hareket (Hisse +%8,1, sektör/piyasa +%1,8: hareketin çoğu şirkete özel görünüyor.)",
-    "2026-10-14 günü −%8,6 büyük hareket (Hisse −%8,6, sektör/piyasa −%3,0: hareketin çoğu şirkete özel görünüyor.)"
+    "2026-10-15 günü +%8,1 büyük hareket (Hisse +%8,1, sektör/piyasa +%1,8: hareketin çoğu şirkete özel görünüyor.)"
    ],
    "insider_ozet": {
     "islem": 0,
@@ -4733,32 +3246,18 @@
     "kodlar": {}
    },
    "sonraki_bilanco": {
-    "tarih": "2026-11-09",
+    "tarih": "2026-11-16",
     "saat": "",
     "eps_tahmin": -0.0523,
     "gelir_tahmin": 3749438,
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-20T23:40:09+00:00"
+    "guncelleme": "2026-10-21T09:44:45+00:00"
    }
   }
  ],
  "sinyaller": [
-  {
-   "id": "dace09c3044d",
-   "tarih": "2026-10-14",
-   "ticker": "AAOI",
-   "tur": "kural_kademe_tez_bozuk",
-   "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
-   "yon": "olumsuz",
-   "aciklama": "Zirveden −%56,2, −%55 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 15 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
-   "fiyat": 97.78,
-   "fiyat_tarihi": "2026-10-13",
-   "qqq": 743.57,
-   "baslangic_kaydi": false,
-   "kayit_zamani": "2026-10-14T00:10:55+00:00"
-  },
   {
    "id": "d8a701cdb0e9",
    "tarih": "2026-10-20",
