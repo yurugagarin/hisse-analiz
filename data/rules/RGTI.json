@@ -2,7 +2,7 @@
  "ticker": "RGTI",
  "onay": "taslak",
  "kosul": "tez_saglam",
- "zirveden_uzaklik": -73.66,
+ "zirveden_uzaklik": -72.78,
  "kademeler": [
   {
    "dusus": 15,
@@ -23,24 +23,24 @@
  "benchmark": [
   {
    "sembol": "QQQ",
-   "zirveden_uzaklik": -5.53,
-   "degisim_1a": -0.53,
-   "degisim_3a": 1.22,
-   "fark_puan": -68.13
+   "zirveden_uzaklik": -4.54,
+   "degisim_1a": -2.19,
+   "degisim_3a": 2.81,
+   "fark_puan": -68.24
   },
   {
    "sembol": "IGV",
-   "zirveden_uzaklik": -8.67,
-   "degisim_1a": 2.47,
-   "degisim_3a": 16.46,
-   "fark_puan": -64.99
+   "zirveden_uzaklik": -7.06,
+   "degisim_1a": 1.58,
+   "degisim_3a": 22.24,
+   "fark_puan": -65.72
   }
  ],
- "guncelleme": "2026-10-21T09:44:48+00:00",
+ "guncelleme": "2026-10-22T09:44:17+00:00",
  "not": "Otomatik işlem yok. Bu bölüm önceden yazdığın kuralları hatırlatır.",
  "dusus_kaynagi": "sirkete_ozel",
  "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
- "en_iyi_fark": -64.99,
+ "en_iyi_fark": -65.72,
  "tetiklenen": {
   "dusus": 35,
   "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
@@ -48,5 +48,5 @@
  "tez_durumu": "kirmizi",
  "kosul_saglaniyor": false,
  "durum": "tetiklendi_kosul_yok",
- "mesaj": "Zirveden −%73,7: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
+ "mesaj": "Zirveden −%72,8: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
 }

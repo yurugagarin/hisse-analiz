@@ -1,6 +1,6 @@
 {
  "ticker": "NOW",
- "guncelleme": "2026-10-21",
+ "guncelleme": "2026-10-22",
  "pencereler": {
   "90": {
    "kodlar": {
@@ -141,9 +141,9 @@
   "180": {
    "kodlar": {
     "S": {
-     "islem": 10,
-     "adet": 43747.0,
-     "tutar": 4641304.9318,
+     "islem": 9,
+     "adet": 34820.0,
+     "tutar": 3841436.8048000005,
      "plan_10b5_1_adet": 12046.0
     },
     "M": {
@@ -167,20 +167,6 @@
    },
    "kisiler": [
     {
-     "kisi": "Canney Jacqueline P",
-     "unvan": "Chief People & AI Enblmt. Off.",
-     "satis_adet": 16774.0,
-     "satis_tutar": 1882754.1269999999,
-     "alim_adet": 0.0,
-     "vergi_adet": 8954.0,
-     "planli_satis_adet": 7847.0,
-     "ilk_satis_oncesi": 38458.0,
-     "son_pozisyon": 30042.0,
-     "son_tarih": "2026-08-28",
-     "satilan_pozisyon_orani": 43.6,
-     "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
-    },
-    {
      "kisi": "Sands Anita M",
      "unvan": "Yönetim kurulu üyesi",
      "satis_adet": 16445.0,
@@ -192,6 +178,20 @@
      "son_pozisyon": 33350.0,
      "son_tarih": "2026-05-21",
      "satilan_pozisyon_orani": 35.3,
+     "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
+    },
+    {
+     "kisi": "Canney Jacqueline P",
+     "unvan": "Chief People & AI Enblmt. Off.",
+     "satis_adet": 7847.0,
+     "satis_tutar": 1082886.0,
+     "alim_adet": 0.0,
+     "vergi_adet": 8954.0,
+     "planli_satis_adet": 7847.0,
+     "ilk_satis_oncesi": 37889.0,
+     "son_pozisyon": 30042.0,
+     "son_tarih": "2026-08-28",
+     "satilan_pozisyon_orani": 20.7,
      "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
     },
     {
@@ -386,7 +386,7 @@
   },
   {
    "etiket": "dikkat",
-   "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %49.33 yükseldi."
+   "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %48.56 yükseldi."
   }
  ],
  "kaynak": "SEC EDGAR Form 4 (XML)",
@@ -4102,25 +4102,6 @@
    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000133494426000023/xslF345X06/wk-form4_1777665958.xml",
    "dosyalama": "2026-05-01",
    "tutar": 242066899.2
-  },
-  {
-   "turev": false,
-   "menkul": "Common Stock",
-   "tarih": "2026-04-24",
-   "kod": "S",
-   "adet": 8927.0,
-   "fiyat": 89.601,
-   "yon": "D",
-   "sonrasi": 29531.0,
-   "sahiplik": "D",
-   "plan_10b5_1": false,
-   "kisi": "Canney Jacqueline P",
-   "unvan": "Chief People & AI Enblmt. Off.",
-   "yonetici": true,
-   "accn": "0001649609-26-000019",
-   "url": "https://www.sec.gov/Archives/edgar/data/1373715/000164960926000019/xslF345X06/wk-form4_1777407136.xml",
-   "dosyalama": "2026-04-28",
-   "tutar": 799868.127
   }
  ],
  "anlati": [
