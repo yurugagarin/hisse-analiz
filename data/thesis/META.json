@@ -13,19 +13,14 @@
    "metrik": "revenue_yoy",
    "metrik_adi": "Gelir büyümesi (yıllık)",
    "birim": "%",
-   "deger": 27.96,
-   "donem": "FY2026 Q2",
+   "deger": 26.07,
+   "donem": "FY2026 Q3",
    "eski_donem": false,
    "operator": ">",
    "esik": 12,
    "uyari": 5,
    "durum": "yesil",
    "gecmis": [
-    {
-     "etiket": "FY2024 Q3",
-     "deger": 18.87,
-     "durum": "yesil"
-    },
     {
      "etiket": "FY2024 Q4",
      "deger": 20.63,
@@ -60,11 +55,16 @@
      "etiket": "FY2026 Q2",
      "deger": 27.96,
      "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q3",
+     "deger": 26.07,
+     "durum": "yesil"
     }
    ],
    "kaynak": {
     "tip": "SEC XBRL companyfacts",
-    "donem": "FY2026 Q2"
+    "donem": "FY2026 Q3"
    },
    "olgu_mu": true,
    "haberler": [],
@@ -78,19 +78,14 @@
    "metrik": "operating_margin_ttm",
    "metrik_adi": "TTM faaliyet marjı",
    "birim": "%",
-   "deger": 38.08,
-   "donem": "FY2026 Q2",
+   "deger": 32.86,
+   "donem": "FY2026 Q3",
    "eski_donem": false,
    "operator": ">",
    "esik": 35,
    "uyari": 28,
-   "durum": "yesil",
+   "durum": "sari",
    "gecmis": [
-    {
-     "etiket": "FY2024 Q3",
-     "deger": 39.94,
-     "durum": "yesil"
-    },
     {
      "etiket": "FY2024 Q4",
      "deger": 42.18,
@@ -125,11 +120,16 @@
      "etiket": "FY2026 Q2",
      "deger": 38.08,
      "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q3",
+     "deger": 32.86,
+     "durum": "sari"
     }
    ],
    "kaynak": {
     "tip": "SEC XBRL companyfacts",
-    "donem": "FY2026 Q2"
+    "donem": "FY2026 Q3"
    },
    "olgu_mu": true,
    "haberler": [
@@ -156,19 +156,14 @@
    "metrik": "fcf_margin_ttm",
    "metrik_adi": "TTM FCF marjı",
    "birim": "%",
-   "deger": 17.95,
-   "donem": "FY2026 Q2",
+   "deger": 11.86,
+   "donem": "FY2026 Q3",
    "eski_donem": false,
    "operator": ">",
    "esik": 10,
    "uyari": 0,
    "durum": "yesil",
    "gecmis": [
-    {
-     "etiket": "FY2024 Q3",
-     "deger": 33.49,
-     "durum": "yesil"
-    },
     {
      "etiket": "FY2024 Q4",
      "deger": 32.87,
@@ -203,11 +198,16 @@
      "etiket": "FY2026 Q2",
      "deger": 17.95,
      "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q3",
+     "deger": 11.86,
+     "durum": "yesil"
     }
    ],
    "kaynak": {
     "tip": "SEC XBRL companyfacts",
-    "donem": "FY2026 Q2"
+    "donem": "FY2026 Q3"
    },
    "olgu_mu": true,
    "haberler": [
@@ -289,19 +289,14 @@
    "metrik": "diluted_shares_yoy",
    "metrik_adi": "Seyreltilmiş hisse sayısı (yıllık)",
    "birim": "%",
-   "deger": -0.16,
-   "donem": "FY2026 Q2",
+   "deger": 0.04,
+   "donem": "FY2026 Q3",
    "eski_donem": false,
    "operator": "<",
    "esik": 0,
    "uyari": 2,
-   "durum": "yesil",
+   "durum": "sari",
    "gecmis": [
-    {
-     "etiket": "FY2024 Q3",
-     "deger": -1.55,
-     "durum": "yesil"
-    },
     {
      "etiket": "FY2024 Q4",
      "deger": null,
@@ -336,11 +331,16 @@
      "etiket": "FY2026 Q2",
      "deger": -0.16,
      "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q3",
+     "deger": 0.04,
+     "durum": "sari"
     }
    ],
    "kaynak": {
     "tip": "SEC XBRL companyfacts",
-    "donem": "FY2026 Q2"
+    "donem": "FY2026 Q3"
    },
    "olgu_mu": true,
    "haberler": [],
@@ -490,12 +490,12 @@
    "durum": "tetiklenmedi",
    "son_degerler": [
     {
-     "etiket": "FY2026 Q1",
-     "deger": 33.08
-    },
-    {
      "etiket": "FY2026 Q2",
      "deger": 27.96
+    },
+    {
+     "etiket": "FY2026 Q3",
+     "deger": 26.07
     }
    ]
   },
@@ -506,17 +506,17 @@
    "durum": "tetiklenmedi",
    "son_degerler": [
     {
-     "etiket": "FY2026 Q1",
-     "deger": 22.45
-    },
-    {
      "etiket": "FY2026 Q2",
      "deger": 17.95
+    },
+    {
+     "etiket": "FY2026 Q3",
+     "deger": 11.86
     }
    ]
   }
  ],
- "son_ceyrek": "FY2026 Q2",
- "guncelleme": "2026-10-22T09:43:57+00:00",
+ "son_ceyrek": "FY2026 Q3",
+ "guncelleme": "2026-10-23T09:40:20+00:00",
  "not": "Tez durumu fiyattan bağımsızdır. Fiyat düşüşü tek başına tezin bozulduğu anlamına gelmez."
 }

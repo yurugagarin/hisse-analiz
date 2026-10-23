@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-10-22T09:44:17+00:00",
+ "guncelleme": "2026-10-23T09:40:39+00:00",
  "ufuklar": [
   30,
   90,
@@ -102,7 +102,7 @@
    "tur": "kural_kademe_tez_saglam",
    "ad": "Düşüş kademesi tetiklendi, tez sağlam",
    "beklenen_yon": "olumlu",
-   "adet": 2,
+   "adet": 3,
    "ufuklar": {
     "30": {
      "n": 0,
@@ -125,7 +125,7 @@
    "tur": "kural_kademe_tez_bozuk",
    "ad": "Düşüş kademesi tetiklendi, tez kırmızı",
    "beklenen_yon": "olumsuz",
-   "adet": 10,
+   "adet": 11,
    "ufuklar": {
     "30": {
      "n": 0,
@@ -238,6 +238,44 @@
   }
  ],
  "sinyaller": [
+  {
+   "id": "a6212dda6012",
+   "tarih": "2026-10-23",
+   "ticker": "CEG",
+   "tur": "kural_kademe_tez_bozuk",
+   "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
+   "yon": "olumsuz",
+   "aciklama": "Zirveden −%36,4, −%35 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+   "fiyat": 255.21,
+   "fiyat_tarihi": "2026-10-22",
+   "qqq": 704.47,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-10-23T09:40:36+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
+  {
+   "id": "49922e42c4b8",
+   "tarih": "2026-10-23",
+   "ticker": "META",
+   "tur": "kural_kademe_tez_saglam",
+   "tur_adi": "Düşüş kademesi tetiklendi, tez sağlam",
+   "yon": "olumlu",
+   "aciklama": "Zirveden −%16,6, −%15 kademesi. Hissenin düşüşü karşılaştırma endeksleriyle benzer: ağırlıkla piyasa/sektör kaynaklı.",
+   "fiyat": 648.85,
+   "fiyat_tarihi": "2026-10-22",
+   "qqq": 704.47,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-10-23T09:40:20+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
   {
    "id": "d8a701cdb0e9",
    "tarih": "2026-10-20",
