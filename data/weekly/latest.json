@@ -1,29 +1,29 @@
 {
  "tur": "son7gun",
- "baslangic": "2026-10-17",
- "bitis": "2026-10-23",
- "guncelleme": "2026-10-23T09:40:39+00:00",
+ "baslangic": "2026-10-20",
+ "bitis": "2026-10-26",
+ "guncelleme": "2026-10-26T10:38:02+00:00",
  "hisseler": [
   {
    "ticker": "NVDA",
    "ad": "Nvidia",
    "donem": [
-    "2026-10-17",
-    "2026-10-23"
+    "2026-10-20",
+    "2026-10-26"
    ],
    "fiyat": {
-    "son": 212.21,
-    "tarih": "2026-10-22",
-    "haftalik": -2.31,
-    "aylik": -7.28,
-    "zirveden": -11.3,
+    "son": 210.96,
+    "tarih": "2026-10-23",
+    "haftalik": -1.48,
+    "aylik": -6.45,
+    "zirveden": -11.82,
     "zirve_52h": 239.24,
     "zirve_tarih": "2026-10-06",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": -3.23,
-    "SMH": -6.35
+    "QQQ": -0.76,
+    "SMH": -2.33
    },
    "tez": {
     "genel": "sari",
@@ -74,9 +74,9 @@
    },
    "kural": {
     "durum": "tetiklenmedi",
-    "mesaj": "Zirveden −%11,3. Sonraki kademe: −%15.",
+    "mesaj": "Zirveden −%11,8. Sonraki kademe: −%15.",
     "tetiklenen": null,
-    "zirveden_uzaklik": -11.3,
+    "zirveden_uzaklik": -11.82,
     "dusus_kaynagi": "piyasa_sektor",
     "dusus_kaynagi_aciklama": "Hissenin düşüşü karşılaştırma endeksleriyle benzer: ağırlıkla piyasa/sektör kaynaklı.",
     "kosul_saglaniyor": true
@@ -165,7 +165,7 @@
    },
    "sinyaller": [],
    "cumleler": [
-    "Hisse bu hafta −%2,3 (QQQ −%3,2, SMH −%6,3); 52 haftalık zirveden −%11,3 uzakta.",
+    "Hisse bu hafta −%1,5 (QQQ −%0,8, SMH −%2,3); 52 haftalık zirveden −%11,8 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok."
    ],
    "insider_ozet": {
@@ -182,29 +182,29 @@
     "ceyrek": 3,
     "yil": 2027,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-23T09:40:14+00:00"
+    "guncelleme": "2026-10-26T10:37:36+00:00"
    }
   },
   {
    "ticker": "META",
    "ad": "Meta Platforms",
    "donem": [
-    "2026-10-17",
-    "2026-10-23"
+    "2026-10-20",
+    "2026-10-26"
    ],
    "fiyat": {
-    "son": 648.85,
-    "tarih": "2026-10-22",
-    "haftalik": -11.93,
-    "aylik": -11.91,
-    "zirveden": -16.56,
+    "son": 642.62,
+    "tarih": "2026-10-23",
+    "haftalik": -9.4,
+    "aylik": -13.64,
+    "zirveden": -17.36,
     "zirve_52h": 777.59,
     "zirve_tarih": "2026-09-24",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": -3.23,
-    "XLC": -4.46
+    "QQQ": -0.76,
+    "XLC": -4.36
    },
    "tez": {
     "genel": "sari",
@@ -255,87 +255,19 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_ok",
-    "mesaj": "Zirveden −%16,6: −%15 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 1,5x (tez sağlamsa).",
+    "mesaj": "Zirveden −%17,4: −%15 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 1,5x (tez sağlamsa).",
     "tetiklenen": {
      "dusus": 15,
      "not": "DCA 1,5x (tez sağlamsa)."
     },
-    "zirveden_uzaklik": -16.56,
-    "dusus_kaynagi": "piyasa_sektor",
-    "dusus_kaynagi_aciklama": "Hissenin düşüşü karşılaştırma endeksleriyle benzer: ağırlıkla piyasa/sektör kaynaklı.",
+    "zirveden_uzaklik": -17.36,
+    "dusus_kaynagi": "karma",
+    "dusus_kaynagi_aciklama": "Hisse bazı endekslerden belirgin kötü, bazılarına yakın: sektör ve şirkete özel etkiler karışık.",
     "kosul_saglaniyor": true
    },
    "insider": {
-    "hafta_islemleri": [
-     {
-      "tarih": "2026-10-19",
-      "kisi": "Olivan Javier",
-      "unvan": "Chief Operating Officer",
-      "kod": "S",
-      "adet": 946.0,
-      "fiyat": 707.2,
-      "tutar": 669011.2000000001,
-      "plan_10b5_1": true,
-      "sonrasi": 5986.0,
-      "sahiplik": "D",
-      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015980/xslF345X06/ownership.xml"
-     },
-     {
-      "tarih": "2026-10-19",
-      "kisi": "Olivan Javier",
-      "unvan": "Chief Operating Officer",
-      "kod": "S",
-      "adet": 82.0,
-      "fiyat": 707.2,
-      "tutar": 57990.4,
-      "plan_10b5_1": true,
-      "sonrasi": 5670.0,
-      "sahiplik": "I",
-      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015980/xslF345X06/ownership.xml"
-     },
-     {
-      "tarih": "2026-10-19",
-      "kisi": "Olivan Javier",
-      "unvan": "Chief Operating Officer",
-      "kod": "S",
-      "adet": 57.0,
-      "fiyat": 707.2,
-      "tutar": 40310.4,
-      "plan_10b5_1": true,
-      "sonrasi": 947.0,
-      "sahiplik": "I",
-      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015980/xslF345X06/ownership.xml"
-     },
-     {
-      "tarih": "2026-10-19",
-      "kisi": "Olivan Javier",
-      "unvan": "Chief Operating Officer",
-      "kod": "S",
-      "adet": 82.0,
-      "fiyat": 707.2,
-      "tutar": 57990.4,
-      "plan_10b5_1": true,
-      "sonrasi": 5670.0,
-      "sahiplik": "I",
-      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015980/xslF345X06/ownership.xml"
-     },
-     {
-      "tarih": "2026-10-19",
-      "kisi": "Olivan Javier",
-      "unvan": "Chief Operating Officer",
-      "kod": "S",
-      "adet": 408.0,
-      "fiyat": 707.2,
-      "tutar": 288537.60000000003,
-      "plan_10b5_1": true,
-      "sonrasi": 75805.0,
-      "sahiplik": "I",
-      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015980/xslF345X06/ownership.xml"
-     }
-    ],
-    "hafta_kodlari": {
-     "S": 5
-    },
+    "hafta_islemleri": [],
+    "hafta_kodlari": {},
     "uyarilar": [
      {
       "etiket": "dikkat",
@@ -426,10 +358,10 @@
     ],
     "ozet_90g": {
      "S": {
-      "islem": 103,
-      "adet": 150796.0,
-      "tutar": 102850353.9629,
-      "plan_10b5_1_adet": 148243.0
+      "islem": 98,
+      "adet": 149330.0,
+      "tutar": 101959245.86289999,
+      "plan_10b5_1_adet": 146777.0
      },
      "diger": {
       "islem": 6,
@@ -475,6 +407,15 @@
        "saglayici": "Finnhub"
       },
       {
+       "zaman": "2026-10-22T23:52:00+00:00",
+       "tarih": "2026-10-22",
+       "baslik": "Meta makes a deal to keep Zuckerberg in California before Prop 40 vote",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNdW0xUkZnMDBINGl3MDBfMjVnUzItSVlibWx4Ry1vWExwWFFtQ1ozM1lzcUZqejhPb2ZvRll0MDFTOWVSLUJtYXR4Y1MxdmZOWlJjdmxTTERTemlob1Bsd2hqbDdVOXEtTklXcU5hdWdvRzBvbHNTTUpUbDg5Q2pyYjUxLU1xRkplZHBpTzRkajBSbWowWFVJU3c4SFBMZjZ3TFNDcXZlMEtfQUNQLWwyTVpoWExCNkp6WWRIbnc2ZzlHV0hxX0d5Zkc3a2Z0a0xabTFkbHhROFVSWXB2clNCbQ?oc=5",
+       "kaynak": "USA Today",
+       "saglayici": "Google News RSS"
+      },
+      {
        "zaman": "2026-10-22T23:50:41+00:00",
        "tarih": "2026-10-22",
        "baslik": "Mark Zuckerberg’s creative plan to pay California’s proposed billionaire tax without losing control of Meta",
@@ -493,6 +434,15 @@
        "saglayici": "Finnhub"
       },
       {
+       "zaman": "2026-10-22T23:27:59+00:00",
+       "tarih": "2026-10-22",
+       "baslik": "Ro Khanna Says Zuckerberg’s California Deal Undercuts Billionaire Tax Exodus Warnings: ‘Gavin, Can You and Sergey Brin Stop...’",
+       "ozet": "Ro Khanna says Zuckerberg’s California deal undermines claims that a proposed billionaire tax will drive the wealthy out of the state.",
+       "url": "https://finnhub.io/api/news?id=c75afd0ee27dc387439a813bd4738c4be182a7b999940012ceb66a66624486db",
+       "kaynak": "Benzinga",
+       "saglayici": "Finnhub"
+      },
+      {
        "zaman": "2026-10-22T23:19:00+00:00",
        "tarih": "2026-10-22",
        "baslik": "How Skadden, Gibson Dunn Helped Mark Zuckerberg Keep His House",
@@ -508,6 +458,15 @@
        "ozet": "In its third-quarter earnings transcript, CEO Mark Zuckerberg touted the artificial intelligence agent’s download numbers and outlined its benefits.",
        "url": "https://finnhub.io/api/news?id=2b4ad31ba2ed24e757b4b82df278683e139be57a63f4157499f4bc1e114f5667",
        "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-22T22:32:48+00:00",
+       "tarih": "2026-10-22",
+       "baslik": "Peter Schiff Warns Stock Market Crash Before Midterms 'Is Not Outside the Realm of Possibility' — 'This Is October'",
+       "ozet": "Peter Schiff warns of a possible stock market crash before the midterms, citing inflation, a weak economy and costly AI financing.",
+       "url": "https://finnhub.io/api/news?id=f39d74118dd2af3fa6b28f6d2c59ecab821d47421dbba78cfd37a3222634b008",
+       "kaynak": "Benzinga",
        "saglayici": "Finnhub"
       },
       {
@@ -797,33 +756,6 @@
        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZDl2dHRxZlAwV0xVT0pMUm9mczVmbDZla2dEMnVLNGpSZUdzREF1RkczU3ZpeVQwSzJaZEJsVnBZcjlsREZjeWM4Y0JjRkwyeVNZZXdMcXFkVXVXOWtwS21LTjliVHRpOUdaTng4QmRBMUhmV0g3Q3VfWms3S3VoMHBJcl9sdWJxcEhhb2N3T2lHYzBmZzI4dkprVXpjNGNacHYwNm8yek5zcG9oelVwRURtOUtrd2lXYi1ZT2xaekZVWF9GZzNaWm5SUXlCWno10gHQAUFVX3lxTE5kOXZ0dHFmUDBXTFVPSkxSb2ZzNWZsNmVrZ0QydUs0alJlR3NEQXVGRzNTdml5VDBLMlpkQmxWcFlyOWxERmN5YzhjQmNGTDJ5U1lld0xxcWRVdVc5a3BLbUtOOWJUdGk5R1pOeDhCZEExSGZXSDdDdV9aazdLdWgwcElyX2x1YnFwSGFvY3dPaUdjMGZnMjh2SmtVemM0Y1pwdjA2bzJ6TnNwb2h6VXBFRG05S2t3aVdiLVlPbFp6RlVYX0ZnM1pablJReUJaejU?oc=5",
        "kaynak": "ABC30 Fresno",
        "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-22T18:32:00+00:00",
-       "tarih": "2026-10-22",
-       "baslik": "Mark Zuckerberg said demand for Meta’s Muse was so high, he had to get Stripe to raise credit limits",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPeERid0lvNXVqb0l6VkVMM1BsQ2lRcHU4bkJONmpfYzloNTZVWkktTEZOU0txX1NKLUhEVkZaX0N2UnIzU1c2SUtHZFRDeWdDY05NU1dEWlg4Qkt1V2hCNDU5WGprTHBldHRPWERiOEFnNmR3Ykt6M0xCMWNrQ2ZFYzB4UXE5SmlkT3ZJNmZTRQ?oc=5",
-       "kaynak": "Fortune",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-22T18:30:09+00:00",
-       "tarih": "2026-10-22",
-       "baslik": "Zuckerberg Wants to Keep His Votes",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNR3NsLUE1R2w0YkVuQzRjRGcySkdvVUVWdkpzM3AxNTRxUWJDSHdhTHNlNXVYOEZwS1lyZzRad2pPbHBObTlHUlROWDlNZ2J5M2dZUDBTbFowMERsT2UwTzVlNm5kcW56M2JjX0ZJZFFORk1SRl9JdVZSNWJvNGU4WUdyOXFSX1hFbndzWkRIWWRYNWhaTEE?oc=5",
-       "kaynak": "Bloomberg.com",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-22T18:29:20+00:00",
-       "tarih": "2026-10-22",
-       "baslik": "Meta, AI Stocks Tumble As AI Spending Fears Reignite",
-       "ozet": "Meta saw an initial rally after reporting earnings, before a sharp reversal. It's all about AI spending.",
-       "url": "https://finnhub.io/api/news?id=b2d13986b6ba08633a0952821918a8c2ffdd91b2df4527f4e8b2d73e77c61000",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
       }
      ],
      "sec_bildirimleri": [
@@ -878,15 +810,6 @@
      "aciklama": "8-K",
      "accn": "0001628280-26-066700",
      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-20261019.htm"
-    },
-    {
-     "form": "144",
-     "tarih": "2026-10-19",
-     "donem": "",
-     "items": "",
-     "aciklama": "",
-     "accn": "0001921094-26-001104",
-     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000192109426001104/xsl144X01/primary_doc.xml"
     }
    ],
    "bilanco": {
@@ -920,19 +843,17 @@
     }
    ],
    "cumleler": [
-    "Hisse bu hafta −%11,9 (QQQ −%3,2, XLC −%4,5); 52 haftalık zirveden −%16,6 uzakta.",
+    "Hisse bu hafta −%9,4 (QQQ −%0,8, XLC −%4,4); 52 haftalık zirveden −%17,4 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%16,6: −%15 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 1,5x (tez sağlamsa).",
+    "Zirveden −%17,4: −%15 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 1,5x (tez sağlamsa).",
     "2026-10-22 günü −%7,0 büyük hareket (Hisse −%7,0, sektör/piyasa −%1,4: hareketin çoğu şirkete özel görünüyor.)",
     "Yeni 10-Q dosyalandı (2026-10-22); bilanço analizi güncellendi."
    ],
    "insider_ozet": {
-    "islem": 5,
-    "satis_tutar": 1113840.0,
+    "islem": 0,
+    "satis_tutar": 0,
     "alim_tutar": 0,
-    "kodlar": {
-     "S": 5
-    }
+    "kodlar": {}
    },
    "sonraki_bilanco": {
     "tarih": "2027-01-26",
@@ -942,29 +863,29 @@
     "ceyrek": 4,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-23T09:40:17+00:00"
+    "guncelleme": "2026-10-26T10:37:40+00:00"
    }
   },
   {
    "ticker": "NOW",
    "ad": "ServiceNow",
    "donem": [
-    "2026-10-17",
-    "2026-10-23"
+    "2026-10-20",
+    "2026-10-26"
    ],
    "fiyat": {
-    "son": 157.0,
-    "tarih": "2026-10-22",
-    "haftalik": 5.67,
-    "aylik": 14.6,
-    "zirveden": -17.04,
+    "son": 158.96,
+    "tarih": "2026-10-23",
+    "haftalik": 11.97,
+    "aylik": 12.91,
+    "zirveden": -16.01,
     "zirve_52h": 189.258,
     "zirve_tarih": "2025-10-27",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": -3.23,
-    "IGV": -0.8
+    "QQQ": -0.76,
+    "IGV": 5.99
    },
    "tez": {
     "genel": "sari",
@@ -1015,14 +936,14 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_ok",
-    "mesaj": "Zirveden −%17,0: −%15 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 1,5x (tez sağlamsa).",
+    "mesaj": "Zirveden −%16,0: −%15 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 1,5x (tez sağlamsa).",
     "tetiklenen": {
      "dusus": 15,
      "not": "DCA 1,5x (tez sağlamsa)."
     },
-    "zirveden_uzaklik": -17.04,
-    "dusus_kaynagi": "piyasa_sektor",
-    "dusus_kaynagi_aciklama": "Hissenin düşüşü karşılaştırma endeksleriyle benzer: ağırlıkla piyasa/sektör kaynaklı.",
+    "zirveden_uzaklik": -16.01,
+    "dusus_kaynagi": "karma",
+    "dusus_kaynagi_aciklama": "Hisse bazı endekslerden belirgin kötü, bazılarına yakın: sektör ve şirkete özel etkiler karışık.",
     "kosul_saglaniyor": true
    },
    "insider": {
@@ -1035,7 +956,7 @@
      },
      {
       "etiket": "dikkat",
-      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %85.19 yükseldi."
+      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %76.29 yükseldi."
      }
     ],
     "kumelenmis_satislar": [
@@ -1103,9 +1024,9 @@
    },
    "sinyaller": [],
    "cumleler": [
-    "Hisse bu hafta +%5,7 (QQQ −%3,2, IGV −%0,8); 52 haftalık zirveden −%17,0 uzakta.",
+    "Hisse bu hafta +%12,0 (QQQ −%0,8, IGV +%6,0); 52 haftalık zirveden −%16,0 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%17,0: −%15 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 1,5x (tez sağlamsa)."
+    "Zirveden −%16,0: −%15 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 1,5x (tez sağlamsa)."
    ],
    "insider_ozet": {
     "islem": 0,
@@ -1116,34 +1037,34 @@
    "sonraki_bilanco": {
     "tarih": "2026-10-28",
     "saat": "amc",
-    "eps_tahmin": 1.0379,
-    "gelir_tahmin": 4135579693,
+    "eps_tahmin": 1.0341,
+    "gelir_tahmin": 4135607751,
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-23T09:40:20+00:00"
+    "guncelleme": "2026-10-26T10:37:43+00:00"
    }
   },
   {
    "ticker": "AAOI",
    "ad": "Applied Optoelectronics",
    "donem": [
-    "2026-10-17",
-    "2026-10-23"
+    "2026-10-20",
+    "2026-10-26"
    ],
    "fiyat": {
-    "son": 68.07,
-    "tarih": "2026-10-22",
-    "haftalik": -18.7,
-    "aylik": -36.38,
-    "zirveden": -69.49,
+    "son": 67.51,
+    "tarih": "2026-10-23",
+    "haftalik": -10.67,
+    "aylik": -33.2,
+    "zirveden": -69.74,
     "zirve_52h": 223.1,
     "zirve_tarih": "2026-05-13",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": -3.23,
-    "SMH": -6.35
+    "QQQ": -0.76,
+    "SMH": -2.33
    },
    "tez": {
     "genel": "kirmizi",
@@ -1205,12 +1126,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%69,5: −%55 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Pozisyon büyüklüğünü sınırla; tez gerçekten sağlam mı yeniden yaz.",
+    "mesaj": "Zirveden −%69,7: −%55 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Pozisyon büyüklüğünü sınırla; tez gerçekten sağlam mı yeniden yaz.",
     "tetiklenen": {
      "dusus": 55,
      "not": "Pozisyon büyüklüğünü sınırla; tez gerçekten sağlam mı yeniden yaz."
     },
-    "zirveden_uzaklik": -69.49,
+    "zirveden_uzaklik": -69.74,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 15 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -1313,6 +1234,15 @@
        "ozet": "",
        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWnZna1djWkNTQ0dtZ3BTWUxhb3JwNWk0UVgwQ2g4ZGFuZHd4UFA2TTNnd2IyWTFIYjlZdHpMVWlPTmZmcVlxcnFSaHQ2eUdhTVJNMHFZWFRORU1IU1l2cXB4ekN2YkRvZ0FGbnUwVEVoYXNUc0twQkxQRXVsc3dkRXFrUTdHMldqbklpV25odzB0cUUtSGF5UVRlc2g3VFVlQ0UtQUF2NVF3WXhnc0RyU3Q5NkFXZFhvaFhuRA?oc=5",
        "kaynak": "MarketBeat",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-22T18:30:39+00:00",
+       "tarih": "2026-10-22",
+       "baslik": "Applied Optoelectronics Drops 6.11% as Storage and Cloud Stocks Slide",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1RNmU4QUU1bmNBTU9SUl9IYjJ2U0NBVHJjaHdrN2pMcnluOTR3SzZ6eldzdE1wYlZNUTV5Q1E5TVB4eUdpT3BWYmlvYkY3cEticUR3cmhCdS1sUQ?oc=5",
+       "kaynak": "www.tokenpost.com",
        "saglayici": "Google News RSS"
       },
       {
@@ -1426,9 +1356,9 @@
    },
    "sinyaller": [],
    "cumleler": [
-    "Hisse bu hafta −%18,7 (QQQ −%3,2, SMH −%6,3); 52 haftalık zirveden −%69,5 uzakta.",
+    "Hisse bu hafta −%10,7 (QQQ −%0,8, SMH −%2,3); 52 haftalık zirveden −%69,7 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%69,5: −%55 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Pozisyon büyüklüğünü sınırla; tez gerçekten sağlam mı yeniden yaz.",
+    "Zirveden −%69,7: −%55 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Pozisyon büyüklüğünü sınırla; tez gerçekten sağlam mı yeniden yaz.",
     "2026-10-22 günü −%12,0 büyük hareket (Sektör ETF ortalaması −%6,0: sektör hareketi belirgin.)"
    ],
    "insider_ozet": {
@@ -1445,29 +1375,29 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-23T09:40:23+00:00"
+    "guncelleme": "2026-10-26T10:37:46+00:00"
    }
   },
   {
    "ticker": "IONQ",
    "ad": "IonQ",
    "donem": [
-    "2026-10-17",
-    "2026-10-23"
+    "2026-10-20",
+    "2026-10-26"
    ],
    "fiyat": {
-    "son": 31.16,
-    "tarih": "2026-10-22",
-    "haftalik": -9.29,
-    "aylik": -23.51,
-    "zirveden": -56.76,
+    "son": 31.27,
+    "tarih": "2026-10-23",
+    "haftalik": -0.03,
+    "aylik": -26.49,
+    "zirveden": -56.61,
     "zirve_52h": 72.07,
     "zirve_tarih": "2026-05-29",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": -3.23,
-    "SMH": -6.35
+    "QQQ": -0.76,
+    "SMH": -2.33
    },
    "tez": {
     "genel": "kirmizi",
@@ -1528,12 +1458,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%56,8: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "mesaj": "Zirveden −%56,6: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "tetiklenen": {
      "dusus": 35,
      "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -56.76,
+    "zirveden_uzaklik": -56.61,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -1604,9 +1534,9 @@
    },
    "sinyaller": [],
    "cumleler": [
-    "Hisse bu hafta −%9,3 (QQQ −%3,2, SMH −%6,3); 52 haftalık zirveden −%56,8 uzakta.",
+    "Hisse bu hafta −%0,0 (QQQ −%0,8, SMH −%2,3); 52 haftalık zirveden −%56,6 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%56,8: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
+    "Zirveden −%56,6: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
    ],
    "insider_ozet": {
     "islem": 0,
@@ -1615,36 +1545,36 @@
     "kodlar": {}
    },
    "sonraki_bilanco": {
-    "tarih": "2026-11-11",
+    "tarih": "2026-11-05",
     "saat": "",
     "eps_tahmin": -0.3843,
     "gelir_tahmin": 144457602,
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-23T09:40:27+00:00"
+    "guncelleme": "2026-10-26T10:37:50+00:00"
    }
   },
   {
    "ticker": "ORCL",
    "ad": "Oracle",
    "donem": [
-    "2026-10-17",
-    "2026-10-23"
+    "2026-10-20",
+    "2026-10-26"
    ],
    "fiyat": {
-    "son": 125.54,
-    "tarih": "2026-10-22",
-    "haftalik": -6.64,
-    "aylik": -15.86,
-    "zirveden": -55.69,
+    "son": 126.16,
+    "tarih": "2026-10-23",
+    "haftalik": -1.61,
+    "aylik": -12.73,
+    "zirveden": -55.47,
     "zirve_52h": 283.33,
     "zirve_tarih": "2025-10-24",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": -3.23,
-    "IGV": -0.8
+    "QQQ": -0.76,
+    "IGV": 5.99
    },
    "tez": {
     "genel": "sari",
@@ -1703,12 +1633,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_ok",
-    "mesaj": "Zirveden −%55,7: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "mesaj": "Zirveden −%55,5: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "tetiklenen": {
      "dusus": 35,
      "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -55.69,
+    "zirveden_uzaklik": -55.47,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": true
@@ -1768,9 +1698,9 @@
    },
    "sinyaller": [],
    "cumleler": [
-    "Hisse bu hafta −%6,6 (QQQ −%3,2, IGV −%0,8); 52 haftalık zirveden −%55,7 uzakta.",
+    "Hisse bu hafta −%1,6 (QQQ −%0,8, IGV +%6,0); 52 haftalık zirveden −%55,5 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%55,7: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
+    "Zirveden −%55,5: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
    ],
    "insider_ozet": {
     "islem": 0,
@@ -1786,29 +1716,29 @@
     "ceyrek": 2,
     "yil": 2027,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-23T09:40:30+00:00"
+    "guncelleme": "2026-10-26T10:37:53+00:00"
    }
   },
   {
    "ticker": "CEG",
    "ad": "Constellation Energy",
    "donem": [
-    "2026-10-17",
-    "2026-10-23"
+    "2026-10-20",
+    "2026-10-26"
    ],
    "fiyat": {
-    "son": 255.21,
-    "tarih": "2026-10-22",
-    "haftalik": -7.2,
-    "aylik": -3.13,
-    "zirveden": -36.42,
+    "son": 253.45,
+    "tarih": "2026-10-23",
+    "haftalik": -6.6,
+    "aylik": -3.95,
+    "zirveden": -36.86,
     "zirve_52h": 401.43,
     "zirve_tarih": "2025-10-29",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "SPY": -1.01,
-    "XLU": 2.93
+    "SPY": -0.43,
+    "XLU": 0.83
    },
    "tez": {
     "genel": "kirmizi",
@@ -1861,12 +1791,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%36,4: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "mesaj": "Zirveden −%36,9: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "tetiklenen": {
      "dusus": 35,
      "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -36.42,
+    "zirveden_uzaklik": -36.86,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -2035,6 +1965,15 @@
        "ozet": "",
        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNX3dOQlpEZjd0T1BnMExHTk5JMFB2RkVGYVBWRXZmX2xZRFJQYVY5bFdnTUpwTmdQM05MT3hCOWdTQjlOZlBPY1ZJc1JlcjlWTkdzN1pORnpJaUJxSVNqOWlZdWZWQzY0SEhWQi1UU05taU9NV0NGbm9PMDM3VVRIbGd1OTQ0Tks0clJQUWJIcXBJZzVsNUNCMTlBTm1JSDl3OS1mR21MTnh2akRsQ2xyVVZJZ0pQeVlQQ0ZiZldtb0N5TmZLYzFNRm1kdjI5Zw?oc=5",
        "kaynak": "AD HOC NEWS",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-22T09:31:00+00:00",
+       "tarih": "2026-10-22",
+       "baslik": "HSBC Initiates Constellation Energy(CEG.US) With Buy Rating, Announces Target Price $335",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNZ2lTdlo4TGg5WE1DXzlIeHFoT0M2d3VmcjJueV9lWWRFVWhOQ2F2ZnlBbjFCbkpzczNZNjNzNnl0U1Q2bndmQ2laWldZTEI4ZUNWN2RIX1RSMzJSdC15TkdiYzlYLWN4SXZRZE8xRmdDSTU3R2tlc2dPQ2hmdGxTNUtxT2RrNzBZdmx3bWg4cGVIakQ2OU1lYjJEWDRYSS15UGhmNnhyQVU2SkZVdEVoZmNOUzZoTWdxbkE?oc=5",
+       "kaynak": "Moomoo",
        "saglayici": "Google News RSS"
       },
       {
@@ -2209,6 +2148,15 @@
        "saglayici": "Google News RSS"
       },
       {
+       "zaman": "2026-10-21T07:00:00+00:00",
+       "tarih": "2026-10-21",
+       "baslik": "Constellation Energy Corp (Derivatives) to Russian Ruble Price Today | Live CEG to RUB Converter & Exchange Rate",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE94MVN4RUROQ3VOZUNnTlNlZGxGckNEY1lqMXBMS2E3UHQxdjlNczIwSUdhbkpPczYyUllKNVplc3RlZk5UZjlMczZSdmtOYUdtZHpPR3lUQ2hRc012RGprNzB2cjZ6RGNXU2ZDaVVfMUUzVmN2RjlkUg?oc=5",
+       "kaynak": "CryptoRank",
+       "saglayici": "Google News RSS"
+      },
+      {
        "zaman": "2026-10-21T06:08:28+00:00",
        "tarih": "2026-10-21",
        "baslik": "Constellation Energy stock pre-market at EUR 233.70: clean energy group",
@@ -2294,9 +2242,9 @@
     }
    ],
    "cumleler": [
-    "Hisse bu hafta −%7,2 (SPY −%1,0, XLU +%2,9); 52 haftalık zirveden −%36,4 uzakta.",
+    "Hisse bu hafta −%6,6 (SPY −%0,4, XLU +%0,8); 52 haftalık zirveden −%36,9 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%36,4: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "Zirveden −%36,9: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "2026-10-22 günü −%5,7 büyük hareket (Hisse −%5,7, sektör/piyasa +%0,4: hareketin çoğu şirkete özel görünüyor.)"
    ],
    "insider_ozet": {
@@ -2313,29 +2261,29 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-23T09:40:33+00:00"
+    "guncelleme": "2026-10-26T10:37:56+00:00"
    }
   },
   {
    "ticker": "RGTI",
    "ad": "Rigetti Computing",
    "donem": [
-    "2026-10-17",
-    "2026-10-23"
+    "2026-10-20",
+    "2026-10-26"
    ],
    "fiyat": {
-    "son": 11.48,
-    "tarih": "2026-10-22",
-    "haftalik": -9.11,
-    "aylik": -30.51,
-    "zirveden": -74.07,
+    "son": 11.52,
+    "tarih": "2026-10-23",
+    "haftalik": -2.37,
+    "aylik": -28.02,
+    "zirveden": -73.98,
     "zirve_52h": 44.27,
     "zirve_tarih": "2025-10-31",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": -3.23,
-    "IGV": -0.8
+    "QQQ": -0.76,
+    "IGV": 5.99
    },
    "tez": {
     "genel": "kirmizi",
@@ -2396,12 +2344,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%74,1: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "mesaj": "Zirveden −%74,0: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "tetiklenen": {
      "dusus": 35,
      "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -74.07,
+    "zirveden_uzaklik": -73.98,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -2484,9 +2432,9 @@
    },
    "sinyaller": [],
    "cumleler": [
-    "Hisse bu hafta −%9,1 (QQQ −%3,2, IGV −%0,8); 52 haftalık zirveden −%74,1 uzakta.",
+    "Hisse bu hafta −%2,4 (QQQ −%0,8, IGV +%6,0); 52 haftalık zirveden −%74,0 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%74,1: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
+    "Zirveden −%74,0: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
    ],
    "insider_ozet": {
     "islem": 0,
@@ -2502,7 +2450,7 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-23T09:40:37+00:00"
+    "guncelleme": "2026-10-26T10:38:00+00:00"
    }
   }
  ],

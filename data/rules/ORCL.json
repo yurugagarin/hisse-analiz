@@ -2,7 +2,7 @@
  "ticker": "ORCL",
  "onay": "taslak",
  "kosul": "tez_saglam",
- "zirveden_uzaklik": -55.69,
+ "zirveden_uzaklik": -55.47,
  "kademeler": [
   {
    "dusus": 15,
@@ -24,23 +24,23 @@
   {
    "sembol": "QQQ",
    "zirveden_uzaklik": -7.27,
-   "degisim_1a": -5.75,
-   "degisim_3a": 1.81,
-   "fark_puan": -48.42
+   "degisim_1a": -4.97,
+   "degisim_3a": 2.95,
+   "fark_puan": -48.2
   },
   {
    "sembol": "IGV",
-   "zirveden_uzaklik": -7.14,
-   "degisim_1a": 1.85,
-   "degisim_3a": 24.82,
-   "fark_puan": -48.55
+   "zirveden_uzaklik": -5.54,
+   "degisim_1a": 2.3,
+   "degisim_3a": 25.7,
+   "fark_puan": -49.93
   }
  ],
- "guncelleme": "2026-10-23T09:40:33+00:00",
+ "guncelleme": "2026-10-26T10:37:56+00:00",
  "not": "Otomatik işlem yok. Bu bölüm önceden yazdığın kuralları hatırlatır.",
  "dusus_kaynagi": "sirkete_ozel",
  "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
- "en_iyi_fark": -48.42,
+ "en_iyi_fark": -48.2,
  "tetiklenen": {
   "dusus": 35,
   "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
@@ -48,5 +48,5 @@
  "tez_durumu": "sari",
  "kosul_saglaniyor": true,
  "durum": "tetiklendi_kosul_ok",
- "mesaj": "Zirveden −%55,7: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
+ "mesaj": "Zirveden −%55,5: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
 }

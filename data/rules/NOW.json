@@ -2,7 +2,7 @@
  "ticker": "NOW",
  "onay": "taslak",
  "kosul": "tez_saglam",
- "zirveden_uzaklik": -17.04,
+ "zirveden_uzaklik": -16.01,
  "kademeler": [
   {
    "dusus": 15,
@@ -24,23 +24,23 @@
   {
    "sembol": "QQQ",
    "zirveden_uzaklik": -7.27,
-   "degisim_1a": -5.75,
-   "degisim_3a": 1.81,
-   "fark_puan": -9.77
+   "degisim_1a": -4.97,
+   "degisim_3a": 2.95,
+   "fark_puan": -8.74
   },
   {
    "sembol": "IGV",
-   "zirveden_uzaklik": -7.14,
-   "degisim_1a": 1.85,
-   "degisim_3a": 24.82,
-   "fark_puan": -9.9
+   "zirveden_uzaklik": -5.54,
+   "degisim_1a": 2.3,
+   "degisim_3a": 25.7,
+   "fark_puan": -10.47
   }
  ],
- "guncelleme": "2026-10-23T09:40:23+00:00",
+ "guncelleme": "2026-10-26T10:37:46+00:00",
  "not": "Otomatik işlem yok. Bu bölüm önceden yazdığın kuralları hatırlatır.",
- "dusus_kaynagi": "piyasa_sektor",
- "dusus_kaynagi_aciklama": "Hissenin düşüşü karşılaştırma endeksleriyle benzer: ağırlıkla piyasa/sektör kaynaklı.",
- "en_iyi_fark": -9.77,
+ "dusus_kaynagi": "karma",
+ "dusus_kaynagi_aciklama": "Hisse bazı endekslerden belirgin kötü, bazılarına yakın: sektör ve şirkete özel etkiler karışık.",
+ "en_iyi_fark": -8.74,
  "tetiklenen": {
   "dusus": 15,
   "not": "DCA 1,5x (tez sağlamsa)."
@@ -48,5 +48,5 @@
  "tez_durumu": "sari",
  "kosul_saglaniyor": true,
  "durum": "tetiklendi_kosul_ok",
- "mesaj": "Zirveden −%17,0: −%15 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 1,5x (tez sağlamsa)."
+ "mesaj": "Zirveden −%16,0: −%15 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 1,5x (tez sağlamsa)."
 }
