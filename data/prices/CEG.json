@@ -1,7 +1,7 @@
 {
  "sembol": "CEG",
- "kaynak": "Nasdaq.com (historical API)",
- "guncelleme": "2026-10-27T10:06:35+00:00",
+ "kaynak": "Nasdaq.com (historical API) + Finnhub quote",
+ "guncelleme": "2026-10-28T00:57:09+00:00",
  "taze": true,
  "kapanislar": [
   [
@@ -2123,6 +2123,10 @@
   [
    "2026-10-26",
    252.48
+  ],
+  [
+   "2026-10-27",
+   258.98
   ]
  ],
  "finnhub_52h_zirve": 406.043,

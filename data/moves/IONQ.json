@@ -1,8 +1,384 @@
 {
  "ticker": "IONQ",
  "esik_yuzde": 5,
- "guncelleme": "2026-10-27T10:07:14+00:00",
+ "guncelleme": "2026-10-28T00:57:51+00:00",
  "hareketler": [
+  {
+   "tarih": "2026-10-27",
+   "claude": null,
+   "onceki_gun": "2026-10-26",
+   "hareket": 7.12,
+   "yon": "yukari",
+   "benchmark": {
+    "QQQ": 1.27,
+    "SMH": 3.02
+   },
+   "on_siniflama": "sektor",
+   "on_siniflama_aciklama": "Sektör ETF ortalaması +%3,0: sektör hareketi belirgin.",
+   "basliklar": [
+    {
+     "zaman": "2026-10-27T23:33:38+00:00",
+     "tarih": "2026-10-27",
+     "baslik": "IBM, Oracle, Intel, and IonQ Join Objections To OKX-ICE Tokenized US Shares: 10 outlets compared",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNdTlVNlR3N2NCQ0QxMnBjcU92YzNJcDZyWG5iWEhrbHVZa1c3VkRfMzNucllvOUJUUmJpWXotZDVRMWs4X3JveG5NUVRmX1VpUDZvcWU3NUJmUS1iMDc4Z25yZGhvNlh5bmlqaUsxMXZhZkRKMkt4cHBMOHBkTm5JWkxpUUVzUHl0LVlCWVhtcm54SXJKQUJMSkZucy1VTzFkcm9BQlpXWHBZOEZEeGxGTE5Cbl9LMTBRRktlSl9aNGNDSEh1UVdscmc1VDQyOTh6c3lwVktxR3pKczJXRlc0?oc=5",
+     "kaynak": "NewsCord",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-27T21:26:41+00:00",
+     "tarih": "2026-10-27",
+     "baslik": "Intel, IBM, Oracle and IonQ latest to object to OKX-ICE tokenized stocks",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxON25wMEZfUXUtS2RuZDVwQXk2cGdGWEVTaVlfcGt0M0gyLVlaUmYtX3lSemtYdkFRdG1ZbnY0UXoxaldCNTVtTkZBdlZGYmV2b3F6NjNBdV96WEJQVmJ3RDRFS2p6WEdXSDE5UGpYNmN4NVhYcjBzaHJ4dVV4Z3MzeXhuUU5nZnk2eGJ1VE9VckZfOXI2SFI0MEZhYlcyd254NWFEcHhJQ1JjdjZ4aV9ETVg4SHAxWUlRVEtoQlFETlJlOFRjU1BWZS1zQWlmcDQ?oc=5",
+     "kaynak": "TradingView",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-27T19:42:05+00:00",
+     "tarih": "2026-10-27",
+     "baslik": "IonQ Jumped 7%, Rigetti Up 8% on Intel’s $2.3 Billion Quantum Buy: “Full-Stack Quantum Computing Business”",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbW9qelRVVTVibmctdDBxeE5xRkxLeWUycEFydDFTTzlrS2hvVl9aRnNQdEJtUmtMa2xvQ2h5WjM5aTJ5NWx0NjNycnh0ZmhuRjJRVDFQOUVDd0tzNnlrQkstZUREeGh0VlR3b1FURm1Kd2wzTkI4WUdINHh0RWVtYVUyeHZJVXB3U2tDaWZ5N3BPR2IwMW9NcnRueFhMSzR0akNaX2R2ZkxTLUlaWk9LTEJlMFJGY0Q2U3B4YXNJR1hZQQ?oc=5",
+     "kaynak": "TIKR.com",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-27T18:56:00+00:00",
+     "tarih": "2026-10-27",
+     "baslik": "IonQ Secures $7.5 Million Phase 2 AFRL Allocation to Expand Rome, NY Quantum Network with Free-Space Optics and Frequency Conversion",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPY2hCUDZSNk1LM0c0SDh1cnJOejJGblNyNm9BUi1BLUJjU0pveFFUVU9GODZhTGFFRi04Y3VfSWNrSUVIbTloQVZjWDZPMzY2VzJmVEYyQ0RTWXAzdDVkTzBUM2dCUy1pVWRDVXZoUDdYYzZOMGdZckJyb0xYbUlGUTh6NHM2MEJkVl9VVU9YOTN2VzZnWEVDZDBZclZkaXFxVUxqXy1rUVpyNVl4YU1fM3I3T0doUDhvWlRONGs0a2d4NEtUZVB3aUpPbTJFcVVSY0EyRkdJamtYMFpiR2gxM195eU5jd3B4OE5XUVhYR3ktSG9kaWNvdExn0gH_AUFVX3lxTE5zTmxXaEQwOUJzUDVoWG5GaElUd2I3UER5WC1zdlhnMzRJVmJUckpic3F3b29ER2I2ZGwwZ1RKdUoxNV9ONFlXNlREcDNiVzF1Vy1XejVMRGd0N3AzZ1FvN1J3aTZPaWlZaWN5Sm8xZzFWZEhGZVBna1lfbk9TOWk2RWpMdjNFZHhrdHF0Y0R0UU1CNzh3bkFWSTduYVR5bFpYMy1jYmZJRHhJUUlmdTlOTmdzRndwbHhVbjktaE5UMEFRVkZSUXhQWWNFZ0JsZmllNEtWTmdJR2hIUUQyMU5udXctMXVYTmhtMkJBT0ZhaHc0eWQ2RVdnTjRVZHkwRQ?oc=5",
+     "kaynak": "Quantum Computing Report",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-27T15:58:42+00:00",
+     "tarih": "2026-10-27",
+     "baslik": "IonQ Expands AFRL Quantum Network With New Award",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBudnVkX1hhNDRwa3MweXBHSUJ2QU1VdG5ENHprSkZ0V3FLMk1wUVhWNVlXcUx6V3lidXlCV3lmYUhNZ2dCQWRfLXVrTklEQUw2M3hZM25oREQ3RzY5dWlkSWpiQ19WZ2NER1YyZDJLaUpVZWZjSi1QdG9TNTlDYzg?oc=5",
+     "kaynak": "ExecutiveBiz",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-27T15:48:48+00:00",
+     "tarih": "2026-10-27",
+     "baslik": "Ionq, Inc Receives $7.5 Million in Follow-On Funding from the Air Force Research Laboratory",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNZ0k4WTlMM3JqRFRkLWhnV2s2YzZxdUluR2t2cEZ4RVFUc0NlMmVZOGV6eU9NRUtuTzZjNGVlZlpKanprMkFvdWZLZWRyMWxkZU94VzdEZzFfMUg3ekdEVmRZcGRYTnYxWFBmMVJ4ZVJ1ay0yNWxrbE5xbEpyVzRmMmxocG1JbUYtbjByeVI2SG00bVRJem5LMzVNbGpwT2x0RWFqWV9Pek9KVEVnd2xPVzRkMlhSRld5SnpMVXFVck5WNFplOEp0MGkwbUpVLUhPcE91aVU2OU5KUQ?oc=5",
+     "kaynak": "marketscreener.com",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-27T15:31:05+00:00",
+     "tarih": "2026-10-27",
+     "baslik": "IonQ Stock Moves Higher: What's Going On?",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQb1lhTWc2VGZwWU1UUGQ1SHE5XzJIanJzcW5VcEFzTUk0VUNmUEd3TkYxdzh5VUFaRUZSNEhWZHpBeS1QTDdHQzhwejkwTVBGMXJoZDZreUswNjJhWWg3OEpMZWdVYkthQ2pGY1l3aDFjVldaNFVyOFk5OU9HcFRZWGsyRFFJVDJRSkpNU1VLcUFIQzE4MVA1Y2liblRRN2Nf?oc=5",
+     "kaynak": "Benzinga",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-27T14:15:49+00:00",
+     "tarih": "2026-10-27",
+     "baslik": "IonQ (IONQ) Secures $7.5M Air Force Funding to Expand Quantum Ne",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcnVDdG1tbzZjd1BtaGwwaVlaNXdkM1VON2NrUUllbExjMmhCOU9LU1hyRnJjd3hGMFpjUlkzX0p1aVk4OXJrRkpSdlJiVU1xLXVlbnpxVllaZVI3MXhoVGZ4YXhhb3RCWGV6Tm1rZUlXZzJXeUJuV1FJSVctQTdhZnZRdlFITzc3ZTUwSmRRNm81d2ZnUUs4WDl0alEtYWhobUlITFVEWVFlTkFrU3pqWk9xZWZIUQ?oc=5",
+     "kaynak": "GuruFocus",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-27T13:36:49+00:00",
+     "tarih": "2026-10-27",
+     "baslik": "IonQ receives $7.5M from Air Force for quantum network By Investing.com",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcFBIRWdFWUp6dktNaGUtR1Z6dDItVTA0NjVCbVJLUjBmMzlzTVJjUmp3S2pVWGZLclpYVER6ZVVBUGZOYXhId3FOUjRkMUxIQXFOOU5BNUFLQkp0MF80Z0UyM04tT1pYcDVYbkUwSk1PaWFoaUZ2NGFGTERZRGhyVVBXWFBBc3hRb3FBYnRQNWJWSUhmLUtndkNTN3NxSndnRHNoUUdkbThWenJGRlFWVWo1dw?oc=5",
+     "kaynak": "Investing.com Nigeria",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-27T12:17:14+00:00",
+     "tarih": "2026-10-27",
+     "baslik": "IonQ wins $7.5M follow-on US Air Force quantum networking contract",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUHdXbDFvcVNpUE1XcTVqUEhTNFowVmI2VXVrX3NmaVNEUEcxV0NGQUxPUWF6UTVIZGhQeDBNU0JOb0s1Z0hZeXNuazhvVEY3a0tsUU9HdmFzeGcyZWxZMEQ4VG44QWNwcmUxVUNORjc5QWpCZS1uOXl4aS1zeDlMSzg0ZXhpcmVMNDlVZVVMbW1wSG1PNTNTZjRFTmNwbXRKVUtiZ09NX2kzeTk2bG5ucnVqVngyTHZIbEN2R1JlSEdPX0FGSHdZ?oc=5",
+     "kaynak": "TradingView",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-27T12:02:49+00:00",
+     "tarih": "2026-10-27",
+     "baslik": "Air Force Funds IonQ To Link Quantum Systems Over Open Air",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9KTXk3MVowUU9BdU11THFyeExxOUxnaXZqOVo1ZC10VXJ2S2k1cjYyNnlqN0M5R085SEVyNldTTGx5SEpoVUtXcmZpbXZ0bzVFdGNCRTJ4ZWlkc3RNMmNmV1hCcU9PUjRMUjlHSmtFbWdwSUhL?oc=5",
+     "kaynak": "Quantum Zeitgeist",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-27T11:08:19+00:00",
+     "tarih": "2026-10-27",
+     "baslik": "IonQ Secures $7.5M in AFRL Funding to Expand Quantum Networking Capabilities",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQVkh0R2RQRGtSTHN1UHFiYkxaRDVXYVFBTVBZYnBVUnU0NTRIcDNrZ2trN01RX1ZUUklxVlpobFRkYVo1QVQ5UHg4bUJ2WThoZXVSSnBZMFI0UW1TYlZCUk94UW1TOWsyRHE3STM5dk9UMk92dWU2X1M2MmFxWGJqV2swekZGOUJmLXJmcHVtWloyZnEzZVpRT09pS1JWZldRYUh5RGxSU2tpbmg5S2htSHZ1OEw?oc=5",
+     "kaynak": "citybiz",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-27T11:08:08+00:00",
+     "tarih": "2026-10-27",
+     "baslik": "IonQ receives $7.5M from Air Force for quantum network",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNclJDcUZmb3BJY3NFTVoyVUpsRXBUX3JxOVY2allWd0ZCLVU4NnJqNlAxMEJXTWJXMWpSYVNOSHprRXBXSU1FeUhlYnM0aUtLLVN6OGJxT0VCSU42eTdkQmZqeUNMOC1lTDQ3NWp4WVFfZzdlZVU2NlFYZy1MVzBrbnFOTEdEU2ZYUTNKanNTdU5PcGNOclR4WUlpeFlOeUlFNVBrNW5Dd3ZGOEducVE?oc=5",
+     "kaynak": "Investing.com",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-27T11:04:36+00:00",
+     "tarih": "2026-10-27",
+     "baslik": "IonQ Secures $7.5M AFRL Award for Quantum Network Expansion",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdzY5d196cnhfdklxZy1PQmZfbUd6N3ZKN2N3MThRb0UxcUNTMFVhMkN1eE9hRDhtbW51ekdRV0tKNVIzeVFKNnhzRFdoVjdaM1pzejkwMXYtVl9vVUx5RXpFWUV4dWdJcU1qMjFlTDVYX1J2aDhhazZOazJMeTVMSENqVHVaZVRpSXFCMWZra3RBelJqZWZwbVZqdjY5X2w1TUoxUS1Sbm1LTnBJQlN5QktkWUk5cVlUQ1lR?oc=5",
+     "kaynak": "IonQ",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-27T11:00:00+00:00",
+     "tarih": "2026-10-27",
+     "baslik": "IonQ Awarded $7.5 Million Follow-On Funding from AFRL to Advance Full-Stack Quantum Networking",
+     "ozet": "COLLEGE PARK, Md., October 27, 2026--IonQ (NYSE: IONQ), the world’s leading full-stack quantum platform and foundry, today announced it has received $7.5 million in follow-on funding from the Air Force Research Laboratory (AFRL). The Phase 2 contract expands upon the first-generation quantum network IonQ previously delivered in Rome, New York. The collaboration explores key optical, hardware, and software layers to turn the deployment into an operational, interoperable research platform.",
+     "url": "https://finnhub.io/api/news?id=c417daea1dcfd1bf5bdc729be48b44b84bfb9d733510bb26a5d0c79aee15ae52",
+     "kaynak": "Yahoo",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-10-27T10:00:13+00:00",
+     "tarih": "2026-10-27",
+     "baslik": "Oracle, IBM and Intel Have Opted Out of OKX-ICE Stock Tokens, Venue’s Own Notice Shows",
+     "ozet": "The venue’s Oct. 26 notice also restates its risk warnings: its access-token contract had no external audit, upgrades skip a timelock and SIPC coverage for self-custodied tokens is uncertain.",
+     "url": "https://finnhub.io/api/news?id=c4bf353cc032fa4c0563d9965f3ed5da711c5973878ff0198e925b2d6de78825",
+     "kaynak": "Yahoo",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-10-27T07:51:48+00:00",
+     "tarih": "2026-10-27",
+     "baslik": "IonQ, Inc. $IONQ Stock Purchased by Inspire Investing LLC",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPaUY1RTlGOXNpa0xIZzdRTU82Ql9QMDZzckFYUUpXY2xSeXF5NkFCTEh0WXlfLVExb3c1ektsRlM1eXlTd091aDZJaEtkZVlJUVY4UUdSakMwYnFJSmpxOVJ4LVhIU0tqaDhGRUtMQ3FUZk9oY1JuQlJ6bUlBTFp6dEJNYU96Y1Q5VklDcUNPZkZrVkd2Mkp1aHZpY0I4RFlKclNyb201c2hyV0NPaEFITmlPWXBNdw?oc=5",
+     "kaynak": "MarketBeat",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-27T07:15:15+00:00",
+     "tarih": "2026-10-27",
+     "baslik": "IonQ Receives $7.5M In Follow-On Funding From Air Force Research Laboratory",
+     "ozet": "Phase 2 expansion builds on a first-generation quantum network in Rome, New York, adding advanced optical, hardware, and software layers for real-world deployment.IonQ (NYSE:IONQ), the world’s leading full-stack quantum",
+     "url": "https://finnhub.io/api/news?id=a3fffdf62063272b6dee21e8af56ad2fd59be3221210bc2c7f6bdfaf329b98f4",
+     "kaynak": "Benzinga",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-10-27T07:06:22+00:00",
+     "tarih": "2026-10-27",
+     "baslik": "IONQ Oct 2026 37.500 call (IONQ261030C00037500) interactive stock chart – Yahoo Finance",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB5d1NLTThBUUlnZXdrRjJZXzhUUFZPMDBvZU5yVWwxMGtjUWNQM1FScmlIVk9xUlJFVTlBWkNhZFhLUWEyTTk0ZnpkV0lSX3dpZXk5VWJFYlVUT2w5bkJrWkdwV0twdjlzWTBfamZn?oc=5",
+     "kaynak": "Yahoo Finance Singapore",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-27T06:00:46+00:00",
+     "tarih": "2026-10-27",
+     "baslik": "IONQ Oct 2026 32.500 put (IONQ261030P00032500) stock price, news, quote and history",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBHMHhuUXl4WC05YjNnc29UWDQ1bXFfVEZMRnByNGxYT0dUVEU5Y285cjJHUF9HOXE4dVMtT0picWJIVlUtUzJTV3M5cElvelJ6YkdxeGxRbTFfemV4X2tTMUVDVGNQUQ?oc=5",
+     "kaynak": "Yahoo Finance Singapore",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-27T06:00:31+00:00",
+     "tarih": "2026-10-27",
+     "baslik": "IONQ Oct 2026 29.500 call (IONQ261030C00029500) stock price, news, quote and history",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE14VGpVcmp1dllteW1UUVVOeDMtVXJEV0pHOTN0WmtENHVrVjJLMFlHWVJhTFY5RnJKbUpNUE40cnhCWG00Tk9SMEFEc2gtbzVCVlNFLXFCSU1tZ3BablZoU1JPLS1xZw?oc=5",
+     "kaynak": "Yahoo Finance Singapore",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-27T05:47:10+00:00",
+     "tarih": "2026-10-27",
+     "baslik": "IONQ Nov 2026 32.000 put (IONQ261120P00032000) Stock Historical Prices & Data - Yahoo Finance",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBMQ01XWkFEWUJhVUVvLXE5YlNNaHZZSDU4Z01JYkhFYktQaC01OUJ3c2RYa1pQVWdxbm9WMlpoSXZBMlF0a0FSZ2x4SklOckpoMGF4XzFPajl5ekhROEMwaGYyZ3ByZUF6eVhkVUo3bDc?oc=5",
+     "kaynak": "Yahoo! Finance Canada",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-27T05:41:03+00:00",
+     "tarih": "2026-10-27",
+     "baslik": "IONQ Oct 2026 54.000 put (IONQ261030P00054000) stock price, news, quote and history",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1va2hVNXhDQ0FMbTVmdHIxVi00ZFJYWld2UjFtQzVoUTg2TEdtcjF0LVVBdjJaaV9WUDhQVW1TZnZIc3dYU1hNbHZYV01zY1F4Ym1sTENsc0pKQ1N6OFlkYkdFVlhqdw?oc=5",
+     "kaynak": "Yahoo Finance Singapore",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-26T22:45:10+00:00",
+     "tarih": "2026-10-26",
+     "baslik": "IONQ Dec 2026 40.000 call (IONQ261204C00040000) Stock Historical Prices & Data",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA4bGFyNEJOeGtlZzZIT2U1NWlPLWlUOEZ6V3RNRi1zT0sxUEZyR3ZvTmtfOUVRZkFlSXEzRDJUN1pLbE94X05mQ3hCMld6cUJrc0VVSi1RXzg0WWxzWTVLaEJ5QkxXRUVnTkVWMFdwTXA?oc=5",
+     "kaynak": "Yahoo! Finance Canada",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-26T22:44:01+00:00",
+     "tarih": "2026-10-26",
+     "baslik": "(IONQ) Risk Channels and Responsive Allocation",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOd1RiNFNNWXJNbVRybDNQZ3E4VUgweEx6MEd2NzNqaGVaR3hUN0ktbVFwMEtXRnMyLUkycWM5dFlBZVY1dU9IRGR2TmVGQ1ZJS25kWHp4Z3Nock1rNW11S1psR2l1X0NOZWg1NEJweDc0dy13RzJyUkJkMXJYcDdnM1JxTlpTeHhuUDVnMWRRVHNXVmxmbVhRdkM5N2dvNGE4bThWeERWMVBndllpT0dlUGRxX0lpNXc2VHNoR1RnTXY?oc=5",
+     "kaynak": "Stock Traders Daily",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-26T21:27:03+00:00",
+     "tarih": "2026-10-26",
+     "baslik": "IONQ Nov 2026 65.000 put (IONQ261106P00065000) interactive stock chart",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE96cU05X2Mxb20zTTh5RVBWRmNHbzU4eE5oNkItSTZLcEY3Ym80TjVoWnppT2lmQUZkbWtZRUtGOTA0Y1E3NF9TUmVoYk9jTnQtd1d6XzlWZ21qQWQyd2dBTWkyaURlWHNUaEZSUnFB?oc=5",
+     "kaynak": "Yahoo Finance UK",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-26T21:23:27+00:00",
+     "tarih": "2026-10-26",
+     "baslik": "IonQ (NYSE:IONQ) Stock Price Down 1.7% - Should You Sell?",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOTV9kV1Z1WGFJeG5tcEpINGVpNWhfNDNSei1BNUpHR2lKcHFEdmdIbnJPLUYzM285d0tTMXVPdm9HMWJIUUxjbHZGOV9zUnZJVkFqVTl2YUJtQlcwbWNoV3U0UUVsYklOeUJIU3BnWlNwNEM1N0JTaW9OTUx3b1RQUUpleHl5eVVOWFdrNVNmOHJjcVA1QTFJcjB1NFgyWHQ0UWV2Vk1lbEVONHJxWW9J?oc=5",
+     "kaynak": "MarketBeat",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-26T21:00:02+00:00",
+     "tarih": "2026-10-26",
+     "baslik": "IonQ, Inc. (IONQ) Stock Sinks As Market Gains: Here's Why",
+     "ozet": "The latest trading day saw IonQ, Inc. (IONQ) settling at $30.76, representing a -1.63% change from its previous close.",
+     "url": "https://finnhub.io/api/news?id=d6b1a06d91867abc320c5baf4765671abc6e98d3c090b7fb01ffd136ec54f83b",
+     "kaynak": "Yahoo",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-10-26T19:55:43+00:00",
+     "tarih": "2026-10-26",
+     "baslik": "IONQ Jan 2029 50.000 put (IONQ290119P00050000) interactive stock chart",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1IXzdPX1hfbkJ5UlY2Wl95ZkZVbkNlaE9rYUpwMk9falVYSW1kY3RDclpkV3Q0N1hybjFROWYzNDkxa3kyeG02ZTBYSmtPRDZrakRLWmJXOHBudEF4TDNXZmJDWm5ZUWVSaWU5RUR3?oc=5",
+     "kaynak": "Yahoo Finance UK",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-26T18:35:00+00:00",
+     "tarih": "2026-10-26",
+     "baslik": "IonQ (NYSE: IONQ) Earns Zacks Sell Rating As Earnings Estimates Crater 40%",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMjN3THNuaFlQbG5YZlh5ZHVNNkN5UFhlS05pNWZNenZFWDVXOEVEZUNJLVBSaEc0MzlVekFQOFBZYWFXRDhhV09pM09vaXNWbFRCYVJUMzU2eHBBVTlVTlZlaGhMYkJMMEFSdGxqQTlWbWdEUkVhNFpDa1BkbUxmc0hHSU81WEJud3gzZlZ2NWpMZjRzRnQ3TWZVSUdqMUZWblcxRnhVd1l1ajR0aGtJR2VUZk1IWWRzUFFV?oc=5",
+     "kaynak": "Foreign Policy Journal",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-26T15:47:17+00:00",
+     "tarih": "2026-10-26",
+     "baslik": "IONQ Nov 2026 25.000 put (IONQ261113P00025000) stock price, news, quote and history",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5PU0t2ZlhFX3hNcW1LQnJmOWpJc1NfRDhvQkZwcXMxVXBCOGZXdDYtOHU1WVhvYzdvUmtpZ1Z0WEZVTXYyeVktdzhacTVqMXdES2dYVTE3amlReWJwakExQnBCM1NxZw?oc=5",
+     "kaynak": "Yahoo Finance UK",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-26T13:40:43+00:00",
+     "tarih": "2026-10-26",
+     "baslik": "IONQ Dec 2026 40.000 call (IONQ261204C00040000) stock price, news, quote and history",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE8xMzNJR0k1Y1A1RjBtcGJkQWdBNlFHYmQ0ZFNBeWcxY1Z5WGMyZFpHUExHa3lXeU9yOHFJbl9fMXpKdG9QUjJaRXR6TEZTOU8wbTB1NzF1d3JiaEhOUVpVUFRjbDdmZw?oc=5",
+     "kaynak": "Yahoo Finance UK",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-26T12:35:10+00:00",
+     "tarih": "2026-10-26",
+     "baslik": "IonQ Q3 earnings on deck: What to expect",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNTFpRNFBpUGhNQ296RHZoTGZGbmROZk41WWRBbUlHTDI5RFB4VHFDVmY4V0NRcEYyTHRyQm5xR0NmazZyUlJpbnU3Z0hpbEtGaEpsVlJtV21jRzdtaFlYUzBVbTRWZDhkZVpOeW91UnhtWTB4ZkJrSEJqYlJFRzEtem1sT3B3Tk5LdWNPY3BDNnAwakRidF9mbDBHOTUwTEwy?oc=5",
+     "kaynak": "TradingView",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-26T12:30:03+00:00",
+     "tarih": "2026-10-26",
+     "baslik": "Wall Street Analysts Think IonQ (IONQ) Is a Good Investment: Is It?",
+     "ozet": "The average brokerage recommendation (ABR) for IonQ (IONQ) is equivalent to a Buy. The overly optimistic recommendations of Wall Street analysts make the effectiveness of this highly sought-after metric questionable. So, is it worth buying the stock?",
+     "url": "https://finnhub.io/api/news?id=6b1d6609666166123ff5ddcd784c793e99d8daef68542f611958cd8254936040",
+     "kaynak": "Yahoo",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-10-26T12:00:29+00:00",
+     "tarih": "2026-10-26",
+     "baslik": "Why Are Quantum Stocks IONQ, QBTS, and RGTI Falling Again in Pre-Market Today?",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRzFRc19TeTdZT25zNElOdHVVcHNqTzVxN0tMU1RkQTNrdUFfb0FUSEkzRDYwLS1WcU0tbDg3MlFSQTRpYVB6MTRyVnVmYTZXc0h4aWQ0RDJya1drUlhaTlctdzJVVHFWdFBQTW1QOTRKeWVDMS1nZlJuVTNVdUxXVTVvM3ExcnpEOEZaaUxNVjR3MlZVTmhsLV9hQVJmTWFUWkJhd1k2Mnc?oc=5",
+     "kaynak": "TipRanks",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-26T11:26:55+00:00",
+     "tarih": "2026-10-26",
+     "baslik": "IonQ Just Dropped 24% in a Month. Is It Time to Sell, or Load Up?",
+     "ozet": "Key TakeawaysIonQ stock fell 24% in the past month (through Friday’s close) after it agreed to buy Elisity with up to $1. 3 billion in stock and then sold $2 billion of new shares.",
+     "url": "https://finnhub.io/api/news?id=698d2c980b7aec050984e1b55a232c2a27357bf71c01e2540ebc346e1ef6e956",
+     "kaynak": "Yahoo",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-10-26T10:03:46+00:00",
+     "tarih": "2026-10-26",
+     "baslik": "Is 50% Crash Risk For IonQ Stock Real?",
+     "ozet": "For questions about this article or underlying research, email help@trefis.com.",
+     "url": "https://finnhub.io/api/news?id=8b0d45263eb902118c4f9e852b9f4d9bf757ebdb464c87add6a0192857914935",
+     "kaynak": "Yahoo",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-10-26T09:16:43+00:00",
+     "tarih": "2026-10-26",
+     "baslik": "IonQ (IONQ) Q3 Earnings Preview: Wall Street Sees 254% Revenue Surge",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNYm5JOFVCMk95UjNCZGdLN2lNSnBJY0hnamMtZ0RHQW9abURDa3cwZEV5ZEVJVjNweVZmNE83ZUlqNWRxd3plU0l5cnZ0VXh1aFJOa3JNRDE1Z2JGMllrTExEVjNGVXpWRklQaHNGWlhOV2NmNzhvU0JrSWtTd0s0SjZDLWNVSWRldVRQc0RXaFF6V054UXBxYW9n?oc=5",
+     "kaynak": "TipRanks",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-26T07:00:00+00:00",
+     "tarih": "2026-10-26",
+     "baslik": "IONQ Oct 2026 35.500 call (IONQ261030C00035500) stock historical prices and data",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9RLXZqVG9FeTRHMW1OWDh2Qlgwa25tRTJ0WTRZNjNZOVN4c2tydTFYMEV6eDBHZEtJRVFQcDhZQ3V3ODBkYU1FYk1LelhHQXdJejFQdUFaNWY4ajVwcW5MdUZBZjFXSXQ5MDJGMjhJd0E?oc=5",
+     "kaynak": "Yahoo Finance UK",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-10-26T07:00:00+00:00",
+     "tarih": "2026-10-26",
+     "baslik": "IONQ Oct 2026 24.000 call (IONQ261030C00024000) stock historical prices and data",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9VMUdqaTFDMTk0ejNyZXZuNkhsODF3c2NlOHoydXdDN1JDTnp3dnB3XzBYSVRoUlFWMWYxMXhCa2s0NldUb3FzNzc5dlNEV1QtLVk3cXVxLWFMYzRWQVU1YWpnbkxfZ1JkNEl2Mm8wRU0?oc=5",
+     "kaynak": "Yahoo Finance Singapore",
+     "saglayici": "Google News RSS"
+    }
+   ],
+   "sec_bildirimleri": []
+  },
   {
    "tarih": "2026-10-16",
    "claude": null,

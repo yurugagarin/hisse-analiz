@@ -1,7 +1,7 @@
 {
  "sembol": "XLU",
- "kaynak": "Nasdaq.com (historical API)",
- "guncelleme": "2026-10-27T10:06:56+00:00",
+ "kaynak": "Nasdaq.com (historical API) + Finnhub quote",
+ "guncelleme": "2026-10-28T00:57:33+00:00",
  "taze": true,
  "kapanislar": [
   [
@@ -2123,6 +2123,10 @@
   [
    "2026-10-26",
    42.55
+  ],
+  [
+   "2026-10-27",
+   42.85
   ]
  ],
  "finnhub_52h_zirve": 47.8,
