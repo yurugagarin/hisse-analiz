@@ -1,6 +1,6 @@
 {
  "ticker": "ORCL",
- "guncelleme": "2026-10-28",
+ "guncelleme": "2026-10-29",
  "pencereler": {
   "90": {
    "kodlar": {
@@ -2580,19 +2580,27 @@
   "pencere_gun": 90,
   "satirlar": [
    {
+    "kod": "A",
+    "edgar_islem": 0,
+    "edgar_adet": 0,
+    "finnhub_islem": 1,
+    "finnhub_adet": 479.0,
+    "uyumlu": false
+   },
+   {
     "kod": "F",
     "edgar_islem": 21,
     "edgar_adet": 279229.0,
-    "finnhub_islem": 17,
-    "finnhub_adet": 262347.0,
-    "uyumlu": false
+    "finnhub_islem": 21,
+    "finnhub_adet": 279229.0,
+    "uyumlu": true
    },
    {
     "kod": "M",
     "edgar_islem": 21,
     "edgar_adet": 630373.0,
-    "finnhub_islem": 34,
-    "finnhub_adet": 1185768.0,
+    "finnhub_islem": 42,
+    "finnhub_adet": 1260746.0,
     "uyumlu": false
    },
    {

@@ -1,384 +1,18 @@
 {
  "ticker": "NOW",
  "cik": 1373715,
- "sirket": "ServiceNow, Inc.",
- "guncelleme": "2026-09-26T00:49:44+00:00",
+ "sirket": "SERVICENOW, INC.",
+ "guncelleme": "2026-10-29T11:10:36+00:00",
  "son_dosya": {
-  "accn": "0001373715-26-000076",
+  "accn": "0001373715-26-000096",
   "form": "10-Q",
-  "tarih": "2026-07-23",
-  "donem_sonu": "2026-06-30",
-  "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm"
+  "tarih": "2026-10-28",
+  "donem_sonu": "2026-09-30",
+  "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm"
  },
  "xbrl_beklemede": false,
  "tablo": {
   "ceyrekler": [
-   {
-    "donem_sonu": "2023-09-30",
-    "donem_basi": "2023-07-01",
-    "revenue": 2288000000.0,
-    "cogs": 496000000.0,
-    "gross_profit": 1792000000.0,
-    "rd": 549000000.0,
-    "operating_income": 231000000.0,
-    "restructuring": null,
-    "impairment": null,
-    "interest_income": null,
-    "interest_expense": null,
-    "warrant_fv": null,
-    "derivative_gl": null,
-    "investment_gl": null,
-    "debt_extinguishment": null,
-    "nonoperating_total": null,
-    "other_nonoperating": -14000000.0,
-    "pretax": 299000000.0,
-    "tax": 57000000.0,
-    "net_income": 242000000.0,
-    "ocf": 311000000.0,
-    "capex": 136000000.0,
-    "sbc": 413000000.0,
-    "acquisitions": 279000000.0,
-    "buybacks": 282000000.0,
-    "equity_issued": null,
-    "da": 98000000.0,
-    "sga": 213000000.0,
-    "dividends": null,
-    "debt_issued": null,
-    "debt_repaid": null,
-    "eps_diluted": 1.17,
-    "diluted_shares": 1031385000.0,
-    "acquiree_revenue": null,
-    "ar": 1168000000.0,
-    "inventory": null,
-    "deferred_rev_current": 4440000000.0,
-    "deferred_rev_noncurrent": 46000000.0,
-    "rpo": 14400000000.0,
-    "cash": 1112000000.0,
-    "st_investments": 2955000000.0,
-    "cash_and_st": null,
-    "total_debt": 1487000000.0,
-    "convertible": 1487000000.0,
-    "st_borrowings": null,
-    "eq_inv_fv": null,
-    "eq_inv_other": null,
-    "goodwill": 1204000000.0,
-    "total_assets": 15091000000.0,
-    "current_assets": 6046000000.0,
-    "total_liabilities": 7909000000.0,
-    "current_liabilities": 5601000000.0,
-    "liab_and_equity": 15091000000.0,
-    "equity": 7182000000.0,
-    "ppe": 1199000000.0,
-    "ap": 69000000.0,
-    "intangibles": 242000000.0,
-    "lt_investments": 2939000000.0,
-    "debt_current": null,
-    "debt_noncurrent": null,
-    "lease_liab": 773000000.0,
-    "warrant_liability": null,
-    "_kaynak": {
-     "revenue": {
-      "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "accn": "0001373715-24-000344",
-      "turetilmis": false,
-      "not": ""
-     },
-     "cogs": {
-      "concept": "CostOfRevenue",
-      "accn": "0001373715-24-000344",
-      "turetilmis": false,
-      "not": ""
-     },
-     "gross_profit": {
-      "concept": "GrossProfit",
-      "accn": "0001373715-24-000344",
-      "turetilmis": false,
-      "not": ""
-     },
-     "rd": {
-      "concept": "ResearchAndDevelopmentExpense",
-      "accn": "0001373715-24-000344",
-      "turetilmis": false,
-      "not": ""
-     },
-     "operating_income": {
-      "concept": "OperatingIncomeLoss",
-      "accn": "0001373715-24-000344",
-      "turetilmis": false,
-      "not": ""
-     },
-     "other_nonoperating": {
-      "concept": "OtherNonoperatingIncomeExpense",
-      "accn": "0001373715-24-000344",
-      "turetilmis": false,
-      "not": ""
-     },
-     "pretax": {
-      "concept": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
-      "accn": "0001373715-24-000344",
-      "turetilmis": false,
-      "not": ""
-     },
-     "tax": {
-      "concept": "IncomeTaxExpenseBenefit",
-      "accn": "0001373715-24-000344",
-      "turetilmis": false,
-      "not": ""
-     },
-     "net_income": {
-      "concept": "NetIncomeLoss",
-      "accn": "0001373715-24-000344",
-      "turetilmis": false,
-      "not": ""
-     },
-     "ocf": {
-      "concept": "NetCashProvidedByUsedInOperatingActivities",
-      "accn": "0001373715-24-000344",
-      "turetilmis": true,
-      "not": "türetilmiş: 2023-01-01→2023-09-30 (10-Q) − 2023-01-01→2023-06-30"
-     },
-     "capex": {
-      "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "accn": "0001373715-24-000344",
-      "turetilmis": true,
-      "not": "türetilmiş: 2023-01-01→2023-09-30 (10-Q) − 2023-01-01→2023-06-30"
-     },
-     "sbc": {
-      "concept": "ShareBasedCompensation",
-      "accn": "0001373715-24-000344",
-      "turetilmis": true,
-      "not": "türetilmiş: 2023-01-01→2023-09-30 (10-Q) − 2023-01-01→2023-06-30"
-     },
-     "acquisitions": {
-      "concept": "PaymentsToAcquireBusinessesNetOfCashAcquired",
-      "accn": "0001373715-24-000344",
-      "turetilmis": true,
-      "not": "türetilmiş: 2023-01-01→2023-09-30 (10-Q) − 2023-01-01→2023-06-30"
-     },
-     "buybacks": {
-      "concept": "PaymentsForRepurchaseOfCommonStock",
-      "accn": "0001373715-24-000344",
-      "turetilmis": true,
-      "not": "türetilmiş: 2023-01-01→2023-09-30 (10-Q) − 2023-01-01→2023-06-30"
-     },
-     "da": {
-      "concept": "Depreciation",
-      "accn": "0001373715-24-000344",
-      "turetilmis": false,
-      "not": ""
-     },
-     "sga": {
-      "concept": "GeneralAndAdministrativeExpense",
-      "accn": "0001373715-24-000344",
-      "turetilmis": false,
-      "not": ""
-     },
-     "eps_diluted": {
-      "concept": "EarningsPerShareDiluted",
-      "accn": "0001373715-24-000344",
-      "turetilmis": false,
-      "not": ""
-     },
-     "diluted_shares": {
-      "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
-      "accn": "0001373715-24-000344",
-      "turetilmis": false,
-      "not": "bölünme düzeltmesi ×5"
-     },
-     "ar": {
-      "concept": "AccountsReceivableNetCurrent",
-      "accn": "0001373715-23-000419",
-      "turetilmis": false,
-      "not": ""
-     },
-     "deferred_rev_current": {
-      "concept": "ContractWithCustomerLiabilityCurrent",
-      "accn": "0001373715-23-000419",
-      "turetilmis": false,
-      "not": ""
-     },
-     "deferred_rev_noncurrent": {
-      "concept": "ContractWithCustomerLiabilityNoncurrent",
-      "accn": "0001373715-23-000419",
-      "turetilmis": false,
-      "not": ""
-     },
-     "rpo": {
-      "concept": "RevenueRemainingPerformanceObligation",
-      "accn": "0001373715-23-000419",
-      "turetilmis": false,
-      "not": ""
-     },
-     "cash": {
-      "concept": "CashAndCashEquivalentsAtCarryingValue",
-      "accn": "0001373715-24-000344",
-      "turetilmis": false,
-      "not": ""
-     },
-     "st_investments": {
-      "concept": "AvailableForSaleSecuritiesDebtSecuritiesCurrent",
-      "accn": "0001373715-23-000419",
-      "turetilmis": false,
-      "not": ""
-     },
-     "convertible": {
-      "concept": "ConvertibleLongTermNotesPayable",
-      "accn": "0001373715-23-000419",
-      "turetilmis": false,
-      "not": ""
-     },
-     "goodwill": {
-      "concept": "Goodwill",
-      "accn": "0001373715-23-000419",
-      "turetilmis": false,
-      "not": ""
-     },
-     "total_assets": {
-      "concept": "Assets",
-      "accn": "0001373715-23-000419",
-      "turetilmis": false,
-      "not": ""
-     },
-     "current_assets": {
-      "concept": "AssetsCurrent",
-      "accn": "0001373715-23-000419",
-      "turetilmis": false,
-      "not": ""
-     },
-     "total_liabilities": {
-      "concept": "Liabilities",
-      "accn": "0001373715-23-000419",
-      "turetilmis": false,
-      "not": ""
-     },
-     "current_liabilities": {
-      "concept": "LiabilitiesCurrent",
-      "accn": "0001373715-23-000419",
-      "turetilmis": false,
-      "not": ""
-     },
-     "liab_and_equity": {
-      "concept": "LiabilitiesAndStockholdersEquity",
-      "accn": "0001373715-23-000419",
-      "turetilmis": false,
-      "not": ""
-     },
-     "equity": {
-      "concept": "StockholdersEquity",
-      "accn": "0001373715-24-000344",
-      "turetilmis": false,
-      "not": ""
-     },
-     "ppe": {
-      "concept": "PropertyPlantAndEquipmentNet",
-      "accn": "0001373715-23-000419",
-      "turetilmis": false,
-      "not": ""
-     },
-     "ap": {
-      "concept": "AccountsPayableCurrent",
-      "accn": "0001373715-23-000419",
-      "turetilmis": false,
-      "not": ""
-     },
-     "intangibles": {
-      "concept": "IntangibleAssetsNetExcludingGoodwill",
-      "accn": "0001373715-23-000419",
-      "turetilmis": false,
-      "not": ""
-     },
-     "lt_investments": {
-      "concept": "AvailableForSaleSecuritiesDebtSecuritiesNoncurrent",
-      "accn": "0001373715-23-000419",
-      "turetilmis": false,
-      "not": ""
-     },
-     "lease_liab": {
-      "concept": "OperatingLeaseLiability",
-      "accn": "0001373715-23-000419",
-      "turetilmis": false,
-      "not": ""
-     }
-    },
-    "etiket": "FY2023 Q3",
-    "ilk_rapor_accn": "0001373715-23-000419",
-    "ilk_rapor_form": "10-Q",
-    "ilk_rapor_tarih": "2023-10-26",
-    "gross_margin": 78.32,
-    "operating_margin": 10.1,
-    "net_margin": 10.58,
-    "fcf": 175000000.0,
-    "revenue_ttm": 8474000000.0,
-    "gross_profit_ttm": 6654000000.0,
-    "operating_income_ttm": 647000000.0,
-    "net_income_ttm": 1586000000.0,
-    "ocf_ttm": 2955000000.0,
-    "capex_ttm": 577000000.0,
-    "sbc_ttm": 1554000000.0,
-    "cogs_ttm": 1820000000.0,
-    "acquisitions_ttm": 313000000.0,
-    "interest_income_ttm": null,
-    "tax_ttm": -742000000.0,
-    "pretax_ttm": 844000000.0,
-    "da_ttm": 430000000.0,
-    "buybacks_ttm": 282000000.0,
-    "dividends_ttm": null,
-    "rd_ttm": 2016000000.0,
-    "sga_ttm": 815000000.0,
-    "equity_issued_ttm": null,
-    "debt_issued_ttm": null,
-    "debt_repaid_ttm": null,
-    "fcf_ttm": 2378000000.0,
-    "gross_margin_ttm": 78.52,
-    "operating_margin_ttm": 7.64,
-    "fcf_margin_ttm": 28.06,
-    "sbc_to_revenue_ttm": 18.34,
-    "capex_to_revenue_ttm": 6.81,
-    "ocf_to_ni_ttm": 1.86,
-    "fcf_to_ni_ttm": 1.5,
-    "sbc_adj_fcf_ttm": 824000000.0,
-    "sbc_adj_fcf_margin_ttm": 9.72,
-    "capex_to_da_ttm": 1.34,
-    "shareholder_return_ttm": 282000000.0,
-    "dso": 47.0,
-    "dio": null,
-    "deferred_revenue": 4486000000.0,
-    "liquidity": 4067000000.0,
-    "equity_investments": null,
-    "net_cash": 2580000000.0,
-    "current_ratio": 1.08,
-    "working_capital": 445000000.0,
-    "debt_to_equity": 0.21,
-    "equity_ratio": 47.59,
-    "goodwill_to_assets": 7.98,
-    "dpo": 12.8,
-    "ccc": 34.2,
-    "rd_to_revenue": 23.99,
-    "sga_to_revenue": 9.31,
-    "onceki_yil_donem": "2022-09-30",
-    "revenue_yoy": 24.96,
-    "revenue_ttm_yoy": 22.47,
-    "diluted_shares_yoy": 1.55,
-    "ar_yoy": 30.07,
-    "inventory_yoy": null,
-    "deferred_revenue_yoy": 26.22,
-    "rpo_yoy": 26.32,
-    "gross_margin_yoy_pp": 0.17,
-    "dso_yoy_change": 1.9,
-    "capex_to_revenue_ttm_yoy_pp": -0.5,
-    "receivables_vs_revenue_gap": 5.11,
-    "eps_yoy": 200.0,
-    "net_income_yoy": 202.5,
-    "operating_income_yoy": 153.85,
-    "operating_margin_yoy_pp": 5.13,
-    "roe_ttm": 27.1,
-    "accruals_ratio": -10.45,
-    "roic_ttm": 11.11,
-    "inventory_vs_revenue_gap": null,
-    "revenue_qoq": 6.42,
-    "cash_runway_months": null,
-    "nakit_uretiyor": true
-   },
    {
     "donem_sonu": "2023-12-31",
     "donem_basi": "2023-10-01",
@@ -2071,7 +1705,7 @@
      },
      "equity": {
       "concept": "StockholdersEquity",
-      "accn": "0001373715-26-000076",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
@@ -2809,7 +2443,7 @@
      },
      "equity": {
       "concept": "StockholdersEquity",
-      "accn": "0001373715-26-000076",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
@@ -2933,14 +2567,14 @@
     "operating_income": 572000000.0,
     "restructuring": null,
     "impairment": null,
-    "interest_income": null,
-    "interest_expense": null,
+    "interest_income": 115000000.0,
+    "interest_expense": 6000000.0,
     "warrant_fv": null,
     "derivative_gl": null,
     "investment_gl": null,
     "debt_extinguishment": null,
     "nonoperating_total": null,
-    "other_nonoperating": 7000000.0,
+    "other_nonoperating": 13000000.0,
     "pretax": 694000000.0,
     "tax": 192000000.0,
     "net_income": 502000000.0,
@@ -2955,8 +2589,8 @@
     "dividends": null,
     "debt_issued": null,
     "debt_repaid": null,
-    "eps_diluted": 2.4,
-    "diluted_shares": 1047525000.0,
+    "eps_diluted": 0.48,
+    "diluted_shares": 1047523000.0,
     "acquiree_revenue": null,
     "ar": 1548000000.0,
     "inventory": null,
@@ -2989,111 +2623,123 @@
     "_kaynak": {
      "revenue": {
       "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "accn": "0001373715-25-000309",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "cogs": {
       "concept": "CostOfRevenue",
-      "accn": "0001373715-25-000309",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "gross_profit": {
       "concept": "GrossProfit",
-      "accn": "0001373715-25-000309",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "rd": {
       "concept": "ResearchAndDevelopmentExpense",
-      "accn": "0001373715-25-000309",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "operating_income": {
       "concept": "OperatingIncomeLoss",
-      "accn": "0001373715-25-000309",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "interest_income": {
+      "concept": "InvestmentIncomeInterest",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "interest_expense": {
+      "concept": "InterestExpenseNonoperating",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "other_nonoperating": {
       "concept": "OtherNonoperatingIncomeExpense",
-      "accn": "0001373715-25-000309",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "pretax": {
       "concept": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
-      "accn": "0001373715-25-000309",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "tax": {
       "concept": "IncomeTaxExpenseBenefit",
-      "accn": "0001373715-25-000309",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "net_income": {
       "concept": "NetIncomeLoss",
-      "accn": "0001373715-25-000309",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "ocf": {
       "concept": "NetCashProvidedByUsedInOperatingActivities",
-      "accn": "0001373715-25-000309",
+      "accn": "0001373715-26-000096",
       "turetilmis": true,
       "not": "türetilmiş: 2025-01-01→2025-09-30 (10-Q) − 2025-01-01→2025-06-30"
      },
      "capex": {
       "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "accn": "0001373715-25-000309",
+      "accn": "0001373715-26-000096",
       "turetilmis": true,
       "not": "türetilmiş: 2025-01-01→2025-09-30 (10-Q) − 2025-01-01→2025-06-30"
      },
      "sbc": {
       "concept": "ShareBasedCompensation",
-      "accn": "0001373715-25-000309",
+      "accn": "0001373715-26-000096",
       "turetilmis": true,
       "not": "türetilmiş: 2025-01-01→2025-09-30 (10-Q) − 2025-01-01→2025-06-30"
      },
      "acquisitions": {
       "concept": "PaymentsToAcquireBusinessesNetOfCashAcquired",
-      "accn": "0001373715-25-000309",
+      "accn": "0001373715-26-000096",
       "turetilmis": true,
       "not": "türetilmiş: 2025-01-01→2025-09-30 (10-Q) − 2025-01-01→2025-06-30"
      },
      "buybacks": {
       "concept": "PaymentsForRepurchaseOfCommonStock",
-      "accn": "0001373715-25-000309",
+      "accn": "0001373715-26-000096",
       "turetilmis": true,
       "not": "türetilmiş: 2025-01-01→2025-09-30 (10-Q) − 2025-01-01→2025-06-30"
      },
      "da": {
       "concept": "Depreciation",
-      "accn": "0001373715-25-000309",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "sga": {
       "concept": "GeneralAndAdministrativeExpense",
-      "accn": "0001373715-25-000309",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "eps_diluted": {
       "concept": "EarningsPerShareDiluted",
-      "accn": "0001373715-25-000309",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "diluted_shares": {
       "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
-      "accn": "0001373715-25-000309",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
-      "not": "bölünme düzeltmesi ×5"
+      "not": ""
      },
      "ar": {
       "concept": "AccountsReceivableNetCurrent",
@@ -3121,7 +2767,7 @@
      },
      "cash": {
       "concept": "CashAndCashEquivalentsAtCarryingValue",
-      "accn": "0001373715-25-000309",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
@@ -3175,7 +2821,7 @@
      },
      "equity": {
       "concept": "StockholdersEquity",
-      "accn": "0001373715-25-000309",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
@@ -3277,7 +2923,7 @@
     "dso_yoy_change": -1.2,
     "capex_to_revenue_ttm_yoy_pp": -1.25,
     "receivables_vs_revenue_gap": -3.46,
-    "eps_yoy": 15.94,
+    "eps_yoy": -76.81,
     "net_income_yoy": 16.2,
     "operating_income_yoy": 36.84,
     "operating_margin_yoy_pp": 1.85,
@@ -3306,7 +2952,7 @@
     "investment_gl": null,
     "debt_extinguishment": null,
     "nonoperating_total": null,
-    "other_nonoperating": -7000000.0,
+    "other_nonoperating": -25000000.0,
     "pretax": 541000000.0,
     "tax": 140000000.0,
     "net_income": 401000000.0,
@@ -3451,19 +3097,19 @@
      },
      "ar": {
       "concept": "AccountsReceivableNetCurrent",
-      "accn": "0001373715-26-000076",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "deferred_rev_current": {
       "concept": "ContractWithCustomerLiabilityCurrent",
-      "accn": "0001373715-26-000076",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "deferred_rev_noncurrent": {
       "concept": "ContractWithCustomerLiabilityNoncurrent",
-      "accn": "0001373715-26-000076",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
@@ -3475,19 +3121,19 @@
      },
      "cash": {
       "concept": "CashAndCashEquivalentsAtCarryingValue",
-      "accn": "0001373715-26-000076",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "st_investments": {
       "concept": "AvailableForSaleSecuritiesDebtSecuritiesCurrent",
-      "accn": "0001373715-26-000076",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "total_debt": {
       "concept": "LongTermDebt",
-      "accn": "0001373715-26-000076",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
@@ -3499,73 +3145,73 @@
      },
      "st_borrowings": {
       "concept": "ShortTermBorrowings",
-      "accn": "0001373715-26-000076",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "goodwill": {
       "concept": "Goodwill",
-      "accn": "0001373715-26-000076",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "total_assets": {
       "concept": "Assets",
-      "accn": "0001373715-26-000076",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "current_assets": {
       "concept": "AssetsCurrent",
-      "accn": "0001373715-26-000076",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "total_liabilities": {
       "concept": "Liabilities",
-      "accn": "0001373715-26-000076",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "current_liabilities": {
       "concept": "LiabilitiesCurrent",
-      "accn": "0001373715-26-000076",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "liab_and_equity": {
       "concept": "LiabilitiesAndStockholdersEquity",
-      "accn": "0001373715-26-000076",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "equity": {
       "concept": "StockholdersEquity",
-      "accn": "0001373715-26-000076",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "ppe": {
       "concept": "PropertyPlantAndEquipmentNet",
-      "accn": "0001373715-26-000076",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "ap": {
       "concept": "AccountsPayableCurrent",
-      "accn": "0001373715-26-000076",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "intangibles": {
       "concept": "IntangibleAssetsNetExcludingGoodwill",
-      "accn": "0001373715-26-000076",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
      "lt_investments": {
       "concept": "AvailableForSaleSecuritiesDebtSecuritiesNoncurrent",
-      "accn": "0001373715-26-000076",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
@@ -4285,7 +3931,7 @@
      },
      "equity": {
       "concept": "StockholdersEquity",
-      "accn": "0001373715-26-000076",
+      "accn": "0001373715-26-000096",
       "turetilmis": false,
       "not": ""
      },
@@ -4398,6 +4044,390 @@
     "revenue_qoq": 5.76,
     "cash_runway_months": null,
     "nakit_uretiyor": true
+   },
+   {
+    "donem_sonu": "2026-09-30",
+    "donem_basi": "2026-07-01",
+    "revenue": 4106000000.0,
+    "cogs": 1211000000.0,
+    "gross_profit": 2895000000.0,
+    "rd": 956000000.0,
+    "operating_income": 385000000.0,
+    "restructuring": null,
+    "impairment": null,
+    "interest_income": 69000000.0,
+    "interest_expense": 81000000.0,
+    "warrant_fv": null,
+    "derivative_gl": null,
+    "investment_gl": null,
+    "debt_extinguishment": null,
+    "nonoperating_total": null,
+    "other_nonoperating": -3000000.0,
+    "pretax": 370000000.0,
+    "tax": 93000000.0,
+    "net_income": 277000000.0,
+    "ocf": 839000000.0,
+    "capex": 91000000.0,
+    "sbc": 630000000.0,
+    "acquisitions": 391000000.0,
+    "buybacks": 0.0,
+    "equity_issued": null,
+    "da": 162000000.0,
+    "sga": 283000000.0,
+    "dividends": null,
+    "debt_issued": null,
+    "debt_repaid": null,
+    "eps_diluted": 0.27,
+    "diluted_shares": 1043011000.0,
+    "acquiree_revenue": null,
+    "ar": 2222000000.0,
+    "inventory": null,
+    "deferred_rev_current": 7600000000.0,
+    "deferred_rev_noncurrent": 133000000.0,
+    "rpo": 29700000000.0,
+    "cash": 2393000000.0,
+    "st_investments": 2214000000.0,
+    "cash_and_st": null,
+    "total_debt": 7524000000.0,
+    "convertible": null,
+    "st_borrowings": 2086000000.0,
+    "eq_inv_fv": null,
+    "eq_inv_other": null,
+    "goodwill": 10012000000.0,
+    "total_assets": 31830000000.0,
+    "current_assets": 8477000000.0,
+    "total_liabilities": 18734000000.0,
+    "current_liabilities": 11795000000.0,
+    "liab_and_equity": 31830000000.0,
+    "equity": 13096000000.0,
+    "ppe": 2145000000.0,
+    "ap": 231000000.0,
+    "intangibles": 3594000000.0,
+    "lt_investments": 2354000000.0,
+    "debt_current": null,
+    "debt_noncurrent": null,
+    "lease_liab": 891000000.0,
+    "warrant_liability": null,
+    "_kaynak": {
+     "revenue": {
+      "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "cogs": {
+      "concept": "CostOfRevenue",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "gross_profit": {
+      "concept": "GrossProfit",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "rd": {
+      "concept": "ResearchAndDevelopmentExpense",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "operating_income": {
+      "concept": "OperatingIncomeLoss",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "interest_income": {
+      "concept": "InvestmentIncomeInterest",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "interest_expense": {
+      "concept": "InterestExpenseNonoperating",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "other_nonoperating": {
+      "concept": "OtherNonoperatingIncomeExpense",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "pretax": {
+      "concept": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "tax": {
+      "concept": "IncomeTaxExpenseBenefit",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "net_income": {
+      "concept": "NetIncomeLoss",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "ocf": {
+      "concept": "NetCashProvidedByUsedInOperatingActivities",
+      "accn": "0001373715-26-000096",
+      "turetilmis": true,
+      "not": "türetilmiş: 2026-01-01→2026-09-30 (10-Q) − 2026-01-01→2026-06-30"
+     },
+     "capex": {
+      "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "accn": "0001373715-26-000096",
+      "turetilmis": true,
+      "not": "türetilmiş: 2026-01-01→2026-09-30 (10-Q) − 2026-01-01→2026-06-30"
+     },
+     "sbc": {
+      "concept": "ShareBasedCompensation",
+      "accn": "0001373715-26-000096",
+      "turetilmis": true,
+      "not": "türetilmiş: 2026-01-01→2026-09-30 (10-Q) − 2026-01-01→2026-06-30"
+     },
+     "acquisitions": {
+      "concept": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+      "accn": "0001373715-26-000096",
+      "turetilmis": true,
+      "not": "türetilmiş: 2026-01-01→2026-09-30 (10-Q) − 2026-01-01→2026-06-30"
+     },
+     "buybacks": {
+      "concept": "PaymentsForRepurchaseOfCommonStock",
+      "accn": "0001373715-26-000096",
+      "turetilmis": true,
+      "not": "türetilmiş: 2026-01-01→2026-09-30 (10-Q) − 2026-01-01→2026-06-30"
+     },
+     "da": {
+      "concept": "Depreciation",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "sga": {
+      "concept": "GeneralAndAdministrativeExpense",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "eps_diluted": {
+      "concept": "EarningsPerShareDiluted",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "diluted_shares": {
+      "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "ar": {
+      "concept": "AccountsReceivableNetCurrent",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "deferred_rev_current": {
+      "concept": "ContractWithCustomerLiabilityCurrent",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "deferred_rev_noncurrent": {
+      "concept": "ContractWithCustomerLiabilityNoncurrent",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "rpo": {
+      "concept": "RevenueRemainingPerformanceObligation",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "cash": {
+      "concept": "CashAndCashEquivalentsAtCarryingValue",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "st_investments": {
+      "concept": "AvailableForSaleSecuritiesDebtSecuritiesCurrent",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "total_debt": {
+      "concept": "LongTermDebt",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "st_borrowings": {
+      "concept": "ShortTermBorrowings",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "goodwill": {
+      "concept": "Goodwill",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "total_assets": {
+      "concept": "Assets",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "current_assets": {
+      "concept": "AssetsCurrent",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "total_liabilities": {
+      "concept": "Liabilities",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "current_liabilities": {
+      "concept": "LiabilitiesCurrent",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "liab_and_equity": {
+      "concept": "LiabilitiesAndStockholdersEquity",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "equity": {
+      "concept": "StockholdersEquity",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "ppe": {
+      "concept": "PropertyPlantAndEquipmentNet",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "ap": {
+      "concept": "AccountsPayableCurrent",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "intangibles": {
+      "concept": "IntangibleAssetsNetExcludingGoodwill",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "lt_investments": {
+      "concept": "AvailableForSaleSecuritiesDebtSecuritiesNoncurrent",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     },
+     "lease_liab": {
+      "concept": "OperatingLeaseLiability",
+      "accn": "0001373715-26-000096",
+      "turetilmis": false,
+      "not": ""
+     }
+    },
+    "etiket": "FY2026 Q3",
+    "ilk_rapor_accn": "0001373715-26-000096",
+    "ilk_rapor_form": "10-Q",
+    "ilk_rapor_tarih": "2026-10-28",
+    "gross_margin": 70.51,
+    "operating_margin": 9.38,
+    "net_margin": 6.75,
+    "fcf": 748000000.0,
+    "revenue_ttm": 15431000000.0,
+    "gross_profit_ttm": 11277000000.0,
+    "operating_income_ttm": 1493000000.0,
+    "net_income_ttm": 1445000000.0,
+    "ocf_ttm": 5334000000.0,
+    "capex_ttm": 584000000.0,
+    "sbc_ttm": 2323000000.0,
+    "cogs_ttm": 4154000000.0,
+    "acquisitions_ttm": 10036000000.0,
+    "interest_income_ttm": null,
+    "tax_ttm": 577000000.0,
+    "pretax_ttm": 2022000000.0,
+    "da_ttm": 787000000.0,
+    "buybacks_ttm": 2822000000.0,
+    "dividends_ttm": null,
+    "rd_ttm": 3467000000.0,
+    "sga_ttm": 1308000000.0,
+    "equity_issued_ttm": null,
+    "debt_issued_ttm": null,
+    "debt_repaid_ttm": null,
+    "fcf_ttm": 4750000000.0,
+    "gross_margin_ttm": 73.08,
+    "operating_margin_ttm": 9.68,
+    "fcf_margin_ttm": 30.78,
+    "sbc_to_revenue_ttm": 15.05,
+    "capex_to_revenue_ttm": 3.78,
+    "ocf_to_ni_ttm": 3.69,
+    "fcf_to_ni_ttm": 3.29,
+    "sbc_adj_fcf_ttm": 2427000000.0,
+    "sbc_adj_fcf_margin_ttm": 15.73,
+    "capex_to_da_ttm": 0.74,
+    "shareholder_return_ttm": 2822000000.0,
+    "dso": 49.8,
+    "dio": null,
+    "deferred_revenue": 7733000000.0,
+    "liquidity": 4607000000.0,
+    "equity_investments": null,
+    "net_cash": -2917000000.0,
+    "current_ratio": 0.72,
+    "working_capital": -3318000000.0,
+    "debt_to_equity": 0.57,
+    "equity_ratio": 41.14,
+    "goodwill_to_assets": 31.45,
+    "dpo": 17.5,
+    "ccc": 32.3,
+    "rd_to_revenue": 23.28,
+    "sga_to_revenue": 6.89,
+    "onceki_yil_donem": "2025-09-30",
+    "revenue_yoy": 20.52,
+    "revenue_ttm_yoy": 21.82,
+    "diluted_shares_yoy": -0.43,
+    "ar_yoy": 43.54,
+    "inventory_yoy": null,
+    "deferred_revenue_yoy": 19.67,
+    "rpo_yoy": 22.22,
+    "gross_margin_yoy_pp": -6.77,
+    "dso_yoy_change": 8.0,
+    "capex_to_revenue_ttm_yoy_pp": -3.19,
+    "receivables_vs_revenue_gap": 23.02,
+    "eps_yoy": -43.75,
+    "net_income_yoy": -44.82,
+    "operating_income_yoy": -32.69,
+    "operating_margin_yoy_pp": -7.41,
+    "roe_ttm": 11.85,
+    "accruals_ratio": -14.51,
+    "roic_ttm": 7.37,
+    "inventory_vs_revenue_gap": null,
+    "revenue_qoq": 2.98,
+    "cash_runway_months": null,
+    "nakit_uretiyor": true
    }
   ],
   "kavramlar": {
@@ -4472,10 +4502,12 @@
    "interest_expense": {
     "tablo": "Gelir tablosu (faaliyet dışı)",
     "kullanilan": [
+     "InterestExpenseNonoperating",
      "InterestExpenseDebt",
      "InterestExpense"
     ],
     "etiketler": {
+     "InterestExpenseNonoperating": "",
      "InterestExpenseDebt": "Interest Expense, Debt",
      "InterestExpense": "Interest Expense"
     }
@@ -4933,110 +4965,88 @@
  },
  "kalite": {
   "son_ceyrek": {
-   "etiket": "FY2026 Q2",
-   "donem_sonu": "2026-06-30",
+   "etiket": "FY2026 Q3",
+   "donem_sonu": "2026-09-30",
    "rapor": {
     "form": "10-Q",
-    "filingDate": "2026-07-23",
-    "reportDate": "2026-06-30",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
-    "index_url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/0001373715-26-000076-index.htm"
+    "filingDate": "2026-10-28",
+    "reportDate": "2026-09-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
+    "index_url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/0001373715-26-000096-index.htm"
    }
   },
   "kopru_ceyrek": {
-   "faaliyet_kari": 162000000.0,
+   "faaliyet_kari": 385000000.0,
    "kalemler": [
+    {
+     "kalem": "Faiz geliri",
+     "key": "interest_income",
+     "tutar": 69000000.0,
+     "kategori": "faiz"
+    },
     {
      "kalem": "Faiz gideri",
      "key": "interest_expense",
-     "tutar": -66000000.0,
+     "tutar": -81000000.0,
      "kategori": "faiz"
     },
     {
      "kalem": "Diğer faaliyet dışı (ayrıştırılamayan kalan)",
      "key": "residual",
-     "tutar": 342000000.0,
+     "tutar": -3000000.0,
      "kategori": "diger"
     }
    ],
-   "vergi_oncesi_kar": 438000000.0,
-   "vergi": -140000000.0,
+   "vergi_oncesi_kar": 370000000.0,
+   "vergi": -93000000.0,
    "diger_vergi_sonrasi": null,
-   "net_kar": 298000000.0,
-   "faaliyet_disi_toplam": 276000000.0
+   "net_kar": 277000000.0,
+   "faaliyet_disi_toplam": -15000000.0
   },
   "kopru_ttm": {
-   "faaliyet_kari": 1680000000.0,
+   "faaliyet_kari": 1493000000.0,
    "kalemler": [
     {
      "kalem": "Diğer faaliyet dışı (ayrıştırılamayan kalan)",
      "key": "residual",
-     "tutar": 666000000.0,
+     "tutar": 529000000.0,
      "kategori": "diger"
     }
    ],
-   "vergi_oncesi_kar": 2346000000.0,
-   "vergi": -676000000.0,
+   "vergi_oncesi_kar": 2022000000.0,
+   "vergi": -577000000.0,
    "diger_vergi_sonrasi": null,
-   "net_kar": 1670000000.0,
-   "faaliyet_disi_toplam": 666000000.0
+   "net_kar": 1445000000.0,
+   "faaliyet_disi_toplam": 529000000.0
   },
   "duzeltilmis_kar": {
    "hesaplanabilir": true,
-   "gaap_faaliyet_kari": 162000000.0,
+   "gaap_faaliyet_kari": 385000000.0,
    "faaliyet_ici_tek_seferlik": 0,
-   "duzeltilmis_faaliyet_kari": 162000000.0,
-   "vergi_orani": 32.0,
+   "duzeltilmis_faaliyet_kari": 385000000.0,
+   "vergi_orani": 25.1,
    "vergi_notu": "efektif vergi oranı",
-   "cekirdek_kar_vergi_sonrasi": 110219178.08219178,
-   "gaap_net_kar": 298000000.0,
-   "fark_net_kar_eksi_cekirdek": 187780821.91780823,
+   "cekirdek_kar_vergi_sonrasi": 288229729.7297297,
+   "gaap_net_kar": 277000000.0,
+   "fark_net_kar_eksi_cekirdek": -11229729.729729712,
    "gercekten_kar_ediyor_mu": true,
    "formul": "Düzeltilmiş faaliyet kârı = GAAP faaliyet kârı + yeniden yapılanma + değer düşüklüğü; çekirdek kâr = düzeltilmiş faaliyet kârı × (1 − vergi oranı). Faaliyet dışı kalemler (faiz, warrant/türev, yatırım kazançları) tamamen hariç."
   },
   "bulgular": [
    {
-    "etiket": "kirmizi_bayrak",
-    "baslik": "Vergi öncesi kârın yarıdan fazlası faaliyet dışı",
-    "olgu": "Faaliyet dışı toplam 276.0 milyon $ = vergi öncesi kârın %63'i.",
-    "yorum": "Kâr, tekrarlanması belirsiz kalemlere dayanıyor.",
-    "kaynaklar": [
-     {
-      "satir": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
-      "tablo": "Gelir tablosu",
-      "turetilmis": false,
-      "not": "",
-      "belge": "10-Q",
-      "tarih": "2026-07-23",
-      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
-      "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest.json"
-     },
-     {
-      "satir": "us-gaap:OperatingIncomeLoss",
-      "tablo": "Gelir tablosu",
-      "turetilmis": false,
-      "not": "",
-      "belge": "10-Q",
-      "tarih": "2026-07-23",
-      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
-      "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/OperatingIncomeLoss.json"
-     }
-    ]
-   },
-   {
     "etiket": "dikkat",
     "baslik": "SBC yüksek",
-    "olgu": "TTM SBC/gelir %14.83.",
+    "olgu": "TTM SBC/gelir %15.05.",
     "yorum": "SBC hariç tutulan non-GAAP metrikleri temkinli oku.",
     "kaynaklar": [
      {
       "satir": "us-gaap:ShareBasedCompensation",
       "tablo": "Nakit akış tablosu",
       "turetilmis": true,
-      "not": "türetilmiş: 2026-01-01→2026-06-30 (10-Q) − 2026-01-01→2026-03-31",
+      "not": "türetilmiş: 2026-01-01→2026-09-30 (10-Q) − 2026-01-01→2026-06-30",
       "belge": "10-Q",
-      "tarih": "2026-07-23",
-      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+      "tarih": "2026-10-28",
+      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
       "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/ShareBasedCompensation.json"
      },
      {
@@ -5045,8 +5055,36 @@
       "turetilmis": false,
       "not": "",
       "belge": "10-Q",
-      "tarih": "2026-07-23",
-      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+      "tarih": "2026-10-28",
+      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
+      "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json"
+     }
+    ]
+   },
+   {
+    "etiket": "dikkat",
+    "baslik": "Alacak artışı gelirin önünde",
+    "olgu": "Alacaklar yıllık %43.54, gelir %20.52; fark 23.02 puan. DSO 49.8 gün (yıllık değişim 8.0 gün).",
+    "yorum": "",
+    "kaynaklar": [
+     {
+      "satir": "us-gaap:AccountsReceivableNetCurrent",
+      "tablo": "Bilanço",
+      "turetilmis": false,
+      "not": "",
+      "belge": "10-Q",
+      "tarih": "2026-10-28",
+      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
+      "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/AccountsReceivableNetCurrent.json"
+     },
+     {
+      "satir": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "tablo": "Gelir tablosu",
+      "turetilmis": false,
+      "not": "",
+      "belge": "10-Q",
+      "tarih": "2026-10-28",
+      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
       "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json"
      }
     ]
@@ -5054,17 +5092,17 @@
    {
     "etiket": "dikkat",
     "baslik": "Büyümede satın alma etkisi olabilir",
-    "olgu": "TTM satın alma ödemeleri 9.78 milyar $ (TTM gelirin %66.4'i).",
+    "olgu": "TTM satın alma ödemeleri 10.04 milyar $ (TTM gelirin %65.0'i).",
     "yorum": "Organik büyümeyi ayırmak için işletme birleşmeleri dipnotuna bak (aşağıdaki Claude dipnot analizi).",
     "kaynaklar": [
      {
       "satir": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
       "tablo": "Nakit akış tablosu",
       "turetilmis": true,
-      "not": "türetilmiş: 2026-01-01→2026-06-30 (10-Q) − 2026-01-01→2026-03-31",
+      "not": "türetilmiş: 2026-01-01→2026-09-30 (10-Q) − 2026-01-01→2026-06-30",
       "belge": "10-Q",
-      "tarih": "2026-07-23",
-      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+      "tarih": "2026-10-28",
+      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
       "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/PaymentsToAcquireBusinessesNetOfCashAcquired.json"
      }
     ]
@@ -5072,7 +5110,7 @@
    {
     "etiket": "dikkat",
     "baslik": "Brüt marj geriliyor",
-    "olgu": "Brüt marj %70.68 (yıllık -6.8 puan).",
+    "olgu": "Brüt marj %70.51 (yıllık -6.77 puan).",
     "yorum": "",
     "kaynaklar": [
      {
@@ -5081,8 +5119,8 @@
       "turetilmis": false,
       "not": "",
       "belge": "10-Q",
-      "tarih": "2026-07-23",
-      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+      "tarih": "2026-10-28",
+      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
       "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/GrossProfit.json"
      },
      {
@@ -5091,8 +5129,8 @@
       "turetilmis": false,
       "not": "",
       "belge": "10-Q",
-      "tarih": "2026-07-23",
-      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+      "tarih": "2026-10-28",
+      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
       "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json"
      }
     ]
@@ -5100,17 +5138,17 @@
    {
     "etiket": "olumlu",
     "baslik": "Kâr nakitle destekleniyor",
-    "olgu": "TTM işletme nakit akışı 5.31 milyar $, TTM net kâr 1.67 milyar $ (oran 3.18x).",
+    "olgu": "TTM işletme nakit akışı 5.33 milyar $, TTM net kâr 1.45 milyar $ (oran 3.69x).",
     "yorum": "İşletme nakit akışı net kârın üzerinde.",
     "kaynaklar": [
      {
       "satir": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
       "tablo": "Nakit akış tablosu",
       "turetilmis": true,
-      "not": "türetilmiş: 2026-01-01→2026-06-30 (10-Q) − 2026-01-01→2026-03-31",
+      "not": "türetilmiş: 2026-01-01→2026-09-30 (10-Q) − 2026-01-01→2026-06-30",
       "belge": "10-Q",
-      "tarih": "2026-07-23",
-      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+      "tarih": "2026-10-28",
+      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
       "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/NetCashProvidedByUsedInOperatingActivities.json"
      },
      {
@@ -5119,8 +5157,8 @@
       "turetilmis": false,
       "not": "",
       "belge": "10-Q",
-      "tarih": "2026-07-23",
-      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+      "tarih": "2026-10-28",
+      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
       "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/NetIncomeLoss.json"
      }
     ]
@@ -5128,92 +5166,61 @@
    {
     "etiket": "olumlu",
     "baslik": "Güçlü serbest nakit akışı",
-    "olgu": "TTM FCF 4.58 milyar $, FCF marjı %31.09.",
+    "olgu": "TTM FCF 4.75 milyar $, FCF marjı %30.78.",
     "yorum": "",
     "kaynaklar": [
      {
       "satir": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
       "tablo": "Nakit akış tablosu",
       "turetilmis": true,
-      "not": "türetilmiş: 2026-01-01→2026-06-30 (10-Q) − 2026-01-01→2026-03-31",
+      "not": "türetilmiş: 2026-01-01→2026-09-30 (10-Q) − 2026-01-01→2026-06-30",
       "belge": "10-Q",
-      "tarih": "2026-07-23",
-      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+      "tarih": "2026-10-28",
+      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
       "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/NetCashProvidedByUsedInOperatingActivities.json"
      },
      {
       "satir": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
       "tablo": "Nakit akış tablosu",
       "turetilmis": true,
-      "not": "türetilmiş: 2026-01-01→2026-06-30 (10-Q) − 2026-01-01→2026-03-31",
+      "not": "türetilmiş: 2026-01-01→2026-09-30 (10-Q) − 2026-01-01→2026-06-30",
       "belge": "10-Q",
-      "tarih": "2026-07-23",
-      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+      "tarih": "2026-10-28",
+      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
       "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json"
      }
     ]
    },
    {
     "etiket": "olumlu",
-    "baslik": "Hisse sayısı azalıyor",
-    "olgu": "Seyreltilmiş hisse sayısı yıllık %-1.17 değişti.",
-    "yorum": "Geri alımlar SBC'yi aşıyor.",
+    "baslik": "RPO gelirden hızlı büyüyor",
+    "olgu": "RPO yıllık %22.22, gelir %20.52.",
+    "yorum": "Sözleşmeli iş birikimi güçlü.",
     "kaynaklar": [
      {
-      "satir": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
-      "tablo": "Gelir tablosu (hisse başına kâr)",
+      "satir": "us-gaap:RevenueRemainingPerformanceObligation",
+      "tablo": "Dipnot: gelir / kalan edim yükümlülükleri",
       "turetilmis": false,
       "not": "",
       "belge": "10-Q",
-      "tarih": "2026-07-23",
-      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
-      "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/WeightedAverageNumberOfDilutedSharesOutstanding.json"
+      "tarih": "2026-10-28",
+      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
+      "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/RevenueRemainingPerformanceObligation.json"
      },
      {
-      "satir": "us-gaap:PaymentsForRepurchaseOfCommonStock",
-      "tablo": "Nakit akış tablosu",
-      "turetilmis": true,
-      "not": "türetilmiş: 2026-01-01→2026-06-30 (10-Q) − 2026-01-01→2026-03-31",
+      "satir": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "tablo": "Gelir tablosu",
+      "turetilmis": false,
+      "not": "",
       "belge": "10-Q",
-      "tarih": "2026-07-23",
-      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
-      "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/PaymentsForRepurchaseOfCommonStock.json"
+      "tarih": "2026-10-28",
+      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
+      "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json"
      }
     ]
    }
   ],
   "trend": [
-   {
-    "etiket": "FY2024 Q3",
-    "donem_sonu": "2024-09-30",
-    "revenue": 2797000000.0,
-    "revenue_yoy": 22.25,
-    "gross_margin": 79.12,
-    "operating_margin": 14.94,
-    "net_margin": 15.45,
-    "ocf": 671000000.0,
-    "fcf": 469000000.0,
-    "fcf_ttm": 3377000000.0,
-    "fcf_margin_ttm": 32.27,
-    "ocf_to_ni_ttm": 3.17,
-    "sbc_to_revenue_ttm": 16.29,
-    "diluted_shares": 1042760000.0,
-    "diluted_shares_yoy": 1.1,
-    "ar": 1308000000.0,
-    "dso": 43.0,
-    "inventory": null,
-    "dio": null,
-    "inventory_yoy": null,
-    "deferred_revenue": 5534000000.0,
-    "deferred_revenue_yoy": 23.36,
-    "rpo": 19500000000.0,
-    "rpo_yoy": 35.42,
-    "capex_to_revenue_ttm": 8.22,
-    "liquidity": 5295000000.0,
-    "cash_runway_months": null,
-    "operating_income": 418000000.0,
-    "net_income": 432000000.0
-   },
    {
     "etiket": "FY2024 Q4",
     "donem_sonu": "2024-12-31",
@@ -5321,7 +5328,7 @@
     "fcf_margin_ttm": 31.25,
     "ocf_to_ni_ttm": 2.8,
     "sbc_to_revenue_ttm": 15.12,
-    "diluted_shares": 1047525000.0,
+    "diluted_shares": 1047523000.0,
     "diluted_shares_yoy": 0.46,
     "ar": 1548000000.0,
     "dso": 41.8,
@@ -5430,6 +5437,37 @@
     "cash_runway_months": null,
     "operating_income": 162000000.0,
     "net_income": 298000000.0
+   },
+   {
+    "etiket": "FY2026 Q3",
+    "donem_sonu": "2026-09-30",
+    "revenue": 4106000000.0,
+    "revenue_yoy": 20.52,
+    "gross_margin": 70.51,
+    "operating_margin": 9.38,
+    "net_margin": 6.75,
+    "ocf": 839000000.0,
+    "fcf": 748000000.0,
+    "fcf_ttm": 4750000000.0,
+    "fcf_margin_ttm": 30.78,
+    "ocf_to_ni_ttm": 3.69,
+    "sbc_to_revenue_ttm": 15.05,
+    "diluted_shares": 1043011000.0,
+    "diluted_shares_yoy": -0.43,
+    "ar": 2222000000.0,
+    "dso": 49.8,
+    "inventory": null,
+    "dio": null,
+    "inventory_yoy": null,
+    "deferred_revenue": 7733000000.0,
+    "deferred_revenue_yoy": 19.67,
+    "rpo": 29700000000.0,
+    "rpo_yoy": 22.22,
+    "capex_to_revenue_ttm": 3.78,
+    "liquidity": 4607000000.0,
+    "cash_runway_months": null,
+    "operating_income": 385000000.0,
+    "net_income": 277000000.0
    }
   ],
   "referanslar": {
@@ -5439,8 +5477,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json"
    },
    "cogs": {
@@ -5449,8 +5487,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/CostOfRevenue.json"
    },
    "gross_profit": {
@@ -5459,8 +5497,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/GrossProfit.json"
    },
    "rd": {
@@ -5469,8 +5507,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/ResearchAndDevelopmentExpense.json"
    },
    "operating_income": {
@@ -5479,19 +5517,29 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/OperatingIncomeLoss.json"
    },
-   "interest_expense": {
-    "satir": "us-gaap:InterestExpenseDebt",
+   "interest_income": {
+    "satir": "us-gaap:InvestmentIncomeInterest",
     "tablo": "Gelir tablosu (faaliyet dışı)",
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
-    "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/InterestExpenseDebt.json"
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
+    "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/InvestmentIncomeInterest.json"
+   },
+   "interest_expense": {
+    "satir": "us-gaap:InterestExpenseNonoperating",
+    "tablo": "Gelir tablosu (faaliyet dışı)",
+    "turetilmis": false,
+    "not": "",
+    "belge": "10-Q",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
+    "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/InterestExpenseNonoperating.json"
    },
    "other_nonoperating": {
     "satir": "us-gaap:OtherNonoperatingIncomeExpense",
@@ -5499,8 +5547,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/OtherNonoperatingIncomeExpense.json"
    },
    "pretax": {
@@ -5509,8 +5557,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest.json"
    },
    "tax": {
@@ -5519,8 +5567,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/IncomeTaxExpenseBenefit.json"
    },
    "net_income": {
@@ -5529,58 +5577,58 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/NetIncomeLoss.json"
    },
    "ocf": {
     "satir": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
     "tablo": "Nakit akış tablosu",
     "turetilmis": true,
-    "not": "türetilmiş: 2026-01-01→2026-06-30 (10-Q) − 2026-01-01→2026-03-31",
+    "not": "türetilmiş: 2026-01-01→2026-09-30 (10-Q) − 2026-01-01→2026-06-30",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/NetCashProvidedByUsedInOperatingActivities.json"
    },
    "capex": {
     "satir": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
     "tablo": "Nakit akış tablosu",
     "turetilmis": true,
-    "not": "türetilmiş: 2026-01-01→2026-06-30 (10-Q) − 2026-01-01→2026-03-31",
+    "not": "türetilmiş: 2026-01-01→2026-09-30 (10-Q) − 2026-01-01→2026-06-30",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json"
    },
    "sbc": {
     "satir": "us-gaap:ShareBasedCompensation",
     "tablo": "Nakit akış tablosu",
     "turetilmis": true,
-    "not": "türetilmiş: 2026-01-01→2026-06-30 (10-Q) − 2026-01-01→2026-03-31",
+    "not": "türetilmiş: 2026-01-01→2026-09-30 (10-Q) − 2026-01-01→2026-06-30",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/ShareBasedCompensation.json"
    },
    "acquisitions": {
     "satir": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
     "tablo": "Nakit akış tablosu",
     "turetilmis": true,
-    "not": "türetilmiş: 2026-01-01→2026-06-30 (10-Q) − 2026-01-01→2026-03-31",
+    "not": "türetilmiş: 2026-01-01→2026-09-30 (10-Q) − 2026-01-01→2026-06-30",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/PaymentsToAcquireBusinessesNetOfCashAcquired.json"
    },
    "buybacks": {
     "satir": "us-gaap:PaymentsForRepurchaseOfCommonStock",
     "tablo": "Nakit akış tablosu",
     "turetilmis": true,
-    "not": "türetilmiş: 2026-01-01→2026-06-30 (10-Q) − 2026-01-01→2026-03-31",
+    "not": "türetilmiş: 2026-01-01→2026-09-30 (10-Q) − 2026-01-01→2026-06-30",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/PaymentsForRepurchaseOfCommonStock.json"
    },
    "da": {
@@ -5589,8 +5637,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/Depreciation.json"
    },
    "sga": {
@@ -5599,8 +5647,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/GeneralAndAdministrativeExpense.json"
    },
    "eps_diluted": {
@@ -5609,8 +5657,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/EarningsPerShareDiluted.json"
    },
    "diluted_shares": {
@@ -5619,8 +5667,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/WeightedAverageNumberOfDilutedSharesOutstanding.json"
    },
    "ar": {
@@ -5629,8 +5677,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/AccountsReceivableNetCurrent.json"
    },
    "deferred_rev_current": {
@@ -5639,8 +5687,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/ContractWithCustomerLiabilityCurrent.json"
    },
    "deferred_rev_noncurrent": {
@@ -5649,8 +5697,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/ContractWithCustomerLiabilityNoncurrent.json"
    },
    "rpo": {
@@ -5659,8 +5707,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/RevenueRemainingPerformanceObligation.json"
    },
    "cash": {
@@ -5669,8 +5717,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/CashAndCashEquivalentsAtCarryingValue.json"
    },
    "st_investments": {
@@ -5679,8 +5727,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/AvailableForSaleSecuritiesDebtSecuritiesCurrent.json"
    },
    "total_debt": {
@@ -5689,8 +5737,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/LongTermDebt.json"
    },
    "st_borrowings": {
@@ -5699,8 +5747,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/ShortTermBorrowings.json"
    },
    "goodwill": {
@@ -5709,8 +5757,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/Goodwill.json"
    },
    "total_assets": {
@@ -5719,8 +5767,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/Assets.json"
    },
    "current_assets": {
@@ -5729,8 +5777,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/AssetsCurrent.json"
    },
    "total_liabilities": {
@@ -5739,8 +5787,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/Liabilities.json"
    },
    "current_liabilities": {
@@ -5749,8 +5797,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/LiabilitiesCurrent.json"
    },
    "liab_and_equity": {
@@ -5759,8 +5807,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/LiabilitiesAndStockholdersEquity.json"
    },
    "equity": {
@@ -5769,8 +5817,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/StockholdersEquity.json"
    },
    "ppe": {
@@ -5779,8 +5827,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/PropertyPlantAndEquipmentNet.json"
    },
    "ap": {
@@ -5789,8 +5837,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/AccountsPayableCurrent.json"
    },
    "intangibles": {
@@ -5799,8 +5847,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/IntangibleAssetsNetExcludingGoodwill.json"
    },
    "lt_investments": {
@@ -5809,8 +5857,8 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/AvailableForSaleSecuritiesDebtSecuritiesNoncurrent.json"
    },
    "lease_liab": {
@@ -5819,13 +5867,20 @@
     "turetilmis": false,
     "not": "",
     "belge": "10-Q",
-    "tarih": "2026-07-23",
-    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm",
+    "tarih": "2026-10-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
     "xbrl_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001373715/us-gaap/OperatingLeaseLiability.json"
    }
   }
  },
  "dosyalar": [
+  {
+   "form": "10-Q",
+   "tarih": "2026-10-28",
+   "donem_sonu": "2026-09-30",
+   "accn": "0001373715-26-000096",
+   "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm"
+  },
   {
    "form": "10-Q",
    "tarih": "2026-07-23",
@@ -5902,13 +5957,6 @@
    "donem_sonu": "2023-12-31",
    "accn": "0001373715-24-000030",
    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371524000030/now-20231231.htm"
-  },
-  {
-   "form": "10-Q",
-   "tarih": "2023-10-26",
-   "donem_sonu": "2023-09-30",
-   "accn": "0001373715-23-000419",
-   "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371523000419/now-20230930.htm"
   }
  ],
  "kaynak": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001373715.json"
