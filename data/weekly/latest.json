@@ -1,29 +1,29 @@
 {
  "tur": "son7gun",
- "baslangic": "2026-10-23",
- "bitis": "2026-10-29",
- "guncelleme": "2026-10-29T11:10:55+00:00",
+ "baslangic": "2026-10-24",
+ "bitis": "2026-10-30",
+ "guncelleme": "2026-10-30T11:05:57+00:00",
  "hisseler": [
   {
    "ticker": "NVDA",
    "ad": "Nvidia",
    "donem": [
-    "2026-10-23",
-    "2026-10-29"
+    "2026-10-24",
+    "2026-10-30"
    ],
    "fiyat": {
-    "son": 215.38,
-    "tarih": "2026-10-28",
-    "haftalik": -2.97,
-    "aylik": -5.89,
-    "zirveden": -9.97,
+    "son": 213.66,
+    "tarih": "2026-10-29",
+    "haftalik": 0.68,
+    "aylik": -5.96,
+    "zirveden": -10.69,
     "zirve_52h": 239.24,
     "zirve_tarih": "2026-10-06",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": 0.06,
-    "SMH": 1.97
+    "QQQ": 1.54,
+    "SMH": 7.32
    },
    "tez": {
     "genel": "sari",
@@ -74,9 +74,9 @@
    },
    "kural": {
     "durum": "tetiklenmedi",
-    "mesaj": "Zirveden −%10,0. Sonraki kademe: −%15.",
+    "mesaj": "Zirveden −%10,7. Sonraki kademe: −%15.",
     "tetiklenen": null,
-    "zirveden_uzaklik": -9.97,
+    "zirveden_uzaklik": -10.69,
     "dusus_kaynagi": "piyasa_sektor",
     "dusus_kaynagi_aciklama": "Hissenin düşüşü karşılaştırma endeksleriyle benzer: ağırlıkla piyasa/sektör kaynaklı.",
     "kosul_saglaniyor": true
@@ -165,7 +165,7 @@
    },
    "sinyaller": [],
    "cumleler": [
-    "Hisse bu hafta −%3,0 (QQQ +%0,1, SMH +%2,0); 52 haftalık zirveden −%10,0 uzakta.",
+    "Hisse bu hafta +%0,7 (QQQ +%1,5, SMH +%7,3); 52 haftalık zirveden −%10,7 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok."
    ],
    "insider_ozet": {
@@ -182,29 +182,29 @@
     "ceyrek": 3,
     "yil": 2027,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-29T11:10:30+00:00"
+    "guncelleme": "2026-10-30T11:05:32+00:00"
    }
   },
   {
    "ticker": "META",
    "ad": "Meta Platforms",
    "donem": [
-    "2026-10-23",
-    "2026-10-29"
+    "2026-10-24",
+    "2026-10-30"
    ],
    "fiyat": {
-    "son": 612.49,
-    "tarih": "2026-10-28",
-    "haftalik": -12.19,
-    "aylik": -14.41,
-    "zirveden": -21.23,
+    "son": 624.52,
+    "tarih": "2026-10-29",
+    "haftalik": -3.75,
+    "aylik": -15.47,
+    "zirveden": -19.69,
     "zirve_52h": 777.59,
     "zirve_tarih": "2026-09-24",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": 0.06,
-    "XLC": -5.35
+    "QQQ": 1.54,
+    "XLC": -5.78
    },
    "tez": {
     "genel": "sari",
@@ -255,12 +255,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_ok",
-    "mesaj": "Zirveden −%21,2: −%15 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 1,5x (tez sağlamsa).",
+    "mesaj": "Zirveden −%19,7: −%15 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 1,5x (tez sağlamsa).",
     "tetiklenen": {
      "dusus": 15,
      "not": "DCA 1,5x (tez sağlamsa)."
     },
-    "zirveden_uzaklik": -21.23,
+    "zirveden_uzaklik": -19.69,
     "dusus_kaynagi": "karma",
     "dusus_kaynagi_aciklama": "Hisse bazı endekslerden belirgin kötü, bazılarına yakın: sektör ve şirkete özel etkiler karışık.",
     "kosul_saglaniyor": true
@@ -437,14 +437,14 @@
     ],
     "ozet_90g": {
      "S": {
-      "islem": 104,
-      "adet": 151295.0,
-      "tutar": 103216845.86289999,
-      "plan_10b5_1_adet": 148742.0
+      "islem": 103,
+      "adet": 150831.0,
+      "tutar": 102964634.02289999,
+      "plan_10b5_1_adet": 148278.0
      },
      "diger": {
-      "islem": 6,
-      "adet": 1796498.0,
+      "islem": 3,
+      "adet": 21428.0,
       "tutar": 0.0,
       "plan_10b5_1_adet": 17140.0
      },
@@ -464,6 +464,33 @@
    },
    "buyuk_hareketler": [],
    "sec_bildirimleri": [
+    {
+     "form": "CERT",
+     "tarih": "2026-10-29",
+     "donem": "",
+     "items": "",
+     "aciklama": "",
+     "accn": "0001354457-26-001039",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000135445726001039/METAM_8A_Cert.pdf"
+    },
+    {
+     "form": "8-A12B",
+     "tarih": "2026-10-29",
+     "donem": "",
+     "items": "",
+     "aciklama": "8-A12B",
+     "accn": "0001193125-26-438111",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526438111/d184794d8a12b.htm"
+    },
+    {
+     "form": "8-K",
+     "tarih": "2026-10-29",
+     "donem": "2026-10-26",
+     "items": "1.01,3.03,5.03,9.01",
+     "aciklama": "8-K",
+     "accn": "0001193125-26-438017",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526438017/d183592d8k.htm"
+    },
     {
      "form": "424B5",
      "tarih": "2026-10-28",
@@ -560,26 +587,11 @@
     },
     "xbrl_beklemede": false
    },
-   "sinyaller": [
-    {
-     "id": "49922e42c4b8",
-     "tarih": "2026-10-23",
-     "ticker": "META",
-     "tur": "kural_kademe_tez_saglam",
-     "tur_adi": "Düşüş kademesi tetiklendi, tez sağlam",
-     "yon": "olumlu",
-     "aciklama": "Zirveden −%16,6, −%15 kademesi. Hissenin düşüşü karşılaştırma endeksleriyle benzer: ağırlıkla piyasa/sektör kaynaklı.",
-     "fiyat": 648.85,
-     "fiyat_tarihi": "2026-10-22",
-     "qqq": 704.47,
-     "baslangic_kaydi": false,
-     "kayit_zamani": "2026-10-23T09:40:20+00:00"
-    }
-   ],
+   "sinyaller": [],
    "cumleler": [
-    "Hisse bu hafta −%12,2 (QQQ +%0,1, XLC −%5,3); 52 haftalık zirveden −%21,2 uzakta.",
+    "Hisse bu hafta −%3,8 (QQQ +%1,5, XLC −%5,8); 52 haftalık zirveden −%19,7 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%21,2: −%15 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 1,5x (tez sağlamsa)."
+    "Zirveden −%19,7: −%15 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 1,5x (tez sağlamsa)."
    ],
    "insider_ozet": {
     "islem": 6,
@@ -597,29 +609,29 @@
     "ceyrek": 4,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-29T11:10:33+00:00"
+    "guncelleme": "2026-10-30T11:05:35+00:00"
    }
   },
   {
    "ticker": "NOW",
    "ad": "ServiceNow",
    "donem": [
-    "2026-10-23",
-    "2026-10-29"
+    "2026-10-24",
+    "2026-10-30"
    ],
    "fiyat": {
-    "son": 150.13,
-    "tarih": "2026-10-28",
-    "haftalik": -1.95,
-    "aylik": 14.21,
-    "zirveden": -19.69,
+    "son": 109.67,
+    "tarih": "2026-10-29",
+    "haftalik": -30.15,
+    "aylik": -15.6,
+    "zirveden": -41.33,
     "zirve_52h": 186.936,
     "zirve_tarih": "2025-10-30",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": 0.06,
-    "IGV": 2.84
+    "QQQ": 1.54,
+    "IGV": -0.69
    },
    "tez": {
     "genel": "sari",
@@ -670,12 +682,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_ok",
-    "mesaj": "Zirveden −%19,7: −%15 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 1,5x (tez sağlamsa).",
+    "mesaj": "Zirveden −%41,3: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek alım düşün; önce şeytanın avukatını oku.",
     "tetiklenen": {
-     "dusus": 15,
-     "not": "DCA 1,5x (tez sağlamsa)."
+     "dusus": 35,
+     "not": "Ek alım düşün; önce şeytanın avukatını oku."
     },
-    "zirveden_uzaklik": -19.69,
+    "zirveden_uzaklik": -41.33,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": true
@@ -689,8 +701,8 @@
       "metin": "Kümelenmiş satış: 2026-08-27–2026-08-31 arasında 3 yönetici satış yaptı (10b5-1 planlı işlem oranı %33)."
      },
      {
-      "etiket": "dikkat",
-      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok. Aynı dönemde fiyat %68.89 yükseldi."
+      "etiket": "bilgi",
+      "metin": "Son 180 günde yönetimden hiç açık piyasa alımı (P) yok."
      }
     ],
     "kumelenmis_satislar": [
@@ -740,7 +752,448 @@
      }
     }
    },
-   "buyuk_hareketler": [],
+   "buyuk_hareketler": [
+    {
+     "tarih": "2026-10-29",
+     "claude": null,
+     "onceki_gun": "2026-10-28",
+     "hareket": -26.95,
+     "yon": "asagi",
+     "benchmark": {
+      "IGV": -3.52,
+      "QQQ": -1.42
+     },
+     "on_siniflama": "sirkete_ozel",
+     "on_siniflama_aciklama": "Hisse −%26,9, sektör/piyasa −%3,5: hareketin çoğu şirkete özel görünüyor.",
+     "basliklar": [
+      {
+       "zaman": "2026-10-29T23:55:00+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "Review & Preview: Don’t Call It a Tech Wreck",
+       "ozet": "Alphabet’s huge drop pulled down the Dow, S&P 500 and Nasdaq. But under the surface, most stocks had a solid day.",
+       "url": "https://finnhub.io/api/news?id=8886fc33559190c1ce0e882405dc60cf509c23263cc6113f3851b5d68cd1577f",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-29T23:51:00+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "ServiceNow Investigation Notice: SueWallSt Notifies Investors of Pending Investigation Into ServiceNow (NOW)",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMivwJBVV95cUxQVGl0YllHcktwakZ5aVBTd0VMSlNXY3pHUFduQ2hJNHRydkpCclFyMGhHUldqNUxlY3lJVGN4bUpLTlhnUlFGaGwzcGZrbWFWem5IYlhydFBtLVFLN0RnYkxtcGw1Vk1iLWt0czRUOXZkOHhCR1phUWwyZUtQMU9FVUtkd2RQaTlFWVdLdDB0TldRa1ZQOXdFNEhLN3JqQVY3NjhIQmQtdFFlS3U1QzN1dmVjYnQyZmQtWG9ZQXNpRi1FWGR2UjV5ZkRESU13WXhlODlsYS1vdEE5OUI3Um1VLXQ5OXBkSEtRbk5WdkRyYmlPN3hJOVg0UlpTRWM1N1FOYzJjNy13TDdWUHp5N09vUkZGcDA3VnE0bXBNb2NaMnZIMTJwenpmN0U5UzdMSmYxSjk5Wl9aLWcwdkk1RFJR?oc=5",
+       "kaynak": "herald-dispatch.com",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-29T22:16:26+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "ServiceNow, Inc. (NOWS.TO) Seasonal returns chart",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9JamxQb0V4bmJKdmZ6TERJalg4d2dCV2c4X0pKS004YU9nTE9XdWZDNkYxRm5tbG5kbTRKWWY0M09tUmxoOHFQNkN6Q3E0NUhCbnNZZDh6dWxvZjR3dHk1SlZ5b3lJUQ?oc=5",
+       "kaynak": "Yahoo Finance UK",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-29T22:16:18+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "ServiceNow Inc (4S0.HM) Seasonal returns chart",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBwY2tybGw0WjdxUVBXb3kwSmdSN2k3ME1uVXZQXzZ3RFdHNWViN19SSFpKNi1iTEg1R2tQZU1BdVktUHl6Z3llRDl1SWs0Z3dtQU85MUVMUDh6dWtBN1hFcnJGaFU?oc=5",
+       "kaynak": "Yahoo Finance UK",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-29T22:15:12+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "What Stagwell (STGW) Said on Its Q3 Earnings Call",
+       "ozet": "Stagwell (NASDAQ:STGW) reported record third-quarter revenue, net revenue, adjusted EBITDA and adjusted earnings per share, as the marketing company emphasized its expansion into AI-based marketing transformation software and services. Chairman and Chief Executive Officer Mark Penn said the company",
+       "url": "https://finnhub.io/api/news?id=bc45d44d6d25a6db97244f0f23e73eca4ad252b3dae50ddaca8300f91fc0c01f",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-29T22:07:30+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "ServiceNow Is Navigating a Changing AI Landscape",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQY0o0TzczZXRZQk02bW40T3BxOXBIRlhZY0JjS3FpZmdOdTVxN3Z0UGtRRktCeGE1bXBYMDh1UnZaWXRjaUJHNllkYjBiVUY5RjB3UVYyazZ1eF9SYjgyV3Z3WGRVS2t3ek5waGJqaEg0VnV3aEhyUmh1UXJ2UlRFdmZXYVFEMW9OVDh2UGFFa1BaSGM4VEtJemd5dDcxRk53RVE?oc=5",
+       "kaynak": "Morningstar",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-29T21:58:19+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "Dow Jones Futures: Amazon, Intel Lead Earnings Losers After Google, ServiceNow, Fortinet Hit Nasdaq",
+       "ozet": "Amazon, Intel and Illumina were earnings losers overnight after Google, ServiceNow and Fortinet slammed techs. Much of the market is doing fine.",
+       "url": "https://finnhub.io/api/news?id=29af632925ef1c1bbde9c465d3cd7dd95bf05d1bfc0f26c90a8c49f1868c2534",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-29T21:32:49+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "ServiceNow Earnings: Lowering Fair Value Estimate as Nuances Mar Guidance",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVVNGMnhNaEJRcHU2YnRsODhaenc2VGFINUdXSC1fZXBQMHR0dDQxSE9FaWJQRHBtZ1N6ZnE1eFREbHZhZTVmSFZpdVdnenNhYmxpcUNST3FfOGN4eTNpR21JV1A2Xy15TnhBTnZBMVZfSVQ2a1J3eGY5Mm9nbEVSQ3F1aUxwLW5IeEcwYzZJYlc2ZjZiWDBxelFDN1BBQzducUlrNVVXbw?oc=5",
+       "kaynak": "Morningstar",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-29T21:21:00+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "Alphabet, Marvell, ServiceNow, Fortinet, Caterpillar, Lilly, and More Stocks That Explain Today’s Market",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB3WFgzTVlLTWhPQ2JoRWdwQWRTY3F6TzNUb1pPSjUxaXdXSWM3VmVmZlhNSEJIS3p6TFE0anpfQWFOcXAzcWxwWWowQjZ2Y05SSzctQTFCX3NrcjFoeUJsanlCc08?oc=5",
+       "kaynak": "Barron's",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-29T21:12:34+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "Why ServiceNow (NOW) stock is nosediving",
+       "ozet": "Shares of enterprise workflow automation company ServiceNow (NYSE:NOW) fell 26.3% in the afternoon session after the company forecast fourth-quarter current remaining performance obligations growth to decelerate to 18.5%, reigniting concerns regarding artificial intelligence disruption.",
+       "url": "https://finnhub.io/api/news?id=26a127357dca72e661ac49ed3aedd35644f4cc6bb29b63b5835aab6b9e1ea148",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-29T20:19:35+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "ServiceNow's AI boom faces a big test: Can it reassure Wall Street?",
+       "ozet": "ServiceNow President & CFO Gina Mastantuono joins Market Domination to discuss the company's growing AI revenue opportunity and its strategy for maintaining investor confidence. Mastantuono addresses concerns surrounding AI governance and potential reductions in software seats as businesses increasingly adopt AI.",
+       "url": "https://finnhub.io/api/news?id=0e1be69fe6f97c4a4722cbe4ca756ce9ad805c813473074ef348973e029e430f",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-29T20:10:00+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "U.S. Indexes Closed Down Thursday; ServiceNow Took Biggest Hit",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNE5aYmMxT2FlR21ZSWhqZ2oyZzNPRTZMY2Q4Wjk5dHJqOEZISGV1VW1weXlyVW5Fb0hnVTJxR01NRHZ1eXY5NFNUWTFPWDBxaV8tR1J3Ulg5YkIzaHFsUDJ1QjJGdTZIV19vMkM3M1ZVakIzaFhPdHE2YTdTajNDVUVVYnNJT0VoRzNiX0V2MVlVYzdwMnNPRnQzUEtvckMzbllsMw?oc=5",
+       "kaynak": "Barron's",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-29T20:06:10+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "S&P 500 Top Movers: Oct. 29, 2026 Gainers and Losers",
+       "ozet": "S&P 500 top movers for Oct. 29, 2026, led by CVNA and GEN among gainers and NOW and FTNT among losers.",
+       "url": "https://finnhub.io/api/news?id=2b48361af4324a229c8c5020e404c700fb7325d2fdbfb46cba45c4a44b5d7882",
+       "kaynak": "ChartMill",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-29T20:00:32+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "US Stock Market Movers: Top Gainers and Losers for the Session",
+       "ozet": "US session market movers: NUBURU led gainers at 125.0% while GameStop's GME.W fell 48.11% among the biggest losers.",
+       "url": "https://finnhub.io/api/news?id=72e4f42a8753e6da63e28896bb002781dc868173b0e566b117686ccffaf1e00e",
+       "kaynak": "ChartMill",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-29T19:51:04+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "Nasdaq Poised to Plunge as AI Stock Wipeout Follows Hot Inflation Data",
+       "ozet": "Third quarter GDP beat at 3.4% while inflation stuck at 3.6%, and traders now see an 80% chance of a December Fed hike. Eric Bleeker covers the market's risk-off turn and the morning's biggest earnings movers, from Alphabet and ServiceNow to Caterpillar and Eli Lilly.",
+       "url": "https://finnhub.io/api/news?id=3fc996e290bb97ea79e8c6c2ea3efae37672276cf57d96946cc7bf694495d622",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-29T19:39:27+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "Google, ServiceNow among market cap stock movers on Thursday",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONGdjWUtSRmg4MXh3ZHJ2cl9qSTFtQmpaaGRacDNrTDRkS2d2RVZBc0E5TkZOcHlCUFZhQmVZazF0bFVSc2x1aEpjeGRlbXhKRTd1TnZrWjgtVnpwTnRLdEdnNGZvQ2E3S3Iyb2dqLVJDTG9QaC1ZamJGY0JTYmtma25jUGlnMFNKdGROcXVXZmxacDN5UDRTeWEwWV9mWG82OWxHZWZvZ0NvNnY3UUlScjhTOV90eThvemNGTHFR?oc=5",
+       "kaynak": "Investing.com",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-29T19:06:08+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "S&P 500 Most Active Stocks in the Oct. 29, 2026 Session",
+       "ozet": "S&P 500 most-active list for Oct. 29, 2026: Alphabet led volume as GOOGL and GOOG fell, while ServiceNow, Intel, Ford, Norwegian, Nvidia, Amazon, Marvell and Netflix also traded.",
+       "url": "https://finnhub.io/api/news?id=1b1bb5cb0a78212ad7264b061672a8f2ae3b6e792a9afe7e8a4fb71f035eb211",
+       "kaynak": "ChartMill",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-29T18:54:15+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "Wall Street Is Done Giving AI Software a Pass",
+       "ozet": "Fortinet and ServiceNow plunged 22% and 27%, respectively, as investors punished soft guidance and questioned whether AI hype can deliver real growth.",
+       "url": "https://finnhub.io/api/news?id=94a4381f6c2ab2fd0d5a37722978d04ff6e5e42ac5a2882894c3fae435570440",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-29T18:45:14+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "ServiceNow's AI Momentum Still Too Small to Inflect Overall Growth, Truist Says",
+       "ozet": "ServiceNow's (NOW) accelerating momentum in artificial intelligence is still too small to inflect th",
+       "url": "https://finnhub.io/api/news?id=f07a7945e3828870bf368ec2e23c9ff2ef03cf71a5a6c01e33e1897acbe0adc7",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-29T18:45:01+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "ServiceNow: 3 Key Takeaways for Long-Term Investors",
+       "ozet": "Deployment teams are now bundled into major deals, accelerating how fast clients move from testing to production.",
+       "url": "https://finnhub.io/api/news?id=350fe039fcee0debe42d712c5f79ab5660cf7b5eb037d62042cbf9c9d263b772",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-29T18:43:08+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "UBS maintains ServiceNow at Neutral, lowers price target to $140 from $150",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOYmpEUF9vSVpjWld2b0JQdUxjMWU0dFJON1h1TFZvTHBMaXAxTkJNUGRKb2UxcGFKYzFrSWd0YUN0cWdVZExtQTVvVkpRN3JVMUVYLXRGdG40Y3hIcFcxMTY2ZW5TX2t4c1FSb2tQZ0pLZ1F6N1FVVURINFBrdVFkUWRiWThtZGt1ZWdmcHVTSmJ1OTJXLXo4S2pqeGtSUjJmQUR0QWVfYVRkclozZDhJNktMMjExdS1xVTk0b2tJNzNZQmIzSzdJQTEtM0pxUQ?oc=5",
+       "kaynak": "TradingView",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-29T18:34:21+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "‘It was just a fight that we decided to pick’: Serval raises $150 million at a $3 billion valuation to take on ServiceNow",
+       "ozet": "Sequoia led the $150 million round and is doubling down. ServiceNow says AI makes it easier to build a startup, not to run an enterprise.",
+       "url": "https://finnhub.io/api/news?id=454ecdbea4657f43b27ffa1ead6072f2bc21d76b1b25a4a742bae7ff69ee8ddb",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-29T18:15:36+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "ServiceNow Inc Stock (NOW) Moved Down by 26.98% on Oct 29: A Full Analysis",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPTmhOUnZubXBTMFpsQVo2MTRfRExaSUZ2eDA1WFVmc0lsekR2c1ZpYVljQllGVXowa2ZldlJIcS1BVHFOWUZpZkMweHBvQXlZamRGeXVUZ3dJZTlkOGhSeTJrWThNOGZ5MDc1TlYzM0paVTRmbDBSTzB5YVdlblZjc0xCUXlBQm1YT0E?oc=5",
+       "kaynak": "TradingKey",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-29T18:05:52+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "S&P 500 Unusual Volume Movers for October 29, 2026",
+       "ozet": "S&P 500 unusual volume leaders for October 29, 2026 include ServiceNow, Fortinet, Carvana, Boeing, DoorDash, and West Pharmaceutical, with notable price moves.",
+       "url": "https://finnhub.io/api/news?id=ea9efa592b1468e239b4f45eca42a7ebde06af9a3076fc9ad462e40aebfa316c",
+       "kaynak": "ChartMill",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-29T18:04:01+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "ServiceNow just can't seem to escape the SaaSpocalypse — even after strong Q3 AI growth",
+       "ozet": "Laffer Tengler Investments CEO and CIO Nancy Tengler and her panel of experts weigh in on why ServiceNow (NOW) stock is struggling so much despite the company's strong quarterly results.Today's panel includes 42 Macro founder and CEO Darius Dale, Founder ETFs partner and portfolio manager Michael Monaghan, Fundstrat Global Advisors managing director and global head of technical strategy Mark Newton, and Yahoo Finance anchor Julie Hyman.",
+       "url": "https://finnhub.io/api/news?id=0e1076ba2c0f6a0f75c4e6349dc28207aeb6a6a8f5c2287d1b76e53abae6150a",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-29T17:46:10+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "ServiceNow Guides to Slower Backlog Growth: Rapid Earnings Reaction",
+       "ozet": "ServiceNow raised its AI target again, yet the contracted backlog that feeds future revenue is guided to grow more slowly.",
+       "url": "https://finnhub.io/api/news?id=a261edadede1f997b269e840ac72f30020c95c113647a6f1a30f881dc824627b",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-29T17:44:00+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "ServiceNow Stock Is Worst in S&P 500 After a Key Revenue Measure Fell Short",
+       "ozet": "Wall Street analysts are raising questions about why greater AI adoption hasn’t boosted growth for the software maker.",
+       "url": "https://finnhub.io/api/news?id=07ba900892e06a64b25d4a600410e7653e8a6a7c15108326f6fc5201ce596c43",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-29T17:41:48+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "TD Cowen maintains ServiceNow at Buy, lowers price target to $160 from $165",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNNHcxTkpHdkdRNTh3YnVMUDFGekpoZ09vekpFR05GV2hBRGdUcVRJdjMzNG5GTkw0RnliamxhUUJUWWhkNVdYZHhTakNIZDEyQnI4c2ZQaVJtSXA5V2luQXF5SlFJalhha21URnlqZXJKN3VvU18yb29ycndkTmZNUGo3bVBqMTV2ZTNDVlF3N1JiRWk0YThvdGs1aHlOLWk5VnFHbTlCWEw5a0p2dVBCOFp5cGtubHFCUV9wZE5qWUhXOGdaZjNyQXJ2Q3FlTTg?oc=5",
+       "kaynak": "TradingView",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-29T17:36:23+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "S&P 500 Top Movers: Today's US Session Gainers and Losers",
+       "ozet": "S&P 500 top movers for today's US session: Carvana and Textron lead gainers, while ServiceNow and Fortinet post the steepest declines.",
+       "url": "https://finnhub.io/api/news?id=842423e0d03046a3ce490e2d5f41a923a1fd4425fcb7e2b83d7badb747f0155d",
+       "kaynak": "ChartMill",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-29T17:30:43+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "Top US Stock Gainers and Losers for Oct. 29, 2026",
+       "ozet": "US top gainers and losers for Oct. 29, 2026, ranked by percentage change, led by BURU's 117.0% gain and GME.W's 46.08% decline.",
+       "url": "https://finnhub.io/api/news?id=8afb4c8fb9ed46dbf27e877fcddb20baafcda0e79f6161fcade88e68881fb0bd",
+       "kaynak": "ChartMill",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-29T17:02:02+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "ServiceNow Sinks 19% on EPS Miss and Slower Backlog Outlook Despite “Unicorn Growth Company” Pitch",
+       "ozet": "Key TakeawaysServiceNow fell 19% after adjusted EPS of $1. 00 missed the $1.",
+       "url": "https://finnhub.io/api/news?id=82a68c01b51a2cdaf52b81d061f9f96077154dbaadc8762780ee0c23702b1ba2",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-29T17:01:14+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "ServiceNow Lands HPE & Stagwell as It Pushes “New CRM” Beyond Legacy",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQN3hDaFRfY2hhbzRfWFc5TDhzbi05MVpPemt3X3FwOTdUT3ZRdzdzbnI1bUxnRVJDVmxaX2JvRm5BR1JBS3Z0aTdyeUFVemxmUW53LWtTRDNLcDgxams5bnJyYlFHSGZlWkgzZExYQ29tTGdoYmRYTW5NQk8wek01Z1hXT3gzaWdjYmhpeFBJcmhyUQ?oc=5",
+       "kaynak": "CX Today",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-29T17:01:00+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "NOW Q3 Earnings Lag Estimates, Revenues Rise on Subscription Growth",
+       "ozet": "ServiceNow's Q3'26 earnings miss estimates despite 20.5% revenue growth, fueled by strong subscriptions and AI demand, prompting a higher 2026 outlook.",
+       "url": "https://finnhub.io/api/news?id=ae0a2672f9ea08dba789f84611d01139220963c39cf801ed9876f9b5e6661622",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-29T16:46:59+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "ServiceNow Investors Seek Proof of AI Monetization After Q3 Results, RBC Says",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTDY2UkZQVU5mUmtTUE5FTjZNMDJXNmVOcW95Qm1GRWhFX2hNb3FxbngyRTZnM3RQcXBHbE9mSHRmVEZSNWdYVU56UG5QQW1UWnVacGF0d3RwWnVzdGgzLVBTWjRnbnNiQWYwRFdHQ0c0YUNWR0djVUtBbjFTWlVzMHg0TUpQZ1ZERzZmSUhPcEpka05JWjVkMU9tNi01bTQ?oc=5",
+       "kaynak": "Yahoo Finance",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-29T16:44:45+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "Software stocks slide as Fortinet and ServiceNow slump, Microsoft reverses early gains (MSFT:NASDAQ)",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQMVZwc0pBYlVTUnlkUC1lRThLM2ZKZWFIcFRCNW9tS0doaGNReGhjYXdzNml0UU5wS2djWnNFVndCQ2p2d05oOHJXczZzUFphWXd1dVRjT2QzTWNuRUI4VTRmd2pNWW9IMmxHZEV0ZHVHamxjWENaalU4VEdxNEF3Z1R5Z2I0TmhkOHE3Wm9aS2Q0MnplNFJkOFhKM3g3VXRwTGFPb0RhY3FGTTZDS1JaQWNDa25yckxBaXpMOERnUVo?oc=5",
+       "kaynak": "Seeking Alpha",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-29T16:38:53+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "NOW Stock On Track To Post Worst Single-Day Performance In Over 14 Years — Analysts See AI Upside Despite Slowing Growth",
+       "ozet": "ServiceNow shares plunged after its third-quarter results, with analysts highlighting softer contracted revenue growth despite the company's expanding AI opportunity.",
+       "url": "https://finnhub.io/api/news?id=ce7df5cfa9fed0aa1441236826e36f2aeadbf3fc5d1094f986bd96efb4438114",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-29T16:33:01+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "ServiceNow Beat and Raised, and the Stock Still Sank: Why Piper Sandler Sees 56% Upside",
+       "ozet": "Key TakeawaysServiceNow shares fell after its third-quarter results, even though it beat its own guidance, because its backlog guidance for the fourth quarter pointed to slower growth. The stock is now down 38% over the past year.",
+       "url": "https://finnhub.io/api/news?id=675bbb1dd55a7e18d011d4365648a2a8a24cc7824ca99fb7b196d9882de768fb",
+       "kaynak": "Yahoo",
+       "saglayici": "Finnhub"
+      },
+      {
+       "zaman": "2026-10-29T16:20:00+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "ServiceNow, Inc. Stock 12‑Month Price Target Raised to $159.44, Implies 6% Upside",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQaDhxOGs4ZllsMzdPS1YydXU3Y2NQTzhQYXUxcjRqYlBYSVc4eEl3TlFsVTR3UmRWOWhoTUlYYldNLXNNNk00c2ctR3g0RkVONUd4TXhvcnhVdXQ3UFJ0VzBJN1F4a0xWTEk0Z1NzalNvNzBldUlGM0NvWVpoZkxLQ0JaX2xrdHhiYm1XUHBYalZSTFdEVlFaVFhZRXQyWngza0JKRkFaTnRXUm5mV1ZrSWtSMXhzbFVZNDRtWDRLb1JjbDYyaFd1MFRTM2JLSURFMVRQeg?oc=5",
+       "kaynak": "TradingView",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-29T15:57:00+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "Should You Buy ServiceNow Stock After 25% Drop? Q3 Results And AI Risks",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSHFUTG9iVVZvTjk5eFIzaDNVS0ZhNmUzTFRKbWgtMm9kblV3ZnpkY2VXLXF6YXZ4Q1ZLbElWU2NkUWwxaG9JengxU2h2dDlhRVhvdlFyZkhKQkViU3lHYk1PTFk3WThwTUFMN1cwQWNIY0FJbTNFcjJVb05MQnhaTlRlY1lXZUhVNGxPQkNaSU5kSkFDa1ZKY0lGQTlvT1BLSlhjTFRTUk54SllFUVHSAeoBQVVfeXFMTlhHT21wWUgzcmF3YkR3RUpsWFZNSmk1VVVIRnp6a01uMHp4d1p6UWVETVBhNmZfUm5nUUllNUVQdjJCX29zNlQ2cEE0ZnlKNDBpcmV4clJsRkRyV3JoVnFsS3RnTW5oU2Z6bXNYUTdpYWVjNFZyWENzdU5odGRwQS1sa19ZS3hGelgzcUREaExKNlg5NlVDbDRhekJGeU83a3ZENWxfLTNkeVhhY0xyUTEzaXAtcFI1U2FjZnlEajN5U3I2R1ZCQlJ1aThZaktvYkVxRTV2dTdOT3RvTkk3U2ttVU9FSGtUOERB?oc=5",
+       "kaynak": "Coinpedia",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-29T15:53:00+00:00",
+       "tarih": "2026-10-29",
+       "baslik": "ServiceNow drops 25% on growth concerns",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWnZUaWhaeW53QU9vcm5OTHBveGIwOGtwT2QxdDJTS05fWUVKRXJsUmRPc2ZqbXJsU3FCY3JjOWpiQkVBcmczLTlfbDhzbFByWHJuLTVCdU85TEVoMS13TDZ6Y2F0NGVBaFFMbFR5SjJiUHh2U0xZdkJLb2FIc2IzSjJ0Q1RLT3E3SE1N?oc=5",
+       "kaynak": "Breakingthenews.net",
+       "saglayici": "Google News RSS"
+      }
+     ],
+     "sec_bildirimleri": [
+      {
+       "form": "4",
+       "tarih": "2026-10-28",
+       "items": "",
+       "url": "https://www.sec.gov/Archives/edgar/data/1373715/000164960926000037/xslF345X06/wk-form4_1793235984.xml",
+       "aciklama": "FORM 4"
+      },
+      {
+       "form": "4",
+       "tarih": "2026-10-28",
+       "items": "",
+       "url": "https://www.sec.gov/Archives/edgar/data/1373715/000133494426000036/xslF345X06/wk-form4_1793235977.xml",
+       "aciklama": "FORM 4"
+      },
+      {
+       "form": "4",
+       "tarih": "2026-10-28",
+       "items": "",
+       "url": "https://www.sec.gov/Archives/edgar/data/1373715/000166742226000038/xslF345X06/wk-form4_1793235971.xml",
+       "aciklama": "FORM 4"
+      },
+      {
+       "form": "4",
+       "tarih": "2026-10-28",
+       "items": "",
+       "url": "https://www.sec.gov/Archives/edgar/data/1373715/000210346926000014/xslF345X06/wk-form4_1793235965.xml",
+       "aciklama": "FORM 4"
+      },
+      {
+       "form": "4",
+       "tarih": "2026-10-28",
+       "items": "",
+       "url": "https://www.sec.gov/Archives/edgar/data/1373715/000178106426000020/xslF345X06/wk-form4_1793235957.xml",
+       "aciklama": "FORM 4"
+      },
+      {
+       "form": "4",
+       "tarih": "2026-10-28",
+       "items": "",
+       "url": "https://www.sec.gov/Archives/edgar/data/1373715/000146539126000032/xslF345X06/wk-form4_1793235951.xml",
+       "aciklama": "FORM 4"
+      },
+      {
+       "form": "10-Q",
+       "tarih": "2026-10-28",
+       "items": "",
+       "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm",
+       "aciklama": "10-Q"
+      },
+      {
+       "form": "8-K/A",
+       "tarih": "2026-10-28",
+       "items": "2.02,9.01",
+       "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000095/now-20261028.htm",
+       "aciklama": "8-K/A"
+      },
+      {
+       "form": "8-K",
+       "tarih": "2026-10-28",
+       "items": "2.02,9.01",
+       "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000092/erq3fy26-8xk.htm",
+       "aciklama": "8-K"
+      }
+     ]
+    }
+   ],
    "sec_bildirimleri": [
     {
      "form": "10-Q",
@@ -784,11 +1237,27 @@
     },
     "xbrl_beklemede": false
    },
-   "sinyaller": [],
+   "sinyaller": [
+    {
+     "id": "ad3598699357",
+     "tarih": "2026-10-30",
+     "ticker": "NOW",
+     "tur": "kural_kademe_tez_saglam",
+     "tur_adi": "Düşüş kademesi tetiklendi, tez sağlam",
+     "yon": "olumlu",
+     "aciklama": "Zirveden −%41,3, −%35 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+     "fiyat": 109.67,
+     "fiyat_tarihi": "2026-10-29",
+     "qqq": 715.34,
+     "baslangic_kaydi": false,
+     "kayit_zamani": "2026-10-30T11:05:41+00:00"
+    }
+   ],
    "cumleler": [
-    "Hisse bu hafta −%1,9 (QQQ +%0,1, IGV +%2,8); 52 haftalık zirveden −%19,7 uzakta.",
+    "Hisse bu hafta −%30,1 (QQQ +%1,5, IGV −%0,7); 52 haftalık zirveden −%41,3 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%19,7: −%15 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 1,5x (tez sağlamsa).",
+    "Zirveden −%41,3: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek alım düşün; önce şeytanın avukatını oku.",
+    "2026-10-29 günü −%26,9 büyük hareket (Hisse −%26,9, sektör/piyasa −%3,5: hareketin çoğu şirkete özel görünüyor.)",
     "Yeni 10-Q dosyalandı (2026-10-28); bilanço analizi güncellendi."
    ],
    "insider_ozet": {
@@ -805,29 +1274,29 @@
     "ceyrek": 4,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-29T11:10:36+00:00"
+    "guncelleme": "2026-10-30T11:05:38+00:00"
    }
   },
   {
    "ticker": "AAOI",
    "ad": "Applied Optoelectronics",
    "donem": [
-    "2026-10-23",
-    "2026-10-29"
+    "2026-10-24",
+    "2026-10-30"
    ],
    "fiyat": {
-    "son": 82.22,
-    "tarih": "2026-10-28",
-    "haftalik": 6.34,
-    "aylik": -15.08,
-    "zirveden": -63.15,
+    "son": 79.19,
+    "tarih": "2026-10-29",
+    "haftalik": 16.34,
+    "aylik": -21.34,
+    "zirveden": -64.5,
     "zirve_52h": 223.1,
     "zirve_tarih": "2026-05-13",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": 0.06,
-    "SMH": 1.97
+    "QQQ": 1.54,
+    "SMH": 7.32
    },
    "tez": {
     "genel": "kirmizi",
@@ -889,12 +1358,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%63,1: −%55 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Pozisyon büyüklüğünü sınırla; tez gerçekten sağlam mı yeniden yaz.",
+    "mesaj": "Zirveden −%64,5: −%55 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Pozisyon büyüklüğünü sınırla; tez gerçekten sağlam mı yeniden yaz.",
     "tetiklenen": {
      "dusus": 55,
      "not": "Pozisyon büyüklüğünü sınırla; tez gerçekten sağlam mı yeniden yaz."
     },
-    "zirveden_uzaklik": -63.15,
+    "zirveden_uzaklik": -64.5,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 15 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -971,12 +1440,6 @@
      "diger": {
       "islem": 1,
       "adet": 2200.0,
-      "tutar": 0.0,
-      "plan_10b5_1_adet": 0.0
-     },
-     "A": {
-      "islem": 1,
-      "adet": 9251.0,
       "tutar": 0.0,
       "plan_10b5_1_adet": 0.0
      }
@@ -1572,9 +2035,9 @@
    },
    "sinyaller": [],
    "cumleler": [
-    "Hisse bu hafta +%6,3 (QQQ +%0,1, SMH +%2,0); 52 haftalık zirveden −%63,1 uzakta.",
+    "Hisse bu hafta +%16,3 (QQQ +%1,5, SMH +%7,3); 52 haftalık zirveden −%64,5 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%63,1: −%55 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Pozisyon büyüklüğünü sınırla; tez gerçekten sağlam mı yeniden yaz.",
+    "Zirveden −%64,5: −%55 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Pozisyon büyüklüğünü sınırla; tez gerçekten sağlam mı yeniden yaz.",
     "2026-10-28 günü +%6,8 büyük hareket (Hisse +%6,8, sektör/piyasa +%1,7: hareketin çoğu şirkete özel görünüyor.)",
     "2026-10-27 günü +%7,0 büyük hareket (Sektör ETF ortalaması +%3,0: sektör hareketi belirgin.)",
     "2026-10-26 günü +%6,6 büyük hareket (Sektör ETF ortalaması +%2,7: sektör hareketi belirgin.)"
@@ -1587,35 +2050,35 @@
    },
    "sonraki_bilanco": {
     "tarih": "2026-11-05",
-    "saat": "",
+    "saat": "amc",
     "eps_tahmin": 0.1462,
     "gelir_tahmin": 273471588,
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-29T11:10:39+00:00"
+    "guncelleme": "2026-10-30T11:05:42+00:00"
    }
   },
   {
    "ticker": "IONQ",
    "ad": "IonQ",
    "donem": [
-    "2026-10-23",
-    "2026-10-29"
+    "2026-10-24",
+    "2026-10-30"
    ],
    "fiyat": {
-    "son": 32.43,
-    "tarih": "2026-10-28",
-    "haftalik": 0.46,
-    "aylik": -27.25,
-    "zirveden": -55.0,
+    "son": 31.72,
+    "tarih": "2026-10-29",
+    "haftalik": 1.8,
+    "aylik": -27.76,
+    "zirveden": -55.99,
     "zirve_52h": 72.07,
     "zirve_tarih": "2026-05-29",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": 0.06,
-    "SMH": 1.97
+    "QQQ": 1.54,
+    "SMH": 7.32
    },
    "tez": {
     "genel": "kirmizi",
@@ -1676,12 +2139,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%55,0: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "mesaj": "Zirveden −%56,0: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "tetiklenen": {
      "dusus": 35,
      "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -55.0,
+    "zirveden_uzaklik": -55.99,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -2139,9 +2602,9 @@
    },
    "sinyaller": [],
    "cumleler": [
-    "Hisse bu hafta +%0,5 (QQQ +%0,1, SMH +%2,0); 52 haftalık zirveden −%55,0 uzakta.",
+    "Hisse bu hafta +%1,8 (QQQ +%1,5, SMH +%7,3); 52 haftalık zirveden −%56,0 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%55,0: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "Zirveden −%56,0: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "2026-10-27 günü +%7,1 büyük hareket (Sektör ETF ortalaması +%3,0: sektör hareketi belirgin.)"
    ],
    "insider_ozet": {
@@ -2152,35 +2615,35 @@
    },
    "sonraki_bilanco": {
     "tarih": "2026-11-05",
-    "saat": "",
+    "saat": "amc",
     "eps_tahmin": -0.3843,
     "gelir_tahmin": 144457602,
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-29T11:10:43+00:00"
+    "guncelleme": "2026-10-30T11:05:45+00:00"
    }
   },
   {
    "ticker": "ORCL",
    "ad": "Oracle",
    "donem": [
-    "2026-10-23",
-    "2026-10-29"
+    "2026-10-24",
+    "2026-10-30"
    ],
    "fiyat": {
-    "son": 144.54,
-    "tarih": "2026-10-28",
-    "haftalik": 11.93,
-    "aylik": 9.0,
-    "zirveden": -47.5,
-    "zirve_52h": 275.3,
-    "zirve_tarih": "2025-10-29",
+    "son": 139.56,
+    "tarih": "2026-10-29",
+    "haftalik": 11.17,
+    "aylik": 1.28,
+    "zirveden": -46.86,
+    "zirve_52h": 262.61,
+    "zirve_tarih": "2025-10-31",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": 0.06,
-    "IGV": 2.84
+    "QQQ": 1.54,
+    "IGV": -0.69
    },
    "tez": {
     "genel": "sari",
@@ -2239,127 +2702,19 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_ok",
-    "mesaj": "Zirveden −%47,5: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "mesaj": "Zirveden −%46,9: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "tetiklenen": {
      "dusus": 35,
      "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -47.5,
+    "zirveden_uzaklik": -46.86,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": true
    },
    "insider": {
-    "hafta_islemleri": [
-     {
-      "tarih": "2026-10-23",
-      "kisi": "Smith Maria",
-      "unvan": "EVP, Chief  Accounting Officer",
-      "kod": "M",
-      "adet": 8926.0,
-      "fiyat": 0.0,
-      "tutar": null,
-      "plan_10b5_1": false,
-      "sonrasi": 73283.0,
-      "sahiplik": "D",
-      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000134143926000125/xslF345X06/form4.xml"
-     },
-     {
-      "tarih": "2026-10-23",
-      "kisi": "Smith Maria",
-      "unvan": "EVP, Chief  Accounting Officer",
-      "kod": "F",
-      "adet": 4673.0,
-      "fiyat": 125.54,
-      "tutar": 586648.42,
-      "plan_10b5_1": false,
-      "sonrasi": 68610.0,
-      "sahiplik": "D",
-      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000134143926000125/xslF345X06/form4.xml"
-     },
-     {
-      "tarih": "2026-10-23",
-      "kisi": "HENLEY JEFFREY",
-      "unvan": "Yönetim kurulu üyesi, Vice Chairman",
-      "kod": "M",
-      "adet": 8033.0,
-      "fiyat": 0.0,
-      "tutar": null,
-      "plan_10b5_1": false,
-      "sonrasi": 501175.0,
-      "sahiplik": "I",
-      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000134143926000123/xslF345X06/form4.xml"
-     },
-     {
-      "tarih": "2026-10-23",
-      "kisi": "HENLEY JEFFREY",
-      "unvan": "Yönetim kurulu üyesi, Vice Chairman",
-      "kod": "F",
-      "adet": 3529.0,
-      "fiyat": 125.54,
-      "tutar": 443030.66000000003,
-      "plan_10b5_1": false,
-      "sonrasi": 497646.0,
-      "sahiplik": "I",
-      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000134143926000123/xslF345X06/form4.xml"
-     },
-     {
-      "tarih": "2026-10-23",
-      "kisi": "CATZ SAFRA",
-      "unvan": "Yönetim kurulu üyesi, Chief Executive Officer",
-      "kod": "M",
-      "adet": 8033.0,
-      "fiyat": 0.0,
-      "tutar": null,
-      "plan_10b5_1": false,
-      "sonrasi": 1126625.0,
-      "sahiplik": "D",
-      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000134143926000121/xslF345X06/form4.xml"
-     },
-     {
-      "tarih": "2026-10-23",
-      "kisi": "CATZ SAFRA",
-      "unvan": "Yönetim kurulu üyesi, Chief Executive Officer",
-      "kod": "F",
-      "adet": 2550.0,
-      "fiyat": 125.54,
-      "tutar": 320127.0,
-      "plan_10b5_1": false,
-      "sonrasi": 1124075.0,
-      "sahiplik": "D",
-      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000134143926000121/xslF345X06/form4.xml"
-     },
-     {
-      "tarih": "2026-10-23",
-      "kisi": "Levey Stuart",
-      "unvan": "EVP, Chief Legal Officer",
-      "kod": "M",
-      "adet": 12497.0,
-      "fiyat": 0.0,
-      "tutar": null,
-      "plan_10b5_1": false,
-      "sonrasi": 41020.0,
-      "sahiplik": "D",
-      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000134143926000119/xslF345X06/form4.xml"
-     },
-     {
-      "tarih": "2026-10-23",
-      "kisi": "Levey Stuart",
-      "unvan": "EVP, Chief Legal Officer",
-      "kod": "F",
-      "adet": 6130.0,
-      "fiyat": 125.54,
-      "tutar": 769560.2000000001,
-      "plan_10b5_1": false,
-      "sonrasi": 34890.0,
-      "sahiplik": "D",
-      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000134143926000119/xslF345X06/form4.xml"
-     }
-    ],
-    "hafta_kodlari": {
-     "M": 4,
-     "F": 4
-    },
+    "hafta_islemleri": [],
+    "hafta_kodlari": {},
     "uyarilar": [
      {
       "etiket": "olumlu",
@@ -2409,6 +2764,15 @@
      "on_siniflama_aciklama": "Hisse +%10,7, sektör/piyasa +%0,1: hareketin çoğu şirkete özel görünüyor.",
      "basliklar": [
       {
+       "zaman": "2026-10-28T23:58:31+00:00",
+       "tarih": "2026-10-28",
+       "baslik": "Free cashflow or AI capex? Markets don't know what they want, says Albion's Ware",
+       "ozet": "Jason Ware, CIO of Albion Financial Group, breaks down the after-hours trading in Alphabet and Microsoft shares following the companies' earnings reports.",
+       "url": "https://finnhub.io/api/news?id=a94710f6a358f8636886bc5719af76141b7f517ff1cd55cca59692c97be0cad4",
+       "kaynak": "CNBC",
+       "saglayici": "Finnhub"
+      },
+      {
        "zaman": "2026-10-28T23:55:00+00:00",
        "tarih": "2026-10-28",
        "baslik": "Review & Preview: Earnings Divergence",
@@ -2424,6 +2788,15 @@
        "ozet": "",
        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMzBTUVUxVVZ3N2hBbnlZQ0RsWnpCVEZrR1VMdngtRGI3Tzdsb3I3eEh0R1paZ1lySnl6YnJ0TjY5TGRNZWxhanlDVjZxMVlQcTFDcE0zbm9rdkdRdDY1MkNySnlsQ3RHVlZsaVhfRVJ6NFBnYi1aTGdPU3dBUGdrM09vTmx5a0JUWHZIT2htNFVfMTNrYm9sU0RCaVZzNS1yZkhJeWlCd1p6b19yYmRXZHZ5MXdxMi1VZWc3LVFwX180Q00?oc=5",
        "kaynak": "SiliconANGLE",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-28T22:38:23+00:00",
+       "tarih": "2026-10-28",
+       "baslik": "EBS 12.2 Certified with 19.33 (October 2026) Database Release Update for Exadata Dedicated — US Gov & Defense Cloud | ebsandoraclecloud",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQc2pEWHlocEdBS0FIX28ydEF5QzEyQmZ2WTlSWU5CcVUxUUxqZm12SDFRSC1qa0Z1UEhfTWM0VkVKdlRVXzd4S3kxcWwxYzBxd1hmZlYxS1Z3NlF0bi1yYTI1NlJIWHNzNE94SnJTRGxyX2s1MEc5cENEZ3hPQkJLMUsydE0yeTduWmtGM1pwWVNQNmxZOHFWazZpRUFfMEJmdTNIc3ZhQnR4WVVnbGxIOHFpYk1DZEswRThDT1NIYkZUbXdNMkJaZnJJSkFrLXYzSERCaW9YVkhQRy0yMVM2eWFOWXBZM28?oc=5",
+       "kaynak": "Oracle Blogs",
        "saglayici": "Google News RSS"
       },
       {
@@ -2508,6 +2881,15 @@
        "saglayici": "Finnhub"
       },
       {
+       "zaman": "2026-10-28T21:08:43+00:00",
+       "tarih": "2026-10-28",
+       "baslik": "Alphabet, Microsoft, ServiceNow, Lumentum Holdings and Oracle: Why These 5 Stocks Are on Investors' Radars Today",
+       "ozet": "Major U.S. indices closed higher on Wednesday, with the Dow Jones Industrial Average rising 0.19% to 52,475.10.",
+       "url": "https://finnhub.io/api/news?id=4ab735abd52e85ae6da3fddb18a8f82dba39fa160514ceed1342ffa35b810d9a",
+       "kaynak": "Benzinga",
+       "saglayici": "Finnhub"
+      },
+      {
        "zaman": "2026-10-28T21:07:55+00:00",
        "tarih": "2026-10-28",
        "baslik": "Oracle jumps 11% on expanded AI partnerships (ORCL:NYSE)",
@@ -2541,6 +2923,15 @@
        "ozet": "",
        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNUGVQekRfdXp1dUVoM09rRGk3Z0ZBNWpLNWpLcEFKMGhLSkpUc0QyNjFYWldGZEpRUjVLZXQ1NjBlMFJwZnVTYU9jRFpSQkt5T3ZXVk1BbnBkUmExV0hyZjloVVI1Z2RXV2lqUksyRUNPaW92Ry16RmlnNHhNMTNLQzMzTmUtLTZ2aW8yV1Zn?oc=5",
        "kaynak": "MarketWatch",
+       "saglayici": "Google News RSS"
+      },
+      {
+       "zaman": "2026-10-28T20:37:30+00:00",
+       "tarih": "2026-10-28",
+       "baslik": "ACE Spotlight: Meet Takayuki Nishio, Oracle ACE Pro",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQY2Mzb0dBcHBsZ21wUW9zNUpuM3BnYkVhemliTTdxck1wcnFIT1dPWE43Mng4a3RPdlZuWVgycjRTQlFaQWNManhPRTBGSEx6NmpILUJSWVZuQjltaE1hWXRzb0l4NWI0QThwMllKeTNVQ29WMDJDV2h3NEZHdHZ6clQycHk?oc=5",
+       "kaynak": "Oracle Blogs",
        "saglayici": "Google News RSS"
       },
       {
@@ -2688,6 +3079,15 @@
        "saglayici": "Finnhub"
       },
       {
+       "zaman": "2026-10-28T19:04:33+00:00",
+       "tarih": "2026-10-28",
+       "baslik": "Oracle Shares Rise As it Reaffirms FY27 Outlook, Sets FY30 Revenue Target",
+       "ozet": "",
+       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNeGlNQ0EyVjg1dGliUTZqTm9abzNSOWZEMmJ5Qy1tYWExeWt0MGtJYWNmRDlxT2RiNmtSMnFvZnhBQUh5M3k1bDVQOEJvTzZaSHV4NmdabzFDNjVrQTdJdzZvVzdndTBQNHVacHVmUkFOVTlITmlKX1kzWF9ZOC13SXlVWENIcHB1eE9Tc1lLSDFQQTYtNUZLdHR6OUN4NVE?oc=5",
+       "kaynak": "Yahoo Finance",
+       "saglayici": "Google News RSS"
+      },
+      {
        "zaman": "2026-10-28T19:03:38+00:00",
        "tarih": "2026-10-28",
        "baslik": "Oracle shares jump as long-term outlook targets $225 billion in revenue",
@@ -2715,15 +3115,6 @@
        "saglayici": "Google News RSS"
       },
       {
-       "zaman": "2026-10-28T18:41:55+00:00",
-       "tarih": "2026-10-28",
-       "baslik": "Oracle stock pops 11% as long-term revenue forecast and clarity on financing ease debt concerns",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFB5djhaYWI1ZmROeTRldkVzQThaUTdsVko3YlB0bTRJSV8yYlRaYjVLRXJBQmZ3ZUp1VU8xMGI5aFdPWjZULV91NDNtMElNNnRMbWVhVlpqUWNPUEVPdVgySjVwYWFLcUxjMV9IdEFld01Ed9IBd0FVX3lxTE45NG9nSG1xT3BfMVZUTl84X0l0Y1otWHNxS0JKekRRMHhpN0VjNnF4R3RGcUhySjlkSklOVFVtRk5YdHBCdDNZR25kYU00a2VzR2FPSVd2cC1mcUZ4eng1Y01TV1M4azUxOTU2X0hCRXI0c2xVdEY0?oc=5",
-       "kaynak": "CNBC",
-       "saglayici": "Google News RSS"
-      },
-      {
        "zaman": "2026-10-28T18:41:52+00:00",
        "tarih": "2026-10-28",
        "baslik": "Oracle jumps as company provides long-term guidance at analyst day (ORCL:NYSE)",
@@ -2731,42 +3122,6 @@
        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQekRrd0UxTmQ5R0R1ZmRVR2gwZXliLS1kSmluMUh1YXRNQk1raGFMQ0JZQ2tMSG41MnRZdlZRajdHT010UWtHcHhQcEViTGR1R1laV0pxZ1lWMTZ3N3Q3NE1RcF9XcVJlWHIzNlNuNjlhVmR3MU4tTkpFT1dwX3VSTlpDd3dGN2dPb2UzYjRCS0xSb05meTh6NkFmMHdpSlNUOURiZ1ZlMA?oc=5",
        "kaynak": "Seeking Alpha",
        "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-28T18:41:27+00:00",
-       "tarih": "2026-10-28",
-       "baslik": "Oracle sets FY30 revenue target above $225B with 35% growth rate",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbWFKb3ZBMWNTdDZJdVJXNzJ0ZWs1d0QyR2NBa2N3b2plLW9vQXFKeVQySXpfZDBUMFJvQkMxdkRrYnI1ZTE5UUpxOXVULUNXUFAzVXhXYnZhZ25CSmNWX0dJdFhqU0l4d0toU2NjWnVLbTdHeVpFUzlRbWMxVkE3S25BWUtMbHd5aEJndWVPV1dHRWJtOFI4TVZHemstYWVyalg0U2Z2Z2lsSUhLby1IX3VyZ0cyejRMVXQ4?oc=5",
-       "kaynak": "Investing.com",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-28T18:34:57+00:00",
-       "tarih": "2026-10-28",
-       "baslik": "Oracle Projects $30 Billion Free Cash Flow in Fiscal 2029",
-       "ozet": "Oracle Corp. gave a long-term outlook for free cash flow that was better than analysts’ estimates, easing investor nerves about the potential payoff from its artificial intelligence spending.",
-       "url": "https://finnhub.io/api/news?id=e2b7aa1db76d8a5b782761f7c6d5ec512176cc8398f846a1b0c2ee160e79cc36",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
-      },
-      {
-       "zaman": "2026-10-28T18:33:14+00:00",
-       "tarih": "2026-10-28",
-       "baslik": "ORACLE CFO SAYS CLOUD DATABASE REVENUE GROWTH WILL BE WELL ABOVE 50%",
-       "ozet": "",
-       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZ1B4S001Zlg0UEtzd0lRSUFxRmtfWDJLS2hXZC13T1pFcWlvaUZmaEhNRkVtVlhMWDViVko4dkpjWk1VVzlkNGRoTkNJMGZHTElIV0JZLTBBRTYzSXZMcUM1ZGVIYk44VGd3ZzZ2VjQtS3JfUW1JQjFKRS1DMGktMXlEQ3VpVGVmd1ppVktWVHNWWmpKckVSTmxOa1M2WXRkZi1VNjRB?oc=5",
-       "kaynak": "Moomoo",
-       "saglayici": "Google News RSS"
-      },
-      {
-       "zaman": "2026-10-28T18:21:00+00:00",
-       "tarih": "2026-10-28",
-       "baslik": "Oracle Investor Day 2026: Accelerating Value Creation",
-       "ozet": "Oracle Corporation (NYSE: ORCL) today hosted an Investor Day in Las Vegas, NV. At the event co-CEO Clay Magouryk, co-CEO Mike Sicilia and CFO Hilary Maxson presented and responded to questions about the company's strategy and updated medium-term financial guidance.",
-       "url": "https://finnhub.io/api/news?id=441a505d370a8a4e919da1de5fbdfa5be9b982b09191b8af3f422fd00c031a44",
-       "kaynak": "Yahoo",
-       "saglayici": "Finnhub"
       }
      ],
      "sec_bildirimleri": [
@@ -2835,19 +3190,16 @@
    },
    "sinyaller": [],
    "cumleler": [
-    "Hisse bu hafta +%11,9 (QQQ +%0,1, IGV +%2,8); 52 haftalık zirveden −%47,5 uzakta.",
+    "Hisse bu hafta +%11,2 (QQQ +%1,5, IGV −%0,7); 52 haftalık zirveden −%46,9 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%47,5: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "Zirveden −%46,9: −%35 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "2026-10-28 günü +%10,7 büyük hareket (Hisse +%10,7, sektör/piyasa +%0,1: hareketin çoğu şirkete özel görünüyor.)"
    ],
    "insider_ozet": {
-    "islem": 8,
+    "islem": 0,
     "satis_tutar": 0,
     "alim_tutar": 0,
-    "kodlar": {
-     "M": 4,
-     "F": 4
-    }
+    "kodlar": {}
    },
    "sonraki_bilanco": {
     "tarih": "2026-12-08",
@@ -2857,29 +3209,29 @@
     "ceyrek": 2,
     "yil": 2027,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-29T11:10:46+00:00"
+    "guncelleme": "2026-10-30T11:05:48+00:00"
    }
   },
   {
    "ticker": "CEG",
    "ad": "Constellation Energy",
    "donem": [
-    "2026-10-23",
-    "2026-10-29"
+    "2026-10-24",
+    "2026-10-30"
    ],
    "fiyat": {
-    "son": 258.08,
-    "tarih": "2026-10-28",
-    "haftalik": -4.68,
-    "aylik": -0.9,
-    "zirveden": -35.71,
-    "zirve_52h": 401.43,
-    "zirve_tarih": "2025-10-29",
+    "son": 264.58,
+    "tarih": "2026-10-29",
+    "haftalik": 3.67,
+    "aylik": 0.0,
+    "zirveden": -30.83,
+    "zirve_52h": 382.48,
+    "zirve_tarih": "2025-10-30",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "SPY": -0.1,
-    "XLU": 1.17
+    "SPY": 0.71,
+    "XLU": 0.63
    },
    "tez": {
     "genel": "kirmizi",
@@ -2932,12 +3284,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%35,7: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "mesaj": "Zirveden −%30,8: −%25 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku.",
     "tetiklenen": {
-     "dusus": 35,
-     "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
+     "dusus": 25,
+     "not": "Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku."
     },
-    "zirveden_uzaklik": -35.71,
+    "zirveden_uzaklik": -30.83,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -2983,26 +3335,11 @@
     },
     "xbrl_beklemede": false
    },
-   "sinyaller": [
-    {
-     "id": "a6212dda6012",
-     "tarih": "2026-10-23",
-     "ticker": "CEG",
-     "tur": "kural_kademe_tez_bozuk",
-     "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
-     "yon": "olumsuz",
-     "aciklama": "Zirveden −%36,4, −%35 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
-     "fiyat": 255.21,
-     "fiyat_tarihi": "2026-10-22",
-     "qqq": 704.47,
-     "baslangic_kaydi": false,
-     "kayit_zamani": "2026-10-23T09:40:36+00:00"
-    }
-   ],
+   "sinyaller": [],
    "cumleler": [
-    "Hisse bu hafta −%4,7 (SPY −%0,1, XLU +%1,2); 52 haftalık zirveden −%35,7 uzakta.",
+    "Hisse bu hafta +%3,7 (SPY +%0,7, XLU +%0,6); 52 haftalık zirveden −%30,8 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%35,7: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
+    "Zirveden −%30,8: −%25 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Haftalık DCA tutarını 2x yap; bilançoyu yeniden oku."
    ],
    "insider_ozet": {
     "islem": 0,
@@ -3018,29 +3355,29 @@
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-29T11:10:49+00:00"
+    "guncelleme": "2026-10-30T11:05:52+00:00"
    }
   },
   {
    "ticker": "RGTI",
    "ad": "Rigetti Computing",
    "donem": [
-    "2026-10-23",
-    "2026-10-29"
+    "2026-10-24",
+    "2026-10-30"
    ],
    "fiyat": {
-    "son": 12.4,
-    "tarih": "2026-10-28",
-    "haftalik": 2.9,
-    "aylik": -22.26,
-    "zirveden": -71.99,
+    "son": 12.06,
+    "tarih": "2026-10-29",
+    "haftalik": 5.05,
+    "aylik": -23.38,
+    "zirveden": -72.76,
     "zirve_52h": 44.27,
     "zirve_tarih": "2025-10-31",
     "kaynak": "Nasdaq.com (historical API)"
    },
    "benchmark_haftalik": {
-    "QQQ": 0.06,
-    "IGV": 2.84
+    "QQQ": 1.54,
+    "IGV": -0.69
    },
    "tez": {
     "genel": "kirmizi",
@@ -3101,12 +3438,12 @@
    },
    "kural": {
     "durum": "tetiklendi_kosul_yok",
-    "mesaj": "Zirveden −%72,0: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "mesaj": "Zirveden −%72,8: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "tetiklenen": {
      "dusus": 35,
      "not": "Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku."
     },
-    "zirveden_uzaklik": -71.99,
+    "zirveden_uzaklik": -72.76,
     "dusus_kaynagi": "sirkete_ozel",
     "dusus_kaynagi_aciklama": "Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
     "kosul_saglaniyor": false
@@ -3341,9 +3678,9 @@
    },
    "sinyaller": [],
    "cumleler": [
-    "Hisse bu hafta +%2,9 (QQQ +%0,1, IGV +%2,8); 52 haftalık zirveden −%72,0 uzakta.",
+    "Hisse bu hafta +%5,0 (QQQ +%1,5, IGV −%0,7); 52 haftalık zirveden −%72,8 uzakta.",
     "Tez sütunlarında bu hafta değişiklik yok.",
-    "Zirveden −%72,0: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
+    "Zirveden −%72,8: −%35 kademesi tetiklendi. ANCAK tez durumu KIRMIZI — koşul sağlanmıyor. Önceden yazdığın not: Ek tek seferlik alım düşün; önce şeytanın avukatı bölümünü oku.",
     "2026-10-27 günü +%8,7 büyük hareket (Hisse +%8,7, sektör/piyasa +%0,3: hareketin çoğu şirkete özel görünüyor.)"
    ],
    "insider_ozet": {
@@ -3353,45 +3690,31 @@
     "kodlar": {}
    },
    "sonraki_bilanco": {
-    "tarih": "2026-11-16",
+    "tarih": "2026-11-10",
     "saat": "",
     "eps_tahmin": -0.0523,
     "gelir_tahmin": 3749438,
     "ceyrek": 3,
     "yil": 2026,
     "kaynak": "Finnhub earnings calendar (konsensüs tahmini)",
-    "guncelleme": "2026-10-29T11:10:53+00:00"
+    "guncelleme": "2026-10-30T11:05:55+00:00"
    }
   }
  ],
  "sinyaller": [
   {
-   "id": "49922e42c4b8",
-   "tarih": "2026-10-23",
-   "ticker": "META",
+   "id": "ad3598699357",
+   "tarih": "2026-10-30",
+   "ticker": "NOW",
    "tur": "kural_kademe_tez_saglam",
    "tur_adi": "Düşüş kademesi tetiklendi, tez sağlam",
    "yon": "olumlu",
-   "aciklama": "Zirveden −%16,6, −%15 kademesi. Hissenin düşüşü karşılaştırma endeksleriyle benzer: ağırlıkla piyasa/sektör kaynaklı.",
-   "fiyat": 648.85,
-   "fiyat_tarihi": "2026-10-22",
-   "qqq": 704.47,
+   "aciklama": "Zirveden −%41,3, −%35 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+   "fiyat": 109.67,
+   "fiyat_tarihi": "2026-10-29",
+   "qqq": 715.34,
    "baslangic_kaydi": false,
-   "kayit_zamani": "2026-10-23T09:40:20+00:00"
-  },
-  {
-   "id": "a6212dda6012",
-   "tarih": "2026-10-23",
-   "ticker": "CEG",
-   "tur": "kural_kademe_tez_bozuk",
-   "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
-   "yon": "olumsuz",
-   "aciklama": "Zirveden −%36,4, −%35 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
-   "fiyat": 255.21,
-   "fiyat_tarihi": "2026-10-22",
-   "qqq": 704.47,
-   "baslangic_kaydi": false,
-   "kayit_zamani": "2026-10-23T09:40:36+00:00"
+   "kayit_zamani": "2026-10-30T11:05:41+00:00"
   }
  ],
  "not": "Günlük Python derlemesi (Claude yok). Derin analiz Salı raporundadır."

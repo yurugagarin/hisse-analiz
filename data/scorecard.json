@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-10-29T11:10:55+00:00",
+ "guncelleme": "2026-10-30T11:05:57+00:00",
  "ufuklar": [
   30,
   90,
@@ -102,7 +102,7 @@
    "tur": "kural_kademe_tez_saglam",
    "ad": "Düşüş kademesi tetiklendi, tez sağlam",
    "beklenen_yon": "olumlu",
-   "adet": 3,
+   "adet": 4,
    "ufuklar": {
     "30": {
      "n": 2,
@@ -128,9 +128,9 @@
    "adet": 11,
    "ufuklar": {
     "30": {
-     "n": 4,
-     "isabet_orani": 75.0,
-     "ort_goreli": -19.87
+     "n": 6,
+     "isabet_orani": 67.0,
+     "ort_goreli": -15.06
     },
     "90": {
      "n": 0,
@@ -197,9 +197,9 @@
    "adet": 5,
    "ufuklar": {
     "30": {
-     "n": 4,
-     "isabet_orani": 50.0,
-     "ort_goreli": -4.37
+     "n": 5,
+     "isabet_orani": 60.0,
+     "ort_goreli": -5.47
     },
     "90": {
      "n": 0,
@@ -238,6 +238,25 @@
   }
  ],
  "sinyaller": [
+  {
+   "id": "ad3598699357",
+   "tarih": "2026-10-30",
+   "ticker": "NOW",
+   "tur": "kural_kademe_tez_saglam",
+   "tur_adi": "Düşüş kademesi tetiklendi, tez sağlam",
+   "yon": "olumlu",
+   "aciklama": "Zirveden −%41,3, −%35 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+   "fiyat": 109.67,
+   "fiyat_tarihi": "2026-10-29",
+   "qqq": 715.34,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-10-30T11:05:41+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
   {
    "id": "a6212dda6012",
    "tarih": "2026-10-23",
@@ -385,7 +404,12 @@
    "baslangic_kaydi": false,
    "kayit_zamani": "2026-09-29T10:58:45+00:00",
    "sonuclar": {
-    "30": null,
+    "30": {
+     "getiri": 1.59,
+     "qqq": -2.88,
+     "goreli": 4.47,
+     "isabet": false
+    },
     "90": null,
     "180": null
    }
@@ -404,7 +428,12 @@
    "baslangic_kaydi": false,
    "kayit_zamani": "2026-09-29T10:58:36+00:00",
    "sonuclar": {
-    "30": null,
+    "30": {
+     "getiri": -18.21,
+     "qqq": -2.88,
+     "goreli": -15.33,
+     "isabet": true
+    },
     "90": null,
     "180": null
    }
@@ -423,7 +452,12 @@
    "baslangic_kaydi": false,
    "kayit_zamani": "2026-09-29T10:58:29+00:00",
    "sonuclar": {
-    "30": null,
+    "30": {
+     "getiri": -12.73,
+     "qqq": -2.88,
+     "goreli": -9.85,
+     "isabet": true
+    },
     "90": null,
     "180": null
    }

@@ -1,18 +1,18 @@
 {
  "ticker": "META",
- "guncelleme": "2026-10-29",
+ "guncelleme": "2026-10-30",
  "pencereler": {
   "90": {
    "kodlar": {
     "S": {
-     "islem": 104,
-     "adet": 151295.0,
-     "tutar": 103216845.86289999,
-     "plan_10b5_1_adet": 148742.0
+     "islem": 103,
+     "adet": 150831.0,
+     "tutar": 102964634.02289999,
+     "plan_10b5_1_adet": 148278.0
     },
     "diger": {
-     "islem": 6,
-     "adet": 1796498.0,
+     "islem": 3,
+     "adet": 21428.0,
      "tutar": 0.0,
      "plan_10b5_1_adet": 17140.0
     },
@@ -129,20 +129,6 @@
      "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
     },
     {
-     "kisi": "Alford Peggy",
-     "unvan": "Yönetim kurulu üyesi",
-     "satis_adet": 854.0,
-     "satis_tutar": 501811.83999999997,
-     "alim_adet": 0.0,
-     "vergi_adet": 0.0,
-     "planli_satis_adet": 854.0,
-     "ilk_satis_oncesi": null,
-     "son_pozisyon": null,
-     "son_tarih": null,
-     "satilan_pozisyon_orani": null,
-     "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
-    },
-    {
      "kisi": "KIMMITT ROBERT M",
      "unvan": "Yönetim kurulu üyesi",
      "satis_adet": 500.0,
@@ -164,6 +150,20 @@
      "alim_adet": 0.0,
      "vergi_adet": 0.0,
      "planli_satis_adet": 0.0,
+     "ilk_satis_oncesi": null,
+     "son_pozisyon": null,
+     "son_tarih": null,
+     "satilan_pozisyon_orani": null,
+     "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
+    },
+    {
+     "kisi": "Alford Peggy",
+     "unvan": "Yönetim kurulu üyesi",
+     "satis_adet": 390.0,
+     "satis_tutar": 249600.0,
+     "alim_adet": 0.0,
+     "vergi_adet": 0.0,
+     "planli_satis_adet": 390.0,
      "ilk_satis_oncesi": null,
      "son_pozisyon": null,
      "son_tarih": null,
@@ -6371,7 +6371,7 @@
   }
  ],
  "anlati": [
-  "Son 90 günde yöneticiler ve yönetim kurulu üyeleri 104 satış işlemiyle toplam 103,2 milyon $ değerinde hisse sattı. Önceden kayda geçirilmiş 10b5-1 planı kapsamındaki satışların payı (adet bazında): %98.",
+  "Son 90 günde yöneticiler ve yönetim kurulu üyeleri 103 satış işlemiyle toplam 103,0 milyon $ değerinde hisse sattı. Önceden kayda geçirilmiş 10b5-1 planı kapsamındaki satışların payı (adet bazında): %98.",
   "Planlı satışlar önceden (çoğu zaman aylar önce) belirlenen takvimle yapılır; tek başına yönetimin şirkete güvenini kaybettiği anlamına gelmez.",
   "Bu dönemde yönetimden hiç açık piyasa alımı (P) yok.",
   "9 vergi kesintisi (F) işlemi var: hak edilen hisselerin vergisi için şirkete bırakılan hisseler. Rutindir, sinyal sayılmaz.",
@@ -6388,8 +6388,8 @@
     "kod": "C",
     "edgar_islem": 0,
     "edgar_adet": 0,
-    "finnhub_islem": 8,
-    "finnhub_adet": 1226236.0,
+    "finnhub_islem": 6,
+    "finnhub_adet": 42856.0,
     "uyumlu": false
    },
    {
@@ -6401,14 +6401,6 @@
     "uyumlu": true
    },
    {
-    "kod": "G",
-    "edgar_islem": 0,
-    "edgar_adet": 0,
-    "finnhub_islem": 2,
-    "finnhub_adet": 1183380.0,
-    "uyumlu": false
-   },
-   {
     "kod": "M",
     "edgar_islem": 28,
     "edgar_adet": 78659.0,
@@ -6418,16 +6410,16 @@
    },
    {
     "kod": "S",
-    "edgar_islem": 104,
-    "edgar_adet": 151295.0,
-    "finnhub_islem": 93,
-    "finnhub_adet": 147755.0,
+    "edgar_islem": 103,
+    "edgar_adet": 150831.0,
+    "finnhub_islem": 98,
+    "finnhub_adet": 149256.0,
     "uyumlu": true
    },
    {
     "kod": "diger",
-    "edgar_islem": 6,
-    "edgar_adet": 1796498.0,
+    "edgar_islem": 3,
+    "edgar_adet": 21428.0,
     "finnhub_islem": 0,
     "finnhub_adet": 0,
     "uyumlu": false
