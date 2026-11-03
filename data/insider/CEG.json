@@ -1,6 +1,6 @@
 {
  "ticker": "CEG",
- "guncelleme": "2026-11-02",
+ "guncelleme": "2026-11-03",
  "pencereler": {
   "90": {
    "kodlar": {
@@ -8,12 +8,6 @@
      "islem": 1,
      "adet": 1500.0,
      "tutar": 417930.9,
-     "plan_10b5_1_adet": 0.0
-    },
-    "A": {
-     "islem": 1,
-     "adet": 462.0,
-     "tutar": 123469.5,
      "plan_10b5_1_adet": 0.0
     }
    },
@@ -173,8 +167,7 @@
   }
  ],
  "anlati": [
-  "Açık piyasa alımı var: 1 işlem, toplam 417.931 $. Yöneticinin kendi cebinden hisse alması en anlamlı olumlu insider sinyalidir.",
-  "Opsiyon/RSU kullanımı (M) 0, hibe (A) 1 işlem: ücretlendirmenin parçası."
+  "Açık piyasa alımı var: 1 işlem, toplam 417.931 $. Yöneticinin kendi cebinden hisse alması en anlamlı olumlu insider sinyalidir."
  ],
  "durum": "olumlu",
  "capraz_kontrol": {
@@ -183,10 +176,10 @@
   "satirlar": [
    {
     "kod": "A",
-    "edgar_islem": 1,
-    "edgar_adet": 462.0,
-    "finnhub_islem": 3,
-    "finnhub_adet": 732.0,
+    "edgar_islem": 0,
+    "edgar_adet": 0,
+    "finnhub_islem": 2,
+    "finnhub_adet": 270.0,
     "uyumlu": false
    },
    {
