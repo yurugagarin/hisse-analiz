@@ -1,14 +1,14 @@
 {
  "ticker": "NVDA",
- "guncelleme": "2026-11-03",
+ "guncelleme": "2026-11-04",
  "pencereler": {
   "90": {
    "kodlar": {
     "diger": {
-     "islem": 4,
-     "adet": 1938000.0,
+     "islem": 3,
+     "adet": 1438000.0,
      "tutar": 0.0,
-     "plan_10b5_1_adet": 1500000.0
+     "plan_10b5_1_adet": 1000000.0
     },
     "S": {
      "islem": 25,
@@ -73,20 +73,6 @@
      "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
     },
     {
-     "kisi": "COXE TENCH",
-     "unvan": "Yönetim kurulu üyesi",
-     "satis_adet": 0.0,
-     "satis_tutar": 0.0,
-     "alim_adet": 0.0,
-     "vergi_adet": 0.0,
-     "planli_satis_adet": 0.0,
-     "ilk_satis_oncesi": null,
-     "son_pozisyon": null,
-     "son_tarih": null,
-     "satilan_pozisyon_orani": null,
-     "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
-    },
-    {
      "kisi": "NORA JOHNSON SUZANNE M",
      "unvan": "Yönetim kurulu üyesi",
      "satis_adet": 0.0,
@@ -97,6 +83,20 @@
      "ilk_satis_oncesi": null,
      "son_pozisyon": 2410.0,
      "son_tarih": "2026-08-10",
+     "satilan_pozisyon_orani": null,
+     "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
+    },
+    {
+     "kisi": "COXE TENCH",
+     "unvan": "Yönetim kurulu üyesi",
+     "satis_adet": 0.0,
+     "satis_tutar": 0.0,
+     "alim_adet": 0.0,
+     "vergi_adet": 0.0,
+     "planli_satis_adet": 0.0,
+     "ilk_satis_oncesi": null,
+     "son_pozisyon": null,
+     "son_tarih": null,
      "satilan_pozisyon_orani": null,
      "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
     },
@@ -1716,8 +1716,8 @@
     "kod": "G",
     "edgar_islem": 0,
     "edgar_adet": 0,
-    "finnhub_islem": 4,
-    "finnhub_adet": 1938000.0,
+    "finnhub_islem": 3,
+    "finnhub_adet": 1438000.0,
     "uyumlu": false
    },
    {
@@ -1730,8 +1730,8 @@
    },
    {
     "kod": "diger",
-    "edgar_islem": 4,
-    "edgar_adet": 1938000.0,
+    "edgar_islem": 3,
+    "edgar_adet": 1438000.0,
     "finnhub_islem": 0,
     "finnhub_adet": 0,
     "uyumlu": false

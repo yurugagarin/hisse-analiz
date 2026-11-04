@@ -1,7 +1,7 @@
 {
  "sembol": "RGTI",
- "kaynak": "Nasdaq.com (historical API)",
- "guncelleme": "2026-11-03T12:27:45+00:00",
+ "kaynak": "Nasdaq.com (historical API) + Finnhub quote",
+ "guncelleme": "2026-11-04T01:52:54+00:00",
  "taze": true,
  "kapanislar": [
   [
@@ -2143,6 +2143,10 @@
   [
    "2026-11-02",
    10.67
+  ],
+  [
+   "2026-11-03",
+   11.085
   ]
  ],
  "finnhub_52h_zirve": 44.52,
