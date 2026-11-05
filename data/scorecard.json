@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-11-04T12:39:46+00:00",
+ "guncelleme": "2026-11-05T12:50:49+00:00",
  "ufuklar": [
   30,
   90,
@@ -102,7 +102,7 @@
    "tur": "kural_kademe_tez_saglam",
    "ad": "Düşüş kademesi tetiklendi, tez sağlam",
    "beklenen_yon": "olumlu",
-   "adet": 5,
+   "adet": 6,
    "ufuklar": {
     "30": {
      "n": 2,
@@ -125,7 +125,7 @@
    "tur": "kural_kademe_tez_bozuk",
    "ad": "Düşüş kademesi tetiklendi, tez kırmızı",
    "beklenen_yon": "olumsuz",
-   "adet": 11,
+   "adet": 12,
    "ufuklar": {
     "30": {
      "n": 8,
@@ -194,7 +194,7 @@
    "tur": "insider_kume_satis",
    "ad": "Kümelenmiş yönetici satışı",
    "beklenen_yon": "olumsuz",
-   "adet": 5,
+   "adet": 6,
    "ufuklar": {
     "30": {
      "n": 5,
@@ -238,6 +238,63 @@
   }
  ],
  "sinyaller": [
+  {
+   "id": "2a75e157120b",
+   "tarih": "2026-11-05",
+   "ticker": "CEG",
+   "tur": "kural_kademe_tez_bozuk",
+   "tur_adi": "Düşüş kademesi tetiklendi, tez kırmızı",
+   "yon": "olumsuz",
+   "aciklama": "Zirveden −%35,1, −%35 kademesi. Hisse, karşılaştırdığı tüm endekslerden en az 10 puan fazla düşmüş: düşüş ağırlıkla şirkete özel görünüyor.",
+   "fiyat": 245.72,
+   "fiyat_tarihi": "2026-11-04",
+   "qqq": 691.95,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-11-05T12:50:46+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
+  {
+   "id": "070b547d4008",
+   "tarih": "2026-11-05",
+   "ticker": "META",
+   "tur": "insider_kume_satis",
+   "tur_adi": "Kümelenmiş yönetici satışı",
+   "yon": "olumsuz",
+   "aciklama": "2026-10-19–2026-11-02: Alford Peggy, Andreessen Marc L, Olivan Javier",
+   "fiyat": 630.0,
+   "fiyat_tarihi": "2026-11-04",
+   "qqq": 691.95,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-11-05T12:50:30+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
+  {
+   "id": "ba405f2223af",
+   "tarih": "2026-11-05",
+   "ticker": "NVDA",
+   "tur": "kural_kademe_tez_saglam",
+   "tur_adi": "Düşüş kademesi tetiklendi, tez sağlam",
+   "yon": "olumlu",
+   "aciklama": "Zirveden −%16,4, −%15 kademesi. Hissenin düşüşü karşılaştırma endeksleriyle benzer: ağırlıkla piyasa/sektör kaynaklı.",
+   "fiyat": 200.13,
+   "fiyat_tarihi": "2026-11-04",
+   "qqq": 691.95,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-11-05T12:50:26+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
   {
    "id": "59954ea89271",
    "tarih": "2026-11-03",

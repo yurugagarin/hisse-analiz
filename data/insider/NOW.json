@@ -1,6 +1,6 @@
 {
  "ticker": "NOW",
- "guncelleme": "2026-11-04",
+ "guncelleme": "2026-11-05",
  "pencereler": {
   "90": {
    "kodlar": {
@@ -141,10 +141,10 @@
   "180": {
    "kodlar": {
     "S": {
-     "islem": 9,
-     "adet": 34820.0,
-     "tutar": 3841436.8048000005,
-     "plan_10b5_1_adet": 12046.0
+     "islem": 8,
+     "adet": 34669.0,
+     "tutar": 3827775.8348000003,
+     "plan_10b5_1_adet": 11895.0
     },
     "M": {
      "islem": 51,
@@ -211,15 +211,15 @@
     {
      "kisi": "Fipps Paul",
      "unvan": "President, Global Customer Ops",
-     "satis_adet": 3233.0,
-     "satis_tutar": 417676.5898,
+     "satis_adet": 3082.0,
+     "satis_tutar": 404015.6198,
      "alim_adet": 0.0,
      "vergi_adet": 8796.0,
-     "planli_satis_adet": 1199.0,
-     "ilk_satis_oncesi": 8294.880000000001,
+     "planli_satis_adet": 1048.0,
+     "ilk_satis_oncesi": 13119.88,
      "son_pozisyon": 18305.1822,
      "son_tarih": "2026-08-31",
-     "satilan_pozisyon_orani": 39.0,
+     "satilan_pozisyon_orani": 23.5,
      "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
     },
     {
@@ -392,16 +392,17 @@
  "kaynak": "SEC EDGAR Form 4 (XML)",
  "kumelenmis_satislar": [
   {
-   "baslangic": "2026-05-08",
-   "bitis": "2026-05-18",
+   "baslangic": "2026-05-14",
+   "bitis": "2026-05-28",
    "kisiler": [
+    "Briggs Teresa",
     "Chamberlain Paul Edward",
     "Fipps Paul",
     "Sands Anita M"
    ],
    "islem": 4,
-   "tutar": 1730146.085,
-   "planli_islem_orani": 75.0
+   "tutar": 1889861.615,
+   "planli_islem_orani": 50.0
   },
   {
    "baslangic": "2026-08-27",
@@ -3741,25 +3742,6 @@
    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000158984926000002/xslF345X06/wk-form4_1779149013.xml",
    "dosyalama": "2026-05-18",
    "tutar": 1482401.635
-  },
-  {
-   "turev": false,
-   "menkul": "Common Stock",
-   "tarih": "2026-05-08",
-   "kod": "S",
-   "adet": 151.0,
-   "fiyat": 90.47,
-   "yon": "D",
-   "sonrasi": 8143.88,
-   "sahiplik": "D",
-   "plan_10b5_1": true,
-   "kisi": "Fipps Paul",
-   "unvan": "President, Global Customer Ops",
-   "yonetici": true,
-   "accn": "0001667422-26-000025",
-   "url": "https://www.sec.gov/Archives/edgar/data/1373715/000166742226000025/xslF345X06/wk-form4_1778617360.xml",
-   "dosyalama": "2026-05-12",
-   "tutar": 13660.97
   }
  ],
  "anlati": [

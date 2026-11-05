@@ -2,12 +2,12 @@
  "ticker": "NVDA",
  "onay": "taslak",
  "kosul": "tez_saglam",
- "zirveden_uzaklik": -13.61,
+ "zirveden_uzaklik": -16.35,
  "kademeler": [
   {
    "dusus": 15,
    "not": "DCA 1,5x (tez sağlamsa).",
-   "tetiklendi": false
+   "tetiklendi": true
   },
   {
    "dusus": 25,
@@ -23,27 +23,30 @@
  "benchmark": [
   {
    "sembol": "QQQ",
-   "zirveden_uzaklik": -9.79,
-   "degisim_1a": -8.58,
-   "degisim_3a": -5.33,
-   "fark_puan": -3.82
+   "zirveden_uzaklik": -8.91,
+   "degisim_1a": -8.5,
+   "degisim_3a": -3.53,
+   "fark_puan": -7.44
   },
   {
    "sembol": "SMH",
-   "zirveden_uzaklik": -22.48,
-   "degisim_1a": -17.77,
-   "degisim_3a": -9.93,
-   "fark_puan": 8.87
+   "zirveden_uzaklik": -24.61,
+   "degisim_1a": -20.45,
+   "degisim_3a": -11.48,
+   "fark_puan": 8.26
   }
  ],
- "guncelleme": "2026-11-04T12:39:23+00:00",
+ "guncelleme": "2026-11-05T12:50:26+00:00",
  "not": "Otomatik işlem yok. Bu bölüm önceden yazdığın kuralları hatırlatır.",
  "dusus_kaynagi": "piyasa_sektor",
  "dusus_kaynagi_aciklama": "Hissenin düşüşü karşılaştırma endeksleriyle benzer: ağırlıkla piyasa/sektör kaynaklı.",
- "en_iyi_fark": 8.87,
- "tetiklenen": null,
+ "en_iyi_fark": 8.26,
+ "tetiklenen": {
+  "dusus": 15,
+  "not": "DCA 1,5x (tez sağlamsa)."
+ },
  "tez_durumu": "sari",
  "kosul_saglaniyor": true,
- "durum": "tetiklenmedi",
- "mesaj": "Zirveden −%13,6. Sonraki kademe: −%15."
+ "durum": "tetiklendi_kosul_ok",
+ "mesaj": "Zirveden −%16,4: −%15 kademesi tetiklendi. Tez sağlam koşulu sağlanıyor. Önceden yazdığın not: DCA 1,5x (tez sağlamsa)."
 }
