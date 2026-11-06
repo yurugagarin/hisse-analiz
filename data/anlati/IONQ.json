@@ -1,11 +1,11 @@
 {
- "donem": "FY2026 Q2",
- "donem_sonu": "2026-06-30",
+ "donem": "FY2026 Q3",
+ "donem_sonu": "2026-09-30",
  "hikaye": [
-  "IonQ, MY 2026 Q2 döneminde 80,0 milyon $ gelir açıkladı; bu, geçen yılın aynı çeyreğine göre +%286,8 değişim demek. Yıllık büyüme bir önceki çeyrekteki %754,7 seviyesine göre yavaşladı. Bir önceki çeyreğe göre gelir +%23,8 değişti.",
-  "Net kâr −1,87 milyar $.",
-  "Çeyrekte işletme faaliyetlerinden −103,8 milyon $ nakit elde edildi. İşletme sermayesinde: alacaklar 7,7 milyon $ arttı ve nakit bağladı; stoklar 7,8 milyon $ arttı ve nakit bağladı; ticari borçlar 6,3 milyon $ arttı ve nakit serbest bıraktı; ertelenmiş gelir 22,6 milyon $ arttı ve nakit serbest bıraktı. Son 12 ayda serbest nakit akışı −483,9 milyon $ (gelirin −%196,3).",
-  "Çeyrek sonunda nakit ve kısa vadeli yatırımlar 2,12 milyar $. Seyreltilmiş hisse sayısı yıllık +%46,5 değişti, hisse bazlı ödeme (SBC) 454,5 milyon $."
+  "IonQ, MY 2026 Q3 döneminde 173,8 milyon $ gelir açıkladı; bu, geçen yılın aynı çeyreğine göre +%336,0 değişim demek. Yıllık büyüme bir önceki çeyrekteki %286,8 seviyesine göre hızlandı. Bir önceki çeyreğe göre gelir +%117,2 değişti.",
+  "Net kâr 564,0 milyon $. Faaliyet dışı kalemler vergi öncesi kârı 854,5 milyon $ etkiledi (vergi öncesi kârın %203); en büyük kalem warrant gerçeğe uygun değer değişimi: 896,2 milyon $. Bu tür kalemler tekrarlayan faaliyet kârı değildir; net kârı olduğundan güçlü (veya zayıf) gösterebilir.",
+  "Çeyrekte işletme faaliyetlerinden −315,5 milyon $ nakit elde edildi, net kârın 0,56 katı. İşletme sermayesinde: alacaklar 59,2 milyon $ arttı ve nakit bağladı; stoklar 10,3 milyon $ arttı ve nakit bağladı; ticari borçlar 25,0 milyon $ arttı ve nakit serbest bıraktı; ertelenmiş gelir 154,8 milyon $ arttı ve nakit serbest bıraktı. Son 12 ayda serbest nakit akışı −688,5 milyon $ (gelirin −%181,0).",
+  "Çeyrek sonunda nakit ve kısa vadeli yatırımlar 997,9 milyon $, finansal borç 65,6 milyon $, net nakit 932,3 milyon $. Seyreltilmiş hisse sayısı yıllık +%36,1 değişti, hisse bazlı ödeme (SBC) 528,5 milyon $."
  ],
  "hikaye_kaynak": [
   {
@@ -13,10 +13,10 @@
     {
      "k": "revenue",
      "d": [
-      "2025-03-31",
       "2025-06-30",
-      "2026-03-31",
-      "2026-06-30"
+      "2025-09-30",
+      "2026-06-30",
+      "2026-09-30"
      ]
     }
    ],
@@ -30,25 +30,37 @@
     {
      "k": "net_income",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "operating_income",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "pretax",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
+     ]
+    },
+    {
+     "k": "interest_expense",
+     "d": [
+      "2026-09-30"
      ]
     },
     {
      "k": "warrant_fv",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
+     ]
+    },
+    {
+     "k": "investment_gl",
+     "d": [
+      "2026-09-30"
      ]
     }
    ],
@@ -61,71 +73,71 @@
     {
      "k": "ocf",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     },
     {
      "k": "net_income",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "ar",
      "d": [
-      "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     },
     {
      "k": "inventory",
      "d": [
-      "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     },
     {
      "k": "ap",
      "d": [
-      "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     },
     {
      "k": "deferred_revenue",
      "d": [
-      "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     },
     {
      "k": "capex",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     },
     {
      "k": "fcf",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     },
     {
      "k": "revenue",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     }
    ],
@@ -138,29 +150,35 @@
     {
      "k": "cash",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "st_investments",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
+     ]
+    },
+    {
+     "k": "total_debt",
+     "d": [
+      "2026-09-30"
      ]
     },
     {
      "k": "diluted_shares",
      "d": [
-      "2025-06-30",
-      "2026-06-30"
+      "2025-09-30",
+      "2026-09-30"
      ]
     },
     {
      "k": "sbc",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     }
    ],
@@ -174,19 +192,19 @@
    "id": "buyume",
    "baslik": "Büyüme",
    "durum": "dikkat",
-   "manset": "Gelir yıllık +%286,8 büyüdü; büyüme yavaşladı.",
+   "manset": "Gelir yıllık +%336,0 büyüdü; büyüme hızlandı.",
    "paragraflar": [
-    "Son çeyreklerde yıllık büyüme: MY 2025 Q2 %81,8 → MY 2025 Q3 %221,5 → MY 2025 Q4 %428,5 → MY 2026 Q1 %754,7 → MY 2026 Q2 %286,8.",
-    "Son 12 ay (TTM) gelir 246,5 milyon $; bir yıl önceki TTM'ye göre +%370,6. Tek çeyrekteki dalgalanmayı TTM rakamı yumuşatır; eğilimi o gösterir.",
-    "Kalan edim yükümlülüğü (RPO, imzalanmış ama henüz gelire dönüşmemiş sözleşmeler) 485,0 milyon $, yıllık +%296,6. RPO gelirden hızlı büyüyorsa gelecek dönem gelirleri için görünürlük artıyor demektir. Şu an RPO gelirden hızlı büyüyor.",
-    "Ertelenmiş gelir (müşteriden peşin alınan, henüz hizmeti verilmemiş tutar) 87,0 milyon $, yıllık +%346,3.",
-    "Son 12 ayda satın almalara 59,9 milyon $ ödendi. Büyümenin bir kısmı satın alınan şirketlerden gelebilir; organik büyümeyi ayırmak için işletme birleşmeleri dipnotuna bakmak gerekir."
+    "Son çeyreklerde yıllık büyüme: MY 2025 Q3 %221,5 → MY 2025 Q4 %428,5 → MY 2026 Q1 %754,7 → MY 2026 Q2 %286,8 → MY 2026 Q3 %336,0.",
+    "Son 12 ay (TTM) gelir 380,4 milyon $; bir yıl önceki TTM'ye göre +%376,5. Tek çeyrekteki dalgalanmayı TTM rakamı yumuşatır; eğilimi o gösterir.",
+    "Kalan edim yükümlülüğü (RPO, imzalanmış ama henüz gelire dönüşmemiş sözleşmeler) 1,17 milyar $, yıllık +%727,8. RPO gelirden hızlı büyüyorsa gelecek dönem gelirleri için görünürlük artıyor demektir. Şu an RPO gelirden hızlı büyüyor.",
+    "Ertelenmiş gelir (müşteriden peşin alınan, henüz hizmeti verilmemiş tutar) 241,8 milyon $, yıllık +%858,1.",
+    "Son 12 ayda satın almalara 912,6 milyon $ ödendi. Büyümenin bir kısmı satın alınan şirketlerden gelebilir; organik büyümeyi ayırmak için işletme birleşmeleri dipnotuna bakmak gerekir."
    ],
    "rakamlar": [
     {
      "etiket": "Çeyrek gelir",
-     "deger": "80,0 milyon $",
-     "alt": "MY 2026 Q2",
+     "deger": "173,8 milyon $",
+     "alt": "MY 2026 Q3",
      "rehber": "gelir",
      "ton": null,
      "kaynak": {
@@ -194,7 +212,7 @@
        {
         "k": "revenue",
         "d": [
-         "2026-06-30"
+         "2026-09-30"
         ]
        }
       ],
@@ -203,8 +221,8 @@
     },
     {
      "etiket": "Yıllık büyüme",
-     "deger": "+%286,8",
-     "alt": "önceki çeyrek %754,7",
+     "deger": "+%336,0",
+     "alt": "önceki çeyrek %286,8",
      "rehber": "yoy",
      "ton": null,
      "kaynak": {
@@ -212,10 +230,10 @@
        {
         "k": "revenue",
         "d": [
-         "2025-03-31",
          "2025-06-30",
-         "2026-03-31",
-         "2026-06-30"
+         "2025-09-30",
+         "2026-06-30",
+         "2026-09-30"
         ]
        }
       ],
@@ -226,7 +244,7 @@
     },
     {
      "etiket": "Çeyrekten çeyreğe",
-     "deger": "+%23,8",
+     "deger": "+%117,2",
      "alt": null,
      "rehber": "qoq",
      "ton": null,
@@ -235,8 +253,8 @@
        {
         "k": "revenue",
         "d": [
-         "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        }
       ],
@@ -247,8 +265,8 @@
     },
     {
      "etiket": "TTM gelir",
-     "deger": "246,5 milyon $",
-     "alt": "+%370,6",
+     "deger": "380,4 milyon $",
+     "alt": "+%376,5",
      "rehber": "ttm",
      "ton": null,
      "kaynak": {
@@ -256,14 +274,14 @@
        {
         "k": "revenue",
         "d": [
-         "2024-09-30",
          "2024-12-31",
          "2025-03-31",
          "2025-06-30",
          "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        }
       ],
@@ -274,8 +292,8 @@
     },
     {
      "etiket": "RPO",
-     "deger": "485,0 milyon $",
-     "alt": "+%296,6 yıllık",
+     "deger": "1,17 milyar $",
+     "alt": "+%727,8 yıllık",
      "rehber": "rpo",
      "ton": null,
      "kaynak": {
@@ -283,8 +301,8 @@
        {
         "k": "rpo",
         "d": [
-         "2025-06-30",
-         "2026-06-30"
+         "2025-09-30",
+         "2026-09-30"
         ]
        }
       ],
@@ -310,7 +328,6 @@
       {
        "k": "revenue",
        "d": [
-        "2024-06-30",
         "2024-09-30",
         "2024-12-31",
         "2025-03-31",
@@ -318,7 +335,8 @@
         "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       }
      ],
@@ -331,14 +349,14 @@
       {
        "k": "revenue",
        "d": [
-        "2024-09-30",
         "2024-12-31",
         "2025-03-31",
         "2025-06-30",
         "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       }
      ],
@@ -352,15 +370,15 @@
       {
        "k": "rpo",
        "d": [
-        "2025-06-30",
-        "2026-06-30"
+        "2025-09-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "revenue",
        "d": [
-        "2025-06-30",
-        "2026-06-30"
+        "2025-09-30",
+        "2026-09-30"
        ]
       }
      ],
@@ -373,8 +391,8 @@
       {
        "k": "deferred_revenue",
        "d": [
-        "2025-06-30",
-        "2026-06-30"
+        "2025-09-30",
+        "2026-09-30"
        ]
       }
      ],
@@ -385,19 +403,19 @@
       {
        "k": "acquisitions",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "revenue",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       }
      ],
@@ -411,12 +429,12 @@
    "id": "karlilik",
    "baslik": "Kârlılık",
    "durum": "kirmizi",
-   "manset": "Brüt marj veri yok, faaliyet marjı −%421,3, net marj −%2.333,2.",
+   "manset": "Brüt marj veri yok, faaliyet marjı −%249,1, net marj %324,4.",
    "paragraflar": [
-    "Faaliyet marjı (Ar-Ge, satış ve genel giderler de düşüldükten sonra): MY 2025 Q2 −%776,0 → MY 2025 Q3 −%423,4 → MY 2025 Q4 −%369,4 → MY 2026 Q1 −%419,9 → MY 2026 Q2 −%421,3.",
-    "Ar-ge gideri gelirin %200,7; satış/genel yönetim giderleri gelirin %146,9. Bu oranların zamanla düşmesi, şirketin büyürken giderlerini daha verimli kullandığını gösterir.",
-    "Şirket faaliyet düzeyinde zararda: son 12 ayda faaliyet marjı −%408,2.",
-    "Seyreltilmiş hisse başına kâr (EPS) 5,08 $, yıllık −%625,7 (net kâr −%956,2). EPS net kârdan hızlı büyüyor: hisse geri alımları hisse başına kârı destekliyor."
+    "Faaliyet marjı (Ar-Ge, satış ve genel giderler de düşüldükten sonra): MY 2025 Q3 −%423,4 → MY 2025 Q4 −%369,4 → MY 2026 Q1 −%419,9 → MY 2026 Q2 −%421,3 → MY 2026 Q3 −%249,1.",
+    "Ar-ge gideri gelirin %81,5; satış/genel yönetim giderleri gelirin %88,2. Bu oranların zamanla düşmesi, şirketin büyürken giderlerini daha verimli kullandığını gösterir.",
+    "Şirket faaliyet düzeyinde zararda: son 12 ayda faaliyet marjı −%333,9.",
+    "Seyreltilmiş hisse başına kâr (EPS) 1,35 $, yıllık +%137,7 (net kâr +%153,5). EPS net kârdan yavaş büyüyor: hisse sayısı arttığı için (sulandırma) kârın hissedara düşen payı azalıyor."
    ],
    "rakamlar": [
     {
@@ -430,8 +448,8 @@
        {
         "k": "revenue",
         "d": [
-         "2025-06-30",
-         "2026-06-30"
+         "2025-09-30",
+         "2026-09-30"
         ]
        }
       ],
@@ -443,8 +461,8 @@
     },
     {
      "etiket": "Faaliyet marjı",
-     "deger": "−%421,3",
-     "alt": "+354,7 puan yıllık",
+     "deger": "−%249,1",
+     "alt": "+174,3 puan yıllık",
      "rehber": "faaliyet_marji",
      "ton": null,
      "kaynak": {
@@ -452,15 +470,15 @@
        {
         "k": "operating_income",
         "d": [
-         "2025-06-30",
-         "2026-06-30"
+         "2025-09-30",
+         "2026-09-30"
         ]
        },
        {
         "k": "revenue",
         "d": [
-         "2025-06-30",
-         "2026-06-30"
+         "2025-09-30",
+         "2026-09-30"
         ]
        }
       ],
@@ -471,7 +489,7 @@
     },
     {
      "etiket": "Net marj",
-     "deger": "−%2.333,2",
+     "deger": "%324,4",
      "alt": null,
      "rehber": "net_marj",
      "ton": null,
@@ -480,13 +498,13 @@
        {
         "k": "net_income",
         "d": [
-         "2026-06-30"
+         "2026-09-30"
         ]
        },
        {
         "k": "revenue",
         "d": [
-         "2026-06-30"
+         "2026-09-30"
         ]
        }
       ],
@@ -497,8 +515,8 @@
     },
     {
      "etiket": "EPS (seyreltilmiş)",
-     "deger": "5,08 $",
-     "alt": "−%625,7 yıllık",
+     "deger": "1,35 $",
+     "alt": "+%137,7 yıllık",
      "rehber": "eps",
      "ton": null,
      "kaynak": {
@@ -506,8 +524,8 @@
        {
         "k": "eps_diluted",
         "d": [
-         "2025-06-30",
-         "2026-06-30"
+         "2025-09-30",
+         "2026-09-30"
         ]
        }
       ],
@@ -533,41 +551,41 @@
       {
        "k": "operating_income",
        "d": [
-        "2025-06-30",
         "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "revenue",
        "d": [
-        "2025-06-30",
         "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "rd",
        "d": [
-        "2025-06-30",
         "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "sga",
        "d": [
-        "2025-06-30",
         "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       }
      ],
@@ -580,19 +598,19 @@
       {
        "k": "rd",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
        ]
       },
       {
        "k": "revenue",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
        ]
       },
       {
        "k": "sga",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
        ]
       }
      ],
@@ -606,19 +624,19 @@
       {
        "k": "operating_income",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "revenue",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       }
      ],
@@ -631,22 +649,22 @@
       {
        "k": "eps_diluted",
        "d": [
-        "2025-06-30",
-        "2026-06-30"
+        "2025-09-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "net_income",
        "d": [
-        "2025-06-30",
-        "2026-06-30"
+        "2025-09-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "diluted_shares",
        "d": [
-        "2025-06-30",
-        "2026-06-30"
+        "2025-09-30",
+        "2026-09-30"
        ]
       }
      ],
@@ -660,15 +678,16 @@
    "durum": "kirmizi",
    "manset": "Kâr kalitesi zayıf ya da şirket zararda.",
    "paragraflar": [
-    "Son 12 ayda net zarar var (−1,36 milyar $); nakit/kâr oranı anlamlı değil. İşletme nakit akışı −452,4 milyon $.",
-    "Tahakkuk oranı −%22,4 (net kâr − işletme nakit akışı, ortalama varlıklara bölünmüş). Negatif veya sıfıra yakın olması iyidir: kâr büyük ölçüde nakit.",
-    "Bu çeyrek faaliyet dışı kalemlerin toplamı −1,54 milyar $; şirket vergi öncesi zararda (−1,87 milyar $), yani zarar esas faaliyetten kaynaklanıyor.",
-    "Hisse bazlı ödeme (SBC) gelirin %184,4. SBC gerçek bir maliyettir: serbest nakit akışından SBC düşülünce son 12 ayda −938,4 milyon $ kalıyor (gelirin −%380,7)."
+    "Son 12 ayda işletme nakit akışı net kârın 2,53 katı. 1'in altında olması, kârın bir kısmının henüz nakde dönmediğini gösterir: genelde alacak veya stok artışı, bazen de nakit dışı kazançlar (ör. yatırım değerlemeleri) nedeniyle.",
+    "Tahakkuk oranı %14,8 (net kâr − işletme nakit akışı, ortalama varlıklara bölünmüş). Pozitif ve yüksek olması, kârın tahakkuklara (henüz tahsil edilmemiş gelirler, değerlemeler) dayandığını gösterir; akademik çalışmalarda yüksek tahakkuk sonraki dönem zayıf getiriyle ilişkilendirilir.",
+    "Bu çeyrek faaliyet dışı kalemlerin toplamı 854,5 milyon $; vergi öncesi kârın %203. Oran yüksek: kârın önemli bir kısmı tekrarlanması belirsiz kalemlerden geliyor; köprü grafiği kalemleri tek tek gösteriyor.",
+    "Hisse bazlı ödeme (SBC) gelirin %138,9. SBC gerçek bir maliyettir: serbest nakit akışından SBC düşülünce son 12 ayda −1,22 milyar $ kalıyor (gelirin −%319,9).",
+    "Çeyreğin efektif vergi oranı −%33,6. Olağan dışı: tek seferlik vergi etkileri (ertelenmiş vergi ayarlamaları, vergi indirimleri) net kârı geçici olarak etkileyebilir."
    ],
    "rakamlar": [
     {
      "etiket": "İşletme nakdi / net kâr",
-     "deger": "veri yok",
+     "deger": "2,53x",
      "alt": "TTM",
      "rehber": "ocf_ni",
      "ton": null,
@@ -677,19 +696,19 @@
        {
         "k": "ocf",
         "d": [
-         "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        },
        {
         "k": "net_income",
         "d": [
-         "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        }
       ],
@@ -700,7 +719,7 @@
     },
     {
      "etiket": "Tahakkuk oranı",
-     "deger": "−%22,4",
+     "deger": "%14,8",
      "alt": "düşük iyi",
      "rehber": "accruals",
      "ton": null,
@@ -709,26 +728,26 @@
        {
         "k": "net_income",
         "d": [
-         "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        },
        {
         "k": "ocf",
         "d": [
-         "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        },
        {
         "k": "total_assets",
         "d": [
-         "2025-06-30",
-         "2026-06-30"
+         "2025-09-30",
+         "2026-09-30"
         ]
        }
       ],
@@ -739,7 +758,7 @@
     },
     {
      "etiket": "SBC / gelir",
-     "deger": "%184,4",
+     "deger": "%138,9",
      "alt": "TTM",
      "rehber": "sbc",
      "ton": null,
@@ -748,19 +767,19 @@
        {
         "k": "sbc",
         "d": [
-         "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        },
        {
         "k": "revenue",
         "d": [
-         "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        }
       ],
@@ -771,7 +790,7 @@
     },
     {
      "etiket": "SBC sonrası FCF",
-     "deger": "−938,4 milyon $",
+     "deger": "−1,22 milyar $",
      "alt": "TTM",
      "rehber": "sbc_fcf",
      "ton": null,
@@ -780,37 +799,37 @@
        {
         "k": "ocf",
         "d": [
-         "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        },
        {
         "k": "capex",
         "d": [
-         "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        },
        {
         "k": "fcf",
         "d": [
-         "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        },
        {
         "k": "sbc",
         "d": [
-         "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        }
       ],
@@ -836,51 +855,53 @@
     {
      "satirlar": [
       {
-       "k": "net_income",
+       "k": "ocf",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       },
       {
-       "k": "ocf",
+       "k": "net_income",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       }
      ],
-     "formuller": []
+     "formuller": [
+      "Nakit / kâr = son 4 çeyrek işletme nakit akışı ÷ son 4 çeyrek net kâr"
+     ]
     },
     {
      "satirlar": [
       {
        "k": "net_income",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "ocf",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "total_assets",
        "d": [
-        "2025-06-30",
-        "2026-06-30"
+        "2025-09-30",
+        "2026-09-30"
        ]
       }
      ],
@@ -893,19 +914,31 @@
       {
        "k": "operating_income",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
        ]
       },
       {
        "k": "pretax",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
+       ]
+      },
+      {
+       "k": "interest_expense",
+       "d": [
+        "2026-09-30"
        ]
       },
       {
        "k": "warrant_fv",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
+       ]
+      },
+      {
+       "k": "investment_gl",
+       "d": [
+        "2026-09-30"
        ]
       }
      ],
@@ -918,52 +951,71 @@
       {
        "k": "sbc",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "revenue",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "ocf",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "capex",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "fcf",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       }
      ],
      "formuller": [
       "SBC / gelir = son 4 çeyrek hisse bazlı ödeme ÷ son 4 çeyrek gelir",
       "SBC sonrası FCF = TTM serbest nakit akışı − TTM hisse bazlı ödeme"
+     ]
+    },
+    {
+     "satirlar": [
+      {
+       "k": "tax",
+       "d": [
+        "2026-09-30"
+       ]
+      },
+      {
+       "k": "pretax",
+       "d": [
+        "2026-09-30"
+       ]
+      }
+     ],
+     "formuller": [
+      "Efektif vergi oranı = vergi gideri ÷ vergi öncesi kâr"
      ]
     }
    ]
@@ -972,17 +1024,17 @@
    "id": "nakit_akisi",
    "baslik": "Nakit akışı ve sermaye tahsisi",
    "durum": "dikkat",
-   "manset": "Son 12 ayda −483,9 milyon $ nakit yakıldı.",
+   "manset": "Son 12 ayda −688,5 milyon $ nakit yakıldı.",
    "paragraflar": [
-    "Son 12 ayda işletme faaliyetlerinden −452,4 milyon $ nakit girdi, yatırım harcaması (capex) 31,5 milyon $ oldu; geriye −483,9 milyon $ serbest nakit akışı (FCF) kaldı. FCF marjı −%196,3.",
-    "Capex gelirin %12,8 (bir yıl önceye göre −8,0 puan). Capex amortismanın 0,2 katı: yatırım amortismanın altında; varlık tabanı küçülüyor olabilir.",
-    "Son 12 ayda nakdin kullanımı: satın almalar 59,9 milyon $. Dışarıdan sağlanan kaynak: hisse ihracı / opsiyon 2,95 milyar $.",
-    "Şirket nakit yakıyor. Nakit ve kısa vadeli yatırımlar 2,12 milyar $; bu hızla yaklaşık 52,6 ay yeter. Pist kısaldıkça hisse ihracı (sulandırma) veya borçlanma olasılığı artar."
+    "Son 12 ayda işletme faaliyetlerinden −644,8 milyon $ nakit girdi, yatırım harcaması (capex) 43,7 milyon $ oldu; geriye −688,5 milyon $ serbest nakit akışı (FCF) kaldı. FCF marjı −%181,0.",
+    "Capex gelirin %11,5 (bir yıl önceye göre −2,6 puan). Capex amortismanın 0,2 katı: yatırım amortismanın altında; varlık tabanı küçülüyor olabilir.",
+    "Son 12 ayda nakdin kullanımı: satın almalar 912,6 milyon $. Dışarıdan sağlanan kaynak: hisse ihracı / opsiyon 1,95 milyar $.",
+    "Şirket nakit yakıyor. Nakit ve kısa vadeli yatırımlar 997,9 milyon $; bu hızla yaklaşık 17,4 ay yeter. Pist kısaldıkça hisse ihracı (sulandırma) veya borçlanma olasılığı artar."
    ],
    "rakamlar": [
     {
      "etiket": "İşletme nakit akışı",
-     "deger": "−452,4 milyon $",
+     "deger": "−644,8 milyon $",
      "alt": "TTM",
      "rehber": "ocf",
      "ton": null,
@@ -991,10 +1043,10 @@
        {
         "k": "ocf",
         "d": [
-         "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        }
       ],
@@ -1003,8 +1055,8 @@
     },
     {
      "etiket": "Capex",
-     "deger": "31,5 milyon $",
-     "alt": "%12,8 gelir",
+     "deger": "43,7 milyon $",
+     "alt": "%11,5 gelir",
      "rehber": "capex",
      "ton": null,
      "kaynak": {
@@ -1012,19 +1064,19 @@
        {
         "k": "capex",
         "d": [
-         "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        },
        {
         "k": "revenue",
         "d": [
-         "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        }
       ],
@@ -1035,8 +1087,8 @@
     },
     {
      "etiket": "Serbest nakit akışı",
-     "deger": "−483,9 milyon $",
-     "alt": "−%196,3 marj",
+     "deger": "−688,5 milyon $",
+     "alt": "−%181,0 marj",
      "rehber": "fcf",
      "ton": null,
      "kaynak": {
@@ -1044,37 +1096,37 @@
        {
         "k": "ocf",
         "d": [
-         "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        },
        {
         "k": "capex",
         "d": [
-         "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        },
        {
         "k": "fcf",
         "d": [
-         "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        },
        {
         "k": "revenue",
         "d": [
-         "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        }
       ],
@@ -1098,7 +1150,7 @@
     },
     {
      "etiket": "Nakit pisti",
-     "deger": "52,6 ay",
+     "deger": "17,4 ay",
      "alt": null,
      "rehber": "nakit_pisti",
      "ton": "dikkat",
@@ -1107,40 +1159,40 @@
        {
         "k": "cash",
         "d": [
-         "2026-06-30"
+         "2026-09-30"
         ]
        },
        {
         "k": "st_investments",
         "d": [
-         "2026-06-30"
+         "2026-09-30"
         ]
        },
        {
         "k": "ocf",
         "d": [
-         "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        },
        {
         "k": "capex",
         "d": [
-         "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        },
        {
         "k": "fcf",
         "d": [
-         "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        }
       ],
@@ -1169,37 +1221,37 @@
       {
        "k": "ocf",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "capex",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "fcf",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "revenue",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       }
      ],
@@ -1213,36 +1265,36 @@
       {
        "k": "capex",
        "d": [
-        "2024-09-30",
         "2024-12-31",
         "2025-03-31",
         "2025-06-30",
         "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "revenue",
        "d": [
-        "2024-09-30",
         "2024-12-31",
         "2025-03-31",
         "2025-06-30",
         "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "da",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       }
      ],
@@ -1256,19 +1308,19 @@
       {
        "k": "acquisitions",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "equity_issued",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       }
      ],
@@ -1279,40 +1331,40 @@
       {
        "k": "cash",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
        ]
       },
       {
        "k": "st_investments",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
        ]
       },
       {
        "k": "ocf",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "capex",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "fcf",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       }
      ],
@@ -1326,20 +1378,20 @@
    "id": "bilanco",
    "baslik": "Bilanço sağlamlığı",
    "durum": "dikkat",
-   "manset": "Net nakit 2,12 milyar $; cari oran 10,66.",
+   "manset": "Net nakit 932,3 milyon $; cari oran 4,24.",
    "paragraflar": [
-    "Toplam varlıklar 6,78 milyar $, toplam yükümlülükler 3,44 milyar $, özkaynak 3,33 milyar $. Varlıklar bir yılda +%403,4 büyüdü.",
-    "Varlıkların dağılımı: şerefiye %32, nakit ve kısa vadeli yatırımlar %31, uzun vadeli yatırımlar %12, maddi olmayan varlıklar %11, maddi duran varlıklar %2. Şerefiye ağırlığı yüksek: geçmiş satın almalar için ödenen prim büyük ve değer düşüklüğü riski taşıyor.",
-    "Nakit ve kısa vadeli yatırımlar 2,12 milyar $, finansal borç yok veya raporlanmamış; net nakit pozisyonu 2,12 milyar $.",
-    "Cari oran 10,66 (dönen varlıklar / kısa vadeli yükümlülükler). 1,5'in üzerinde: kısa vadeli yükümlülükleri rahat karşılıyor.",
-    "Varlıkların %49 özkaynakla finanse ediliyor.",
-    "Şerefiye toplam varlıkların %32; satın almaların beklenen getiriyi sağlamaması halinde değer düşüklüğü riski taşır.",
-    "Kira yükümlülükleri (operasyonel kiralama) 54,5 milyon $; finansal borca benzer sabit bir yükümlülüktür."
+    "Toplam varlıklar 7,85 milyar $, toplam yükümlülükler 2,83 milyar $, özkaynak 4,99 milyar $. Varlıklar bir yılda +%81,8 büyüdü.",
+    "Varlıkların dağılımı: şerefiye %41, maddi olmayan varlıklar %15, nakit ve kısa vadeli yatırımlar %13, maddi duran varlıklar %11, uzun vadeli yatırımlar %8. Şerefiye ağırlığı yüksek: geçmiş satın almalar için ödenen prim büyük ve değer düşüklüğü riski taşıyor.",
+    "Nakit ve kısa vadeli yatırımlar 997,9 milyon $, finansal borç 65,6 milyon $; net nakit pozisyonu 932,3 milyon $.",
+    "Cari oran 4,24 (dönen varlıklar / kısa vadeli yükümlülükler). 1,5'in üzerinde: kısa vadeli yükümlülükleri rahat karşılıyor.",
+    "Varlıkların %64 özkaynakla finanse ediliyor; borç/özkaynak 0,01.",
+    "Şerefiye toplam varlıkların %41; satın almaların beklenen getiriyi sağlamaması halinde değer düşüklüğü riski taşır.",
+    "Kira yükümlülükleri (operasyonel kiralama) 60,3 milyon $; finansal borca benzer sabit bir yükümlülüktür."
    ],
    "rakamlar": [
     {
      "etiket": "Nakit + kısa vadeli yatırım",
-     "deger": "2,12 milyar $",
+     "deger": "997,9 milyon $",
      "alt": null,
      "rehber": "net_nakit",
      "ton": null,
@@ -1348,13 +1400,13 @@
        {
         "k": "cash",
         "d": [
-         "2026-06-30"
+         "2026-09-30"
         ]
        },
        {
         "k": "st_investments",
         "d": [
-         "2026-06-30"
+         "2026-09-30"
         ]
        }
       ],
@@ -1365,18 +1417,25 @@
     },
     {
      "etiket": "Finansal borç",
-     "deger": "yok/raporlanmamış",
+     "deger": "65,6 milyon $",
      "alt": null,
      "rehber": "net_nakit",
      "ton": null,
      "kaynak": {
-      "satirlar": [],
+      "satirlar": [
+       {
+        "k": "total_debt",
+        "d": [
+         "2026-09-30"
+        ]
+       }
+      ],
       "formuller": []
      }
     },
     {
      "etiket": "Cari oran",
-     "deger": "10,66",
+     "deger": "4,24",
      "alt": null,
      "rehber": "cari_oran",
      "ton": null,
@@ -1385,13 +1444,13 @@
        {
         "k": "current_assets",
         "d": [
-         "2026-06-30"
+         "2026-09-30"
         ]
        },
        {
         "k": "current_liabilities",
         "d": [
-         "2026-06-30"
+         "2026-09-30"
         ]
        }
       ],
@@ -1402,7 +1461,7 @@
     },
     {
      "etiket": "Özkaynak oranı",
-     "deger": "%49",
+     "deger": "%64",
      "alt": null,
      "rehber": "ozkaynak_orani",
      "ton": null,
@@ -1411,13 +1470,13 @@
        {
         "k": "equity",
         "d": [
-         "2026-06-30"
+         "2026-09-30"
         ]
        },
        {
         "k": "total_assets",
         "d": [
-         "2026-06-30"
+         "2026-09-30"
         ]
        }
       ],
@@ -1444,20 +1503,20 @@
       {
        "k": "total_assets",
        "d": [
-        "2025-06-30",
-        "2026-06-30"
+        "2025-09-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "total_liabilities",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
        ]
       },
       {
        "k": "equity",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
        ]
       }
      ],
@@ -1468,43 +1527,43 @@
       {
        "k": "total_assets",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
        ]
       },
       {
        "k": "goodwill",
        "d": [
-        "2026-06-30"
-       ]
-      },
-      {
-       "k": "cash",
-       "d": [
-        "2026-06-30"
-       ]
-      },
-      {
-       "k": "st_investments",
-       "d": [
-        "2026-06-30"
-       ]
-      },
-      {
-       "k": "lt_investments",
-       "d": [
-        "2026-06-30"
+        "2026-09-30"
        ]
       },
       {
        "k": "intangibles",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
+       ]
+      },
+      {
+       "k": "cash",
+       "d": [
+        "2026-09-30"
+       ]
+      },
+      {
+       "k": "st_investments",
+       "d": [
+        "2026-09-30"
        ]
       },
       {
        "k": "ppe",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
+       ]
+      },
+      {
+       "k": "lt_investments",
+       "d": [
+        "2026-09-30"
        ]
       }
      ],
@@ -1518,13 +1577,19 @@
       {
        "k": "cash",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
        ]
       },
       {
        "k": "st_investments",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
+       ]
+      },
+      {
+       "k": "total_debt",
+       "d": [
+        "2026-09-30"
        ]
       }
      ],
@@ -1537,13 +1602,13 @@
       {
        "k": "current_assets",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
        ]
       },
       {
        "k": "current_liabilities",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
        ]
       }
      ],
@@ -1556,18 +1621,25 @@
       {
        "k": "equity",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
        ]
       },
       {
        "k": "total_assets",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
+       ]
+      },
+      {
+       "k": "total_debt",
+       "d": [
+        "2026-09-30"
        ]
       }
      ],
      "formuller": [
-      "Özkaynak oranı = özkaynak ÷ toplam varlıklar"
+      "Özkaynak oranı = özkaynak ÷ toplam varlıklar",
+      "Borç / özkaynak = finansal borç ÷ özkaynak"
      ]
     },
     {
@@ -1575,13 +1647,13 @@
       {
        "k": "goodwill",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
        ]
       },
       {
        "k": "total_assets",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
        ]
       }
      ],
@@ -1594,7 +1666,7 @@
       {
        "k": "lease_liab",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
        ]
       }
      ],
@@ -1605,19 +1677,19 @@
   {
    "id": "isletme_sermayesi",
    "baslik": "İşletme sermayesi",
-   "durum": "kirmizi",
-   "manset": "Nakit dönüşüm döngüsü 120 gün; DSO 120 gün.",
+   "durum": "notr",
+   "manset": "Nakit dönüşüm döngüsü 87 gün; DSO 87 gün.",
    "paragraflar": [
-    "Alacak tahsil süresi (DSO) 120 gün; bir yıl önce 84 gün. Müşteriler faturayı ortalama bu kadar günde ödüyor. Sürenin uzaması tahsilat zorluğu veya agresif satış koşullarına işaret edebilir.",
-    "Nakit dönüşüm döngüsü (DSO + DIO − DPO) 120 gün; bir yıl önce 84 gün. Şirketin bir doları üretime koyup müşteriden tahsil etmesi bu kadar sürüyor; kısalması nakit verimliliğinin arttığını gösterir.",
-    "Alacaklar yıllık +%454,1, gelir +%286,8 büyüdü (fark +167,3 puan).",
-    "Stoklar yıllık +%186,2, gelir +%286,8 büyüdü (fark −100,6 puan)."
+    "Alacak tahsil süresi (DSO) 87 gün; bir yıl önce 85 gün. Müşteriler faturayı ortalama bu kadar günde ödüyor. Sürenin uzaması tahsilat zorluğu veya agresif satış koşullarına işaret edebilir.",
+    "Nakit dönüşüm döngüsü (DSO + DIO − DPO) 87 gün; bir yıl önce 85 gün. Şirketin bir doları üretime koyup müşteriden tahsil etmesi bu kadar sürüyor; kısalması nakit verimliliğinin arttığını gösterir.",
+    "Alacaklar yıllık +%347,2, gelir +%336,0 büyüdü (fark +11,2 puan).",
+    "Stoklar yıllık +%307,4, gelir +%336,0 büyüdü (fark −28,7 puan)."
    ],
    "rakamlar": [
     {
      "etiket": "DSO",
-     "deger": "120 gün",
-     "alt": "+36 gün yıllık",
+     "deger": "87 gün",
+     "alt": "+2 gün yıllık",
      "rehber": "dso",
      "ton": null,
      "kaynak": {
@@ -1625,15 +1697,15 @@
        {
         "k": "ar",
         "d": [
-         "2025-06-30",
-         "2026-06-30"
+         "2025-09-30",
+         "2026-09-30"
         ]
        },
        {
         "k": "revenue",
         "d": [
-         "2025-06-30",
-         "2026-06-30"
+         "2025-09-30",
+         "2026-09-30"
         ]
        }
       ],
@@ -1653,7 +1725,7 @@
        {
         "k": "inventory",
         "d": [
-         "2026-06-30"
+         "2026-09-30"
         ]
        }
       ],
@@ -1673,7 +1745,7 @@
        {
         "k": "ap",
         "d": [
-         "2026-06-30"
+         "2026-09-30"
         ]
        }
       ],
@@ -1684,7 +1756,7 @@
     },
     {
      "etiket": "Nakit dönüşüm döngüsü",
-     "deger": "120 gün",
+     "deger": "87 gün",
      "alt": null,
      "rehber": "ccc",
      "ton": null,
@@ -1693,25 +1765,25 @@
        {
         "k": "ar",
         "d": [
-         "2026-06-30"
+         "2026-09-30"
         ]
        },
        {
         "k": "revenue",
         "d": [
-         "2026-06-30"
+         "2026-09-30"
         ]
        },
        {
         "k": "inventory",
         "d": [
-         "2026-06-30"
+         "2026-09-30"
         ]
        },
        {
         "k": "ap",
         "d": [
-         "2026-06-30"
+         "2026-09-30"
         ]
        }
       ],
@@ -1737,15 +1809,15 @@
       {
        "k": "ar",
        "d": [
-        "2025-06-30",
-        "2026-06-30"
+        "2025-09-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "revenue",
        "d": [
-        "2025-06-30",
-        "2026-06-30"
+        "2025-09-30",
+        "2026-09-30"
        ]
       }
      ],
@@ -1758,29 +1830,29 @@
       {
        "k": "ar",
        "d": [
-        "2025-06-30",
-        "2026-06-30"
+        "2025-09-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "revenue",
        "d": [
-        "2025-06-30",
-        "2026-06-30"
+        "2025-09-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "inventory",
        "d": [
-        "2025-06-30",
-        "2026-06-30"
+        "2025-09-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "ap",
        "d": [
-        "2025-06-30",
-        "2026-06-30"
+        "2025-09-30",
+        "2026-09-30"
        ]
       }
      ],
@@ -1793,15 +1865,15 @@
       {
        "k": "ar",
        "d": [
-        "2025-06-30",
-        "2026-06-30"
+        "2025-09-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "revenue",
        "d": [
-        "2025-06-30",
-        "2026-06-30"
+        "2025-09-30",
+        "2026-09-30"
        ]
       }
      ],
@@ -1814,15 +1886,15 @@
       {
        "k": "inventory",
        "d": [
-        "2025-06-30",
-        "2026-06-30"
+        "2025-09-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "revenue",
        "d": [
-        "2025-06-30",
-        "2026-06-30"
+        "2025-09-30",
+        "2026-09-30"
        ]
       }
      ],
@@ -1836,16 +1908,16 @@
    "id": "hissedar",
    "baslik": "Hissedar açısından",
    "durum": "kirmizi",
-   "manset": "Hisse sayısı yıllık +%46,5; ROE −%60,8.",
+   "manset": "Hisse sayısı yıllık +%36,1; ROE %7,0.",
    "paragraflar": [
-    "Seyreltilmiş hisse sayısı bir yılda +%46,5 değişti. Hisse sayısı artıyor (sulandırma): mevcut hissedarın şirketteki payı küçülüyor. Kaynağı SBC, hisse ihracı (ATM) veya dönüştürülebilir tahviller olabilir.",
-    "Özkaynak kârlılığı (ROE, TTM) −%60,8. ",
-    "Yatırılan sermaye getirisi (ROIC, yaklaşık) −%65,8. Hesap: faaliyet kârı × (1 − %21 varsayımsal vergi) / (özkaynak + borç − nakit). Sermaye maliyetinin (genelde %8-10) belirgin üzerinde olması değer yaratıldığını gösterir."
+    "Seyreltilmiş hisse sayısı bir yılda +%36,1 değişti. Hisse sayısı artıyor (sulandırma): mevcut hissedarın şirketteki payı küçülüyor. Kaynağı SBC, hisse ihracı (ATM) veya dönüştürülebilir tahviller olabilir.",
+    "Özkaynak kârlılığı (ROE, TTM) %7,0. ",
+    "Yatırılan sermaye getirisi (ROIC, yaklaşık) −%24,7. Hesap: faaliyet kârı × (1 − %21 varsayımsal vergi) / (özkaynak + borç − nakit). Sermaye maliyetinin (genelde %8-10) belirgin üzerinde olması değer yaratıldığını gösterir."
    ],
    "rakamlar": [
     {
      "etiket": "Hisse sayısı (yıllık)",
-     "deger": "+%46,5",
+     "deger": "+%36,1",
      "alt": null,
      "rehber": "sulandirma",
      "ton": null,
@@ -1854,8 +1926,8 @@
        {
         "k": "diluted_shares",
         "d": [
-         "2025-06-30",
-         "2026-06-30"
+         "2025-09-30",
+         "2026-09-30"
         ]
        }
       ],
@@ -1864,7 +1936,7 @@
     },
     {
      "etiket": "ROE (TTM)",
-     "deger": "−%60,8",
+     "deger": "%7,0",
      "alt": null,
      "rehber": "roe",
      "ton": null,
@@ -1873,17 +1945,17 @@
        {
         "k": "net_income",
         "d": [
-         "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        },
        {
         "k": "equity",
         "d": [
-         "2025-06-30",
-         "2026-06-30"
+         "2025-09-30",
+         "2026-09-30"
         ]
        }
       ],
@@ -1894,7 +1966,7 @@
     },
     {
      "etiket": "ROIC (yaklaşık)",
-     "deger": "−%65,8",
+     "deger": "−%24,7",
      "alt": null,
      "rehber": "roic",
      "ton": null,
@@ -1903,28 +1975,34 @@
        {
         "k": "operating_income",
         "d": [
-         "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        },
        {
         "k": "equity",
         "d": [
-         "2026-06-30"
+         "2026-09-30"
+        ]
+       },
+       {
+        "k": "total_debt",
+        "d": [
+         "2026-09-30"
         ]
        },
        {
         "k": "cash",
         "d": [
-         "2026-06-30"
+         "2026-09-30"
         ]
        },
        {
         "k": "st_investments",
         "d": [
-         "2026-06-30"
+         "2026-09-30"
         ]
        }
       ],
@@ -1935,7 +2013,7 @@
     },
     {
      "etiket": "SBC (TTM)",
-     "deger": "454,5 milyon $",
+     "deger": "528,5 milyon $",
      "alt": null,
      "rehber": "sbc",
      "ton": null,
@@ -1944,10 +2022,10 @@
        {
         "k": "sbc",
         "d": [
-         "2025-09-30",
          "2025-12-31",
          "2026-03-31",
-         "2026-06-30"
+         "2026-06-30",
+         "2026-09-30"
         ]
        }
       ],
@@ -1971,8 +2049,8 @@
       {
        "k": "diluted_shares",
        "d": [
-        "2025-06-30",
-        "2026-06-30"
+        "2025-09-30",
+        "2026-09-30"
        ]
       }
      ],
@@ -1983,17 +2061,17 @@
       {
        "k": "net_income",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "equity",
        "d": [
-        "2025-06-30",
-        "2026-06-30"
+        "2025-09-30",
+        "2026-09-30"
        ]
       }
      ],
@@ -2006,28 +2084,34 @@
       {
        "k": "operating_income",
        "d": [
-        "2025-09-30",
         "2025-12-31",
         "2026-03-31",
-        "2026-06-30"
+        "2026-06-30",
+        "2026-09-30"
        ]
       },
       {
        "k": "equity",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
+       ]
+      },
+      {
+       "k": "total_debt",
+       "d": [
+        "2026-09-30"
        ]
       },
       {
        "k": "cash",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
        ]
       },
       {
        "k": "st_investments",
        "d": [
-        "2026-06-30"
+        "2026-09-30"
        ]
       }
      ],
@@ -2044,10 +2128,10 @@
     {
      "k": "revenue",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     }
    ],
@@ -2060,8 +2144,8 @@
     {
      "k": "revenue",
      "d": [
-      "2025-06-30",
-      "2026-06-30"
+      "2025-09-30",
+      "2026-09-30"
      ]
     }
    ],
@@ -2074,8 +2158,8 @@
     {
      "k": "revenue",
      "d": [
-      "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     }
    ],
@@ -2088,31 +2172,43 @@
     {
      "k": "operating_income",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "pretax",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
+     ]
+    },
+    {
+     "k": "interest_expense",
+     "d": [
+      "2026-09-30"
      ]
     },
     {
      "k": "warrant_fv",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
+     ]
+    },
+    {
+     "k": "investment_gl",
+     "d": [
+      "2026-09-30"
      ]
     },
     {
      "k": "tax",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "net_income",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     }
    ],
@@ -2125,7 +2221,7 @@
     {
      "k": "revenue",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     }
    ],
@@ -2136,8 +2232,8 @@
     {
      "k": "rpo",
      "d": [
-      "2025-06-30",
-      "2026-06-30"
+      "2025-09-30",
+      "2026-09-30"
      ]
     }
    ],
@@ -2148,8 +2244,8 @@
     {
      "k": "deferred_revenue",
      "d": [
-      "2025-06-30",
-      "2026-06-30"
+      "2025-09-30",
+      "2026-09-30"
      ]
     }
    ],
@@ -2160,7 +2256,7 @@
     {
      "k": "revenue",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     }
    ],
@@ -2173,25 +2269,25 @@
     {
      "k": "operating_income",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "revenue",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "rd",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "sga",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     }
    ],
@@ -2204,13 +2300,13 @@
     {
      "k": "net_income",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "revenue",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     }
    ],
@@ -2223,15 +2319,15 @@
     {
      "k": "operating_income",
      "d": [
-      "2025-06-30",
-      "2026-06-30"
+      "2025-09-30",
+      "2026-09-30"
      ]
     },
     {
      "k": "revenue",
      "d": [
-      "2025-06-30",
-      "2026-06-30"
+      "2025-09-30",
+      "2026-09-30"
      ]
     }
    ],
@@ -2244,19 +2340,19 @@
     {
      "k": "eps_diluted",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "net_income",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "diluted_shares",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     }
    ],
@@ -2267,19 +2363,19 @@
     {
      "k": "ocf",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     },
     {
      "k": "net_income",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     }
    ],
@@ -2292,26 +2388,26 @@
     {
      "k": "net_income",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     },
     {
      "k": "ocf",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     },
     {
      "k": "total_assets",
      "d": [
-      "2025-06-30",
-      "2026-06-30"
+      "2025-09-30",
+      "2026-09-30"
      ]
     }
    ],
@@ -2324,19 +2420,31 @@
     {
      "k": "operating_income",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "pretax",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
+     ]
+    },
+    {
+     "k": "interest_expense",
+     "d": [
+      "2026-09-30"
      ]
     },
     {
      "k": "warrant_fv",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
+     ]
+    },
+    {
+     "k": "investment_gl",
+     "d": [
+      "2026-09-30"
      ]
     }
    ],
@@ -2349,19 +2457,19 @@
     {
      "k": "sbc",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     },
     {
      "k": "revenue",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     }
    ],
@@ -2374,37 +2482,37 @@
     {
      "k": "ocf",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     },
     {
      "k": "capex",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     },
     {
      "k": "fcf",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     },
     {
      "k": "sbc",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     }
    ],
@@ -2417,13 +2525,13 @@
     {
      "k": "tax",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "pretax",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     }
    ],
@@ -2436,25 +2544,25 @@
     {
      "k": "ocf",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "net_income",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "da",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "sbc",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     }
    ],
@@ -2465,7 +2573,7 @@
     {
      "k": "capex",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     }
    ],
@@ -2476,28 +2584,28 @@
     {
      "k": "ocf",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     },
     {
      "k": "capex",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     },
     {
      "k": "fcf",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     }
    ],
@@ -2510,19 +2618,19 @@
     {
      "k": "capex",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     },
     {
      "k": "da",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     }
    ],
@@ -2535,40 +2643,40 @@
     {
      "k": "cash",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "st_investments",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "ocf",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     },
     {
      "k": "capex",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     },
     {
      "k": "fcf",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     }
    ],
@@ -2581,13 +2689,19 @@
     {
      "k": "cash",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "st_investments",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
+     ]
+    },
+    {
+     "k": "total_debt",
+     "d": [
+      "2026-09-30"
      ]
     }
    ],
@@ -2600,13 +2714,13 @@
     {
      "k": "current_assets",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "current_liabilities",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     }
    ],
@@ -2619,13 +2733,13 @@
     {
      "k": "equity",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "total_assets",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     }
    ],
@@ -2638,19 +2752,19 @@
     {
      "k": "goodwill",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "total_assets",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "intangibles",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     }
    ],
@@ -2661,9 +2775,15 @@
   "borc_ozkaynak": {
    "satirlar": [
     {
+     "k": "total_debt",
+     "d": [
+      "2026-09-30"
+     ]
+    },
+    {
      "k": "equity",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     }
    ],
@@ -2676,13 +2796,13 @@
     {
      "k": "ar",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "revenue",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     }
    ],
@@ -2695,7 +2815,7 @@
     {
      "k": "inventory",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     }
    ],
@@ -2708,7 +2828,7 @@
     {
      "k": "ap",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     }
    ],
@@ -2721,25 +2841,25 @@
     {
      "k": "ar",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "revenue",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "inventory",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "ap",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     }
    ],
@@ -2752,8 +2872,8 @@
     {
      "k": "diluted_shares",
      "d": [
-      "2025-06-30",
-      "2026-06-30"
+      "2025-09-30",
+      "2026-09-30"
      ]
     }
    ],
@@ -2764,17 +2884,17 @@
     {
      "k": "net_income",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     },
     {
      "k": "equity",
      "d": [
-      "2025-06-30",
-      "2026-06-30"
+      "2025-09-30",
+      "2026-09-30"
      ]
     }
    ],
@@ -2787,28 +2907,34 @@
     {
      "k": "operating_income",
      "d": [
-      "2025-09-30",
       "2025-12-31",
       "2026-03-31",
-      "2026-06-30"
+      "2026-06-30",
+      "2026-09-30"
      ]
     },
     {
      "k": "equity",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
+     ]
+    },
+    {
+     "k": "total_debt",
+     "d": [
+      "2026-09-30"
      ]
     },
     {
      "k": "cash",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     },
     {
      "k": "st_investments",
      "d": [
-      "2026-06-30"
+      "2026-09-30"
      ]
     }
    ],
