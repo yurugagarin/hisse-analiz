@@ -1,8 +1,399 @@
 {
  "ticker": "IONQ",
  "esik_yuzde": 5,
- "guncelleme": "2026-11-06T12:34:43+00:00",
+ "guncelleme": "2026-11-09T13:28:31+00:00",
  "hareketler": [
+  {
+   "tarih": "2026-11-06",
+   "claude": null,
+   "onceki_gun": "2026-11-05",
+   "hareket": 23.42,
+   "yon": "yukari",
+   "benchmark": {
+    "QQQ": 1.4,
+    "SMH": 3.62
+   },
+   "on_siniflama": "sirkete_ozel",
+   "on_siniflama_aciklama": "Hisse +%23,4, sektör/piyasa +%3,6: hareketin çoğu şirkete özel görünüyor.",
+   "basliklar": [
+    {
+     "zaman": "2026-11-06T23:16:05+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "IonQ (IONQ) Stock Jumps After Q3 Earnings Turn Profitable",
+     "ozet": "IonQ came into this Q3 2026 print with a bruised recent record on the chart, down about 21% over the past month and roughly 27% over ninety days. Then the quantum hardware story met hard numbers. The stock rose 23.3% today after the company posted US$173.8m in quarterly revenue and US$1.45 in basic earnings per share. The expectation was for a long duration science project. The reality from this quarter is a profitability story supported by a rapidly scaling top line, which is now being...",
+     "url": "https://finnhub.io/api/news?id=d24ab7c8664bfc9886a4c3954999d208004dbb35aa8bb42f2557892fe56e224d",
+     "kaynak": "Yahoo",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-06T22:56:00+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "How Quantinuum Plans to Win Quantum Computing’s Long Game, According to Its CEO",
+     "ozet": "Rajeeb Hazra is betting on bigger customer deals, new machines, and software that keeps developers building as quantum hardware advances.",
+     "url": "https://finnhub.io/api/news?id=10859721ac7947e8ff210c4251ed5fd31a253683a1f4765ac7e74eb30482282b",
+     "kaynak": "Yahoo",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-06T21:11:00+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "U.S. Markets Closed Mixed Friday As IonQ Led, Axon Enterprise Lagged",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOaGhjTnRub3lPX0ZuWGhkQ3AxdWZLalJrVnBoRUVkc2Q1a3h0ZUxRdVZZZEdCNVJHOXY1Qmc4X2dNY21EdElXRS05MURVS19DWVVfRjVMdU5SMFN5VEVsb1J3WlNJLTl5XzVscEVEeWxTaFhfLUxPWnFKQ0JPTVpaZEg2X2pmb1VBRGljZWswSXJtdHdqU0hHMXhrVDZWTGkwMlRNcjVxMFVORzBP?oc=5",
+     "kaynak": "Barron's",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-11-06T20:25:08+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "Jefferies Maintains Buy on IonQ, Lowers Price Target to $65",
+     "ozet": "Jefferies  analyst Kevin Garrigan   maintains IonQ (NYSE:IONQ) with a Buy and lowers the price target from $80 to $65.",
+     "url": "https://finnhub.io/api/news?id=42e9241fb72000b9ede19be01345eadacda8e9c2cc81273c630db0db37d1517d",
+     "kaynak": "Benzinga",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-06T20:01:17+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "IonQ (IONQ) Surges 12.6% After Filing Q3 2026 Earnings",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdGs4YmhEUHhWTGJGMDZGVDh6V3BGeFpLWEtfejIwQndUTWpoS05uSFVlU1ZHR3VEMTRsTXpLUzk4QXZpclg1N0FwbzZMUDV6VF9ENUN5ajNPZVBGVUNHU1VMTzdwUkVMbnlmS2s5YTJ1VjJ0TEpwUnVzLXVpd09TMHpqdFp5NEdRdW5sQw?oc=5",
+     "kaynak": "24/7 Wall St.",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-11-06T19:49:38+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "Why IonQ Stock Is Soaring Today",
+     "ozet": "IonQ continues to demonstrate why it's a quantum computing juggernaut.",
+     "url": "https://finnhub.io/api/news?id=ba1485fad021048e035d25b63262d1af79dc51d3509131f489ad051eeaea5cfa",
+     "kaynak": "Yahoo",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-06T19:17:19+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "IonQ (IONQ) Dropped, So What Is Behind The Latest Attention?",
+     "ozet": "IonQ (IONQ) just delivered a record third quarter, reporting US$173.83 million in sales, positive net income of US$563.96 million, and higher full year 2026 revenue guidance following strong Superion 256 demand. Despite the strong Superion 256 order book and new deals with partners like QuantumCT and the Air Force Research Laboratory, IonQ’s share price has fallen 38.95% over the past 30 days and is down 43.49% year to date. However, the 3 year total shareholder return is still up 135.35%,...",
+     "url": "https://finnhub.io/api/news?id=598839faabc155be8f485c9b390140d8d91d16bf31d94e2d5ac4664f26b35583",
+     "kaynak": "Yahoo",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-06T19:07:59+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "IonQ Stocks Surge 10.93% After 336% Revenue Jump and Higher Full-Year Guide",
+     "ozet": "Third-quarter revenue hit $173.8 million, and IonQ now expects $505 million to $515 million for 2026.",
+     "url": "https://finnhub.io/api/news?id=c2fd7364b8217ea9fb9bc9d18762961e30ac257707be7746e28f63a76b5b2012",
+     "kaynak": "Yahoo",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-06T19:00:00+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "QUBT Q3 Earnings Preview: Buy, Hold or Sell Amid AI & Tech Selloffs?",
+     "ozet": "QUBT heads into its Nov. 9 earnings report with a $42.5 million backlog, strategic buyouts and $1.3 billion in cash, but rising costs and losses are concerns.",
+     "url": "https://finnhub.io/api/news?id=9a816b1f8049e70350b3241b21ce64f577735197eba3a8530bb48c5e393ac9fa",
+     "kaynak": "Yahoo",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-06T18:48:29+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "IonQ Raises 2026 Revenue Forecast to $515 Million as Quantum Computing Demand Accelerates",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcFJrN1lFelFlVmpxUHZieUdTTWRPVHZ3THJ0b1hCWTNudGk2UElqeDRIRXFyOG5QV0NNZk14NUhmemd3VllGUEcxVkdiNGdfQU1ERFc5X2hsWGdPd0l5S1RfdjlOQ3JqYXlZcnVtYkFhWURicGYwS0NQWGZ0VjBnZk1uOXdRbEdIMlhJXzdqamFrYVpjMWpGMVhheE05UjVrSnZhRVA3RGpneXBCN3BzTWZJVzNxQW5UXzc5LTY5b1QxSW5aTGc?oc=5",
+     "kaynak": "citybiz",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-11-06T18:36:47+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "Rigetti Soars 17%, D-Wave Up 17% as IonQ Raises Guidance to “An Industry Record”",
+     "ozet": "Key TakeawaysRigetti Computing and D-Wave Quantum both jumped 17% today after IonQ raised its 2026 revenue guidance to $505-515 million. Rigetti’s $5.",
+     "url": "https://finnhub.io/api/news?id=432ef401c22a6ee4a47a1a6b04129f02c52f162077d5e41c995d4487bbe088de",
+     "kaynak": "Yahoo",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-06T18:05:00+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "IonQ Surges 18% on Beat and Raised Guidance; Rigetti Computing Jumps 18%, D-Wave Quantum Surges 16%",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQdkxrQVVGdWhpTFRCZ2xtVUpJS0NjME1uTDdQVllsMDctNlhGSHpydFp1T3oyT1dpUENmeWh2TnJEdDFDQWVOZkRTdEhJVXkzWGhkZ2c5ckVXZXM1VWxBOTl1M1FzdkFFOEJUQ21DSnJsd1o1dkpyUFIxMjV0TVM5NHpCMXFBaTd2Y3lMcFgzclE0ZFdLSnNTdWRIVVg1dUVmaW1aYVNWUUxlTGotcWJEbUh5amdEcXVKNzJjanFaNl82NTVHLUdqUlRNdlN3TXU4dXlwSQ?oc=5",
+     "kaynak": "24/7 Wall St.",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-11-06T18:03:21+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "IonQ Beat and Raised. Can the Quantum Stock Buck the Tech Selloff?",
+     "ozet": "Revenue more than tripled, guidance went up, and the stock still sank toward its yearly low. Behind IonQ's disconnect sit a sold-out 2027 order book, heavy dilution, and a cash burn that could swing the verdict either way.",
+     "url": "https://finnhub.io/api/news?id=f7d21fa6c9ee38b36d4a70ca671e8e2a0dd6027eacabc4f57d4cf307c3c781df",
+     "kaynak": "Yahoo",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-06T17:49:05+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "IonQ (IONQ) Raises 2026 Revenue Guidance After Strong Q3, Surpas",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbDhQdlRxWWdScnNfZmlHSk1xREN6WWVDTzhkRFI0cnFTZWFrRC00dTltVjBpWEIzZ0k3ODdsa1d0RXVyZmt6QXVodGpBOTY5b1hCbmtQMmJhTXN3QTlSWnlhTkVDRDFIdWFKcU1JekExaVdpc2xiTk1HYTQ3VlRNcmZpV3VsV2RCak9uTFdMbjRSMmRZc19vMkU4UHNCdEJXd0hWRGF4ZW1QREVrZnFmM0Jac1o?oc=5",
+     "kaynak": "GuruFocus",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-11-06T17:35:33+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "Stocks making the biggest moves midday: Nvidia, Moderna, IonQ, Airbnb, Firefly Aerospace & more",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRU0zc2RENFJvOEhSUmhEY2VsNGpzbTEzU2dqWGFzWFQ5anlrd1Nxd2NxLWJIeDByWnhXbTdSVGdpR3ZDenp0NGpQZEotWGRIdjdNQ2VIQlpKOWM2d3dXWU9jQ3hxQlBoOXRzay1UTDZrSHdSNUFpb2FCdHBDSS1rNzNxTU5yZlRBR3VaeFRDVjJKQ09XdzkzTThVYldkd1JT?oc=5",
+     "kaynak": "CNBC",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-11-06T17:11:17+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "IonQ Shares Surge 10% As Analysts See Acquisition Opportunities, Sold-Out 2027 Capacity And Quantum Secur",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOWjJQOW5DWTlpdUtKRHVULWpib2R4bmI2RVBqeUlweVdhanZKYV9VUWNwQTA3ZkRINGo5VTRwcjFmeXY3Rkw5YXg4QjBIZWZWNkRYZlR1aDJ3UlNWRHNSVUhDQ2hoc3lXWkNMb2RZaHpRVnFyWjZDajc0cXZRQlIzaUcyNW0xLWc3NEVZQnFCN1BHM2V3Y3RlQ2VWSWxzcmlkYlhIREJGbHA2VkVTeTRyb2llX085em0wY2ljYUM2bzBBU0JCVmFpT09zWlI4cnIzYlkxekxvRzJvXzRDdmFkNVVOYjhtY0k4NnRScnUtclJGVWN3Si01WVlKM2pORDM0blk3YWY4NlZFeGZPOEZR?oc=5",
+     "kaynak": "Benzinga",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-11-06T16:09:51+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "IonQ's Q3 Beat, Higher Guidance Supported by Superion 256 Demand, Morgan Stanley Says",
+     "ozet": "IonQ (IONQ) reported a Q3 beat and raised its 2026 revenue guidance as demand builds for its Superio",
+     "url": "https://finnhub.io/api/news?id=7f3b7d196169e32b82eecd48b4ba3a829fce08b66782ae606dcff45ddd38e013",
+     "kaynak": "Yahoo",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-06T15:25:36+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "Why IonQ (IONQ) stock is up today",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWlQ0S0N1X18xWWo3OHROLUlSVVRYdTVLNWZNOEJuOGVSclU5Q0RGYVpJZnRSQnBTM3VTNTF2Y0FxU2FMSGYtbFpDeW1LYlJIdUVrRGxqSTQ0UjFmV3NCdXQ5MlE4QWI0RU5zMWdkakRkcmFVWE1ZU3JaaFRGUlFWa29nejF6NlozV2stdzNVblJNbHNMVS1z?oc=5",
+     "kaynak": "TradingView",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-11-06T15:19:39+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "IonQ: 3 Key Takeaways for Long-Term Investors",
+     "ozet": "In-house chip manufacturing through the SkyWater deal is a bet on controlling timelines, a lever long-term holders should weigh against the cash burn ahead.",
+     "url": "https://finnhub.io/api/news?id=5a2fa1bb556c5c9a74de6fbd27f3c8aafda36fa77e114618bdad4397d86b4fd5",
+     "kaynak": "Yahoo",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-06T14:44:01+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "IonQ (IONQ) Q3 2026 Earnings Call Transcript",
+     "ozet": "Record revenue and raised guidance, but integration costs weighed on the quarter.",
+     "url": "https://finnhub.io/api/news?id=7c0d5f584bd8a561754f86b420455784f665770cdcc9e0339d39bd7f614c5acf",
+     "kaynak": "Yahoo",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-06T14:40:44+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "IonQ Soars 10% on Beat and Raised Guidance to “An Industry Record” Above $500 Million",
+     "ozet": "Key TakeawaysIonQ shares jumped 10% today on a third-quarter beat and 2026 guidance of $505 million to $515 million. The SkyWater foundry IonQ bought in July supplied $83.",
+     "url": "https://finnhub.io/api/news?id=f7636690602f128ea3c977de4189e140dfb8f677254d679c78e07314ca84e61f",
+     "kaynak": "Yahoo",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-06T14:18:18+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "Why Is D-Wave Quantum Stock Surging on Friday?",
+     "ozet": "D-Wave Quantum stock jumped about 14% Friday in a broad quantum computing rally after peer IonQ topped third-quarter revenue estimates and raised its 2026 sales outlook, with D-Wave set to report its own results Tuesday.",
+     "url": "https://finnhub.io/api/news?id=83cd0c3ea3d7ecc2f92da9bb5f0ff14006f8fafeb15fe802476909efd3e3eea3",
+     "kaynak": "Benzinga",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-06T14:18:00+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "IONQ Q3 Earnings Beat Estimates, 2026 Sales View Raised, Stock Up",
+     "ozet": "IonQ's Q3 revenues surge 336% as quantum computing demand accelerates, SkyWater boosts manufacturing capabilities, and 2026 sales guidance is raised.",
+     "url": "https://finnhub.io/api/news?id=d871199b699cb5ab84601ee9ea6ed050b467f8a4894dc1f518c86bd681f6de2a",
+     "kaynak": "Yahoo",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-06T13:52:43+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "Why is IONQ stock surging today?",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPcC1QVlBmZElNN0w1bHlmVW5tRkhuUGpGdDNKbHFDMWJCSldFM19LUHdrQ2x4VWNjWXRCSTQwVVZmLXMyYTg4NGRieE1uUkVqS0tNYVVTQWdZX21SNVhYVWRVNFFNVEdTWkZ1MFU2ZVpQZUNPOWxuZzN6R3NFVG9oZFJycEpmNHNGQUpZbW53RXVScWxURUlQdw?oc=5",
+     "kaynak": "Investing.com",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-11-06T13:11:17+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "IonQ Shares Surge 10% As Analysts See Acquisition Opportunities, Sold-Out 2027 Capacity And Quantum Security Driving Growth",
+     "ozet": "Rosenblatt, Needham and Cantor weigh in on IonQ (NYSE: IONQ) stock after Q3, citing a $2 billion raise, cybersecurity deals, sold-out 2027 capacity and valuation pressure.",
+     "url": "https://finnhub.io/api/news?id=fca6a33796f399b5638a61642353e704d07313bf34a895da58662b3a7dd54172",
+     "kaynak": "Benzinga",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-06T13:07:53+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "Quantum Computing Stocks Rally On IonQ, Quantinuum Q3 Results",
+     "ozet": "IonQ and Quantinuum delivered better-than-expected Q3 financial results and raised guidance as quantum computing stocks struggle in 2026.",
+     "url": "https://finnhub.io/api/news?id=9af8bd61640185ce690a554f0bcdbaa437017e7d7e5c0cd8f3e9cf745b3c70a4",
+     "kaynak": "Yahoo",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-06T13:07:00+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "Quantum Computing Stocks Rally On IonQ, Quantinuum Q3 Results, Guidance",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPLXVJaVVhU3ZrM09HTkpwRW9ZWDUxRS1mS3RyT3BRZFIxMmVBaFpGNFVIYjNjUWJ6NUdFdVNRQVZYbTY0Sy1hT1NDak1tMVdfY1Y3ek1DSVBfbWJlMDdYT2phSHRsbEpEbHR2c2t6V192VVhQUkRDajB0eGV6N3FhZXYzMUdRaHFTNkRtRl9qY1RmejFsanR1VFRKYndLSnF0?oc=5",
+     "kaynak": "Investor's Business Daily",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-11-06T11:51:02+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "Moderna, JFrog, TransMedics, Ubiquiti And Other Big Stocks Moving Higher On Friday",
+     "ozet": "U.S. stocks rose, Nasdaq gained ~400 points. Moderna jumped 9.1% on strong Q3 results and higher FY26 guidance; other stocks rallied on results and deals.",
+     "url": "https://finnhub.io/api/news?id=47c2482c4d6ac675a6096a814bfa7adfa05d709d399b2b3801374ce9f826d666",
+     "kaynak": "Benzinga",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-06T11:49:35+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "IonQ Stock Surges After Strong Q3 Results and Guidance",
+     "ozet": "IonQ Inc. (NYSE: IONQ) shares are flying Friday after reporting third-quarter results that beat analyst estimates.",
+     "url": "https://finnhub.io/api/news?id=adc1096e6f3c2b14d1225c8a7b95fca9eb2b5ac9b9b907a4bd23b6efe05947eb",
+     "kaynak": "Benzinga",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-06T11:48:14+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "B. Riley Securities Reiterates Buy on IonQ, Lowers Price Target to $70",
+     "ozet": "B. Riley Securities  analyst Craig Ellis   reiterates IonQ (NYSE:IONQ) with a Buy and lowers the price target from $75 to $70.",
+     "url": "https://finnhub.io/api/news?id=22d4a1484b766875ed17b62a0c4c9f3dc5827f5dbcf88bc0cd2097f112eea9a0",
+     "kaynak": "Benzinga",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-06T10:41:00+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "IonQ CEO Doubles Down on Vision for Quantum Dominance After Blowout Earnings",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5IOHV3RnpIOVlwUHhxQU1qVWcweG9NaHZxVHBFM1lOdVhrem41UTFOT1NGMjI2VEg2aEdsYWVmaFZkWWUzU2R3blA4VEMtVnlENGUyN1lCYkQwemJtR0lxNlJJRm5VeE90TWFsY21kNGo5c0FQWnc?oc=5",
+     "kaynak": "Barron's",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-11-06T09:46:00+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "IonQ (IONQ) Reports Record Q3 Revenue and Raises 2026 Guidance A",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPczY2LXdNbFdSRnRjSzN5MjN1NVl3SkZIeExUejNtMTA5eThZMXdIb0FOSWFjTUJiNWtmSDI0OXhqYlo5LXFGUXQ1OUZNODE1V3pvN3R0cEtjZTdCTmVyOUZGY3U0clctS09XS2djS1o5X29NY2ZULVk5Q051b1dvOEpzVld2VGNGT2liczZVME1EbU1RMXhNNUM4YXJmUjRscmkxQTV3bFktZkRuRno5WXJLWWRkOTZnZC1XU00wX3I5S0k?oc=5",
+     "kaynak": "GuruFocus",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-11-06T09:35:58+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "IONQ Stock Price and Chart — NYSE:IONQ",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51dzRlem5DNlRVeThCazlTYnc0bnIyWWNzQ1VBM2ZtT0dZQ0stNlprNllKNzFoVjBLVkF2ekVMck1iWVBYSE0zcDdVaHZRYlZXMkh2MXVONG5zUQ?oc=5",
+     "kaynak": "TradingView",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-11-06T09:33:22+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "Quantum Computers are becoming a scarce commodity. IonQ has sold out its entire 2027 capacity",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOcFowSmJGN201b0kwZzFIcFpjcUtvXzdaN05FU3BkX21VeGJGdm5nRU5NTFdURDlDV29ZNmxOQU1qUDUxZ0ZaVjI5YkN4QllMSXdGcl9leHhkOHNOTnlkYVlxRDFqdzgwekFZa2d0TWFqeFNaclZDMDVkdllrU2RZTFh1WU0xNUo5Y0ZmQzNUUE9aM0ZrRGtZY054b0c0dW9OWGtyOWhTM1JDc0E3aGFVYlRQNlgzaGtjZVZ2Nk1icWlIZXBDemRuVE9YXzUwZGVlaEJ3T1ZaYklGOG1rV1NZanFRQlY?oc=5",
+     "kaynak": "XTB.com",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-11-06T08:35:02+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "Cantor Fitzgerald Maintains Overweight on IonQ, Lowers Price Target to $60",
+     "ozet": "Cantor Fitzgerald  analyst Troy Jensen   maintains IonQ (NYSE:IONQ) with a Overweight and lowers the price target from $70 to $60.",
+     "url": "https://finnhub.io/api/news?id=5bd072a064d0916e21a26aa85aac5794b9c450f4c9c5338d6c1d5924878e9546",
+     "kaynak": "Benzinga",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-06T08:28:52+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "Needham Maintains Buy on IonQ, Lowers Price Target to $48",
+     "ozet": "Needham  analyst N. Quinn Bolton   maintains IonQ (NYSE:IONQ) with a Buy and lowers the price target from $65 to $48.",
+     "url": "https://finnhub.io/api/news?id=2b18d8980b27779537d87c6c4b818150a224103908d38777fbbf802410aefcb4",
+     "kaynak": "Benzinga",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-06T08:00:00+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "5 revealing analyst questions from IonQ’s Q3 2026 earnings call",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQN1VQWmNrTkV0NFFxUUMxTG5kTW5xWF9GcDZMMHdpOHZhaVJkSDQ2QjRrdG4xNHZudFZFSnl1alU1bmxsMUktUWpyLWNhUEVoZGFjeDhOTGxpcWp5LW1raXpUUWZQREhKdmt0MFlsdGwxckl0NDMxaU1FLXFNSEVQMTRaLUs3TElrZXU1NkhXY0d3N3JKWHhteDJtSHdfUVpjOUdwNXVfcVVrbXpOUE9qZGlQTFFMV2NJNXVDTmJjOFdqLW9RYmZReHpHWXJZOUU1dkpqQUxpMWF4NVVUVHFEQg?oc=5",
+     "kaynak": "The Globe and Mail",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-11-06T06:45:01+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "IonQ Inc (IONQ) (Q3 2026) Earnings Call Highlights: Record Reven",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQbjFST010eW01RUotXy1XMFhVV3NRVnFod1RDR0RHR2F6M2xUMHBOWHZnRHRjN1M1Mzh5bnluaDhLdGJJNGV6bm1KOXdMWEtEa2RjVF95TGJXZGpXcjJSaG9CN2d3UmdCLWd3MzAyS3NDcVk1MXhBalY1d3N0THpzRFlsZ2pNbjRWYk9TYzRBTDZHNzRvVl85UFJKYUpCSlFqbzRaYW12UFlFRHl2T0xfbDVZTGpqc1d2MUIwbDNlMHBvWDFfbm41Umg3ZXlDMXVYRk80WjhXdUp2V1UwcXlB?oc=5",
+     "kaynak": "GuruFocus",
+     "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-11-06T05:25:53+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "IonQ Inc (IONQ) (Q3 2026) Earnings Call Highlights: Record Revenue, DARPA Milestone and ...",
+     "ozet": "IonQ Inc (IONQ) posted record Q3 2026 revenue of $173.8 million, advanced to Stage C of DARPA's quantum benchmarking initiative, and sold out its Superion 256 capacity for 2027.",
+     "url": "https://finnhub.io/api/news?id=e89a564e692a432784adc2a0aea3ac26ac30bb4418d348af0c281417fd337e10",
+     "kaynak": "Yahoo",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-06T03:05:38+00:00",
+     "tarih": "2026-11-06",
+     "baslik": "IonQ Revenue Forecast Nears Fourfold Growth as Quantum Demand Expands",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQQmJNdGRWb3RpbzNsMlBUSW5ySUdpYXNPTnNvZ0JWOFBHRlVEX2Z2SF9BRDhuZWh5aHprdVh3QmFpUnFmRjYxSmlSVWZCNi1uMEpCc0N5NWt6UHdIQmZwN3oyb0tzSGprY2N4djZIdGpNR3FETWZJTG1iamstMVNTRXJVR2pqZlY5UXRZSi15RmdnaGxiZC1VeFVxbw?oc=5",
+     "kaynak": "remio",
+     "saglayici": "Google News RSS"
+    }
+   ],
+   "sec_bildirimleri": [
+    {
+     "form": "10-Q",
+     "tarih": "2026-11-05",
+     "items": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526449829/ionq-20260930.htm",
+     "aciklama": "10-Q"
+    },
+    {
+     "form": "8-K",
+     "tarih": "2026-11-05",
+     "items": "2.01,2.02,3.02,7.01,9.01",
+     "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526449779/ionq-20261103.htm",
+     "aciklama": "8-K"
+    }
+   ]
+  },
   {
    "tarih": "2026-11-05",
    "claude": null,
@@ -32,15 +423,6 @@
      "ozet": "",
      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE53ODN1UW9qVm94Q1NLajZBd2w3bzJlLWVkMUIwNHRYeW9UQk1wd2trQXI4REFVRjBfc2FhR1dFRmJrb1ZFaEFldmhYSEw4Sm5md3FFVjB5ZG1lQ0pLUVZVTjJSdDRSeTVFRHdSbC0xTkt3YlZLM3c?oc=5",
      "kaynak": "BigGo Finance",
-     "saglayici": "Google News RSS"
-    },
-    {
-     "zaman": "2026-11-05T23:10:30+00:00",
-     "tarih": "2026-11-05",
-     "baslik": "IonQ Q3 2026 Earnings Call Transcript",
-     "ozet": "",
-     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNU3lISXc3MS1oUkUxQm92VkE1elY1UVBoMWE3ZU9SLXBoQlUxd3Z1RTIta3E1ZmVmX08xNS1BME8tdGQ4bVpsQ1pSNXE1SjU2Rk9IM1J4Wmw4SDNsenNyOGlQd1NJaV9ua0RBRFJpZWE1WkJSVExhV3hHYXE4ZXRjbTlUemdlaGpWSVE?oc=5",
-     "kaynak": "Benzinga",
      "saglayici": "Google News RSS"
     },
     {
@@ -143,15 +525,6 @@
      "saglayici": "Finnhub"
     },
     {
-     "zaman": "2026-11-05T21:21:08+00:00",
-     "tarih": "2026-11-05",
-     "baslik": "IonQ Tops Estimates in Q3, Raises 2026 Outlook",
-     "ozet": "",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZmlEUlh2cl9WZTcxVmZ3cV9tNmhjT09wcElNVjdFVW1qdkhRc1FSOVh6RFhjR0lYVzV2WHlfcGtIZnRRSEp5d0xhTmZzMm1hZVhZQU1JLXZFSUdqbDBlMkVKNHROMlhDWm1SYlNOcC1JeFRHb0pnd3FzaVc3MFVRZFo4b2N3TWZtUTlsXy1qelpDSk5GaVJnWWE1c3BwQ2xUS2c2dg?oc=5",
-     "kaynak": "Benzinga",
-     "saglayici": "Google News RSS"
-    },
-    {
      "zaman": "2026-11-05T21:17:52+00:00",
      "tarih": "2026-11-05",
      "baslik": "(IONQ) IonQ Now Expects Full-Year 2026 Revenue Range $505M - $515M, vs. FactSet Est of $456.2M",
@@ -206,12 +579,30 @@
      "saglayici": "Finnhub"
     },
     {
+     "zaman": "2026-11-05T21:05:00+00:00",
+     "tarih": "2026-11-05",
+     "baslik": "Ionq, Inc. Raises Earnings Guidance for the Full-Year 2026",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZE9SSWtOdWJ3QUN5b3BPTW9FVTROSkZPX1NGZ3F4M18tRHItNXhyNkpOQm1qZ0hkVkZJeVJjam1RYmFxbFo1amtScEZzMDB1eWVRSlo5NERXWDBuaHItNV9NRDRWdUVUYVJwa3ZBQjR2cmJjY2Z1TExDVzBYWTlvdUh4QWIyM05FOFhqTG1sMVg5bkRlTmpjQWUyZXNfWUpCZ2lhZ3FTWkdTb0wzMFE?oc=5",
+     "kaynak": "www.marketscreener.com",
+     "saglayici": "Google News RSS"
+    },
+    {
      "zaman": "2026-11-05T20:25:21+00:00",
      "tarih": "2026-11-05",
      "baslik": "Wedbush Just Slashed Its Price Target on IONQ Stock. Here's Why.",
      "ozet": "Wedbush trims its price target on IonQ stock. Analyst Matt Bryson is still largely bullish on the quantum-computing company.",
      "url": "https://finnhub.io/api/news?id=ece497108891435192aafc746b61f133c2264002d112edbdca4abadf57cb1176",
      "kaynak": "Yahoo",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-05T19:10:30+00:00",
+     "tarih": "2026-11-05",
+     "baslik": "IonQ Q3 2026 Earnings Call Transcript",
+     "ozet": "IonQ (NYSE:IONQ) reported third-quarter financial results on Thursday. The transcript from the company’s third-quarter earnings call has been provided below.This transcript is brought to you by Benzinga APIs. For",
+     "url": "https://finnhub.io/api/news?id=9d8b172f5f9ae61c445f7192bf5fd6bd676a02d54064c1b305ba379fdffa7036",
+     "kaynak": "Benzinga",
      "saglayici": "Finnhub"
     },
     {
@@ -222,6 +613,24 @@
      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5ldlFoYVoyVHhQUG9rMzBocVo3TTQxWU1Yc3ZWUDh3NVJEdnA3azJQN2RfNGV2MkVIdXRXamtpb3YwcWZDbE9uZ3FqNklqRVM1bDBv?oc=5",
      "kaynak": "Wowtale",
      "saglayici": "Google News RSS"
+    },
+    {
+     "zaman": "2026-11-05T17:21:08+00:00",
+     "tarih": "2026-11-05",
+     "baslik": "IonQ Tops Estimates in Q3, Raises 2026 Outlook",
+     "ozet": "IonQ reports third-quarter financial results after the closing bell on Thursday. Here&#39;s a look at the key details from the report.",
+     "url": "https://finnhub.io/api/news?id=84e51a1001304cce6373295e08f3c78721d99a26313cdbb04fc45dbb9bc6ef3a",
+     "kaynak": "Benzinga",
+     "saglayici": "Finnhub"
+    },
+    {
+     "zaman": "2026-11-05T17:08:30+00:00",
+     "tarih": "2026-11-05",
+     "baslik": "IonQ Raises FY2026 Sales Guidance from $450.000M-$460.000M to $505.000M-$515.000M vs $455.173M Est",
+     "ozet": "IonQ (NYSE:IONQ) raises FY2026 sales outlook from $450.000 million-$460.000 million to $505.000 million-$515.000 million vs $455.173 million estimate.",
+     "url": "https://finnhub.io/api/news?id=9347d0a65bcabd67a0acd5001381a2d076a3365e350a07b693f7618d4467955d",
+     "kaynak": "Benzinga",
+     "saglayici": "Finnhub"
     },
     {
      "zaman": "2026-11-05T16:44:00+00:00",
@@ -341,6 +750,15 @@
      "saglayici": "Google News RSS"
     },
     {
+     "zaman": "2026-11-05T08:00:00+00:00",
+     "tarih": "2026-11-05",
+     "baslik": "IONQ Q3 2026 deep dive: product expansion and manufacturing integration drive quantum growth",
+     "ozet": "",
+     "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOYmN5ai1kYnFNMlAzN2dyMU1mdVlraEtNSmtiU20zeFFXbUJmX0dza05VbkRaUlhYTGYzdHhPeHdmRVpVRWVaMWp5bnM5NV9NV1paVXNZTnNCbktudmEycXVDRDU0NU1VZk8xQlpZRWV0TTNpRGkzcTA0cWM0LUN2cS13UzVITi1Xa2NMOXU1VkNEa1ZGVE1YcjlwamlhQ3dZeG5MVHk4T21EVm1ZNmFNMF8tVUZ3X3Q5ZDBwelpjWmNKNDItOGVPWFJwM2pHYlJoMjVYSmd3NWtrSkZDMmY5RS1FREFFWmwyWnZkMjJHS2lQbWRRMnhIQU1UYXhra2FKRDFINU1DOA?oc=5",
+     "kaynak": "The Globe and Mail",
+     "saglayici": "Google News RSS"
+    },
+    {
      "zaman": "2026-11-05T07:01:36+00:00",
      "tarih": "2026-11-05",
      "baslik": "IonQ Signs QuantumCT Deal for More Than 150 Quantum Cloud Hours",
@@ -348,33 +766,6 @@
      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBLeWQyMnhSSUN3aU9nRWxiZ3V2alVqYXAwcEFOTXktVVNMcjJyZW5kVmtqanVVVG1fRzlzSUxSaklXbjBNRVBGSlduZ3g2WTVfeW90T05haVc?oc=5",
      "kaynak": "www.tokenpost.com",
      "saglayici": "Google News RSS"
-    },
-    {
-     "zaman": "2026-11-05T05:14:59+00:00",
-     "tarih": "2026-11-05",
-     "baslik": "IonQ Fell 32% in a Month. Its November 5 Report Has to Show Losses Are Narrowing",
-     "ozet": "Key TakeawaysIonQ stock fell 32. 5% over the past month, and B.",
-     "url": "https://finnhub.io/api/news?id=8a5524b13f12cc244630d017a01392b0fd612323a309724ed97cc5df700f35e3",
-     "kaynak": "Yahoo",
-     "saglayici": "Finnhub"
-    },
-    {
-     "zaman": "2026-11-05T04:50:01+00:00",
-     "tarih": "2026-11-05",
-     "baslik": "IonQ vs. SoundHound AI: Which Technology Stock Is a Better Buy for 2027?",
-     "ozet": "IonQ trades at a premium, while SoundHound AI shows a clearer path to profitability.",
-     "url": "https://finnhub.io/api/news?id=97db5acc4352c98e4f9d7c09c1b6d096f38bf68e650e236eb68cf019383718f5",
-     "kaynak": "Yahoo",
-     "saglayici": "Finnhub"
-    },
-    {
-     "zaman": "2026-11-05T04:41:14+00:00",
-     "tarih": "2026-11-05",
-     "baslik": "IonQ (IONQ) Acquires Security Firm And Expands Quantum Access In Connecticut",
-     "ozet": "IonQ (NYSE: IONQ) agreed to acquire zero trust security specialist Elisity in order to integrate its technology into IonQ's quantum security platform. The Elisity deal is aimed at combining identity based access controls with IonQ's quantum offerings for enterprise security use cases. IonQ also formed a partnership with QuantumCT to broaden quantum computing access for education, research, and businesses in Connecticut. IonQ's Elisity acquisition and QuantumCT partnership come against a...",
-     "url": "https://finnhub.io/api/news?id=06d1ec5c52749065e611770b0e680c269e532590fc9a1cada91a7462b1aa8e75",
-     "kaynak": "Yahoo",
-     "saglayici": "Finnhub"
     }
    ],
    "sec_bildirimleri": [

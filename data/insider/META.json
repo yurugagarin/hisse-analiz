@@ -1,14 +1,14 @@
 {
  "ticker": "META",
- "guncelleme": "2026-11-06",
+ "guncelleme": "2026-11-09",
  "pencereler": {
   "90": {
    "kodlar": {
     "S": {
-     "islem": 111,
-     "adet": 172431.0,
-     "tutar": 116174879.6829,
-     "plan_10b5_1_adet": 149353.0
+     "islem": 102,
+     "adet": 170739.0,
+     "tutar": 115158506.70590001,
+     "plan_10b5_1_adet": 147661.0
     },
     "diger": {
      "islem": 3,
@@ -59,20 +59,6 @@
      "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
     },
     {
-     "kisi": "Olivan Javier",
-     "unvan": "Chief Operating Officer",
-     "satis_adet": 19646.0,
-     "satis_tutar": 12988474.004200002,
-     "alim_adet": 0.0,
-     "vergi_adet": 7744.0,
-     "planli_satis_adet": 19646.0,
-     "ilk_satis_oncesi": 6290.0,
-     "son_pozisyon": 4094.0,
-     "son_tarih": "2026-11-02",
-     "satilan_pozisyon_orani": 312.3,
-     "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
-    },
-    {
      "kisi": "Andreessen Marc L",
      "unvan": "Yönetim kurulu üyesi",
      "satis_adet": 20951.0,
@@ -84,6 +70,20 @@
      "son_pozisyon": null,
      "son_tarih": null,
      "satilan_pozisyon_orani": null,
+     "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
+    },
+    {
+     "kisi": "Olivan Javier",
+     "unvan": "Chief Operating Officer",
+     "satis_adet": 17954.0,
+     "satis_tutar": 11972101.027199998,
+     "alim_adet": 0.0,
+     "vergi_adet": 7744.0,
+     "planli_satis_adet": 17954.0,
+     "ilk_satis_oncesi": 14500.0,
+     "son_pozisyon": 4094.0,
+     "son_tarih": "2026-11-02",
+     "satilan_pozisyon_orani": 123.8,
      "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
     },
     {
@@ -245,10 +245,10 @@
   "180": {
    "kodlar": {
     "S": {
-     "islem": 186,
-     "adet": 213754.0,
-     "tutar": 141422665.367,
-     "plan_10b5_1_adet": 190250.0
+     "islem": 181,
+     "adet": 212199.0,
+     "tutar": 140482559.017,
+     "plan_10b5_1_adet": 188695.0
     },
     "diger": {
      "islem": 8,
@@ -287,15 +287,15 @@
     {
      "kisi": "Olivan Javier",
      "unvan": "Chief Operating Officer",
-     "satis_adet": 37327.0,
-     "satis_tutar": 23889124.494799986,
+     "satis_adet": 35772.0,
+     "satis_tutar": 22949018.14479999,
      "alim_adet": 0.0,
      "vergi_adet": 15488.0,
-     "planli_satis_adet": 37327.0,
-     "ilk_satis_oncesi": 7779.0,
+     "planli_satis_adet": 35772.0,
+     "ilk_satis_oncesi": 15497.0,
      "son_pozisyon": 4094.0,
      "son_tarih": "2026-11-02",
-     "satilan_pozisyon_orani": 479.8,
+     "satilan_pozisyon_orani": 230.8,
      "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
     },
     {
@@ -580,27 +580,16 @@
  "kaynak": "SEC EDGAR Form 4 (XML)",
  "kumelenmis_satislar": [
   {
-   "baslangic": "2026-05-11",
-   "bitis": "2026-05-18",
+   "baslangic": "2026-05-15",
+   "bitis": "2026-05-27",
    "kisiler": [
     "Bosworth Andrew",
     "LI SUSAN J",
-    "Olivan Javier"
-   ],
-   "islem": 26,
-   "tutar": 13507588.873499999,
-   "planli_islem_orani": 100.0
-  },
-  {
-   "baslangic": "2026-05-26",
-   "bitis": "2026-06-01",
-   "kisiler": [
-    "KIMMITT ROBERT M",
     "Mahoney Curtis J.",
     "Olivan Javier"
    ],
-   "islem": 12,
-   "tutar": 3400489.6599999997,
+   "islem": 27,
+   "tutar": 14728270.883499999,
    "planli_islem_orani": 100.0
   },
   {
@@ -667,6 +656,25 @@
   }
  ],
  "son_islemler": [
+  {
+   "turev": true,
+   "menkul": "Class B Common Stock",
+   "tarih": "2026-11-04",
+   "kod": "J",
+   "adet": 97935.0,
+   "fiyat": 633.8,
+   "yon": "D",
+   "sonrasi": 97220640.0,
+   "sahiplik": "I",
+   "plan_10b5_1": false,
+   "kisi": "Zuckerberg Mark",
+   "unvan": "Yönetim kurulu üyesi, COB and CEO, %10+ hissedar",
+   "yonetici": true,
+   "accn": "0000950103-26-017123",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326017123/xslF345X06/ownership.xml",
+   "dosyalama": "2026-11-06",
+   "tutar": 62071202.99999999
+  },
   {
    "turev": false,
    "menkul": "Class A Common Stock",
@@ -6347,34 +6355,15 @@
    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326007490/xslF345X06/ownership.xml",
    "dosyalama": "2026-05-19",
    "tutar": null
-  },
-  {
-   "turev": true,
-   "menkul": "Restricted Stock Units (RSU) (Class A)",
-   "tarih": "2026-05-15",
-   "kod": "M",
-   "adet": 2679.0,
-   "fiyat": 0.0,
-   "yon": "D",
-   "sonrasi": 37512.0,
-   "sahiplik": "D",
-   "plan_10b5_1": true,
-   "kisi": "Bosworth Andrew",
-   "unvan": "Chief Technology Officer",
-   "yonetici": true,
-   "accn": "0000950103-26-007490",
-   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326007490/xslF345X06/ownership.xml",
-   "dosyalama": "2026-05-19",
-   "tutar": null
   }
  ],
  "anlati": [
-  "Son 90 günde yöneticiler ve yönetim kurulu üyeleri 111 satış işlemiyle toplam 116,2 milyon $ değerinde hisse sattı. Önceden kayda geçirilmiş 10b5-1 planı kapsamındaki satışların payı (adet bazında): %87.",
+  "Son 90 günde yöneticiler ve yönetim kurulu üyeleri 102 satış işlemiyle toplam 115,2 milyon $ değerinde hisse sattı. Önceden kayda geçirilmiş 10b5-1 planı kapsamındaki satışların payı (adet bazında): %86.",
   "Planlı satışlar önceden (çoğu zaman aylar önce) belirlenen takvimle yapılır; tek başına yönetimin şirkete güvenini kaybettiği anlamına gelmez.",
   "Bu dönemde yönetimden hiç açık piyasa alımı (P) yok.",
   "9 vergi kesintisi (F) işlemi var: hak edilen hisselerin vergisi için şirkete bırakılan hisseler. Rutindir, sinyal sayılmaz.",
   "Opsiyon/RSU kullanımı (M) 28, hibe (A) 0 işlem: ücretlendirmenin parçası.",
-  "En büyük satıcılar: Cox Christopher K (Chief Product Officer) 55,0 milyon $; Zuckerberg Mark (Yönetim kurulu üyesi, COB and CEO, %10+ hissedar) 21,4 milyon $; Olivan Javier (Chief Operating Officer) 13,0 milyon $ (doğrudan pozisyonuna oranı %312).",
+  "En büyük satıcılar: Cox Christopher K (Chief Product Officer) 55,0 milyon $; Zuckerberg Mark (Yönetim kurulu üyesi, COB and CEO, %10+ hissedar) 21,4 milyon $; Andreessen Marc L (Yönetim kurulu üyesi) 12,8 milyon $.",
   "Kümelenme: 2026-10-19 – 2026-11-02 arasında 3 yönetici aynı dönemde sattı. Birden çok yöneticinin aynı anda satması, tek kişinin satışından daha dikkat çekicidir; ancak planlı satışlar ve kazanç sonrası açılan işlem pencereleri de kümelenme yaratır."
  ],
  "durum": "notr",
@@ -6399,6 +6388,14 @@
     "uyumlu": true
    },
    {
+    "kod": "J",
+    "edgar_islem": 0,
+    "edgar_adet": 0,
+    "finnhub_islem": 1,
+    "finnhub_adet": 97935.0,
+    "uyumlu": false
+   },
+   {
     "kod": "M",
     "edgar_islem": 28,
     "edgar_adet": 78659.0,
@@ -6408,10 +6405,10 @@
    },
    {
     "kod": "S",
-    "edgar_islem": 111,
-    "edgar_adet": 172431.0,
-    "finnhub_islem": 106,
-    "finnhub_adet": 170856.0,
+    "edgar_islem": 102,
+    "edgar_adet": 170739.0,
+    "finnhub_islem": 97,
+    "finnhub_adet": 169164.0,
     "uyumlu": true
    },
    {

@@ -1,14 +1,14 @@
 {
  "ticker": "NVDA",
- "guncelleme": "2026-11-06",
+ "guncelleme": "2026-11-09",
  "pencereler": {
   "90": {
    "kodlar": {
     "diger": {
-     "islem": 3,
-     "adet": 1438000.0,
+     "islem": 4,
+     "adet": 1938000.0,
      "tutar": 0.0,
-     "plan_10b5_1_adet": 1000000.0
+     "plan_10b5_1_adet": 1500000.0
     },
     "S": {
      "islem": 25,
@@ -23,8 +23,8 @@
      "plan_10b5_1_adet": 40747.0
     },
     "A": {
-     "islem": 4,
-     "adet": 335335.0,
+     "islem": 2,
+     "adet": 332925.0,
      "tutar": 0.0,
      "plan_10b5_1_adet": 0.0
     }
@@ -70,20 +70,6 @@
      "son_pozisyon": 765103.0,
      "son_tarih": "2026-09-17",
      "satilan_pozisyon_orani": 4.4,
-     "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
-    },
-    {
-     "kisi": "NORA JOHNSON SUZANNE M",
-     "unvan": "Yönetim kurulu üyesi",
-     "satis_adet": 0.0,
-     "satis_tutar": 0.0,
-     "alim_adet": 0.0,
-     "vergi_adet": 0.0,
-     "planli_satis_adet": 0.0,
-     "ilk_satis_oncesi": null,
-     "son_pozisyon": 2410.0,
-     "son_tarih": "2026-08-10",
-     "satilan_pozisyon_orani": null,
      "oran_notu": "Doğrudan (D) sahiplik bazında: satılan / ilk satıştan önceki pozisyon. Dolaylı (tröst vb.) pozisyonlar hariç."
     },
     {
@@ -161,10 +147,10 @@
   "180": {
    "kodlar": {
     "diger": {
-     "islem": 7,
-     "adet": 3145500.0,
+     "islem": 8,
+     "adet": 3645500.0,
      "tutar": 0.0,
-     "plan_10b5_1_adet": 2000000.0
+     "plan_10b5_1_adet": 2500000.0
     },
     "S": {
      "islem": 32,
@@ -465,6 +451,25 @@
   }
  ],
  "son_islemler": [
+  {
+   "turev": false,
+   "menkul": "Common",
+   "tarih": "2026-11-04",
+   "kod": "G",
+   "adet": 500000.0,
+   "fiyat": 0.0,
+   "yon": "D",
+   "sonrasi": 23171360.0,
+   "sahiplik": "I",
+   "plan_10b5_1": true,
+   "kisi": "COXE TENCH",
+   "unvan": "Yönetim kurulu üyesi",
+   "yonetici": true,
+   "accn": "0001197647-26-000013",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119764726000013/xslF345X06/wk-form4_1793999520.xml",
+   "dosyalama": "2026-11-06",
+   "tutar": null
+  },
   {
    "turev": false,
    "menkul": "Common",
@@ -1687,7 +1692,7 @@
   "Satışların önemli bir kısmı plansız: yöneticinin o an karar verdiği satışlar, planlılara göre daha fazla bilgi taşır.",
   "Bu dönemde yönetimden hiç açık piyasa alımı (P) yok.",
   "5 vergi kesintisi (F) işlemi var: hak edilen hisselerin vergisi için şirkete bırakılan hisseler. Rutindir, sinyal sayılmaz.",
-  "Opsiyon/RSU kullanımı (M) 0, hibe (A) 4 işlem: ücretlendirmenin parçası.",
+  "Opsiyon/RSU kullanımı (M) 0, hibe (A) 2 işlem: ücretlendirmenin parçası.",
   "En büyük satıcılar: STEVENS MARK A (Yönetim kurulu üyesi) 946,6 milyon $; Teter Timothy S. (EVP, General Counsel and Sec) 13,3 milyon $; Kress Colette (EVP & Chief Financial Officer) 7,6 milyon $ (doğrudan pozisyonuna oranı %4).",
   "Kümelenme: 2026-09-17 – 2026-09-21 arasında 3 yönetici aynı dönemde sattı. Birden çok yöneticinin aynı anda satması, tek kişinin satışından daha dikkat çekicidir; ancak planlı satışlar ve kazanç sonrası açılan işlem pencereleri de kümelenme yaratır."
  ],
@@ -1698,10 +1703,10 @@
   "satirlar": [
    {
     "kod": "A",
-    "edgar_islem": 4,
-    "edgar_adet": 335335.0,
-    "finnhub_islem": 4,
-    "finnhub_adet": 335335.0,
+    "edgar_islem": 2,
+    "edgar_adet": 332925.0,
+    "finnhub_islem": 2,
+    "finnhub_adet": 332925.0,
     "uyumlu": true
    },
    {
@@ -1716,8 +1721,8 @@
     "kod": "G",
     "edgar_islem": 0,
     "edgar_adet": 0,
-    "finnhub_islem": 3,
-    "finnhub_adet": 1438000.0,
+    "finnhub_islem": 4,
+    "finnhub_adet": 1938000.0,
     "uyumlu": false
    },
    {
@@ -1730,8 +1735,8 @@
    },
    {
     "kod": "diger",
-    "edgar_islem": 3,
-    "edgar_adet": 1438000.0,
+    "edgar_islem": 4,
+    "edgar_adet": 1938000.0,
     "finnhub_islem": 0,
     "finnhub_adet": 0,
     "uyumlu": false
