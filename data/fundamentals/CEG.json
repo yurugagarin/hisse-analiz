@@ -2,15 +2,15 @@
  "ticker": "CEG",
  "cik": 1868275,
  "sirket": "CONSTELLATION ENERGY CORPORATION",
- "guncelleme": "2026-09-26T11:31:02+00:00",
+ "guncelleme": "2026-11-10T13:07:10+00:00",
  "son_dosya": {
-  "accn": "0001868275-26-000104",
+  "accn": "0001868275-26-000119",
   "form": "10-Q",
-  "tarih": "2026-08-06",
-  "donem_sonu": "2026-06-30",
-  "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000104/ceg-20260630.htm"
+  "tarih": "2026-11-09",
+  "donem_sonu": "2026-09-30",
+  "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000119/ceg-20260930.htm"
  },
- "xbrl_beklemede": false,
+ "xbrl_beklemede": true,
  "tablo": {
   "ceyrekler": [
    {
@@ -5723,6 +5723,13 @@
  "dosyalar": [
   {
    "form": "10-Q",
+   "tarih": "2026-11-09",
+   "donem_sonu": "2026-09-30",
+   "accn": "0001868275-26-000119",
+   "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000119/ceg-20260930.htm"
+  },
+  {
+   "form": "10-Q",
    "tarih": "2026-08-06",
    "donem_sonu": "2026-06-30",
    "accn": "0001868275-26-000104",
@@ -5797,13 +5804,6 @@
    "donem_sonu": "2023-12-31",
    "accn": "0001868275-24-000014",
    "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827524000014/ceg-20231231.htm"
-  },
-  {
-   "form": "10-Q",
-   "tarih": "2023-11-06",
-   "donem_sonu": "2023-09-30",
-   "accn": "0001868275-23-000080",
-   "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827523000080/ceg-20230930.htm"
   }
  ],
  "kaynak": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001868275.json"
