@@ -1,5 +1,131 @@
 [
  {
+  "id": "20261111T121538Z",
+  "tur": "gunluk_python",
+  "baslangic": "2026-11-11T12:15:38+00:00",
+  "bitis": "2026-11-11T12:16:50+00:00",
+  "hisseler": [
+   "AAOI",
+   "CEG",
+   "IONQ",
+   "META",
+   "NOW",
+   "NVDA",
+   "ORCL",
+   "RGTI"
+  ],
+  "finnhub_aktif": true,
+  "sec_aktif": true,
+  "sec_user_agent_tanimli": true,
+  "sec_istek": 9,
+  "claude": null,
+  "bekleyen_bilanco": [
+   "META",
+   "NOW",
+   "AAOI",
+   "IONQ",
+   "RGTI"
+  ],
+  "adimlar": {
+   "fiyat": {
+    "ok": 14,
+    "hata": 0,
+    "sure_sn": 45.3
+   },
+   "cik": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "sec_submissions": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.1
+   },
+   "bilanco_xbrl": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.3
+   },
+   "bilanco_yorum": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "bilanco_takvimi": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 5.9
+   },
+   "insider_form4": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "finnhub_insider": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 8.5
+   },
+   "insider_analiz": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "finnhub_haber": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 8.1
+   },
+   "google_news": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 3.1
+   },
+   "baslik_arsivi": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.2
+   },
+   "hareketler": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "tez": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "kural": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "sinyal": {
+    "ok": 8,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "karne": {
+    "ok": 1,
+    "hata": 0,
+    "sure_sn": 0.0
+   },
+   "haftalik_derleme": {
+    "ok": 1,
+    "hata": 0,
+    "sure_sn": 0.1
+   }
+  },
+  "hatalar": [],
+  "argumanlar": {
+   "offline": false,
+   "force_filings": false,
+   "tickers": ""
+  }
+ },
+ {
   "id": "20261111T014127Z",
   "tur": "gunluk_python",
   "baslangic": "2026-11-11T01:41:27+00:00",
