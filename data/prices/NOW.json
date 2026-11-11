@@ -1,7 +1,7 @@
 {
  "sembol": "NOW",
- "kaynak": "Nasdaq.com (historical API)",
- "guncelleme": "2026-11-10T13:06:10+00:00",
+ "kaynak": "Nasdaq.com (historical API) + Finnhub quote",
+ "guncelleme": "2026-11-11T01:41:34+00:00",
  "taze": true,
  "kapanislar": [
   [
@@ -2163,8 +2163,12 @@
   [
    "2026-11-09",
    102.76
+  ],
+  [
+   "2026-11-10",
+   99.61
   ]
  ],
- "finnhub_52h_zirve": 175.8,
- "finnhub_52h_zirve_tarih": "2025-11-06"
+ "finnhub_52h_zirve": 175,
+ "finnhub_52h_zirve_tarih": "2025-12-11"
 }

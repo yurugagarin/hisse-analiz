@@ -1,7 +1,7 @@
 {
  "sembol": "QQQ",
- "kaynak": "Nasdaq.com (historical API)",
- "guncelleme": "2026-11-10T13:06:34+00:00",
+ "kaynak": "Nasdaq.com (historical API) + Finnhub quote",
+ "guncelleme": "2026-11-11T01:41:55+00:00",
  "taze": true,
  "kapanislar": [
   [
@@ -2163,6 +2163,10 @@
   [
    "2026-11-09",
    679.35
+  ],
+  [
+   "2026-11-10",
+   674.76
   ]
  ],
  "finnhub_52h_zirve": 762.86,

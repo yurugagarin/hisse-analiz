@@ -13,19 +13,14 @@
    "metrik": "revenue_yoy",
    "metrik_adi": "Gelir büyümesi (yıllık)",
    "birim": "%",
-   "deger": 185.29,
-   "donem": "FY2026 Q2",
+   "deger": -27.53,
+   "donem": "FY2026 Q3",
    "eski_donem": false,
    "operator": ">",
    "esik": 93,
    "uyari": 37,
-   "durum": "yesil",
+   "durum": "kirmizi",
    "gecmis": [
-    {
-     "etiket": "FY2024 Q3",
-     "deger": -23.41,
-     "durum": "kirmizi"
-    },
     {
      "etiket": "FY2024 Q4",
      "deger": -32.64,
@@ -60,11 +55,16 @@
      "etiket": "FY2026 Q2",
      "deger": 185.29,
      "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q3",
+     "deger": -27.53,
+     "durum": "kirmizi"
     }
    ],
    "kaynak": {
     "tip": "SEC XBRL companyfacts",
-    "donem": "FY2026 Q2"
+    "donem": "FY2026 Q3"
    },
    "olgu_mu": true,
    "haberler": [],
@@ -78,19 +78,14 @@
    "metrik": "gross_margin",
    "metrik_adi": "Brüt marj",
    "birim": "%",
-   "deger": 42.58,
-   "donem": "FY2026 Q2",
+   "deger": 60.74,
+   "donem": "FY2026 Q3",
    "eski_donem": false,
    "operator": ">",
    "esik": 40,
    "uyari": 35,
    "durum": "yesil",
    "gecmis": [
-    {
-     "etiket": "FY2024 Q3",
-     "deger": 50.63,
-     "durum": "yesil"
-    },
     {
      "etiket": "FY2024 Q4",
      "deger": 44.11,
@@ -125,11 +120,16 @@
      "etiket": "FY2026 Q2",
      "deger": 42.58,
      "durum": "yesil"
+    },
+    {
+     "etiket": "FY2026 Q3",
+     "deger": 60.74,
+     "durum": "yesil"
     }
    ],
    "kaynak": {
     "tip": "SEC XBRL companyfacts",
-    "donem": "FY2026 Q2"
+    "donem": "FY2026 Q3"
    },
    "olgu_mu": true,
    "haberler": [],
@@ -143,19 +143,14 @@
    "metrik": "operating_margin_ttm",
    "metrik_adi": "TTM faaliyet marjı",
    "birim": "%",
-   "deger": -727.62,
-   "donem": "FY2026 Q2",
+   "deger": -856.64,
+   "donem": "FY2026 Q3",
    "eski_donem": false,
    "operator": ">",
    "esik": 0,
    "uyari": -733,
-   "durum": "sari",
+   "durum": "kirmizi",
    "gecmis": [
-    {
-     "etiket": "FY2024 Q3",
-     "deger": -565.28,
-     "durum": "sari"
-    },
     {
      "etiket": "FY2024 Q4",
      "deger": -634.94,
@@ -190,11 +185,16 @@
      "etiket": "FY2026 Q2",
      "deger": -727.62,
      "durum": "sari"
+    },
+    {
+     "etiket": "FY2026 Q3",
+     "deger": -856.64,
+     "durum": "kirmizi"
     }
    ],
    "kaynak": {
     "tip": "SEC XBRL companyfacts",
-    "donem": "FY2026 Q2"
+    "donem": "FY2026 Q3"
    },
    "olgu_mu": true,
    "haberler": [],
@@ -208,19 +208,14 @@
    "metrik": "cash_runway_months",
    "metrik_adi": "Nakit pisti",
    "birim": "ay",
-   "deger": 3.8,
-   "donem": "FY2026 Q2",
+   "deger": 4.9,
+   "donem": "FY2026 Q3",
    "eski_donem": false,
    "operator": ">",
    "esik": 24,
    "uyari": 12,
    "durum": "kirmizi",
    "gecmis": [
-    {
-     "etiket": "FY2024 Q3",
-     "deger": 16.9,
-     "durum": "sari"
-    },
     {
      "etiket": "FY2024 Q4",
      "deger": 37.3,
@@ -255,11 +250,16 @@
      "etiket": "FY2026 Q2",
      "deger": 3.8,
      "durum": "kirmizi"
+    },
+    {
+     "etiket": "FY2026 Q3",
+     "deger": 4.9,
+     "durum": "kirmizi"
     }
    ],
    "kaynak": {
     "tip": "SEC XBRL companyfacts",
-    "donem": "FY2026 Q2"
+    "donem": "FY2026 Q3"
    },
    "olgu_mu": true,
    "haberler": [],
@@ -273,19 +273,14 @@
    "metrik": "diluted_shares_yoy",
    "metrik_adi": "Seyreltilmiş hisse sayısı (yıllık)",
    "birim": "%",
-   "deger": 11.72,
-   "donem": "FY2026 Q2",
+   "deger": 4.27,
+   "donem": "FY2026 Q3",
    "eski_donem": false,
    "operator": "<",
    "esik": 2,
    "uyari": 5,
-   "durum": "kirmizi",
+   "durum": "sari",
    "gecmis": [
-    {
-     "etiket": "FY2024 Q3",
-     "deger": 40.73,
-     "durum": "kirmizi"
-    },
     {
      "etiket": "FY2024 Q4",
      "deger": null,
@@ -320,11 +315,16 @@
      "etiket": "FY2026 Q2",
      "deger": 11.72,
      "durum": "kirmizi"
+    },
+    {
+     "etiket": "FY2026 Q3",
+     "deger": 4.27,
+     "durum": "sari"
     }
    ],
    "kaynak": {
     "tip": "SEC XBRL companyfacts",
-    "donem": "FY2026 Q2"
+    "donem": "FY2026 Q3"
    },
    "olgu_mu": true,
    "haberler": [],
@@ -364,12 +364,12 @@
    "durum": "tetiklenmedi",
    "son_degerler": [
     {
-     "etiket": "FY2026 Q1",
-     "deger": 198.91
-    },
-    {
      "etiket": "FY2026 Q2",
      "deger": 185.29
+    },
+    {
+     "etiket": "FY2026 Q3",
+     "deger": -27.53
     }
    ]
   },
@@ -380,12 +380,12 @@
    "durum": "tetiklenmedi",
    "son_degerler": [
     {
-     "etiket": "FY2026 Q1",
-     "deger": 31.32
-    },
-    {
      "etiket": "FY2026 Q2",
      "deger": 42.58
+    },
+    {
+     "etiket": "FY2026 Q3",
+     "deger": 60.74
     }
    ]
   },
@@ -393,16 +393,16 @@
    "id": "asiri_sulandirma",
    "ad": "Hisse sayısı yıllık %10'dan fazla artarsa",
    "metrik": "diluted_shares_yoy",
-   "durum": "tetiklendi",
+   "durum": "tetiklenmedi",
    "son_degerler": [
     {
-     "etiket": "FY2026 Q2",
-     "deger": 11.72
+     "etiket": "FY2026 Q3",
+     "deger": 4.27
     }
    ]
   }
  ],
- "son_ceyrek": "FY2026 Q2",
- "guncelleme": "2026-11-10T13:07:16+00:00",
+ "son_ceyrek": "FY2026 Q3",
+ "guncelleme": "2026-11-11T01:42:37+00:00",
  "not": "Tez durumu fiyattan bağımsızdır. Fiyat düşüşü tek başına tezin bozulduğu anlamına gelmez."
 }

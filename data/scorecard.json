@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-11-10T13:07:16+00:00",
+ "guncelleme": "2026-11-11T01:42:37+00:00",
  "ufuklar": [
   30,
   90,
@@ -56,7 +56,7 @@
    "tur": "sutun_kirmizi",
    "ad": "Bir tez sütunu KIRMIZI'ya döndü",
    "beklenen_yon": "olumsuz",
-   "adet": 6,
+   "adet": 8,
    "ufuklar": {
     "30": {
      "n": 6,
@@ -217,7 +217,7 @@
    "tur": "bilanco_kirmizi_bayrak",
    "ad": "Yeni bilançoda kırmızı bayrak",
    "beklenen_yon": "olumsuz",
-   "adet": 8,
+   "adet": 9,
    "ufuklar": {
     "30": {
      "n": 5,
@@ -238,6 +238,63 @@
   }
  ],
  "sinyaller": [
+  {
+   "id": "cc83793959ea",
+   "tarih": "2026-11-11",
+   "ticker": "RGTI",
+   "tur": "bilanco_kirmizi_bayrak",
+   "tur_adi": "Yeni bilançoda kırmızı bayrak",
+   "yon": "olumsuz",
+   "aciklama": "Vergi öncesi kârın yarıdan fazlası faaliyet dışı; TTM net zarar; Şirket nakit yakıyor; SBC gelire oranla çok yüksek; Alacaklar gelirden çok daha hızlı büyüyor",
+   "fiyat": 12.15,
+   "fiyat_tarihi": "2026-11-10",
+   "qqq": 674.76,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-11-11T01:42:37+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
+  {
+   "id": "92d84d16b9b2",
+   "tarih": "2026-11-11",
+   "ticker": "RGTI",
+   "tur": "sutun_kirmizi",
+   "tur_adi": "Bir tez sütunu KIRMIZI'ya döndü",
+   "yon": "olumsuz",
+   "aciklama": "Kârlılığa gidiş: %856,6",
+   "fiyat": 12.15,
+   "fiyat_tarihi": "2026-11-10",
+   "qqq": 674.76,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-11-11T01:42:37+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
+  {
+   "id": "128514f37f76",
+   "tarih": "2026-11-11",
+   "ticker": "RGTI",
+   "tur": "sutun_kirmizi",
+   "tur_adi": "Bir tez sütunu KIRMIZI'ya döndü",
+   "yon": "olumsuz",
+   "aciklama": "Gelir büyümesi: %27,5",
+   "fiyat": 12.15,
+   "fiyat_tarihi": "2026-11-10",
+   "qqq": 674.76,
+   "baslangic_kaydi": false,
+   "kayit_zamani": "2026-11-11T01:42:37+00:00",
+   "sonuclar": {
+    "30": null,
+    "90": null,
+    "180": null
+   }
+  },
   {
    "id": "06e6c6a63fce",
    "tarih": "2026-11-10",
