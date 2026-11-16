@@ -1,91 +1,53 @@
-# Hisse Tez Takibi — kişisel karar destek aracı
+# Gün — gün planlayıcı
 
-> **Yatırım tavsiyesi değildir, kişisel karar destek aracıdır.**
-> Al/sat sinyali üretmez. Amaç: (1) yatırım tezi bozulunca erken fark etmek, (2) bilançoyu
-> kazanç kalitesi açısından okumak, (3) düşüşlerde önceden yazılmış kurallarla hareket etmek.
+Tek kullanıcılı, masaüstü tarayıcıda açık duran gün planlayıcı. Odak bugün: gün saat saat iş bloklarına
+bölünür, işler tek tıkla işaretlenir, plan bozulunca blok taşınır / kısaltılır / yarına alınır / atlanır.
+Hafta, Ay ve Yıl görünümleri nerede olduğunu gösterir.
 
-Site: **https://yurugagarin.github.io/hisse-analiz/** (GitHub Pages, GitHub Actions ile yayınlanır)
+Adres: **https://yurugagarin.github.io/hisse-analiz/**
 
-## Nasıl çalışır
+Saf HTML + CSS + JavaScript: `index.html`, `style.css`, `app.js`. Derleme yok, paket yok, sunucu yok.
 
-| Ne zaman | Ne çalışır | Claude? |
-|---|---|---|
-| Hafta içi her gün 05:00 UTC | Fiyat (Nasdaq.com, yedek Yahoo), haber başlıkları (Finnhub + Google News RSS), SEC Form 4 insider, ±%5 hareket kaydı, tez/kural/sinyal değerlendirmesi | **Hayır** — yalnızca Python |
-| Yeni 10-Q/10-K geldiğinde (günlük çalışma tespit eder) | XBRL kazanç kalitesi (Python) + dipnot/basın bülteni analizi ve çeyreklik şeytanın avukatı | Evet (bir kez) |
-| **Her Salı 23:00 Berlin** (ABD kapanışından sonra) | Salı raporu: haftanın gelişmeleri, yönetim/insider, büyük hareketlerin açıklaması, tez durumu, "neden tutmalıyım", "neden satmalıyım", Çarşamba DCA notu, öncü sinyal radarı | Evet |
+## Nasıl yayınlanır
 
-- Claude, **Claude Code CLI (`claude -p`) ile Pro aboneliğinizle** çalışır (`CLAUDE_CODE_OAUTH_TOKEN`).
-  Console API anahtarı (`ANTHROPIC_API_KEY`) kullanılmaz; kod ortamdan bu değişkeni bilinçli olarak siler.
-- Model: **`claude-opus-5-5`** (`config/settings.yaml → claude.model`; `CLAUDE_MODEL` repo değişkeniyle değiştirilebilir).
-- Yaz/kış saati: workflow'da iki Salı cron'u var (21:00 UTC = CEST, 22:00 UTC = CET). "Mod" adımı
-  `TZ=Europe/Berlin` ofsetine bakar ve yalnızca doğru olanı çalıştırır → her zaman Berlin 23:00.
-  GitHub zamanlanmış işleri birkaç dakika–saat geciktirebilir.
-- Her çalışma `data/` klasörünü `main`'e commit'ler, ardından `deploy` işi siteyi Pages'e yayınlar.
+1. Dosyalar `main` dalına gelince `.github/workflows/pages.yml` siteyi GitHub Pages'e yayınlar
+   (Settings → Pages → Source: **GitHub Actions**). Elle başlatmak için: Actions → "Yayınla" → Run workflow.
+2. Yerelde denemek için klasörü herhangi bir statik sunucuyla aç (ör. `python3 -m http.server`).
+   WORT verisi yalnızca aynı origin'de (`yurugagarin.github.io`) okunabilir.
 
-### Veri bütünlüğü (kodda uygulanır)
-- **Sayılar modelin hafızasından gelmez.** Finansallar SEC XBRL'den deterministik hesaplanır
-  (`pipeline/xbrl.py`, `pipeline/quality.py`); türetilen değerler "türetilmiş" diye işaretlenir; veri yoksa "veri yok".
-- Claude'un bilanço bulguları için belgeden **birebir alıntı** istenir ve alıntı SEC metninde otomatik aranır (✓/✕).
-- Salı raporundaki gelişme/olay/radar maddelerinin **kaynak linki**, Claude'un o çalışmada gerçekten
-  gördüğü arama sonuçlarında veya veri paketinde yoksa **otomatik elenir**.
-- Olgu (gri, "OLGU") ile yorum (mor, "YORUM") görsel olarak ayrılır.
+## Klavye
 
-## Maliyet
-- Claude: Pro aboneliğin kullanım limitleri içinde; ekstra fatura yok. Sistem sayfası çağrı/token sayısını ve
-  yalnızca gösterge amaçlı "API eşdeğeri"ni gösterir. Opus 5.5 + web aramalı haftalık 4 hisselik rapor, Pro'nun
-  haftalık kullanım limitinin kayda değer bir kısmını tüketebilir; limit aşılırsa çalışma hata verir ve Sistem
-  sayfasında görünür (ertesi Salı veya elle tekrar denenebilir).
-- Finnhub (ücretsiz katman), SEC EDGAR, Nasdaq.com, Google News RSS: ücretsiz.
-- GitHub Actions: public repoda ücretsiz.
+`1–4` sekmeler · `←/→` önceki/sonraki gün, hafta, ay · `T` bugüne dön · `N` yeni iş · `Esc` açık pencereyi kapatır.
+Hafta görünümünde blok sürüklenerek taşınır (15 dk adım, başka güne de), alt kenarından çekilerek süresi
+değişir, boş yere çift tıklamak yeni iş açar.
 
-## Hisse eklemek / çıkarmak (siteden)
+## WORT bağlantısı (yalnızca okuma)
 
-Sitede sol menüdeki **+ Hisse ekle / çıkar** → **Hisseleri yönet** sayfası:
+WORT (`https://yurugagarin.github.io/wort/`) aynı origin'de olduğu için verisi `localStorage`'dan okunur.
+Gün, WORT'a **hiçbir şey yazmaz**.
 
-1. Arama kutusuna şirketin **adını** veya borsa kodunu yaz (ör. `constellation`), listeden seç. Liste SEC'in
-   ABD borsalarındaki (Nasdaq, NYSE) şirket listesidir (`data/tickers.json`, haftalık yenilenir); listede
-   olmayan bir kod seçilemez. Frankfurt/Xetra gibi Avrupa kodları (ör. `E7S`) SEC'te yoktur.
-2. İstersen görünen adı ve karşılaştırma ETF'lerini değiştir. **Otomatik** seçilirse ETF, şirketin SEC'teki
-   sektör koduna (SIC) göre seçilir (ör. elektrik → SPY + XLU, yarı iletken → QQQ + SMH, yazılım → QQQ + IGV).
-3. **Ekle**'ye bas. İş, GitHub Actions'taki "Hisse ekle / çıkar" iş akışında yapılır; sayfa adımları canlı
-   gösterir (liste güncelleniyor → veriler hazırlanıyor → site güncelleniyor → hazır). Hata olursa mesajı
-   aynı yerde görünür (ör. yabancı şirket ABD GAAP bilançosu vermiyorsa eklenmez).
+Okunan anahtar: **`wort:v1`** (WORT'un tek veri anahtarı, sürümlü JSON). İçinden kullanılan alanlar:
 
-İki çalışma şekli:
-- **GitHub bağlantısı olmadan:** Ekle'ye basınca GitHub'da hazır doldurulmuş bir istek (issue) açılır,
-  **Create** dersin. İş akışı yalnızca repo sahibinin açtığı `hisse ekle KOD` / `hisse cikar KOD`
-  başlıklı istekleri işler, sonucu isteğe yazar ve kapatır.
-- **GitHub bağlantısıyla (tek dokunuş):** sayfadaki adımlarla yalnızca bu repoya ve yalnızca
-  **Actions: Read and write** iznine sahip bir *fine-grained* anahtar oluşturup yapıştırırsın. Anahtar
-  yalnızca o tarayıcıda (localStorage) durur ve yalnızca api.github.com'a gönderilir.
+| Alan | Ne için |
+|---|---|
+| `srs[id].d` (+ `ban[id].on`) | Kelime tekrarı: tekrar günü bugün ya da geçmiş olan kartlar = bekleyen kelime |
+| `set.newPerDay`, `days[bugün].ncap / npx / np` | Bugün kalan yeni kelime sayısı |
+| `days[bugün].gt`, `gfocus`, `gx[konu].stg / due / known` | Konu dersi: WORT'un bugünkü konusu ve sıradaki aşaması (Anla, Tanı, Kur, Üret, Tekrar) |
+| `days[bugün].ezd`, `ez[tablo].due / last / best` | Ezber tablosu: bugünkü tablo, yoksa tekrarı gelen, yoksa en düşük test sonucu |
+| `days[bugün].sch` | Yazma: bugün yazmaya başlandı mı |
 
-Eklenen hisse için şirketin **bugünkü rakamlarına göre** "mevcut kaliteyi koru" mantığında bir **taslak tez**
-yazılır (`config/theses.yaml`, `onay: taslak`); kendi görüşüne göre düzenle. Çıkarılan hissenin tezi ve
-geçmiş verisi silinmez. Elle yapmak istersen: GitHub → **Actions → "Hisse ekle / çıkar" → Run workflow**.
+Konu ve tablo **adları** `localStorage`'da değil, WORT'un kodunda (`G` ve `EZ` dizileri) durur. Gün bu
+yüzden haftada bir `/wort/` sayfasını okuyup adları kendi verisine (`gun.v1` → `wortAdlar`) kaydeder.
+Okunamazsa kart adsız çalışır. Ayarlar → WORT → "Adları yeniden oku" ile elle yenilenir.
 
-## Elle çalıştırma
-**Actions → Hisse analiz pipeline → Run workflow**: `sali_raporu` (Salı raporunu şimdi üret),
-`bilanco_claude` (ör. `NVDA,AAOI` son 10-Q/10-K'yı Claude ile yeniden analiz et), `force_filings`, `skip_claude`.
+WORT yoksa ya da okunamazsa Almanca kartı "WORT bulunamadı" der ve konu başlığı elle yazılabilir;
+uygulamanın geri kalanı etkilenmez. Almanca bloğu işaretlenince o günün özeti (konu, aşama, tablo,
+süre) günün kaydına kopyalanır.
 
-Yerelde:
-```bash
-pip install -r pipeline/requirements.txt
-export SEC_USER_AGENT="Ad Soyad email@adres" FINNHUB_API_KEY=...
-python pipeline/run.py                       # günlük (Claude yok)
-npm i -g @anthropic-ai/claude-code && export CLAUDE_CODE_OAUTH_TOKEN=...
-python pipeline/claude_tasks.py --weekly     # Salı raporu
-python pipeline/run.py --offline             # tez/özeti yeniden hesapla
-mkdir -p _site && cp -r site/. _site/ && cp -r data _site/ && python -m http.server -d _site 8000
-```
+## Veri ve yedek
 
-## Dosya yapısı
-```
-config/     stocks.yaml, theses.yaml (TASLAK), rules.yaml (TASLAK), settings.yaml
-pipeline/   run.py (günlük, Python), claude_tasks.py (Claude: bilanço + Salı raporu), claude_cli.py,
-            sec.py, xbrl.py, quality.py, filing_claude.py, insider.py, prices.py, finnhub.py, news.py,
-            moves.py, anlati.py (bilanço yorum motoru), thesis.py, rules.py, signals.py, weekly.py, tests/
-site/       index.html, css/app.css, js/ (core, charts, rehber, v-panel, v-hisse, v-bilanco, v-diger)
-            vanilla JS, build yok; notlar ve tercihler localStorage'da
-data/       pipeline çıktıları (JSON) — signals.jsonl, usage.jsonl, weekly/, moves/, headlines/ …
-.github/workflows/hisse.yml
-```
+- Bütün veri tarayıcıda, tek anahtarda: **`gun.v1`** (günler, şablonlar, ayarlar, adımlar).
+  Her değişiklik anında kaydedilir.
+- Yedek: Ayarlar (sağ üstteki dişli) → **JSON dışa aktar**. Geri yüklemek için **JSON içe aktar**;
+  içe aktarmadan hemen sonra "Geri al" ile önceki veriye dönülebilir.
+- Tarayıcı verisi silinirse plan da silinir; ara ara dışa aktarmak yeter.
