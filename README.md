@@ -21,6 +21,13 @@ Saf HTML + CSS + JavaScript: `index.html`, `style.css`, `app.js`. Derleme yok, p
   30 dk · 45 dk · 1 sa · 1,5 sa · 2 sa) ve not ("ne yenecek, ne çalışılacak") aynı pencerede; her değişiklik anında
   kaydedilir. "Her gün böyle olsun" adı, saati ve süreyi şablona ve sonraki günlere yazar. Altta "Plan değişti"
   kısayolları (başka saate al, kısalt, yarına taşı, atla) durur.
+- **Çizelge** (Bugün → "Çizelge"): günün saat ızgarası. Bloğu sürükle = saati kaydır; üst kenarı çek = başlangıç,
+  alt kenarı çek = bitiş (15 dk adım). Telefonda bloğa ~0,3 sn basılı tut, sonra sürükle; kısa dokunuş pencereyi açar.
+  Hafta görünümünde de aynısı geçerli (başka güne taşıma dahil).
+- **Durum** (satırdaki ⋯ düğmesi ya da Değiştir penceresi): Tamam · Yapmadım · Gerek kalmadı · Planlı, istersen nedeniyle.
+  "Gerek kalmadı" günün sayımından düşer; "Yapmadım" yapılmamış sayılır. Geçmiş günler de işaretlenebilir.
+- **Takvimden planla** (Ay ve Yıl ekranları): Normal gün / Dışarıdayım / Seyahat / Boş gün / Planı sil seç, sonra günlere
+  dokun ya da üzerlerinden sürükle. Yıl ekranı, sınava kadar her ayı gün numaralarıyla gösterir; güne dokununca o gün açılır.
 - **Günlük düzen** (Bugün ekranında, listenin altında): şablondaki her işin adı, başlangıcı ve süresi tek yerden.
   Değişiklik bugünden itibaren o tipteki bütün günlere uygulanır; elle değiştirilmiş ya da işaretlenmiş işlere dokunulmaz.
 - **Sonrakileri kaydır:** bir iş uzayınca ya da ileri kayınca üst üste binen sonraki işler de ileri kayar (kapatılabilir).

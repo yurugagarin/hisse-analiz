@@ -69,13 +69,15 @@ var SVG_MINUS = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" str
 var SVG_L = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>';
 var SVG_R = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>';
 var SVG_EXT = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>';
+var SVG_DOTS = '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><circle cx="6" cy="12" r="1.7"/><circle cx="12" cy="12" r="1.7"/><circle cx="18" cy="12" r="1.7"/></svg>';
 var SVG_NOTE = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h10l4 4v12H5z"/><path d="M9 12h6M9 16h4"/></svg>';
 
 /* ================= sabitler ================= */
 var KAT = { kalkis: 'Kalkış', spor: 'Spor', is: 'İş', yuruyus: 'Yürüyüş', ogun: 'Yemek', almanca: 'Almanca', diger: 'Diğer' };
-var TIP = { normal: 'Normal gün', disarida: 'Dışarıdayım', bos: 'Boş gün' };
-var TIPK = { normal: 'Normal', disarida: 'Dışarıda', bos: 'Boş gün' };
-var TIPS = ['normal', 'disarida', 'bos'];
+var TIP = { normal: 'Normal gün', disarida: 'Dışarıdayım', seyahat: 'Seyahat', bos: 'Boş gün' };
+var TIPK = { normal: 'Normal', disarida: 'Dışarıda', seyahat: 'Seyahat', bos: 'Boş gün' };
+var TIPS = ['normal', 'disarida', 'seyahat', 'bos'];
+var DURUM = { tamam: 'Tamam', yapilmadi: 'Yapmadım', gereksiz: 'Gerek kalmadı', planli: 'Planlı' };
 var NEDEN = ['Dışarı çıkıyorum', 'İş uzadı', 'Yorgunum', 'Diğer'];
 var DURS = [30, 45, 60, 90, 120];
 
@@ -88,6 +90,7 @@ function defTemplates() {
   return {
     normal: base().concat([tpl('Yemek', 'ogun', 1050, 1080), tpl('Almanca', 'almanca', 1080, 1125, { asgari: 20 }), tpl('Yürüyüş', 'yuruyus', 1125, 1155)]),
     disarida: base().concat([tpl('Almanca', 'almanca', 1050, 1070, { asgari: 20 }), tpl('Dışarıda', 'diger', 1080, 1200, { disarida: true })]),
+    seyahat: [],
     bos: []
   };
 }
@@ -98,7 +101,7 @@ function blank() {
   return {
     v: 1, m2: 1, baslangic: today(), gunler: {}, adim: {}, almanca: {},
     sablonlar: defTemplates(),
-    ayarlar: { adimHedef: 10000, sinavAdi: 'Goethe B1', sinavTarihi: '2027-09-30', kaydir: true },
+    ayarlar: { adimHedef: 10000, sinavAdi: 'Goethe B1', sinavTarihi: '2027-09-30', kaydir: true, gorunum: 'liste' },
     wortAdlar: null, formAdlar: null
   };
 }
@@ -161,19 +164,27 @@ function G(t) { return D.gunler[t] || null; }
 function counted(g) { return g ? g.isler.filter(function (i) { return !i.gitti; }) : []; }
 function sortI(a) { return a.sort(function (x, y) { return x.baslangic - y.baslangic || x.bitis - y.bitis; }); }
 function stats(g) {
-  var L = counted(g), s = { n: L.length, tamam: 0, atl: 0, planli: 0, chg: 0 };
-  L.forEach(function (i) { if (i.durum === 'tamam') s.tamam++; else if (i.durum === 'atlandi') s.atl++; else s.planli++; if (i.degisiklik !== 'yok' || i.durum === 'atlandi') s.chg++; });
+  var L = counted(g), s = { n: 0, tamam: 0, atl: 0, planli: 0, chg: 0 };
+  L.forEach(function (i) {
+    if (i.durum === 'gereksiz') { s.chg++; return; }
+    s.n++;
+    if (i.durum === 'tamam') s.tamam++; else if (i.durum === 'planli') s.planli++; else s.atl++;
+    if (i.degisiklik !== 'yok' || i.durum === 'atlandi' || i.durum === 'yapilmadi') s.chg++;
+  });
   (g ? g.isler : []).forEach(function (i) { if (i.gitti) s.chg++; });
   return s;
 }
 function kind(t) {
   var g = G(t);
   if (!g) return t < D.baslangic ? 'before' : 'none';
-  return counted(g).length ? 'plan' : 'empty';
+  if (counted(g).length) return 'plan';
+  return g.tip === 'seyahat' ? 'trav' : 'empty';
 }
 function stCls(t) {
   if (t === today()) return 'st-today';
-  return { plan: 'st-plan', none: 'st-none', empty: 'st-empty', before: 'st-before' }[kind(t)];
+  var k = kind(t), g = G(t), c = { plan: 'st-plan', none: 'st-none', empty: 'st-empty', before: 'st-before', trav: 'st-trav' }[k];
+  if (k === 'plan' && g.tip !== 'normal') c += ' tip-' + g.tip;
+  return c;
 }
 function mkItem(x) {
   var it = {
@@ -268,22 +279,25 @@ var OPS = {
       delete it.gitti; delete it.kopya;
     }
     if (it.orj) { it.baslangic = it.orj.b; it.bitis = it.orj.e; delete it.orj; }
-    it.durum = 'planli'; it.degisiklik = 'yok'; it.neden = null; it.gercekBitis = null;
+    it.durum = 'planli'; it.degisiklik = 'yok'; it.neden = null; it.gercekBitis = null; delete it.sebep;
     sortI(G(t).isler); return true;
   }
 };
 
-function toggle(t, id) {
+function setDurum(t, id, d) {
   var it = findIt(t, id); if (!it || it.gitti) return;
-  if (it.durum === 'tamam') { it.durum = 'planli'; it.gercekBitis = null; }
-  else {
-    it.durum = 'tamam';
+  it.durum = d;
+  if (d === 'tamam') {
     if (t === today()) it.gercekBitis = nowMin();
     if (it.kategori === 'almanca') snapshotWort(t, it);
-  }
-  JUST = id; save(); render();
+  } else it.gercekBitis = null;
+  if (d === 'planli') delete it.sebep;
+  JUST = d === 'tamam' ? id : null; save(); render();
 }
-
+function toggle(t, id) {
+  var it = findIt(t, id); if (!it || it.gitti) return;
+  setDurum(t, id, it.durum === 'tamam' ? 'planli' : 'tamam');
+}
 /* ---------- rutin: şablondaki bir işi değiştir, sonraki günlere yay ----------
    ch: {baslik, kategori, baslangic, bitis} — yalnız verilen alanlar değişir.
    Ad ve kategori bütün şablonlarda ve günlerde; saat yalnız bu tipin şablonunda ve bu tipteki günlerde değişir.
@@ -509,7 +523,7 @@ function fetchFormNames(force) {
 function readAll() { readWort(); readAjanda(); readForm(); }
 
 /* ================= görünüm durumu ================= */
-var V = { tab: 'bugun', gun: today(), hafta: monday(today()), ay: today().slice(0, 7), stepEdit: false, stip: 'normal', rtip: null };
+var V = { brush: null, tab: 'bugun', gun: today(), hafta: monday(today()), ay: today().slice(0, 7), stepEdit: false, stip: 'normal', rtip: null };
 var JUST = null, BARS = {}, GRID = { s0: 420 }, prevD = null, setMsg = null;
 var mainEl, LASTMIN = -1, LASTDAY = today();
 
@@ -552,6 +566,7 @@ function stripBox(t) {
   if (k === 'plan') st = t <= td ? s.tamam + ' / ' + s.n + ' tamam' : s.n + ' iş planlı';
   else if (k === 'none') st = t >= td ? '<button class="planla" data-act="planla" data-d="' + t + '">Planla</button>' : 'Plan yok';
   else if (k === 'empty') st = 'İş yok';
+  else if (k === 'trav') st = 'Seyahat';
   else st = '—';
   var tip = g ? TIP[g.tip] : k === 'none' ? 'Plan yok' : '';
   var aj = ajFor(t).length, fd = formDay(t);
@@ -617,6 +632,7 @@ function rowSub(t, it) {
   else if (it.degisiklik === 'kisaltildi') p.push('<span class="chg">Kısaltıldı' + (it.neden ? ' · ' + esc(it.neden) : '') + '</span>');
   else if (it.degisiklik === 'yarinaTasindi' && it.kaynak) p.push('<span class="chg">' + esc(fmtDs(it.kaynak)) + ' gününden' + (it.neden ? ' · ' + esc(it.neden) : '') + '</span>');
   if (it.durum === 'atlandi') p.push('<span class="chg">Atlandı' + (it.neden ? ' · ' + esc(it.neden) : '') + '</span>');
+  if (it.durum === 'yapilmadi' || it.durum === 'gereksiz') p.push('<span class="no">' + DURUM[it.durum] + (it.sebep ? ' · ' + esc(it.sebep) : '') + '</span>');
   if (it.kategori === 'yuruyus' && !it.gitti) {
     var goal = +D.ayarlar.adimHedef || 0, n = stepsOf(t).n || 0;
     if (goal) p.push(n >= goal ? 'Adım hedefi tamam' : 'Kalan adım ' + fmtN(goal - n));
@@ -630,26 +646,38 @@ function rowSub(t, it) {
   return p.filter(Boolean).join(' · ');
 }
 function rowHtml(t, it, active) {
-  var cls = ' k-' + it.kategori + (it.durum === 'tamam' ? ' done' : '') + (it.durum === 'atlandi' ? ' skip' : '') + (it.gitti ? ' gone' : '') + (active ? ' active' : '') + (JUST === it.id ? ' just' : '');
+  var cls = ' k-' + it.kategori + (it.durum === 'tamam' ? ' done' : '') + (it.durum === 'atlandi' || it.durum === 'yapilmadi' ? ' skip' : '') +
+    (it.durum === 'gereksiz' ? ' nn' : '') + (it.gitti ? ' gone' : '') + (active ? ' active' : '') + (JUST === it.id ? ' just' : '');
   return '<div class="row' + cls + '" data-act="edit" data-id="' + it.id + '" data-d="' + t + '">' +
     '<div class="r-time">' + hm(it.baslangic) + '</div>' +
     '<div class="r-main"><div class="r-title">' + esc(it.baslik) + '</div><div class="r-sub">' + rowSub(t, it) + '</div>' +
     (it.not ? '<div class="r-not">' + SVG_NOTE + '<span>' + esc(it.not) + '</span></div>' : '') + '</div>' +
     '<button class="r-change" data-act="edit" data-id="' + it.id + '" data-d="' + t + '">Değiştir</button>' +
-    (it.gitti ? '<span></span>' : '<button class="chk" data-act="toggle" data-id="' + it.id + '" aria-label="' + (it.durum === 'tamam' ? 'İşareti kaldır' : 'Tamam olarak işaretle') + '"><i>' + SVG_CHECK + '</i></button>') +
+    (it.gitti ? '<span></span><span></span>' :
+      '<button class="r-st" data-act="durum" data-id="' + it.id + '" data-d="' + t + '" aria-label="Yapmadım ya da gerek kalmadı" title="Yapmadım · Gerek kalmadı">' + SVG_DOTS + '</button>' +
+      '<button class="chk" data-act="toggle" data-id="' + it.id + '" data-d="' + t + '" aria-label="' + (it.durum === 'tamam' ? 'İşareti kaldır' : 'Tamam olarak işaretle') + '"><i>' + SVG_CHECK + '</i></button>') +
     '</div>';
 }
 function ajRow(e) {
   return '<a class="row aj' + (e.done ? ' done' : '') + '" href="' + AJ_URL + '" target="_blank" rel="noopener" title="Ajandada aç" style="--c:' + e.color + '">' +
     '<div class="r-time">' + (e.time == null ? 'GÜN' : hm(e.time)) + '</div>' +
     '<div class="r-main"><div class="r-title">' + esc(e.text) + '</div><div class="r-sub">' + esc([e.cat, e.note].filter(Boolean).join(' · ')) + '</div></div>' +
-    '<span class="tag aj-tag">AJANDA</span><span></span></a>';
+    '<span class="tag aj-tag">AJANDA</span><span></span><span></span></a>';
 }
 function listCard(t, g) {
-  var td = today(), isT = t === td, now = nowMin();
+  var td = today(), isT = t === td, now = nowMin(), cz = D.ayarlar.gorunum === 'cizelge';
   var h = '<div class="card"><div class="list-h"><h3>' + (isT ? 'Bugünün işleri' : esc(fmtD(t)) + ' işleri') + '</h3><div class="btns">' +
+    '<div class="seg"><button class="' + (cz ? '' : 'sel') + '" data-act="gorunum" data-v="liste">Liste</button><button class="' + (cz ? 'sel' : '') + '" data-act="gorunum" data-v="cizelge">Çizelge</button></div>' +
     (!isT ? '<button class="btn sm ghost" data-act="gotoday">Bugüne dön</button>' : '') +
-    '<button class="btn sm" data-act="add" data-d="' + t + '">' + SVG_PLUS + 'İş ekle</button></div></div><div class="list">';
+    '<button class="btn sm" data-act="add" data-d="' + t + '">' + SVG_PLUS + 'İş ekle</button></div></div>';
+  if (cz) {
+    var ga = ajFor(t).filter(function (e) { return e.time == null; });
+    if (ga.length) h += '<div class="aj-day">' + ga.map(function (e) { return '<a class="aj-pill" href="' + AJ_URL + '" target="_blank" rel="noopener" style="--c:' + e.color + '">' + esc(e.text) + '</a>'; }).join('') + '</div>';
+    h += dayGrid(t) + '<div class="note cz-hint">Sürükle: saati kaydır · üst / alt kenarı çek: başlangıç / bitiş · boş yere çift tık: yeni iş · telefonda bloğa basılı tut, sonra sürükle</div>';
+    if (!g) h += '<div class="empty">Bu gün için plan yok.<div class="pills">' + TIPS.map(function (k) { return '<button class="pill" data-act="tpl" data-tip="' + k + '" data-d="' + t + '">' + TIP[k] + '</button>'; }).join('') + '</div></div>';
+    return h + '</div>';
+  }
+  h += '<div class="list">';
   var act = isT ? nowState(g, now).act : null;
   var items = (g ? g.isler : []).map(function (it) { return { m: it.baslangic, h: rowHtml(t, it, act && act.id === it.id) }; });
   ajFor(t).forEach(function (e) { items.push({ m: e.time == null ? -1 : e.time, h: ajRow(e), aj: 1 }); });
@@ -659,14 +687,14 @@ function listCard(t, g) {
   if (!g) {
     h += '<div class="empty">Bu gün için plan yok.<div class="pills">' +
       TIPS.map(function (k) { return '<button class="pill" data-act="tpl" data-tip="' + k + '" data-d="' + t + '">' + TIP[k] + '</button>'; }).join('') + '</div></div>';
-  } else if (!g.isler.length) h += '<div class="empty">İş yok.</div>';
+  } else if (!g.isler.length) h += '<div class="empty">' + (g.tip === 'seyahat' ? 'Seyahat günü. İş yok.' : 'İş yok.') + '</div>';
   return h + '</div>';
 }
 /* tek yerden: şablondaki işlerin adı, saati ve süresi */
 function routineCard() {
   var tip = rtTip(), L = D.sablonlar[tip] || [];
   var h = '<div class="card routine"><div class="list-h"><h3>Günlük düzen</h3><div class="pills sm">' +
-    ['normal', 'disarida'].map(function (k) { return '<button class="pill' + (k === tip ? ' sel' : '') + '" data-act="rtip" data-tip="' + k + '">' + TIP[k] + '</button>'; }).join('') + '</div></div>' +
+    ['normal', 'disarida', 'seyahat'].map(function (k) { return '<button class="pill' + (k === tip ? ' sel' : '') + '" data-act="rtip" data-tip="' + k + '">' + TIP[k] + '</button>'; }).join('') + '</div></div>' +
     '<div class="note">Burada değiştirdiğin ad, saat ve süre bugünden itibaren bütün "' + esc(TIP[tip]) + '" kayıtlarına uygulanır. Elle değiştirdiğin ya da işaretlediğin işlere dokunulmaz.</div>';
   L.forEach(function (x, i) {
     var dur = x.bitis - x.baslangic;
@@ -749,7 +777,7 @@ function blkCls(t, it, now) {
   var c = 'k-' + it.kategori;
   if (t === today() && it.durum === 'planli' && it.baslangic <= now && now < it.bitis) return c + ' now';
   if (it.durum === 'tamam') return c + ' done';
-  if (it.durum === 'atlandi') return c + ' skip';
+  if (it.durum === 'atlandi' || it.durum === 'yapilmadi' || it.durum === 'gereksiz') return c + ' skip';
   if (it.degisiklik === 'tasindi' || it.degisiklik === 'kisaltildi' || (it.degisiklik === 'yarinaTasindi' && it.kaynak)) return c + ' chg';
   if (it.disarida) return c + ' out';
   return c;
@@ -773,20 +801,66 @@ function weekLabel(wk) {
   if (a.getMonth() === b.getMonth()) return a.getDate() + '–' + b.getDate() + ' ' + AY[a.getMonth()];
   return a.getDate() + ' ' + AY[a.getMonth()] + ' – ' + b.getDate() + ' ' + AY[b.getMonth()];
 }
-function vHafta() {
-  var wk = V.hafta, td = today(), now = nowMin(), days = [], i;
-  for (i = 0; i < 7; i++) days.push(addD(wk, i));
+function colRange(days) {
   var s0 = 420, e0 = 1200;
   days.forEach(function (t) {
     counted(G(t)).forEach(function (it) { s0 = Math.min(s0, Math.floor(it.baslangic / 60) * 60); e0 = Math.max(e0, Math.ceil(Math.max(it.bitis, it.baslangic + 15) / 60) * 60); });
     ajFor(t).forEach(function (e) { if (e.time != null) { s0 = Math.min(s0, Math.floor(e.time / 60) * 60); e0 = Math.max(e0, Math.ceil((e.time + 30) / 60) * 60); } });
   });
-  e0 = Math.min(1440, e0); GRID.s0 = s0; GRID.e0 = e0; GRID.days = days;
+  return { s0: s0, e0: Math.min(1440, e0) };
+}
+function rulerHtml(s0, e0) {
+  var h = '<div class="ruler">';
+  for (var m = s0; m <= e0; m += 60) h += '<span style="top:' + ((m - s0) / 60 * HOUR) + 'px">' + hm(m) + '</span>';
+  return h + '</div>';
+}
+function colHtml(t, s0, e0, now) {
+  var td = today(), g = G(t), k = kind(t), fd = formDay(t);
+  var cls = 'wk-col' + (t === td ? ' today' : '') + (k === 'none' ? ' none' : '') + (k === 'empty' || k === 'before' ? ' empty' : '') + (k === 'trav' ? ' trav' : '');
+  var h = '<div class="' + cls + '" data-day="' + t + '">';
+  if (k === 'none') h += '<div class="center"><span class="x">Plan yok</span>' + (t >= td ? '<button class="btn sm" data-act="planla" data-d="' + t + '">Şablondan planla</button>' : '') + '</div>';
+  else if (k === 'empty') h += '<div class="center"><span class="x">İş yok</span></div>';
+  else if (k === 'trav') h += '<div class="center"><span class="x">Seyahat</span></div>';
+  var L = counted(g), lanes = layoutLanes(L);
+  L.forEach(function (it) {
+    var top = (it.baslangic - s0) / 60 * HOUR, dur = it.bitis - it.baslangic, ht = Math.max(dur / 60 * HOUR, 20), ln = lanes[it.id];
+    var pos = ln && ln.n > 1 ? ';left:calc(' + ln.i + ' * (100% - 8px) / ' + ln.n + ' + 4px);width:calc((100% - 8px) / ' + ln.n + ' - 2px);right:auto' : '';
+    var sub = it.kategori === 'spor' && fd ? fd.short : it.kategori === 'almanca' && t === td && W && W.konu && W.konu.ad ? W.konu.ad : '';
+    if (it.durum === 'yapilmadi' || it.durum === 'gereksiz') sub = DURUM[it.durum] + (it.sebep ? ' · ' + it.sebep : '');
+    var lines;
+    if (ht < 36) lines = '<div class="bt"><span class="bm">' + hm(it.baslangic) + '</span> ' + esc(it.baslik) + (it.not ? ' · <span class="bn">' + esc(it.not) + '</span>' : '') + '</div>';
+    else {
+      lines = '<div class="bt">' + esc(it.baslik) + '</div><div class="bm">' + hm(it.baslangic) + '–' + hm(it.bitis) + (sub && ht < 54 ? ' · ' + esc(sub) : '') + '</div>';
+      if (sub && ht >= 54) lines += '<div class="bs">' + esc(sub) + '</div>';
+      if (it.not && ht >= 50) lines += '<div class="bn">' + esc(it.not) + '</div>';
+    }
+    h += '<div class="blk ' + blkCls(t, it, now) + (ht < 36 ? ' pt' : '') + '" data-id="' + it.id + '" data-b="' + it.baslangic + '" data-e="' + it.bitis + '" style="top:' + top + 'px;height:' + ht + 'px' + pos + '" title="' +
+      esc(it.baslik + ' · ' + hm(it.baslangic) + (dur ? '–' + hm(it.bitis) : '') + (sub ? ' · ' + sub : '') + (it.not ? '\n' + it.not : '')) + '">' + lines +
+      (dur > 0 ? '<div class="rtop"></div><div class="rs"></div>' : '') + '</div>';
+  });
+  ajFor(t).forEach(function (e) {
+    if (e.time == null) return;
+    h += '<a class="aj-chip' + (e.done ? ' done' : '') + '" href="' + AJ_URL + '" target="_blank" rel="noopener" style="top:' + ((e.time - s0) / 60 * HOUR) + 'px;--c:' + e.color + '" title="' + esc('Ajanda · ' + hm(e.time) + ' ' + e.text + (e.note ? '\n' + e.note : '')) + '">' +
+      '<span class="bm">' + hm(e.time) + '</span> ' + esc(e.text) + '</a>';
+  });
+  if (t === td && now >= s0 && now <= e0) h += '<div class="nowline" style="top:' + ((now - s0) / 60 * HOUR) + 'px"></div>';
+  return h + '</div>';
+}
+function dayGrid(t) {
+  var r = colRange([t]);
+  GRID.s0 = r.s0; GRID.e0 = r.e0; GRID.days = [t];
+  return '<div class="dayg" style="height:' + ((r.e0 - r.s0) / 60 * HOUR) + 'px">' + rulerHtml(r.s0, r.e0) + colHtml(t, r.s0, r.e0, nowMin()) + '</div>';
+}
+function vHafta() {
+  var wk = V.hafta, td = today(), now = nowMin(), days = [], i;
+  for (i = 0; i < 7; i++) days.push(addD(wk, i));
+  var r = colRange(days), s0 = r.s0, e0 = r.e0;
+  GRID.s0 = s0; GRID.e0 = e0; GRID.days = days;
   var H = (e0 - s0) / 60 * HOUR;
   var h = '<div class="page-h"><h2>HAFTA ' + isoWeek(wk) + ' · ' + esc(weekLabel(wk)) + '</h2><div class="nav">' +
     '<button class="btn sm" data-act="prev" aria-label="Önceki hafta">' + SVG_L + '</button><button class="btn sm" data-act="next" aria-label="Sonraki hafta">' + SVG_R + '</button>' +
     '<button class="btn sm' + (wk === monday(td) ? ' sel' : '') + '" data-act="gotoday">Bu hafta</button></div>' +
-    '<span class="hint">Tıkla: değiştir · sürükle: taşı · alt kenar: süre · boş yere çift tık: yeni iş</span></div>';
+    '<span class="hint">Sürükle: kaydır · üst / alt kenar: başlangıç / bitiş · çift tık: yeni iş · telefonda basılı tut</span></div>';
   h += '<div class="wk"><div class="wk-scroll"><div class="wk-in"><div class="wk-head"><div></div>';
   days.forEach(function (t) {
     var g = G(t), k = kind(t), fd = formDay(t), aj = ajFor(t).filter(function (e) { return e.time == null; });
@@ -795,44 +869,37 @@ function vHafta() {
       (fd ? '<div class="t fo">' + esc(fd.short) + '</div>' : '') +
       aj.map(function (e) { return '<div class="t aj" style="--c:' + e.color + '">' + esc(e.text) + '</div>'; }).join('') + '</div>';
   });
-  h += '</div><div class="wk-body" style="height:' + H + 'px"><div class="ruler">';
-  for (var m = s0; m <= e0; m += 60) h += '<span style="top:' + ((m - s0) / 60 * HOUR) + 'px">' + hm(m) + '</span>';
-  h += '</div>';
-  days.forEach(function (t) {
-    var g = G(t), k = kind(t), fd = formDay(t), cls = 'wk-col' + (t === td ? ' today' : '') + (k === 'none' ? ' none' : '') + (k === 'empty' || k === 'before' ? ' empty' : '');
-    h += '<div class="' + cls + '" data-day="' + t + '">';
-    if (k === 'none') h += '<div class="center"><span class="x">Plan yok</span>' + (t >= td ? '<button class="btn sm" data-act="planla" data-d="' + t + '">Şablondan planla</button>' : '') + '</div>';
-    else if (k === 'empty') h += '<div class="center"><span class="x">İş yok</span></div>';
-    var lanes = layoutLanes(counted(g));
-    counted(g).forEach(function (it) {
-      var top = (it.baslangic - s0) / 60 * HOUR, dur = it.bitis - it.baslangic, ht = Math.max(dur / 60 * HOUR, 20), ln = lanes[it.id];
-      var pos = ln && ln.n > 1 ? ';left:calc(' + ln.i + ' * (100% - 8px) / ' + ln.n + ' + 4px);width:calc((100% - 8px) / ' + ln.n + ' - 2px);right:auto' : '';
-      var sub = it.kategori === 'spor' && fd ? fd.short : it.kategori === 'almanca' && t === td && W && W.konu && W.konu.ad ? W.konu.ad : '';
-      var lines;
-      if (ht < 36) lines = '<div class="bt"><span class="bm">' + hm(it.baslangic) + '</span> ' + esc(it.baslik) + (it.not ? ' · <span class="bn">' + esc(it.not) + '</span>' : '') + '</div>';
-      else {
-        lines = '<div class="bt">' + esc(it.baslik) + '</div><div class="bm">' + hm(it.baslangic) + '–' + hm(it.bitis) + (sub && ht < 54 ? ' · ' + esc(sub) : '') + '</div>';
-        if (sub && ht >= 54) lines += '<div class="bs">' + esc(sub) + '</div>';
-        if (it.not && ht >= 50) lines += '<div class="bn">' + esc(it.not) + '</div>';
-      }
-      h += '<div class="blk ' + blkCls(t, it, now) + (ht < 36 ? ' pt' : '') + '" data-id="' + it.id + '" data-b="' + it.baslangic + '" data-e="' + it.bitis + '" style="top:' + top + 'px;height:' + ht + 'px' + pos + '" title="' +
-        esc(it.baslik + ' · ' + hm(it.baslangic) + (dur ? '–' + hm(it.bitis) : '') + (sub ? ' · ' + sub : '') + (it.not ? '\n' + it.not : '')) + '">' + lines +
-        (dur > 0 ? '<div class="rs"></div>' : '') + '</div>';
-    });
-    ajFor(t).forEach(function (e) {
-      if (e.time == null) return;
-      h += '<a class="aj-chip' + (e.done ? ' done' : '') + '" href="' + AJ_URL + '" target="_blank" rel="noopener" style="top:' + ((e.time - s0) / 60 * HOUR) + 'px;--c:' + e.color + '" title="' + esc('Ajanda · ' + hm(e.time) + ' ' + e.text + (e.note ? '\n' + e.note : '')) + '">' +
-        '<span class="bm">' + hm(e.time) + '</span> ' + esc(e.text) + '</a>';
-    });
-    if (t === td && now >= s0 && now <= e0) h += '<div class="nowline" style="top:' + ((now - s0) / 60 * HOUR) + 'px"></div>';
-    h += '</div>';
-  });
+  h += '</div><div class="wk-body" style="height:' + H + 'px">' + rulerHtml(s0, e0);
+  days.forEach(function (t) { h += colHtml(t, s0, e0, now); });
   h += '</div></div></div></div><div class="legend">' +
     ['spor', 'is', 'yuruyus', 'ogun', 'almanca', 'diger'].map(function (k) { return '<span><i class="lg-k k-' + k + '"></i>' + KAT[k] + '</span>'; }).join('') +
     '<span><i class="lg-aj"></i>Ajanda</span><span class="sep"></span>' +
     '<span><i class="lg-done"></i>Tamamlandı</span><span><i class="lg-now"></i>Şimdi</span><span><i class="lg-chg"></i>Kaydırıldı / kısaltıldı</span>' +
-    '<span><i class="lg-none"></i>Plan yok</span><span><i class="lg-empty"></i>Boş gün</span></div>';
+    '<span><i class="lg-none"></i>Plan yok</span><span><i class="lg-trav"></i>Seyahat</span><span><i class="lg-empty"></i>Boş gün</span></div>';
   return h;
+}
+/* ================= takvimden planla ================= */
+var BRUSH = [['normal', 'Normal gün'], ['disarida', 'Dışarıdayım'], ['seyahat', 'Seyahat'], ['bos', 'Boş gün'], ['sil', 'Planı sil']];
+function brushBar() {
+  var lbl = ''; BRUSH.forEach(function (b) { if (b[0] === V.brush) lbl = b[1]; });
+  return '<div class="card brush' + (V.brush ? ' on' : '') + '"><div class="brush-h"><span class="lbl">TAKVİMDEN PLANLA</span><div class="pills">' +
+    BRUSH.map(function (b) { return '<button class="pill b-' + b[0] + (V.brush === b[0] ? ' sel' : '') + '" data-act="brush" data-v="' + b[0] + '">' + b[1] + '</button>'; }).join('') + '</div>' +
+    (V.brush ? '<button class="btn sm amber-b" data-act="brush" data-v="">Bitti</button>' : '') + '</div>' +
+    '<div class="note">' + (V.brush ? '"' + esc(lbl) + '" seçili: günlere dokun ya da üzerlerinden sürükle. Bitince "Bitti"ye bas.' :
+      'Bir gün tipi seç, sonra takvimde günlere dokun ya da üzerlerinden sürükle. İşaretlediğin işler korunur.') + '</div></div>';
+}
+function paintDay(t) {
+  var b = V.brush, g = G(t);
+  if (b === 'sil') {
+    if (!g) return false;
+    var keep = g.isler.filter(function (i) { return i.durum !== 'planli'; });
+    if (keep.length) { if (keep.length === g.isler.length) return false; g.isler = keep; }
+    else delete D.gunler[t];
+    return true;
+  }
+  if (g && g.tip === b) return false;
+  applyTpl(t, b, true);
+  return true;
 }
 
 /* ================= Ay ================= */
@@ -842,19 +909,20 @@ function vAy() {
   var h = '<div class="page-h"><h2>' + AY[mo] + ' ' + y + '</h2><div class="nav">' +
     '<button class="btn sm" data-act="prev" aria-label="Önceki ay">' + SVG_L + '</button><button class="btn sm" data-act="next" aria-label="Sonraki ay">' + SVG_R + '</button>' +
     '<button class="btn sm' + (V.ay === td.slice(0, 7) ? ' sel' : '') + '" data-act="gotoday">Bu ay</button></div></div>';
-  h += '<div class="month-w"><div class="card"><div class="mgrid">';
+  h += brushBar() + '<div class="month-w"><div class="card"><div class="mgrid brushable' + (V.brush ? ' painting' : '') + '">';
   GUN.forEach(function (gn) { h += '<div class="wd">' + gn.toUpperCase() + '</div>'; });
-  var cnt = { plan: 0, none: 0, empty: 0 }, unpl = [];
+  var cnt = { plan: 0, none: 0, empty: 0, trav: 0 }, unpl = [];
   for (var t = start; t <= end; t = addD(t, 1)) {
     var inM = t.slice(0, 7) === V.ay, g = G(t), k = kind(t), s = stats(g), st = '', br = '', aj = ajFor(t).length;
     if (inM && cnt[k] != null) cnt[k]++;
     if (inM && k === 'none' && t >= td) unpl.push(t);
     if (k === 'plan') {
-      if (t < td) { st = s.tamam + ' / ' + s.n; br = bar('m:' + t, s.tamam / s.n); }
-      else if (t === td) { st = s.tamam + ' / ' + s.n + ' tamam'; br = bar('m:' + t, s.tamam / s.n); }
+      if (t < td) { st = s.tamam + ' / ' + s.n; br = bar('m:' + t, s.n ? s.tamam / s.n : 1); }
+      else if (t === td) { st = s.tamam + ' / ' + s.n + ' tamam'; br = bar('m:' + t, s.n ? s.tamam / s.n : 1); }
       else { st = s.n + ' iş planlı'; br = bar('m:' + t, 0); }
     } else if (k === 'none') st = 'Plan yok';
     else if (k === 'empty') st = 'Boş gün';
+    else if (k === 'trav') st = 'Seyahat';
     h += '<div class="mcell ' + stCls(t) + (inM ? '' : ' out') + '" role="button" tabindex="0" data-act="openday" data-d="' + t + '"' + (s.chg ? ' title="' + s.chg + ' değişiklik"' : '') + '>' +
       '<div class="n"><span>' + pd(t).getDate() + '</span>' + (s.chg ? '<i class="ch"></i>' : '') + '</div>' +
       '<div class="tp">' + (g ? TIPK[g.tip] : '&nbsp;') + (aj ? ' · <span class="ajn">' + aj + ' ajanda</span>' : '') + '</div><div class="s">' + st + '</div>' + br + '</div>';
@@ -862,6 +930,7 @@ function vAy() {
   h += '</div></div><div class="card"><h3>Özet</h3><div style="margin-top:12px">' +
     '<div class="sum-row"><span class="k"><i class="st-plan"></i>Planlı gün</span><span class="v">' + cnt.plan + '</span></div>' +
     '<div class="sum-row"><span class="k"><i class="st-none"></i>Plan yok</span><span class="v">' + cnt.none + '</span></div>' +
+    '<div class="sum-row"><span class="k"><i class="st-trav"></i>Seyahat</span><span class="v">' + cnt.trav + '</span></div>' +
     '<div class="sum-row"><span class="k"><i class="st-empty"></i>Boş gün</span><span class="v">' + cnt.empty + '</span></div></div>' +
     '<div class="unpl"><div class="lbl" style="margin-bottom:8px">PLANSIZ GÜNLER</div>';
   if (!unpl.length) h += '<div class="note">Plansız gün yok.</div>';
@@ -871,18 +940,20 @@ function vAy() {
 
 /* ================= Yıl ================= */
 function yState(t) {
-  var td = today(), ex = D.ayarlar.sinavTarihi, g = G(t), k = kind(t), s = stats(g);
-  if (t === ex) return { c: 'y-exam', x: (D.ayarlar.sinavAdi || 'Sınav') + ' sınavı' };
-  var r;
-  if (k === 'plan') {
+  var td = today(), ex = D.ayarlar.sinavTarihi, g = G(t), k = kind(t), s = stats(g), r;
+  if (t === ex) r = { c: 'y-exam', x: (D.ayarlar.sinavAdi || 'Sınav') + ' sınavı' };
+  else if (k === 'plan') {
+    var tc = g.tip !== 'normal' ? ' y-' + g.tip : '';
     if (t <= td) {
-      var q = s.tamam / s.n;
-      r = q >= 1 ? { c: 'y-all', x: 'Hepsi tamam' } : q >= 0.6 ? { c: 'y-most', x: 'Çoğu tamam' } : q > 0 ? { c: 'y-part', x: 'Kısmen' } : { c: t < td ? 'y-skip' : 'y-fut', x: t < td ? 'Yapılmadı' : 'Planlı' };
-      r.x += ' · ' + s.tamam + ' / ' + s.n;
-    } else r = { c: 'y-fut', x: 'Planlı · ' + s.n + ' iş' };
-  } else if (k === 'empty') r = { c: 'y-empty', x: 'Boş gün' };
-  else if (k === 'none') r = dd(td, t) <= 13 ? { c: 'y-none', x: 'Plan yok' } : { c: 'y-empty', x: 'İleri tarih' };
-  else r = { c: 'y-empty', x: '' };
+      var q = s.n ? s.tamam / s.n : 1;
+      r = q >= 1 ? { c: 'y-all', x: 'Hepsi tamam' } : q >= 0.6 ? { c: 'y-most', x: 'Çoğu tamam' } : q > 0 ? { c: 'y-part', x: 'Kısmen' } :
+        { c: t < td ? 'y-skip' : 'y-fut' + tc, x: t < td ? 'Yapılmadı' : 'Planlı' };
+      r.x = TIP[g.tip] + ' · ' + r.x + ' · ' + s.tamam + ' / ' + s.n;
+    } else r = { c: 'y-fut' + tc, x: TIP[g.tip] + ' · ' + s.n + ' iş' };
+  } else if (k === 'trav') r = { c: 'y-seyahat', x: 'Seyahat' };
+  else if (k === 'empty') r = { c: 'y-empty', x: 'Boş gün' };
+  else if (k === 'none') r = dd(td, t) <= 13 ? { c: 'y-none', x: 'Plan yok' } : { c: 'y-free', x: 'Plan yok' };
+  else r = { c: 'y-before', x: 'Başlangıçtan önce' };
   if (s.chg) r.x += ' · ' + s.chg + ' değişiklik';
   if (t === td) { r.c += ' y-today'; r.x = 'Bugün · ' + r.x; }
   return r;
@@ -890,32 +961,32 @@ function yState(t) {
 function vYil() {
   var td = today(), ex = D.ayarlar.sinavTarihi, bs = D.baslangic;
   if (!isDate(ex) || ex < bs) ex = addD(bs, 300);
-  var s0 = monday(bs), weeks = Math.floor(dd(s0, monday(ex)) / 7) + 1;
-  var h = '<div class="page-h"><h2>' + esc(fmtD(bs)) + ' → ' + esc(fmtD(ex)) + '</h2><span class="mono">' + esc(D.ayarlar.sinavAdi || '') + '</span></div>';
-  h += '<div class="ygrid-w"><div class="ygrid" style="grid-template-columns:32px repeat(' + weeks + ',minmax(0,22px))">';
-  h += '<div></div>';
-  ['Pzt', '', 'Çar', '', 'Cum', '', 'Paz'].forEach(function (l) { h += '<div class="rl">' + l + '</div>'; });
-  var lastM = -1;
-  for (var w = 0; w < weeks; w++) {
-    var wk = addD(s0, w * 7), ml = '';
-    for (var i = 0; i < 7; i++) { var di = addD(wk, i), dm = pd(di); if (di > ex) break; if ((dm.getDate() === 1 && di >= bs) || w === 0) { if (dm.getMonth() !== lastM) { ml = AYK[dm.getMonth()]; lastM = dm.getMonth(); } break; } }
-    h += '<div class="ml">' + ml + '</div>';
-    for (i = 0; i < 7; i++) {
-      var t = addD(wk, i);
-      if (t < bs || t > ex) { h += '<span class="sq y-blank"></span>'; continue; }
+  var h = '<div class="page-h"><h2>Yıl</h2><span class="muted">' + esc(fmtD(bs)) + ' → ' + esc(fmtD(ex)) + ' · ' + esc(D.ayarlar.sinavAdi || '') + '</span></div>';
+  h += brushBar() + '<div class="ymonths brushable' + (V.brush ? ' painting' : '') + '">';
+  var m = pd(bs), endM = pd(ex);
+  m = new Date(m.getFullYear(), m.getMonth(), 1);
+  while (m <= endM) {
+    var y = m.getFullYear(), mo = m.getMonth(), first = ds(m), last = ds(new Date(y, mo + 1, 0));
+    h += '<div class="ymon' + (td.slice(0, 7) === first.slice(0, 7) ? ' cur' : '') + '"><div class="ymh">' + AY[mo] + ' <span>' + y + '</span></div><div class="ymg">';
+    GUN.forEach(function (g) { h += '<span class="ywd">' + g.charAt(0) + '</span>'; });
+    for (var i = 0; i < dow(first); i++) h += '<span></span>';
+    for (var t = first; t <= last; t = addD(t, 1)) {
       var st = yState(t);
-      h += '<button class="sq ' + st.c + '" data-act="openday" data-d="' + t + '" data-tip="' + esc(st.x) + '" aria-label="' + esc(fmtD(t) + ' · ' + st.x) + '"></button>';
+      h += '<button class="yd ' + st.c + '" data-act="openday" data-d="' + t + '" data-tip="' + esc(st.x) + '" aria-label="' + esc(fmtD(t) + ' · ' + st.x) + '">' + pd(t).getDate() + '</button>';
     }
+    h += '</div></div>';
+    m = new Date(y, mo + 1, 1);
   }
   h += '</div><div class="ylegend">' +
-    '<span><i class="sq y-all"></i>Hepsi tamam</span><span><i class="sq y-most"></i>Çoğu</span><span><i class="sq y-part"></i>Kısmen</span>' +
-    '<span><i class="sq y-skip"></i>Yapılmadı</span><span><i class="sq y-today"></i>Bugün</span><span><i class="sq y-fut"></i>Planlı</span>' +
-    '<span><i class="sq y-none"></i>Plan yok</span><span><i class="sq y-empty"></i>Boş gün / ileri tarih</span><span><i class="sq y-exam"></i>Sınav günü</span></div></div>';
+    '<span><i class="yd y-all"></i>Hepsi tamam</span><span><i class="yd y-most"></i>Çoğu</span><span><i class="yd y-part"></i>Kısmen</span><span><i class="yd y-skip"></i>Yapılmadı</span>' +
+    '<span><i class="yd y-today"></i>Bugün</span><span><i class="yd y-fut"></i>Normal gün</span><span><i class="yd y-fut y-disarida"></i>Dışarıdayım</span>' +
+    '<span><i class="yd y-seyahat"></i>Seyahat</span><span><i class="yd y-empty"></i>Boş gün</span><span><i class="yd y-none"></i>Plan yok</span><span><i class="yd y-exam"></i>Sınav</span></div>';
+  var s0 = monday(bs), weeks = Math.floor(dd(s0, monday(ex)) / 7) + 1;
   var cur = clamp(Math.floor(dd(s0, monday(td)) / 7) + 1, 1, weeks), left = Math.max(0, dd(td, ex));
   var Y = 0, X = 0;
   for (var t2 in D.gunler) {
     if (t2 >= td || t2 < bs || kind(t2) !== 'plan') continue;
-    var s = stats(D.gunler[t2]); Y++; if (s.tamam === s.n) X++;
+    var s = stats(D.gunler[t2]); if (!s.n) continue; Y++; if (s.tamam === s.n) X++;
   }
   h += '<div class="ycards">' +
     '<div class="card"><div class="lbl">HAFTA</div><div class="big" style="margin-top:10px">' + cur + ' <small>/ ' + weeks + '</small></div>' + bar('y:w', cur / weeks) + '</div>' +
@@ -923,7 +994,6 @@ function vYil() {
     '<div class="card"><div class="lbl">PLANLI GÜNLERDE HEPSİ TAMAM</div><div class="big" style="margin-top:10px">' + X + ' <small>/ ' + Y + '</small></div>' + bar('y:a', Y ? X / Y : 0) + '</div></div>';
   return h;
 }
-
 /* ================= Ayarlar ================= */
 function katOpts(sel) { var h = ''; for (var k in KAT) h += '<option value="' + k + '"' + (k === sel ? ' selected' : '') + '>' + KAT[k] + '</option>'; return h; }
 function vAyarlar() {
@@ -979,6 +1049,7 @@ function render(anim) {
 function go(tab) {
   if (tab === V.tab) return;
   closePop(); V.stepEdit = false; setMsg = null;
+  if (tab !== 'ay' && tab !== 'yil') V.brush = null;
   V.tab = tab; render(true); window.scrollTo(0, 0);
 }
 function openDay(t) {
@@ -1037,10 +1108,11 @@ function edHtml() {
     '<div class="katsel">' + Object.keys(KAT).map(function (k) {
       return '<button class="kpill k-' + k + (it.kategori === k ? ' sel' : '') + '" data-act="edkat" data-k="' + k + '">' + dot(k) + KAT[k] + '</button>';
     }).join('') + '</div>' +
+    (P.fresh ? '' : '<div class="lbl" style="margin:0 0 6px">DURUM</div>' + durumBtns(it)) +
     '<div class="ed-grid">' +
     '<span class="lbl">GÜN</span><div class="stp"><button class="sb" data-act="edday" data-v="-1" aria-label="Önceki gün">' + SVG_L + '</button><span class="mono val">' + esc(fmtDs(t)) + '</span><button class="sb" data-act="edday" data-v="1" aria-label="Sonraki gün">' + SVG_R + '</button></div>' +
     '<span class="lbl">BAŞLANGIÇ</span><div class="stp"><button class="sb" data-act="edstart" data-v="-15" aria-label="15 dk erken">' + SVG_MINUS + '</button><input class="inp t" data-ed="b" value="' + hm(it.baslangic) + '" maxlength="5" aria-label="Başlangıç"><button class="sb" data-act="edstart" data-v="15" aria-label="15 dk geç">' + SVG_PLUS + '</button></div>' +
-    '<span class="lbl">SÜRE</span><div class="stp"><button class="sb" data-act="eddur" data-v="-15" aria-label="15 dk kısalt"' + (dur <= 0 ? ' disabled' : '') + '>' + SVG_MINUS + '</button><span class="mono val">' + (dur ? durStr(dur) : '—') + '</span><button class="sb" data-act="eddur" data-v="15" aria-label="15 dk uzat">' + SVG_PLUS + '</button><span class="mono muted">' + (dur ? '→ ' + hm(it.bitis) : '') + '</span></div>' +
+    '<span class="lbl">BİTİŞ</span><div class="stp"><button class="sb" data-act="eddur" data-v="-15" aria-label="15 dk erken bitir"' + (dur <= 0 ? ' disabled' : '') + '>' + SVG_MINUS + '</button><input class="inp t" data-ed="e" value="' + hm(it.bitis) + '" maxlength="5" aria-label="Bitiş"><button class="sb" data-act="eddur" data-v="15" aria-label="15 dk geç bitir">' + SVG_PLUS + '</button><span class="mono muted">' + (dur ? durStr(dur) : '') + '</span></div>' +
     '</div><div class="chips">' + DURS.map(function (m) { return '<button class="chip' + (dur === m ? ' sel' : '') + '" data-act="eddurset" data-v="' + m + '">' + durStr(m) + '</button>'; }).join('') + '</div>' +
     '<label class="chk-l"><input type="checkbox" data-act="kaydir"' + (D.ayarlar.kaydir ? ' checked' : '') + '> Uzayınca sonraki işleri de kaydır</label>' +
     '<div class="lbl" style="margin-top:12px">NOT</div>' +
@@ -1061,6 +1133,27 @@ function edHtml() {
     (!it.gitti && !P.fresh ? '<button class="btn sm" data-act="poptoggle">' + (it.durum === 'tamam' ? 'İşareti kaldır' : 'Tamam') + '</button>' : '') +
     '<button class="btn sm amber-b" data-act="popdone">Kapat</button></div></div>';
   return h;
+}
+function durumBtns(it) {
+  return '<div class="dsel">' + ['tamam', 'yapilmadi', 'gereksiz', 'planli'].map(function (k) {
+    return '<button class="dbtn d-' + k + (it.durum === k ? ' sel' : '') + '" data-act="setdurum" data-v="' + k + '">' + DURUM[k] + '</button>';
+  }).join('') + '</div>';
+}
+function durumHtml() {
+  var it = findIt(P.t, P.id); if (!it) return '';
+  return '<div class="pop-h"><div class="lbl" style="margin:0 0 4px">DURUM</div><div class="t">' + esc(it.baslik) + '</div><div class="mono muted">' +
+    esc(fmtDs(P.t)) + ' · ' + hm(it.baslangic) + (it.bitis > it.baslangic ? '–' + hm(it.bitis) : '') + '</div></div>' + durumBtns(it) +
+    '<div class="lbl" style="margin-top:14px">NEDEN / NOT</div><input class="inp" style="width:100%" data-ed="sebep" value="' + esc(it.sebep || '') + '" placeholder="İsteğe bağlı: neden olmadı?" aria-label="Neden">' +
+    '<div class="foot"><button class="btn sm ghost" data-act="pop2edit">Saati ya da adı değiştir</button><button class="btn sm amber-b" data-act="popdone">Kapat</button></div>';
+}
+function openDurum(t, id, rect) {
+  var el = openPop('', rect, { kind: 'durum', t: t, id: id, dirty: true });
+  el.innerHTML = durumHtml(); placePop(el, rect);
+}
+function popRefresh() {
+  if (!P) return;
+  if (P.kind === 'edit') edRefresh();
+  else if (P.kind === 'durum') { P.el.innerHTML = durumHtml(); placePop(P.el, P.rect); }
 }
 function openEdit(t, id, rect, fresh) {
   var it = findIt(t, id); if (!it) return;
@@ -1111,15 +1204,20 @@ function act(el, e) {
   var a = el.dataset.act, d = el.dataset.d, id = el.dataset.id;
   switch (a) {
     case 'tab': go(el.dataset.v); break;
-    case 'openday': openDay(d); break;
+    case 'openday': if (V.brush && (V.tab === 'ay' || V.tab === 'yil')) break; openDay(d); break;
     case 'gotoday': goToday(); break;
     case 'prev': shift(-1); break;
     case 'next': shift(1); break;
     case 'planla': e.stopPropagation(); openTpl(d, el.getBoundingClientRect()); break;
     case 'tpl': applyTpl(d, el.dataset.tip); render(); break;
     case 'poptpl': var pt = P.t; closePop(); applyTpl(pt, el.dataset.tip); render(); break;
-    case 'toggle': toggle(V.gun, id); break;
+    case 'toggle': toggle(d || V.gun, id); break;
     case 'edit': var row = el.closest('.row') || el; openEdit(d || V.gun, id, row.getBoundingClientRect()); break;
+    case 'durum': var rw = el.closest('.row') || el; openDurum(d || V.gun, id, rw.getBoundingClientRect()); break;
+    case 'setdurum': var pp = P; pp.dirty = true; setDurum(pp.t, pp.id, el.dataset.v); if (P === pp) popRefresh(); break;
+    case 'pop2edit': var p2 = P; closePop(); openEdit(p2.t, p2.id, p2.rect); break;
+    case 'gorunum': D.ayarlar.gorunum = el.dataset.v; save(); render(); break;
+    case 'brush': V.brush = el.dataset.v || null; render(); break;
     case 'add': addNew(d || V.gun); break;
     case 'neden':
       P.neden = P.neden === el.dataset.v ? null : el.dataset.v;
@@ -1219,7 +1317,7 @@ document.addEventListener('keydown', function (e) {
     return;
   }
   if (e.key === 'Enter') {
-    if (tg.dataset && (tg.dataset.ed === 'name' || tg.dataset.ed === 'b')) { e.preventDefault(); tg.blur(); return; }
+    if (tg.dataset && (tg.dataset.ed === 'name' || tg.dataset.ed === 'b' || tg.dataset.ed === 'e' || tg.dataset.ed === 'sebep')) { e.preventDefault(); tg.blur(); return; }
     if (tg.id === 'stepInp') { e.preventDefault(); V.stepEdit = false; render(); return; }
     if (tg.dataset && (tg.dataset.act === 'mankonu' || tg.dataset.rt)) { tg.blur(); return; }
     if (tg.dataset && tg.dataset.act && tg.getAttribute('role') === 'button') { e.preventDefault(); act(tg, e); return; }
@@ -1249,16 +1347,23 @@ document.addEventListener('input', function (e) {
     if (n >= 0) D.adim[V.gun] = n; else if (!el.value.trim()) delete D.adim[V.gun];
     save(); return;
   }
-  if (P && P.kind === 'edit' && el.dataset.ed) {
+  if (P && el.dataset.ed) {
     var it = findIt(P.t, P.id); if (!it) return;
     if (el.dataset.ed === 'name') { var v2 = el.value.trim(); if (v2) { it.baslik = v2; P.dirty = true; save(); render(); } }
     else if (el.dataset.ed === 'not') { var v3 = el.value.trim(); if (v3) it.not = v3; else delete it.not; P.dirty = true; save(); render(); }
+    else if (el.dataset.ed === 'sebep') { var v4 = el.value.trim(); if (v4) it.sebep = v4; else delete it.sebep; P.dirty = true; save(); render(); }
   }
 });
 document.addEventListener('change', function (e) {
   var el = e.target;
   if (el.id === 'impFile' && el.files && el.files[0]) { importJSON(el.files[0]); el.value = ''; return; }
   if (el.dataset.act === 'kaydir') { D.ayarlar.kaydir = el.checked; save(); return; }
+  if (P && P.kind === 'edit' && el.dataset.ed === 'e') {
+    var m1 = parseHM(el.value), it1 = findIt(P.t, P.id);
+    if (m1 == null || !it1 || m1 < it1.baslangic) { el.classList.add('bad'); return; }
+    edChange(function (x) { x.bitis = m1; });
+    return;
+  }
   if (P && P.kind === 'edit' && el.dataset.ed === 'b') {
     var m0 = parseHM(el.value);
     if (m0 == null) { el.classList.add('bad'); return; }
@@ -1301,7 +1406,7 @@ document.addEventListener('change', function (e) {
 /* ---------- yıl ipucu ---------- */
 var tipEl = null;
 document.addEventListener('mouseover', function (e) {
-  var sq = e.target.closest && e.target.closest('.ygrid .sq[data-d]');
+  var sq = e.target.closest && e.target.closest('.yd[data-d]');
   if (!sq) { if (tipEl) tipEl.style.display = 'none'; return; }
   if (!tipEl) { tipEl = document.createElement('div'); tipEl.className = 'ytip'; document.body.appendChild(tipEl); }
   tipEl.innerHTML = '<b>' + esc(fmtD(sq.dataset.d)) + '</b> · ' + esc(sq.dataset.tip);
@@ -1310,82 +1415,114 @@ document.addEventListener('mouseover', function (e) {
   tipEl.style.transform = 'translate(' + clamp(r.left + r.width / 2 - w / 2, 8, window.innerWidth - w - 8) + 'px,' + (r.top - tipEl.offsetHeight - 8) + 'px)';
 });
 
-/* ---------- hafta: sürükle / boyutlandır ---------- */
-var DR = null;
+/* ---------- hafta ve günlük çizelge: sürükle / boyutlandır ----------
+   Fare: hemen. Dokunmatik: bloğa ~0,3 sn basılı tut, sonra sürükle (kısa dokunuş düzenleyiciyi açar, kaydırma bozulmaz).
+   Gövde: saati kaydır (haftada başka güne de) · üst kenar: başlangıç · alt kenar: bitiş. 15 dk adım. */
+var DR = null, NOCLICK = 0;
+/* bloğa dokununca pencere parmağın altında açılır; aynı dokunuşun "tık"ı penceredeki bir düğmeye basmasın */
+document.addEventListener('click', function (e) {
+  if (Date.now() - NOCLICK < 600) { NOCLICK = 0; e.preventDefault(); e.stopPropagation(); }
+}, true);
 document.addEventListener('pointerdown', function (e) {
   var el = e.target.closest && e.target.closest('.blk');
-  if (!el || e.button !== 0 || V.tab !== 'hafta') return;
-  if (e.pointerType === 'touch' && !e.target.classList.contains('rs')) { DR = { tap: true, el: el, t: el.parentElement.dataset.day, id: el.dataset.id, x0: e.clientX, y0: e.clientY }; return; }
-  e.preventDefault();
-  var col = el.parentElement, cols = $$('.wk-col'), ci = cols.indexOf(col);
+  if (!el || e.button !== 0 || !el.parentElement.classList.contains('wk-col')) return;
+  var col = el.parentElement, cols = $$('.wk-col'), ci = cols.indexOf(col), cl = e.target.classList;
   DR = {
-    el: el, col: col, id: el.dataset.id, t: col.dataset.day, ci: ci, colW: col.getBoundingClientRect().width,
-    x0: e.clientX, y0: e.clientY, mode: e.target.classList.contains('rs') ? 'rs' : 'mv', started: false,
-    b: +el.dataset.b, e: +el.dataset.e, dMin: 0, dCol: 0, nd: +el.dataset.e - +el.dataset.b
+    el: el, col: col, id: el.dataset.id, t: col.dataset.day, ci: ci, nc: cols.length, colW: col.getBoundingClientRect().width,
+    x0: e.clientX, y0: e.clientY, mode: cl.contains('rs') ? 'rs' : cl.contains('rtop') ? 'rt' : 'mv', started: false,
+    touch: e.pointerType === 'touch', armed: e.pointerType !== 'touch',
+    b: +el.dataset.b, e: +el.dataset.e, dMin: 0, dCol: 0, nd: +el.dataset.e - +el.dataset.b, ns: +el.dataset.b
   };
-  try { el.setPointerCapture(e.pointerId); } catch (er) { }
+  if (DR.touch) {
+    var d0 = DR;
+    d0.lp = setTimeout(function () {
+      if (DR !== d0) return;
+      d0.armed = true; d0.el.classList.add('armed');
+      try { if (navigator.vibrate) navigator.vibrate(12); } catch (er) { }
+    }, 300);
+  } else {
+    e.preventDefault();
+    try { el.setPointerCapture(e.pointerId); } catch (er) { }
+  }
 });
+document.addEventListener('touchmove', function (e) { if (DR && DR.armed) e.preventDefault(); }, { passive: false });
+document.addEventListener('contextmenu', function (e) { if (e.target.closest && e.target.closest('.blk')) e.preventDefault(); });
 document.addEventListener('pointermove', function (e) {
-  if (!DR || DR.tap) return;
+  if (!DR) return;
   var dx = e.clientX - DR.x0, dy = e.clientY - DR.y0;
+  if (!DR.armed) { if (Math.abs(dx) > 8 || Math.abs(dy) > 8) { clearTimeout(DR.lp); DR = null; } return; }
   if (!DR.started) {
     if (Math.abs(dx) < 4 && Math.abs(dy) < 4) return;
     DR.started = true; closePop();
     DR.el.classList.add('dragging');
     DR.tip = document.createElement('div'); DR.tip.className = 'drag-tip'; document.body.appendChild(DR.tip);
-    if (DR.mode === 'rs') {
+    if (DR.mode !== 'mv') {
       DR.ghost = document.createElement('div'); DR.ghost.className = 'rs-ghost'; DR.ghost.style.top = DR.el.style.top;
       DR.col.appendChild(DR.ghost);
     }
   }
-  var txt;
+  var txt, step = Math.round(dy / STEP) * 15;
   if (DR.mode === 'mv') {
-    var dMin = clamp(Math.round(dy / STEP) * 15, -DR.b, 1440 - DR.e);
-    var dCol = clamp(Math.round(dx / DR.colW), -DR.ci, 6 - DR.ci);
+    var dMin = clamp(step, -DR.b, 1440 - DR.e);
+    var dCol = clamp(Math.round(dx / DR.colW), -DR.ci, DR.nc - 1 - DR.ci);
     DR.dMin = dMin; DR.dCol = dCol;
     DR.el.style.transform = 'translate(' + (dCol * DR.colW) + 'px,' + (dMin / 60 * HOUR) + 'px)';
-    txt = fmtDs(GRID.days[DR.ci + dCol]) + ' · ' + hm(DR.b + dMin) + (DR.e > DR.b ? '–' + hm(DR.e + dMin) : '');
-  } else {
-    var nd = clamp((DR.e - DR.b) + Math.round(dy / STEP) * 15, 15, 1440 - DR.b);
+    txt = (DR.nc > 1 ? fmtDs(GRID.days[DR.ci + dCol]) + ' · ' : '') + hm(DR.b + dMin) + (DR.e > DR.b ? '–' + hm(DR.e + dMin) : '');
+  } else if (DR.mode === 'rs') {
+    var nd = clamp((DR.e - DR.b) + step, 15, 1440 - DR.b);
     DR.nd = nd;
     DR.ghost.style.transform = 'scaleY(' + (nd / 60) + ')';
     txt = hm(DR.b) + '–' + hm(DR.b + nd) + ' · ' + durStr(nd);
+  } else {
+    var ns = clamp(DR.b + step, 0, DR.e - 15);
+    DR.ns = ns;
+    DR.ghost.style.transform = 'translateY(' + ((ns - DR.b) / 60 * HOUR) + 'px) scaleY(' + ((DR.e - ns) / 60) + ')';
+    txt = hm(ns) + '–' + hm(DR.e) + ' · ' + durStr(DR.e - ns);
   }
   if (txt !== DR.txt) { DR.tip.textContent = txt; DR.txt = txt; }
-  DR.tip.style.transform = 'translate(' + (e.clientX + 14) + 'px,' + (e.clientY + 16) + 'px)';
+  DR.tip.style.transform = 'translate(' + (e.clientX + 14) + 'px,' + (e.clientY - (DR.touch ? 56 : -16)) + 'px)';
 });
 function endDrag(e, cancel) {
   if (!DR) return;
   var d = DR; DR = null;
-  if (d.tap) { if (!cancel && Math.abs(e.clientX - d.x0) < 8 && Math.abs(e.clientY - d.y0) < 8) openEdit(d.t, d.id, d.el.getBoundingClientRect()); return; }
+  clearTimeout(d.lp);
+  d.el.classList.remove('armed');
   if (d.tip) d.tip.remove();
   if (d.ghost) d.ghost.remove();
-  if (!d.started) { if (!cancel) openEdit(d.t, d.id, d.el.getBoundingClientRect()); return; }
+  if (!d.started) { if (!cancel) { NOCLICK = Date.now(); openEdit(d.t, d.id, d.el.getBoundingClientRect()); } return; }
   if (cancel) { render(); return; }
   var it = findIt(d.t, d.id); if (!it) { render(); return; }
-  var past = d.t <= today();
+  var past = d.t <= today(), s0 = it.baslangic, e0 = it.bitis, same = true;
   if (d.mode === 'mv') {
-    if (d.dMin || d.dCol) {
-      var t2 = GRID.days[d.ci + d.dCol];
-      if (past && d.dCol === 0) { keepOrig(it); it.degisiklik = 'tasindi'; }
-      it.baslangic = d.b + d.dMin; it.bitis = d.e + d.dMin;
-      if (t2 !== d.t) {
-        var g = G(d.t); g.isler = g.isler.filter(function (i) { return i.id !== it.id; });
-        delete it.orj; if (past) it.degisiklik = 'tasindi';
-        var g2 = ensureDay(t2); g2.isler.push(it); sortI(g2.isler);
-      } else sortI(G(d.t).isler);
-      save();
+    if (!d.dMin && !d.dCol) { render(); return; }
+    var t2 = GRID.days[d.ci + d.dCol];
+    if (past && d.dCol === 0) { keepOrig(it); it.degisiklik = 'tasindi'; }
+    it.baslangic = d.b + d.dMin; it.bitis = d.e + d.dMin;
+    if (t2 !== d.t) {
+      same = false;
+      var g = G(d.t); g.isler = g.isler.filter(function (i) { return i.id !== it.id; });
+      delete it.orj; if (past) it.degisiklik = 'tasindi';
+      var g2 = ensureDay(t2); g2.isler.push(it); sortI(g2.isler);
     }
-  } else if (d.nd !== d.e - d.b) {
+  } else if (d.mode === 'rs') {
+    if (d.nd === d.e - d.b) { render(); return; }
     if (past && d.nd < d.e - d.b) { keepOrig(it); it.degisiklik = 'kisaltildi'; }
-    it.bitis = it.baslangic + d.nd; save();
+    it.bitis = it.baslangic + d.nd;
+  } else {
+    if (d.ns === d.b) { render(); return; }
+    if (past && d.ns > d.b) { keepOrig(it); it.degisiklik = 'kisaltildi'; }
+    it.baslangic = d.ns;
   }
-  render();
+  if (same) {
+    var gl = G(d.t).isler;
+    if (D.ayarlar.kaydir && (it.bitis > e0 || it.baslangic > s0)) ripple(gl, it);
+    sortI(gl);
+  }
+  save(); render();
 }
 document.addEventListener('pointerup', function (e) { endDrag(e, false); });
 document.addEventListener('pointercancel', function (e) { endDrag(e, true); });
 document.addEventListener('dblclick', function (e) {
-  if (V.tab !== 'hafta') return;
   var col = e.target.closest && e.target.closest('.wk-col');
   if (!col || e.target.closest('.blk') || e.target.closest('button') || e.target.closest('a')) return;
   var r = col.getBoundingClientRect(), m = clamp(GRID.s0 + Math.floor((e.clientY - r.top) / STEP) * 15, 0, 1410), t = col.dataset.day;
@@ -1394,8 +1531,24 @@ document.addEventListener('dblclick', function (e) {
   openEdit(t, it.id, { left: e.clientX, right: e.clientX, top: e.clientY, bottom: e.clientY }, true);
 });
 
+/* ---------- takvimden planla: dokun ya da sürükle ---------- */
+var PAINT = null;
+function paintAt(t) { if (!PAINT || PAINT[t]) return; PAINT[t] = 1; if (paintDay(t)) { save(); render(); } }
+document.addEventListener('pointerdown', function (e) {
+  if (!V.brush || (V.tab !== 'ay' && V.tab !== 'yil')) return;
+  var c = e.target.closest && e.target.closest('.brushable [data-d]'); if (!c) return;
+  e.preventDefault(); PAINT = {}; paintAt(c.dataset.d);
+});
+document.addEventListener('pointermove', function (e) {
+  if (!PAINT) return;
+  var el = document.elementFromPoint(e.clientX, e.clientY), c = el && el.closest && el.closest('.brushable [data-d]');
+  if (c) paintAt(c.dataset.d);
+});
+document.addEventListener('pointerup', function () { PAINT = null; });
+document.addEventListener('pointercancel', function () { PAINT = null; });
+
 /* ---------- saat ve diğer uygulamalardaki değişiklikler ---------- */
-function busy() { return !!(DR || P || V.stepEdit || inField(document.activeElement)); }
+function busy() { return !!(DR || P || PAINT || V.stepEdit || inField(document.activeElement)); }
 function tick() {
   var m = nowMin(), td = today();
   if (m === LASTMIN && td === LASTDAY) return;
