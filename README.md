@@ -1,7 +1,7 @@
 # Gün — gün planlayıcı
 
 Tek kişilik gün planlayıcı. Tasarım Ajanda'nın diliyle: kâğıt zemin, büyük başlık, altta dört sekme, düzenleme
-alttan açılan sayfada, her değişiklikten sonra **Geri al**. Telefonda ve bilgisayarda aynı tek sütun.
+alttan açılan sayfada, her değişiklikten sonra **Geri al**. Bilgisayarda ayrı, geniş bir düzen açılır (aşağıda).
 
 Adres: **https://yurugagarin.github.io/hisse-analiz/**
 
