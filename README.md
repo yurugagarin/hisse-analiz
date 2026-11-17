@@ -7,7 +7,19 @@ Adres: **https://yurugagarin.github.io/hisse-analiz/**
 
 Saf HTML + CSS + JavaScript (`index.html`, `style.css`, `app.js`); derleme yok, sunucu yok.
 
-## Sekmeler
+## Bilgisayarda (1100 px ve üstü): ayrı, verim odaklı düzen
+
+Telefon görünümünün büyütülmüşü değil; Ajanda'nın bilgisayar renkleriyle ayrı bir ekran. Pencere açılmaz, her şey aynı anda görünür.
+
+- **Gün**: solda Şimdi kartı, Bu akşam listesi, adım / tamam / uyku · ortada günün saat çizelgesi · sağda sabit
+  düzenleme paneli. Üstte haftanın 7 günü (ilerlemeleriyle). Bloğu sürükle = saati kaydır; üst / alt kenarı çek =
+  başlangıç / bitiş; köşedeki daire = tamam; bloğa tıkla = sağ panelde düzenle; boş yere çift tık = yeni iş.
+- **Hafta**: 7 günlük saat çizelgesi; bloklar günler arasında da sürüklenir. Sağda hafta özeti.
+- **Takvim**: 4 sütunlu yıl ya da ayrıntılı ay (gün tipi, ilerleme, FORM programı, ajanda kayıtları). Sağ panelden
+  gün tipi seç, günlere tıkla ya da üzerlerinden sürükle.
+- **Düzen**: 4 gün tipi yan yana; işe tıkla, sağ panelde saatini, süresini ve hangi tiplerde olduğunu değiştir.
+
+## Telefonda: sekmeler
 
 - **Bugün** — en üstte koyu **Şimdi** kartı: ne yapıyorsun, kaç dakika kaldı, ne zaman bitiyor, ne çalışacaksın
   (not, WORT konusu, FORM programı). **Bitti · +15 dk · Değiştir**. Altında **Sonra** ve gün **Sabah / Öğleden sonra / Bu akşam**
