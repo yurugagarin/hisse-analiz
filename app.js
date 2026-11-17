@@ -101,7 +101,7 @@ function blank() {
   return {
     v: 1, m2: 1, baslangic: today(), gunler: {}, adim: {}, almanca: {},
     sablonlar: defTemplates(),
-    ayarlar: { adimHedef: 10000, sinavAdi: 'Goethe B1', sinavTarihi: '2027-09-30', kaydir: true, gorunum: 'liste' },
+    ayarlar: { adimHedef: 10000, sinavAdi: 'Goethe B1', sinavTarihi: '2027-09-30', kaydir: true, gorunum: 'liste', tipNot: {} },
     wortAdlar: null, formAdlar: null
   };
 }
@@ -194,6 +194,7 @@ function mkItem(x) {
   if (x.asgari) it.asgari = x.asgari;
   if (x.disarida) it.disarida = true;
   if (x.not) it.not = x.not;
+  if (x.elle) it.elle = true;
   return it;
 }
 function findIt(t, id) { var g = G(t); if (!g) return null; for (var i = 0; i < g.isler.length; i++) if (g.isler[i].id === id) return g.isler[i]; return null; }
@@ -203,8 +204,12 @@ function untouched(i) { return !i.gitti && !i.kaynak && i.durum === 'planli' && 
 /* şablon uygula: işaretlenmiş (tamam/atlandı), notlu ve başka günden gelen işler korunur */
 function applyTpl(t, tip, quiet) {
   var g = G(t);
-  var keep = g ? g.isler.filter(function (i) { return i.durum !== 'planli' || i.kaynak || i.gitti || i.not; }) : [];
+  var keep = g ? g.isler.filter(function (i) { return i.durum !== 'planli' || i.kaynak || i.gitti || i.not || i.elle; }) : [];
   var titles = {}; keep.forEach(function (i) { titles[i.baslik] = 1; });
+  /* korunan ama elle değiştirilmemiş işler yeni tipin saatine uyar (notu ve işareti kalır) */
+  (D.sablonlar[tip] || []).forEach(function (x) {
+    keep.forEach(function (i) { if (i.baslik === x.baslik && untouched(i)) { i.baslangic = x.baslangic; i.bitis = x.bitis; i.kategori = x.kategori; } });
+  });
   var add = (D.sablonlar[tip] || []).filter(function (x) { return !titles[x.baslik]; }).map(mkItem);
   D.gunler[t] = { tarih: t, tip: tip, isler: sortI(keep.concat(add)), wortOzet: g ? g.wortOzet || null : null };
   if (!quiet) save();
@@ -620,7 +625,10 @@ function progCard(t, g) {
 function tipCard(t, g) {
   var h = '<div class="card"><div class="lbl">GÜN TİPİ</div><div class="tipsel">';
   TIPS.forEach(function (k) { h += '<button class="pill' + (g && g.tip === k ? ' sel' : '') + '" data-act="tpl" data-tip="' + k + '" data-d="' + t + '">' + TIP[k] + '</button>'; });
-  return h + '</div><div class="note" style="margin-top:10px">Seçim şablonu uygular; işaretlenmiş ve notlu işler korunur.</div></div>';
+  var tn = g && D.ayarlar.tipNot && D.ayarlar.tipNot[g.tip];
+  return h + '</div>' + (tn ? '<div class="tip-not">' + esc(tn) + '</div>' : '') +
+    '<div class="note" style="margin-top:10px">Seçim şablonu uygular; işaretlenmiş, notlu ve elle eklenmiş işler korunur.</div>' +
+    '<button class="btn sm ghost" style="margin-top:6px;padding-left:0" data-act="tab" data-v="duzen">Gün tiplerini karşılaştır →</button></div>';
 }
 function rowSub(t, it) {
   var p = [];
@@ -994,6 +1002,85 @@ function vYil() {
     '<div class="card"><div class="lbl">PLANLI GÜNLERDE HEPSİ TAMAM</div><div class="big" style="margin-top:10px">' + X + ' <small>/ ' + Y + '</small></div>' + bar('y:a', Y ? X / Y : 0) + '</div></div>';
   return h;
 }
+/* ================= Düzen: gün tipleri yan yana ================= */
+function tplItem(tip, name) { var L = D.sablonlar[tip] || []; for (var i = 0; i < L.length; i++) if (L[i].baslik === name) return L[i]; return null; }
+function mxRows() {
+  var out = [], seen = {};
+  TIPS.forEach(function (tp) {
+    (D.sablonlar[tp] || []).forEach(function (x) { if (!seen[x.baslik]) { seen[x.baslik] = 1; out.push({ n: x.baslik, k: x.kategori, b: x.baslangic }); } });
+  });
+  out.forEach(function (r) { var n = tplItem('normal', r.n); if (n) r.b = n.baslangic; });
+  return out.sort(function (a, b) { return a.b - b.b; });
+}
+function tipSum(tip) {
+  var L = D.sablonlar[tip] || [], tot = 0, fer = [], kis = [];
+  L.forEach(function (x) { tot += x.bitis - x.baslangic; });
+  if (tip !== 'normal') (D.sablonlar.normal || []).forEach(function (r) {
+    var x = tplItem(tip, r.baslik);
+    if (!x) fer.push(r.baslik);
+    else if (x.bitis - x.baslangic < r.bitis - r.baslangic) kis.push(r.baslik + ' (' + durStr(r.bitis - r.baslangic) + ' → ' + durStr(x.bitis - x.baslangic) + ')');
+  });
+  return { n: L.length, tot: tot, fer: fer, kis: kis };
+}
+function vDuzen() {
+  var rows = mxRows(), tn = D.ayarlar.tipNot || {};
+  var h = '<div class="page-h"><h2>Düzen</h2><span class="muted">Hangi gün tipinde ne var, neyi tam, neyi kısa yapıyorsun, nelerden vazgeçiyorsun.</span></div>';
+  h += '<div class="tipcards">';
+  TIPS.forEach(function (tp) {
+    var sm = tipSum(tp);
+    h += '<div class="card tipc tc-' + tp + '"><div class="tc-h"><h3>' + TIP[tp] + '</h3><span class="mono muted">' + sm.n + ' iş · ' + (sm.tot ? durStr(sm.tot) : '—') + '</span></div>' +
+      '<textarea class="inp tc-not" data-tn="' + tp + '" rows="2" placeholder="' + (tp === 'normal' ? 'Normal günüm nasıl?' : tp === 'disarida' ? 'Ne zaman dışarıdayım, neyi farklı yaparım?' : tp === 'seyahat' ? 'Seyahatte ne yaparım?' : 'Boş gün nasıl geçer?') + '" aria-label="' + TIP[tp] + ' açıklaması">' + esc(tn[tp] || '') + '</textarea>';
+    if (tp !== 'normal') {
+      h += '<div class="tc-l"><span class="lbl">VAZGEÇTİKLERİM</span>' + (sm.fer.length ? esc(sm.fer.join(', ')) : '<span class="muted">yok</span>') + '</div>' +
+        '<div class="tc-l"><span class="lbl">KISA YAPTIKLARIM</span>' + (sm.kis.length ? esc(sm.kis.join(', ')) : '<span class="muted">yok</span>') + '</div>';
+    }
+    h += '</div>';
+  });
+  h += '</div><div class="card mx-card"><div class="list-h"><h3>İşler ve gün tipleri</h3><div class="btns">' +
+    '<label class="chk-l"><input type="checkbox" data-act="kaydir"' + (D.ayarlar.kaydir ? ' checked' : '') + '> Uzayınca sonraki işleri de kaydır</label>' +
+    '<button class="btn sm" data-act="mxnew">' + SVG_PLUS + 'Yeni iş</button></div></div>' +
+    '<div class="note" style="margin-bottom:10px">Her hücre o gün tipindeki saat ve süre. Değişiklik şablona ve bugünden sonraki o tipteki günlere uygulanır; elle değiştirdiğin ya da işaretlediğin işlere dokunulmaz.</div>' +
+    '<div class="mx-scroll"><div class="mx"><div class="mx-hd"></div>' + TIPS.map(function (tp) { return '<div class="mx-hd tc-' + tp + '">' + TIP[tp] + '</div>'; }).join('');
+  rows.forEach(function (r) {
+    var ref = tplItem('normal', r.n), refDur = ref ? ref.bitis - ref.baslangic : null;
+    h += '<div class="mx-n k-' + esc(r.k) + '">' + dot(r.k) + '<input class="inp" data-mx="name" data-n="' + esc(r.n) + '" value="' + esc(r.n) + '" aria-label="Ad"></div>';
+    TIPS.forEach(function (tp) {
+      var x = tplItem(tp, r.n);
+      if (!x) { h += '<div class="mx-c none"><span>' + (tp === 'normal' ? '—' : 'Yok') + '</span><button class="btn sm ghost" data-act="mxadd" data-tip="' + tp + '" data-n="' + esc(r.n) + '">+ Ekle</button></div>'; return; }
+      var dur = x.bitis - x.baslangic, tag = '', cls = '';
+      if (tp !== 'normal' && refDur != null) {
+        if (dur === refDur) { tag = 'Tam'; cls = ' full'; }
+        else if (dur < refDur) { tag = 'Kısa · −' + durStr(refDur - dur); cls = ' short'; }
+        else { tag = 'Uzun · +' + durStr(dur - refDur); cls = ' long'; }
+      }
+      h += '<div class="mx-c' + cls + '"><div class="mx-top"><span class="mono">' + hm(x.baslangic) + (dur ? '–' + hm(x.bitis) : '') + '</span>' + (tag ? '<span class="mx-tag">' + tag + '</span>' : '') +
+        '<button class="mx-x" data-act="mxdel" data-tip="' + tp + '" data-n="' + esc(r.n) + '" aria-label="Bu tipten çıkar" title="Bu tipten çıkar">×</button></div>' +
+        '<div class="mx-st"><span class="lbl">SAAT</span><div class="stp"><button class="sb" data-act="mxs" data-v="-15" data-tip="' + tp + '" data-n="' + esc(r.n) + '" aria-label="15 dk erken">' + SVG_MINUS + '</button><button class="sb" data-act="mxs" data-v="15" data-tip="' + tp + '" data-n="' + esc(r.n) + '" aria-label="15 dk geç">' + SVG_PLUS + '</button></div>' +
+        '<span class="lbl">SÜRE</span><div class="stp"><button class="sb" data-act="mxd" data-v="-15" data-tip="' + tp + '" data-n="' + esc(r.n) + '" aria-label="15 dk kısalt"' + (dur <= 0 ? ' disabled' : '') + '>' + SVG_MINUS + '</button><span class="mono val">' + (dur ? durStr(dur) : '—') + '</span><button class="sb" data-act="mxd" data-v="15" data-tip="' + tp + '" data-n="' + esc(r.n) + '" aria-label="15 dk uzat">' + SVG_PLUS + '</button></div></div></div>';
+    });
+  });
+  return h + '</div></div></div>';
+}
+function mxAdd(tip, name) {
+  var src = tplItem('normal', name); TIPS.forEach(function (tp) { if (!src) src = tplItem(tp, name); });
+  if (!src) return;
+  var x = {}; for (var k in src) x[k] = src[k];
+  D.sablonlar[tip].push(x); sortI(D.sablonlar[tip]);
+  var td = today();
+  for (var t in D.gunler) {
+    var g = D.gunler[t]; if (t < td || g.tip !== tip) continue;
+    if (!g.isler.some(function (i) { return i.baslik === name; })) { g.isler.push(mkItem(x)); sortI(g.isler); }
+  }
+}
+function mxDel(tip, name) {
+  D.sablonlar[tip] = D.sablonlar[tip].filter(function (x) { return x.baslik !== name; });
+  var td = today();
+  for (var t in D.gunler) {
+    var g = D.gunler[t]; if (t < td || g.tip !== tip) continue;
+    g.isler = g.isler.filter(function (i) { return !(i.baslik === name && untouched(i) && !i.not && !i.elle); });
+  }
+}
+
 /* ================= Ayarlar ================= */
 function katOpts(sel) { var h = ''; for (var k in KAT) h += '<option value="' + k + '"' + (k === sel ? ' selected' : '') + '>' + KAT[k] + '</option>'; return h; }
 function vAyarlar() {
@@ -1037,7 +1124,7 @@ function vAyarlar() {
 /* ================= çizim ================= */
 function render(anim) {
   if (!mainEl) return;
-  var f = { bugun: vBugun, hafta: vHafta, ay: vAy, yil: vYil, ayarlar: vAyarlar }[V.tab] || vBugun;
+  var f = { bugun: vBugun, hafta: vHafta, ay: vAy, yil: vYil, duzen: vDuzen, ayarlar: vAyarlar }[V.tab] || vBugun;
   var sy = window.scrollY;
   mainEl.innerHTML = '<div class="view' + (anim ? ' enter' : '') + '">' + f() + '</div>';
   if (!anim) window.scrollTo(0, sy);
@@ -1117,7 +1204,7 @@ function edHtml() {
     '<label class="chk-l"><input type="checkbox" data-act="kaydir"' + (D.ayarlar.kaydir ? ' checked' : '') + '> Uzayınca sonraki işleri de kaydır</label>' +
     '<div class="lbl" style="margin-top:12px">NOT</div>' +
     '<textarea class="inp ed-not" data-ed="not" rows="2" placeholder="' + (it.kategori === 'ogun' ? 'Ne yenecek?' : it.kategori === 'almanca' || it.kategori === 'is' ? 'Ne çalışılacak?' : 'Not') + '" aria-label="Not">' + esc(it.not || '') + '</textarea>' +
-    '<div class="ed-rt"><button class="btn sm" data-act="edroutine">Her gün böyle olsun</button><span class="note">Ad, saat ve süreyi şablona ve sonraki "' + esc(TIP[tip === 'bos' || !tip ? 'normal' : tip]) + '" kayıtlarına yazar.</span></div>';
+    '<div class="ed-rt"><div class="btns"><button class="btn sm" data-act="edrep">Tekrarla · tarih aralığı</button><button class="btn sm" data-act="edroutine">Her gün böyle olsun</button></div><span class="note">Ad, saat ve süreyi şablona ve sonraki "' + esc(TIP[tip === 'bos' || !tip ? 'normal' : tip]) + '" kayıtlarına yazar.</span></div>';
   if (!P.fresh) {
     h += '<div class="ed-sec"><div class="lbl">PLAN DEĞİŞTİ · KISAYOLLAR</div><div class="pills">' +
       NEDEN.map(function (n) { return '<button class="pill' + (P.neden === n ? ' sel' : '') + '" data-act="neden" data-v="' + esc(n) + '">' + esc(n) + '</button>'; }).join('') + '</div>' +
@@ -1161,7 +1248,71 @@ function openEdit(t, id, rect, fresh) {
   el.innerHTML = edHtml(); placePop(el, rect);
   if (fresh) { var n = el.querySelector('[data-ed="name"]'); n.focus(); n.select(); }
 }
-function edRefresh() { if (!P || P.kind !== 'edit') return; var sc = P.el.scrollTop; P.el.innerHTML = edHtml(); placePop(P.el, P.rect); P.el.scrollTop = sc; }
+function edRefresh() { if (!P || P.kind !== 'edit') return; var sc = P.el.scrollTop; P.el.innerHTML = P.rep && P.rep.on ? repHtml() : edHtml(); placePop(P.el, P.rect); P.el.scrollTop = sc; }
+function addMonths(t, n) {
+  var d = pd(t), day = d.getDate(); d.setDate(1); d.setMonth(d.getMonth() + n);
+  d.setDate(Math.min(day, new Date(d.getFullYear(), d.getMonth() + 1, 0).getDate())); return ds(d);
+}
+function repDays() { var R = P.rep, out = []; for (var t = R.from; t <= R.to; t = addD(t, 1)) if (R.wd[dow(t)]) out.push(t); return out; }
+function wdLabel(wd) {
+  var on = [], off = [];
+  wd.forEach(function (v, i) { (v ? on : off).push(GUN[i]); });
+  if (!off.length) return 'her gün';
+  if (!on.length) return 'gün seçilmedi';
+  return off.length <= 2 ? off.join(', ') + ' hariç' : on.join(', ');
+}
+function repHtml() {
+  var it = findIt(P.t, P.id); if (!it) return '';
+  var R = P.rep, days = repDays(), n = days.filter(function (t) { return t !== P.t; }).length;
+  var h = '<div class="pop-h"><button class="btn sm ghost rep-back" data-act="repback">' + SVG_L + 'Geri</button><div class="lbl" style="margin:6px 0 4px">TEKRARLA</div>' +
+    '<div class="t">' + esc(it.baslik) + '</div><div class="mono muted">' + hm(it.baslangic) + (it.bitis > it.baslangic ? '–' + hm(it.bitis) : '') + '</div></div>' +
+    '<div class="lbl">HANGİ GÜNLER</div><div class="wdsel">' + GUN.map(function (g, i) { return '<button class="wd' + (R.wd[i] ? ' sel' : '') + '" data-act="repwd" data-v="' + i + '">' + g + '</button>'; }).join('') + '</div>' +
+    '<div class="lbl" style="margin-top:12px">TARİH ARALIĞI</div><div class="rng">' +
+    '<button class="rbox' + (R.pick === 'start' ? ' on' : '') + '" data-act="reppick" data-v="start"><span>Başlangıç</span><b>' + esc(fmtD(R.from)) + '</b></button>' +
+    '<button class="rbox' + (R.pick === 'end' ? ' on' : '') + '" data-act="reppick" data-v="end"><span>Bitiş</span><b>' + esc(fmtD(R.to)) + '</b></button></div>' +
+    '<div class="chips l0">' + [['1h', '1 hafta'], ['1m', '1 ay'], ['3m', '3 ay'], ['6m', '6 ay'], ['ex', 'Sınava kadar']].map(function (q) { return '<button class="chip" data-act="repq" data-v="' + q[0] + '">' + q[1] + '</button>'; }).join('') + '</div>';
+  var vm = pd(R.vm + '-01'), y = vm.getFullYear(), mo = vm.getMonth(), first = R.vm + '-01', last = ds(new Date(y, mo + 1, 0)), td = today();
+  h += '<div class="rcal"><div class="rcal-h"><button class="sb" data-act="repm" data-v="-1" aria-label="Önceki ay">' + SVG_L + '</button><b>' + AY[mo] + ' ' + y + '</b><button class="sb" data-act="repm" data-v="1" aria-label="Sonraki ay">' + SVG_R + '</button></div><div class="rcal-g">';
+  GUN.forEach(function (g) { h += '<span class="rwd">' + g.charAt(0) + '</span>'; });
+  for (var i = 0; i < dow(first); i++) h += '<span></span>';
+  for (var t = first; t <= last; t = addD(t, 1)) {
+    var inR = t >= R.from && t <= R.to, c = inR ? (R.wd[dow(t)] ? ' in' : ' off') : '';
+    if (t === R.from || t === R.to) c += ' edge';
+    if (t === td) c += ' td';
+    if (t === P.t) c += ' src';
+    h += '<button class="rd' + c + '" data-act="repday" data-d="' + t + '">' + pd(t).getDate() + '</button>';
+  }
+  h += '</div><div class="note" style="margin-top:6px">' + (R.pick === 'start' ? 'Takvimde başlangıç gününe dokun.' : 'Şimdi bitiş gününe dokun.') + '</div></div>' +
+    '<div class="rep-sum"><b>' + n + ' gün</b> · ' + esc(wdLabel(R.wd)) + ' · ' + esc(fmtDs(R.from)) + ' – ' + esc(fmtDs(R.to)) + '</div>' +
+    '<label class="chk-l"><input type="checkbox" data-act="repyeni"' + (R.yeni ? ' checked' : '') + '> Planı olmayan günlerde Normal gün planı aç</label>' +
+    (R.msg ? '<div class="rep-msg">' + esc(R.msg) + '</div>' : '') +
+    '<div class="foot"><button class="btn sm ghost" data-act="repdel">Bu günlerden kaldır</button><button class="btn sm amber-b" data-act="repadd"' + (n ? '' : ' disabled') + '>' + n + ' güne ekle</button></div>';
+  return h;
+}
+function repApply(add) {
+  var it = findIt(P.t, P.id); if (!it) return;
+  var n = 0;
+  repDays().forEach(function (t) {
+    if (t === P.t) return;
+    var g = G(t);
+    if (add) {
+      if (!g) { if (!P.rep.yeni) return; applyTpl(t, 'normal', true); g = G(t); }
+      var ex = g.isler.filter(function (i) { return i.baslik === it.baslik && !i.gitti; })[0];
+      if (ex) {
+        if (!untouched(ex)) return;
+        ex.baslangic = it.baslangic; ex.bitis = it.bitis; ex.kategori = it.kategori; if (it.not) ex.not = it.not; ex.elle = true;
+      } else { var c = mkItem(it); c.elle = true; g.isler.push(c); }
+      sortI(g.isler); n++;
+    } else if (g) {
+      var L0 = g.isler.length;
+      g.isler = g.isler.filter(function (i) { return !(i.baslik === it.baslik && i.durum === 'planli' && !i.gitti); });
+      if (g.isler.length < L0) n++;
+    }
+  });
+  P.dirty = true; save(); render();
+  P.rep.msg = add ? n + ' güne eklendi.' : (n ? n + ' günden kaldırıldı.' : 'Kaldırılacak bir şey yoktu.');
+  edRefresh();
+}
 /* düzenleyicideki her değişiklik anında uygulanır ve kaydedilir */
 function edChange(fn) {
   var it = findIt(P.t, P.id); if (!it) return;
@@ -1236,6 +1387,35 @@ function act(el, e) {
     case 'eddurset': edChange(function (x) { x.bitis = Math.min(1440, x.baslangic + +el.dataset.v); }); break;
     case 'edday': edMoveDay(+el.dataset.v); break;
     case 'edroutine': edRoutine(); break;
+    case 'edrep': P.dirty = true; P.rep = P.rep || { from: P.t, to: addMonths(P.t, 1), wd: [1, 1, 1, 1, 1, 1, 1], pick: 'start', vm: P.t.slice(0, 7), yeni: true, msg: '' }; P.rep.on = true; P.rep.msg = ''; edRefresh(); P.el.scrollTop = 0; break;
+    case 'repback': P.rep.on = false; edRefresh(); P.el.scrollTop = 0; break;
+    case 'repwd': var wi = +el.dataset.v; P.rep.wd[wi] = P.rep.wd[wi] ? 0 : 1; P.rep.msg = ''; edRefresh(); break;
+    case 'reppick': P.rep.pick = el.dataset.v; P.rep.vm = (el.dataset.v === 'start' ? P.rep.from : P.rep.to).slice(0, 7); edRefresh(); break;
+    case 'repq':
+      var R = P.rep, q = el.dataset.v;
+      R.to = q === '1h' ? addD(R.from, 6) : q === '1m' ? addMonths(R.from, 1) : q === '3m' ? addMonths(R.from, 3) : q === '6m' ? addMonths(R.from, 6) : (isDate(D.ayarlar.sinavTarihi) && D.ayarlar.sinavTarihi > R.from ? D.ayarlar.sinavTarihi : addMonths(R.from, 6));
+      R.pick = 'start'; R.msg = ''; edRefresh(); break;
+    case 'repm': var vd = pd(P.rep.vm + '-01'); vd.setMonth(vd.getMonth() + +el.dataset.v); P.rep.vm = ds(vd).slice(0, 7); edRefresh(); break;
+    case 'repday':
+      var R2 = P.rep, dt = el.dataset.d;
+      if (R2.pick === 'start') { R2.from = dt; if (R2.to < dt) R2.to = dt; R2.pick = 'end'; }
+      else { if (dt < R2.from) { R2.to = R2.from; R2.from = dt; } else R2.to = dt; R2.pick = 'start'; }
+      R2.msg = ''; edRefresh(); break;
+    case 'repadd': repApply(true); break;
+    case 'repdel': repApply(false); break;
+    case 'mxs': case 'mxd':
+      var mt = el.dataset.tip, mn = el.dataset.n, mx = tplItem(mt, mn); if (!mx) break;
+      var mv = +el.dataset.v, mch = {};
+      if (a === 'mxs') { var mdur = mx.bitis - mx.baslangic; mch.baslangic = clamp(mx.baslangic + mv, 0, 1440 - mdur); mch.bitis = mch.baslangic + mdur; }
+      else mch.bitis = clamp(mx.bitis + mv, mx.baslangic, 1440);
+      applyRoutine(mt, mn, mch); save(); render(); break;
+    case 'mxadd': mxAdd(el.dataset.tip, el.dataset.n); save(); render(); break;
+    case 'mxdel': mxDel(el.dataset.tip, el.dataset.n); save(); render(); break;
+    case 'mxnew':
+      var nn = 'Yeni iş', ni = 2; while (mxRows().some(function (r) { return r.n === nn; })) nn = 'Yeni iş ' + ni++;
+      var NL = D.sablonlar.normal, le = NL.length ? NL[NL.length - 1].bitis : 540;
+      NL.push({ baslik: nn, kategori: 'diger', baslangic: Math.min(le, 1410), bitis: Math.min(le + 30, 1440) }); sortI(NL);
+      save(); render(); var ni2 = $('[data-mx="name"][data-n="' + nn + '"]'); if (ni2) { ni2.focus(); ni2.select(); } break;
     case 'eddel':
       var g = G(P.t); if (g) g.isler = g.isler.filter(function (i) { return i.id !== P.id; });
       P.dirty = true; closePop(); save(); render(); break;
@@ -1269,7 +1449,7 @@ function addNew(t) {
   var b = ceil15(t === today() ? nowMin() : 540), g = ensureDay(t);
   if (b > 1410) b = 1410;
   var it = mkItem({ baslik: 'Yeni iş', kategori: 'diger', baslangic: b, bitis: Math.min(1440, b + 30) });
-  g.isler.push(it); sortI(g.isler); save();
+  it.elle = true; g.isler.push(it); sortI(g.isler); save();
   if (V.tab !== 'bugun' && V.tab !== 'hafta') { V.tab = 'bugun'; V.gun = t; }
   render();
   var anchor = $('.row[data-id="' + it.id + '"]') || $('.blk[data-id="' + it.id + '"]');
@@ -1305,7 +1485,7 @@ document.addEventListener('pointerdown', function (e) {
 document.addEventListener('click', function (e) {
   var el = e.target.closest('[data-act]');
   if (!el || el.disabled || el.tagName === 'A') return;
-  if (el.dataset.act === 'mankonu' || el.dataset.act === 'kaydir') return;
+  if (el.dataset.act === 'mankonu' || el.dataset.act === 'kaydir' || el.dataset.act === 'repyeni') return;
   act(el, e);
 });
 document.addEventListener('keydown', function (e) {
@@ -1319,12 +1499,12 @@ document.addEventListener('keydown', function (e) {
   if (e.key === 'Enter') {
     if (tg.dataset && (tg.dataset.ed === 'name' || tg.dataset.ed === 'b' || tg.dataset.ed === 'e' || tg.dataset.ed === 'sebep')) { e.preventDefault(); tg.blur(); return; }
     if (tg.id === 'stepInp') { e.preventDefault(); V.stepEdit = false; render(); return; }
-    if (tg.dataset && (tg.dataset.act === 'mankonu' || tg.dataset.rt)) { tg.blur(); return; }
+    if (tg.dataset && (tg.dataset.act === 'mankonu' || tg.dataset.rt || tg.dataset.mx)) { tg.blur(); return; }
     if (tg.dataset && tg.dataset.act && tg.getAttribute('role') === 'button') { e.preventDefault(); act(tg, e); return; }
     return;
   }
   if (inField(tg) || e.ctrlKey || e.metaKey || e.altKey) return;
-  var tabs = { '1': 'bugun', '2': 'hafta', '3': 'ay', '4': 'yil' };
+  var tabs = { '1': 'bugun', '2': 'hafta', '3': 'ay', '4': 'yil', '5': 'duzen' };
   if (tabs[e.key]) { e.preventDefault(); go(tabs[e.key]); return; }
   if (e.key === 'ArrowLeft') { e.preventDefault(); closePop(); shift(-1); return; }
   if (e.key === 'ArrowRight') { e.preventDefault(); closePop(); shift(1); return; }
@@ -1337,6 +1517,11 @@ document.addEventListener('keydown', function (e) {
 /* yazılan her şey anında kaydedilir: Enter'a basmadan sekmeyi kapatsan da kaybolmaz */
 document.addEventListener('input', function (e) {
   var el = e.target;
+  if (el.dataset.tn) {
+    D.ayarlar.tipNot = D.ayarlar.tipNot || {};
+    var tv = el.value.trim(); if (tv) D.ayarlar.tipNot[el.dataset.tn] = tv; else delete D.ayarlar.tipNot[el.dataset.tn];
+    save(); return;
+  }
   if (el.dataset.act === 'mankonu') {
     var t = el.dataset.d, v = el.value.trim();
     if (v) D.almanca[t] = { konu: v }; else delete D.almanca[t];
@@ -1358,6 +1543,13 @@ document.addEventListener('change', function (e) {
   var el = e.target;
   if (el.id === 'impFile' && el.files && el.files[0]) { importJSON(el.files[0]); el.value = ''; return; }
   if (el.dataset.act === 'kaydir') { D.ayarlar.kaydir = el.checked; save(); return; }
+  if (el.dataset.act === 'repyeni') { if (P && P.rep) P.rep.yeni = el.checked; return; }
+  if (el.dataset.mx === 'name') {
+    var on = el.dataset.n, nv2 = el.value.trim();
+    if (!nv2 || (nv2 !== on && mxRows().some(function (r) { return r.n === nv2; }))) { el.classList.add('bad'); el.value = on; return; }
+    if (nv2 !== on) { applyRoutine('normal', on, { baslik: nv2 }); save(); render(); }
+    return;
+  }
   if (P && P.kind === 'edit' && el.dataset.ed === 'e') {
     var m1 = parseHM(el.value), it1 = findIt(P.t, P.id);
     if (m1 == null || !it1 || m1 < it1.baslangic) { el.classList.add('bad'); return; }
@@ -1526,7 +1718,7 @@ document.addEventListener('dblclick', function (e) {
   var col = e.target.closest && e.target.closest('.wk-col');
   if (!col || e.target.closest('.blk') || e.target.closest('button') || e.target.closest('a')) return;
   var r = col.getBoundingClientRect(), m = clamp(GRID.s0 + Math.floor((e.clientY - r.top) / STEP) * 15, 0, 1410), t = col.dataset.day;
-  var g = ensureDay(t), it = mkItem({ baslik: 'Yeni iş', kategori: 'diger', baslangic: m, bitis: m + 30 });
+  var g = ensureDay(t), it = mkItem({ baslik: 'Yeni iş', kategori: 'diger', baslangic: m, bitis: m + 30 }); it.elle = true;
   g.isler.push(it); sortI(g.isler); save(); render();
   openEdit(t, it.id, { left: e.clientX, right: e.clientX, top: e.clientY, bottom: e.clientY }, true);
 });

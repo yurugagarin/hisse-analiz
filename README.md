@@ -28,6 +28,12 @@ Saf HTML + CSS + JavaScript: `index.html`, `style.css`, `app.js`. Derleme yok, p
   "Gerek kalmadı" günün sayımından düşer; "Yapmadım" yapılmamış sayılır. Geçmiş günler de işaretlenebilir.
 - **Takvimden planla** (Ay ve Yıl ekranları): Normal gün / Dışarıdayım / Seyahat / Boş gün / Planı sil seç, sonra günlere
   dokun ya da üzerlerinden sürükle. Yıl ekranı, sınava kadar her ayı gün numaralarıyla gösterir; güne dokununca o gün açılır.
+- **Tekrarla** (Değiştir penceresi → "Tekrarla · tarih aralığı"): haftanın günlerini seç/çıkar (ör. Paz hariç), takvimden
+  ya da 1 hafta · 1 ay · 3 ay · 6 ay · sınava kadar ile aralığı belirle → "N güne ekle" ya da "Bu günlerden kaldır".
+  Planı olmayan günlerde istenirse Normal gün açılır. Böyle eklenen işler gün tipi değişince silinmez.
+- **Düzen** sekmesi (5): Normal / Dışarıdayım / Seyahat / Boş gün yan yana. Her işin her tipteki saati ve süresi,
+  "Tam / Kısa / Uzun / Yok" etiketiyle; her tipin "vazgeçtiklerim" ve "kısa yaptıklarım" özeti ve kısa açıklaması.
+  Hücreden saat ve süre değişir, iş eklenir ya da çıkarılır; değişiklik şablona ve sonraki o tipteki günlere uygulanır.
 - **Günlük düzen** (Bugün ekranında, listenin altında): şablondaki her işin adı, başlangıcı ve süresi tek yerden.
   Değişiklik bugünden itibaren o tipteki bütün günlere uygulanır; elle değiştirilmiş ya da işaretlenmiş işlere dokunulmaz.
 - **Sonrakileri kaydır:** bir iş uzayınca ya da ileri kayınca üst üste binen sonraki işler de ileri kayar (kapatılabilir).
@@ -36,7 +42,7 @@ Saf HTML + CSS + JavaScript: `index.html`, `style.css`, `app.js`. Derleme yok, p
 
 ## Klavye
 
-`1–4` sekmeler · `←/→` önceki/sonraki gün, hafta, ay · `T` bugüne dön · `N` yeni iş · `Esc` açık pencereyi kapatır.
+`1–5` sekmeler · `←/→` önceki/sonraki gün, hafta, ay · `T` bugüne dön · `N` yeni iş · `Esc` açık pencereyi kapatır.
 Hafta görünümünde blok sürüklenerek taşınır (15 dk adım, başka güne de), alt kenarından çekilerek süresi
 değişir, boş yere çift tıklamak yeni iş açar. Aynı saate düşen işler yan yana dizilir.
 
