@@ -1,91 +1,64 @@
 # Gün — gün planlayıcı
 
-Tek kullanıcılı gün planlayıcı (masaüstü öncelikli, telefonda da çalışır). Odak bugün: gün saat saat iş bloklarına
-bölünür, işler tek tıkla işaretlenir, plan bozulunca blok taşınır / kısaltılır / yarına alınır / atlanır.
-Hafta, Ay ve Yıl görünümleri nerede olduğunu gösterir.
+Tek kişilik gün planlayıcı. Tasarım Ajanda'nın diliyle: kâğıt zemin, büyük başlık, altta dört sekme, düzenleme
+alttan açılan sayfada, her değişiklikten sonra **Geri al**. Telefonda ve bilgisayarda aynı tek sütun.
 
 Adres: **https://yurugagarin.github.io/hisse-analiz/**
 
-Saf HTML + CSS + JavaScript: `index.html`, `style.css`, `app.js`. Derleme yok, paket yok, sunucu yok.
+Saf HTML + CSS + JavaScript (`index.html`, `style.css`, `app.js`); derleme yok, sunucu yok.
 
-## Nasıl yayınlanır
+## Sekmeler
 
-1. Dosyalar `main` dalına gelince `.github/workflows/pages.yml` siteyi GitHub Pages'e yayınlar
-   (Settings → Pages → Source: **GitHub Actions**). Elle başlatmak için: Actions → "Yayınla" → Run workflow.
-2. Yerelde denemek için klasörü herhangi bir statik sunucuyla aç (ör. `python3 -m http.server`).
-   WORT verisi yalnızca aynı origin'de (`yurugagarin.github.io`) okunabilir.
+- **Bugün** — en üstte koyu **Şimdi** kartı: ne yapıyorsun, kaç dakika kaldı, ne zaman bitiyor, ne çalışacaksın
+  (not, WORT konusu, FORM programı). **Bitti · +15 dk · Değiştir**. Altında **Sonra** ve gün **Sabah / Öğleden sonra / Bu akşam**
+  diye bölünmüş liste. Daireye dokun = tamam; satırı sola kaydır = **Yapmadım / Gerek yok**; satıra dokun = düzenle.
+  Gün tipi üstte ("Normal gün ▾"); en altta adım, tamam sayısı ve uyku.
+- **Hafta** — **Hafta özeti** (hangi iş kaç kez yapıldı, en çok kaçan, nedenler, uyku ortalaması ve az uyunan
+  gecelerin ertesi) ve Ajanda'daki gibi gün gün liste.
+- **Takvim** — Yıl (aylar) ↔ Ay. Sağ üstte **Planla**: gün tipini seç (Normal / Dışarıda / Seyahat / Boş / Sil),
+  günlere dokun ya da üzerlerinden sürükle.
+- **Düzen** — gün tipleri: her tipin açıklaması, kaç iş ve ne kadar sürdüğü, "vazgeçtiklerim" ve "kısa yaptıklarım".
+  Tipe dokun → işleri; işe dokun → saat, süre, tür, hangi tiplerde olduğu. Sağ üstte **Ayarlar**.
 
-## Kullanım
+## İşi düzenlemek (alttan açılan sayfa)
 
-- **İşi değiştir:** satıra (ya da haftada bloğa) tıkla. Ad, kategori, gün, başlangıç, süre (−/+ 15 dk ya da
-  30 dk · 45 dk · 1 sa · 1,5 sa · 2 sa) ve not ("ne yenecek, ne çalışılacak") aynı pencerede; her değişiklik anında
-  kaydedilir. "Her gün böyle olsun" adı, saati ve süreyi şablona ve sonraki günlere yazar. Altta "Plan değişti"
-  kısayolları (başka saate al, kısalt, yarına taşı, atla) durur.
-- **Çizelge** (Bugün → "Çizelge"): günün saat ızgarası. Bloğu sürükle = saati kaydır; üst kenarı çek = başlangıç,
-  alt kenarı çek = bitiş (15 dk adım). Telefonda bloğa ~0,3 sn basılı tut, sonra sürükle; kısa dokunuş pencereyi açar.
-  Hafta görünümünde de aynısı geçerli (başka güne taşıma dahil).
-- **Durum** (satırdaki ⋯ düğmesi ya da Değiştir penceresi): Tamam · Yapmadım · Gerek kalmadı · Planlı, istersen nedeniyle.
-  "Gerek kalmadı" günün sayımından düşer; "Yapmadım" yapılmamış sayılır. Geçmiş günler de işaretlenebilir.
-- **Takvimden planla** (Ay ve Yıl ekranları): Normal gün / Dışarıdayım / Seyahat / Boş gün / Planı sil seç, sonra günlere
-  dokun ya da üzerlerinden sürükle. Yıl ekranı, sınava kadar her ayı gün numaralarıyla gösterir; güne dokununca o gün açılır.
-- **Tekrarla** (Değiştir penceresi → "Tekrarla · tarih aralığı"): haftanın günlerini seç/çıkar (ör. Paz hariç), takvimden
-  ya da 1 hafta · 1 ay · 3 ay · 6 ay · sınava kadar ile aralığı belirle → "N güne ekle" ya da "Bu günlerden kaldır".
-  Planı olmayan günlerde istenirse Normal gün açılır. Böyle eklenen işler gün tipi değişince silinmez.
-- **Düzen** sekmesi (5): Normal / Dışarıdayım / Seyahat / Boş gün yan yana. Her işin her tipteki saati ve süresi,
-  "Tam / Kısa / Uzun / Yok" etiketiyle; her tipin "vazgeçtiklerim" ve "kısa yaptıklarım" özeti ve kısa açıklaması.
-  Hücreden saat ve süre değişir, iş eklenir ya da çıkarılır; değişiklik şablona ve sonraki o tipteki günlere uygulanır.
-- **Günlük düzen** (Bugün ekranında, listenin altında): şablondaki her işin adı, başlangıcı ve süresi tek yerden.
-  Değişiklik bugünden itibaren o tipteki bütün günlere uygulanır; elle değiştirilmiş ya da işaretlenmiş işlere dokunulmaz.
-- **Sonrakileri kaydır:** bir iş uzayınca ya da ileri kayınca üst üste binen sonraki işler de ileri kayar (kapatılabilir).
-- Notlar listede, "Şimdi" kartında ve hafta takviminde görünür. Kategoriler renklidir: spor yeşil, iş mavi,
-  yürüyüş bal, yemek terrakota, Almanca leylak.
+Ad · saat (24 saat yazılır: `1100` ya da `11:00`) · **Kaydır** −1 sa … +1 sa · **Süre** 15 dk … 2 sa ·
+durum (Planlı / Tamam / Yapmadım / Gerek yok + neden) · not · tür · **Başka günlere de ekle** (haftanın günleri +
+tarih aralığı: 1 hafta, 1 ay, 3 ay, 6 ay, sınava kadar ya da takvimden) · **Her … böyle olsun** · **Yarına taşı** · **Sil**.
+"Uzayınca sonraki işleri de kaydır" açıksa uzayan işin arkasındakiler de kayar.
 
-## Klavye
+## Kendiliğinden (Ayarlar'dan kapatılabilir)
 
-`1–5` sekmeler · `←/→` önceki/sonraki gün, hafta, ay · `T` bugüne dön · `N` yeni iş · `Esc` açık pencereyi kapatır.
-Hafta görünümünde blok sürüklenerek taşınır (15 dk adım, başka güne de), alt kenarından çekilerek süresi
-değişir, boş yere çift tıklamak yeni iş açar. Aynı saate düşen işler yan yana dizilir.
+- FORM'da o güne antrenman girildiyse **Spor** tamam olur.
+- Adım hedefi tutunca **yürüyüşler** tamam olur; henüz gelmemiş yürüyüşler "gerek yok" olur.
+- WORT'ta günün puanı 75'i geçince (WORT'un "gün tamam" eşiği) **Almanca** tamam olur.
+- Ajandada o gün 17:00 sonrası randevu varsa **"Dışarıdayım yapalım mı?"** önerisi çıkar.
+
+Kendiliğinden konan işareti elle kaldırırsan o iş için bir daha kendiliğinden işaretlenmez.
 
 ## Bağlı uygulamalar (yalnızca okuma)
 
-Hepsi `yurugagarin.github.io` altında olduğu için aynı tarayıcıda `localStorage` paylaşılır. Gün hiçbirine **yazmaz**.
-Bir uygulama bu tarayıcıda hiç açılmadıysa ilgili kart "bulunamadı" der; geri kalan her şey çalışır.
+Hepsi `yurugagarin.github.io` altında; aynı tarayıcıda açılmış olmaları yeter. Gün hiçbirine **yazmaz**.
 
-### WORT — `wort:v1`
+| Uygulama | Anahtar | Kullanılan |
+|---|---|---|
+| WORT | `wort:v1` | bekleyen kelime (`srs`), günün konusu ve aşaması (`days[gün].gt`, `gfocus`, `gx`), ezber tablosu (`ez`, `days[gün].ezd`), günün puanı (`days[gün]`: `w/wt`, `g/gs/gsn`, `ez/ezt`, `sch`, `rs/rd/rr`) |
+| Ajanda | `ajanda_data_v3` | o günün kayıtları (`events`: `date`, `time`, `text`, `note`, `cat`, `done`), kategori renkleri (`cats`) |
+| FORM | `emre:form:v2` | günün antrenmanı (`days[gün].dt`, `plan`, `breaks`, `restWeeks`, `restDays` + kodundaki haftalık şablon), girilen setler (`days[gün].ex`), adım (`st`), uyku (`sl`, `nap`) |
 
-| Alan | Ne için |
-|---|---|
-| `srs[id].d` (+ `ban[id].on`) | Kelime tekrarı: tekrar günü bugün ya da geçmiş olan kartlar = bekleyen kelime |
-| `set.newPerDay`, `days[bugün].ncap / npx / np` | Bugün kalan yeni kelime sayısı |
-| `days[bugün].gt`, `gfocus`, `gx[konu].stg / due / known` | Konu dersi: WORT'un bugünkü konusu ve sıradaki aşaması |
-| `days[bugün].ezd`, `ez[tablo].due / last / best` | Ezber tablosu: bugünkü tablo, yoksa tekrarı gelen, yoksa en zayıfı |
-| `days[bugün].sch` | Yazma: bugün başlandı mı |
-
-Konu ve tablo adları WORT'un kodunda (`G`, `EZ`) durur; Gün haftada bir `/wort/` sayfasını okuyup saklar.
-Almanca bloğu işaretlenince o günün özeti günün kaydına kopyalanır.
-
-### Ajanda — `ajanda_data_v3`
-
-`events[]` içinden o güne ait kayıtlar (`date`, `time`, `text`, `note`, `cat`, `done`; silinenler `deleted` ile
-elenir), kategori adı ve rengi `cats[]`'tan. Saatli kayıtlar listede ve haftada saatinde, saatsizler "GÜN" satırında /
-gün başlığında görünür. Tıklayınca ajanda açılır.
-
-### FORM — `emre:form:v2`
-
-O günün antrenmanı FORM'un kendi kuralıyla bulunur: `days[gün].dt` → antrenmansız ara (`breaks`) → tarihli plan
-(`plan`) → o haftanın dinlenme günleri (`restWeeks`, `restDays`) → haftalık şablon. Program adları, hareketler ve
-haftalık şablon FORM'un kodunda (`PROGRAM`, `WEEKHIST`) durur; Gün haftada bir `/form/` sayfasını okuyup saklar.
-Spor kartında o günün programı ve hareketleri (set × tekrar) görünür. Gün'e adım girilmemişse FORM'daki adım
-(`days[gün].st`) gösterilir.
-
-Ayarlar → "Bağlı uygulamalar" → "Adları yeniden oku" ile adlar elle yenilenir.
+WORT konu/tablo adları ve FORM program adları uygulamaların kodunda durur; Gün haftada bir `/wort/` ve `/form/`
+sayfalarını okuyup saklar (Ayarlar → "Adları yeniden oku").
 
 ## Veri ve yedek
 
-- Bütün veri tarayıcıda, tek anahtarda: **`gun.v1`** (günler, şablonlar, ayarlar, adımlar).
-  Her değişiklik anında kaydedilir.
-- Yedek: Ayarlar (sağ üstteki dişli) → **JSON dışa aktar**. Geri yüklemek için **JSON içe aktar**;
-  içe aktarmadan hemen sonra "Geri al" ile önceki veriye dönülebilir.
-- Tarayıcı verisi silinirse plan da silinir; ara ara dışa aktarmak yeter.
-- Uygulamayı normal tarayıcıda (Chrome, Safari) aç. Başka uygulamaların içindeki gömülü tarayıcılar
-  (ör. bir sohbet uygulamasında açılan link) veriyi kapatınca silebilir; orada yapılan değişiklikler kalıcı olmaz.
+- Bütün veri bu tarayıcıda, `gun.v1` anahtarında; her değişiklikte anında kaydedilir.
+- Ayarlar → **Yedeği indir** / **Yedekten yükle**.
+- Normal tarayıcıda (Chrome, Safari) aç; başka uygulamaların içindeki gömülü tarayıcılar veriyi silebilir.
+
+## Klavye (bilgisayarda)
+
+`1–4` sekmeler · `←/→` önceki/sonraki gün, hafta, ay · `T` bugün · `N` yeni iş · `Esc` sayfayı kapat.
+
+## Yayın
+
+`main` dalına gelince `.github/workflows/pages.yml` siteyi GitHub Pages'e yayınlar.

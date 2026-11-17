@@ -2,37 +2,25 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Gün</title>
-<meta name="theme-color" content="#f0e8da">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Karla:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="style.css?v=4">
+<meta name="theme-color" content="#f6f5f2">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
-<div class="mesh" aria-hidden="true"></div>
-<header class="top">
-  <div class="top-in">
-    <div class="brand">Gün</div>
-    <nav class="tabs" id="tabs">
-      <button class="tab" data-act="tab" data-v="bugun">Bugün<span class="k">1</span></button>
-      <button class="tab" data-act="tab" data-v="hafta">Hafta<span class="k">2</span></button>
-      <button class="tab" data-act="tab" data-v="ay">Ay<span class="k">3</span></button>
-      <button class="tab" data-act="tab" data-v="yil">Yıl<span class="k">4</span></button>
-      <button class="tab" data-act="tab" data-v="duzen">Düzen<span class="k">5</span></button>
-    </nav>
-    <div class="top-r">
-      <span class="saved" id="saved" aria-live="polite"></span>
-      <div class="clock" id="clock"></div>
-      <div class="srcs" id="srcs"></div>
-      <button class="icon-btn" data-act="tab" data-v="ayarlar" id="setBtn" aria-label="Ayarlar" title="Ayarlar">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
-      </button>
-    </div>
-  </div>
-</header>
-<main id="main"></main>
-<script src="app.js?v=4"></script>
+<div id="app">
+  <main id="scr" class="scr"></main>
+  <nav class="tabs" id="tabs">
+    <button class="tab" data-act="tab" data-v="bugun">Bugün</button>
+    <button class="tab" data-act="tab" data-v="hafta">Hafta</button>
+    <button class="tab" data-act="tab" data-v="takvim">Takvim</button>
+    <button class="tab" data-act="tab" data-v="duzen">Düzen</button>
+  </nav>
+  <div id="sheetHost"></div>
+  <div id="toast" class="toast" aria-live="polite"></div>
+</div>
+<script src="app.js?v=5"></script>
 </body>
 </html>

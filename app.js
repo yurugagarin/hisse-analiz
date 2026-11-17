@@ -1,4 +1,4 @@
-/* Gün — gün planlayıcı
+/* Gün — gün planlayıcı (v5: Ajanda'nın tasarım diliyle yeniden)
    Saf JS, derleme yok. Veri: localStorage 'gun.v1'.
    Başka uygulamaların verisi yalnızca okunur: WORT ('wort:v1'), Ajanda ('ajanda_data_v3'), FORM ('emre:form:v2'). */
 (function () {
@@ -101,8 +101,8 @@ function blank() {
   return {
     v: 1, m2: 1, baslangic: today(), gunler: {}, adim: {}, almanca: {},
     sablonlar: defTemplates(),
-    ayarlar: { adimHedef: 10000, sinavAdi: 'Goethe B1', sinavTarihi: '2027-09-30', kaydir: true, gorunum: 'liste', tipNot: {} },
-    wortAdlar: null, formAdlar: null
+    ayarlar: { adimHedef: 10000, sinavAdi: 'Goethe B1', sinavTarihi: '2027-09-30', kaydir: true, gorunum: 'liste', tipNot: {}, otoForm: true, otoAdim: true, otoWort: true, oneri: true },
+    wortAdlar: null, formAdlar: null, oneriKapali: {}
   };
 }
 function firstRun() {
@@ -527,482 +527,7 @@ function fetchFormNames(force) {
 }
 function readAll() { readWort(); readAjanda(); readForm(); }
 
-/* ================= görünüm durumu ================= */
-var V = { brush: null, tab: 'bugun', gun: today(), hafta: monday(today()), ay: today().slice(0, 7), stepEdit: false, stip: 'normal', rtip: null };
-var JUST = null, BARS = {}, GRID = { s0: 420 }, prevD = null, setMsg = null;
-var mainEl, LASTMIN = -1, LASTDAY = today();
 
-function bar(key, w) {
-  w = clamp(w || 0, 0, 1);
-  var p = BARS[key] != null ? BARS[key] : w;
-  return '<div class="bar"><i data-bar="' + esc(key) + '" data-w="' + w + '" style="transform:scaleX(' + p + ')"></i></div>';
-}
-function animBars() {
-  var els = $$('[data-bar]');
-  if (!els.length) return;
-  void mainEl.offsetWidth;
-  els.forEach(function (el) { var w = +el.dataset.w; el.style.transform = 'scaleX(' + w + ')'; BARS[el.dataset.bar] = w; });
-}
-function dot(k) { return '<i class="kd k-' + esc(k) + '"></i>'; }
-function rtTip() { var g = G(V.gun); return V.rtip || (g && g.tip !== 'bos' ? g.tip : 'normal'); }
-
-/* ================= üst çubuk ================= */
-var savedT = null;
-function renderSaved() {
-  var el = $('#saved'); if (!el) return;
-  clearTimeout(savedT);
-  if (saveErr) { el.textContent = 'kaydedilemedi'; el.className = 'saved err on'; return; }
-  el.textContent = 'kaydedildi'; el.className = 'saved on';
-  savedT = setTimeout(function () { el.classList.remove('on'); }, 1400);
-}
-function renderTop() {
-  $$('#tabs .tab').forEach(function (b) { b.classList.toggle('on', b.dataset.v === V.tab); });
-  $('#setBtn').classList.toggle('on', V.tab === 'ayarlar');
-  var d = new Date();
-  $('#clock').innerHTML = esc(fmtD(today())) + ' · <b>' + pad(d.getHours()) + ':' + pad(d.getMinutes()) + '</b>';
-  $('#srcs').innerHTML = [['WORT', W], ['Ajanda', AJ], ['FORM', F]].map(function (s) {
-    return '<span class="src' + (s[1] ? ' on' : '') + '" title="' + s[0] + (s[1] ? ' bağlı' : ' bulunamadı') + '"><i></i>' + s[0] + '</span>';
-  }).join('');
-}
-
-/* ================= Bugün ================= */
-function stripBox(t) {
-  var g = G(t), k = kind(t), td = today(), sel = t === V.gun, s = stats(g), st;
-  if (k === 'plan') st = t <= td ? s.tamam + ' / ' + s.n + ' tamam' : s.n + ' iş planlı';
-  else if (k === 'none') st = t >= td ? '<button class="planla" data-act="planla" data-d="' + t + '">Planla</button>' : 'Plan yok';
-  else if (k === 'empty') st = 'İş yok';
-  else if (k === 'trav') st = 'Seyahat';
-  else st = '—';
-  var tip = g ? TIP[g.tip] : k === 'none' ? 'Plan yok' : '';
-  var aj = ajFor(t).length, fd = formDay(t);
-  var extra = [fd && !fd.rest ? fd.short : '', aj ? aj + ' ajanda' : ''].filter(Boolean).join(' · ');
-  return '<div class="sbox ' + stCls(t) + (sel ? ' sel' : '') + '" role="button" tabindex="0" data-act="openday" data-d="' + t + '">' +
-    '<div class="sb-top"><span class="sb-d">' + GUN[dow(t)] + '</span><span class="sb-n">' + pd(t).getDate() + '</span></div>' +
-    '<div class="sb-tip">' + esc(tip) + '</div>' + (extra ? '<div class="sb-x">' + esc(extra) + '</div>' : '') + '<div class="sb-st">' + st + '</div></div>';
-}
-function nowState(g, now) {
-  var L = counted(g).filter(function (i) { return i.durum === 'planli'; });
-  var act = L.filter(function (i) { return i.baslangic <= now && now < i.bitis; })[0] || null;
-  var after = L.filter(function (i) { return i !== act && i.baslangic > now; });
-  return { act: act, next: after[0] || null, next2: after[1] || null };
-}
-function nowCard(t, g) {
-  var td = today();
-  if (t !== td) {
-    var k = kind(t);
-    return '<div class="now off"><div class="lbl"><span>' + (t < td ? 'GEÇMİŞ GÜN' : 'İLERİDEKİ GÜN') + '</span><span>' + esc(fmtDs(t)) + '</span></div>' +
-      '<div class="now-t">' + esc(fmtD(t)) + '</div><div class="now-r">' + (k === 'plan' ? stats(g).n + ' iş' : k === 'none' ? 'Plan yok' : 'İş yok') + '</div>' +
-      '<hr><button class="btn sm" data-act="gotoday">Bugüne dön</button></div>';
-  }
-  var now = nowMin(), ns = nowState(g, now), L = counted(g), h;
-  var cur = ns.act || ns.next;
-  h = '<div class="now' + (cur ? ' k-' + cur.kategori : '') + '"><div class="lbl"><span>' + (ns.act ? 'ŞİMDİ' : 'SIRADAKİ') + '</span><span>' + hm(now) + '</span></div>';
-  if (ns.act) {
-    h += '<div class="now-t">' + esc(ns.act.baslik) + '</div><div class="now-r">' + at(ns.act.bitis) + ' biter · <b>' + durStr(ns.act.bitis - now) + ' kaldı</b></div>';
-    if (ns.act.not) h += '<div class="now-not">' + esc(ns.act.not) + '</div>';
-    h += '<hr><div class="now-n"><span class="mono">SIRADAKİ</span>' + (ns.next ? '<span class="mono">' + hm(ns.next.baslangic) + '</span><span class="x">' + esc(ns.next.baslik) + '</span>' : '<span class="x">Yok</span>') + '</div>';
-  } else if (ns.next) {
-    h += '<div class="now-t">' + esc(ns.next.baslik) + '</div><div class="now-r">' + at(ns.next.baslangic) + ' başlar · <b>' + durStr(ns.next.baslangic - now) + ' sonra</b></div>';
-    if (ns.next.not) h += '<div class="now-not">' + esc(ns.next.not) + '</div>';
-    h += '<hr><div class="now-n"><span class="mono">SONRA</span>' + (ns.next2 ? '<span class="mono">' + hm(ns.next2.baslangic) + '</span><span class="x">' + esc(ns.next2.baslik) + '</span>' : '<span class="x">Yok</span>') + '</div>';
-  } else {
-    var allDone = L.length && L.every(function (i) { return i.durum !== 'planli'; });
-    h += '<div class="now-t">' + (!L.length ? 'Bugün iş yok.' : allDone ? 'Bugünün işleri bitti.' : 'Sıradaki iş yok.') + '</div>';
-    if (L.length && !allDone) h += '<div class="now-r">' + L.filter(function (i) { return i.durum === 'planli'; }).length + ' iş işaretlenmedi.</div>';
-  }
-  return h + '</div>';
-}
-function progCard(t, g) {
-  var s = stats(g), L = counted(g);
-  var last = L.filter(function (i) { return i.durum !== 'atlandi'; }).reduce(function (m, i) { return Math.max(m, i.bitis); }, 0);
-  var allDone = s.n && !s.planli;
-  var line = !s.n ? (G(t) ? 'Bu gün için iş yok.' : 'Bu gün için plan yok.') :
-    allDone ? (t === today() ? 'Bugünün işleri bitti.' : 'Bu günün işleri bitti.') :
-    'Son iş ' + at(last) + ' biter. Sonrası boş.';
-  return '<div class="card prog"><div class="lbl">İLERLEME</div><div class="big" style="margin-top:10px">' + s.tamam + ' <small>/ ' + s.n + '</small></div>' +
-    bar('p:' + t, s.n ? s.tamam / s.n : 0) + '<div class="note">' + line + '</div></div>';
-}
-function tipCard(t, g) {
-  var h = '<div class="card"><div class="lbl">GÜN TİPİ</div><div class="tipsel">';
-  TIPS.forEach(function (k) { h += '<button class="pill' + (g && g.tip === k ? ' sel' : '') + '" data-act="tpl" data-tip="' + k + '" data-d="' + t + '">' + TIP[k] + '</button>'; });
-  var tn = g && D.ayarlar.tipNot && D.ayarlar.tipNot[g.tip];
-  return h + '</div>' + (tn ? '<div class="tip-not">' + esc(tn) + '</div>' : '') +
-    '<div class="note" style="margin-top:10px">Seçim şablonu uygular; işaretlenmiş, notlu ve elle eklenmiş işler korunur.</div>' +
-    '<button class="btn sm ghost" style="margin-top:6px;padding-left:0" data-act="tab" data-v="duzen">Gün tiplerini karşılaştır →</button></div>';
-}
-function rowSub(t, it) {
-  var p = [];
-  if (it.bitis > it.baslangic) p.push(hm(it.baslangic) + '–' + hm(it.bitis) + ' · ' + durStr(it.bitis - it.baslangic));
-  else p.push(KAT[it.kategori] || '');
-  if (it.durum === 'tamam' && it.gercekBitis != null) p.push('Tamam ' + hm(it.gercekBitis));
-  if (it.gitti) p.push('<span class="chg">Yarına taşındı' + (it.neden ? ' · ' + esc(it.neden) : '') + '</span>');
-  else if (it.degisiklik === 'tasindi') p.push('<span class="chg">Taşındı' + (it.neden ? ' · ' + esc(it.neden) : '') + '</span>');
-  else if (it.degisiklik === 'kisaltildi') p.push('<span class="chg">Kısaltıldı' + (it.neden ? ' · ' + esc(it.neden) : '') + '</span>');
-  else if (it.degisiklik === 'yarinaTasindi' && it.kaynak) p.push('<span class="chg">' + esc(fmtDs(it.kaynak)) + ' gününden' + (it.neden ? ' · ' + esc(it.neden) : '') + '</span>');
-  if (it.durum === 'atlandi') p.push('<span class="chg">Atlandı' + (it.neden ? ' · ' + esc(it.neden) : '') + '</span>');
-  if (it.durum === 'yapilmadi' || it.durum === 'gereksiz') p.push('<span class="no">' + DURUM[it.durum] + (it.sebep ? ' · ' + esc(it.sebep) : '') + '</span>');
-  if (it.kategori === 'yuruyus' && !it.gitti) {
-    var goal = +D.ayarlar.adimHedef || 0, n = stepsOf(t).n || 0;
-    if (goal) p.push(n >= goal ? 'Adım hedefi tamam' : 'Kalan adım ' + fmtN(goal - n));
-  }
-  if (it.kategori === 'spor') { var fd = formDay(t); if (fd) p.push('<span class="fo">FORM · ' + esc(fd.label) + '</span>'); }
-  if (it.kategori === 'almanca') {
-    var g = G(t);
-    if (it.durum === 'tamam' && g && g.wortOzet && g.wortOzet.konu) p.push('<span class="de">' + esc(g.wortOzet.konu) + '</span>');
-    else if (t === today() && W && W.konu && W.konu.ad) p.push('<span class="de">WORT · ' + esc(W.konu.ad) + '</span>');
-  }
-  return p.filter(Boolean).join(' · ');
-}
-function rowHtml(t, it, active) {
-  var cls = ' k-' + it.kategori + (it.durum === 'tamam' ? ' done' : '') + (it.durum === 'atlandi' || it.durum === 'yapilmadi' ? ' skip' : '') +
-    (it.durum === 'gereksiz' ? ' nn' : '') + (it.gitti ? ' gone' : '') + (active ? ' active' : '') + (JUST === it.id ? ' just' : '');
-  return '<div class="row' + cls + '" data-act="edit" data-id="' + it.id + '" data-d="' + t + '">' +
-    '<div class="r-time">' + hm(it.baslangic) + '</div>' +
-    '<div class="r-main"><div class="r-title">' + esc(it.baslik) + '</div><div class="r-sub">' + rowSub(t, it) + '</div>' +
-    (it.not ? '<div class="r-not">' + SVG_NOTE + '<span>' + esc(it.not) + '</span></div>' : '') + '</div>' +
-    '<button class="r-change" data-act="edit" data-id="' + it.id + '" data-d="' + t + '">Değiştir</button>' +
-    (it.gitti ? '<span></span><span></span>' :
-      '<button class="r-st" data-act="durum" data-id="' + it.id + '" data-d="' + t + '" aria-label="Yapmadım ya da gerek kalmadı" title="Yapmadım · Gerek kalmadı">' + SVG_DOTS + '</button>' +
-      '<button class="chk" data-act="toggle" data-id="' + it.id + '" data-d="' + t + '" aria-label="' + (it.durum === 'tamam' ? 'İşareti kaldır' : 'Tamam olarak işaretle') + '"><i>' + SVG_CHECK + '</i></button>') +
-    '</div>';
-}
-function ajRow(e) {
-  return '<a class="row aj' + (e.done ? ' done' : '') + '" href="' + AJ_URL + '" target="_blank" rel="noopener" title="Ajandada aç" style="--c:' + e.color + '">' +
-    '<div class="r-time">' + (e.time == null ? 'GÜN' : hm(e.time)) + '</div>' +
-    '<div class="r-main"><div class="r-title">' + esc(e.text) + '</div><div class="r-sub">' + esc([e.cat, e.note].filter(Boolean).join(' · ')) + '</div></div>' +
-    '<span class="tag aj-tag">AJANDA</span><span></span><span></span></a>';
-}
-function listCard(t, g) {
-  var td = today(), isT = t === td, now = nowMin(), cz = D.ayarlar.gorunum === 'cizelge';
-  var h = '<div class="card"><div class="list-h"><h3>' + (isT ? 'Bugünün işleri' : esc(fmtD(t)) + ' işleri') + '</h3><div class="btns">' +
-    '<div class="seg"><button class="' + (cz ? '' : 'sel') + '" data-act="gorunum" data-v="liste">Liste</button><button class="' + (cz ? 'sel' : '') + '" data-act="gorunum" data-v="cizelge">Çizelge</button></div>' +
-    (!isT ? '<button class="btn sm ghost" data-act="gotoday">Bugüne dön</button>' : '') +
-    '<button class="btn sm" data-act="add" data-d="' + t + '">' + SVG_PLUS + 'İş ekle</button></div></div>';
-  if (cz) {
-    var ga = ajFor(t).filter(function (e) { return e.time == null; });
-    if (ga.length) h += '<div class="aj-day">' + ga.map(function (e) { return '<a class="aj-pill" href="' + AJ_URL + '" target="_blank" rel="noopener" style="--c:' + e.color + '">' + esc(e.text) + '</a>'; }).join('') + '</div>';
-    h += dayGrid(t) + '<div class="note cz-hint">Sürükle: saati kaydır · üst / alt kenarı çek: başlangıç / bitiş · boş yere çift tık: yeni iş · telefonda bloğa basılı tut, sonra sürükle</div>';
-    if (!g) h += '<div class="empty">Bu gün için plan yok.<div class="pills">' + TIPS.map(function (k) { return '<button class="pill" data-act="tpl" data-tip="' + k + '" data-d="' + t + '">' + TIP[k] + '</button>'; }).join('') + '</div></div>';
-    return h + '</div>';
-  }
-  h += '<div class="list">';
-  var act = isT ? nowState(g, now).act : null;
-  var items = (g ? g.isler : []).map(function (it) { return { m: it.baslangic, h: rowHtml(t, it, act && act.id === it.id) }; });
-  ajFor(t).forEach(function (e) { items.push({ m: e.time == null ? -1 : e.time, h: ajRow(e), aj: 1 }); });
-  items.sort(function (a, b) { return a.m - b.m || (b.aj ? 1 : 0) - (a.aj ? 1 : 0); });
-  items.forEach(function (x) { h += x.h; });
-  h += '</div>';
-  if (!g) {
-    h += '<div class="empty">Bu gün için plan yok.<div class="pills">' +
-      TIPS.map(function (k) { return '<button class="pill" data-act="tpl" data-tip="' + k + '" data-d="' + t + '">' + TIP[k] + '</button>'; }).join('') + '</div></div>';
-  } else if (!g.isler.length) h += '<div class="empty">' + (g.tip === 'seyahat' ? 'Seyahat günü. İş yok.' : 'İş yok.') + '</div>';
-  return h + '</div>';
-}
-/* tek yerden: şablondaki işlerin adı, saati ve süresi */
-function routineCard() {
-  var tip = rtTip(), L = D.sablonlar[tip] || [];
-  var h = '<div class="card routine"><div class="list-h"><h3>Günlük düzen</h3><div class="pills sm">' +
-    ['normal', 'disarida', 'seyahat'].map(function (k) { return '<button class="pill' + (k === tip ? ' sel' : '') + '" data-act="rtip" data-tip="' + k + '">' + TIP[k] + '</button>'; }).join('') + '</div></div>' +
-    '<div class="note">Burada değiştirdiğin ad, saat ve süre bugünden itibaren bütün "' + esc(TIP[tip]) + '" kayıtlarına uygulanır. Elle değiştirdiğin ya da işaretlediğin işlere dokunulmaz.</div>';
-  L.forEach(function (x, i) {
-    var dur = x.bitis - x.baslangic;
-    h += '<div class="rt-row k-' + esc(x.kategori) + '">' + dot(x.kategori) +
-      '<input class="inp rt-name" data-rt="name" data-i="' + i + '" value="' + esc(x.baslik) + '" aria-label="Ad">' +
-      '<div class="stp"><button class="sb" data-act="rt" data-f="b" data-v="-15" data-i="' + i + '" aria-label="15 dk erken">' + SVG_MINUS + '</button><span class="mono val">' + hm(x.baslangic) + '</span><button class="sb" data-act="rt" data-f="b" data-v="15" data-i="' + i + '" aria-label="15 dk geç">' + SVG_PLUS + '</button></div>' +
-      '<div class="stp"><button class="sb" data-act="rt" data-f="d" data-v="-15" data-i="' + i + '" aria-label="15 dk kısalt"' + (dur <= 0 ? ' disabled' : '') + '>' + SVG_MINUS + '</button><span class="mono val dur">' + (dur ? durStr(dur) : '—') + '</span><button class="sb" data-act="rt" data-f="d" data-v="15" data-i="' + i + '" aria-label="15 dk uzat">' + SVG_PLUS + '</button></div>' +
-      '<span class="mono muted rt-end">' + (dur ? '→ ' + hm(x.bitis) : '') + '</span></div>';
-  });
-  h += '<div class="rt-foot"><label class="chk-l"><input type="checkbox" data-act="kaydir"' + (D.ayarlar.kaydir ? ' checked' : '') + '> Süre uzayınca sonraki işleri de kaydır</label>' +
-    '<button class="btn sm ghost" data-act="tab" data-v="ayarlar">İş ekle / sil</button></div></div>';
-  return h;
-}
-function deCard(t, g) {
-  var td = today(), blk = almancaBlock(g);
-  var head = function (txt) { return '<div class="de-h"><span class="lbl">' + txt + '</span>' + (W ? '<span class="tag">WORT\'TAN</span>' : '') + '</div>'; };
-  var btn = '<a class="btn blue-b" href="' + WORT_URL + '" target="_blank" rel="noopener">' + SVG_EXT + 'WORT\'ta başlat</a>';
-  if (!blk) return '<div class="de-card">' + head('ALMANCA') + '<div class="note">Bu gün Almanca bloğu yok.</div>' + btn + '</div>';
-  var dur = blk.bitis - blk.baslangic, oz = g && g.wortOzet;
-  var h = '<div class="de-card">' + head('ALMANCA · ' + hm(blk.baslangic) + ' · ' + dur + ' DK');
-  if (blk.not) h += '<div class="de-not">' + esc(blk.not) + '</div>';
-  if (blk.durum === 'tamam' && oz) {
-    h += '<div class="de-row"><div><div class="n">Kaydedildi</div><div class="s">' + esc([oz.konu || 'konu yazılmadı', oz.asama].filter(Boolean).join(' · ')) + '</div></div><div class="m">' + oz.sure + ' dk</div></div>';
-    if (oz.tablo) h += '<div class="de-row"><div><div class="n">Ezber tablosu</div><div class="s">' + esc(oz.tablo) + '</div></div></div>';
-  } else if (t !== td) {
-    h += '<div class="note">' + (t < td ? 'Bu gün için WORT kaydı yok.' : 'WORT içeriği o gün burada görünür.') + '</div>';
-  } else if (W) {
-    wortRows(dur).forEach(function (r) {
-      h += '<div class="de-row"><div><div class="n">' + esc(r.n) + '</div>' + (r.s ? '<div class="s">' + esc(r.s) + '</div>' : '') + '</div><div class="m">' + r.m + ' dk</div></div>';
-    });
-  } else {
-    var man = (D.almanca[t] && D.almanca[t].konu) || '';
-    h += '<div class="note">WORT bulunamadı. Bugünün konusunu elle yazabilirsin.</div>' +
-      '<input class="inp" data-act="mankonu" data-d="' + t + '" value="' + esc(man) + '" placeholder="Konu başlığı" aria-label="Konu başlığı">';
-  }
-  return h + btn + '</div>';
-}
-function sporCard(t, g) {
-  var blk = counted(g).filter(function (i) { return i.kategori === 'spor'; })[0] || null, fd = formDay(t);
-  if (!blk && !fd) return '';
-  var head = 'SPOR' + (blk ? ' · ' + hm(blk.baslangic) + (blk.bitis > blk.baslangic ? ' · ' + (blk.bitis - blk.baslangic) + ' DK' : '') : '');
-  var h = '<div class="sp-card"><div class="de-h"><span class="lbl">' + head + '</span>' + (F ? '<span class="tag">FORM\'DAN</span>' : '') + '</div>';
-  if (blk && blk.not) h += '<div class="de-not">' + esc(blk.not) + '</div>';
-  if (!F) h += '<div class="note">FORM bulunamadı. FORM\'u bu tarayıcıda bir kez açman yeter.</div>';
-  else if (!fd) h += '<div class="note">FORM bu gün için program vermiyor.</div>';
-  else {
-    h += '<div class="sp-t">' + esc(fd.label) + '</div>';
-    if (fd.rest) h += '<div class="note">' + (fd.dt === 'rest' ? 'FORM\'a göre bu gün dinlenme.' : 'FORM\'da bu gün ara olarak işaretli.') + '</div>';
-    fd.ex.forEach(function (e) { h += '<div class="sp-row"><span>' + esc(e.n) + '</span><span class="mono">' + e.s + '×' + e.r[0] + '–' + e.r[1] + '</span></div>'; });
-    if (!fd.rest && !fd.ex.length) h += '<div class="note">Hareket listesi okunamadı.</div>';
-    if (!blk && !fd.rest) h += '<div class="note" style="margin-top:8px">Bu günün planında spor bloğu yok.</div>';
-  }
-  return h + '<a class="btn sp-b" href="' + FORM_URL + '" target="_blank" rel="noopener">' + SVG_EXT + 'FORM\'da aç</a></div>';
-}
-function stepsOf(t) {
-  if (D.adim[t] != null) return { n: D.adim[t], src: 'gun' };
-  var f = formSteps(t); if (f != null) return { n: f, src: 'form' };
-  return { n: 0, src: null };
-}
-function stepsCard(t) {
-  var goal = +D.ayarlar.adimHedef || 0, s = stepsOf(t), n = s.n;
-  var num = V.stepEdit
-    ? '<input class="inp" id="stepInp" value="' + (D.adim[t] != null ? D.adim[t] : '') + '" inputmode="numeric" aria-label="Adım sayısı" placeholder="' + (s.src === 'form' ? n : '0') + '">'
-    : '<span class="num" data-act="steps" title="Değiştirmek için tıkla">' + fmtN(n) + '</span>';
-  return '<div class="card steps"><div class="de-h" style="margin:0"><span class="lbl">ADIM</span>' + (s.src === 'form' && !V.stepEdit ? '<span class="tag fo-tag">FORM\'DAN</span>' : '') + '</div>' +
-    '<div class="big" style="margin-top:10px;display:flex;align-items:baseline;gap:8px">' + num + ' <small>/ ' + fmtN(goal) + '</small></div>' +
-    bar('s:' + t, goal ? n / goal : 0) + '<div class="note" style="margin-top:10px">' + (goal && n < goal ? 'Kalan ' + fmtN(goal - n) : goal ? 'Hedef tamam' : '') + '</div></div>';
-}
-function vBugun() {
-  var t = V.gun, g = G(t), wk = monday(t), h = '<div class="strip">';
-  for (var i = 0; i < 7; i++) h += stripBox(addD(wk, i));
-  h += '</div><div class="cols"><div class="c-left stack">' + nowCard(t, g) + progCard(t, g) + tipCard(t, g) + '</div>' +
-    '<div class="c-mid stack">' + listCard(t, g) + routineCard() + '</div>' +
-    '<div class="c-right stack">' + deCard(t, g) + sporCard(t, g) + stepsCard(t) + '</div></div>';
-  return h;
-}
-
-/* ================= Hafta ================= */
-function blkCls(t, it, now) {
-  var c = 'k-' + it.kategori;
-  if (t === today() && it.durum === 'planli' && it.baslangic <= now && now < it.bitis) return c + ' now';
-  if (it.durum === 'tamam') return c + ' done';
-  if (it.durum === 'atlandi' || it.durum === 'yapilmadi' || it.durum === 'gereksiz') return c + ' skip';
-  if (it.degisiklik === 'tasindi' || it.degisiklik === 'kisaltildi' || (it.degisiklik === 'yarinaTasindi' && it.kaynak)) return c + ' chg';
-  if (it.disarida) return c + ' out';
-  return c;
-}
-/* aynı saate düşen işler yan yana: çakışan her grup kendi içinde şeritlere bölünür */
-function layoutLanes(L) {
-  var out = {}, items = L.map(function (it) { return { id: it.id, b: it.baslangic, e: Math.max(it.bitis, it.baslangic + 23) }; })
-    .sort(function (x, y) { return x.b - y.b || y.e - x.e; });
-  var group = [], ends = [], gEnd = -1;
-  function flush() { group.forEach(function (x) { out[x.id].n = ends.length; }); group = []; ends = []; }
-  items.forEach(function (x) {
-    if (x.b >= gEnd) { flush(); gEnd = -1; }
-    var lane = 0; while (lane < ends.length && ends[lane] > x.b) lane++;
-    ends[lane] = x.e; out[x.id] = { i: lane, n: 1 }; group.push(x); gEnd = Math.max(gEnd, x.e);
-  });
-  flush();
-  return out;
-}
-function weekLabel(wk) {
-  var a = pd(wk), b = pd(addD(wk, 6));
-  if (a.getMonth() === b.getMonth()) return a.getDate() + '–' + b.getDate() + ' ' + AY[a.getMonth()];
-  return a.getDate() + ' ' + AY[a.getMonth()] + ' – ' + b.getDate() + ' ' + AY[b.getMonth()];
-}
-function colRange(days) {
-  var s0 = 420, e0 = 1200;
-  days.forEach(function (t) {
-    counted(G(t)).forEach(function (it) { s0 = Math.min(s0, Math.floor(it.baslangic / 60) * 60); e0 = Math.max(e0, Math.ceil(Math.max(it.bitis, it.baslangic + 15) / 60) * 60); });
-    ajFor(t).forEach(function (e) { if (e.time != null) { s0 = Math.min(s0, Math.floor(e.time / 60) * 60); e0 = Math.max(e0, Math.ceil((e.time + 30) / 60) * 60); } });
-  });
-  return { s0: s0, e0: Math.min(1440, e0) };
-}
-function rulerHtml(s0, e0) {
-  var h = '<div class="ruler">';
-  for (var m = s0; m <= e0; m += 60) h += '<span style="top:' + ((m - s0) / 60 * HOUR) + 'px">' + hm(m) + '</span>';
-  return h + '</div>';
-}
-function colHtml(t, s0, e0, now) {
-  var td = today(), g = G(t), k = kind(t), fd = formDay(t);
-  var cls = 'wk-col' + (t === td ? ' today' : '') + (k === 'none' ? ' none' : '') + (k === 'empty' || k === 'before' ? ' empty' : '') + (k === 'trav' ? ' trav' : '');
-  var h = '<div class="' + cls + '" data-day="' + t + '">';
-  if (k === 'none') h += '<div class="center"><span class="x">Plan yok</span>' + (t >= td ? '<button class="btn sm" data-act="planla" data-d="' + t + '">Şablondan planla</button>' : '') + '</div>';
-  else if (k === 'empty') h += '<div class="center"><span class="x">İş yok</span></div>';
-  else if (k === 'trav') h += '<div class="center"><span class="x">Seyahat</span></div>';
-  var L = counted(g), lanes = layoutLanes(L);
-  L.forEach(function (it) {
-    var top = (it.baslangic - s0) / 60 * HOUR, dur = it.bitis - it.baslangic, ht = Math.max(dur / 60 * HOUR, 20), ln = lanes[it.id];
-    var pos = ln && ln.n > 1 ? ';left:calc(' + ln.i + ' * (100% - 8px) / ' + ln.n + ' + 4px);width:calc((100% - 8px) / ' + ln.n + ' - 2px);right:auto' : '';
-    var sub = it.kategori === 'spor' && fd ? fd.short : it.kategori === 'almanca' && t === td && W && W.konu && W.konu.ad ? W.konu.ad : '';
-    if (it.durum === 'yapilmadi' || it.durum === 'gereksiz') sub = DURUM[it.durum] + (it.sebep ? ' · ' + it.sebep : '');
-    var lines;
-    if (ht < 36) lines = '<div class="bt"><span class="bm">' + hm(it.baslangic) + '</span> ' + esc(it.baslik) + (it.not ? ' · <span class="bn">' + esc(it.not) + '</span>' : '') + '</div>';
-    else {
-      lines = '<div class="bt">' + esc(it.baslik) + '</div><div class="bm">' + hm(it.baslangic) + '–' + hm(it.bitis) + (sub && ht < 54 ? ' · ' + esc(sub) : '') + '</div>';
-      if (sub && ht >= 54) lines += '<div class="bs">' + esc(sub) + '</div>';
-      if (it.not && ht >= 50) lines += '<div class="bn">' + esc(it.not) + '</div>';
-    }
-    h += '<div class="blk ' + blkCls(t, it, now) + (ht < 36 ? ' pt' : '') + '" data-id="' + it.id + '" data-b="' + it.baslangic + '" data-e="' + it.bitis + '" style="top:' + top + 'px;height:' + ht + 'px' + pos + '" title="' +
-      esc(it.baslik + ' · ' + hm(it.baslangic) + (dur ? '–' + hm(it.bitis) : '') + (sub ? ' · ' + sub : '') + (it.not ? '\n' + it.not : '')) + '">' + lines +
-      (dur > 0 ? '<div class="rtop"></div><div class="rs"></div>' : '') + '</div>';
-  });
-  ajFor(t).forEach(function (e) {
-    if (e.time == null) return;
-    h += '<a class="aj-chip' + (e.done ? ' done' : '') + '" href="' + AJ_URL + '" target="_blank" rel="noopener" style="top:' + ((e.time - s0) / 60 * HOUR) + 'px;--c:' + e.color + '" title="' + esc('Ajanda · ' + hm(e.time) + ' ' + e.text + (e.note ? '\n' + e.note : '')) + '">' +
-      '<span class="bm">' + hm(e.time) + '</span> ' + esc(e.text) + '</a>';
-  });
-  if (t === td && now >= s0 && now <= e0) h += '<div class="nowline" style="top:' + ((now - s0) / 60 * HOUR) + 'px"></div>';
-  return h + '</div>';
-}
-function dayGrid(t) {
-  var r = colRange([t]);
-  GRID.s0 = r.s0; GRID.e0 = r.e0; GRID.days = [t];
-  return '<div class="dayg" style="height:' + ((r.e0 - r.s0) / 60 * HOUR) + 'px">' + rulerHtml(r.s0, r.e0) + colHtml(t, r.s0, r.e0, nowMin()) + '</div>';
-}
-function vHafta() {
-  var wk = V.hafta, td = today(), now = nowMin(), days = [], i;
-  for (i = 0; i < 7; i++) days.push(addD(wk, i));
-  var r = colRange(days), s0 = r.s0, e0 = r.e0;
-  GRID.s0 = s0; GRID.e0 = e0; GRID.days = days;
-  var H = (e0 - s0) / 60 * HOUR;
-  var h = '<div class="page-h"><h2>HAFTA ' + isoWeek(wk) + ' · ' + esc(weekLabel(wk)) + '</h2><div class="nav">' +
-    '<button class="btn sm" data-act="prev" aria-label="Önceki hafta">' + SVG_L + '</button><button class="btn sm" data-act="next" aria-label="Sonraki hafta">' + SVG_R + '</button>' +
-    '<button class="btn sm' + (wk === monday(td) ? ' sel' : '') + '" data-act="gotoday">Bu hafta</button></div>' +
-    '<span class="hint">Sürükle: kaydır · üst / alt kenar: başlangıç / bitiş · çift tık: yeni iş · telefonda basılı tut</span></div>';
-  h += '<div class="wk"><div class="wk-scroll"><div class="wk-in"><div class="wk-head"><div></div>';
-  days.forEach(function (t) {
-    var g = G(t), k = kind(t), fd = formDay(t), aj = ajFor(t).filter(function (e) { return e.time == null; });
-    h += '<div class="wk-hd' + (t === td ? ' today' : '') + '" data-act="openday" data-d="' + t + '"><div class="d">' + GUN[dow(t)] + ' ' + pd(t).getDate() + '</div><div class="t">' +
-      (g ? TIP[g.tip] : k === 'none' ? 'Plan yok' : '&nbsp;') + '</div>' +
-      (fd ? '<div class="t fo">' + esc(fd.short) + '</div>' : '') +
-      aj.map(function (e) { return '<div class="t aj" style="--c:' + e.color + '">' + esc(e.text) + '</div>'; }).join('') + '</div>';
-  });
-  h += '</div><div class="wk-body" style="height:' + H + 'px">' + rulerHtml(s0, e0);
-  days.forEach(function (t) { h += colHtml(t, s0, e0, now); });
-  h += '</div></div></div></div><div class="legend">' +
-    ['spor', 'is', 'yuruyus', 'ogun', 'almanca', 'diger'].map(function (k) { return '<span><i class="lg-k k-' + k + '"></i>' + KAT[k] + '</span>'; }).join('') +
-    '<span><i class="lg-aj"></i>Ajanda</span><span class="sep"></span>' +
-    '<span><i class="lg-done"></i>Tamamlandı</span><span><i class="lg-now"></i>Şimdi</span><span><i class="lg-chg"></i>Kaydırıldı / kısaltıldı</span>' +
-    '<span><i class="lg-none"></i>Plan yok</span><span><i class="lg-trav"></i>Seyahat</span><span><i class="lg-empty"></i>Boş gün</span></div>';
-  return h;
-}
-/* ================= takvimden planla ================= */
-var BRUSH = [['normal', 'Normal gün'], ['disarida', 'Dışarıdayım'], ['seyahat', 'Seyahat'], ['bos', 'Boş gün'], ['sil', 'Planı sil']];
-function brushBar() {
-  var lbl = ''; BRUSH.forEach(function (b) { if (b[0] === V.brush) lbl = b[1]; });
-  return '<div class="card brush' + (V.brush ? ' on' : '') + '"><div class="brush-h"><span class="lbl">TAKVİMDEN PLANLA</span><div class="pills">' +
-    BRUSH.map(function (b) { return '<button class="pill b-' + b[0] + (V.brush === b[0] ? ' sel' : '') + '" data-act="brush" data-v="' + b[0] + '">' + b[1] + '</button>'; }).join('') + '</div>' +
-    (V.brush ? '<button class="btn sm amber-b" data-act="brush" data-v="">Bitti</button>' : '') + '</div>' +
-    '<div class="note">' + (V.brush ? '"' + esc(lbl) + '" seçili: günlere dokun ya da üzerlerinden sürükle. Bitince "Bitti"ye bas.' :
-      'Bir gün tipi seç, sonra takvimde günlere dokun ya da üzerlerinden sürükle. İşaretlediğin işler korunur.') + '</div></div>';
-}
-function paintDay(t) {
-  var b = V.brush, g = G(t);
-  if (b === 'sil') {
-    if (!g) return false;
-    var keep = g.isler.filter(function (i) { return i.durum !== 'planli'; });
-    if (keep.length) { if (keep.length === g.isler.length) return false; g.isler = keep; }
-    else delete D.gunler[t];
-    return true;
-  }
-  if (g && g.tip === b) return false;
-  applyTpl(t, b, true);
-  return true;
-}
-
-/* ================= Ay ================= */
-function vAy() {
-  var p = V.ay.split('-'), y = +p[0], mo = +p[1] - 1, first = y + '-' + pad(mo + 1) + '-01';
-  var lastDay = ds(new Date(y, mo + 1, 0)), start = monday(first), end = addD(monday(lastDay), 6), td = today();
-  var h = '<div class="page-h"><h2>' + AY[mo] + ' ' + y + '</h2><div class="nav">' +
-    '<button class="btn sm" data-act="prev" aria-label="Önceki ay">' + SVG_L + '</button><button class="btn sm" data-act="next" aria-label="Sonraki ay">' + SVG_R + '</button>' +
-    '<button class="btn sm' + (V.ay === td.slice(0, 7) ? ' sel' : '') + '" data-act="gotoday">Bu ay</button></div></div>';
-  h += brushBar() + '<div class="month-w"><div class="card"><div class="mgrid brushable' + (V.brush ? ' painting' : '') + '">';
-  GUN.forEach(function (gn) { h += '<div class="wd">' + gn.toUpperCase() + '</div>'; });
-  var cnt = { plan: 0, none: 0, empty: 0, trav: 0 }, unpl = [];
-  for (var t = start; t <= end; t = addD(t, 1)) {
-    var inM = t.slice(0, 7) === V.ay, g = G(t), k = kind(t), s = stats(g), st = '', br = '', aj = ajFor(t).length;
-    if (inM && cnt[k] != null) cnt[k]++;
-    if (inM && k === 'none' && t >= td) unpl.push(t);
-    if (k === 'plan') {
-      if (t < td) { st = s.tamam + ' / ' + s.n; br = bar('m:' + t, s.n ? s.tamam / s.n : 1); }
-      else if (t === td) { st = s.tamam + ' / ' + s.n + ' tamam'; br = bar('m:' + t, s.n ? s.tamam / s.n : 1); }
-      else { st = s.n + ' iş planlı'; br = bar('m:' + t, 0); }
-    } else if (k === 'none') st = 'Plan yok';
-    else if (k === 'empty') st = 'Boş gün';
-    else if (k === 'trav') st = 'Seyahat';
-    h += '<div class="mcell ' + stCls(t) + (inM ? '' : ' out') + '" role="button" tabindex="0" data-act="openday" data-d="' + t + '"' + (s.chg ? ' title="' + s.chg + ' değişiklik"' : '') + '>' +
-      '<div class="n"><span>' + pd(t).getDate() + '</span>' + (s.chg ? '<i class="ch"></i>' : '') + '</div>' +
-      '<div class="tp">' + (g ? TIPK[g.tip] : '&nbsp;') + (aj ? ' · <span class="ajn">' + aj + ' ajanda</span>' : '') + '</div><div class="s">' + st + '</div>' + br + '</div>';
-  }
-  h += '</div></div><div class="card"><h3>Özet</h3><div style="margin-top:12px">' +
-    '<div class="sum-row"><span class="k"><i class="st-plan"></i>Planlı gün</span><span class="v">' + cnt.plan + '</span></div>' +
-    '<div class="sum-row"><span class="k"><i class="st-none"></i>Plan yok</span><span class="v">' + cnt.none + '</span></div>' +
-    '<div class="sum-row"><span class="k"><i class="st-trav"></i>Seyahat</span><span class="v">' + cnt.trav + '</span></div>' +
-    '<div class="sum-row"><span class="k"><i class="st-empty"></i>Boş gün</span><span class="v">' + cnt.empty + '</span></div></div>' +
-    '<div class="unpl"><div class="lbl" style="margin-bottom:8px">PLANSIZ GÜNLER</div>';
-  if (!unpl.length) h += '<div class="note">Plansız gün yok.</div>';
-  unpl.forEach(function (t) { h += '<div class="unpl-row"><span class="mono">' + esc(fmtDs(t)) + '</span><button class="btn sm" data-act="planla" data-d="' + t + '">Planla</button></div>'; });
-  return h + '</div></div></div>';
-}
-
-/* ================= Yıl ================= */
-function yState(t) {
-  var td = today(), ex = D.ayarlar.sinavTarihi, g = G(t), k = kind(t), s = stats(g), r;
-  if (t === ex) r = { c: 'y-exam', x: (D.ayarlar.sinavAdi || 'Sınav') + ' sınavı' };
-  else if (k === 'plan') {
-    var tc = g.tip !== 'normal' ? ' y-' + g.tip : '';
-    if (t <= td) {
-      var q = s.n ? s.tamam / s.n : 1;
-      r = q >= 1 ? { c: 'y-all', x: 'Hepsi tamam' } : q >= 0.6 ? { c: 'y-most', x: 'Çoğu tamam' } : q > 0 ? { c: 'y-part', x: 'Kısmen' } :
-        { c: t < td ? 'y-skip' : 'y-fut' + tc, x: t < td ? 'Yapılmadı' : 'Planlı' };
-      r.x = TIP[g.tip] + ' · ' + r.x + ' · ' + s.tamam + ' / ' + s.n;
-    } else r = { c: 'y-fut' + tc, x: TIP[g.tip] + ' · ' + s.n + ' iş' };
-  } else if (k === 'trav') r = { c: 'y-seyahat', x: 'Seyahat' };
-  else if (k === 'empty') r = { c: 'y-empty', x: 'Boş gün' };
-  else if (k === 'none') r = dd(td, t) <= 13 ? { c: 'y-none', x: 'Plan yok' } : { c: 'y-free', x: 'Plan yok' };
-  else r = { c: 'y-before', x: 'Başlangıçtan önce' };
-  if (s.chg) r.x += ' · ' + s.chg + ' değişiklik';
-  if (t === td) { r.c += ' y-today'; r.x = 'Bugün · ' + r.x; }
-  return r;
-}
-function vYil() {
-  var td = today(), ex = D.ayarlar.sinavTarihi, bs = D.baslangic;
-  if (!isDate(ex) || ex < bs) ex = addD(bs, 300);
-  var h = '<div class="page-h"><h2>Yıl</h2><span class="muted">' + esc(fmtD(bs)) + ' → ' + esc(fmtD(ex)) + ' · ' + esc(D.ayarlar.sinavAdi || '') + '</span></div>';
-  h += brushBar() + '<div class="ymonths brushable' + (V.brush ? ' painting' : '') + '">';
-  var m = pd(bs), endM = pd(ex);
-  m = new Date(m.getFullYear(), m.getMonth(), 1);
-  while (m <= endM) {
-    var y = m.getFullYear(), mo = m.getMonth(), first = ds(m), last = ds(new Date(y, mo + 1, 0));
-    h += '<div class="ymon' + (td.slice(0, 7) === first.slice(0, 7) ? ' cur' : '') + '"><div class="ymh">' + AY[mo] + ' <span>' + y + '</span></div><div class="ymg">';
-    GUN.forEach(function (g) { h += '<span class="ywd">' + g.charAt(0) + '</span>'; });
-    for (var i = 0; i < dow(first); i++) h += '<span></span>';
-    for (var t = first; t <= last; t = addD(t, 1)) {
-      var st = yState(t);
-      h += '<button class="yd ' + st.c + '" data-act="openday" data-d="' + t + '" data-tip="' + esc(st.x) + '" aria-label="' + esc(fmtD(t) + ' · ' + st.x) + '">' + pd(t).getDate() + '</button>';
-    }
-    h += '</div></div>';
-    m = new Date(y, mo + 1, 1);
-  }
-  h += '</div><div class="ylegend">' +
-    '<span><i class="yd y-all"></i>Hepsi tamam</span><span><i class="yd y-most"></i>Çoğu</span><span><i class="yd y-part"></i>Kısmen</span><span><i class="yd y-skip"></i>Yapılmadı</span>' +
-    '<span><i class="yd y-today"></i>Bugün</span><span><i class="yd y-fut"></i>Normal gün</span><span><i class="yd y-fut y-disarida"></i>Dışarıdayım</span>' +
-    '<span><i class="yd y-seyahat"></i>Seyahat</span><span><i class="yd y-empty"></i>Boş gün</span><span><i class="yd y-none"></i>Plan yok</span><span><i class="yd y-exam"></i>Sınav</span></div>';
-  var s0 = monday(bs), weeks = Math.floor(dd(s0, monday(ex)) / 7) + 1;
-  var cur = clamp(Math.floor(dd(s0, monday(td)) / 7) + 1, 1, weeks), left = Math.max(0, dd(td, ex));
-  var Y = 0, X = 0;
-  for (var t2 in D.gunler) {
-    if (t2 >= td || t2 < bs || kind(t2) !== 'plan') continue;
-    var s = stats(D.gunler[t2]); if (!s.n) continue; Y++; if (s.tamam === s.n) X++;
-  }
-  h += '<div class="ycards">' +
-    '<div class="card"><div class="lbl">HAFTA</div><div class="big" style="margin-top:10px">' + cur + ' <small>/ ' + weeks + '</small></div>' + bar('y:w', cur / weeks) + '</div>' +
-    '<div class="card"><div class="lbl">' + esc((D.ayarlar.sinavAdi || 'SINAV').toUpperCase()) + ' · ' + esc(fmtD(ex)) + '</div><div class="big" style="margin-top:10px">Sınava ' + left + ' <small>gün</small></div></div>' +
-    '<div class="card"><div class="lbl">PLANLI GÜNLERDE HEPSİ TAMAM</div><div class="big" style="margin-top:10px">' + X + ' <small>/ ' + Y + '</small></div>' + bar('y:a', Y ? X / Y : 0) + '</div></div>';
-  return h;
-}
-/* ================= Düzen: gün tipleri yan yana ================= */
 function tplItem(tip, name) { var L = D.sablonlar[tip] || []; for (var i = 0; i < L.length; i++) if (L[i].baslik === name) return L[i]; return null; }
 function mxRows() {
   var out = [], seen = {};
@@ -1021,45 +546,6 @@ function tipSum(tip) {
     else if (x.bitis - x.baslangic < r.bitis - r.baslangic) kis.push(r.baslik + ' (' + durStr(r.bitis - r.baslangic) + ' → ' + durStr(x.bitis - x.baslangic) + ')');
   });
   return { n: L.length, tot: tot, fer: fer, kis: kis };
-}
-function vDuzen() {
-  var rows = mxRows(), tn = D.ayarlar.tipNot || {};
-  var h = '<div class="page-h"><h2>Düzen</h2><span class="muted">Hangi gün tipinde ne var, neyi tam, neyi kısa yapıyorsun, nelerden vazgeçiyorsun.</span></div>';
-  h += '<div class="tipcards">';
-  TIPS.forEach(function (tp) {
-    var sm = tipSum(tp);
-    h += '<div class="card tipc tc-' + tp + '"><div class="tc-h"><h3>' + TIP[tp] + '</h3><span class="mono muted">' + sm.n + ' iş · ' + (sm.tot ? durStr(sm.tot) : '—') + '</span></div>' +
-      '<textarea class="inp tc-not" data-tn="' + tp + '" rows="2" placeholder="' + (tp === 'normal' ? 'Normal günüm nasıl?' : tp === 'disarida' ? 'Ne zaman dışarıdayım, neyi farklı yaparım?' : tp === 'seyahat' ? 'Seyahatte ne yaparım?' : 'Boş gün nasıl geçer?') + '" aria-label="' + TIP[tp] + ' açıklaması">' + esc(tn[tp] || '') + '</textarea>';
-    if (tp !== 'normal') {
-      h += '<div class="tc-l"><span class="lbl">VAZGEÇTİKLERİM</span>' + (sm.fer.length ? esc(sm.fer.join(', ')) : '<span class="muted">yok</span>') + '</div>' +
-        '<div class="tc-l"><span class="lbl">KISA YAPTIKLARIM</span>' + (sm.kis.length ? esc(sm.kis.join(', ')) : '<span class="muted">yok</span>') + '</div>';
-    }
-    h += '</div>';
-  });
-  h += '</div><div class="card mx-card"><div class="list-h"><h3>İşler ve gün tipleri</h3><div class="btns">' +
-    '<label class="chk-l"><input type="checkbox" data-act="kaydir"' + (D.ayarlar.kaydir ? ' checked' : '') + '> Uzayınca sonraki işleri de kaydır</label>' +
-    '<button class="btn sm" data-act="mxnew">' + SVG_PLUS + 'Yeni iş</button></div></div>' +
-    '<div class="note" style="margin-bottom:10px">Her hücre o gün tipindeki saat ve süre. Değişiklik şablona ve bugünden sonraki o tipteki günlere uygulanır; elle değiştirdiğin ya da işaretlediğin işlere dokunulmaz.</div>' +
-    '<div class="mx-scroll"><div class="mx"><div class="mx-hd"></div>' + TIPS.map(function (tp) { return '<div class="mx-hd tc-' + tp + '">' + TIP[tp] + '</div>'; }).join('');
-  rows.forEach(function (r) {
-    var ref = tplItem('normal', r.n), refDur = ref ? ref.bitis - ref.baslangic : null;
-    h += '<div class="mx-n k-' + esc(r.k) + '">' + dot(r.k) + '<input class="inp" data-mx="name" data-n="' + esc(r.n) + '" value="' + esc(r.n) + '" aria-label="Ad"></div>';
-    TIPS.forEach(function (tp) {
-      var x = tplItem(tp, r.n);
-      if (!x) { h += '<div class="mx-c none"><span>' + (tp === 'normal' ? '—' : 'Yok') + '</span><button class="btn sm ghost" data-act="mxadd" data-tip="' + tp + '" data-n="' + esc(r.n) + '">+ Ekle</button></div>'; return; }
-      var dur = x.bitis - x.baslangic, tag = '', cls = '';
-      if (tp !== 'normal' && refDur != null) {
-        if (dur === refDur) { tag = 'Tam'; cls = ' full'; }
-        else if (dur < refDur) { tag = 'Kısa · −' + durStr(refDur - dur); cls = ' short'; }
-        else { tag = 'Uzun · +' + durStr(dur - refDur); cls = ' long'; }
-      }
-      h += '<div class="mx-c' + cls + '"><div class="mx-top"><span class="mono">' + hm(x.baslangic) + (dur ? '–' + hm(x.bitis) : '') + '</span>' + (tag ? '<span class="mx-tag">' + tag + '</span>' : '') +
-        '<button class="mx-x" data-act="mxdel" data-tip="' + tp + '" data-n="' + esc(r.n) + '" aria-label="Bu tipten çıkar" title="Bu tipten çıkar">×</button></div>' +
-        '<div class="mx-st"><span class="lbl">SAAT</span><div class="stp"><button class="sb" data-act="mxs" data-v="-15" data-tip="' + tp + '" data-n="' + esc(r.n) + '" aria-label="15 dk erken">' + SVG_MINUS + '</button><button class="sb" data-act="mxs" data-v="15" data-tip="' + tp + '" data-n="' + esc(r.n) + '" aria-label="15 dk geç">' + SVG_PLUS + '</button></div>' +
-        '<span class="lbl">SÜRE</span><div class="stp"><button class="sb" data-act="mxd" data-v="-15" data-tip="' + tp + '" data-n="' + esc(r.n) + '" aria-label="15 dk kısalt"' + (dur <= 0 ? ' disabled' : '') + '>' + SVG_MINUS + '</button><span class="mono val">' + (dur ? durStr(dur) : '—') + '</span><button class="sb" data-act="mxd" data-v="15" data-tip="' + tp + '" data-n="' + esc(r.n) + '" aria-label="15 dk uzat">' + SVG_PLUS + '</button></div></div></div>';
-    });
-  });
-  return h + '</div></div></div>';
 }
 function mxAdd(tip, name) {
   var src = tplItem('normal', name); TIPS.forEach(function (tp) { if (!src) src = tplItem(tp, name); });
@@ -1081,179 +567,10 @@ function mxDel(tip, name) {
   }
 }
 
-/* ================= Ayarlar ================= */
-function katOpts(sel) { var h = ''; for (var k in KAT) h += '<option value="' + k + '"' + (k === sel ? ' selected' : '') + '>' + KAT[k] + '</option>'; return h; }
-function vAyarlar() {
-  if (!D.sablonlar[V.stip]) V.stip = 'normal';
-  var tp = V.stip, L = D.sablonlar[tp] || [];
-  var h = '<div class="page-h"><h2>Ayarlar</h2></div><div class="set-w"><div class="card"><div class="card-h"><h3>Şablonlar</h3></div><div class="pills">';
-  TIPS.forEach(function (k) { h += '<button class="pill' + (k === tp ? ' sel' : '') + '" data-act="stip" data-tip="' + k + '">' + TIP[k] + ' · ' + D.sablonlar[k].length + '</button>'; });
-  h += '</div><div class="trow thead"><span>BAŞLANGIÇ</span><span>BİTİŞ</span><span>BAŞLIK</span><span>KATEGORİ</span><span>ASGARİ DK</span><span></span></div>';
-  L.forEach(function (x, i) {
-    h += '<div class="trow">' +
-      '<input class="inp t" data-tf="b" data-i="' + i + '" value="' + hm(x.baslangic) + '" maxlength="5" aria-label="Başlangıç">' +
-      '<input class="inp t" data-tf="e" data-i="' + i + '" value="' + hm(x.bitis) + '" maxlength="5" aria-label="Bitiş">' +
-      '<input class="inp" data-tf="t" data-i="' + i + '" value="' + esc(x.baslik) + '" aria-label="Başlık">' +
-      '<select class="inp k-sel" data-tf="k" data-i="' + i + '" aria-label="Kategori">' + katOpts(x.kategori) + '</select>' +
-      '<input class="inp t k-min" data-tf="a" data-i="' + i + '" value="' + (x.asgari || '') + '" placeholder="' + Math.max(15, Math.round((x.bitis - x.baslangic) / 2 / 15) * 15) + '" inputmode="numeric" aria-label="Asgari süre (dk)">' +
-      '<button class="icon-btn" data-act="tdel" data-i="' + i + '" aria-label="Satırı sil" title="Satırı sil"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>';
-  });
-  if (!L.length) h += '<div class="note" style="margin-top:12px">Bu şablonda iş yok.</div>';
-  h += '<div class="btns" style="margin-top:14px"><button class="btn sm" data-act="tadd">' + SVG_PLUS + 'Satır ekle</button>' +
-    '<button class="btn sm ghost" data-act="treset">Varsayılana döndür</button></div>' +
-    '<div class="note" style="margin-top:10px">Burada yapılan değişiklikler yeni uygulanan şablonlarda geçerli olur. Bugünden sonraki günlere de yansıtmak için Bugün ekranındaki "Günlük düzen" kartını kullan. Asgari süre "Kısalt" seçeneğinde kullanılır; boşsa sürenin yarısı.</div></div>';
-  h += '<div class="stack"><div class="card"><h3>Hedefler</h3><div style="margin-top:14px">' +
-    '<label class="field"><span class="lbl">GÜNLÜK ADIM HEDEFİ</span><input class="inp" data-sf="adimHedef" value="' + esc(D.ayarlar.adimHedef) + '" inputmode="numeric"></label>' +
-    '<label class="field"><span class="lbl">SINAV</span><input class="inp" data-sf="sinavAdi" value="' + esc(D.ayarlar.sinavAdi) + '"></label>' +
-    '<label class="field"><span class="lbl">SINAV TARİHİ (YYYY-AA-GG)</span><input class="inp" data-sf="sinavTarihi" value="' + esc(D.ayarlar.sinavTarihi) + '" maxlength="10"></label>' +
-    '<label class="field"><span class="lbl">BAŞLANGIÇ TARİHİ</span><input class="inp" data-sf="baslangic" value="' + esc(D.baslangic) + '" maxlength="10"></label></div></div>' +
-    '<div class="card"><h3>Yedek</h3><div class="note" style="margin:8px 0 14px">Bütün veri bu tarayıcıda, "gun.v1" anahtarında durur ve her değişiklikte anında kaydedilir.</div><div class="btns">' +
-    '<button class="btn sm" data-act="export">JSON dışa aktar</button><button class="btn sm" data-act="import">JSON içe aktar</button>' +
-    '<input type="file" id="impFile" accept="application/json,.json" class="hidden"></div>' +
-    '<div class="msg' + (setMsg && setMsg.err ? ' err' : '') + '" id="setMsg">' + (setMsg ? setMsg.html : '') + '</div></div>' +
-    '<div class="card"><h3>Bağlı uygulamalar</h3><div class="note" style="margin:8px 0 14px">Hepsinden yalnızca okunur; hiçbirine yazılmaz. Aynı adreste (yurugagarin.github.io) bu tarayıcıda bir kez açılmış olmaları gerekir.</div>' +
-    '<div class="src-row"><span><b>WORT</b> · wort:v1</span><span class="' + (W ? 'ok' : 'no') + '">' + (W ? 'bağlı' : 'bulunamadı') + '</span></div>' +
-    '<div class="src-row"><span><b>Ajanda</b> · ajanda_data_v3</span><span class="' + (AJ ? 'ok' : 'no') + '">' + (AJ ? 'bağlı' : 'bulunamadı') + '</span></div>' +
-    '<div class="src-row"><span><b>FORM</b> · emre:form:v2</span><span class="' + (F ? 'ok' : 'no') + '">' + (F ? 'bağlı' : 'bulunamadı') + '</span></div>' +
-    '<div class="note" style="margin:10px 0">WORT adları: ' + (D.wortAdlar ? Object.keys(D.wortAdlar.g).length + ' konu, ' + Object.keys(D.wortAdlar.ez).length + ' tablo' : 'okunmadı') +
-    ' · FORM programı: ' + (D.formAdlar ? Object.keys(D.formAdlar.prog).length + ' gün' : 'okunmadı') + '</div>' +
-    '<button class="btn sm" data-act="names">Adları yeniden oku</button></div></div></div>';
-  return h;
-}
-
-/* ================= çizim ================= */
-function render(anim) {
-  if (!mainEl) return;
-  var f = { bugun: vBugun, hafta: vHafta, ay: vAy, yil: vYil, duzen: vDuzen, ayarlar: vAyarlar }[V.tab] || vBugun;
-  var sy = window.scrollY;
-  mainEl.innerHTML = '<div class="view' + (anim ? ' enter' : '') + '">' + f() + '</div>';
-  if (!anim) window.scrollTo(0, sy);
-  renderTop();
-  animBars();
-  JUST = null;
-  if (V.stepEdit) { var si = $('#stepInp'); if (si) { si.focus(); si.select(); } }
-}
-function go(tab) {
-  if (tab === V.tab) return;
-  closePop(); V.stepEdit = false; setMsg = null;
-  if (tab !== 'ay' && tab !== 'yil') V.brush = null;
-  V.tab = tab; render(true); window.scrollTo(0, 0);
-}
-function openDay(t) {
-  V.gun = t; V.hafta = monday(t); V.ay = t.slice(0, 7); V.rtip = null;
-  if (V.tab !== 'bugun') { V.tab = 'bugun'; render(true); window.scrollTo(0, 0); } else render();
-}
-function goToday() { var td = today(); V.gun = td; V.hafta = monday(td); V.ay = td.slice(0, 7); V.rtip = null; render(); }
-function shift(n) {
-  if (V.tab === 'bugun') { V.gun = addD(V.gun, n); V.hafta = monday(V.gun); V.ay = V.gun.slice(0, 7); V.rtip = null; }
-  else if (V.tab === 'hafta') V.hafta = addD(V.hafta, 7 * n);
-  else if (V.tab === 'ay') { var p = V.ay.split('-'), d = new Date(+p[0], +p[1] - 1 + n, 1); V.ay = d.getFullYear() + '-' + pad(d.getMonth() + 1); }
-  else return;
-  render();
-}
-
-/* ================= açılır pencere ================= */
-var P = null;
-function closePop() {
-  if (!P) return;
-  var p = P; P = null; p.el.remove();
-  /* hiç dokunulmadan kapatılan yeni iş geri alınır */
-  if (p.kind === 'edit' && p.fresh && !p.dirty) {
-    var g = G(p.t); if (g) { g.isler = g.isler.filter(function (i) { return i.id !== p.id; }); save(); render(); }
-  }
-}
-function placePop(el, r) {
-  var w = el.offsetWidth, h = el.offsetHeight, vw = window.innerWidth, vh = window.innerHeight, x, y;
-  if (vw < 640) { el.style.left = '8px'; el.style.top = clamp(vh - h - 8, 8, vh) + 'px'; return; }
-  if (r.right + 10 + w <= vw - 8) x = r.right + 10;
-  else if (r.left - 10 - w >= 8) x = r.left - 10 - w;
-  else x = clamp(r.left, 8, vw - w - 8);
-  y = clamp(r.top, 8, Math.max(8, vh - h - 8));
-  el.style.left = x + 'px'; el.style.top = y + 'px';
-}
-function openPop(html, rect, st, cls) {
-  closePop();
-  var el = document.createElement('div');
-  el.className = 'pop' + (cls ? ' ' + cls : ''); el.setAttribute('role', 'dialog'); el.innerHTML = html;
-  document.body.appendChild(el);
-  placePop(el, rect);
-  P = st; P.el = el; P.rect = rect;
-  return el;
-}
-function openTpl(t, rect) {
-  var h = '<div class="pop-h"><div class="lbl" style="margin:0 0 4px">ŞABLONDAN PLANLA</div><div class="t">' + esc(fmtD(t)) + '</div></div><div class="opts">' +
-    TIPS.map(function (k) { var n = D.sablonlar[k].length; return '<button class="opt" data-act="poptpl" data-tip="' + k + '"><span class="o-n">' + TIP[k] + '</span><span class="o-v">' + (n ? n + ' iş' : 'iş yok') + '</span></button>'; }).join('') + '</div>';
-  openPop(h, rect, { kind: 'tpl', t: t });
-}
-
-/* ---------- işi değiştir: ad, gün, saat, süre, kategori, not + "plan değişti" kısayolları ---------- */
-function edHtml() {
-  var t = P.t, it = findIt(t, P.id); if (!it) return '';
-  var dur = it.bitis - it.baslangic, slot = suggestSlot(t, it), a = asgariOf(it), t2 = addD(t, 1), tip = (G(t) || {}).tip;
-  var h = '<div class="pop-h"><div class="lbl" style="margin:0 0 8px">' + (P.fresh ? 'YENİ İŞ' : 'İŞİ DEĞİŞTİR') + '</div>' +
-    '<input class="inp ed-name" data-ed="name" value="' + esc(it.baslik) + '" placeholder="İş adı" aria-label="İş adı"></div>' +
-    '<div class="katsel">' + Object.keys(KAT).map(function (k) {
-      return '<button class="kpill k-' + k + (it.kategori === k ? ' sel' : '') + '" data-act="edkat" data-k="' + k + '">' + dot(k) + KAT[k] + '</button>';
-    }).join('') + '</div>' +
-    (P.fresh ? '' : '<div class="lbl" style="margin:0 0 6px">DURUM</div>' + durumBtns(it)) +
-    '<div class="ed-grid">' +
-    '<span class="lbl">GÜN</span><div class="stp"><button class="sb" data-act="edday" data-v="-1" aria-label="Önceki gün">' + SVG_L + '</button><span class="mono val">' + esc(fmtDs(t)) + '</span><button class="sb" data-act="edday" data-v="1" aria-label="Sonraki gün">' + SVG_R + '</button></div>' +
-    '<span class="lbl">BAŞLANGIÇ</span><div class="stp"><button class="sb" data-act="edstart" data-v="-15" aria-label="15 dk erken">' + SVG_MINUS + '</button><input class="inp t" data-ed="b" value="' + hm(it.baslangic) + '" maxlength="5" aria-label="Başlangıç"><button class="sb" data-act="edstart" data-v="15" aria-label="15 dk geç">' + SVG_PLUS + '</button></div>' +
-    '<span class="lbl">BİTİŞ</span><div class="stp"><button class="sb" data-act="eddur" data-v="-15" aria-label="15 dk erken bitir"' + (dur <= 0 ? ' disabled' : '') + '>' + SVG_MINUS + '</button><input class="inp t" data-ed="e" value="' + hm(it.bitis) + '" maxlength="5" aria-label="Bitiş"><button class="sb" data-act="eddur" data-v="15" aria-label="15 dk geç bitir">' + SVG_PLUS + '</button><span class="mono muted">' + (dur ? durStr(dur) : '') + '</span></div>' +
-    '</div><div class="chips">' + DURS.map(function (m) { return '<button class="chip' + (dur === m ? ' sel' : '') + '" data-act="eddurset" data-v="' + m + '">' + durStr(m) + '</button>'; }).join('') + '</div>' +
-    '<label class="chk-l"><input type="checkbox" data-act="kaydir"' + (D.ayarlar.kaydir ? ' checked' : '') + '> Uzayınca sonraki işleri de kaydır</label>' +
-    '<div class="lbl" style="margin-top:12px">NOT</div>' +
-    '<textarea class="inp ed-not" data-ed="not" rows="2" placeholder="' + (it.kategori === 'ogun' ? 'Ne yenecek?' : it.kategori === 'almanca' || it.kategori === 'is' ? 'Ne çalışılacak?' : 'Not') + '" aria-label="Not">' + esc(it.not || '') + '</textarea>' +
-    '<div class="ed-rt"><div class="btns"><button class="btn sm" data-act="edrep">Tekrarla · tarih aralığı</button><button class="btn sm" data-act="edroutine">Her gün böyle olsun</button></div><span class="note">Ad, saat ve süreyi şablona ve sonraki "' + esc(TIP[tip === 'bos' || !tip ? 'normal' : tip]) + '" kayıtlarına yazar.</span></div>';
-  if (!P.fresh) {
-    h += '<div class="ed-sec"><div class="lbl">PLAN DEĞİŞTİ · KISAYOLLAR</div><div class="pills">' +
-      NEDEN.map(function (n) { return '<button class="pill' + (P.neden === n ? ' sel' : '') + '" data-act="neden" data-v="' + esc(n) + '">' + esc(n) + '</button>'; }).join('') + '</div>' +
-      '<div class="opts two">' +
-      '<button class="opt" data-act="op" data-op="tasi"' + (slot == null ? ' disabled' : '') + '><span class="o-n">Başka saate al</span><span class="o-v">' + (slot == null ? 'yer yok' : hm(slot)) + '</span></button>' +
-      '<button class="opt" data-act="op" data-op="kisalt"' + (dur <= a ? ' disabled' : '') + '><span class="o-n">Kısalt</span><span class="o-v">' + a + ' dk</span></button>' +
-      '<button class="opt" data-act="op" data-op="yarin"' + (it.gitti ? ' disabled' : '') + '><span class="o-n">Yarına taşı</span><span class="o-v">' + esc(fmtDs(t2)) + '</span></button>' +
-      '<button class="opt" data-act="op" data-op="atla"' + (it.durum === 'atlandi' ? ' disabled' : '') + '><span class="o-n">Bu seferlik atla</span><span class="o-v"></span></button></div>' +
-      (skippedBefore(t, it) && it.durum !== 'atlandi' ? '<div class="warn">Bu iş dün de atlandı; atlarsan üst üste ikinci kez olur.</div>' : '') + '</div>';
-  }
-  h += '<div class="foot"><button class="btn sm ghost" data-act="eddel">Sil</button><div class="btns">' +
-    (!P.fresh && (it.durum !== 'planli' || it.degisiklik !== 'yok' || it.gitti) ? '<button class="btn sm ghost" data-act="op" data-op="geri">Planlıya döndür</button>' : '') +
-    (!it.gitti && !P.fresh ? '<button class="btn sm" data-act="poptoggle">' + (it.durum === 'tamam' ? 'İşareti kaldır' : 'Tamam') + '</button>' : '') +
-    '<button class="btn sm amber-b" data-act="popdone">Kapat</button></div></div>';
-  return h;
-}
-function durumBtns(it) {
-  return '<div class="dsel">' + ['tamam', 'yapilmadi', 'gereksiz', 'planli'].map(function (k) {
-    return '<button class="dbtn d-' + k + (it.durum === k ? ' sel' : '') + '" data-act="setdurum" data-v="' + k + '">' + DURUM[k] + '</button>';
-  }).join('') + '</div>';
-}
-function durumHtml() {
-  var it = findIt(P.t, P.id); if (!it) return '';
-  return '<div class="pop-h"><div class="lbl" style="margin:0 0 4px">DURUM</div><div class="t">' + esc(it.baslik) + '</div><div class="mono muted">' +
-    esc(fmtDs(P.t)) + ' · ' + hm(it.baslangic) + (it.bitis > it.baslangic ? '–' + hm(it.bitis) : '') + '</div></div>' + durumBtns(it) +
-    '<div class="lbl" style="margin-top:14px">NEDEN / NOT</div><input class="inp" style="width:100%" data-ed="sebep" value="' + esc(it.sebep || '') + '" placeholder="İsteğe bağlı: neden olmadı?" aria-label="Neden">' +
-    '<div class="foot"><button class="btn sm ghost" data-act="pop2edit">Saati ya da adı değiştir</button><button class="btn sm amber-b" data-act="popdone">Kapat</button></div>';
-}
-function openDurum(t, id, rect) {
-  var el = openPop('', rect, { kind: 'durum', t: t, id: id, dirty: true });
-  el.innerHTML = durumHtml(); placePop(el, rect);
-}
-function popRefresh() {
-  if (!P) return;
-  if (P.kind === 'edit') edRefresh();
-  else if (P.kind === 'durum') { P.el.innerHTML = durumHtml(); placePop(P.el, P.rect); }
-}
-function openEdit(t, id, rect, fresh) {
-  var it = findIt(t, id); if (!it) return;
-  var el = openPop('', rect, { kind: 'edit', t: t, id: id, fresh: !!fresh, dirty: false, neden: it.neden || null, orig: { baslik: it.baslik } }, 'ed');
-  el.innerHTML = edHtml(); placePop(el, rect);
-  if (fresh) { var n = el.querySelector('[data-ed="name"]'); n.focus(); n.select(); }
-}
-function edRefresh() { if (!P || P.kind !== 'edit') return; var sc = P.el.scrollTop; P.el.innerHTML = P.rep && P.rep.on ? repHtml() : edHtml(); placePop(P.el, P.rect); P.el.scrollTop = sc; }
 function addMonths(t, n) {
   var d = pd(t), day = d.getDate(); d.setDate(1); d.setMonth(d.getMonth() + n);
   d.setDate(Math.min(day, new Date(d.getFullYear(), d.getMonth() + 1, 0).getDate())); return ds(d);
 }
-function repDays() { var R = P.rep, out = []; for (var t = R.from; t <= R.to; t = addD(t, 1)) if (R.wd[dow(t)]) out.push(t); return out; }
 function wdLabel(wd) {
   var on = [], off = [];
   wd.forEach(function (v, i) { (v ? on : off).push(GUN[i]); });
@@ -1261,517 +578,868 @@ function wdLabel(wd) {
   if (!on.length) return 'gün seçilmedi';
   return off.length <= 2 ? off.join(', ') + ' hariç' : on.join(', ');
 }
-function repHtml() {
-  var it = findIt(P.t, P.id); if (!it) return '';
-  var R = P.rep, days = repDays(), n = days.filter(function (t) { return t !== P.t; }).length;
-  var h = '<div class="pop-h"><button class="btn sm ghost rep-back" data-act="repback">' + SVG_L + 'Geri</button><div class="lbl" style="margin:6px 0 4px">TEKRARLA</div>' +
-    '<div class="t">' + esc(it.baslik) + '</div><div class="mono muted">' + hm(it.baslangic) + (it.bitis > it.baslangic ? '–' + hm(it.bitis) : '') + '</div></div>' +
-    '<div class="lbl">HANGİ GÜNLER</div><div class="wdsel">' + GUN.map(function (g, i) { return '<button class="wd' + (R.wd[i] ? ' sel' : '') + '" data-act="repwd" data-v="' + i + '">' + g + '</button>'; }).join('') + '</div>' +
-    '<div class="lbl" style="margin-top:12px">TARİH ARALIĞI</div><div class="rng">' +
-    '<button class="rbox' + (R.pick === 'start' ? ' on' : '') + '" data-act="reppick" data-v="start"><span>Başlangıç</span><b>' + esc(fmtD(R.from)) + '</b></button>' +
-    '<button class="rbox' + (R.pick === 'end' ? ' on' : '') + '" data-act="reppick" data-v="end"><span>Bitiş</span><b>' + esc(fmtD(R.to)) + '</b></button></div>' +
-    '<div class="chips l0">' + [['1h', '1 hafta'], ['1m', '1 ay'], ['3m', '3 ay'], ['6m', '6 ay'], ['ex', 'Sınava kadar']].map(function (q) { return '<button class="chip" data-act="repq" data-v="' + q[0] + '">' + q[1] + '</button>'; }).join('') + '</div>';
-  var vm = pd(R.vm + '-01'), y = vm.getFullYear(), mo = vm.getMonth(), first = R.vm + '-01', last = ds(new Date(y, mo + 1, 0)), td = today();
-  h += '<div class="rcal"><div class="rcal-h"><button class="sb" data-act="repm" data-v="-1" aria-label="Önceki ay">' + SVG_L + '</button><b>' + AY[mo] + ' ' + y + '</b><button class="sb" data-act="repm" data-v="1" aria-label="Sonraki ay">' + SVG_R + '</button></div><div class="rcal-g">';
-  GUN.forEach(function (g) { h += '<span class="rwd">' + g.charAt(0) + '</span>'; });
-  for (var i = 0; i < dow(first); i++) h += '<span></span>';
-  for (var t = first; t <= last; t = addD(t, 1)) {
-    var inR = t >= R.from && t <= R.to, c = inR ? (R.wd[dow(t)] ? ' in' : ' off') : '';
-    if (t === R.from || t === R.to) c += ' edge';
-    if (t === td) c += ' td';
-    if (t === P.t) c += ' src';
-    h += '<button class="rd' + c + '" data-act="repday" data-d="' + t + '">' + pd(t).getDate() + '</button>';
+
+/* ================= v5 arayüz — Ajanda'nın diliyle ================= */
+var GUNL = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
+var KATC = { kalkis: '#8A8781', spor: '#6C9E6E', is: '#5E86B0', yuruyus: '#D9B44A', ogun: '#D08A4E', almanca: '#8A72A8', diger: '#8A8781' };
+var TIPC = { normal: '#2f7a5b', disarida: '#b4622f', seyahat: '#5E86B0', bos: '#8A8781' };
+var IC = {
+  plus: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>',
+  left: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>',
+  right: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>',
+  check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
+  x: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M7 7l10 10M17 7L7 17"/></svg>',
+  dash: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M7 12h10"/></svg>',
+  gear: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>',
+  ext: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>'
+};
+
+var V = { tab: 'bugun', gun: today(), hafta: monday(today()), tk: 'yil', ay: today().slice(0, 7), duzen: null, brush: null };
+var JUST = null, mainEl = null, LASTMIN = -1, LASTDAY = today(), UNDO = null, SH = null, SW = null, WRAW = null;
+function renderSaved() { }
+
+/* ---------- küçük yardımcılar ---------- */
+function longDate(t) { var d = pd(t); return GUNL[dow(t)] + ' ' + d.getDate() + ' ' + AY[d.getMonth()]; }
+function dayTitle(t) { var td = today(); return t === td ? 'Bugün' : t === addD(td, 1) ? 'Yarın' : t === addD(td, -1) ? 'Dün' : fmtDs(t); }
+function stepsOf(t) {
+  if (D.adim[t] != null) return { n: D.adim[t], src: 'gun' };
+  var f = formSteps(t); if (f != null) return { n: f, src: 'form' };
+  return { n: 0, src: null };
+}
+function nowState(g, now) {
+  var L = counted(g).filter(function (i) { return i.durum === 'planli'; });
+  var act = L.filter(function (i) { return i.baslangic <= now && now < i.bitis; })[0] || null;
+  var after = L.filter(function (i) { return i !== act && i.baslangic > now; });
+  return { act: act, next: after[0] || null, next2: after[1] || null };
+}
+function isMiss(t, it) {
+  if (it.durum !== 'planli' || it.gitti) return false;
+  var td = today(); return t < td || (t === td && it.bitis <= nowMin() && it.bitis > it.baslangic);
+}
+function detailOf(t, it) {
+  var p = [];
+  if (it.not) p.push(it.not);
+  if (it.kategori === 'spor') { var fd = formDay(t); if (fd) p.push(fd.rest ? 'FORM: ' + fd.label : fd.label + (fd.ex.length ? ' · ' + fd.ex.length + ' hareket' : '')); }
+  if (it.kategori === 'almanca') {
+    var g = G(t);
+    if (it.durum === 'tamam' && g && g.wortOzet && g.wortOzet.konu) p.push(g.wortOzet.konu);
+    else if (t === today() && W && W.konu && W.konu.ad) p.push(W.konu.ad + (W.konu.asama ? ' · ' + W.konu.asama : ''));
   }
-  h += '</div><div class="note" style="margin-top:6px">' + (R.pick === 'start' ? 'Takvimde başlangıç gününe dokun.' : 'Şimdi bitiş gününe dokun.') + '</div></div>' +
-    '<div class="rep-sum"><b>' + n + ' gün</b> · ' + esc(wdLabel(R.wd)) + ' · ' + esc(fmtDs(R.from)) + ' – ' + esc(fmtDs(R.to)) + '</div>' +
-    '<label class="chk-l"><input type="checkbox" data-act="repyeni"' + (R.yeni ? ' checked' : '') + '> Planı olmayan günlerde Normal gün planı aç</label>' +
-    (R.msg ? '<div class="rep-msg">' + esc(R.msg) + '</div>' : '') +
-    '<div class="foot"><button class="btn sm ghost" data-act="repdel">Bu günlerden kaldır</button><button class="btn sm amber-b" data-act="repadd"' + (n ? '' : ' disabled') + '>' + n + ' güne ekle</button></div>';
+  if (it.kategori === 'yuruyus' && it.durum === 'planli') { var goal = +D.ayarlar.adimHedef || 0, n = stepsOf(t).n; if (goal && n < goal) p.push(fmtN(goal - n) + ' adım kaldı'); }
+  return p.join(' · ');
+}
+function subOf(t, it) {
+  var p = [];
+  if (it.bitis > it.baslangic) p.push(hm(it.baslangic) + '–' + hm(it.bitis));
+  if (it.durum === 'tamam') p.push(it.oto ? 'Tamam · ' + it.oto + '\'dan' : 'Tamam');
+  else if (it.durum === 'yapilmadi' || it.durum === 'gereksiz') p.push(DURUM[it.durum] + (it.sebep ? ': ' + it.sebep : ''));
+  else if (it.durum === 'atlandi') p.push('Atlandı' + (it.neden ? ': ' + it.neden : ''));
+  else if (it.gitti) p.push('Yarına taşındı');
+  var d = detailOf(t, it); if (d) p.push(d);
+  return p.join(' · ');
+}
+
+/* ---------- geri al + bildirim ---------- */
+function snap() { UNDO = JSON.stringify(D); }
+var toastT = null;
+function toast(msg, canUndo) {
+  var el = $('#toast'); if (!el) return;
+  el.innerHTML = esc(msg) + (canUndo && UNDO ? '<button data-act="undo">Geri al</button>' : '');
+  el.className = 'toast on' + (canUndo ? ' act' : '');
+  clearTimeout(toastT); toastT = setTimeout(function () { el.className = 'toast'; }, canUndo ? 5000 : 2200);
+}
+function undo() {
+  if (!UNDO) return;
+  var o = normalize(JSON.parse(UNDO)); UNDO = null; if (!o) return;
+  D = o; save(); render(); toast('Geri alındı');
+}
+
+/* ---------- FORM / WORT ile otomatik işaret ---------- */
+function formTrained(t) {
+  var r = F && F.days[t]; if (!r || !r.ex) return false;
+  for (var k in r.ex) { var a = r.ex[k]; if (Array.isArray(a) && a.some(function (x) { return x && +x.rep > 0; })) return true; }
+  return false;
+}
+function formSleep(t) { var r = F && F.days[t]; if (!r || (r.sl == null && r.nap == null)) return null; return (+r.sl || 0) + (+r.nap || 0); }
+var SDE_L = /(^|[^a-zäöüß])(ich|du|er|sie|es|wir|ihr|und|oder|aber|nicht|der|die|das|den|dem|des|ein|eine|einen|einem|ist|bin|bist|sind|war|habe|hast|hat|haben|hatte|mit|von|zu|auf|für|in|im|am|an|nach|bei|wenn|weil|dass|heute|morgen|gestern)(?=[^a-zäöüß]|$)/i;
+function sentL(s) { if (!s) return 0; return String(s).split(/[.!?…\n]+/).filter(function (x) { return (x.match(/[A-Za-zÄÖÜäöüß]+/g) || []).length >= 3 && !/[çğışİıÇĞŞ]/.test(x) && (/[äöüßÄÖÜ]/.test(x) || SDE_L.test(x)); }).length; }
+/* WORT'un günlük puanı (100 üzerinden): kelime 25 · konu 20 · ezber 20 · yazma 15 · okuma 20. WORT 75 ve üstünü "gün tamam" sayar. */
+function wortScore(t) {
+  var d = WRAW && WRAW.days && WRAW.days[t]; if (!d) return 0;
+  if (d.sc0 != null) return d.sc0;
+  var gf = function () { var n = d.gsn || 0, T = d.gtg || 2; if (n >= T || (d.gcap != null && n > 0 && n >= d.gcap)) return 1; if (d.gcap === 0 && !n) return Math.min(1, (d.g || 0) / 10); return Math.min(1, (n + Math.min(.5, (d.g || 0) / 24)) / T); };
+  var f = {
+    wort: d.wt === 0 ? 1 : d.wt ? Math.min(1, (d.w || 0) / d.wt) : 0,
+    gram: d.gv ? gf() : d.gs ? 1 : Math.min(1, (d.g || 0) / 10),
+    ez: d.ezt ? 1 : Math.min(1, (d.ez || 0) / 12),
+    sch: Math.min(1, sentL(d.sch) / 3),
+    oku: Math.max(d.rs ? Math.min(1, d.rs / 9) : 0, d.rd ? 1 : d.rr ? .5 : 0)
+  };
+  var MX = { wort: 25, gram: 20, ez: 20, sch: 15, oku: 20 }, s = 0;
+  for (var k in MX) s += Math.round(MX[k] * f[k]);
+  return s;
+}
+function autoMark() {
+  var A = D.ayarlar, td = today(), now = nowMin(), ch = false;
+  [addD(td, -1), td].forEach(function (t) {
+    var g = G(t); if (!g) return;
+    g.isler.forEach(function (it) {
+      if (it.gitti || it.durum !== 'planli' || it.otoKapali) return;
+      if (A.otoForm && it.kategori === 'spor' && formTrained(t)) { it.durum = 'tamam'; it.oto = 'FORM'; ch = true; }
+      else if (A.otoWort && it.kategori === 'almanca' && wortScore(t) >= 75) { it.durum = 'tamam'; it.oto = 'WORT'; snapshotWort(t, it); ch = true; }
+      else if (A.otoAdim && it.kategori === 'yuruyus') {
+        var goal = +A.adimHedef || 0;
+        if (goal && stepsOf(t).n >= goal) {
+          if (t < td || it.baslangic <= now) { it.durum = 'tamam'; it.oto = 'Adım'; }
+          else { it.durum = 'gereksiz'; it.sebep = 'adım hedefi tamam'; it.oto = 'Adım'; }
+          ch = true;
+        }
+      }
+    });
+  });
+  if (ch) save();
+}
+function readAll2() { readWort(); WRAW = readJSON(WKEY); readAjanda(); readForm(); autoMark(); }
+
+/* ---------- ajandadan gün tipi önerisi ---------- */
+function ajOneri(t) {
+  var g = G(t);
+  if (!D.ayarlar.oneri || !g || g.tip !== 'normal' || t < today() || (D.oneriKapali || {})[t]) return null;
+  return ajFor(t).filter(function (e) { return e.time != null && e.time >= 17 * 60 && !e.done; })[0] || null;
+}
+
+/* ---------- durum değiştir (geri alınabilir) ---------- */
+function setStatus(t, id, d, quiet) {
+  var it = findIt(t, id); if (!it || it.gitti) return;
+  snap();
+  if (d === 'planli' && it.oto) { it.otoKapali = true; delete it.oto; }
+  setDurum(t, id, d);
+  if (!quiet) toast(d === 'tamam' ? it.baslik + ' tamam' : d === 'planli' ? 'İşaret kaldırıldı' : it.baslik + ': ' + DURUM[d].toLowerCase(), true);
+}
+
+/* ================= ekranlar ================= */
+function hdr(kicker, dot, title, right, titleAct) {
+  return '<header class="hdr"><div class="hl"><div class="kicker">' + (dot ? '<i style="background:' + dot + '"></i>' : '') + kicker + '</div>' +
+    (titleAct ? '<button class="title" data-act="' + titleAct + '">' + title + '</button>' : '<div class="title">' + title + '</div>') + '</div>' +
+    '<div class="hbtns">' + right + '</div></header>';
+}
+function navPair(p, n) { return '<div class="nav"><button data-act="' + p + '" aria-label="Önceki">' + IC.left + '</button><button data-act="' + n + '" aria-label="Sonraki">' + IC.right + '</button></div>'; }
+function fab(act, d) { return '<button class="fab" data-act="' + act + '"' + (d ? ' data-d="' + d + '"' : '') + ' aria-label="Yeni iş">' + IC.plus + '</button>'; }
+
+/* ---------- Bugün ---------- */
+function heroHtml(t, g) {
+  var now = nowMin(), ns = nowState(g, now), L = counted(g), s = stats(g);
+  if (ns.act) {
+    var it = ns.act, dur = it.bitis - it.baslangic, pct = dur ? Math.round((now - it.baslangic) / dur * 100) : 0, det = detailOf(t, it);
+    return '<div class="hero" style="--c:' + KATC[it.kategori] + '"><div class="h-k"><span><i></i>ŞİMDİ</span><span>' + hm(now) + '</span></div>' +
+      '<div class="h-t">' + esc(it.baslik) + '</div>' +
+      '<div class="h-bar"><i style="width:' + pct + '%"></i></div>' +
+      '<div class="h-r"><b>' + durStr(it.bitis - now) + ' kaldı</b> · ' + at(it.bitis) + ' bitiyor</div>' +
+      (det ? '<div class="h-d">' + esc(det) + '</div>' : '') +
+      '<div class="h-a"><button class="ha ok" data-act="tick" data-id="' + it.id + '" data-d="' + t + '">' + IC.check + 'Bitti</button>' +
+      '<button class="ha" data-act="ext" data-id="' + it.id + '">+15 dk</button>' +
+      '<button class="ha" data-act="edit" data-id="' + it.id + '" data-d="' + t + '">Değiştir</button></div></div>' +
+      (ns.next ? '<button class="nextln" data-act="edit" data-id="' + ns.next.id + '" data-d="' + t + '"><span>Sonra</span><b>' + hm(ns.next.baslangic) + '</b>' + esc(ns.next.baslik) + '</button>' : '');
+  }
+  if (ns.next) {
+    var nx = ns.next, d2 = detailOf(t, nx);
+    return '<div class="hero wait" style="--c:' + KATC[nx.kategori] + '"><div class="h-k"><span><i></i>SIRADAKİ</span><span>' + hm(now) + '</span></div>' +
+      '<div class="h-t">' + esc(nx.baslik) + '</div>' +
+      '<div class="h-r"><b>' + durStr(nx.baslangic - now) + ' sonra</b> · ' + at(nx.baslangic) + ' başlıyor' + (nx.bitis > nx.baslangic ? ', ' + durStr(nx.bitis - nx.baslangic) : '') + '</div>' +
+      (d2 ? '<div class="h-d">' + esc(d2) + '</div>' : '') +
+      '<div class="h-a"><button class="ha" data-act="edit" data-id="' + nx.id + '" data-d="' + t + '">Değiştir</button></div></div>';
+  }
+  var allDone = L.length && L.every(function (i) { return i.durum !== 'planli'; });
+  return '<div class="hero calm"><div class="h-k"><span><i></i>' + (allDone ? 'GÜN BİTTİ' : 'ŞU AN BOŞ') + '</span><span>' + hm(now) + '</span></div>' +
+    '<div class="h-t">' + (allDone ? 'Bugünün işleri bitti.' : L.length ? 'Sıradaki iş yok.' : 'Bugün iş yok.') + '</div>' +
+    '<div class="h-r">' + (s.n ? s.tamam + ' / ' + s.n + ' tamam' : '') + '</div></div>';
+}
+function dayInfo(t, g) {
+  var s = stats(g), fd = formDay(t), aj = ajFor(t).length, p = [];
+  p.push(s.n + ' iş' + (t < today() ? ' · ' + s.tamam + ' tamam' : ''));
+  if (fd) p.push('Spor: ' + fd.label);
+  if (aj) p.push(aj + ' ajanda kaydı');
+  return '<div class="dinfo">' + esc(p.join(' · ')) + '</div>';
+}
+function rowHtml(t, it, cur) {
+  var miss = isMiss(t, it);
+  var cls = 'prow' + (cur ? ' now' : '') + (it.durum === 'tamam' ? ' is-done' : '') + (it.durum === 'yapilmadi' || it.durum === 'atlandi' ? ' is-no' : '') +
+    (it.durum === 'gereksiz' ? ' is-nn' : '') + (it.gitti ? ' is-gone' : '') + (JUST === it.id ? ' just' : '');
+  var chk = it.durum === 'tamam' ? 'chk on' : it.durum === 'yapilmadi' || it.durum === 'atlandi' ? 'chk no' : it.durum === 'gereksiz' ? 'chk nn' : miss ? 'chk miss' : 'chk';
+  var icon = it.durum === 'yapilmadi' || it.durum === 'atlandi' ? IC.x : it.durum === 'gereksiz' ? IC.dash : IC.check;
+  return '<div class="sw" data-id="' + it.id + '" data-d="' + t + '"><div class="sw-bg">' +
+    '<button data-act="st" data-v="yapilmadi" data-id="' + it.id + '" data-d="' + t + '">' + IC.x + 'Yapmadım</button>' +
+    '<button data-act="st" data-v="gereksiz" data-id="' + it.id + '" data-d="' + t + '">' + IC.dash + 'Gerek yok</button></div>' +
+    '<div class="sw-fg ' + cls + '" style="--c:' + KATC[it.kategori] + '">' +
+    '<button class="pbody" data-act="edit" data-id="' + it.id + '" data-d="' + t + '"><span class="ptime">' + hm(it.baslangic) + '</span><span class="pbar"></span>' +
+    '<span class="ptx"><span class="pttl">' + esc(it.baslik) + '</span><span class="pwhen">' + esc(subOf(t, it)) + '</span></span></button>' +
+    (it.gitti ? '' : '<button class="' + chk + '" data-act="tick" data-id="' + it.id + '" data-d="' + t + '" aria-label="Tamam">' + icon + '</button>') +
+    '</div></div>';
+}
+function ajRowHtml(e) {
+  return '<a class="prow aj' + (e.done ? ' is-done' : '') + '" href="' + AJ_URL + '" target="_blank" rel="noopener" style="--c:' + e.color + '">' +
+    '<span class="pbody"><span class="ptime">' + (e.time == null ? 'Gün' : hm(e.time)) + '</span><span class="pbar"></span>' +
+    '<span class="ptx"><span class="pttl">' + esc(e.text) + '</span><span class="pwhen">Ajanda' + (e.note ? ' · ' + esc(e.note) : '') + '</span></span></span><span class="ajt">' + IC.ext + '</span></a>';
+}
+var PARTS = [['SABAH', 0, 720], ['ÖĞLEDEN SONRA', 720, 1020], ['AKŞAM', 1020, 1441]];
+function listHtml(t, g) {
+  var isT = t === today(), now = nowMin(), cur = isT ? nowState(g, now).act : null, h = '';
+  var items = (g ? g.isler : []).map(function (it) { return { m: it.baslangic, it: it }; });
+  ajFor(t).forEach(function (e) { items.push({ m: e.time == null ? -1 : e.time, aj: e }); });
+  items.sort(function (a, b) { return a.m - b.m; });
+  var allDay = items.filter(function (x) { return x.m < 0; });
+  if (allDay.length) h += '<div class="prev">' + allDay.map(function (x) { return ajRowHtml(x.aj); }).join('') + '</div>';
+  PARTS.forEach(function (pt) {
+    var L = items.filter(function (x) { return x.m >= pt[1] && x.m < pt[2]; });
+    if (!L.length) return;
+    var its = L.filter(function (x) { return x.it && !x.it.gitti && x.it.durum !== 'gereksiz'; });
+    var dn = its.filter(function (x) { return x.it.durum === 'tamam'; }).length;
+    var active = isT && now >= pt[1] && now < pt[2];
+    h += '<div class="agh' + (active ? ' on' : '') + '"><span class="t">' + (pt[0] === 'AKŞAM' && isT ? 'Bu akşam' : pt[0] === 'SABAH' ? 'Sabah' : pt[0] === 'AKŞAM' ? 'Akşam' : 'Öğleden sonra') + '</span>' +
+      '<span class="d">' + (pt[1] === 0 ? '12:00\'ye kadar' : pt[2] > 1440 ? '17:00 sonrası' : '12:00–17:00') + '</span>' + (its.length ? '<span class="n">' + dn + ' / ' + its.length + '</span>' : '') + '</div>' +
+      '<div class="prev">' + L.map(function (x) { return x.aj ? ajRowHtml(x.aj) : rowHtml(t, x.it, cur && cur.id === x.it.id); }).join('') + '</div>';
+  });
   return h;
 }
-function repApply(add) {
-  var it = findIt(P.t, P.id); if (!it) return;
-  var n = 0;
-  repDays().forEach(function (t) {
-    if (t === P.t) return;
+function statsHtml(t, g) {
+  var goal = +D.ayarlar.adimHedef || 0, st = stepsOf(t), sl = formSleep(t), s = stats(g);
+  return '<div class="stats">' +
+    '<button class="stat" data-act="steps"><span class="sl">Adım' + (st.src === 'form' ? ' · FORM' : '') + '</span><b>' + fmtN(st.n) + '</b><span class="sm">/ ' + fmtN(goal) + '</span>' +
+    '<span class="sbar"><i style="width:' + (goal ? Math.min(100, st.n / goal * 100) : 0) + '%"></i></span></button>' +
+    '<div class="stat"><span class="sl">Tamam</span><b>' + s.tamam + '</b><span class="sm">/ ' + s.n + '</span><span class="sbar"><i style="width:' + (s.n ? s.tamam / s.n * 100 : 0) + '%"></i></span></div>' +
+    (sl != null ? '<div class="stat"><span class="sl">Uyku · FORM</span><b>' + String(Math.round(sl * 10) / 10).replace('.', ',') + '</b><span class="sm">sa</span></div>' : '') +
+    '</div>';
+}
+function vBugun() {
+  var t = V.gun, g = G(t), td = today(), isT = t === td, s = stats(g);
+  var h = hdr(esc(longDate(t).toLocaleUpperCase('tr')), isT ? 'var(--green)' : '', dayTitle(t),
+    (isT ? '' : '<button class="pill" data-act="gotoday">Bugün</button>') + navPair('dprev', 'dnext') + fab('add', t), isT ? '' : 'gotoday');
+  h += '<div class="scroll">';
+  h += '<div class="typerow"><button class="tpill" data-act="tipsheet" data-d="' + t + '"><i style="background:' + (g ? TIPC[g.tip] : 'transparent') + '"></i>' + (g ? TIP[g.tip] : 'Plan yok') + '<span class="chev">▾</span></button>' +
+    (g && s.n ? '<span class="tsum">' + s.tamam + ' / ' + s.n + ' tamam</span>' : '') + '</div>';
+  var tn = g && D.ayarlar.tipNot && D.ayarlar.tipNot[g.tip];
+  if (tn) h += '<div class="tnote">' + esc(tn) + '</div>';
+  var on = ajOneri(t);
+  if (on) h += '<div class="oneri"><div><b>Akşam ' + hm(on.time) + ' · ' + esc(on.text) + '</b><span>Ajandada akşam randevun var. Bu günü "Dışarıdayım" yapalım mı?</span></div>' +
+    '<div class="row"><button class="go" data-act="oneriok" data-d="' + t + '">Dışarıdayım yap</button><button data-act="onerino" data-d="' + t + '">Hayır</button></div></div>';
+  if (!g) {
+    h += '<div class="emptyday"><b>Bu gün için plan yok.</b><span>Bir gün tipi seç; işler şablondan gelir.</span><div class="pick">' +
+      TIPS.map(function (k) { return '<button data-act="tpl" data-tip="' + k + '" data-d="' + t + '"><i style="background:' + TIPC[k] + '"></i>' + TIP[k] + '</button>'; }).join('') + '</div></div>';
+    h += listHtml(t, g);
+  } else {
+    h += isT ? heroHtml(t, g) : dayInfo(t, g);
+    if (!g.isler.length && !ajFor(t).length) h += '<div class="empty">' + (g.tip === 'seyahat' ? 'Seyahat günü. İş yok.' : 'İş yok.') + '</div>';
+    h += listHtml(t, g);
+    h += '<button class="addline" data-act="add" data-d="' + t + '">' + IC.plus + 'İş ekle</button>';
+  }
+  h += statsHtml(t, g);
+  return h + '</div>';
+}
+
+/* ---------- Hafta ---------- */
+function weekReview(days) {
+  var td = today(), by = {}, nedens = {}, tot = 0, dn = 0, any = false;
+  days.forEach(function (t) {
+    if (t > td) return;
+    var g = G(t); if (!g) return; any = true;
+    counted(g).forEach(function (it) {
+      if (it.durum === 'gereksiz' || (t === td && it.durum === 'planli' && it.bitis > nowMin())) return;
+      var r = by[it.baslik] || (by[it.baslik] = { n: 0, d: 0, k: it.kategori });
+      r.n++; tot++; if (it.durum === 'tamam') { r.d++; dn++; }
+      var ne = it.sebep || it.neden; if ((it.durum === 'yapilmadi' || it.durum === 'atlandi') && ne) nedens[ne] = (nedens[ne] || 0) + 1;
+    });
+  });
+  if (!any || !tot) return '';
+  var rows = Object.keys(by).map(function (k) { return { n: k, r: by[k] }; }).sort(function (a, b) { return a.r.d / a.r.n - b.r.d / b.r.n || b.r.n - a.r.n; });
+  var worst = rows.filter(function (x) { return x.r.n - x.r.d > 0; })[0];
+  var h = '<div class="rev"><div class="rv-h"><span class="t">' + (days.indexOf(td) >= 0 ? 'Bu hafta şimdiye kadar' : 'Hafta özeti') + '</span><span class="n">' + dn + ' / ' + tot + '</span></div>' +
+    '<div class="rv-bar"><i style="width:' + Math.round(dn / tot * 100) + '%"></i></div><div class="rv-list">';
+  rows.slice(0, 8).forEach(function (x) {
+    h += '<div class="rv-r"><i style="background:' + KATC[x.r.k] + '"></i><span class="nm">' + esc(x.n) + '</span><span class="mb"><b style="width:' + Math.round(x.r.d / x.r.n * 100) + '%"></b></span><span class="c">' + x.r.d + '/' + x.r.n + '</span></div>';
+  });
+  h += '</div>';
+  var lines = [];
+  if (worst) lines.push('En çok kaçan: <b>' + esc(worst.n) + '</b> (' + (worst.r.n - worst.r.d) + ' kez)');
+  var nk = Object.keys(nedens).sort(function (a, b) { return nedens[b] - nedens[a]; });
+  if (nk.length) lines.push('Nedenler: ' + nk.slice(0, 3).map(function (k) { return esc(k) + ' ' + nedens[k]; }).join(' · '));
+  /* uyku: FORM'dan; az uyunan gecenin ertesi günü */
+  var sl = [], lo = [], hi = [];
+  days.forEach(function (t) {
+    if (t > td) return;
+    var v = formSleep(t); if (v != null) sl.push(v);
+    var prev = formSleep(addD(t, -1)), s = stats(G(t));
+    if (prev != null && s.n && t < td) (prev < 6.5 ? lo : hi).push(s.tamam / s.n);
+  });
+  if (sl.length) lines.push('Uyku ort. <b>' + String(Math.round(sl.reduce(function (a, b) { return a + b; }, 0) / sl.length * 10) / 10).replace('.', ',') + ' sa</b>');
+  var avg = function (a) { return Math.round(a.reduce(function (x, y) { return x + y; }, 0) / a.length * 100); };
+  if (lo.length && hi.length) lines.push('6,5 saatten az uyuduğun gecelerin ertesi <b>%' + avg(lo) + '</b>, diğer günler <b>%' + avg(hi) + '</b> tamam');
+  if (lines.length) h += '<div class="rv-l">' + lines.join('<br>') + '</div>';
+  return h + '</div>';
+}
+function vHafta() {
+  var wk = V.hafta, td = today(), days = [];
+  for (var i = 0; i < 7; i++) days.push(addD(wk, i));
+  var a = pd(wk), b = pd(addD(wk, 6));
+  var title = a.getMonth() === b.getMonth() ? a.getDate() + '–' + b.getDate() + ' ' + AY[a.getMonth()] : a.getDate() + ' ' + AYK[a.getMonth()] + ' – ' + b.getDate() + ' ' + AYK[b.getMonth()];
+  var h = hdr('HAFTA ' + isoWeek(wk), 'var(--green)', title, (wk === monday(td) ? '' : '<button class="pill" data-act="gotoday">Bu hafta</button>') + navPair('wprev', 'wnext') + fab('add', days.indexOf(td) >= 0 ? td : wk));
+  h += '<div class="scroll"><div class="wrap">' + weekReview(days);
+  days.forEach(function (t) {
+    var g = G(t), k = kind(t), fd = formDay(t), s = stats(g), past = t < td;
+    h += '<div class="wday' + (t === td ? ' today' : '') + (past ? ' past' : '') + '"><button class="wleft" data-act="openday" data-d="' + t + '"><div class="wdow">' + GUN[dow(t)] + '</div><div class="wnum">' + pd(t).getDate() + '</div></button><div class="wright">' +
+      '<button class="wtag" data-act="openday" data-d="' + t + '"><i style="background:' + (g ? TIPC[g.tip] : 'transparent') + '"></i>' + (g ? TIP[g.tip] : 'Plan yok') +
+      (fd && !fd.rest ? ' · ' + esc(fd.short) : '') + (s.n && t <= td ? '<span class="wn">' + s.tamam + '/' + s.n + '</span>' : s.n ? '<span class="wn">' + s.n + ' iş</span>' : '') + '</button>';
+    if (k === 'none' && t >= td) h += '<button class="addline sm" data-act="tipsheet" data-d="' + t + '">Planla</button>';
+    var items = (g ? counted(g) : []).map(function (it) { return { m: it.baslangic, it: it }; });
+    ajFor(t).forEach(function (e) { items.push({ m: e.time == null ? -1 : e.time, aj: e }); });
+    items.sort(function (x, y) { return x.m - y.m; });
+    items.forEach(function (x) {
+      if (x.aj) { h += '<a class="ev aj' + (x.aj.done ? ' is-done' : '') + '" href="' + AJ_URL + '" target="_blank" rel="noopener"><i class="ev-c" style="background:' + x.aj.color + '"></i><span class="ev-t">' + (x.aj.time == null ? '' : hm(x.aj.time)) + '</span><span class="ev-n">' + esc(x.aj.text) + '</span></a>'; return; }
+      var it = x.it, miss = isMiss(t, it);
+      h += '<div class="ev' + (it.durum === 'tamam' ? ' is-done' : '') + (it.durum === 'gereksiz' ? ' is-nn' : '') + (it.durum === 'yapilmadi' || it.durum === 'atlandi' ? ' is-no' : '') + '">' +
+        '<button class="ev-b" data-act="edit" data-id="' + it.id + '" data-d="' + t + '"><i class="ev-c" style="background:' + KATC[it.kategori] + '"></i><span class="ev-t">' + hm(it.baslangic) + '</span><span class="ev-n">' + esc(it.baslik) + '</span>' +
+        (it.not ? '<span class="ev-x">' + esc(it.not) + '</span>' : '') + '</button>' +
+        '<button class="chk sm' + (it.durum === 'tamam' ? ' on' : it.durum === 'yapilmadi' || it.durum === 'atlandi' ? ' no' : it.durum === 'gereksiz' ? ' nn' : miss ? ' miss' : '') + '" data-act="tick" data-id="' + it.id + '" data-d="' + t + '" aria-label="Tamam">' +
+        (it.durum === 'yapilmadi' || it.durum === 'atlandi' ? IC.x : it.durum === 'gereksiz' ? IC.dash : IC.check) + '</button></div>';
+    });
+    h += '</div></div>';
+  });
+  return h + '</div></div>';
+}
+
+/* ---------- Takvim (yıl ↔ ay) + takvimden planla ---------- */
+var BRUSH = [['normal', 'Normal'], ['disarida', 'Dışarıda'], ['seyahat', 'Seyahat'], ['bos', 'Boş'], ['sil', 'Sil']];
+function paintDay(t) {
+  var b = V.brush, g = G(t);
+  if (b === 'sil') {
+    if (!g) return false;
+    var keep = g.isler.filter(function (i) { return i.durum !== 'planli'; });
+    if (keep.length) { if (keep.length === g.isler.length) return false; g.isler = keep; } else delete D.gunler[t];
+    return true;
+  }
+  if (g && g.tip === b) return false;
+  applyTpl(t, b, true); return true;
+}
+function dayCls(t, near) {
+  var g = G(t), k = kind(t), td = today(), c = 'dc';
+  if (g) c += ' t-' + g.tip; else if (k === 'none' && t >= td && (!near || dd(td, t) <= 13)) c += ' t-none';
+  if (t === td) c += ' td';
+  if (t === D.ayarlar.sinavTarihi) c += ' ex';
+  if (g && t < td && k === 'plan') { var s = stats(g); c += s.n && s.tamam === s.n ? ' r-all' : s.tamam ? ' r-part' : ' r-miss'; }
+  return c;
+}
+function vTakvim() {
+  var td = today(), ex = D.ayarlar.sinavTarihi, left = isDate(ex) ? Math.max(0, dd(td, ex)) : null;
+  var kick = left != null ? 'SINAVA ' + left + ' GÜN' : 'TAKVİM';
+  var right = '<button class="pill' + (V.brush ? ' on' : '') + '" data-act="brushtg">' + (V.brush ? 'Planlıyor' : 'Planla') + '</button>';
+  var h;
+  if (V.tk === 'yil') {
+    var bs = D.baslangic, endD = isDate(ex) && ex > bs ? ex : addD(bs, 330), m = pd(bs); m = new Date(m.getFullYear(), m.getMonth(), 1);
+    var endM = pd(endD), y0 = m.getFullYear(), y1 = endM.getFullYear();
+    h = hdr(kick, 'var(--rec)', y0 === y1 ? String(y0) : y0 + '–' + String(y1).slice(2), right);
+    h += '<div class="scroll"><div class="year brushable' + (V.brush ? ' painting' : '') + '">';
+    while (m <= endM) {
+      var yy = m.getFullYear(), mo = m.getMonth(), first = ds(m), last = ds(new Date(yy, mo + 1, 0));
+      h += '<div class="ymo' + (first.slice(0, 7) === td.slice(0, 7) ? ' cur' : '') + '" data-act="openmonth" data-m="' + first.slice(0, 7) + '"><div class="ymo-h"><span class="ymo-n">' + AY[mo] + '</span>' + (mo === 0 || first.slice(0, 7) === bs.slice(0, 7) ? '<span class="ymo-c">' + yy + '</span>' : '') + '</div><div class="ycells">';
+      for (var i = 0; i < dow(first); i++) h += '<span></span>';
+      for (var t = first; t <= last; t = addD(t, 1)) h += '<span class="ycell ' + dayCls(t, true) + '" data-d="' + t + '">' + pd(t).getDate() + '</span>';
+      h += '</div></div>';
+      m = new Date(yy, mo + 1, 1);
+    }
+    h += '</div>';
+  } else {
+    var p = V.ay.split('-'), yy2 = +p[0], mo2 = +p[1] - 1, f2 = V.ay + '-01', l2 = ds(new Date(yy2, mo2 + 1, 0));
+    h = hdr('<span class="back">' + IC.left + 'Yıl</span>', '', AY[mo2] + ' ' + yy2, right + navPair('mprev', 'mnext'), 'tkyil');
+    h = h.replace('<div class="kicker">', '<div class="kicker back" data-act="tkyil">');
+    h += '<div class="scroll"><div class="dows">' + GUN.map(function (g) { return '<div>' + g + '</div>'; }).join('') + '</div><div class="mgrid brushable' + (V.brush ? ' painting' : '') + '">';
+    for (var j = 0; j < dow(f2); j++) h += '<span></span>';
+    for (var t2 = f2; t2 <= l2; t2 = addD(t2, 1)) {
+      var g2 = G(t2), aj = ajFor(t2).length, fd = formDay(t2);
+      h += '<button class="mc ' + dayCls(t2).replace(/^dc /, '') + '" data-act="openday" data-d="' + t2 + '"><span class="mn">' + pd(t2).getDate() + '</span>' +
+        '<span class="ml">' + (g2 ? TIPK[g2.tip] : '') + '</span>' +
+        '<span class="md">' + (aj ? '<i style="background:#8A8781"></i>' : '') + (fd && !fd.rest ? '<i style="background:' + KATC.spor + '"></i>' : '') + '</span></button>';
+    }
+    h += '</div>';
+  }
+  h += '<div class="legend">' + TIPS.map(function (k) { return '<span class="lg"><i class="dc t-' + k + '"></i>' + TIP[k] + '</span>'; }).join('') +
+    '<span class="lg"><i class="dc t-none"></i>Plan yok</span><span class="lg"><i class="dc ex"></i>Sınav</span>' +
+    '<span class="lg"><i class="dc r-all"></i>Hepsi tamam</span><span class="lg"><i class="dc r-miss"></i>Kaçan</span></div>';
+  if (!V.brush) h += '<div class="note">Gün tiplerini toplu atamak için sağ üstten <b>Planla</b>\'ya bas, sonra günlere dokun ya da üzerlerinden sürükle.</div>';
+  return h + '</div>' + (V.brush ? '<div class="tray"><span>Planla:</span>' + BRUSH.map(function (b) {
+    return '<button class="' + (V.brush === b[0] ? 'on' : '') + '" data-act="brush" data-v="' + b[0] + '"><i class="dc t-' + (b[0] === 'sil' ? 'none' : b[0]) + '"></i>' + b[1] + '</button>';
+  }).join('') + '<button class="done" data-act="brushtg">Bitti</button></div>' : '');
+}
+
+/* ---------- Düzen ---------- */
+function vDuzen() {
+  var tn = D.ayarlar.tipNot || {}, h;
+  if (!V.duzen) {
+    h = hdr('GÜN TİPLERİ', 'var(--green)', 'Düzen', '<button class="pill" data-act="settings">' + IC.gear + 'Ayarlar</button>');
+    h += '<div class="scroll"><div class="note top">Bir gün tipi, o gün hangi işleri hangi saatte yaptığın. Dokun, düzenle.</div>';
+    TIPS.forEach(function (tp) {
+      var sm = tipSum(tp);
+      h += '<button class="tcard" data-act="duzen" data-v="' + tp + '"><span class="pbar" style="background:' + TIPC[tp] + '"></span><span class="tc-b">' +
+        '<span class="tc-t">' + TIP[tp] + '<span class="tc-n">' + sm.n + ' iş' + (sm.tot ? ' · ' + durStr(sm.tot) : '') + '</span></span>' +
+        '<span class="tc-d">' + (tn[tp] ? esc(tn[tp]) : '<em>Açıklama ekle</em>') + '</span>' +
+        (tp !== 'normal' && sm.fer.length ? '<span class="tc-l"><b>Vazgeçtiklerim:</b> ' + esc(sm.fer.join(', ')) + '</span>' : '') +
+        (tp !== 'normal' && sm.kis.length ? '<span class="tc-l"><b>Kısa:</b> ' + esc(sm.kis.join(', ')) + '</span>' : '') +
+        '</span><span class="chev">' + IC.right + '</span></button>';
+    });
+    return h + '</div>';
+  }
+  var tp = V.duzen, L = (D.sablonlar[tp] || []).slice().sort(function (a, b) { return a.baslangic - b.baslangic; });
+  h = hdr('<span class="back">' + IC.left + 'Düzen</span>', '', TIP[tp], '<button class="fab" data-act="tadd" aria-label="İş ekle">' + IC.plus + '</button>');
+  h = h.replace('<div class="kicker">', '<div class="kicker back" data-act="duzenback">');
+  h += '<div class="scroll"><div class="field"><textarea class="inp ta" data-tn="' + tp + '" rows="2" placeholder="' + (tp === 'normal' ? 'Normal günüm nasıl?' : tp === 'disarida' ? 'Ne zaman dışarıdayım, neyi farklı yaparım?' : tp === 'seyahat' ? 'Seyahatte ne yaparım?' : 'Boş gün nasıl geçer?') + '">' + esc(tn[tp] || '') + '</textarea></div>';
+  h += '<div class="agh"><span class="t">Bu gün tipinde</span><span class="n">' + L.length + ' iş</span></div><div class="prev">';
+  L.forEach(function (x) {
+    var dur = x.bitis - x.baslangic, ref = tplItem('normal', x.baslik), tag = '';
+    if (tp !== 'normal' && ref) { var rd = ref.bitis - ref.baslangic; tag = dur === rd ? 'Tam' : dur < rd ? 'Kısa · −' + durStr(rd - dur) : 'Uzun · +' + durStr(dur - rd); }
+    h += '<button class="prow tpl" data-act="tedit" data-n="' + esc(x.baslik) + '" style="--c:' + KATC[x.kategori] + '"><span class="pbody"><span class="ptime">' + hm(x.baslangic) + '</span><span class="pbar"></span>' +
+      '<span class="ptx"><span class="pttl">' + esc(x.baslik) + '</span><span class="pwhen">' + (dur ? hm(x.baslangic) + '–' + hm(x.bitis) + ' · ' + durStr(dur) : 'saati ' + hm(x.baslangic)) + '</span></span></span>' +
+      (tag ? '<span class="tag ' + (tag === 'Tam' ? 'g' : tag.charAt(0) === 'K' ? 'r' : 'b') + '">' + tag + '</span>' : '') + '</button>';
+  });
+  if (!L.length) h += '<div class="empty">Bu gün tipinde iş yok.</div>';
+  h += '</div><button class="addline" data-act="tadd">' + IC.plus + 'İş ekle</button>';
+  var missing = mxRows().filter(function (r) { return !tplItem(tp, r.n); });
+  if (missing.length) {
+    h += '<div class="agh"><span class="t">' + (tp === 'normal' ? 'Diğer tiplerde olanlar' : 'Vazgeçtiklerim') + '</span><span class="d">bu tipte yok</span></div><div class="prev">';
+    missing.forEach(function (r) { h += '<div class="prow off" style="--c:' + KATC[r.k] + '"><span class="pbody"><span class="pbar"></span><span class="ptx"><span class="pttl">' + esc(r.n) + '</span></span></span><button class="pill sm" data-act="mxadd" data-tip="' + tp + '" data-n="' + esc(r.n) + '">Ekle</button></div>'; });
+    h += '</div>';
+  }
+  return h + '<div class="note">Buradaki değişiklik bu tipin şablonuna ve bugünden sonraki ' + esc(TIP[tp]) + ' kayıtlarına uygulanır; elle değiştirdiğin ya da işaretlediğin işlere dokunulmaz.</div></div>';
+}
+
+/* ================= alttan açılan sayfalar ================= */
+function sheetWrap(inner) { return '<div class="scrim" data-act="scrim"><div class="sheet" role="dialog"><div class="grab"></div>' + inner + '</div></div>'; }
+function openSheet(st) { SH = st; var tE = document.getElementById('toast'); if (tE) tE.className = 'toast'; renderSheet(true); }
+function closeSheet() {
+  if (!SH) return;
+  var s = SH; SH = null; $('#sheetHost').innerHTML = '';
+  if (s.kind === 'edit' && s.dirty) render();
+}
+function renderSheet(first) {
+  var host = $('#sheetHost'); if (!SH) { host.innerHTML = ''; return; }
+  var f = { edit: shEdit, rep: shRep, tip: shTip, steps: shSteps, tedit: shTedit, settings: shSettings }[SH.kind];
+  var old = host.querySelector('.sheet'), sc = old ? old.scrollTop : 0;
+  host.innerHTML = sheetWrap(f());
+  var sh = host.querySelector('.sheet'); if (!first) { sh.classList.add('still'); sh.scrollTop = sc; }
+  if (first && SH.focus) { var el = sh.querySelector(SH.focus); if (el) { el.focus(); if (el.select) el.select(); } }
+}
+function timeRows(b, e, pre) {
+  var dur = e - b;
+  return '<div class="field"><div class="frow"><span class="flab">Başlangıç</span><input class="mini" inputmode="numeric" maxlength="5" data-f="' + pre + 'b" value="' + hm(b) + '" aria-label="Başlangıç saati"></div><div class="div"></div>' +
+    '<div class="frow"><span class="flab">Bitiş</span><span class="fdur">' + (dur ? durStr(dur) : '') + '</span><input class="mini" inputmode="numeric" maxlength="5" data-f="' + pre + 'e" value="' + hm(e) + '" aria-label="Bitiş saati"></div></div>' +
+    '<div class="qrow"><span>Kaydır</span>' + [[-60, '−1 sa'], [-30, '−30'], [-15, '−15'], [15, '+15'], [30, '+30'], [60, '+1 sa']].map(function (q) { return '<button data-act="' + pre + 'shift" data-v="' + q[0] + '">' + q[1] + '</button>'; }).join('') + '</div>' +
+    '<div class="qrow"><span>Süre</span>' + [15, 30, 45, 60, 90, 120].map(function (m) { return '<button class="' + (dur === m ? 'on' : '') + '" data-act="' + pre + 'dur" data-v="' + m + '">' + (m < 60 ? m + ' dk' : m === 90 ? '1,5 sa' : m / 60 + ' sa') + '</button>'; }).join('') + '</div>';
+}
+function catChips(sel) { return '<div class="cats">' + Object.keys(KAT).map(function (k) { return '<button class="' + (sel === k ? 'on' : '') + '" data-act="ecat" data-k="' + k + '"><i style="background:' + KATC[k] + '"></i>' + KAT[k] + '</button>'; }).join('') + '</div>'; }
+function shEdit() {
+  var it = SH.fresh ? SH.it : findIt(SH.t, SH.id); if (!it) return '';
+  var h = '<div class="sh-h"><span class="sh-t">' + (SH.fresh ? 'Yeni iş' : 'İşi düzenle') + '</span><button class="sh-x" data-act="close">' + (SH.fresh ? 'Vazgeç' : 'Kapat') + '</button></div>' +
+    '<div class="sh-sub">' + esc(longDate(SH.t)) + '</div>' +
+    '<div class="field"><input class="inp" data-f="name" value="' + esc(it.baslik) + '" placeholder="İş adı"></div>' +
+    '<div class="lab">SAAT</div>' + timeRows(it.baslangic, it.bitis, '') +
+    '<label class="tgl"><span>Uzayınca sonraki işleri de kaydır</span><input type="checkbox" data-act="kaydir"' + (D.ayarlar.kaydir ? ' checked' : '') + '></label>';
+  if (!SH.fresh) {
+    h += '<div class="lab">DURUM</div><div class="seg4">' + ['planli', 'tamam', 'yapilmadi', 'gereksiz'].map(function (k) {
+      var on = it.durum === k || (k === 'yapilmadi' && it.durum === 'atlandi');
+      return '<button class="' + (on ? 'on d-' + k : '') + '" data-act="est" data-v="' + k + '">' + (k === 'gereksiz' ? 'Gerek yok' : DURUM[k]) + '</button>';
+    }).join('') + '</div>';
+    if (it.durum === 'yapilmadi' || it.durum === 'gereksiz' || it.durum === 'atlandi') h += '<div class="field"><input class="inp sm" data-f="sebep" value="' + esc(it.sebep || it.neden || '') + '" placeholder="Neden? (isteğe bağlı)"></div>';
+  }
+  h += '<div class="lab">NOT</div><div class="field"><textarea class="inp ta" data-f="not" rows="2" placeholder="' + (it.kategori === 'ogun' ? 'Ne yenecek?' : it.kategori === 'almanca' || it.kategori === 'is' ? 'Ne çalışılacak?' : 'Not') + '">' + esc(it.not || '') + '</textarea></div>';
+  var det = !SH.fresh ? detailOf(SH.t, it) : '';
+  if (det && det !== it.not) h += '<div class="sh-det">' + esc(det.replace(it.not ? it.not + ' · ' : '', '')) + '</div>';
+  h += '<div class="lab">TÜR</div>' + catChips(it.kategori);
+  if (SH.fresh) return h + '<button class="save" data-act="esave">Ekle</button>';
+  return h + '<div class="lab">DAHA FAZLA</div>' +
+    '<button class="ghost" data-act="erep">Başka günlere de ekle…</button>' +
+    '<button class="ghost" data-act="eroutine">Her ' + esc(TIP[(G(SH.t) || {}).tip === 'bos' || !G(SH.t) ? 'normal' : G(SH.t).tip]) + ' böyle olsun</button>' +
+    (it.gitti ? '' : '<button class="ghost" data-act="etomorrow">Yarına taşı</button>') +
+    '<button class="del" data-act="edel">Sil</button>';
+}
+function shRep() {
+  var it = findIt(SH.t, SH.id); if (!it) return '';
+  var R = SH.rep, days = [], td = today();
+  for (var t = R.from; t <= R.to; t = addD(t, 1)) if (R.wd[dow(t)] && t !== SH.t) days.push(t);
+  var vm = pd(R.vm + '-01'), y = vm.getFullYear(), mo = vm.getMonth(), first = R.vm + '-01', last = ds(new Date(y, mo + 1, 0));
+  var h = '<div class="sh-h"><button class="sh-x back" data-act="repback">' + IC.left + 'Geri</button><button class="sh-x" data-act="close">Kapat</button></div>' +
+    '<div class="sh-t big">' + esc(it.baslik) + '</div><div class="sh-sub">' + hm(it.baslangic) + (it.bitis > it.baslangic ? '–' + hm(it.bitis) : '') + ' · başka günlere de ekle</div>' +
+    '<div class="lab">HANGİ GÜNLER</div><div class="wds">' + GUN.map(function (g, i) { return '<button class="' + (R.wd[i] ? 'on' : '') + '" data-act="rwd" data-v="' + i + '">' + g + '</button>'; }).join('') + '</div>' +
+    '<div class="lab">NE ZAMANA KADAR</div><div class="qrow wrap">' + [['1h', '1 hafta'], ['1m', '1 ay'], ['3m', '3 ay'], ['6m', '6 ay'], ['ex', 'Sınava kadar']].map(function (q) { return '<button data-act="rq" data-v="' + q[0] + '">' + q[1] + '</button>'; }).join('') + '</div>' +
+    '<div class="rng"><button class="' + (R.pick === 'start' ? 'on' : '') + '" data-act="rpick" data-v="start"><span>Başlangıç</span><b>' + esc(fmtD(R.from)) + '</b></button><button class="' + (R.pick === 'end' ? 'on' : '') + '" data-act="rpick" data-v="end"><span>Bitiş</span><b>' + esc(fmtD(R.to)) + '</b></button></div>' +
+    '<div class="rcal"><div class="yhead"><button data-act="rm" data-v="-1">' + IC.left + '</button><span class="y">' + AY[mo] + ' ' + y + '</span><button data-act="rm" data-v="1">' + IC.right + '</button></div>' +
+    '<div class="dows">' + GUN.map(function (g) { return '<div>' + g.charAt(0) + '</div>'; }).join('') + '</div><div class="rgrid">';
+  for (var i = 0; i < dow(first); i++) h += '<span></span>';
+  for (var d = first; d <= last; d = addD(d, 1)) {
+    var inR = d >= R.from && d <= R.to, c = inR ? (R.wd[dow(d)] ? ' in' : ' off') : '';
+    if (d === R.from || d === R.to) c += ' edge'; if (d === td) c += ' td'; if (d === SH.t) c += ' src';
+    h += '<button class="rd' + c + '" data-act="rday" data-d="' + d + '">' + pd(d).getDate() + '</button>';
+  }
+  h += '</div><div class="note">' + (R.pick === 'start' ? 'Takvimde başlangıç gününe dokun.' : 'Şimdi bitiş gününe dokun.') + '</div></div>' +
+    '<div class="rsum"><b>' + days.length + ' gün</b> · ' + esc(wdLabel(R.wd)) + '</div>' +
+    '<label class="tgl"><span>Planı olmayan günlerde Normal gün aç</span><input type="checkbox" data-act="ryeni"' + (R.yeni ? ' checked' : '') + '></label>' +
+    '<button class="save" data-act="radd"' + (days.length ? '' : ' disabled') + '>' + days.length + ' güne ekle</button>' +
+    '<button class="del soft" data-act="rdel">Bu günlerden kaldır</button>';
+  return h;
+}
+function repApply2(add) {
+  var it = findIt(SH.t, SH.id); if (!it) return;
+  snap();
+  var R = SH.rep, n = 0;
+  for (var t = R.from; t <= R.to; t = addD(t, 1)) {
+    if (!R.wd[dow(t)] || t === SH.t) continue;
     var g = G(t);
     if (add) {
-      if (!g) { if (!P.rep.yeni) return; applyTpl(t, 'normal', true); g = G(t); }
+      if (!g) { if (!R.yeni) continue; applyTpl(t, 'normal', true); g = G(t); }
       var ex = g.isler.filter(function (i) { return i.baslik === it.baslik && !i.gitti; })[0];
-      if (ex) {
-        if (!untouched(ex)) return;
-        ex.baslangic = it.baslangic; ex.bitis = it.bitis; ex.kategori = it.kategori; if (it.not) ex.not = it.not; ex.elle = true;
-      } else { var c = mkItem(it); c.elle = true; g.isler.push(c); }
+      if (ex) { if (!untouched(ex)) continue; ex.baslangic = it.baslangic; ex.bitis = it.bitis; ex.kategori = it.kategori; if (it.not) ex.not = it.not; ex.elle = true; }
+      else { var c = mkItem(it); c.elle = true; g.isler.push(c); }
       sortI(g.isler); n++;
     } else if (g) {
       var L0 = g.isler.length;
       g.isler = g.isler.filter(function (i) { return !(i.baslik === it.baslik && i.durum === 'planli' && !i.gitti); });
       if (g.isler.length < L0) n++;
     }
-  });
-  P.dirty = true; save(); render();
-  P.rep.msg = add ? n + ' güne eklendi.' : (n ? n + ' günden kaldırıldı.' : 'Kaldırılacak bir şey yoktu.');
-  edRefresh();
+  }
+  save(); closeSheet(); render();
+  toast(add ? it.baslik + ' ' + n + ' güne eklendi' : n ? it.baslik + ' ' + n + ' günden kaldırıldı' : 'Kaldırılacak bir şey yoktu', !!n);
 }
-/* düzenleyicideki her değişiklik anında uygulanır ve kaydedilir */
-function edChange(fn) {
-  var it = findIt(P.t, P.id); if (!it) return;
+function shTip() {
+  var t = SH.t, g = G(t), tn = D.ayarlar.tipNot || {};
+  return '<div class="sh-h"><span class="sh-t">Gün tipi</span><button class="sh-x" data-act="close">Kapat</button></div><div class="sh-sub">' + esc(longDate(t)) + '</div>' +
+    '<div class="tpick">' + TIPS.map(function (k) {
+      var sm = tipSum(k);
+      return '<button class="' + (g && g.tip === k ? 'on' : '') + '" data-act="tpl" data-tip="' + k + '" data-d="' + t + '"><i style="background:' + TIPC[k] + '"></i><span><b>' + TIP[k] + '</b><small>' + (tn[k] ? esc(tn[k]) : sm.n + ' iş' + (sm.tot ? ' · ' + durStr(sm.tot) : '')) + '</small></span></button>';
+    }).join('') + '</div>' +
+    (g ? '<button class="del soft" data-act="dayclear" data-d="' + t + '">Bu günün planını sil</button>' : '') +
+    '<div class="note">İşaretlediğin, not yazdığın ve elle eklediğin işler korunur. Gün tiplerinin içini <b>Düzen</b> sekmesinden değiştirirsin.</div>';
+}
+function shSteps() {
+  var t = SH.t, st = stepsOf(t);
+  return '<div class="sh-h"><span class="sh-t">Adım</span><button class="sh-x" data-act="close">Kapat</button></div><div class="sh-sub">' + esc(longDate(t)) + (st.src === 'form' ? ' · şu an FORM\'dan: ' + fmtN(st.n) : '') + '</div>' +
+    '<div class="field"><input class="inp" data-f="adim" inputmode="numeric" value="' + (D.adim[t] != null ? D.adim[t] : '') + '" placeholder="' + (st.src === 'form' ? st.n : '0') + '"></div>' +
+    '<div class="note">Boş bırakırsan FORM\'daki adım sayısı kullanılır.</div>';
+}
+function shTedit() {
+  var tp = SH.tip, x = tplItem(tp, SH.n); if (!x) return '';
+  return '<div class="sh-h"><span class="sh-t">' + esc(TIP[tp]) + '</span><button class="sh-x" data-act="close">Kapat</button></div>' +
+    '<div class="field"><input class="inp" data-f="tname" value="' + esc(x.baslik) + '" placeholder="İş adı"></div>' +
+    '<div class="lab">SAAT</div>' + timeRows(x.baslangic, x.bitis, 't') +
+    '<div class="lab">TÜR</div>' + catChips(x.kategori).replace(/data-act="ecat"/g, 'data-act="tcat"') +
+    '<div class="lab">HANGİ GÜN TİPLERİNDE</div><div class="cats">' + TIPS.map(function (k) { return '<button class="' + (tplItem(k, x.baslik) ? 'on' : '') + '" data-act="tin" data-tip="' + k + '"><i style="background:' + TIPC[k] + '"></i>' + TIP[k] + '</button>'; }).join('') + '</div>' +
+    '<div class="note">Değişiklik bu tipin şablonuna ve bugünden sonraki ' + esc(TIP[tp]) + ' kayıtlarına uygulanır.</div>' +
+    '<button class="del" data-act="tdel">' + esc(TIP[tp]) + ' tipinden çıkar</button>';
+}
+function shSettings() {
+  var A = D.ayarlar, tg = function (k, l, s) { return '<label class="tgl"><span>' + l + (s ? '<small>' + s + '</small>' : '') + '</span><input type="checkbox" data-set="' + k + '"' + (A[k] ? ' checked' : '') + '></label>'; };
+  return '<div class="sh-h"><span class="sh-t">Ayarlar</span><button class="sh-x" data-act="close">Kapat</button></div>' +
+    '<div class="lab">HEDEFLER</div><div class="field">' +
+    '<div class="frow"><span class="flab">Günlük adım</span><input class="mini" data-s="adimHedef" inputmode="numeric" value="' + esc(A.adimHedef) + '"></div><div class="div"></div>' +
+    '<div class="frow"><span class="flab">Sınav</span><input class="mini wide" data-s="sinavAdi" value="' + esc(A.sinavAdi) + '"></div><div class="div"></div>' +
+    '<div class="frow"><span class="flab">Sınav tarihi</span><input type="date" class="mini wide" data-s="sinavTarihi" value="' + esc(A.sinavTarihi) + '"></div></div>' +
+    '<div class="lab">KENDİLİĞİNDEN</div>' +
+    tg('otoForm', 'FORM\'da antrenman girince Spor tamam') +
+    tg('otoAdim', 'Adım hedefi tutunca yürüyüşler tamam', 'Henüz gelmemiş yürüyüşler "gerek yok" olur') +
+    tg('otoWort', 'WORT\'ta günün puanı 75\'i geçince Almanca tamam') +
+    tg('oneri', 'Ajandada akşam randevusu varsa "Dışarıdayım" öner') +
+    '<div class="lab">BAĞLI UYGULAMALAR</div><div class="field">' +
+    [['WORT', W], ['Ajanda', AJ], ['FORM', F]].map(function (s, i) { return (i ? '<div class="div"></div>' : '') + '<div class="frow"><span class="flab">' + s[0] + '</span><span class="st ' + (s[1] ? 'ok' : '') + '">' + (s[1] ? 'bağlı' : 'bulunamadı') + '</span></div>'; }).join('') + '</div>' +
+    '<button class="ghost" data-act="names">Adları yeniden oku</button>' +
+    '<div class="lab">YEDEK</div><button class="ghost" data-act="export">Yedeği indir (JSON)</button><button class="ghost" data-act="import">Yedekten yükle</button>' +
+    '<input type="file" id="impFile" accept="application/json,.json" class="hidden">' +
+    '<div class="note">Bütün veri bu tarayıcıda ("gun.v1") durur ve her değişiklikte kaydedilir. WORT, Ajanda ve FORM yalnızca okunur.</div>';
+}
+
+/* ---------- düzenleme işlemleri ---------- */
+function curIt() { return SH.fresh ? SH.it : findIt(SH.t, SH.id); }
+function eChange(fn) {
+  var it = curIt(); if (!it) return;
   var s0 = it.baslangic, e0 = it.bitis;
   fn(it);
-  it.baslangic = clamp(it.baslangic, 0, 1440); it.bitis = clamp(Math.max(it.bitis, it.baslangic), 0, 1440);
-  var g = G(P.t);
-  if (D.ayarlar.kaydir && (it.bitis > e0 || it.baslangic > s0)) ripple(g.isler, it);
-  sortI(g.isler);
-  P.dirty = true; save(); render(); edRefresh();
-}
-function edMoveDay(n) {
-  var it = findIt(P.t, P.id); if (!it) return;
-  var t2 = addD(P.t, n), g = G(P.t);
-  g.isler = g.isler.filter(function (i) { return i.id !== it.id; });
-  var g2 = ensureDay(t2); g2.isler.push(it); sortI(g2.isler);
-  if (it.gitti) { delete it.gitti; delete it.kopya; }
-  P.t = t2; P.dirty = true; save(); render(); edRefresh();
-}
-function edRoutine() {
-  var t = P.t, it = findIt(t, P.id), g = G(t); if (!it || !g) return;
-  var tip = g.tip === 'bos' ? 'normal' : g.tip, L = D.sablonlar[tip], old = P.orig.baslik;
-  var has = L.some(function (x) { return x.baslik === old; });
-  if (has) applyRoutine(tip, old, { baslik: it.baslik, kategori: it.kategori, baslangic: it.baslangic, bitis: it.bitis }, addD(t, 1));
-  else {
-    var x = { baslik: it.baslik, kategori: it.kategori, baslangic: it.baslangic, bitis: it.bitis };
-    L.push(x); sortI(L);
-    for (var d in D.gunler) {
-      if (d <= t || D.gunler[d].tip !== tip) continue;
-      var gd = D.gunler[d];
-      if (!gd.isler.some(function (i) { return i.baslik === x.baslik; })) { gd.isler.push(mkItem(x)); sortI(gd.isler); }
-    }
+  it.baslangic = clamp(it.baslangic, 0, 1439); it.bitis = clamp(Math.max(it.bitis, it.baslangic), 0, 1440);
+  if (!SH.fresh) {
+    var g = G(SH.t);
+    if (D.ayarlar.kaydir && (it.bitis > e0 || it.baslangic > s0)) ripple(g.isler, it);
+    sortI(g.isler); SH.dirty = true; save(); render();
   }
-  P.orig.baslik = it.baslik; P.dirty = true; save(); render();
-  var b = P.el.querySelector('[data-act="edroutine"]'); if (b) { b.textContent = 'Uygulandı'; b.classList.add('sel'); }
+  renderSheet();
 }
+function tChange(ch) { var x = tplItem(SH.tip, SH.n); if (!x) return; applyRoutine(SH.tip, SH.n, ch); if (ch.baslik) SH.n = ch.baslik; save(); render(); renderSheet(); }
+function addNew2(t) {
+  var b = ceil15(t === today() ? nowMin() : 540); if (b > 1410) b = 1410;
+  openSheet({ kind: 'edit', t: t, fresh: true, it: { baslik: '', kategori: 'diger', baslangic: b, bitis: Math.min(1440, b + 30) }, focus: '[data-f="name"]' });
+}
+
+/* ================= çizim ================= */
+function render(anim) {
+  if (!mainEl) return;
+  var f = { bugun: vBugun, hafta: vHafta, takvim: vTakvim, duzen: vDuzen }[V.tab] || vBugun;
+  var old = mainEl.querySelector('.scroll'), sc = old ? old.scrollTop : 0;
+  mainEl.innerHTML = f();
+  mainEl.className = 'scr' + (anim ? ' zin' : '');
+  var nw = mainEl.querySelector('.scroll'); if (nw && !anim) nw.scrollTop = sc;
+  $$('#tabs .tab').forEach(function (b) { b.classList.toggle('on', b.dataset.v === V.tab); });
+  document.getElementById('app').classList.toggle('brushing', !!V.brush && V.tab === 'takvim');
+  JUST = null; SW = null;
+}
+function go(tab) {
+  if (tab === V.tab) { if (tab === 'bugun' && V.gun !== today()) { V.gun = today(); render(true); } else if (tab === 'duzen' && V.duzen) { V.duzen = null; render(true); } return; }
+  if (tab !== 'takvim') V.brush = null;
+  V.tab = tab; render(true);
+}
+function openDay(t) { V.gun = t; V.hafta = monday(t); V.ay = t.slice(0, 7); V.tab = 'bugun'; V.brush = null; render(true); }
 
 /* ================= olaylar ================= */
 function act(el, e) {
-  var a = el.dataset.act, d = el.dataset.d, id = el.dataset.id;
+  var a = el.dataset.act, d = el.dataset.d, id = el.dataset.id, v = el.dataset.v;
   switch (a) {
     case 'tab': go(el.dataset.v); break;
-    case 'openday': if (V.brush && (V.tab === 'ay' || V.tab === 'yil')) break; openDay(d); break;
-    case 'gotoday': goToday(); break;
-    case 'prev': shift(-1); break;
-    case 'next': shift(1); break;
-    case 'planla': e.stopPropagation(); openTpl(d, el.getBoundingClientRect()); break;
-    case 'tpl': applyTpl(d, el.dataset.tip); render(); break;
-    case 'poptpl': var pt = P.t; closePop(); applyTpl(pt, el.dataset.tip); render(); break;
-    case 'toggle': toggle(d || V.gun, id); break;
-    case 'edit': var row = el.closest('.row') || el; openEdit(d || V.gun, id, row.getBoundingClientRect()); break;
-    case 'durum': var rw = el.closest('.row') || el; openDurum(d || V.gun, id, rw.getBoundingClientRect()); break;
-    case 'setdurum': var pp = P; pp.dirty = true; setDurum(pp.t, pp.id, el.dataset.v); if (P === pp) popRefresh(); break;
-    case 'pop2edit': var p2 = P; closePop(); openEdit(p2.t, p2.id, p2.rect); break;
-    case 'gorunum': D.ayarlar.gorunum = el.dataset.v; save(); render(); break;
-    case 'brush': V.brush = el.dataset.v || null; render(); break;
-    case 'add': addNew(d || V.gun); break;
-    case 'neden':
-      P.neden = P.neden === el.dataset.v ? null : el.dataset.v;
-      $$('[data-act="neden"]', P.el).forEach(function (b) { b.classList.toggle('sel', b.dataset.v === P.neden); });
-      break;
-    case 'op':
-      var it = findIt(P.t, P.id);
-      P.dirty = true;
-      if (it && OPS[el.dataset.op](P.t, it, P.neden)) save();
-      closePop(); render(); break;
-    case 'poptoggle': var p = P; p.dirty = true; closePop(); toggle(p.t, p.id); break;
-    case 'popdone': if (P) P.dirty = true; closePop(); break;
-    case 'edkat': edChange(function (x) { x.kategori = el.dataset.k; }); break;
-    case 'edstart': edChange(function (x) { var v = +el.dataset.v, dur = x.bitis - x.baslangic; x.baslangic = clamp(x.baslangic + v, 0, 1440 - dur); x.bitis = x.baslangic + dur; }); break;
-    case 'eddur': edChange(function (x) { x.bitis = clamp(x.bitis + +el.dataset.v, x.baslangic, 1440); }); break;
-    case 'eddurset': edChange(function (x) { x.bitis = Math.min(1440, x.baslangic + +el.dataset.v); }); break;
-    case 'edday': edMoveDay(+el.dataset.v); break;
-    case 'edroutine': edRoutine(); break;
-    case 'edrep': P.dirty = true; P.rep = P.rep || { from: P.t, to: addMonths(P.t, 1), wd: [1, 1, 1, 1, 1, 1, 1], pick: 'start', vm: P.t.slice(0, 7), yeni: true, msg: '' }; P.rep.on = true; P.rep.msg = ''; edRefresh(); P.el.scrollTop = 0; break;
-    case 'repback': P.rep.on = false; edRefresh(); P.el.scrollTop = 0; break;
-    case 'repwd': var wi = +el.dataset.v; P.rep.wd[wi] = P.rep.wd[wi] ? 0 : 1; P.rep.msg = ''; edRefresh(); break;
-    case 'reppick': P.rep.pick = el.dataset.v; P.rep.vm = (el.dataset.v === 'start' ? P.rep.from : P.rep.to).slice(0, 7); edRefresh(); break;
-    case 'repq':
-      var R = P.rep, q = el.dataset.v;
-      R.to = q === '1h' ? addD(R.from, 6) : q === '1m' ? addMonths(R.from, 1) : q === '3m' ? addMonths(R.from, 3) : q === '6m' ? addMonths(R.from, 6) : (isDate(D.ayarlar.sinavTarihi) && D.ayarlar.sinavTarihi > R.from ? D.ayarlar.sinavTarihi : addMonths(R.from, 6));
-      R.pick = 'start'; R.msg = ''; edRefresh(); break;
-    case 'repm': var vd = pd(P.rep.vm + '-01'); vd.setMonth(vd.getMonth() + +el.dataset.v); P.rep.vm = ds(vd).slice(0, 7); edRefresh(); break;
-    case 'repday':
-      var R2 = P.rep, dt = el.dataset.d;
-      if (R2.pick === 'start') { R2.from = dt; if (R2.to < dt) R2.to = dt; R2.pick = 'end'; }
-      else { if (dt < R2.from) { R2.to = R2.from; R2.from = dt; } else R2.to = dt; R2.pick = 'start'; }
-      R2.msg = ''; edRefresh(); break;
-    case 'repadd': repApply(true); break;
-    case 'repdel': repApply(false); break;
-    case 'mxs': case 'mxd':
-      var mt = el.dataset.tip, mn = el.dataset.n, mx = tplItem(mt, mn); if (!mx) break;
-      var mv = +el.dataset.v, mch = {};
-      if (a === 'mxs') { var mdur = mx.bitis - mx.baslangic; mch.baslangic = clamp(mx.baslangic + mv, 0, 1440 - mdur); mch.bitis = mch.baslangic + mdur; }
-      else mch.bitis = clamp(mx.bitis + mv, mx.baslangic, 1440);
-      applyRoutine(mt, mn, mch); save(); render(); break;
-    case 'mxadd': mxAdd(el.dataset.tip, el.dataset.n); save(); render(); break;
-    case 'mxdel': mxDel(el.dataset.tip, el.dataset.n); save(); render(); break;
-    case 'mxnew':
-      var nn = 'Yeni iş', ni = 2; while (mxRows().some(function (r) { return r.n === nn; })) nn = 'Yeni iş ' + ni++;
-      var NL = D.sablonlar.normal, le = NL.length ? NL[NL.length - 1].bitis : 540;
-      NL.push({ baslik: nn, kategori: 'diger', baslangic: Math.min(le, 1410), bitis: Math.min(le + 30, 1440) }); sortI(NL);
-      save(); render(); var ni2 = $('[data-mx="name"][data-n="' + nn + '"]'); if (ni2) { ni2.focus(); ni2.select(); } break;
-    case 'eddel':
-      var g = G(P.t); if (g) g.isler = g.isler.filter(function (i) { return i.id !== P.id; });
-      P.dirty = true; closePop(); save(); render(); break;
-    case 'rtip': V.rtip = el.dataset.tip; render(); break;
-    case 'rt':
-      var tip = rtTip(), x = D.sablonlar[tip][+el.dataset.i]; if (!x) break;
-      var v = +el.dataset.v, ch = {};
-      if (el.dataset.f === 'b') { var dur = x.bitis - x.baslangic; ch.baslangic = clamp(x.baslangic + v, 0, 1440 - dur); ch.bitis = ch.baslangic + dur; }
-      else ch.bitis = clamp(x.bitis + v, x.baslangic, 1440);
-      applyRoutine(tip, x.baslik, ch); save(); render(); break;
-    case 'steps': V.stepEdit = true; render(); break;
-    case 'stip': V.stip = el.dataset.tip; render(); break;
+    case 'undo': undo(); break;
+    case 'gotoday': V.gun = today(); V.hafta = monday(today()); render(); break;
+    case 'dprev': V.gun = addD(V.gun, -1); render(); break;
+    case 'dnext': V.gun = addD(V.gun, 1); render(); break;
+    case 'wprev': V.hafta = addD(V.hafta, -7); render(); break;
+    case 'wnext': V.hafta = addD(V.hafta, 7); render(); break;
+    case 'mprev': case 'mnext': var mp = pd(V.ay + '-01'); mp.setMonth(mp.getMonth() + (a === 'mprev' ? -1 : 1)); V.ay = ds(mp).slice(0, 7); render(); break;
+    case 'openday': if (V.brush) break; openDay(d); break;
+    case 'openmonth': if (V.brush) break; V.ay = el.dataset.m; V.tk = 'ay'; render(true); break;
+    case 'tkyil': V.tk = 'yil'; render(true); break;
+    case 'brushtg': V.brush = V.brush ? null : 'normal'; render(); break;
+    case 'brush': V.brush = v; render(); break;
+    case 'add': addNew2(d || V.gun); break;
+    case 'tick': var ti = findIt(d || V.gun, id); if (ti) { JUST = ti.durum === 'tamam' ? null : id; setStatus(d || V.gun, id, ti.durum === 'tamam' ? 'planli' : 'tamam'); } break;
+    case 'st': setStatus(d, id, v); break;
+    case 'ext':
+      var xi = findIt(V.gun, id); if (!xi) break; snap();
+      var e0 = xi.bitis; xi.bitis = Math.min(1440, xi.bitis + 15); if (D.ayarlar.kaydir) ripple(G(V.gun).isler, xi);
+      save(); render(); toast(xi.baslik + ' ' + at(xi.bitis) + ' bitecek', true); break;
+    case 'edit': openSheet({ kind: 'edit', t: d || V.gun, id: id }); break;
+    case 'tipsheet': openSheet({ kind: 'tip', t: d || V.gun }); break;
+    case 'tpl':
+      snap(); applyTpl(d, el.dataset.tip); closeSheet(); render(); toast(fmtDs(d) + ': ' + TIP[el.dataset.tip], true); break;
+    case 'dayclear': snap(); delete D.gunler[d]; save(); closeSheet(); render(); toast('Günün planı silindi', true); break;
+    case 'oneriok': snap(); applyTpl(d, 'disarida'); render(); toast('Dışarıdayım planı uygulandı', true); break;
+    case 'onerino': D.oneriKapali = D.oneriKapali || {}; D.oneriKapali[d] = 1; save(); render(); break;
+    case 'steps': openSheet({ kind: 'steps', t: V.gun, focus: '[data-f="adim"]' }); break;
+    case 'settings': openSheet({ kind: 'settings' }); break;
+    case 'duzen': V.duzen = v; render(true); break;
+    case 'duzenback': V.duzen = null; render(true); break;
+    case 'tedit': openSheet({ kind: 'tedit', tip: V.duzen, n: el.dataset.n }); break;
     case 'tadd':
-      var L = D.sablonlar[V.stip], lastE = L.length ? L[L.length - 1].bitis : 540;
-      L.push({ baslik: 'Yeni iş', kategori: 'diger', baslangic: Math.min(lastE, 1410), bitis: Math.min(lastE + 30, 1440) }); save(); render(); break;
-    case 'tdel': D.sablonlar[V.stip].splice(+el.dataset.i, 1); save(); render(); break;
-    case 'treset': D.sablonlar[V.stip] = defTemplates()[V.stip]; save(); render(); break;
+      var tp = V.duzen, nn = 'Yeni iş', ni = 2; while (mxRows().some(function (r) { return r.n === nn; })) nn = 'Yeni iş ' + ni++;
+      var TL = D.sablonlar[tp], le = TL.length ? Math.max.apply(null, TL.map(function (x) { return x.bitis; })) : 540;
+      TL.push({ baslik: nn, kategori: 'diger', baslangic: Math.min(le, 1410), bitis: Math.min(le + 30, 1440) }); sortI(TL); save(); render();
+      openSheet({ kind: 'tedit', tip: tp, n: nn, focus: '[data-f="tname"]' }); break;
+    case 'mxadd': mxAdd(el.dataset.tip, el.dataset.n); save(); render(); if (SH && SH.kind === 'tedit') renderSheet(); break;
+    case 'close': closeSheet(); break;
+    case 'scrim': if (e.target === el) closeSheet(); break;
+    /* iş düzenleme */
+    case 'shift': eChange(function (x) { var dur = x.bitis - x.baslangic; x.baslangic = clamp(x.baslangic + +v, 0, 1440 - dur); x.bitis = x.baslangic + dur; }); break;
+    case 'dur': eChange(function (x) { x.bitis = Math.min(1440, x.baslangic + +v); }); break;
+    case 'ecat': eChange(function (x) { x.kategori = el.dataset.k; }); break;
+    case 'est': var cur = findIt(SH.t, SH.id); if (cur && cur.durum !== v) { setStatus(SH.t, SH.id, v, true); SH.dirty = true; renderSheet(); } break;
+    case 'esave':
+      var ni2 = SH.it; if (!ni2.baslik.trim()) { var inp = $('.sheet [data-f="name"]'); if (inp) { inp.classList.add('bad'); inp.focus(); } break; }
+      snap(); var gg = ensureDay(SH.t), nit = mkItem(ni2); nit.elle = true; gg.isler.push(nit); sortI(gg.isler);
+      if (D.ayarlar.kaydir) ripple(gg.isler, nit);
+      save(); var tt = SH.t; closeSheet(); render(); toast(nit.baslik + ' eklendi · ' + fmtDs(tt) + ' ' + hm(nit.baslangic), true); break;
+    case 'edel': var di = findIt(SH.t, SH.id); snap(); var g0 = G(SH.t); g0.isler = g0.isler.filter(function (i) { return i.id !== SH.id; }); save(); closeSheet(); render(); toast((di ? di.baslik : 'İş') + ' silindi', true); break;
+    case 'etomorrow': var yi = findIt(SH.t, SH.id); if (!yi) break; snap(); OPS.yarin(SH.t, yi, null); save(); closeSheet(); render(); toast(yi.baslik + ' yarına taşındı', true); break;
+    case 'eroutine': edRoutine2(); break;
+    case 'erep': SH.kind = 'rep'; SH.rep = SH.rep || { from: SH.t, to: addMonths(SH.t, 1), wd: [1, 1, 1, 1, 1, 1, 1], pick: 'start', vm: SH.t.slice(0, 7), yeni: true }; renderSheet(); $('.sheet').scrollTop = 0; break;
+    case 'repback': SH.kind = 'edit'; renderSheet(); break;
+    case 'rwd': SH.rep.wd[+v] = SH.rep.wd[+v] ? 0 : 1; renderSheet(); break;
+    case 'rq': var R = SH.rep; R.to = v === '1h' ? addD(R.from, 6) : v === '1m' ? addMonths(R.from, 1) : v === '3m' ? addMonths(R.from, 3) : v === '6m' ? addMonths(R.from, 6) : (isDate(D.ayarlar.sinavTarihi) && D.ayarlar.sinavTarihi > R.from ? D.ayarlar.sinavTarihi : addMonths(R.from, 6)); R.pick = 'start'; renderSheet(); break;
+    case 'rpick': SH.rep.pick = v; SH.rep.vm = (v === 'start' ? SH.rep.from : SH.rep.to).slice(0, 7); renderSheet(); break;
+    case 'rm': var rv = pd(SH.rep.vm + '-01'); rv.setMonth(rv.getMonth() + +v); SH.rep.vm = ds(rv).slice(0, 7); renderSheet(); break;
+    case 'rday': var R2 = SH.rep; if (R2.pick === 'start') { R2.from = d; if (R2.to < d) R2.to = d; R2.pick = 'end'; } else { if (d < R2.from) { R2.to = R2.from; R2.from = d; } else R2.to = d; R2.pick = 'start'; } renderSheet(); break;
+    case 'radd': repApply2(true); break;
+    case 'rdel': repApply2(false); break;
+    /* şablon */
+    case 'tshift': var x1 = tplItem(SH.tip, SH.n); if (!x1) break; var du = x1.bitis - x1.baslangic, nb = clamp(x1.baslangic + +v, 0, 1440 - du); tChange({ baslangic: nb, bitis: nb + du }); break;
+    case 'tdur': var x2 = tplItem(SH.tip, SH.n); if (!x2) break; tChange({ bitis: Math.min(1440, x2.baslangic + +v) }); break;
+    case 'tcat': tChange({ kategori: el.dataset.k }); break;
+    case 'tin':
+      var k = el.dataset.tip;
+      if (tplItem(k, SH.n)) { if (k === SH.tip && TIPS.filter(function (q) { return tplItem(q, SH.n); }).length === 1) break; mxDel(k, SH.n); } else mxAdd(k, SH.n);
+      save(); render(); if (!tplItem(SH.tip, SH.n)) closeSheet(); else renderSheet(); break;
+    case 'tdel': snap(); mxDel(SH.tip, SH.n); save(); var nm = SH.n; closeSheet(); render(); toast(nm + ' bu tipten çıkarıldı', true); break;
+    /* ayarlar */
     case 'export': exportJSON(); break;
     case 'import': $('#impFile').click(); break;
-    case 'undoimp': if (prevD) { D = prevD; prevD = null; save(); readAll(); setMsg = { html: 'Önceki veri geri yüklendi.' }; render(); } break;
-    case 'names':
-      setMsg = null;
-      Promise.all([fetchWortNames(true), fetchFormNames(true)]).then(function (r) {
-        readAll(); render();
-        var m = $('#setMsg'); if (m && !r[0] && !r[1]) m.textContent = 'Sayfalar okunamadı (yalnızca yurugagarin.github.io üzerinde çalışır).';
-      });
-      break;
+    case 'names': Promise.all([fetchWortNames(true), fetchFormNames(true)]).then(function (r) { readAll2(); render(); renderSheet(); toast(r[0] || r[1] ? 'Adlar okundu' : 'Sayfalar okunamadı'); }); break;
   }
 }
-function addNew(t) {
-  var b = ceil15(t === today() ? nowMin() : 540), g = ensureDay(t);
-  if (b > 1410) b = 1410;
-  var it = mkItem({ baslik: 'Yeni iş', kategori: 'diger', baslangic: b, bitis: Math.min(1440, b + 30) });
-  it.elle = true; g.isler.push(it); sortI(g.isler); save();
-  if (V.tab !== 'bugun' && V.tab !== 'hafta') { V.tab = 'bugun'; V.gun = t; }
-  render();
-  var anchor = $('.row[data-id="' + it.id + '"]') || $('.blk[data-id="' + it.id + '"]');
-  openEdit(t, it.id, anchor ? anchor.getBoundingClientRect() : { left: 300, right: 300, top: 120, bottom: 120 }, true);
+function edRoutine2() {
+  var t = SH.t, it = findIt(t, SH.id), g = G(t); if (!it || !g) return;
+  snap();
+  var tip = g.tip === 'bos' ? 'normal' : g.tip, L = D.sablonlar[tip];
+  if (L.some(function (x) { return x.baslik === it.baslik; })) applyRoutine(tip, it.baslik, { kategori: it.kategori, baslangic: it.baslangic, bitis: it.bitis }, addD(t, 1));
+  else {
+    var x = { baslik: it.baslik, kategori: it.kategori, baslangic: it.baslangic, bitis: it.bitis };
+    L.push(x); sortI(L);
+    for (var dd2 in D.gunler) {
+      if (dd2 <= t || D.gunler[dd2].tip !== tip) continue;
+      var gd = D.gunler[dd2];
+      if (!gd.isler.some(function (i) { return i.baslik === x.baslik; })) { gd.isler.push(mkItem(x)); sortI(gd.isler); }
+    }
+  }
+  save(); closeSheet(); render(); toast('Her ' + TIP[tip] + ' artık böyle', true);
 }
 function exportJSON() {
-  save();
   var blob = new Blob([JSON.stringify(D, null, 2)], { type: 'application/json' });
-  var a = document.createElement('a');
-  a.href = URL.createObjectURL(blob); a.download = 'gun-yedek-' + today() + '.json';
-  document.body.appendChild(a); a.click(); a.remove();
-  setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
-  var m = $('#setMsg'); if (m) { m.className = 'msg'; m.textContent = 'Yedek indirildi.'; }
+  var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'gun-yedek-' + today() + '.json';
+  document.body.appendChild(a); a.click(); a.remove(); setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  toast('Yedek indirildi');
 }
 function importJSON(file) {
   var r = new FileReader();
   r.onload = function () {
-    var o = null;
-    try { o = normalize(JSON.parse(r.result)); } catch (e) { o = null; }
-    if (!o) { setMsg = { err: true, html: 'Bu dosya bir Gün yedeği değil.' }; render(); return; }
-    prevD = JSON.parse(JSON.stringify(D)); D = o; save(); readAll();
-    setMsg = { html: 'İçe aktarıldı · ' + Object.keys(D.gunler).length + ' gün. <button class="btn sm ghost" data-act="undoimp">Geri al</button>' };
-    render();
+    var o = null; try { o = normalize(JSON.parse(r.result)); } catch (e) { o = null; }
+    if (!o) { toast('Bu dosya bir Gün yedeği değil'); return; }
+    snap(); D = o; save(); readAll2(); closeSheet(); render(); toast('Yedek yüklendi · ' + Object.keys(D.gunler).length + ' gün', true);
   };
   r.readAsText(file);
 }
 function inField(el) { return el && (el.tagName === 'INPUT' || el.tagName === 'SELECT' || el.tagName === 'TEXTAREA'); }
 
-document.addEventListener('pointerdown', function (e) {
-  if (P && !P.el.contains(e.target)) { if (P.kind === 'edit' && !P.fresh) P.dirty = true; closePop(); }
-  if (V.stepEdit && e.target.id !== 'stepInp') { V.stepEdit = false; render(); }
-});
 document.addEventListener('click', function (e) {
   var el = e.target.closest('[data-act]');
+  if (SW && !(e.target.closest('.sw-bg'))) { closeSwipe(); if (!el || el.closest('.sw')) { e.preventDefault(); return; } }
   if (!el || el.disabled || el.tagName === 'A') return;
-  if (el.dataset.act === 'mankonu' || el.dataset.act === 'kaydir' || el.dataset.act === 'repyeni') return;
+  if (el.tagName === 'INPUT') return;
   act(el, e);
 });
 document.addEventListener('keydown', function (e) {
   var tg = e.target;
-  if (e.key === 'Escape') {
-    if (P) { closePop(); return; }
-    if (V.stepEdit) { V.stepEdit = false; render(); return; }
-    if (inField(tg)) tg.blur();
-    return;
-  }
-  if (e.key === 'Enter') {
-    if (tg.dataset && (tg.dataset.ed === 'name' || tg.dataset.ed === 'b' || tg.dataset.ed === 'e' || tg.dataset.ed === 'sebep')) { e.preventDefault(); tg.blur(); return; }
-    if (tg.id === 'stepInp') { e.preventDefault(); V.stepEdit = false; render(); return; }
-    if (tg.dataset && (tg.dataset.act === 'mankonu' || tg.dataset.rt || tg.dataset.mx)) { tg.blur(); return; }
-    if (tg.dataset && tg.dataset.act && tg.getAttribute('role') === 'button') { e.preventDefault(); act(tg, e); return; }
-    return;
-  }
-  if (inField(tg) || e.ctrlKey || e.metaKey || e.altKey) return;
-  var tabs = { '1': 'bugun', '2': 'hafta', '3': 'ay', '4': 'yil', '5': 'duzen' };
+  if (e.key === 'Escape') { if (SH) { closeSheet(); return; } if (V.brush) { V.brush = null; render(); return; } if (inField(tg)) tg.blur(); return; }
+  if (e.key === 'Enter' && inField(tg) && tg.tagName !== 'TEXTAREA') { e.preventDefault(); if (SH && SH.fresh) { act($('[data-act="esave"]'), e); return; } tg.blur(); if (SH && (SH.kind === 'steps')) closeSheet(); return; }
+  if (inField(tg) || e.ctrlKey || e.metaKey || e.altKey || SH) return;
+  var tabs = { '1': 'bugun', '2': 'hafta', '3': 'takvim', '4': 'duzen' };
   if (tabs[e.key]) { e.preventDefault(); go(tabs[e.key]); return; }
-  if (e.key === 'ArrowLeft') { e.preventDefault(); closePop(); shift(-1); return; }
-  if (e.key === 'ArrowRight') { e.preventDefault(); closePop(); shift(1); return; }
-  if (e.key === 't' || e.key === 'T') { e.preventDefault(); closePop(); if (V.tab === 'ayarlar') V.tab = 'bugun'; goToday(); return; }
-  if (e.key === 'n' || e.key === 'N') {
-    e.preventDefault(); closePop();
-    addNew(V.tab === 'hafta' ? (GRID.days && GRID.days.indexOf(today()) >= 0 ? today() : V.hafta) : V.gun);
+  if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+    var n = e.key === 'ArrowLeft' ? -1 : 1; e.preventDefault();
+    if (V.tab === 'bugun') V.gun = addD(V.gun, n); else if (V.tab === 'hafta') V.hafta = addD(V.hafta, 7 * n);
+    else if (V.tab === 'takvim' && V.tk === 'ay') { var mp = pd(V.ay + '-01'); mp.setMonth(mp.getMonth() + n); V.ay = ds(mp).slice(0, 7); } else return;
+    render(); return;
   }
+  if (e.key === 't' || e.key === 'T') { V.gun = today(); V.hafta = monday(today()); if (V.tab !== 'bugun' && V.tab !== 'hafta') V.tab = 'bugun'; render(); return; }
+  if (e.key === 'n' || e.key === 'N') { e.preventDefault(); addNew2(V.tab === 'bugun' ? V.gun : today()); }
 });
-/* yazılan her şey anında kaydedilir: Enter'a basmadan sekmeyi kapatsan da kaybolmaz */
 document.addEventListener('input', function (e) {
-  var el = e.target;
-  if (el.dataset.tn) {
-    D.ayarlar.tipNot = D.ayarlar.tipNot || {};
-    var tv = el.value.trim(); if (tv) D.ayarlar.tipNot[el.dataset.tn] = tv; else delete D.ayarlar.tipNot[el.dataset.tn];
-    save(); return;
-  }
-  if (el.dataset.act === 'mankonu') {
-    var t = el.dataset.d, v = el.value.trim();
-    if (v) D.almanca[t] = { konu: v }; else delete D.almanca[t];
-    save(); return;
-  }
-  if (el.id === 'stepInp') {
-    var n = parseInt(el.value.replace(/\D/g, ''), 10);
-    if (n >= 0) D.adim[V.gun] = n; else if (!el.value.trim()) delete D.adim[V.gun];
-    save(); return;
-  }
-  if (P && el.dataset.ed) {
-    var it = findIt(P.t, P.id); if (!it) return;
-    if (el.dataset.ed === 'name') { var v2 = el.value.trim(); if (v2) { it.baslik = v2; P.dirty = true; save(); render(); } }
-    else if (el.dataset.ed === 'not') { var v3 = el.value.trim(); if (v3) it.not = v3; else delete it.not; P.dirty = true; save(); render(); }
-    else if (el.dataset.ed === 'sebep') { var v4 = el.value.trim(); if (v4) it.sebep = v4; else delete it.sebep; P.dirty = true; save(); render(); }
-  }
+  var el = e.target, f = el.dataset.f;
+  if (el.dataset.tn) { D.ayarlar.tipNot = D.ayarlar.tipNot || {}; var tv = el.value.trim(); if (tv) D.ayarlar.tipNot[el.dataset.tn] = tv; else delete D.ayarlar.tipNot[el.dataset.tn]; save(); return; }
+  if (!SH || !f) return;
+  if (f === 'adim') { var n = parseInt(el.value.replace(/\D/g, ''), 10); if (n >= 0) D.adim[SH.t] = n; else delete D.adim[SH.t]; save(); autoMark(); render(); return; }
+  var it = SH.kind === 'edit' || SH.kind === 'rep' ? curIt() : null;
+  if (!it) return;
+  var val = el.value.trim();
+  if (f === 'name') { el.classList.remove('bad'); if (SH.fresh) { it.baslik = val; return; } if (val) { it.baslik = val; SH.dirty = true; save(); render(); } }
+  else if (f === 'not') { if (val) it.not = val; else delete it.not; if (!SH.fresh) { SH.dirty = true; save(); render(); } }
+  else if (f === 'sebep') { if (val) it.sebep = val; else delete it.sebep; SH.dirty = true; save(); render(); }
 });
 document.addEventListener('change', function (e) {
-  var el = e.target;
+  var el = e.target, f = el.dataset.f;
   if (el.id === 'impFile' && el.files && el.files[0]) { importJSON(el.files[0]); el.value = ''; return; }
   if (el.dataset.act === 'kaydir') { D.ayarlar.kaydir = el.checked; save(); return; }
-  if (el.dataset.act === 'repyeni') { if (P && P.rep) P.rep.yeni = el.checked; return; }
-  if (el.dataset.mx === 'name') {
-    var on = el.dataset.n, nv2 = el.value.trim();
-    if (!nv2 || (nv2 !== on && mxRows().some(function (r) { return r.n === nv2; }))) { el.classList.add('bad'); el.value = on; return; }
-    if (nv2 !== on) { applyRoutine('normal', on, { baslik: nv2 }); save(); render(); }
-    return;
-  }
-  if (P && P.kind === 'edit' && el.dataset.ed === 'e') {
-    var m1 = parseHM(el.value), it1 = findIt(P.t, P.id);
-    if (m1 == null || !it1 || m1 < it1.baslangic) { el.classList.add('bad'); return; }
-    edChange(function (x) { x.bitis = m1; });
-    return;
-  }
-  if (P && P.kind === 'edit' && el.dataset.ed === 'b') {
-    var m0 = parseHM(el.value);
-    if (m0 == null) { el.classList.add('bad'); return; }
-    edChange(function (x) { var dur = x.bitis - x.baslangic; x.baslangic = Math.min(m0, 1440 - dur); x.bitis = x.baslangic + dur; });
-    return;
-  }
-  if (el.dataset.rt === 'name') {
-    var tip = rtTip(), x = D.sablonlar[tip][+el.dataset.i], nv = el.value.trim();
-    if (!x || !nv) { el.value = x ? x.baslik : ''; return; }
-    applyRoutine(tip, x.baslik, { baslik: nv }); save(); render(); return;
-  }
-  if (el.dataset.tf) {
-    var y = D.sablonlar[V.stip][+el.dataset.i]; if (!y) return;
-    var f = el.dataset.tf, v = el.value;
-    if (f === 'b' || f === 'e') {
-      var m = parseHM(v); if (m == null) { el.classList.add('bad'); return; }
-      el.classList.remove('bad');
-      if (f === 'b') { var dur = y.bitis - y.baslangic; y.baslangic = m; if (y.bitis < m) y.bitis = Math.min(1440, m + dur); }
-      else { if (m < y.baslangic) { el.classList.add('bad'); return; } y.bitis = m; }
-      sortI(D.sablonlar[V.stip]);
-      save(); render(); return;
-    }
-    if (f === 't') { if (!v.trim()) { el.classList.add('bad'); return; } y.baslik = v.trim(); }
-    if (f === 'k') y.kategori = v;
-    if (f === 'a') { var n = parseInt(v, 10); if (n > 0) y.asgari = n; else delete y.asgari; }
-    el.classList.remove('bad'); save(); return;
-  }
-  if (el.dataset.sf) {
-    var k = el.dataset.sf, val = el.value.trim();
-    if (k === 'adimHedef') { var nn = parseInt(val.replace(/\D/g, ''), 10); if (!(nn > 0)) { el.classList.add('bad'); return; } D.ayarlar.adimHedef = nn; }
+  if (el.dataset.act === 'ryeni') { SH.rep.yeni = el.checked; return; }
+  if (el.dataset.set) { D.ayarlar[el.dataset.set] = el.checked; save(); autoMark(); render(); return; }
+  if (el.dataset.s) {
+    var k = el.dataset.s, val = el.value.trim();
+    if (k === 'adimHedef') { var nn = parseInt(val.replace(/\D/g, ''), 10); if (nn > 0) D.ayarlar.adimHedef = nn; }
     else if (k === 'sinavAdi') D.ayarlar.sinavAdi = val;
-    else if (k === 'sinavTarihi' || k === 'baslangic') {
-      if (!isDate(val)) { el.classList.add('bad'); return; }
-      if (k === 'baslangic') D.baslangic = val; else D.ayarlar.sinavTarihi = val;
-    }
-    el.classList.remove('bad'); save();
+    else if (k === 'sinavTarihi' && isDate(val)) D.ayarlar.sinavTarihi = val;
+    save(); render(); return;
+  }
+  if (!SH || !f) return;
+  if (f === 'b' || f === 'e') {
+    var m = parseHM(el.value); if (m == null) return;
+    eChange(function (x) { if (f === 'b') { var dur = x.bitis - x.baslangic; x.baslangic = Math.min(m, 1440 - dur); x.bitis = x.baslangic + dur; } else x.bitis = Math.max(m, x.baslangic); });
+    return;
+  }
+  if (f === 'tb' || f === 'te') {
+    var m2 = parseHM(el.value), x3 = tplItem(SH.tip, SH.n); if (m2 == null || !x3) return;
+    if (f === 'tb') { var du3 = x3.bitis - x3.baslangic, nb3 = Math.min(m2, 1440 - du3); tChange({ baslangic: nb3, bitis: nb3 + du3 }); }
+    else tChange({ bitis: Math.max(m2, x3.baslangic) });
+    return;
+  }
+  if (f === 'tname') {
+    var nv = el.value.trim();
+    if (!nv || (nv !== SH.n && mxRows().some(function (r) { return r.n === nv; }))) { el.value = SH.n; return; }
+    if (nv !== SH.n) tChange({ baslik: nv });
   }
 });
 
-/* ---------- yıl ipucu ---------- */
-var tipEl = null;
-document.addEventListener('mouseover', function (e) {
-  var sq = e.target.closest && e.target.closest('.yd[data-d]');
-  if (!sq) { if (tipEl) tipEl.style.display = 'none'; return; }
-  if (!tipEl) { tipEl = document.createElement('div'); tipEl.className = 'ytip'; document.body.appendChild(tipEl); }
-  tipEl.innerHTML = '<b>' + esc(fmtD(sq.dataset.d)) + '</b> · ' + esc(sq.dataset.tip);
-  tipEl.style.display = 'block';
-  var r = sq.getBoundingClientRect(), w = tipEl.offsetWidth;
-  tipEl.style.transform = 'translate(' + clamp(r.left + r.width / 2 - w / 2, 8, window.innerWidth - w - 8) + 'px,' + (r.top - tipEl.offsetHeight - 8) + 'px)';
-});
-
-/* ---------- hafta ve günlük çizelge: sürükle / boyutlandır ----------
-   Fare: hemen. Dokunmatik: bloğa ~0,3 sn basılı tut, sonra sürükle (kısa dokunuş düzenleyiciyi açar, kaydırma bozulmaz).
-   Gövde: saati kaydır (haftada başka güne de) · üst kenar: başlangıç · alt kenar: bitiş. 15 dk adım. */
-var DR = null, NOCLICK = 0;
-/* bloğa dokununca pencere parmağın altında açılır; aynı dokunuşun "tık"ı penceredeki bir düğmeye basmasın */
-document.addEventListener('click', function (e) {
-  if (Date.now() - NOCLICK < 600) { NOCLICK = 0; e.preventDefault(); e.stopPropagation(); }
-}, true);
+/* ---------- kaydırma: satırı sola çek → Yapmadım / Gerek yok ---------- */
+var SWD = null;
+function closeSwipe() { if (!SW) return; var fg = SW.querySelector('.sw-fg'); if (fg) fg.style.transform = ''; SW.classList.remove('open'); SW = null; }
 document.addEventListener('pointerdown', function (e) {
-  var el = e.target.closest && e.target.closest('.blk');
-  if (!el || e.button !== 0 || !el.parentElement.classList.contains('wk-col')) return;
-  var col = el.parentElement, cols = $$('.wk-col'), ci = cols.indexOf(col), cl = e.target.classList;
-  DR = {
-    el: el, col: col, id: el.dataset.id, t: col.dataset.day, ci: ci, nc: cols.length, colW: col.getBoundingClientRect().width,
-    x0: e.clientX, y0: e.clientY, mode: cl.contains('rs') ? 'rs' : cl.contains('rtop') ? 'rt' : 'mv', started: false,
-    touch: e.pointerType === 'touch', armed: e.pointerType !== 'touch',
-    b: +el.dataset.b, e: +el.dataset.e, dMin: 0, dCol: 0, nd: +el.dataset.e - +el.dataset.b, ns: +el.dataset.b
-  };
-  if (DR.touch) {
-    var d0 = DR;
-    d0.lp = setTimeout(function () {
-      if (DR !== d0) return;
-      d0.armed = true; d0.el.classList.add('armed');
-      try { if (navigator.vibrate) navigator.vibrate(12); } catch (er) { }
-    }, 300);
-  } else {
-    e.preventDefault();
-    try { el.setPointerCapture(e.pointerId); } catch (er) { }
-  }
+  var fg = e.target.closest && e.target.closest('.sw-fg'); if (!fg || e.target.closest('.chk')) return;
+  SWD = { sw: fg.parentElement, fg: fg, x0: e.clientX, y0: e.clientY, dx: 0, on: false };
 });
-document.addEventListener('touchmove', function (e) { if (DR && DR.armed) e.preventDefault(); }, { passive: false });
-document.addEventListener('contextmenu', function (e) { if (e.target.closest && e.target.closest('.blk')) e.preventDefault(); });
 document.addEventListener('pointermove', function (e) {
-  if (!DR) return;
-  var dx = e.clientX - DR.x0, dy = e.clientY - DR.y0;
-  if (!DR.armed) { if (Math.abs(dx) > 8 || Math.abs(dy) > 8) { clearTimeout(DR.lp); DR = null; } return; }
-  if (!DR.started) {
-    if (Math.abs(dx) < 4 && Math.abs(dy) < 4) return;
-    DR.started = true; closePop();
-    DR.el.classList.add('dragging');
-    DR.tip = document.createElement('div'); DR.tip.className = 'drag-tip'; document.body.appendChild(DR.tip);
-    if (DR.mode !== 'mv') {
-      DR.ghost = document.createElement('div'); DR.ghost.className = 'rs-ghost'; DR.ghost.style.top = DR.el.style.top;
-      DR.col.appendChild(DR.ghost);
-    }
-  }
-  var txt, step = Math.round(dy / STEP) * 15;
-  if (DR.mode === 'mv') {
-    var dMin = clamp(step, -DR.b, 1440 - DR.e);
-    var dCol = clamp(Math.round(dx / DR.colW), -DR.ci, DR.nc - 1 - DR.ci);
-    DR.dMin = dMin; DR.dCol = dCol;
-    DR.el.style.transform = 'translate(' + (dCol * DR.colW) + 'px,' + (dMin / 60 * HOUR) + 'px)';
-    txt = (DR.nc > 1 ? fmtDs(GRID.days[DR.ci + dCol]) + ' · ' : '') + hm(DR.b + dMin) + (DR.e > DR.b ? '–' + hm(DR.e + dMin) : '');
-  } else if (DR.mode === 'rs') {
-    var nd = clamp((DR.e - DR.b) + step, 15, 1440 - DR.b);
-    DR.nd = nd;
-    DR.ghost.style.transform = 'scaleY(' + (nd / 60) + ')';
-    txt = hm(DR.b) + '–' + hm(DR.b + nd) + ' · ' + durStr(nd);
-  } else {
-    var ns = clamp(DR.b + step, 0, DR.e - 15);
-    DR.ns = ns;
-    DR.ghost.style.transform = 'translateY(' + ((ns - DR.b) / 60 * HOUR) + 'px) scaleY(' + ((DR.e - ns) / 60) + ')';
-    txt = hm(ns) + '–' + hm(DR.e) + ' · ' + durStr(DR.e - ns);
-  }
-  if (txt !== DR.txt) { DR.tip.textContent = txt; DR.txt = txt; }
-  DR.tip.style.transform = 'translate(' + (e.clientX + 14) + 'px,' + (e.clientY - (DR.touch ? 56 : -16)) + 'px)';
+  if (!SWD) return;
+  var dx = e.clientX - SWD.x0, dy = e.clientY - SWD.y0;
+  if (!SWD.on) { if (Math.abs(dy) > 10) { SWD = null; return; } if (Math.abs(dx) < 10) return; SWD.on = true; SWD.sw.classList.add('moving'); if (SW && SW !== SWD.sw) closeSwipe(); }
+  var base = SWD.sw.classList.contains('open') ? -184 : 0;
+  SWD.dx = clamp(base + dx, -200, 0);
+  SWD.fg.style.transform = 'translateX(' + SWD.dx + 'px)';
 });
-function endDrag(e, cancel) {
-  if (!DR) return;
-  var d = DR; DR = null;
-  clearTimeout(d.lp);
-  d.el.classList.remove('armed');
-  if (d.tip) d.tip.remove();
-  if (d.ghost) d.ghost.remove();
-  if (!d.started) { if (!cancel) { NOCLICK = Date.now(); openEdit(d.t, d.id, d.el.getBoundingClientRect()); } return; }
-  if (cancel) { render(); return; }
-  var it = findIt(d.t, d.id); if (!it) { render(); return; }
-  var past = d.t <= today(), s0 = it.baslangic, e0 = it.bitis, same = true;
-  if (d.mode === 'mv') {
-    if (!d.dMin && !d.dCol) { render(); return; }
-    var t2 = GRID.days[d.ci + d.dCol];
-    if (past && d.dCol === 0) { keepOrig(it); it.degisiklik = 'tasindi'; }
-    it.baslangic = d.b + d.dMin; it.bitis = d.e + d.dMin;
-    if (t2 !== d.t) {
-      same = false;
-      var g = G(d.t); g.isler = g.isler.filter(function (i) { return i.id !== it.id; });
-      delete it.orj; if (past) it.degisiklik = 'tasindi';
-      var g2 = ensureDay(t2); g2.isler.push(it); sortI(g2.isler);
-    }
-  } else if (d.mode === 'rs') {
-    if (d.nd === d.e - d.b) { render(); return; }
-    if (past && d.nd < d.e - d.b) { keepOrig(it); it.degisiklik = 'kisaltildi'; }
-    it.bitis = it.baslangic + d.nd;
-  } else {
-    if (d.ns === d.b) { render(); return; }
-    if (past && d.ns > d.b) { keepOrig(it); it.degisiklik = 'kisaltildi'; }
-    it.baslangic = d.ns;
-  }
-  if (same) {
-    var gl = G(d.t).isler;
-    if (D.ayarlar.kaydir && (it.bitis > e0 || it.baslangic > s0)) ripple(gl, it);
-    sortI(gl);
-  }
-  save(); render();
-}
-document.addEventListener('pointerup', function (e) { endDrag(e, false); });
-document.addEventListener('pointercancel', function (e) { endDrag(e, true); });
-document.addEventListener('dblclick', function (e) {
-  var col = e.target.closest && e.target.closest('.wk-col');
-  if (!col || e.target.closest('.blk') || e.target.closest('button') || e.target.closest('a')) return;
-  var r = col.getBoundingClientRect(), m = clamp(GRID.s0 + Math.floor((e.clientY - r.top) / STEP) * 15, 0, 1410), t = col.dataset.day;
-  var g = ensureDay(t), it = mkItem({ baslik: 'Yeni iş', kategori: 'diger', baslangic: m, bitis: m + 30 }); it.elle = true;
-  g.isler.push(it); sortI(g.isler); save(); render();
-  openEdit(t, it.id, { left: e.clientX, right: e.clientX, top: e.clientY, bottom: e.clientY }, true);
+document.addEventListener('pointerup', function () {
+  if (!SWD) return; var s = SWD; SWD = null;
+  if (!s.on) return;
+  s.sw.classList.remove('moving');
+  if (s.dx < -70) { s.fg.style.transform = 'translateX(-184px)'; s.sw.classList.add('open'); SW = s.sw; }
+  else { s.fg.style.transform = ''; s.sw.classList.remove('open'); if (SW === s.sw) SW = null; }
+  NOCLK = Date.now();
 });
+document.addEventListener('pointercancel', function () { if (SWD) { SWD.sw.classList.remove('moving'); SWD.fg.style.transform = ''; SWD = null; } });
+var NOCLK = 0;
+document.addEventListener('click', function (e) { if (Date.now() - NOCLK < 300 && e.target.closest && e.target.closest('.sw-fg')) { e.stopPropagation(); e.preventDefault(); } }, true);
 
-/* ---------- takvimden planla: dokun ya da sürükle ---------- */
+/* ---------- takvimde boyama: dokun ya da sürükle ---------- */
 var PAINT = null;
 function paintAt(t) { if (!PAINT || PAINT[t]) return; PAINT[t] = 1; if (paintDay(t)) { save(); render(); } }
 document.addEventListener('pointerdown', function (e) {
-  if (!V.brush || (V.tab !== 'ay' && V.tab !== 'yil')) return;
+  if (!V.brush || V.tab !== 'takvim') return;
   var c = e.target.closest && e.target.closest('.brushable [data-d]'); if (!c) return;
-  e.preventDefault(); PAINT = {}; paintAt(c.dataset.d);
+  e.preventDefault(); snap(); PAINT = {}; paintAt(c.dataset.d);
 });
 document.addEventListener('pointermove', function (e) {
   if (!PAINT) return;
   var el = document.elementFromPoint(e.clientX, e.clientY), c = el && el.closest && el.closest('.brushable [data-d]');
   if (c) paintAt(c.dataset.d);
 });
-document.addEventListener('pointerup', function () { PAINT = null; });
-document.addEventListener('pointercancel', function () { PAINT = null; });
+document.addEventListener('pointerup', function () { if (PAINT) { var n = Object.keys(PAINT).length; PAINT = null; if (n) toast(n + ' gün planlandı', true); } });
 
-/* ---------- saat ve diğer uygulamalardaki değişiklikler ---------- */
-function busy() { return !!(DR || P || PAINT || V.stepEdit || inField(document.activeElement)); }
+/* ---------- saat ve diğer uygulamalar ---------- */
+function busy() { return !!(SH || SWD || SW || PAINT || inField(document.activeElement)); }
 function tick() {
   var m = nowMin(), td = today();
   if (m === LASTMIN && td === LASTDAY) return;
   LASTMIN = m;
-  if (td !== LASTDAY) {
-    if (V.gun === LASTDAY) V.gun = td;
-    if (V.hafta === monday(LASTDAY)) V.hafta = monday(td);
-    if (V.ay === LASTDAY.slice(0, 7)) V.ay = td.slice(0, 7);
-    LASTDAY = td; readAll();
-  }
-  renderTop();
-  if (!busy() && V.tab !== 'ayarlar') render();
+  if (td !== LASTDAY) { if (V.gun === LASTDAY) V.gun = td; if (V.hafta === monday(LASTDAY)) V.hafta = monday(td); LASTDAY = td; }
+  readAll2();
+  if (!busy()) render();
 }
 window.addEventListener('storage', function (e) {
-  if (e.key === WKEY || e.key === AKEY || e.key === FKEY || e.key === null) { readAll(); if (!busy()) render(); else renderTop(); }
-  if (e.key === KEY && e.newValue) {
-    try { var o = normalize(JSON.parse(e.newValue)); if (o) { D = o; if (!busy()) render(); } } catch (er) { }
-  }
+  if (e.key === WKEY || e.key === AKEY || e.key === FKEY || e.key === null) { readAll2(); if (!busy()) render(); }
+  if (e.key === KEY && e.newValue) { try { var o = normalize(JSON.parse(e.newValue)); if (o) { D = o; if (!busy()) render(); } } catch (er) { } }
 });
-window.addEventListener('focus', function () { readAll(); if (!busy()) render(); });
-window.addEventListener('resize', function () { if (P) closePop(); });
+window.addEventListener('focus', function () { readAll2(); if (!busy()) render(); });
 
-/* ================= başlat ================= */
 function start() {
-  mainEl = $('#main');
+  mainEl = $('#scr');
   load();
-  readAll();
+  var A = D.ayarlar;
+  ['otoForm', 'otoAdim', 'otoWort', 'oneri'].forEach(function (k) { if (A[k] == null) A[k] = true; });
+  if (!D.oneriKapali) D.oneriKapali = {};
+  readAll2();
   LASTMIN = nowMin();
   render(true);
   setInterval(tick, 5000);
-  Promise.all([fetchWortNames(false), fetchFormNames(false)]).then(function (r) { if (r[0] || r[1]) { readAll(); if (!busy()) render(); } });
+  Promise.all([fetchWortNames(false), fetchFormNames(false)]).then(function (r) { if (r[0] || r[1]) { readAll2(); if (!busy()) render(); } });
 }
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
 })();
